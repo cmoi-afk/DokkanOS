@@ -16,10 +16,15 @@ def main():
   if c.get("links") is not None and not isinstance(c["links"],list):x.append("liens non-listes")
   if c.get("fr"):
    fr=c["fr"]
+   if not fr.get("_official"):x.append("fiche FR officielle absente")
+   if fr.get("_fallbackFields"):x.append("fallback anglais: "+", ".join(fr["_fallbackFields"]))
+   # Every user-visible gameplay field must come from the official GLOBAL FR payload.
+   for k in ("name","title","leader","passiveName","passive","categories","links"):
+    if c.get(k) not in (None,"",[],{}) and fr.get("_official") and fr.get(k) in (None,"",[],{}):x.append("champ FR officiel absent: "+k)
    if fr.get("categories") and len(fr["categories"])!=len(c.get("categories",[])):x.append("catégories FR désalignées")
    if fr.get("links") and len(fr["links"])!=len(c.get("links",[])):x.append("liens FR désalignés")
   if x:issues.append({"id":cid,"name":c.get("name"),"issues":x})
- out={"version":"0.3","cards":len(d.get("cards",{})),"suspectCards":len(issues),"issues":issues}
+ out={"version":"0.4-fr-completeness","cards":len(d.get("cards",{})),"suspectCards":len(issues),"issues":issues}
  (ROOT/"semantic-quality.json").write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding="utf-8")
  print("Fiches suspectes:",len(issues))
 if __name__=="__main__":main()

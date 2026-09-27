@@ -1,4 +1,4 @@
-let DB={cards:[]}, META={cards:{}}, CATALOG={cards:[]}, OVERLAP={conflicts:[]}, filter='all', query='', sortMode='box', selectedTeam=[], verifyLimit=30, inventory={}, inventoryFilter='review', inventoryQuery='';
+let DB={cards:[]}, META={cards:{}}, CATALOG={cards:[]}, OVERLAP={conflicts:[]}, filter='all', query='', sortMode='box', selectedTeam=[], verifyLimit=30, inventory={}, inventoryFilter='review', inventoryQuery='', rarityFilter='', typeFilter='', classFilter='', categoryFilter='', linkFilter='';
 const norm=s=>(s??'').toString().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 async function boot(){
@@ -6,7 +6,7 @@ async function boot(){
   try{META=await fetch('card-meta.json').then(r=>r.ok?r.json():({cards:{}}))}catch(e){META={cards:{}}}
   try{CATALOG=await fetch('catalog.json').then(r=>r.ok?r.json():({cards:[]}))}catch(e){CATALOG={cards:[]}}
   try{OVERLAP=await fetch('overlap-conflicts.json').then(r=>r.ok?r.json():({conflicts:[]}))}catch(e){OVERLAP={conflicts:[]}}
-  applyMetadata(); restoreEdits();
+  applyMetadata(); restoreEdits(); initAdvancedFilters();
   render(); stats(); renderDuplicates(); renderMissing(); renderInventory(); renderManualOwned(); renderTeam(); renderAnalysis();
 }
 function localized(m){if(!m)return null;let fr=m.fr||{};return {...m,name:fr.name||m.name,title:fr.title||m.title,type:fr.type||m.type,class:fr.class||m.class,categories:fr.categories||m.categories,links:fr.links||m.links,leader:fr.leader||m.leader,passive:fr.passive||m.passive,superAttack:fr.superAttack||m.superAttack,active:fr.active||m.active}}
@@ -20,11 +20,12 @@ function restoreEdits(){
 }
 function searchText(c){return norm([c.boxId,c.candidateId,c.name,c.title,c.rarity,c.type,c.class,c.leader,c.passive,c.superAttack,c.active,...(c.categories||[]),...(c.links||[])].join(' '))}
 function visibleCards(){
-  let a=DB.cards.filter(c=>(filter==='all'||(filter==='valid'&&c.validated)||(filter==='check'&&!c.validated))&&(!query||searchText(c).includes(query)));
+  let a=DB.cards.filter(c=>(filter==='all'||(filter==='valid'&&c.validated)||(filter==='check'&&!c.validated))&&(!query||searchText(c).includes(query))&&(!rarityFilter||c.rarity===rarityFilter)&&(!typeFilter||c.type===typeFilter)&&(!classFilter||c.class===classFilter)&&(!categoryFilter||(c.categories||[]).includes(categoryFilter))&&(!linkFilter||(c.links||[]).includes(linkFilter)));
   if(sortMode==='confidence')a.sort((x,y)=>(y.inliers||0)-(x.inliers||0));
   if(sortMode==='id')a.sort((x,y)=>String(x.candidateId).localeCompare(String(y.candidateId)));
   return a;
 }
+function initAdvancedFilters(){let cats=[...new Set(DB.cards.flatMap(c=>c.categories||[]))].sort((a,b)=>a.localeCompare(b,'fr')),links=[...new Set(DB.cards.flatMap(c=>c.links||[]))].sort((a,b)=>a.localeCompare(b,'fr'));$('#categoryFilter').innerHTML='<option value="">Catégorie</option>'+cats.map(x=>`<option>${x}</option>`).join('');$('#linkFilter').innerHTML='<option value="">Lien</option>'+links.map(x=>`<option>${x}</option>`).join('')}
 function render(){
   let a=visibleCards();
   $('#grid').innerHTML=a.map(c=>`<article class="unit" onclick="openCard('${c.boxId}')"><i class="dot ${confClass(c.confidence)}"></i><img loading="lazy" src="${c.image}" onerror="this.classList.add('imgfail')"><div class="meta"><strong>${c.name||'ID '+(c.candidateId||'—')}</strong><small>${c.boxId} · ${c.confidence}</small></div></article>`).join('')||'<div class="empty">Aucune carte</div>';
@@ -49,9 +50,12 @@ function choose(id,val){
   else{c.candidateId='';c.validated=false;c.confidence='À revoir'}
   saveEdits();render();stats();renderAnalysis();
 }
+function skillText(v){if(!v)return '—';if(typeof v==='string')return v;if(Array.isArray(v))return v.map(skillText).join(' · ');return [v.name,v.description,v.condition].filter(Boolean).join(' — ')||'—'}
+function tagBlock(title,arr){return arr?.length?`<section class="detail-section"><h3>${title}</h3><div class="tags">${arr.map(x=>`<span>${x}</span>`).join('')}</div></section>`:''}
 function openCard(id){
   let c=DB.cards.find(x=>x.boxId===id), inTeam=selectedTeam.includes(id);
-  $('#sheet').innerHTML=`<button onclick="closeSheet()" class="close">Fermer</button><div class="hero"><img src="${c.image}"><div><h2>${c.name||'Carte '+(c.candidateId||'—')}</h2><div>${c.title||'Fiche à enrichir'}</div><p class="muted">${c.confidence}</p><button class="primary" onclick="toggleTeam('${id}')">${inTeam?'Retirer de l’équipe':'Ajouter à l’équipe'}</button></div></div>${[['ID Dokkan',c.candidateId||'—'],['Capture',c.capture+' '+c.position],['Rareté',c.rarity||'—'],['Type',c.type||'—'],['Classe',c.class||'—'],['EZA / SEZA',(c.eza||'—')+' / '+(c.seza||'—')],['Leader',c.leader||'—'],['Passif',c.passive||'—'],['SP',c.superAttack||'—'],['Active',c.active||'—'],['Catégories',(c.categories||[]).join(', ')||'—'],['Liens',(c.links||[]).join(', ')||'—']].map(x=>`<div class="kv"><span>${x[0]}</span><span>${x[1]}</span></div>`).join('')}`;
+  let sa=skillText(c.superAttack),usa=skillText(c.ultraSuperAttack),trans=(c.transformations||[]).map(x=>x.name||x.id||x), active=skillText(c.active);
+  $('#sheet').innerHTML=`<button onclick="closeSheet()" class="close">Fermer</button><div class="hero"><img src="${c.image}"><div><h2>${c.name||'Carte '+(c.candidateId||'—')}</h2><div>${c.title||''}</div><div class="card-badges"><span>${c.rarity||'—'}</span><span>${c.type||'—'}</span>${c.class?'<span>'+c.class+'</span>':''}${c.eza?'<span>EZA</span>':''}</div><p class="muted">ID ${c.candidateId||'—'} · ${c.confidence}</p><button class="primary" onclick="toggleTeam('${id}')">${inTeam?'Retirer de l’équipe':'Ajouter à l’équipe'}</button></div></div><section class="detail-section"><h3>Aptitude Leader</h3><p>${c.leader||'—'}</p></section><section class="detail-section"><h3>Passif${c.passiveName?' · '+c.passiveName:''}</h3><p>${c.passive||'—'}</p></section><section class="detail-section"><h3>Attaque spéciale</h3><p>${sa}</p>${usa!=='—'?'<h4>Ultra attaque spéciale</h4><p>'+usa+'</p>':''}</section>${active!=='—'?'<section class="detail-section"><h3>Compétence active</h3><p>'+active+'</p></section>':''}${tagBlock('Catégories',c.categories)}${tagBlock('Liens',c.links)}${trans.length?tagBlock('Transformations',trans):''}<section class="detail-section provenance"><small>Source des données : ${c.source?.provider||c.sources?.map(x=>x.provider).join(' + ')||'DokkanOS'} · Fiche ${c.fr?'française':'source'}</small></section>`;
   $('#sheet').classList.add('on')
 }
 function closeSheet(){$('#sheet').classList.remove('on')}
@@ -80,9 +84,9 @@ function renderAnalysis(){
   el.innerHTML=`<div class="analysis-grid"><div class="panel"><h3>Qualité de la Box</h3><b class="big">${valid.length} / ${DB.cards.length}</b><p class="muted">positions validées · ${manual} correction(s) manuelle(s) · ${enriched} fiche(s) enrichie(s)</p></div><div class="panel"><h3>Identifiants uniques</h3><b class="big">${new Set(valid.map(c=>c.candidateId).filter(Boolean)).size}</b><p class="muted">IDs différents parmi les positions validées</p></div></div><div class="panel"><h3>Confiance des détections</h3>${Object.entries(conf).map(([k,v])=>`<div class="row"><span><i class="legend ${confClass(k)}"></i>${k}</span><b>${v}</b></div>`).join('')}</div><div class="panel"><h3>Prochaine étape</h3><p class="muted">Les fiches Dokkan détaillées (nom, rareté, type, leader, passif, liens et catégories) seront enrichies à partir des IDs validés. Le moteur de synergies utilisera ensuite ces données.</p></div>`;
 }
 function switchView(v){$$('.view').forEach(x=>x.classList.remove('on'));$('#'+v).classList.add('on');$$('nav button').forEach(x=>x.classList.toggle('on',x.dataset.v===v));if(v==='duplicates')renderDuplicates();if(v==='inventory')renderInventory();if(v==='catalog')renderMissing();if(v==='teams')renderTeam();if(v==='analysis')renderAnalysis()}
-document.addEventListener('click',e=>{if(e.target.matches('.invchip')){$('.invchip').forEach(x=>x.classList.remove('on'));e.target.classList.add('on');inventoryFilter=e.target.dataset.invf;renderInventory()}if(e.target.matches('.chip')){$$('.chip').forEach(x=>x.classList.remove('on'));e.target.classList.add('on');filter=e.target.dataset.f;render()}if(e.target.matches('nav button'))switchView(e.target.dataset.v)});
+document.addEventListener('click',e=>{if(e.target.id==='resetFilters'){rarityFilter=typeFilter=classFilter=categoryFilter=linkFilter='';['rarityFilter','typeFilter','classFilter','categoryFilter','linkFilter'].forEach(id=>$('#'+id).value='');render()}if(e.target.matches('.invchip')){$('.invchip').forEach(x=>x.classList.remove('on'));e.target.classList.add('on');inventoryFilter=e.target.dataset.invf;renderInventory()}if(e.target.matches('.chip')){$$('.chip').forEach(x=>x.classList.remove('on'));e.target.classList.add('on');filter=e.target.dataset.f;render()}if(e.target.matches('nav button'))switchView(e.target.dataset.v)});
 document.addEventListener('input',e=>{if(e.target.id==='search'){query=norm(e.target.value);render()}if(e.target.id==='inventorySearch'){inventoryQuery=e.target.value;renderInventory()}});
-document.addEventListener('change',e=>{if(e.target.id==='sort'){sortMode=e.target.value;render()}});
+document.addEventListener('change',e=>{if(e.target.id==='sort')sortMode=e.target.value;if(e.target.id==='rarityFilter')rarityFilter=e.target.value;if(e.target.id==='typeFilter')typeFilter=e.target.value;if(e.target.id==='classFilter')classFilter=e.target.value;if(e.target.id==='categoryFilter')categoryFilter=e.target.value;if(e.target.id==='linkFilter')linkFilter=e.target.value;render()});
 window.addEventListener('online',()=>document.body.classList.remove('offline'));window.addEventListener('offline',()=>document.body.classList.add('offline'));if(!navigator.onLine)document.body.classList.add('offline');
 boot().catch(()=>{document.body.innerHTML='<div class="fatal"><h2>DokkanOS</h2><p>Impossible de charger la Box. Réessaie avec une connexion internet.</p><button onclick="location.reload()">Réessayer</button></div>'});
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});

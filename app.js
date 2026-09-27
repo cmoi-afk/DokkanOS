@@ -127,6 +127,28 @@ FR_TERMS["Super Bosses"]="Boss de DB Super";
 FR_TERMS["Tournament Participants"]="Participants aux tournois";
 FR_TERMS["Accelerated Battle"]="Combat rapide";
 FR_TERMS["Exploding Rage"]="Colère explosive";
+FR_TERMS["Low-Class Warrior"]="Guerrier de classe inférieure";
+FR_TERMS["Super Saiyan 2"]="Super Saiyan 2";
+FR_TERMS["Super Saiyan 3"]="Super Saiyan 3";
+FR_TERMS["Giant Ape Power"]="Puissance du singe géant";
+FR_TERMS["Crossover"]="Crossover";
+FR_TERMS["Crossover Summon"]="Invocation crossover";
+FR_TERMS["Crossover Summons"]="Invocations crossover";
+FR_TERMS["Youth"]="Enfance";
+FR_TERMS["Peppy Gals"]="Filles pleines de vie";
+FR_TERMS["Namekians"]="Namek";
+FR_TERMS["Team Bardock"]="Équipe Bardock";
+FR_TERMS["Universe 11"]="Univers 11";
+FR_TERMS["Warriors Raised on Earth"]="Combattants élevés sur Terre";
+FR_TERMS["Saiyan Saga"]="Saga des Saiyans";
+FR_TERMS["Planet Namek Saga"]="Saga de Namek";
+FR_TERMS["Cell Saga"]="Saga de Cell";
+FR_TERMS["Majin Buu Saga"]="Saga de Boo";
+FR_TERMS["Shadow Dragon Saga"]="Saga des dragons maléfiques";
+FR_TERMS["Movie Bosses"]="Boss des films";
+FR_TERMS["Movie Heroes"]="Héros des films";
+FR_TERMS["Super Bosses"]="Boss de DB Super";
+FR_TERMS["Super Heroes"]="Héros de DB Super";
 function frTerm(v){return FR_TERMS[v]||v}
 function frList(a){return (a||[]).map(frTerm)}
 

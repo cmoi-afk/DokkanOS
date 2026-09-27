@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - tools/verify_missing_images.py
+      - assets/cards/**
       - .github/workflows/verify-missing-images.yml
 permissions:
   contents: write

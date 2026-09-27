@@ -3,31 +3,31 @@
   "date": "2026-09-27",
   "status": "in_progress",
   "catalog": {
-    "entries": 1161,
-    "uniqueIds": 1161,
+    "entries": 1225,
+    "uniqueIds": 1225,
     "duplicateIds": 0,
     "sourceCounts": {
-      "DokkanOS Box": 299,
+      "DokkanOS Box": 363,
       "DokkanOS — catalogue fusionné": 794,
       "DBZ Dokkan Battle France": 68
     },
     "rarityCounts": {
-      "LR": 146,
+      "LR": 151,
       "SSR": 12,
-      "UR": 877,
-      "inconnu": 126
+      "UR": 900,
+      "inconnu": 162
     },
     "typeCounts": {
-      "AGI": 200,
-      "END": 193,
-      "INT": 188,
-      "PUI": 206,
-      "TEC": 188,
-      "inconnu": 186
+      "AGI": 206,
+      "END": 198,
+      "INT": 191,
+      "PUI": 215,
+      "TEC": 193,
+      "inconnu": 222
     },
-    "identityResolvedFromBox": 299,
-    "attributesResolvedFromBox": 173,
-    "attributesPendingFromBox": 126
+    "identityResolvedFromBox": 363,
+    "attributesResolvedFromBox": 201,
+    "attributesPendingFromBox": 162
   },
   "references": {
     "dbzDokkanBattleFrance": {
@@ -51,18 +51,19 @@
     "Les deux références n'ont pas exactement le même périmètre; leurs nombres ne sont pas utilisés comme égalité stricte.",
     "Les identifications Box non validées sont exclues du catalogue maître.",
     "Aucune donnée inventée ne doit être ajoutée pour atteindre artificiellement un nombre cible.",
-    "Les 126 cartes de Box sans rareté vérifiée restent en attente; aucun SSR/SR n'est supposé par défaut."
+    "Audit recalculé sur data.json : 64 IDs validés auparavant absents ont été ajoutés; 0 ID Box validé manquant et 0 ID catalogue en doublon.",
+    "162 cartes de Box sans rareté recoupée restent en attente; aucun SSR/SR n'est supposé par défaut."
   ],
   "provenance": {
     "identity": {
       "provider": "DokkanBattleLibrary/allData.json",
       "match": "exact card ID",
-      "count": 299
+      "count": 363
     },
     "rarityTypeClass": {
       "provider": "feijoes/DokkanAPI/DokkanCharacterData.json",
       "match": "asset ID extracted from thumbnail URL",
-      "count": 173
+      "count": 201
     }
   }
 }

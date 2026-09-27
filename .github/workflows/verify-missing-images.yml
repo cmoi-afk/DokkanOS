@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
     paths:
-      - tools/verify_missing_images.py
+      - tools/verify_missing_images.py # final
       - catalog.json
       - docs/IMAGE-AUDIT-v0.7.json
       - assets/cards/**

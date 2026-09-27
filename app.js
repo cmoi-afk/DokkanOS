@@ -110,8 +110,9 @@ function stats(){
 const NON_PLAYABLE_NAME_RE=/(statue de (m\.?\s*satan)|hercule statue|mr\.? satan statue)/i;
 const FR_NAME_FIXES=[[/Metal Cooler Army/gi,'Armée de Métal Cooler'],[/Metal Cooler/gi,'Métal Cooler'],[/Mr\.? Satan/gi,'M. Satan'],[/Perfect Cell/gi,'Cell Parfait'],[/Super Saiyan God SS/gi,'Super Saiyan divin SS']];
 function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);return s}
-function cardImageCandidates(id,preferred){id=String(id||'');return [...new Set([preferred,'assets/cards/'+id+'.webp','https://dokkaninfo.com/assets/global/en/character/card/'+id+'.png'].filter(Boolean))]}
-function imageFallback(el,id,preferred){let a=cardImageCandidates(id,preferred),n=Number(el.dataset.fallback||0)+1;el.dataset.fallback=String(n);if(n<a.length){el.src=a[n]}else{el.classList.add('imgfail')}}
+function cardImageCandidates(id,preferred){id=String(id||'');return [...new Set([preferred,'assets/cards/'+id+'.webp','https://www.dbz-dokkanbattle.com/img/character/card/'+id+'/card_'+id+'_thumb.png','https://dokkaninfo.com/assets/global/en/character/card/'+id+'.png'].filter(Boolean))]}
+function imageFallback(el,id,preferred){let a=cardImageCandidates(id,preferred),n=Number(el.dataset.fallback||0)+1;el.dataset.fallback=String(n);if(n<a.length){el.src=a[n]}else{el.classList.add('imgfail');reportBrokenImage(id)}}
+function reportBrokenImage(id){if(!id)return;try{let a=JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]');if(!a.includes(String(id))){a.push(String(id));localStorage.setItem('dokkanos-broken-images',JSON.stringify(a))}}catch(e){}}
 function isPlayableCard(card){
   if(!card)return false;
   const name=[card.name,card.title,card.fr?.name,card.fr?.title].filter(Boolean).join(' ');

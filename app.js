@@ -15,9 +15,9 @@ function confClass(c){return c==='Très forte'?'tf':c==='Forte'?'f':c==='Moyenne
 function restoreEdits(){
   let edits=[]; try{edits=JSON.parse(localStorage.getItem('dokkanos-edits')||'[]')}catch(e){}
   edits.forEach(a=>{let c=DB.cards.find(x=>x.boxId===a.boxId);if(!c)return;Object.assign(c,a);if(a.candidateId){c.image='assets/cards/'+a.candidateId+'.webp';let m=localized(META.cards?.[String(a.candidateId)]);if(m)Object.assign(c,m)}});
-  try{selectedTeam=JSON.parse(localStorage.getItem('dokkanos-team')||'[]').filter(id=>DB.cards.some(c=>c.boxId===id)).slice(0,6)}catch(e){selectedTeam=[]}
-  try{teamLeader=localStorage.getItem('dokkanos-team-leader')||'';if(teamLeader&&!DB.cards.some(c=>c.boxId===teamLeader))teamLeader=''}catch(e){teamLeader=''}
   try{inventory=JSON.parse(localStorage.getItem('dokkanos-inventory')||'{}')}catch(e){inventory={}}
+  try{selectedTeam=JSON.parse(localStorage.getItem('dokkanos-team')||'[]').filter(id=>DB.cards.some(c=>c.boxId===id)||(String(id).startsWith('MANUAL-')&&inventory[String(id).slice(7)]==='owned')).slice(0,6)}catch(e){selectedTeam=[]}
+  try{teamLeader=localStorage.getItem('dokkanos-team-leader')||'';if(teamLeader&&!resolveCard(teamLeader))teamLeader=''}catch(e){teamLeader=''}
   try{favorites=new Set(JSON.parse(localStorage.getItem('dokkanos-favorites')||'[]'))}catch(e){favorites=new Set()}
 }
 function searchText(c){return norm([c.boxId,c.candidateId,c.name,c.title,c.rarity,c.type,c.class,c.leader,c.passive,c.superAttack,c.active,...(c.categories||[]),...(c.links||[])].join(' '))}
@@ -151,7 +151,7 @@ function renderTeam(){
 function countBy(cards,key){let o={};cards.forEach(c=>{let v=c[key];if(v)o[v]=(o[v]||0)+1});return Object.entries(o).sort((a,b)=>b[1]-a[1])}
 function topMulti(cards,key,n=12){let o={};cards.forEach(c=>(c[key]||[]).forEach(v=>o[v]=(o[v]||0)+1));return Object.entries(o).sort((a,b)=>b[1]-a[1]).slice(0,n)}
 function synergyReadiness(cards){let withCats=cards.filter(c=>c.categories?.length).length,withLinks=cards.filter(c=>c.links?.length).length,leaders=cards.filter(c=>c.leader).length;return {withCats,withLinks,leaders,ready:cards.length?Math.round(((withCats+withLinks+leaders)/(cards.length*3))*100):0}}
-function collectionWarnings(valid,manualIds){let out=[],captured=new Set(valid.map(c=>String(c.candidateId)));for(const [id,state] of Object.entries(inventory)){if(state==='missing'&&captured.has(id))out.push('Conflit inventaire sur ID '+id)}let unresolved=(OVERLAP.conflicts||[]).filter(x=>x.status==='review').length;if(unresolved)out.push(unresolved+' conflit(s) de chevauchement encore à vérifier');let noMeta=valid.filter(c=>!c.name&&!c.title).length;if(noMeta)out.push(noMeta+' position(s) validée(s) sans fiche enrichie');return out}
+function collectionWarnings(valid,manualIds){let out=[],captured=new Set(valid.map(c=>String(c.candidateId)));for(const [id,state] of Object.entries(inventory)){if(state==='missing'&&captured.has(id))out.push('Conflit inventaire sur ID '+id)}let unresolved=(OVERLAP.conflicts||[]).filter(x=>x.status!=='resolved').length;if(unresolved)out.push(unresolved+' conflit(s) de chevauchement encore à vérifier');let noMeta=valid.filter(c=>!c.name&&!c.title).length;if(noMeta)out.push(noMeta+' position(s) validée(s) sans fiche enrichie');return out}
 function bars(title,rows,total){return `<div class="panel collection-panel"><h3>${title}</h3>${rows.map(([k,n])=>`<div class="metric-row"><div><span>${k}</span><b>${n}</b></div><div class="metric-track"><i style="width:${Math.max(2,Math.round(n/Math.max(1,total)*100))}%"></i></div></div>`).join('')||'<p class="muted">Pas encore de données.</p>'}</div>`}
 function renderAnalysis(){
   let el=$('#analysisContent');if(!el)return;

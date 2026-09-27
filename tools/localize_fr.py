@@ -4,7 +4,7 @@ Les clés techniques restent stables; l'UI consomme les champs fr lorsqu'ils exi
 Les dictionnaires sont volontairement versionnés et extensibles pour éviter les
 traductions automatiques incohérentes dans les termes Dokkan.
 """
-import json
+import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 NAME_PARTS={
@@ -50,6 +50,11 @@ def main():
         if c.get("class"):fr["class"]=CLASS_FR.get(c["class"],c["class"])
         if c.get("categories"):fr["categories"]=[CATEGORY_FR.get(x,x) for x in c["categories"]]
         if c.get("links"):fr["links"]=[LINK_FR.get(x,x) for x in c["links"]]
+        # Local fallback must never pretend untranslated EN is French.
+        fr["_fallbackFields"]=[k for k in ("name","categories","links") if (
+            (k=="name" and fr.get(k)==c.get(k) and re.search(r"\\b(?:Kid|Teen|Future|Captain|Android|Full Power|Master|Mercenary|Officer|King|Youth)\\b",str(c.get(k,"")),re.I)) or
+            (k in ("categories","links") and any(a==b and re.search(r"[A-Za-z]{4}",str(a)) for a,b in zip(fr.get(k,[]),c.get(k,[]))))
+        )]
     d["localization"]={"default":"fr","fallback":"source","categoryTerms":len(CATEGORY_FR),"linkTerms":len(LINK_FR)}
     p.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding="utf-8")
 if __name__=="__main__":main()

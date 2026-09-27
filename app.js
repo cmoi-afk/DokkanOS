@@ -1,4 +1,5 @@
-let DB={cards:[]}, META={cards:{}}, filter='all', query='', sortMode='box', selectedTeam=[];
+let DB={cards:[]}, META={cards:{}}, filter='all', query='', sortMode='box', selectedTeam=[], verifyLimit=30;
+const norm=s=>(s??'').toString().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 async function boot(){
   DB=await fetch('data.json').then(r=>r.json());
@@ -13,8 +14,9 @@ function restoreEdits(){
   edits.forEach(a=>{let c=DB.cards.find(x=>x.boxId===a.boxId);if(!c)return;Object.assign(c,a);if(a.candidateId){c.image='assets/cards/'+a.candidateId+'.webp';let m=META.cards?.[String(a.candidateId)];if(m)Object.assign(c,m)}});
   try{selectedTeam=JSON.parse(localStorage.getItem('dokkanos-team')||'[]').filter(id=>DB.cards.some(c=>c.boxId===id)).slice(0,6)}catch(e){selectedTeam=[]}
 }
+function searchText(c){return norm([c.boxId,c.candidateId,c.name,c.title,c.rarity,c.type,c.class,c.leader,c.passive,c.superAttack,c.active,...(c.categories||[]),...(c.links||[])].join(' '))}
 function visibleCards(){
-  let a=DB.cards.filter(c=>(filter==='all'||(filter==='valid'&&c.validated)||(filter==='check'&&!c.validated))&&(!query||(`${c.boxId} ${c.candidateId} ${c.name} ${c.title} ${c.rarity} ${c.type}`).toLowerCase().includes(query)));
+  let a=DB.cards.filter(c=>(filter==='all'||(filter==='valid'&&c.validated)||(filter==='check'&&!c.validated))&&(!query||searchText(c).includes(query)));
   if(sortMode==='confidence')a.sort((x,y)=>(y.inliers||0)-(x.inliers||0));
   if(sortMode==='id')a.sort((x,y)=>String(x.candidateId).localeCompare(String(y.candidateId)));
   return a;
@@ -32,9 +34,10 @@ function stats(){
   $('#progressText').textContent=(DB.cards.length?Math.round(v/DB.cards.length*100):0)+'% validé';
 }
 function renderVerify(){
-  let a=DB.cards.filter(c=>!c.validated).slice(0,30);
-  $('#verifyList').innerHTML=a.map(c=>`<div class="panel"><b>${c.boxId}</b><p class="muted">${c.capture} · ${c.position} · ${c.confidence}</p><div class="verify"><div><img src="${c.crop}"><label>Ta capture</label></div><div><img src="${c.image}"><label>ID ${c.candidateId}</label></div><div><img src="${c.runnerImage}"><label>ID ${c.runnerId}</label></div><button onclick="choose('${c.boxId}','${c.candidateId}')">Choisir 1</button><button onclick="choose('${c.boxId}','${c.runnerId}')">Choisir 2</button><button onclick="choose('${c.boxId}','')">Aucun</button></div></div>`).join('')||'<div class="empty">Tout est validé 🎉</div>';
+  let pending=DB.cards.filter(c=>!c.validated), a=pending.slice(0,verifyLimit);
+  $('#verifyList').innerHTML=a.map(c=>`<div class="panel"><b>${c.boxId}</b><p class="muted">${c.capture} · ${c.position} · ${c.confidence}</p><div class="verify"><div><img src="${c.crop}"><label>Ta capture</label></div><div><img src="${c.image}"><label>ID ${c.candidateId}</label></div><div><img src="${c.runnerImage}"><label>ID ${c.runnerId}</label></div><button onclick="choose('${c.boxId}','${c.candidateId}')">Choisir 1</button><button onclick="choose('${c.boxId}','${c.runnerId}')">Choisir 2</button><button onclick="choose('${c.boxId}','')">Aucun</button></div></div>` ).join('')+(pending.length>verifyLimit?`<button class="loadmore" onclick="loadMoreVerify()">Afficher ${Math.min(30,pending.length-verifyLimit)} de plus · ${pending.length-verifyLimit} restantes</button>`:'')||'<div class="empty">Tout est validé 🎉</div>';
 }
+function loadMoreVerify(){verifyLimit+=30;renderVerify()}
 function saveEdits(){localStorage.setItem('dokkanos-edits',JSON.stringify(DB.cards.filter(x=>x._edited).map(x=>({boxId:x.boxId,candidateId:x.candidateId,validated:x.validated,confidence:x.confidence,_edited:true}))))}
 function choose(id,val){
   let c=DB.cards.find(x=>x.boxId===id);if(!c)return;c._edited=true;
@@ -52,10 +55,12 @@ function toggleTeam(id){
   if(selectedTeam.includes(id))selectedTeam=selectedTeam.filter(x=>x!==id);else if(selectedTeam.length<6)selectedTeam.push(id);else return alert('Équipe complète : 6 cartes maximum.');
   localStorage.setItem('dokkanos-team',JSON.stringify(selectedTeam));renderTeam();openCard(id);
 }
+function commonValues(cards,key){if(cards.length<2)return[];let count={};cards.forEach(c=>new Set(c[key]||[]).forEach(v=>count[v]=(count[v]||0)+1));return Object.entries(count).filter(([,n])=>n>=2).sort((a,b)=>b[1]-a[1]).slice(0,8)}
+function teamInsights(){let cards=selectedTeam.map(id=>DB.cards.find(c=>c.boxId===id)).filter(Boolean),cats=commonValues(cards,'categories'),links=commonValues(cards,'links');if(!cards.length)return '<p class="muted">Ajoute des cartes pour analyser les synergies.</p>';return `<div class="team-insights"><h3>Synergies détectées</h3><p class="muted">${cards.filter(c=>c.name||c.categories?.length||c.links?.length).length}/${cards.length} cartes avec données enrichies</p>${cats.length?`<h4>Catégories communes</h4><div class="tags">${cats.map(([x,n])=>`<span>${x} · ${n}</span>`).join('')}</div>`:''}${links.length?`<h4>Liens communs</h4><div class="tags">${links.map(([x,n])=>`<span>${x} · ${n}</span>`).join('')}</div>`:''}${!cats.length&&!links.length?'<p class="muted">Les synergies apparaîtront automatiquement à mesure que les fiches seront enrichies.</p>':''}</div>`}
 function renderTeam(){
   let el=$('#teamSlots');if(!el)return;
   el.innerHTML=[0,1,2,3,4,5].map(i=>{let id=selectedTeam[i],c=DB.cards.find(x=>x.boxId===id);return c?`<button class="slot filled" onclick="openCard('${id}')"><img src="${c.image}"><small>${c.name||c.candidateId}</small></button>`:`<div class="slot"><b>+</b><small>Slot ${i+1}</small></div>`}).join('');
-  $('#teamCount').textContent=selectedTeam.length+'/6';
+  $('#teamCount').textContent=selectedTeam.length+'/6';let ins=$('#teamInsights');if(ins)ins.innerHTML=teamInsights();
 }
 function renderAnalysis(){
   let el=$('#analysisContent');if(!el)return;
@@ -65,7 +70,8 @@ function renderAnalysis(){
 }
 function switchView(v){$$('.view').forEach(x=>x.classList.remove('on'));$('#'+v).classList.add('on');$$('nav button').forEach(x=>x.classList.toggle('on',x.dataset.v===v));if(v==='teams')renderTeam();if(v==='analysis')renderAnalysis()}
 document.addEventListener('click',e=>{if(e.target.matches('.chip')){$$('.chip').forEach(x=>x.classList.remove('on'));e.target.classList.add('on');filter=e.target.dataset.f;render()}if(e.target.matches('nav button'))switchView(e.target.dataset.v)});
-document.addEventListener('input',e=>{if(e.target.id==='search'){query=e.target.value.toLowerCase();render()}});
+document.addEventListener('input',e=>{if(e.target.id==='search'){query=norm(e.target.value);render()}});
 document.addEventListener('change',e=>{if(e.target.id==='sort'){sortMode=e.target.value;render()}});
-boot();
+window.addEventListener('online',()=>document.body.classList.remove('offline'));window.addEventListener('offline',()=>document.body.classList.add('offline'));if(!navigator.onLine)document.body.classList.add('offline');
+boot().catch(()=>{document.body.innerHTML='<div class="fatal"><h2>DokkanOS</h2><p>Impossible de charger la Box. Réessaie avec une connexion internet.</p><button onclick="location.reload()">Réessayer</button></div>'});
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});

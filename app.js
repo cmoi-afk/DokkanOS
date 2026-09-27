@@ -68,7 +68,15 @@ function bindVerifyChoices(){
   },true);
 }
 bindVerifyChoices();
-function saveEdits(){localStorage.setItem('dokkanos-edits',JSON.stringify(DB.cards.filter(x=>x._edited).map(x=>({boxId:x.boxId,candidateId:x.candidateId,validated:x.validated,confidence:x.confidence,_edited:true}))))}
+function saveEdits(){
+  try{
+    localStorage.setItem('dokkanos-edits',JSON.stringify(DB.cards.filter(x=>x._edited).map(x=>({boxId:x.boxId,candidateId:x.candidateId,validated:x.validated,confidence:x.confidence,_edited:true}))));
+    return true;
+  }catch(e){
+    console.warn('DokkanOS: sauvegarde locale impossible',e);
+    return false;
+  }
+}
 function choose(id,val){
   let c=DB.cards.find(x=>x.boxId===id);if(!c)return;
   c._edited=true;
@@ -82,8 +90,10 @@ function choose(id,val){
     c.type=candidate?.type||c.type;
     c.validated=true;c.confidence='Validée manuellement';
   }else{c.candidateId='';c.validated=false;c.confidence='À revoir'}
-  saveEdits();render();stats();renderDuplicates();renderMissing();renderInventory();renderManualOwned();renderAnalysis();
-  let status=$('#verificationStatus');if(status){status.textContent=val?'Carte '+id+' validée : '+(c.name||'ID '+val)+' (ID '+val+').':'Carte '+id+' laissée à vérifier.';status.hidden=false}
+  const saved=saveEdits();
+  let status=$('#verificationStatus');
+  if(status){status.textContent=val?'Carte '+id+' validée : '+(c.name||'ID '+val)+' (ID '+val+').'+(saved?'':' Attention : sauvegarde locale indisponible.'):'Carte '+id+' laissée à vérifier.';status.hidden=false}
+  render();stats();renderDuplicates();renderMissing();renderInventory();renderManualOwned();renderAnalysis();
 }
 
 function skillText(v){if(!v)return '—';if(typeof v==='string')return v;if(Array.isArray(v))return v.map(skillText).join(' · ');return [v.name,v.description,v.condition].filter(Boolean).join(' — ')||'—'}

@@ -30,6 +30,7 @@ jobs:
           if git diff --quiet card-meta.json catalog.json collection.json overlap-map.json overlap-conflicts.json data-quality.json semantic-quality.json semantic-quality.json data-quality.json overlap-conflicts.json; then exit 0; fi
           git config user.name "DokkanOS Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add card-meta.json catalog.json collection.json overlap-map.json
-          git commit -m "data: enrich card identities from Dokkan dataset"
-          git push
+          git add card-meta.json catalog.json collection.json overlap-map.json overlap-conflicts.json data-quality.json semantic-quality.json
+          git commit -m "data: enrich and audit Dokkan card metadata"
+          git pull --rebase origin dev/v0.3-foundations
+          git push origin HEAD:dev/v0.3-foundations

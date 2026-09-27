@@ -29,9 +29,9 @@ jobs:
           vm.createContext(context);
           vm.runInContext(script+'\nCATALOG='+JSON.stringify(catalogue)+'; DB={cards:[]}; inventory={};',context);
           assert.equal(vm.runInContext('catalogFamilies().length',context),2);
-          vm.runInContext("setInventory('100','owned')",context);
+          vm.runInContext("inventory['100']='owned'",context);
           assert.equal(vm.runInContext("inventoryState({id:'102'})",context),'owned');
-          vm.runInContext("setInventory('102','missing')",context);
+          vm.runInContext("delete inventory['100']; inventory['102']='missing'",context);
           assert.equal(vm.runInContext("inventoryState({id:'100'})",context),'missing');
           assert.equal(vm.runInContext('catalogFamilies().length',context),2);
           JS

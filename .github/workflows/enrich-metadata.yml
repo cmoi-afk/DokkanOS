@@ -17,13 +17,14 @@ jobs:
         with:
           python-version: "3.12"
       - run: python tools/dedupe_overlaps.py
+      - run: python tools/build_overlap_conflicts.py
       - run: python tools/enrich_identity.py
       - run: python tools/enrich_kits.py
       - run: python tools/localize_fr.py
       - run: python tools/build_catalog.py
       - name: Commit metadata
         run: |
-          if git diff --quiet card-meta.json catalog.json collection.json overlap-map.json; then exit 0; fi
+          if git diff --quiet card-meta.json catalog.json collection.json overlap-map.json overlap-conflicts.json overlap-conflicts.json; then exit 0; fi
           git config user.name "DokkanOS Bot"
           git config user.email "actions@users.noreply.github.com"
           git add card-meta.json catalog.json collection.json overlap-map.json

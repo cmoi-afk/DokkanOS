@@ -1,0 +1,22 @@
+{
+  "version": "0.3",
+  "schema": "dokkanos-card-meta-v1",
+  "cards": {},
+  "fields": [
+    "name",
+    "title",
+    "rarity",
+    "type",
+    "class",
+    "eza",
+    "seza",
+    "leader",
+    "passive",
+    "superAttack",
+    "active",
+    "categories",
+    "links",
+    "awakening",
+    "notes"
+  ]
+}

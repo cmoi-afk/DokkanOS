@@ -1,14 +1,16 @@
-let DB={cards:[]}, filter='all', query='', sortMode='box', selectedTeam=[];
+let DB={cards:[]}, META={cards:{}}, filter='all', query='', sortMode='box', selectedTeam=[];
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 async function boot(){
   DB=await fetch('data.json').then(r=>r.json());
-  restoreEdits();
+  try{META=await fetch('card-meta.json').then(r=>r.ok?r.json():({cards:{}}))}catch(e){META={cards:{}}}
+  applyMetadata(); restoreEdits();
   render(); stats(); renderTeam(); renderAnalysis();
 }
+function applyMetadata(){DB.cards.forEach(c=>{let m=META.cards?.[String(c.candidateId)];if(m)Object.assign(c,m)})}
 function confClass(c){return c==='Très forte'?'tf':c==='Forte'?'f':c==='Moyenne'?'m':c==='Validée manuellement'?'manual':'v'}
 function restoreEdits(){
   let edits=[]; try{edits=JSON.parse(localStorage.getItem('dokkanos-edits')||'[]')}catch(e){}
-  edits.forEach(a=>{let c=DB.cards.find(x=>x.boxId===a.boxId);if(!c)return;Object.assign(c,a);if(a.candidateId)c.image='assets/cards/'+a.candidateId+'.webp';});
+  edits.forEach(a=>{let c=DB.cards.find(x=>x.boxId===a.boxId);if(!c)return;Object.assign(c,a);if(a.candidateId){c.image='assets/cards/'+a.candidateId+'.webp';let m=META.cards?.[String(a.candidateId)];if(m)Object.assign(c,m)}});
   try{selectedTeam=JSON.parse(localStorage.getItem('dokkanos-team')||'[]').filter(id=>DB.cards.some(c=>c.boxId===id)).slice(0,6)}catch(e){selectedTeam=[]}
 }
 function visibleCards(){
@@ -36,7 +38,7 @@ function renderVerify(){
 function saveEdits(){localStorage.setItem('dokkanos-edits',JSON.stringify(DB.cards.filter(x=>x._edited).map(x=>({boxId:x.boxId,candidateId:x.candidateId,validated:x.validated,confidence:x.confidence,_edited:true}))))}
 function choose(id,val){
   let c=DB.cards.find(x=>x.boxId===id);if(!c)return;c._edited=true;
-  if(val){c.candidateId=val;c.image='assets/cards/'+val+'.webp';c.validated=true;c.confidence='Validée manuellement'}
+  if(val){c.candidateId=val;c.image='assets/cards/'+val+'.webp';let m=META.cards?.[String(val)];if(m)Object.assign(c,m);c.validated=true;c.confidence='Validée manuellement'}
   else{c.candidateId='';c.validated=false;c.confidence='À revoir'}
   saveEdits();render();stats();renderAnalysis();
 }
@@ -57,9 +59,9 @@ function renderTeam(){
 }
 function renderAnalysis(){
   let el=$('#analysisContent');if(!el)return;
-  let valid=DB.cards.filter(c=>c.validated), manual=valid.filter(c=>c.confidence==='Validée manuellement').length;
+  let valid=DB.cards.filter(c=>c.validated), manual=valid.filter(c=>c.confidence==='Validée manuellement').length, enriched=valid.filter(c=>c.name||c.title||c.rarity||c.type).length;
   let conf={};DB.cards.forEach(c=>conf[c.confidence]=(conf[c.confidence]||0)+1);
-  el.innerHTML=`<div class="analysis-grid"><div class="panel"><h3>Qualité de la Box</h3><b class="big">${valid.length} / ${DB.cards.length}</b><p class="muted">positions validées · ${manual} correction(s) manuelle(s)</p></div><div class="panel"><h3>Identifiants uniques</h3><b class="big">${new Set(valid.map(c=>c.candidateId).filter(Boolean)).size}</b><p class="muted">IDs différents parmi les positions validées</p></div></div><div class="panel"><h3>Confiance des détections</h3>${Object.entries(conf).map(([k,v])=>`<div class="row"><span><i class="legend ${confClass(k)}"></i>${k}</span><b>${v}</b></div>`).join('')}</div><div class="panel"><h3>Prochaine étape</h3><p class="muted">Les fiches Dokkan détaillées (nom, rareté, type, leader, passif, liens et catégories) seront enrichies à partir des IDs validés. Le moteur de synergies utilisera ensuite ces données.</p></div>`;
+  el.innerHTML=`<div class="analysis-grid"><div class="panel"><h3>Qualité de la Box</h3><b class="big">${valid.length} / ${DB.cards.length}</b><p class="muted">positions validées · ${manual} correction(s) manuelle(s) · ${enriched} fiche(s) enrichie(s)</p></div><div class="panel"><h3>Identifiants uniques</h3><b class="big">${new Set(valid.map(c=>c.candidateId).filter(Boolean)).size}</b><p class="muted">IDs différents parmi les positions validées</p></div></div><div class="panel"><h3>Confiance des détections</h3>${Object.entries(conf).map(([k,v])=>`<div class="row"><span><i class="legend ${confClass(k)}"></i>${k}</span><b>${v}</b></div>`).join('')}</div><div class="panel"><h3>Prochaine étape</h3><p class="muted">Les fiches Dokkan détaillées (nom, rareté, type, leader, passif, liens et catégories) seront enrichies à partir des IDs validés. Le moteur de synergies utilisera ensuite ces données.</p></div>`;
 }
 function switchView(v){$$('.view').forEach(x=>x.classList.remove('on'));$('#'+v).classList.add('on');$$('nav button').forEach(x=>x.classList.toggle('on',x.dataset.v===v));if(v==='teams')renderTeam();if(v==='analysis')renderAnalysis()}
 document.addEventListener('click',e=>{if(e.target.matches('.chip')){$$('.chip').forEach(x=>x.classList.remove('on'));e.target.classList.add('on');filter=e.target.dataset.f;render()}if(e.target.matches('nav button'))switchView(e.target.dataset.v)});

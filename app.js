@@ -7,11 +7,12 @@ async function boot(){
   applyMetadata(); restoreEdits();
   render(); stats(); renderTeam(); renderAnalysis();
 }
-function applyMetadata(){DB.cards.forEach(c=>{let m=META.cards?.[String(c.candidateId)];if(m)Object.assign(c,m)})}
+function localized(m){if(!m)return null;let fr=m.fr||{};return {...m,name:fr.name||m.name,title:fr.title||m.title,type:fr.type||m.type,class:fr.class||m.class,categories:fr.categories||m.categories,links:fr.links||m.links,leader:fr.leader||m.leader,passive:fr.passive||m.passive,superAttack:fr.superAttack||m.superAttack,active:fr.active||m.active}}
+function applyMetadata(){DB.cards.forEach(c=>{let m=localized(META.cards?.[String(c.candidateId)]);if(m)Object.assign(c,m)})}
 function confClass(c){return c==='Très forte'?'tf':c==='Forte'?'f':c==='Moyenne'?'m':c==='Validée manuellement'?'manual':'v'}
 function restoreEdits(){
   let edits=[]; try{edits=JSON.parse(localStorage.getItem('dokkanos-edits')||'[]')}catch(e){}
-  edits.forEach(a=>{let c=DB.cards.find(x=>x.boxId===a.boxId);if(!c)return;Object.assign(c,a);if(a.candidateId){c.image='assets/cards/'+a.candidateId+'.webp';let m=META.cards?.[String(a.candidateId)];if(m)Object.assign(c,m)}});
+  edits.forEach(a=>{let c=DB.cards.find(x=>x.boxId===a.boxId);if(!c)return;Object.assign(c,a);if(a.candidateId){c.image='assets/cards/'+a.candidateId+'.webp';let m=localized(META.cards?.[String(a.candidateId)]);if(m)Object.assign(c,m)}});
   try{selectedTeam=JSON.parse(localStorage.getItem('dokkanos-team')||'[]').filter(id=>DB.cards.some(c=>c.boxId===id)).slice(0,6)}catch(e){selectedTeam=[]}
 }
 function searchText(c){return norm([c.boxId,c.candidateId,c.name,c.title,c.rarity,c.type,c.class,c.leader,c.passive,c.superAttack,c.active,...(c.categories||[]),...(c.links||[])].join(' '))}
@@ -41,7 +42,7 @@ function loadMoreVerify(){verifyLimit+=30;renderVerify()}
 function saveEdits(){localStorage.setItem('dokkanos-edits',JSON.stringify(DB.cards.filter(x=>x._edited).map(x=>({boxId:x.boxId,candidateId:x.candidateId,validated:x.validated,confidence:x.confidence,_edited:true}))))}
 function choose(id,val){
   let c=DB.cards.find(x=>x.boxId===id);if(!c)return;c._edited=true;
-  if(val){c.candidateId=val;c.image='assets/cards/'+val+'.webp';let m=META.cards?.[String(val)];if(m)Object.assign(c,m);c.validated=true;c.confidence='Validée manuellement'}
+  if(val){c.candidateId=val;c.image='assets/cards/'+val+'.webp';let m=localized(META.cards?.[String(val)]);if(m)Object.assign(c,m);c.validated=true;c.confidence='Validée manuellement'}
   else{c.candidateId='';c.validated=false;c.confidence='À revoir'}
   saveEdits();render();stats();renderAnalysis();
 }

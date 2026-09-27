@@ -8,12 +8,13 @@ import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 NAME_PARTS={
- "Super Saiyan":"Super Saiyan","Captain Ginyu":"Capitaine Ginyu","Android #":"Cyborg #",
- "Android ":"Cyborg ","Kid":"Enfant","Teen":"Adolescent","Future":"Futur",
- "Full Power":"Pleine puissance","Golden Frieza":"Golden Freezer","Frieza":"Freezer",
- "Master Roshi":"Tortue Géniale","Piccolo":"Piccolo","Krillin":"Krilin",
- "Gohan":"Gohan","Goku":"Goku","Vegeta":"Vegeta","Trunks":"Trunks","Cell":"Cell",
- "Majin Buu":"Boo","Buu":"Boo"
+ "Golden Frieza":"Golden Freezer","Mecha Frieza":"Mecha Freezer","Frieza":"Freezer",
+ "Captain Ginyu":"Ginyu","Android #":"C-","Android ":"C-","Master Roshi":"Kamesennin",
+ "Mercenary Tao":"Tao Pai Pai","Tien":"Tenshinhan","Chiaotzu":"Chaozu","Jeice":"Jeese","Recoome":"Reacum","Burter":"Butta",
+ "Pikkon":"Paikuhan","King Cold":"Roi Cold","King Vegeta":"Roi Vegeta","Kid Buu":"Boo (petit)","Super Buu":"Boo (super)",
+ "Gohan (Kid)":"Son Gohan (petit)","Gohan (Youth)":"Son Gohan (enfant)","Gohan (Teen)":"Son Gohan (jeune)",
+ "Goten (Kid)":"Son Goten (petit)","Trunks (Kid)":"Trunks (petit)","Bulma (Youth)":"Bulma (enfant)","Pan (Kid)":"Pan (petit)",
+ "Goku":"Son Goku","Buu":"Boo","Future":"futur","Angel":"ange","Youth":"enfant","Teen":"jeune","Kid":"petit"
 }
 TYPE_FR={"AGL":"AGI","TEQ":"TEC","INT":"INT","STR":"PUI","PHY":"END"}
 CLASS_FR={"Super":"Super","Extreme":"Extrême"}

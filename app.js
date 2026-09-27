@@ -48,8 +48,19 @@ function stats(){
   $('#progressBar').style.width=(DB.cards.length?Math.round(v/DB.cards.length*100):0)+'%';
   $('#progressText').textContent=(DB.cards.length?Math.round(v/DB.cards.length*100):0)+'% validé';
 }
+const NON_PLAYABLE_NAME_RE=/(statue de (m\.?\s*satan|jackie chun)|hercule statue|mr\.? satan statue|jackie chun statue)/i;
+function isPlayableCard(card){
+  if(!card)return false;
+  const name=[card.name,card.title,card.fr?.name,card.fr?.title].filter(Boolean).join(' ');
+  if(NON_PLAYABLE_NAME_RE.test(name))return false;
+  const leader=String(card.leader||card.fr?.leader||'');
+  const hp=Number(card.hpMax??card.hp_max??card.hp??NaN),atk=Number(card.atkMax??card.atk_max??card.atk??NaN),def=Number(card.defMax??card.def_max??card.def??NaN);
+  if(/personnage à vendre|character to sell/i.test(leader))return false;
+  if(hp===0&&atk===0&&def===0)return false;
+  return true;
+}
 function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:(cat.name||m.name||'').replace(/Metal Cooler/g,'Métal Cooler').replace(/Metal Cooler Army/g,'Armée de Métal Cooler'),categories:frList(m.categories||cat.categories),links:frList(m.links||cat.links),image:cat.image||('assets/cards/'+id+'.webp')}}
-function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach(c=>{let id=String(c.id||'');if(id&&!seen.has(id)){seen.add(id);out.push(verifyCandidate(id))}});Object.keys(META.cards||{}).forEach(id=>{if(!seen.has(String(id))){seen.add(String(id));out.push(verifyCandidate(id))}});return out}
+function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach(c=>{let id=String(c.id||'');if(id&&!seen.has(id)){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(id);out.push(card)}}});Object.keys(META.cards||{}).forEach(id=>{if(!seen.has(String(id))){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(String(id));out.push(card)}}});return out}
 let verifyDraft={boxId:'',cardId:'',query:''};
 
 function verifyPending(){

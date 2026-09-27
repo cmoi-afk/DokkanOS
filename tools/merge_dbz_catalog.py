@@ -62,6 +62,9 @@ def main():
         card = by_id.get(card_id)
         if card is None:
             if source["rarity"] == "SR":
+                sname=(source.get("name") or "").lower()
+                if any(token in sname for token in NON_PLAYABLE):
+                    continue
                 reviewed.append(source)
                 continue
             if source["rarity"] not in {"SSR", "UR", "LR"}:

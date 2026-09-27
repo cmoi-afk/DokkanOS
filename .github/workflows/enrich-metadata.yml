@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [dev/v0.3-foundations]
-    paths: [data.json, tools/enrich_identity.py]
+    paths: [data.json, tools/enrich_identity.py, tools/enrich_kits.py, tools/localize_fr.py]
 permissions:
   contents: write
 jobs:

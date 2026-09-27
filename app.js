@@ -50,75 +50,84 @@ function stats(){
 }
 function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:(cat.name||m.name||'').replace(/Metal Cooler/g,'Métal Cooler').replace(/Metal Cooler Army/g,'Armée de Métal Cooler'),categories:frList(m.categories||cat.categories),links:frList(m.links||cat.links),image:cat.image||('assets/cards/'+id+'.webp')}}
 function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach(c=>{let id=String(c.id||'');if(id&&!seen.has(id)){seen.add(id);out.push(verifyCandidate(id))}});Object.keys(META.cards||{}).forEach(id=>{if(!seen.has(String(id))){seen.add(String(id));out.push(verifyCandidate(id))}});return out}
-function verifySearch(boxId,value){
-  const host=document.querySelector('[data-verify-results="'+CSS.escape(String(boxId))+'"]');if(!host)return;
-  const raw=String(value||'').trim(),q=norm(raw);if(q.length<1){host.innerHTML='';return}
+let verifyDraft={boxId:'',cardId:'',query:''};
+
+function verifyPending(){
+  const priority=new Set((OVERLAP.conflicts||[]).flatMap(x=>x.observations||[]));
+  return DB.cards.filter(c=>!c.validated).sort((a,b)=>(priority.has(b.boxId)?1:0)-(priority.has(a.boxId)?1:0));
+}
+function verifySelectPosition(boxId){
+  verifyDraft={boxId:String(boxId),cardId:'',query:''};
+  renderVerify();
+  requestAnimationFrame(()=>{const x=document.getElementById('verifyFinder');if(x){x.focus();x.scrollIntoView({behavior:'smooth',block:'center'})}});
+}
+function verifySetQuery(value){verifyDraft.query=String(value||'');renderVerifyResults()}
+function verifyResults(){
+  const raw=verifyDraft.query.trim(),q=norm(raw);if(!q)return [];
   const terms=q.split(/\s+/).filter(Boolean);
-  const rows=verifyCatalogue().map(card=>{
+  return verifyCatalogue().map(card=>{
     const hay=norm([card.id,card.name,card.title,card.rarity,card.type,card.class,...(card.categories||[])].join(' '));
-    let score=0;for(const t of terms)if(hay.includes(t))score+=1;
-    if(String(card.id)===raw)score+=100;if(norm(card.name||'').startsWith(q))score+=20;if(hay.includes(q))score+=10;
+    let score=0;for(const t of terms)if(hay.includes(t))score+=2;
+    if(String(card.id)===raw)score+=200;if(norm(card.name||'').startsWith(q))score+=40;if(hay.includes(q))score+=20;
     return {card,score};
-  }).filter(x=>x.score>0).sort((x,y)=>y.score-x.score||String(x.card.name||'').localeCompare(String(y.card.name||''),'fr')).slice(0,60);
-  host.innerHTML=rows.length?rows.map(({card})=>'<button type="button" class="verify-search-card" data-pick-box="'+String(boxId).replace(/"/g,'&quot;')+'" data-pick-card="'+String(card.id).replace(/"/g,'&quot;')+'"><img loading="lazy" src="'+(card.image||'')+'" onerror="this.classList.add(\'imgfail\')"><b>'+(card.name||'ID '+card.id)+'</b><small>'+([card.rarity||'',card.type||'','ID '+card.id].filter(Boolean).join(' · '))+'</small></button>').join(''):'<div class="empty compact">Aucune carte trouvée. Essaie une partie du nom ou son ID.</div>';
+  }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||String(a.card.name||'').localeCompare(String(b.card.name||''),'fr')).slice(0,80).map(x=>x.card);
 }
-function verifyPick(boxId,cardId){
+function renderVerifyResults(){
+  const host=document.getElementById('verifyResults');if(!host)return;
+  const rows=verifyResults();
+  host.innerHTML=verifyDraft.query.trim()?(rows.map(card=>'<label class="verify-result-row"><input type="radio" name="verify-card" value="'+String(card.id)+'" '+(verifyDraft.cardId===String(card.id)?'checked':'')+'><img src="'+(card.image||'')+'" onerror="this.classList.add(\'imgfail\')"><span><b>'+(card.name||'ID '+card.id)+'</b><small>'+[card.rarity||'',card.type||'','ID '+card.id].filter(Boolean).join(' · ')+'</small></span></label>').join('')||'<div class="empty compact">Aucune carte trouvée. Essaie un autre mot ou l’ID Dokkan.</div>'):'<div class="verify-tip">Saisis un nom ou un ID pour afficher les cartes.</div>';
+}
+function verifyChooseCard(id){
+  verifyDraft.cardId=String(id||'');
+  const btn=document.getElementById('verifyConfirm');if(btn)btn.disabled=!verifyDraft.cardId;
+  document.querySelectorAll('#verifyResults .verify-result-row').forEach(row=>row.classList.toggle('selected',row.querySelector('input')?.value===verifyDraft.cardId));
+}
+function verifyConfirm(){
+  const boxId=verifyDraft.boxId,cardId=verifyDraft.cardId;
   const c=DB.cards.find(x=>String(x.boxId)===String(boxId));
-  if(!c){alert('DokkanOS : position introuvable ('+boxId+').');return false}
-  const candidate=verifyCandidate(cardId);
-  if(!candidate){alert('DokkanOS : carte introuvable ('+cardId+').');return false}
-  c._edited=true;c.candidateId=String(cardId);c.image=candidate.image||('assets/cards/'+cardId+'.webp');
-  c.name=candidate.name||c.name;c.rarity=candidate.rarity||c.rarity;c.type=candidate.type||c.type;
-  const m=localized(META.cards?.[String(cardId)]);if(m)Object.assign(c,m);
-  c.validated=true;c.confidence='Validée manuellement';
-  saveEdits();
-  const status=$('#verificationStatus');if(status){status.textContent='✓ '+(c.name||'ID '+cardId)+' validée pour '+boxId+'.';status.hidden=false}
+  if(!c||!cardId){verifyMessage('Choisis d’abord une position et une carte.','error');return}
+  const candidate=verifyCandidate(cardId);if(!candidate){verifyMessage('Carte ID '+cardId+' introuvable dans le catalogue.','error');return}
+  c._edited=true;
+  const m=localized(META.cards?.[cardId]);if(m)Object.assign(c,m);
+  c.candidateId=cardId;c.image=candidate.image||('assets/cards/'+cardId+'.webp');c.name=candidate.name||c.name;c.rarity=candidate.rarity||c.rarity;c.type=candidate.type||c.type;c.validated=true;c.confidence='Validée manuellement';
+  const saved=saveEdits();
+  verifyDraft={boxId:'',cardId:'',query:''};
   render();stats();renderDuplicates();renderMissing();renderInventory();renderManualOwned();renderAnalysis();
-  return false;
+  verifyMessage('✓ '+(c.name||'ID '+cardId)+' a été validée.'+(saved?'':' Sauvegarde locale indisponible.'),saved?'ok':'error');
 }
+function verifySkip(){
+  const c=DB.cards.find(x=>String(x.boxId)===String(verifyDraft.boxId));if(c){c._edited=true;c.validated=false;c.confidence='À revoir';saveEdits()}
+  verifyDraft={boxId:'',cardId:'',query:''};renderVerify();verifyMessage('Position laissée à vérifier.','ok');
+}
+function verifyCancel(){verifyDraft={boxId:'',cardId:'',query:''};renderVerify()}
+function verifyMessage(msg,kind='ok'){const el=document.getElementById('verificationStatus');if(!el)return;el.textContent=msg;el.className='verify-status '+kind;el.hidden=false}
 function renderVerify(){
-  let priority=new Set((OVERLAP.conflicts||[]).flatMap(x=>x.observations||[])), pending=DB.cards.filter(c=>!c.validated).sort((a,b)=>(priority.has(b.boxId)?1:0)-(priority.has(a.boxId)?1:0)), a=pending.slice(0,verifyLimit);
-  $('#verifyList').innerHTML=a.map(c=>{let one=verifyCandidate(c.candidateId),two=verifyCandidate(c.runnerId);return `<article class="verify-workbench"><div class="verify-head"><div><h3>${c.boxId}</h3><p class="muted">${c.capture||''} · ${c.position||''}</p></div><span class="badge neutral">${c.confidence||'À vérifier'}</span></div><div class="verify-capture"><img src="${c.crop}" onerror="this.classList.add('imgfail')"><small>Carte détectée dans ta capture</small></div><div class="verify-help">Choisis une suggestion seulement si l’image correspond vraiment. Sinon, utilise la recherche : elle parcourt tout le catalogue disponible, pas uniquement les deux candidats automatiques.</div><div class="verify-suggestions">${[one,two].filter(Boolean).map((x,i)=>`<button type="button" class="verify-choice" onclick="verifyPick('${encodeURIComponent(c.boxId)}','${encodeURIComponent(x.id)}',this)"><img src="${x.image}" onerror="this.classList.add('imgfail')"><b>${x.name||'Suggestion '+(i+1)}</b><small>${x.rarity||''} · ${x.type||''} · ID ${x.id}</small></button>`).join('')}</div><div class="verify-search"><input class="search" style="margin-top:0" placeholder="Chercher la bonne carte : nom ou ID…" oninput="verifySearch('${c.boxId}',this.value)"><div class="verify-search-results" data-verify-results="${c.boxId}"></div></div><div class="verify-actions"><button onclick="choose('${c.boxId}','')">Aucune / à revoir</button></div></article>`}).join('')+(pending.length>verifyLimit?`<button class="loadmore" onclick="loadMoreVerify()">Afficher ${Math.min(30,pending.length-verifyLimit)} de plus · ${pending.length-verifyLimit} restantes</button>`:'')||'<div class="empty">Tout est validé 🎉</div>';
+  const root=document.getElementById('verifyList');if(!root)return;
+  const pending=verifyPending(),selected=verifyDraft.boxId?DB.cards.find(x=>String(x.boxId)===verifyDraft.boxId):null;
+  if(selected){
+    root.innerHTML='<section class="verify-v2-editor"><button type="button" class="verify-back" id="verifyCancel">‹ Retour à la liste</button><div class="verify-v2-source"><img src="'+(selected.crop||selected.image||'')+'" onerror="this.classList.add(\'imgfail\')"><div><small>Position à identifier</small><h3>'+selected.boxId+'</h3><p>'+(selected.capture||'')+' '+(selected.position||'')+'</p></div></div><label class="verify-finder-label" for="verifyFinder">Rechercher la carte correspondante</label><input id="verifyFinder" class="search verify-finder" autocomplete="off" placeholder="Nom du personnage ou ID Dokkan…" value="'+verifyDraft.query.replace(/"/g,'&quot;')+'"><div id="verifyResults" class="verify-v2-results"></div><div class="verify-v2-confirm"><div id="verifySelectionText">'+(verifyDraft.cardId?'Carte sélectionnée : ID '+verifyDraft.cardId:'Sélectionne une carte dans les résultats')+'</div><button type="button" id="verifyConfirm" class="primary" '+(verifyDraft.cardId?'':'disabled')+'>Valider cette carte</button><button type="button" id="verifySkip">Laisser à vérifier</button></div></section>';
+    renderVerifyResults();return;
+  }
+  root.innerHTML='<div class="verify-v2-summary"><b>'+pending.length+'</b><span>positions restent à identifier</span></div><div class="verify-v2-list">'+pending.slice(0,verifyLimit).map(c=>'<button type="button" class="verify-position" data-verify-position="'+String(c.boxId).replace(/"/g,'&quot;')+'"><img src="'+(c.crop||c.image||'')+'" onerror="this.classList.add(\'imgfail\')"><span><b>'+c.boxId+'</b><small>'+(c.capture||'')+' · '+(c.position||'')+'</small><em>Identifier ›</em></span></button>').join('')+'</div>'+(pending.length>verifyLimit?'<button class="loadmore" id="verifyMore">Afficher '+Math.min(30,pending.length-verifyLimit)+' de plus · '+(pending.length-verifyLimit)+' restantes</button>':'')+(pending.length?'':'<div class="empty">Tout est validé 🎉</div>');
 }
 function loadMoreVerify(){verifyLimit+=30;renderVerify()}
-function bindVerifyChoices(){
-  if(document.documentElement.dataset.verifyChoicesBound==='2')return;
-  document.documentElement.dataset.verifyChoicesBound='2';
-  document.addEventListener('click',function(e){
-    const btn=e.target.closest&&e.target.closest('[data-pick-card]');
-    if(!btn)return;
-    e.preventDefault();e.stopPropagation();
-    verifyPick(btn.getAttribute('data-pick-box'),btn.getAttribute('data-pick-card'));
-  },true);
+function bindVerifyV2(){
+  document.addEventListener('input',e=>{if(e.target.id==='verifyFinder')verifySetQuery(e.target.value)});
+  document.addEventListener('change',e=>{if(e.target.name==='verify-card')verifyChooseCard(e.target.value)});
+  document.addEventListener('click',e=>{
+    const p=e.target.closest?.('[data-verify-position]');if(p){e.preventDefault();verifySelectPosition(p.getAttribute('data-verify-position'));return}
+    if(e.target.closest?.('#verifyConfirm')){e.preventDefault();verifyConfirm();return}
+    if(e.target.closest?.('#verifySkip')){e.preventDefault();verifySkip();return}
+    if(e.target.closest?.('#verifyCancel')){e.preventDefault();verifyCancel();return}
+    if(e.target.closest?.('#verifyMore')){e.preventDefault();loadMoreVerify();return}
+  });
 }
-bindVerifyChoices();
-
+bindVerifyV2();
 function saveEdits(){
   try{
     localStorage.setItem('dokkanos-edits',JSON.stringify(DB.cards.filter(x=>x._edited).map(x=>({boxId:x.boxId,candidateId:x.candidateId,validated:x.validated,confidence:x.confidence,_edited:true}))));
     return true;
-  }catch(e){
-    console.warn('DokkanOS: sauvegarde locale impossible',e);
-    return false;
-  }
-}
-function choose(id,val){
-  let c=DB.cards.find(x=>x.boxId===id);if(!c)return;
-  c._edited=true;
-  if(val){
-    let candidate=verifyCandidate(val),m=localized(META.cards?.[String(val)]);
-    if(m)Object.assign(c,m);
-    c.candidateId=String(val);
-    c.image=candidate?.image||'assets/cards/'+val+'.webp';
-    c.name=candidate?.name||c.name;
-    c.rarity=candidate?.rarity||c.rarity;
-    c.type=candidate?.type||c.type;
-    c.validated=true;c.confidence='Validée manuellement';
-  }else{c.candidateId='';c.validated=false;c.confidence='À revoir'}
-  const saved=saveEdits();
-  let status=$('#verificationStatus');
-  if(status){status.textContent=val?'Carte '+id+' validée : '+(c.name||'ID '+val)+' (ID '+val+').'+(saved?'':' Attention : sauvegarde locale indisponible.'):'Carte '+id+' laissée à vérifier.';status.hidden=false}
-  render();stats();renderDuplicates();renderMissing();renderInventory();renderManualOwned();renderAnalysis();
+  }catch(e){console.warn('DokkanOS: sauvegarde locale impossible',e);return false}
 }
 
 function skillText(v){if(!v)return '—';if(typeof v==='string')return v;if(Array.isArray(v))return v.map(skillText).join(' · ');return [v.name,v.description,v.condition].filter(Boolean).join(' — ')||'—'}

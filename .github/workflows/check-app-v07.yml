@@ -25,7 +25,7 @@ jobs:
             {id:'102',rarity:'LR'},
             {id:'200',rarity:'UR'}
           ]};
-          const context={console,localStorage:{setItem(){},getItem(){return null}},document:{querySelector(){return {innerHTML:'',textContent:''}}},alert(){throw Error('Unexpected alert')}};
+          const context={console,localStorage:{setItem(){},getItem(){return null}},document:{querySelector(){return {innerHTML:'',textContent:''}},addEventListener(){},querySelectorAll(){return []}},alert(){throw Error('Unexpected alert')}};
           vm.createContext(context);
           vm.runInContext(script+'\nCATALOG='+JSON.stringify(catalogue)+'; DB={cards:[]}; inventory={};',context);
           assert.equal(vm.runInContext('catalogFamilies().length',context),2);

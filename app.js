@@ -49,6 +49,8 @@ function stats(){
   $('#progressText').textContent=(DB.cards.length?Math.round(v/DB.cards.length*100):0)+'% validé';
 }
 const NON_PLAYABLE_NAME_RE=/(statue de (m\.?\s*satan)|hercule statue|mr\.? satan statue)/i;
+const FR_NAME_FIXES=[[/Metal Cooler Army/gi,'Armée de Métal Cooler'],[/Metal Cooler/gi,'Métal Cooler'],[/Mr\.? Satan/gi,'M. Satan'],[/Perfect Cell/gi,'Cell Parfait'],[/Super Saiyan God SS/gi,'Super Saiyan divin SS']];
+function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);return s}
 function isPlayableCard(card){
   if(!card)return false;
   const name=[card.name,card.title,card.fr?.name,card.fr?.title].filter(Boolean).join(' ');
@@ -59,7 +61,7 @@ function isPlayableCard(card){
   if(hp===0&&atk===0&&def===0)return false;
   return true;
 }
-function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:(cat.name||m.name||'').replace(/Metal Cooler/g,'Métal Cooler').replace(/Metal Cooler Army/g,'Armée de Métal Cooler'),categories:frList(m.categories||cat.categories),links:frList(m.links||cat.links),image:cat.image||('assets/cards/'+id+'.webp')}}
+function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};let image=cat.image||m.image||('assets/cards/'+id+'.webp');return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:frCardName(cat.name||m.name||''),categories:frList(m.categories||cat.categories),links:frList(m.links||cat.links),image}}
 function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach(c=>{let id=String(c.id||'');if(id&&!seen.has(id)){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(id);out.push(card)}}});Object.keys(META.cards||{}).forEach(id=>{if(!seen.has(String(id))){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(String(id));out.push(card)}}});return out}
 let verifyDraft={boxId:'',cardId:'',query:''};
 

@@ -7,7 +7,7 @@ import json,time
 from pathlib import Path
 import enrich_dokkaninfo as di
 ROOT=Path(__file__).resolve().parents[1]
-CORE=("rarity","type","class","leader","passive","superAttack","categories","links")
+CORE=("rarity","type","leader","passive","superAttack","categories","links")
 def present(v):return v not in (None,"",[],{})
 def main():
  p=ROOT/"card-meta.json";d=json.loads(p.read_text(encoding="utf-8"));todo=[]

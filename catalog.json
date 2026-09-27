@@ -1436,6 +1436,25 @@
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/f/ff/Card_1009980_thumb.png/revision/latest?cb=20170825072716"
     },
     {
+      "sourceId": "1002050",
+      "id": "1002050",
+      "name": "Babidi",
+      "title": "Malevolent Magician",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1002050.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1002080",
       "id": "1002080",
       "name": "Super Saiyan God SS Goku",
@@ -1455,6 +1474,25 @@
       }
     },
     {
+      "sourceId": "1002100",
+      "id": "1002100",
+      "name": "Golden Frieza",
+      "title": "Fear's Ultimate Form",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1002100.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1002260",
       "id": "1002260",
       "name": "Demon King Piccolo (Elder)",
@@ -1463,6 +1501,44 @@
       "type": "",
       "class": "",
       "image": "assets/cards/1002260.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1002360",
+      "id": "1002360",
+      "name": "Devilman",
+      "title": "Devilish Deception",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1002360.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1002390",
+      "id": "1002390",
+      "name": "Vegito",
+      "title": "The Miracle of Potara",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1002390.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -1626,6 +1702,25 @@
       }
     },
     {
+      "sourceId": "1003040",
+      "id": "1003040",
+      "name": "Super Saiyan 3 Goku (GT)",
+      "title": "Focused on Victory",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1003040.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1003180",
       "id": "1003180",
       "name": "Super Saiyan 2 Goku",
@@ -1645,6 +1740,49 @@
       }
     },
     {
+      "sourceId": "1003190",
+      "id": "1003190",
+      "name": "Super Saiyan Goku",
+      "title": "Triumphant Light",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1003190.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1003210",
+      "id": "1003210",
+      "name": "Super Saiyan 3 Goku",
+      "title": "Mystery Super Technique",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "assets/cards/1003210.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1003230",
       "id": "1003230",
       "name": "Super Saiyan 2 Vegeta",
@@ -1653,6 +1791,25 @@
       "type": "",
       "class": "",
       "image": "assets/cards/1003230.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1003240",
+      "id": "1003240",
+      "name": "Super Saiyan 3 Vegeta",
+      "title": "Limit-Breaking Elite",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1003240.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -1702,6 +1859,25 @@
       }
     },
     {
+      "sourceId": "1003290",
+      "id": "1003290",
+      "name": "Super Trunks",
+      "title": "Swelling Power",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1003290.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1003370",
       "id": "1003370",
       "name": "Whis",
@@ -1710,6 +1886,25 @@
       "type": "",
       "class": "",
       "image": "assets/cards/1003370.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1003600",
+      "id": "1003600",
+      "name": "Super Saiyan God SS Vegeta",
+      "title": "Ever-Evolving Legend",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1003600.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -1744,6 +1939,25 @@
       "type": "",
       "class": "",
       "image": "assets/cards/1003980.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1004090",
+      "id": "1004090",
+      "name": "Golden Frieza",
+      "title": "Golden Emperor",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1004090.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -1850,6 +2064,25 @@
       }
     },
     {
+      "sourceId": "1004990",
+      "id": "1004990",
+      "name": "Super Saiyan Trunks (Xeno)",
+      "title": "A Critical Mission",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1004990.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1005050",
       "id": "1005050",
       "name": "Super Janemba",
@@ -1858,6 +2091,25 @@
       "type": "",
       "class": "",
       "image": "assets/cards/1005050.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1005110",
+      "id": "1005110",
+      "name": "Lord Slug",
+      "title": "Gushing Evil Powers",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1005110.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -1896,6 +2148,25 @@
       "type": "",
       "class": "",
       "image": "assets/cards/1005190.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1005220",
+      "id": "1005220",
+      "name": "Super Saiyan God Goku",
+      "title": "Fist from the Heavens",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1005220.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -1950,6 +2221,49 @@
       }
     },
     {
+      "sourceId": "1005410",
+      "id": "1005410",
+      "name": "Gotenks",
+      "title": "Confident Fusion",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1005410.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1005440",
+      "id": "1005440",
+      "name": "Bio-Broly",
+      "title": "The Return of The Demon",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême",
+      "image": "assets/cards/1005440.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1005470",
       "id": "1005470",
       "name": "Bulma (Youth)",
@@ -1966,6 +2280,30 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1005540",
+      "id": "1005540",
+      "name": "Super Saiyan Goku",
+      "title": "Leaping Ever Higher",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "assets/cards/1005540.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
       }
     },
     {
@@ -2332,6 +2670,30 @@
       }
     },
     {
+      "sourceId": "1007340",
+      "id": "1007340",
+      "name": "Yamcha",
+      "title": "Wounded Honor",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "assets/cards/1007340.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1007350",
       "id": "1007350",
       "name": "Mecha Frieza",
@@ -2413,6 +2775,25 @@
       }
     },
     {
+      "sourceId": "1007460",
+      "id": "1007460",
+      "name": "Legendary Super Saiyan Broly",
+      "title": "Eternal Horror",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1007460.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1007680",
       "id": "1007680",
       "name": "Vegeta (Giant Ape)",
@@ -2421,6 +2802,92 @@
       "type": "AGI",
       "class": "Extrême",
       "image": "assets/cards/1007680.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1007780",
+      "id": "1007780",
+      "name": "Super Saiyan Goten (Kid)",
+      "title": "Burgeoning Might",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1007780.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1007890",
+      "id": "1007890",
+      "name": "Super Saiyan Trunks (Kid)",
+      "title": "Inborn Pride",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1007890.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1008030",
+      "id": "1008030",
+      "name": "Trunks (Xeno)",
+      "title": "Battle in Another World",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super",
+      "image": "assets/cards/1008030.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1008080",
+      "id": "1008080",
+      "name": "Goku (Kaioken)",
+      "title": "Game-Reversing Technique",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super",
+      "image": "assets/cards/1008080.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -2991,6 +3458,25 @@
       }
     },
     {
+      "sourceId": "1009600",
+      "id": "1009600",
+      "name": "Fusion Zamasu",
+      "title": "Bringer of Light",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1009600.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1009630",
       "id": "1009630",
       "name": "Captain Ginyu (Ginyu Force)",
@@ -3084,6 +3570,25 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1009870",
+      "id": "1009870",
+      "name": "Goku (Youth)",
+      "title": "Braveness and Vigor in Action",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1009870.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
       }
     },
     {
@@ -3360,6 +3865,25 @@
       }
     },
     {
+      "sourceId": "1010520",
+      "id": "1010520",
+      "name": "Android #17",
+      "title": "Blackened Heart",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1010520.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1010540",
       "id": "1010540",
       "name": "Android #17",
@@ -3411,6 +3935,25 @@
       "type": "",
       "class": "",
       "image": "assets/cards/1010630.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1010670",
+      "id": "1010670",
+      "name": "Super Saiyan Goku (Angel) (Super Kaioken)",
+      "title": "Victory-Sealing Super Attack",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1010670.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -3561,6 +4104,30 @@
       }
     },
     {
+      "sourceId": "1010810",
+      "id": "1010810",
+      "name": "Goku (Youth) (Giant Ape)",
+      "title": "Outcome of Hardship",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super",
+      "image": "assets/cards/1010810.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1010870",
       "id": "1010870",
       "name": "Super Janemba",
@@ -3577,6 +4144,30 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1010960",
+      "id": "1010960",
+      "name": "Nappa",
+      "title": "Diabolical Strike",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "assets/cards/1010960.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
       }
     },
     {
@@ -4369,6 +4960,25 @@
       "type": "",
       "class": "",
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/d/da/Card_1011480_thumb.png/revision/latest?cb=20170706162051"
+    },
+    {
+      "sourceId": "1011160",
+      "id": "1011160",
+      "name": "Super Saiyan 3 Broly",
+      "title": "Super Evolution of Despair",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1011160.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
     },
     {
       "sourceId": "11163",
@@ -8526,6 +9136,30 @@
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/5/52/Card_1021560_thumb.png/revision/latest?cb=20210331131344"
     },
     {
+      "sourceId": "1012160",
+      "id": "1012160",
+      "name": "Full Power Boujack (Galactic Warrior)",
+      "title": "Galaxy-Threatening Invasion",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "assets/cards/1012160.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "12161",
       "id": "1012161",
       "name": "Master Roshi",
@@ -10685,6 +11319,25 @@
       }
     },
     {
+      "sourceId": "1012750",
+      "id": "1012750",
+      "name": "Goku Black (Super Saiyan Rosé)",
+      "title": "Beautiful Domination",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1012750.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1012760",
       "id": "1012760",
       "name": "Goku Black (Super Saiyan Rosé)",
@@ -11082,6 +11735,25 @@
       }
     },
     {
+      "sourceId": "1013480",
+      "id": "1013480",
+      "name": "Jiren",
+      "title": "Invincible Legend of Universe 11",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1013480.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1013570",
       "id": "1013570",
       "name": "Turles",
@@ -11103,6 +11775,49 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1013600",
+      "id": "1013600",
+      "name": "Super Saiyan God Goku",
+      "title": "Divine Power Within",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "assets/cards/1013600.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1013700",
+      "id": "1013700",
+      "name": "Lord Slug",
+      "title": "Rejuvenated Power",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1013700.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
       }
     },
     {
@@ -11253,6 +11968,30 @@
       "type": "TEC",
       "class": "Super",
       "image": "assets/cards/1014130.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1014220",
+      "id": "1014220",
+      "name": "Super Saiyan 4 Vegeta",
+      "title": "Unrivaled Saiyan's Peak",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "assets/cards/1014220.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -11633,6 +12372,30 @@
       }
     },
     {
+      "sourceId": "1015420",
+      "id": "1015420",
+      "name": "Super Ribrianne",
+      "title": "Charming Girl's Dance",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "assets/cards/1015420.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1015451",
       "id": "1015451",
       "name": "Métal Cooler",
@@ -11763,6 +12526,30 @@
       }
     },
     {
+      "sourceId": "1015890",
+      "id": "1015890",
+      "name": "Super Saiyan 2 Goku (Angel)",
+      "title": "Desperate Showdown",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "assets/cards/1015890.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1015900",
       "id": "1015900",
       "name": "Majin Vegeta",
@@ -11819,6 +12606,30 @@
       "type": "AGI",
       "class": "Super",
       "image": "assets/cards/1015970.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1016030",
+      "id": "1016030",
+      "name": "Super Saiyan God Goku",
+      "title": "God's Effortless Controlling Aura",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "assets/cards/1016030.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -12003,6 +12814,54 @@
       }
     },
     {
+      "sourceId": "1016440",
+      "id": "1016440",
+      "name": "Super Saiyan Trunks (GT)",
+      "title": "Confidence-Imbuing Moment",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "assets/cards/1016440.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1016460",
+      "id": "1016460",
+      "name": "Goku (Kaioken)",
+      "title": "Potent Super Attack",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "assets/cards/1016460.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1016580",
       "id": "1016580",
       "name": "Goku (GT)",
@@ -12062,6 +12921,25 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1016950",
+      "id": "1016950",
+      "name": "Cyborg Tao",
+      "title": "Brutal Vengeance",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1016950.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
       }
     },
     {
@@ -12209,6 +13087,25 @@
       }
     },
     {
+      "sourceId": "1017360",
+      "id": "1017360",
+      "name": "Ahms (2nd Form)",
+      "title": "Mysterious AI Life Form",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1017360.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1017370",
       "id": "1017370",
       "name": "Ahms (3rd Form)",
@@ -12329,6 +13226,25 @@
       }
     },
     {
+      "sourceId": "1017530",
+      "id": "1017530",
+      "name": "Super Saiyan Goten (Kid)",
+      "title": "Curiosity-Filled Struggle",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1017530.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1017560",
       "id": "1017560",
       "name": "Cell Jr.",
@@ -12356,6 +13272,30 @@
       "type": "AGI",
       "class": "Extrême",
       "image": "assets/cards/1017570.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1017680",
+      "id": "1017680",
+      "name": "Android #18",
+      "title": "Shocking Contact",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "assets/cards/1017680.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -12404,6 +13344,25 @@
       "type": "",
       "class": "",
       "image": "assets/cards/1017860.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1017920",
+      "id": "1017920",
+      "name": "Android #17 (Future)",
+      "title": "Wanton Slaughter",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1017920.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -12471,6 +13430,30 @@
       "type": "INT",
       "class": "Super",
       "image": "assets/cards/1018120.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1018150",
+      "id": "1018150",
+      "name": "Super Saiyan Trunks (Future)",
+      "title": "Victor of the Future",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "assets/cards/1018150.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -12631,6 +13614,30 @@
       }
     },
     {
+      "sourceId": "1018620",
+      "id": "1018620",
+      "name": "Gogeta",
+      "title": "Ultimate and Supreme Fusion",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "assets/cards/1018620.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1018660",
       "id": "1018660",
       "name": "Mr. Buu",
@@ -12703,6 +13710,25 @@
       }
     },
     {
+      "sourceId": "1018750",
+      "id": "1018750",
+      "name": "Super Saiyan 2 Goku (Angel)",
+      "title": "Heated Clash Between Rivals",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1018750.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1018800",
       "id": "1018800",
       "name": "Bergamo (Giant Form)",
@@ -12711,6 +13737,30 @@
       "type": "END",
       "class": "Extrême",
       "image": "assets/cards/1018800.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1018930",
+      "id": "1018930",
+      "name": "Broly (Kid)",
+      "title": "First Friend",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "assets/cards/1018930.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -12904,6 +13954,25 @@
       }
     },
     {
+      "sourceId": "1019230",
+      "id": "1019230",
+      "name": "Bardock",
+      "title": "Path of a Fighter",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1019230.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1019280",
       "id": "1019280",
       "name": "Super Saiyan Trunks (Future) & Mai (Future)",
@@ -12936,6 +14005,30 @@
       "type": "TEC",
       "class": "Extrême",
       "image": "assets/cards/1019300.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1019360",
+      "id": "1019360",
+      "name": "Whis",
+      "title": "Best Measure",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "assets/cards/1019360.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -13307,6 +14400,30 @@
       }
     },
     {
+      "sourceId": "1020990",
+      "id": "1020990",
+      "name": "Super Saiyan 4 Gogeta",
+      "title": "Peerless Super Power",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super",
+      "image": "assets/cards/1020990.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1021010",
       "id": "1021010",
       "name": "Babidi & Majin Buu (Good)",
@@ -13497,6 +14614,30 @@
       "type": "PUI",
       "class": "Super",
       "image": "assets/cards/1021810.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1021870",
+      "id": "1021870",
+      "name": "Krillin",
+      "title": "Frontline Courage",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "assets/cards/1021870.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -13719,6 +14860,30 @@
       }
     },
     {
+      "sourceId": "1022780",
+      "id": "1022780",
+      "name": "Goku",
+      "title": "Furious Counterattack",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Super",
+      "image": "assets/cards/1022780.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1022940",
       "id": "1022940",
       "name": "Krillin & Gohan (Kid)",
@@ -13858,6 +15023,30 @@
       }
     },
     {
+      "sourceId": "1023620",
+      "id": "1023620",
+      "name": "Goku (Kaioken)",
+      "title": "Battle Against Limits",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "assets/cards/1023620.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1023670",
       "id": "1023670",
       "name": "Janembu",
@@ -13903,6 +15092,25 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1023790",
+      "id": "1023790",
+      "name": "Super Saiyan Trunks (Kid) & Super Saiyan Goten (Kid)",
+      "title": "Mischievous Super Power",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1023790.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
       }
     },
     {
@@ -14113,6 +15321,25 @@
       }
     },
     {
+      "sourceId": "1024940",
+      "id": "1024940",
+      "name": "Piccolo",
+      "title": "Quick Reactions",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1024940.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
       "sourceId": "1024950",
       "id": "1024950",
       "name": "Piccolo",
@@ -14175,6 +15402,49 @@
       }
     },
     {
+      "sourceId": "1025030",
+      "id": "1025030",
+      "name": "Hacchan",
+      "title": "Battle to Defend a Friend",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1025030.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1025040",
+      "id": "1025040",
+      "name": "Hacchan",
+      "title": "All-Out Power of Friendship",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "assets/cards/1025040.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1025150",
       "id": "1025150",
       "name": "Métal Cooler",
@@ -14214,6 +15484,30 @@
       }
     },
     {
+      "sourceId": "1025190",
+      "id": "1025190",
+      "name": "Metal Cooler [STR]",
+      "title": "Demonic Fighter of Steel",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "assets/cards/1025190.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
       "sourceId": "1025200",
       "id": "1025200",
       "name": "Métal Cooler (END)",
@@ -14237,6 +15531,30 @@
       "type": "END",
       "class": "Super",
       "image": "assets/cards/1025230.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "feijoes/DokkanAPI",
+        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
+        "match": "exact asset ID in imageURL"
+      }
+    },
+    {
+      "sourceId": "1025250",
+      "id": "1025250",
+      "name": "Yamcha",
+      "title": "Predatory Wolf of the Gale",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "assets/cards/1025250.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -14390,6 +15708,25 @@
       "type": "",
       "class": "",
       "image": "assets/cards/1026330.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1026340",
+      "id": "1026340",
+      "name": "Gotenks (Failure) A",
+      "title": "Hard Work Done by a Chunky Body",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1026340.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -14561,6 +15898,25 @@
       "type": "",
       "class": "",
       "image": "assets/cards/1027000.webp",
+      "source": {
+        "provider": "DokkanOS Box",
+        "verified": true
+      },
+      "identitySource": {
+        "provider": "DokkanBattleLibrary",
+        "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
+        "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1027160",
+      "id": "1027160",
+      "name": "Android #18",
+      "title": "Strikingly Beautiful Technique",
+      "rarity": "",
+      "type": "",
+      "class": "",
+      "image": "assets/cards/1027160.webp",
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
@@ -15522,28 +16878,29 @@
     }
   },
   "audit": {
-    "count": 1161,
-    "uniqueIds": 1161,
+    "count": 1225,
+    "uniqueIds": 1225,
     "duplicateIds": 0,
     "referenceWideCount": 1380,
     "status": "in_progress",
-    "note": "Les correspondances identité reposent sur l'ID exact; rareté/type uniquement après correspondance de l'ID asset dans l'URL de miniature. Les 126 fiches restantes n'ont pas de rareté inférée.",
+    "note": "Contrôle des IDs de Box validés sur data.json : 64 manquants ajoutés; noms obtenus par ID exact, rareté/type uniquement après correspondance de l'ID asset. Aucun attribut inféré pour les fiches restantes.",
     "rarityCounts": {
-      "LR": 146,
+      "LR": 151,
       "SSR": 12,
-      "UR": 877,
-      "inconnu": 126
+      "UR": 900,
+      "inconnu": 162
     },
     "typeCounts": {
-      "AGI": 200,
-      "END": 193,
-      "INT": 188,
-      "PUI": 206,
-      "TEC": 188,
-      "inconnu": 186
+      "AGI": 206,
+      "END": 198,
+      "INT": 191,
+      "PUI": 215,
+      "TEC": 193,
+      "inconnu": 222
     },
-    "boxIdentityResolved": 299,
-    "boxAttributesResolved": 173,
-    "boxAttributesPending": 126
+    "boxIdentityResolved": 363,
+    "boxAttributesResolved": 201,
+    "boxAttributesPending": 162,
+    "validatedBoxIdsPresent": true
   }
 }

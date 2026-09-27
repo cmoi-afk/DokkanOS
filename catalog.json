@@ -8,8 +8,8 @@
       "id": "1000860",
       "name": "Vegeta",
       "title": "Extreme Elite's Pride",
-      "rarity": "",
-      "type": "",
+      "rarity": "SR",
+      "type": "END",
       "class": "",
       "image": "assets/cards/1000860.webp",
       "source": {
@@ -20,6 +20,11 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "DokkanInfo GLOBAL",
+        "url": "https://dokkaninfo.com/cards/1000860",
+        "match": "exact card ID and name"
       }
     },
     {
@@ -27,8 +32,8 @@
       "id": "1001040",
       "name": "Chi-Chi",
       "title": "Heart of Innocence",
-      "rarity": "",
-      "type": "",
+      "rarity": "SR",
+      "type": "PUI",
       "class": "",
       "image": "assets/cards/1001040.webp",
       "source": {
@@ -39,6 +44,11 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "DokkanInfo GLOBAL",
+        "url": "https://dokkaninfo.com/cards/1001040",
+        "match": "exact card ID and name"
       }
     },
     {
@@ -214,8 +224,8 @@
       "id": "1002050",
       "name": "Babidi",
       "title": "Malevolent Magician",
-      "rarity": "",
-      "type": "",
+      "rarity": "SR",
+      "type": "INT",
       "class": "",
       "image": "assets/cards/1002050.webp",
       "source": {
@@ -226,6 +236,11 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "DokkanInfo GLOBAL",
+        "url": "https://dokkaninfo.com/cards/1002050",
+        "match": "exact card ID and name"
       }
     },
     {
@@ -305,8 +320,8 @@
       "id": "1002360",
       "name": "Devilman",
       "title": "Devilish Deception",
-      "rarity": "",
-      "type": "",
+      "rarity": "SR",
+      "type": "AGI",
       "class": "",
       "image": "assets/cards/1002360.webp",
       "source": {
@@ -317,6 +332,11 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "DokkanInfo GLOBAL",
+        "url": "https://dokkaninfo.com/cards/1002360",
+        "match": "exact card ID and name"
       }
     },
     {
@@ -420,8 +440,8 @@
       "id": "1002490",
       "name": "Thouser",
       "title": "Ruthless Intellect",
-      "rarity": "",
-      "type": "",
+      "rarity": "SR",
+      "type": "AGI",
       "class": "",
       "image": "assets/cards/1002490.webp",
       "source": {
@@ -432,6 +452,11 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "DokkanInfo GLOBAL",
+        "url": "https://dokkaninfo.com/cards/1002490",
+        "match": "exact card ID and name"
       }
     },
     {
@@ -870,8 +895,8 @@
       "id": "1003980",
       "name": "Bulma (Youth)",
       "title": "Seeking Thrill and Romance",
-      "rarity": "",
-      "type": "",
+      "rarity": "SR",
+      "type": "INT",
       "class": "",
       "image": "assets/cards/1003980.webp",
       "source": {
@@ -882,6 +907,11 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "DokkanInfo GLOBAL",
+        "url": "https://dokkaninfo.com/cards/1003980",
+        "match": "exact card ID and name"
       }
     },
     {
@@ -1020,8 +1050,8 @@
       "id": "1004760",
       "name": "Super Vegeta",
       "title": "In Pursuit of Change",
-      "rarity": "",
-      "type": "",
+      "rarity": "SR",
+      "type": "PUI",
       "class": "",
       "image": "assets/cards/1004760.webp",
       "source": {
@@ -1032,6 +1062,11 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "DokkanInfo GLOBAL",
+        "url": "https://dokkaninfo.com/cards/1004760",
+        "match": "exact card ID and name"
       }
     },
     {
@@ -1442,8 +1477,8 @@
       "id": "1005470",
       "name": "Bulma (Youth)",
       "title": "Curiosity and Adventure",
-      "rarity": "",
-      "type": "",
+      "rarity": "SR",
+      "type": "PUI",
       "class": "",
       "image": "assets/cards/1005470.webp",
       "source": {
@@ -1454,6 +1489,11 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "DokkanInfo GLOBAL",
+        "url": "https://dokkaninfo.com/cards/1005470",
+        "match": "exact card ID and name"
       }
     },
     {
@@ -5040,8 +5080,8 @@
       "id": "1010520",
       "name": "Android #17",
       "title": "Blackened Heart",
-      "rarity": "",
-      "type": "",
+      "rarity": "SR",
+      "type": "END",
       "class": "",
       "image": "assets/cards/1010520.webp",
       "source": {
@@ -5052,6 +5092,11 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "DokkanInfo GLOBAL",
+        "url": "https://dokkaninfo.com/cards/1010520",
+        "match": "exact card ID and name"
       }
     },
     {
@@ -7228,8 +7273,8 @@
       "id": "1012970",
       "name": "Zamasu",
       "title": "Immortal God",
-      "rarity": "",
-      "type": "",
+      "rarity": "SR",
+      "type": "AGI",
       "class": "",
       "image": "assets/cards/1012970.webp",
       "source": {
@@ -7240,6 +7285,11 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "DokkanInfo GLOBAL",
+        "url": "https://dokkaninfo.com/cards/1012970",
+        "match": "exact card ID and name"
       }
     },
     {
@@ -21117,8 +21167,8 @@
       "id": "2000200",
       "name": "Mighty Mask",
       "title": "Titanic Tag Team",
-      "rarity": "",
-      "type": "",
+      "rarity": "SR",
+      "type": "TEC",
       "class": "",
       "image": "assets/cards/2000200.webp",
       "source": {
@@ -21129,6 +21179,11 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "DokkanInfo GLOBAL",
+        "url": "https://dokkaninfo.com/cards/2000200",
+        "match": "exact card ID and name"
       }
     },
     {
@@ -21136,8 +21191,8 @@
       "id": "2000710",
       "name": "Zangya",
       "title": "Brutal Battlefield Diva",
-      "rarity": "",
-      "type": "",
+      "rarity": "SR",
+      "type": "AGI",
       "class": "",
       "image": "assets/cards/2000710.webp",
       "source": {
@@ -21148,6 +21203,11 @@
         "provider": "DokkanBattleLibrary",
         "url": "https://github.com/kvmcd123/DokkanBattleLibrary/blob/main/allData.json",
         "match": "exact card ID"
+      },
+      "attributeSource": {
+        "provider": "DokkanInfo GLOBAL",
+        "url": "https://dokkaninfo.com/cards/2000710",
+        "match": "exact card ID and name"
       }
     }
   ],
@@ -21174,18 +21234,18 @@
     "note": "Contrôle des IDs de Box validés sur data.json : 64 manquants ajoutés; noms obtenus par ID exact, rareté/type uniquement après correspondance de l'ID asset. Aucun attribut inféré pour les fiches restantes.",
     "rarityCounts": {
       "LR": 127,
-      "SR": 1,
+      "SR": 13,
       "SSR": 153,
       "UR": 715,
-      "inconnu": 32
+      "inconnu": 20
     },
     "typeCounts": {
-      "AGI": 200,
-      "END": 196,
-      "INT": 195,
-      "PUI": 205,
-      "TEC": 192,
-      "inconnu": 40
+      "AGI": 204,
+      "END": 198,
+      "INT": 197,
+      "PUI": 208,
+      "TEC": 193,
+      "inconnu": 28
     },
     "boxIdentityResolved": 363,
     "boxAttributesResolved": 201,
@@ -21196,6 +21256,8 @@
     "indexResolved": 182,
     "notes": "Les 794 IDs du fournisseur historique étaient calculés depuis sourceId au lieu de l'ID de l'image. IDs corrigés depuis le nom d'asset, puis entrées identiques fusionnées; les 130 SSR de Box ont été vérifiés sur l'index DokkanInfo.",
     "reconciledBoxIdsAdded": 5,
-    "reconciledAttributeConflicts": 22
+    "reconciledAttributeConflicts": 22,
+    "unknownResolvedFromDokkanInfo": 12,
+    "unknownPendingAfterDokkanInfo": 20
   }
 }

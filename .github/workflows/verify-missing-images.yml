@@ -5,6 +5,7 @@ on:
     paths:
       - tools/verify_missing_images.py
       - catalog.json
+      - docs/IMAGE-AUDIT-v0.7.json
       - assets/cards/**
       - docs/IMAGE-AUDIT-TRIGGER
       - tools/verify_missing_images.py

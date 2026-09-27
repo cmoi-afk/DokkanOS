@@ -13,22 +13,22 @@
     },
     "rarityCounts": {
       "LR": 127,
-      "SR": 1,
+      "SR": 13,
       "SSR": 153,
       "UR": 715,
-      "inconnu": 32
+      "inconnu": 20
     },
     "typeCounts": {
-      "AGI": 200,
-      "END": 196,
-      "INT": 195,
-      "PUI": 205,
-      "TEC": 192,
-      "inconnu": 40
+      "AGI": 204,
+      "END": 198,
+      "INT": 197,
+      "PUI": 208,
+      "TEC": 193,
+      "inconnu": 28
     },
     "identityResolvedFromBox": 368,
-    "attributesResolvedFromBox": 336,
-    "attributesPendingFromBox": 32,
+    "attributesResolvedFromBox": 348,
+    "attributesPendingFromBox": 20,
     "legacyIdsReconciled": 794,
     "exactIdMerges": 202,
     "boxValidatedIdsRestoredAfterReconciliation": 5,
@@ -58,7 +58,7 @@
     "Les identifications Box non validées sont exclues du catalogue maître.",
     "Aucune donnée inventée ne doit être ajoutée pour atteindre artificiellement un nombre cible.",
     "794 fiches héritées portaient un ID synthétique différent de l'ID présent dans leur image; 202 chevauchements d'IDs réels ont été fusionnés.",
-    "Le précédent total 1 225 surestimait le nombre de cartes réelles distinctes; le catalogue reconcilié contient 1 028 IDs et 32 raretés inconnues."
+    "12 raretés SR vérifiées directement ; 20 pré-éveils renvoient vers un autre ID et restent non attribués."
   ],
   "provenance": {
     "identity": {
@@ -75,6 +75,12 @@
       "provider": "okfaygo/dokkan-translation (DokkanInfo index)",
       "match": "exact card ID",
       "uses": "SSR/UR/LR rarity, type and conflicting attributes"
+    },
+    "dokkanInfoDirect": {
+      "provider": "DokkanInfo GLOBAL",
+      "match": "exact card ID and name",
+      "resolved": 12,
+      "requested": 40
     }
   }
 }

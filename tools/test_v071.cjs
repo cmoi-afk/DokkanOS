@@ -1,0 +1,33 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const source=fs.readFileSync('app.js','utf8').split('boot().catch(')[0];
+const data=JSON.parse(fs.readFileSync('catalog.json','utf8'));
+const saved=new Map(),elements=new Map();
+const element=selector=>{if(!elements.has(selector))elements.set(selector,{innerHTML:'',textContent:'',hidden:true});return elements.get(selector)};
+const context={
+  console,
+  window:{addEventListener(){}},
+  navigator:{onLine:true},
+  document:{querySelector:element,querySelectorAll(){return []},addEventListener(){}},
+  localStorage:{setItem(k,v){saved.set(k,v)},getItem(k){return saved.get(k)||null}},
+  alert(){throw Error('unexpected alert')}
+};
+vm.createContext(context);
+vm.runInContext(source+'\nCATALOG='+JSON.stringify(data)+'; META={cards:{}}; DB={cards:[{boxId:"BOX-TEST",candidateId:"",validated:false,image:""}]}; inventory={};',context);
+for(const key of ['render','stats','renderDuplicates','renderInventory','renderManualOwned','renderAnalysis'])vm.runInContext(key+'=()=>{}',context);
+assert.equal(vm.runInContext('catalogFamilies().length > 1000',context),true);
+assert.equal(vm.runInContext('catalogFamilies()===catalogFamilies()',context),true);
+vm.runInContext('renderMissing()',context);
+assert(Number(element('#missingCount').textContent)>1000);
+assert(element('#missingList').innerHTML.includes('À confirmer'));
+const card=data.cards.find(x=>x.image&&x.rarity==='UR');
+assert(card);
+vm.runInContext('choose("BOX-TEST",'+JSON.stringify(card.id)+')',context);
+assert.equal(vm.runInContext('DB.cards[0].candidateId',context),String(card.id));
+assert.equal(vm.runInContext('DB.cards[0].image',context),card.image);
+assert.equal(vm.runInContext('DB.cards[0].validated',context),true);
+assert(element('#verificationStatus').textContent.includes('validée'));
+assert.equal(JSON.parse(saved.get('dokkanos-edits'))[0].candidateId,String(card.id));
+vm.runInContext('DB.cards=[{boxId:"BOX-TEST",candidateId:"",validated:false,image:""}]; restoreEdits()',context);
+assert.equal(vm.runInContext('DB.cards[0].image',context),card.image);
+assert.equal(data.cards.filter(x=>!x.image).length,0);
+console.log('verification, persistence, unconfirmed list and catalogue images: OK');

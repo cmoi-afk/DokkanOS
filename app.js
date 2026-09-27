@@ -186,6 +186,23 @@ FR_TERMS["Universe 6's Warriors"]="Guerriers de l'Univers 6";
 FR_TERMS["Shadow Dragons"]="Dragons maléfiques";
 FR_TERMS["Saiyan Roar"]="Rugissement saiyan";
 FR_TERMS["The First Awakened"]="Le premier éveillé";
+FR_TERMS["Successors"]="Héritiers";
+FR_TERMS["Earth-Bred Fighters"]="Combattants élevés sur Terre";
+FR_TERMS["Time Travelers"]="Voyageurs du temps";
+FR_TERMS["Bond of Master and Disciple"]="Lien maître et disciple";
+FR_TERMS["Bond of Parent and Child"]="Lien parent-enfant";
+FR_TERMS["Accelerated Battle"]="Combat accéléré";
+FR_TERMS["Battle of Fate"]="Combat fatidique";
+FR_TERMS["Powerful Comeback"]="Retour en force";
+FR_TERMS["Entrusted Will"]="Volonté confiée";
+FR_TERMS["Connected Hope"]="Espoir connecté";
+FR_TERMS["Final Trump Card"]="Atout ultime";
+FR_TERMS["Full Power"]="Pleine puissance";
+FR_TERMS["Storied Figures"]="Personnages légendaires";
+FR_TERMS["Planetary Destruction"]="Destruction planétaire";
+FR_TERMS["Legendary Existence"]="Existence légendaire";
+FR_TERMS["Power of Wishes"]="Pouvoir des souhaits";
+FR_TERMS["Earthlings"]="Terriens";
 function frTerm(v){return FR_TERMS[v]||v}
 function frList(a){return (a||[]).map(frTerm)}
 

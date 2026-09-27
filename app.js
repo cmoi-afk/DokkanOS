@@ -345,7 +345,15 @@ function stats(){
   $('#progressText').textContent=(DB.cards.length?Math.round(v/DB.cards.length*100):0)+'% validé';
 }
 const NON_PLAYABLE_NAME_RE=/(statue de (m\.?\s*satan)|hercule statue|mr\.? satan statue)/i;
-const FR_NAME_FIXES=[[/Metal Cooler Army/gi,'Armée de Métal Cooler'],[/Metal Cooler/gi,'Métal Cooler'],[/Mr\.? Satan/gi,'M. Satan'],[/Perfect Cell/gi,'Cell Parfait'],[/Super Saiyan God SS/gi,'Super Saiyan divin SS']];
+const FR_NAME_FIXES=[
+ [/Golden Frieza/g,'Golden Freezer'],[/Mecha Frieza/g,'Mecha Freezer'],[/Frieza/g,'Freezer'],[/Captain Ginyu/g,'Ginyu'],
+ [/Android #?(\d+)/g,'C-$1'],[/Master Roshi/g,'Kamesennin'],[/Mercenary Tao/g,'Tao Pai Pai'],[/\bTien\b/g,'Tenshinhan'],
+ [/Chiaotzu/g,'Chaozu'],[/Jeice/g,'Jeese'],[/Recoome/g,'Reacum'],[/Burter/g,'Butta'],[/Pikkon/g,'Paikuhan'],
+ [/King Cold/g,'Roi Cold'],[/King Vegeta/g,'Roi Vegeta'],[/Kid Buu/g,'Boo (petit)'],[/Super Buu/g,'Boo (super)'],
+ [/Gohan \(Kid\)/g,'Son Gohan (petit)'],[/Gohan \(Youth\)/g,'Son Gohan (enfant)'],[/Gohan \(Teen\)/g,'Son Gohan (jeune)'],
+ [/Goten \(Kid\)/g,'Son Goten (petit)'],[/Trunks \(Kid\)/g,'Trunks (petit)'],[/Bulma \(Youth\)/g,'Bulma (enfant)'],[/Pan \(Kid\)/g,'Pan (petit)'],
+ [/\bGoku\b/g,'Son Goku'],[/\bBuu\b/g,'Boo'],[/\(Angel\)/g,'(ange)'],[/\(Future\)/g,'(futur)']
+];
 function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);return s}
 function cardImageCandidates(id,preferred){id=String(id||'');return [...new Set([preferred,'assets/cards/'+id+'.webp','https://www.dbz-dokkanbattle.com/img/character/card/'+id+'/card_'+id+'_thumb.png','https://dokkaninfo.com/assets/global/en/character/card/'+id+'.png'].filter(Boolean))]}
 function imageFallback(el,id,preferred){let a=cardImageCandidates(id,preferred),n=Number(el.dataset.fallback||0)+1;el.dataset.fallback=String(n);if(n<a.length){el.src=a[n]}else{el.classList.add('imgfail');reportBrokenImage(id)}}

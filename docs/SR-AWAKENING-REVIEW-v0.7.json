@@ -1,6 +1,6 @@
 {
   "reason": "éveil utile à vérifier par chaîne d'ID",
-  "count": 2,
+  "count": 1,
   "cards": [
     {
       "id": "1001851",
@@ -10,16 +10,6 @@
       "class": "Super",
       "hasDokkan": "2",
       "url": "https://www.dbz-dokkanbattle.com/card/1001851"
-    },
-    {
-      "id": "1002640",
-      "name": "Statue de M. Satan (argent)",
-      "rarity": "SR",
-      "type": "END",
-      "class": "Super",
-      "hasDokkan": "2",
-      "url": "https://www.dbz-dokkanbattle.com/card/1002640",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002640_thumb/card_1002640_thumb.png"
     }
   ]
 }

@@ -10,6 +10,10 @@ def check(card):
     cid=str(card["id"]); url=card.get("image") or ""
     empty=not bool(url)
     if empty:url=f"https://www.dbz-dokkanbattle.com/img/character/thumb/card_{cid}_thumb/card_{cid}_thumb.png"
+    # French DB pages ending in 1 normally expose the base artwork asset ending in 0.
+    if re.match(r"^https?://(?:www\.)?dbz-dokkanbattle\.com/",url) and cid.endswith("1"):
+        canonical_id=cid[:-1]+"0"
+        url=f"https://www.dbz-dokkanbattle.com/img/character/thumb/card_{canonical_id}_thumb/card_{canonical_id}_thumb.png"
     mismatch=None
     m=re.search(r"card_(\d+)_thumb",url)
     if m and m.group(1)!=cid:

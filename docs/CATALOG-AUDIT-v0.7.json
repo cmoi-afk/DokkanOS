@@ -3,31 +3,37 @@
   "date": "2026-09-27",
   "status": "in_progress",
   "catalog": {
-    "entries": 1225,
-    "uniqueIds": 1225,
+    "entries": 1028,
+    "uniqueIds": 1028,
     "duplicateIds": 0,
     "sourceCounts": {
-      "DokkanOS Box": 363,
-      "DokkanOS — catalogue fusionné": 794,
+      "DokkanOS Box": 368,
+      "feijoes/DokkanAPI": 592,
       "DBZ Dokkan Battle France": 68
     },
     "rarityCounts": {
-      "LR": 151,
-      "SSR": 12,
-      "UR": 900,
-      "inconnu": 162
+      "LR": 127,
+      "SR": 1,
+      "SSR": 153,
+      "UR": 715,
+      "inconnu": 32
     },
     "typeCounts": {
-      "AGI": 206,
-      "END": 198,
-      "INT": 191,
-      "PUI": 215,
-      "TEC": 193,
-      "inconnu": 222
+      "AGI": 200,
+      "END": 196,
+      "INT": 195,
+      "PUI": 205,
+      "TEC": 192,
+      "inconnu": 40
     },
-    "identityResolvedFromBox": 363,
-    "attributesResolvedFromBox": 201,
-    "attributesPendingFromBox": 162
+    "identityResolvedFromBox": 368,
+    "attributesResolvedFromBox": 336,
+    "attributesPendingFromBox": 32,
+    "legacyIdsReconciled": 794,
+    "exactIdMerges": 202,
+    "boxValidatedIdsRestoredAfterReconciliation": 5,
+    "attributesCorrectedFromIndependentIndex": 22,
+    "boxIdentitiesPresent": 376
   },
   "references": {
     "dbzDokkanBattleFrance": {
@@ -51,8 +57,8 @@
     "Les deux références n'ont pas exactement le même périmètre; leurs nombres ne sont pas utilisés comme égalité stricte.",
     "Les identifications Box non validées sont exclues du catalogue maître.",
     "Aucune donnée inventée ne doit être ajoutée pour atteindre artificiellement un nombre cible.",
-    "Audit recalculé sur data.json : 64 IDs validés auparavant absents ont été ajoutés; 0 ID Box validé manquant et 0 ID catalogue en doublon.",
-    "162 cartes de Box sans rareté recoupée restent en attente; aucun SSR/SR n'est supposé par défaut."
+    "794 fiches héritées portaient un ID synthétique différent de l'ID présent dans leur image; 202 chevauchements d'IDs réels ont été fusionnés.",
+    "Le précédent total 1 225 surestimait le nombre de cartes réelles distinctes; le catalogue reconcilié contient 1 028 IDs et 32 raretés inconnues."
   ],
   "provenance": {
     "identity": {
@@ -63,7 +69,12 @@
     "rarityTypeClass": {
       "provider": "feijoes/DokkanAPI/DokkanCharacterData.json",
       "match": "asset ID extracted from thumbnail URL",
-      "count": 201
+      "count": 336
+    },
+    "independentIndex": {
+      "provider": "okfaygo/dokkan-translation (DokkanInfo index)",
+      "match": "exact card ID",
+      "uses": "SSR/UR/LR rarity, type and conflicting attributes"
     }
   }
 }

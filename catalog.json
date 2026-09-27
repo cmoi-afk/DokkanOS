@@ -4,48 +4,6 @@
   "note": "Catalogue fusionné en cours d’audit exhaustif. Les entrées marquées source DBZ Dokkan Battle France ont été recoupées sur leur fiche française; aucune complétude totale n’est déclarée avant clôture QA.",
   "cards": [
     {
-      "sourceId": "1000110",
-      "id": "1000110",
-      "name": "Carte 1000110",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1000110.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1000200",
-      "id": "1000200",
-      "name": "Carte 1000200",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1000200.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1000620",
-      "id": "1000620",
-      "name": "Carte 1000620",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1000620.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1000860",
       "id": "1000860",
       "name": "Carte 1000860",
@@ -57,76 +15,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1000870",
-      "id": "1000870",
-      "name": "Carte 1000870",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1000870.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1000890",
-      "id": "1000890",
-      "name": "Carte 1000890",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1000890.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1000970",
-      "id": "1000970",
-      "name": "Carte 1000970",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1000970.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1001020",
-      "id": "1001020",
-      "name": "Carte 1001020",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001020.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1001030",
-      "id": "1001030",
-      "name": "Carte 1001030",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001030.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -144,76 +32,6 @@
       }
     },
     {
-      "sourceId": "1001120",
-      "id": "1001120",
-      "name": "Carte 1001120",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001120.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1001160",
-      "id": "1001160",
-      "name": "Carte 1001160",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001160.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1001200",
-      "id": "1001200",
-      "name": "Carte 1001200",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001200.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1001230",
-      "id": "1001230",
-      "name": "Carte 1001230",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001230.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1001240",
-      "id": "1001240",
-      "name": "Carte 1001240",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001240.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1321",
       "id": "1001321",
       "name": "Super Saiyan 3 Goku",
@@ -222,20 +40,6 @@
       "type": "AGI",
       "class": "Super",
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/a/a6/Card_1003210_thumb.png/revision/latest?cb=20151228180033"
-    },
-    {
-      "sourceId": "1001330",
-      "id": "1001330",
-      "name": "Carte 1001330",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001330.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
     },
     {
       "sourceId": "1331",
@@ -293,20 +97,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1001420",
-      "id": "1001420",
-      "name": "Carte 1001420",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001420.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -540,20 +330,6 @@
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/b/b5/Card_1006020_thumb.png/revision/latest?cb=20170712164343"
     },
     {
-      "sourceId": "1001620",
-      "id": "1001620",
-      "name": "Carte 1001620",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001620.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1621",
       "id": "1001621",
       "name": "Super Saiyan 3 Gotenks",
@@ -562,20 +338,6 @@
       "type": "TEC",
       "class": "Super",
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/d/d0/Card_1006210_thumb.png/revision/latest?cb=20160923083104"
-    },
-    {
-      "sourceId": "1001630",
-      "id": "1001630",
-      "name": "Carte 1001630",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001630.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
     },
     {
       "sourceId": "1633",
@@ -786,20 +548,6 @@
       "image": "https://vignette.wikia.nocookie.net/dbz-dokkanbattle/images/0/0c/Card_1007470_thumb_apng.png/revision/latest?cb=20190117162701&format=original"
     },
     {
-      "sourceId": "1001760",
-      "id": "1001760",
-      "name": "Carte 1001760",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001760.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1761",
       "id": "1001761",
       "name": "Super Saiyan 2 Goku",
@@ -964,20 +712,6 @@
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/e/e1/Card_1008430_thumb.png/revision/latest?cb=20160708070332"
     },
     {
-      "sourceId": "1001850",
-      "id": "1001850",
-      "name": "Carte 1001850",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001850.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1853",
       "id": "1001853",
       "name": "Super Saiyan Gohan (Future)",
@@ -1036,20 +770,6 @@
       "type": "END",
       "class": "Super",
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/5/53/Card_1008580_thumb.png/revision/latest?cb=20160908082146"
-    },
-    {
-      "sourceId": "1001860",
-      "id": "1001860",
-      "name": "Carte 1001860",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1001860.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
     },
     {
       "sourceId": "1861",
@@ -1676,62 +1396,6 @@
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/f/ff/Card_1009980_thumb.png/revision/latest?cb=20170825072716"
     },
     {
-      "sourceId": "1002000",
-      "id": "1002000",
-      "name": "Carte 1002000",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002000.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002040",
-      "id": "1002040",
-      "name": "Carte 1002040",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002040.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002050",
-      "id": "1002050",
-      "name": "Carte 1002050",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002050.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002060",
-      "id": "1002060",
-      "name": "Carte 1002060",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002060.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1002080",
       "id": "1002080",
       "name": "Carte 1002080",
@@ -1743,48 +1407,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1002100",
-      "id": "1002100",
-      "name": "Carte 1002100",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002100.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002130",
-      "id": "1002130",
-      "name": "Carte 1002130",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002130.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002220",
-      "id": "1002220",
-      "name": "Carte 1002220",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002220.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -1802,76 +1424,6 @@
       }
     },
     {
-      "sourceId": "1002310",
-      "id": "1002310",
-      "name": "Carte 1002310",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002310.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002330",
-      "id": "1002330",
-      "name": "Carte 1002330",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002330.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002340",
-      "id": "1002340",
-      "name": "Carte 1002340",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002340.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002360",
-      "id": "1002360",
-      "name": "Carte 1002360",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002360.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002390",
-      "id": "1002390",
-      "name": "Carte 1002390",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002390.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1002400",
       "id": "1002400",
       "name": "Carte 1002400",
@@ -1883,34 +1435,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1002410",
-      "id": "1002410",
-      "name": "Carte 1002410",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002410.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002430",
-      "id": "1002430",
-      "name": "Carte 1002430",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002430.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -1956,34 +1480,6 @@
       }
     },
     {
-      "sourceId": "1002570",
-      "id": "1002570",
-      "name": "Carte 1002570",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002570.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002580",
-      "id": "1002580",
-      "name": "Carte 1002580",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002580.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1002700",
       "id": "1002700",
       "name": "Carte 1002700",
@@ -1995,20 +1491,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1002790",
-      "id": "1002790",
-      "name": "Carte 1002790",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002790.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -2026,76 +1508,6 @@
       }
     },
     {
-      "sourceId": "1002860",
-      "id": "1002860",
-      "name": "Carte 1002860",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002860.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002870",
-      "id": "1002870",
-      "name": "Carte 1002870",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002870.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002910",
-      "id": "1002910",
-      "name": "Carte 1002910",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002910.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002920",
-      "id": "1002920",
-      "name": "Carte 1002920",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002920.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1002930",
-      "id": "1002930",
-      "name": "Carte 1002930",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1002930.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1002990",
       "id": "1002990",
       "name": "Carte 1002990",
@@ -2107,20 +1519,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1003000",
-      "id": "1003000",
-      "name": "Carte 1003000",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003000.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -2138,48 +1536,6 @@
       }
     },
     {
-      "sourceId": "1003040",
-      "id": "1003040",
-      "name": "Carte 1003040",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003040.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003150",
-      "id": "1003150",
-      "name": "Carte 1003150",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003150.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003160",
-      "id": "1003160",
-      "name": "Carte 1003160",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003160.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1003180",
       "id": "1003180",
       "name": "Carte 1003180",
@@ -2194,48 +1550,6 @@
       }
     },
     {
-      "sourceId": "1003190",
-      "id": "1003190",
-      "name": "Carte 1003190",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003190.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003200",
-      "id": "1003200",
-      "name": "Carte 1003200",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003200.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003210",
-      "id": "1003210",
-      "name": "Carte 1003210",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003210.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1003230",
       "id": "1003230",
       "name": "Carte 1003230",
@@ -2247,20 +1561,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1003240",
-      "id": "1003240",
-      "name": "Carte 1003240",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003240.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -2292,48 +1592,6 @@
       }
     },
     {
-      "sourceId": "1003290",
-      "id": "1003290",
-      "name": "Carte 1003290",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003290.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003340",
-      "id": "1003340",
-      "name": "Carte 1003340",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003340.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003350",
-      "id": "1003350",
-      "name": "Carte 1003350",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003350.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1003370",
       "id": "1003370",
       "name": "Carte 1003370",
@@ -2345,76 +1603,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1003380",
-      "id": "1003380",
-      "name": "Carte 1003380",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003380.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003470",
-      "id": "1003470",
-      "name": "Carte 1003470",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003470.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003500",
-      "id": "1003500",
-      "name": "Carte 1003500",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003500.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003560",
-      "id": "1003560",
-      "name": "Carte 1003560",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003560.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003600",
-      "id": "1003600",
-      "name": "Carte 1003600",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003600.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -2433,62 +1621,6 @@
       }
     },
     {
-      "sourceId": "1003690",
-      "id": "1003690",
-      "name": "Carte 1003690",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003690.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003830",
-      "id": "1003830",
-      "name": "Carte 1003830",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003830.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003890",
-      "id": "1003890",
-      "name": "Carte 1003890",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003890.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1003940",
-      "id": "1003940",
-      "name": "Carte 1003940",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1003940.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1003980",
       "id": "1003980",
       "name": "Carte 1003980",
@@ -2500,62 +1632,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1004080",
-      "id": "1004080",
-      "name": "Carte 1004080",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004080.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1004090",
-      "id": "1004090",
-      "name": "Carte 1004090",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004090.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1004190",
-      "id": "1004190",
-      "name": "Carte 1004190",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004190.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1004210",
-      "id": "1004210",
-      "name": "Carte 1004210",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004210.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -2587,62 +1663,6 @@
       }
     },
     {
-      "sourceId": "1004420",
-      "id": "1004420",
-      "name": "Carte 1004420",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004420.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1004510",
-      "id": "1004510",
-      "name": "Carte 1004510",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004510.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1004520",
-      "id": "1004520",
-      "name": "Carte 1004520",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004520.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1004600",
-      "id": "1004600",
-      "name": "Carte 1004600",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004600.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1004631",
       "id": "1004631",
       "name": "Métal Cooler (PUI)",
@@ -2654,76 +1674,6 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1004631",
         "verified": "2026-09-27"
-      }
-    },
-    {
-      "sourceId": "1004660",
-      "id": "1004660",
-      "name": "Carte 1004660",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004660.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1004670",
-      "id": "1004670",
-      "name": "Carte 1004670",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004670.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1004690",
-      "id": "1004690",
-      "name": "Carte 1004690",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004690.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1004710",
-      "id": "1004710",
-      "name": "Carte 1004710",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004710.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1004740",
-      "id": "1004740",
-      "name": "Carte 1004740",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004740.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -2755,34 +1705,6 @@
       }
     },
     {
-      "sourceId": "1004990",
-      "id": "1004990",
-      "name": "Carte 1004990",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1004990.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005010",
-      "id": "1005010",
-      "name": "Carte 1005010",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005010.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1005050",
       "id": "1005050",
       "name": "Carte 1005050",
@@ -2794,34 +1716,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1005100",
-      "id": "1005100",
-      "name": "Carte 1005100",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005100.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005110",
-      "id": "1005110",
-      "name": "Carte 1005110",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005110.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -2853,48 +1747,6 @@
       }
     },
     {
-      "sourceId": "1005200",
-      "id": "1005200",
-      "name": "Carte 1005200",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005200.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005210",
-      "id": "1005210",
-      "name": "Carte 1005210",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005210.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005220",
-      "id": "1005220",
-      "name": "Carte 1005220",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005220.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1005260",
       "id": "1005260",
       "name": "Carte 1005260",
@@ -2923,104 +1775,6 @@
       }
     },
     {
-      "sourceId": "1005300",
-      "id": "1005300",
-      "name": "Carte 1005300",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005300.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005310",
-      "id": "1005310",
-      "name": "Carte 1005310",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005310.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005360",
-      "id": "1005360",
-      "name": "Carte 1005360",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005360.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005400",
-      "id": "1005400",
-      "name": "Carte 1005400",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005400.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005410",
-      "id": "1005410",
-      "name": "Carte 1005410",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005410.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005440",
-      "id": "1005440",
-      "name": "Carte 1005440",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005440.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005460",
-      "id": "1005460",
-      "name": "Carte 1005460",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005460.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1005470",
       "id": "1005470",
       "name": "Carte 1005470",
@@ -3032,76 +1786,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1005500",
-      "id": "1005500",
-      "name": "Carte 1005500",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005500.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005530",
-      "id": "1005530",
-      "name": "Carte 1005530",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005530.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005540",
-      "id": "1005540",
-      "name": "Carte 1005540",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005540.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005580",
-      "id": "1005580",
-      "name": "Carte 1005580",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005580.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005620",
-      "id": "1005620",
-      "name": "Carte 1005620",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005620.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -3147,20 +1831,6 @@
       }
     },
     {
-      "sourceId": "1005760",
-      "id": "1005760",
-      "name": "Carte 1005760",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005760.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1005800",
       "id": "1005800",
       "name": "Carte 1005800",
@@ -3175,34 +1845,6 @@
       }
     },
     {
-      "sourceId": "1005830",
-      "id": "1005830",
-      "name": "Carte 1005830",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005830.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1005920",
-      "id": "1005920",
-      "name": "Carte 1005920",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1005920.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1005940",
       "id": "1005940",
       "name": "Carte 1005940",
@@ -3214,48 +1856,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1006010",
-      "id": "1006010",
-      "name": "Carte 1006010",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1006010.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1006080",
-      "id": "1006080",
-      "name": "Carte 1006080",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1006080.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1006150",
-      "id": "1006150",
-      "name": "Carte 1006150",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1006150.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -3284,20 +1884,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1006480",
-      "id": "1006480",
-      "name": "Carte 1006480",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1006480.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -3343,90 +1929,6 @@
       }
     },
     {
-      "sourceId": "1006610",
-      "id": "1006610",
-      "name": "Carte 1006610",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1006610.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1006620",
-      "id": "1006620",
-      "name": "Carte 1006620",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1006620.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1006650",
-      "id": "1006650",
-      "name": "Carte 1006650",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1006650.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1006660",
-      "id": "1006660",
-      "name": "Carte 1006660",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1006660.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1006670",
-      "id": "1006670",
-      "name": "Carte 1006670",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1006670.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1006690",
-      "id": "1006690",
-      "name": "Carte 1006690",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1006690.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1006740",
       "id": "1006740",
       "name": "Carte 1006740",
@@ -3441,20 +1943,6 @@
       }
     },
     {
-      "sourceId": "1006760",
-      "id": "1006760",
-      "name": "Carte 1006760",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1006760.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1006780",
       "id": "1006780",
       "name": "Carte 1006780",
@@ -3466,48 +1954,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1006790",
-      "id": "1006790",
-      "name": "Carte 1006790",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1006790.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1007020",
-      "id": "1007020",
-      "name": "Carte 1007020",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1007020.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1007030",
-      "id": "1007030",
-      "name": "Carte 1007030",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1007030.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -3581,20 +2027,6 @@
       }
     },
     {
-      "sourceId": "1007340",
-      "id": "1007340",
-      "name": "Carte 1007340",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1007340.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1007350",
       "id": "1007350",
       "name": "Carte 1007350",
@@ -3651,34 +2083,6 @@
       }
     },
     {
-      "sourceId": "1007440",
-      "id": "1007440",
-      "name": "Carte 1007440",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1007440.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1007460",
-      "id": "1007460",
-      "name": "Carte 1007460",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1007460.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1007680",
       "id": "1007680",
       "name": "Carte 1007680",
@@ -3690,146 +2094,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1007720",
-      "id": "1007720",
-      "name": "Carte 1007720",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1007720.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1007740",
-      "id": "1007740",
-      "name": "Carte 1007740",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1007740.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1007780",
-      "id": "1007780",
-      "name": "Carte 1007780",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1007780.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1007860",
-      "id": "1007860",
-      "name": "Carte 1007860",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1007860.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1007890",
-      "id": "1007890",
-      "name": "Carte 1007890",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1007890.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1007900",
-      "id": "1007900",
-      "name": "Carte 1007900",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1007900.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1008010",
-      "id": "1008010",
-      "name": "Carte 1008010",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1008010.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1008020",
-      "id": "1008020",
-      "name": "Carte 1008020",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1008020.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1008030",
-      "id": "1008030",
-      "name": "Carte 1008030",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1008030.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1008080",
-      "id": "1008080",
-      "name": "Carte 1008080",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1008080.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -3847,20 +2111,6 @@
       }
     },
     {
-      "sourceId": "1008100",
-      "id": "1008100",
-      "name": "Carte 1008100",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1008100.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1008130",
       "id": "1008130",
       "name": "Carte 1008130",
@@ -3872,20 +2122,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1008150",
-      "id": "1008150",
-      "name": "Carte 1008150",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1008150.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -3945,76 +2181,6 @@
       }
     },
     {
-      "sourceId": "1008440",
-      "id": "1008440",
-      "name": "Carte 1008440",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1008440.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1008520",
-      "id": "1008520",
-      "name": "Carte 1008520",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1008520.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1008570",
-      "id": "1008570",
-      "name": "Carte 1008570",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1008570.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1008580",
-      "id": "1008580",
-      "name": "Carte 1008580",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1008580.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1008590",
-      "id": "1008590",
-      "name": "Carte 1008590",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1008590.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1008610",
       "id": "1008610",
       "name": "Carte 1008610",
@@ -4026,20 +2192,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1008620",
-      "id": "1008620",
-      "name": "Carte 1008620",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1008620.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -4239,48 +2391,6 @@
       }
     },
     {
-      "sourceId": "1009080",
-      "id": "1009080",
-      "name": "Carte 1009080",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1009080.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1009090",
-      "id": "1009090",
-      "name": "Carte 1009090",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1009090.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1009290",
-      "id": "1009290",
-      "name": "Carte 1009290",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1009290.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1009320",
       "id": "1009320",
       "name": "Carte 1009320",
@@ -4323,34 +2433,6 @@
       }
     },
     {
-      "sourceId": "1009490",
-      "id": "1009490",
-      "name": "Carte 1009490",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1009490.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1009500",
-      "id": "1009500",
-      "name": "Carte 1009500",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1009500.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1009530",
       "id": "1009530",
       "name": "Carte 1009530",
@@ -4379,34 +2461,6 @@
       }
     },
     {
-      "sourceId": "1009570",
-      "id": "1009570",
-      "name": "Carte 1009570",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1009570.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1009600",
-      "id": "1009600",
-      "name": "Carte 1009600",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1009600.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1009630",
       "id": "1009630",
       "name": "Carte 1009630",
@@ -4418,34 +2472,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1009640",
-      "id": "1009640",
-      "name": "Carte 1009640",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1009640.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1009680",
-      "id": "1009680",
-      "name": "Carte 1009680",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1009680.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -4491,34 +2517,6 @@
       }
     },
     {
-      "sourceId": "1009790",
-      "id": "1009790",
-      "name": "Carte 1009790",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1009790.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1009870",
-      "id": "1009870",
-      "name": "Carte 1009870",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1009870.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1009910",
       "id": "1009910",
       "name": "Carte 1009910",
@@ -4544,20 +2542,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1009940",
-      "id": "1009940",
-      "name": "Carte 1009940",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1009940.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -4631,34 +2615,6 @@
       }
     },
     {
-      "sourceId": "1010100",
-      "id": "1010100",
-      "name": "Carte 1010100",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010100.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1010110",
-      "id": "1010110",
-      "name": "Carte 1010110",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010110.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1010230",
       "id": "1010230",
       "name": "Carte 1010230",
@@ -4701,76 +2657,6 @@
       }
     },
     {
-      "sourceId": "1010270",
-      "id": "1010270",
-      "name": "Carte 1010270",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010270.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1010290",
-      "id": "1010290",
-      "name": "Carte 1010290",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010290.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1010310",
-      "id": "1010310",
-      "name": "Carte 1010310",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010310.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1010420",
-      "id": "1010420",
-      "name": "Carte 1010420",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010420.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1010430",
-      "id": "1010430",
-      "name": "Carte 1010430",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010430.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1010480",
       "id": "1010480",
       "name": "Carte 1010480",
@@ -4796,34 +2682,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1010520",
-      "id": "1010520",
-      "name": "Carte 1010520",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010520.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1010530",
-      "id": "1010530",
-      "name": "Carte 1010530",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010530.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -4866,20 +2724,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1010670",
-      "id": "1010670",
-      "name": "Carte 1010670",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010670.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -4967,20 +2811,6 @@
       }
     },
     {
-      "sourceId": "1010810",
-      "id": "1010810",
-      "name": "Carte 1010810",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010810.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1010870",
       "id": "1010870",
       "name": "Carte 1010870",
@@ -4992,34 +2822,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1010920",
-      "id": "1010920",
-      "name": "Carte 1010920",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010920.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1010960",
-      "id": "1010960",
-      "name": "Carte 1010960",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1010960.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -5779,20 +3581,6 @@
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/d/da/Card_1011480_thumb.png/revision/latest?cb=20170706162051"
     },
     {
-      "sourceId": "1011160",
-      "id": "1011160",
-      "name": "Carte 1011160",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1011160.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "11163",
       "id": "1011163",
       "name": "Mighty Mask",
@@ -5965,20 +3753,6 @@
       "type": "INT",
       "class": "Extrême",
       "image": "https://vignette.wikia.nocookie.net/dbz-dokkanbattle/images/d/df/Card_1012160_thumb_apng.png/revision/latest?cb=20190117154053&format=original"
-    },
-    {
-      "sourceId": "1011230",
-      "id": "1011230",
-      "name": "Carte 1011230",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1011230.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
     },
     {
       "sourceId": "11233",
@@ -6905,20 +4679,6 @@
       "type": "AGI",
       "class": "Super",
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/9/98/Card_1014680_thumb.png/revision/latest?cb=20180827062157"
-    },
-    {
-      "sourceId": "1011470",
-      "id": "1011470",
-      "name": "Carte 1011470",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1011470.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
     },
     {
       "sourceId": "11471",
@@ -9901,20 +7661,6 @@
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/5/52/Card_1021560_thumb.png/revision/latest?cb=20210331131344"
     },
     {
-      "sourceId": "1012160",
-      "id": "1012160",
-      "name": "Carte 1012160",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1012160.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "12161",
       "id": "1012161",
       "name": "Master Roshi",
@@ -9975,20 +7721,6 @@
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/5/5d/Card_1021690_thumb.png/revision/latest?cb=20210531065335"
     },
     {
-      "sourceId": "1012170",
-      "id": "1012170",
-      "name": "Carte 1012170",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1012170.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "12172",
       "id": "1012172",
       "name": "Super Saiyan Trunks (Teen)",
@@ -10007,20 +7739,6 @@
       "type": "TEC",
       "class": "Super",
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/a/af/Card_1021780_thumb.png/revision/latest?cb=20210809081342"
-    },
-    {
-      "sourceId": "1012180",
-      "id": "1012180",
-      "name": "Carte 1012180",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1012180.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
     },
     {
       "sourceId": "12181",
@@ -10831,20 +8549,6 @@
       "type": "TEC",
       "class": "Extrême",
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/7/72/Card_1023590_thumb.png/revision/latest?cb=20220708062324"
-    },
-    {
-      "sourceId": "1012360",
-      "id": "1012360",
-      "name": "Carte 1012360",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1012360.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
     },
     {
       "sourceId": "12361",
@@ -12019,20 +9723,6 @@
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/7/70/Card_1026090_thumb.png/revision/latest?cb=20221227102331"
     },
     {
-      "sourceId": "1012640",
-      "id": "1012640",
-      "name": "Carte 1012640",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1012640.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1012650",
       "id": "1012650",
       "name": "Carte 1012650",
@@ -12044,34 +9734,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1012700",
-      "id": "1012700",
-      "name": "Carte 1012700",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1012700.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1012710",
-      "id": "1012710",
-      "name": "Carte 1012710",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1012710.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -12100,20 +9762,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1012750",
-      "id": "1012750",
-      "name": "Carte 1012750",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1012750.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -12173,34 +9821,6 @@
       }
     },
     {
-      "sourceId": "1012890",
-      "id": "1012890",
-      "name": "Carte 1012890",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1012890.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1012920",
-      "id": "1012920",
-      "name": "Carte 1012920",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1012920.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1012960",
       "id": "1012960",
       "name": "Carte 1012960",
@@ -12240,20 +9860,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1012990",
-      "id": "1012990",
-      "name": "Carte 1012990",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1012990.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -12313,20 +9919,6 @@
       }
     },
     {
-      "sourceId": "1013070",
-      "id": "1013070",
-      "name": "Carte 1013070",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013070.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1013080",
       "id": "1013080",
       "name": "Carte 1013080",
@@ -12369,20 +9961,6 @@
       }
     },
     {
-      "sourceId": "1013140",
-      "id": "1013140",
-      "name": "Carte 1013140",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013140.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1013210",
       "id": "1013210",
       "name": "Carte 1013210",
@@ -12408,62 +9986,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1013250",
-      "id": "1013250",
-      "name": "Carte 1013250",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013250.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013310",
-      "id": "1013310",
-      "name": "Carte 1013310",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013310.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013320",
-      "id": "1013320",
-      "name": "Carte 1013320",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013320.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013350",
-      "id": "1013350",
-      "name": "Carte 1013350",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013350.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -12495,48 +10017,6 @@
       }
     },
     {
-      "sourceId": "1013440",
-      "id": "1013440",
-      "name": "Carte 1013440",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013440.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013480",
-      "id": "1013480",
-      "name": "Carte 1013480",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013480.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013560",
-      "id": "1013560",
-      "name": "Carte 1013560",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013560.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1013570",
       "id": "1013570",
       "name": "Carte 1013570",
@@ -12548,90 +10028,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1013600",
-      "id": "1013600",
-      "name": "Carte 1013600",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013600.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013650",
-      "id": "1013650",
-      "name": "Carte 1013650",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013650.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013660",
-      "id": "1013660",
-      "name": "Carte 1013660",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013660.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013700",
-      "id": "1013700",
-      "name": "Carte 1013700",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013700.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013720",
-      "id": "1013720",
-      "name": "Carte 1013720",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013720.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013730",
-      "id": "1013730",
-      "name": "Carte 1013730",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013730.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -12719,76 +10115,6 @@
       }
     },
     {
-      "sourceId": "1013920",
-      "id": "1013920",
-      "name": "Carte 1013920",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013920.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013930",
-      "id": "1013930",
-      "name": "Carte 1013930",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013930.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013950",
-      "id": "1013950",
-      "name": "Carte 1013950",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013950.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1013960",
-      "id": "1013960",
-      "name": "Carte 1013960",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1013960.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1014100",
-      "id": "1014100",
-      "name": "Carte 1014100",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1014100.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1014130",
       "id": "1014130",
       "name": "Carte 1014130",
@@ -12800,34 +10126,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1014200",
-      "id": "1014200",
-      "name": "Carte 1014200",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1014200.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1014220",
-      "id": "1014220",
-      "name": "Carte 1014220",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1014220.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -12873,20 +10171,6 @@
       }
     },
     {
-      "sourceId": "1014430",
-      "id": "1014430",
-      "name": "Carte 1014430",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1014430.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1014500",
       "id": "1014500",
       "name": "Carte 1014500",
@@ -12901,34 +10185,6 @@
       }
     },
     {
-      "sourceId": "1014630",
-      "id": "1014630",
-      "name": "Carte 1014630",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1014630.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1014640",
-      "id": "1014640",
-      "name": "Carte 1014640",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1014640.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1014720",
       "id": "1014720",
       "name": "Carte 1014720",
@@ -12940,34 +10196,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1014730",
-      "id": "1014730",
-      "name": "Carte 1014730",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1014730.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1014740",
-      "id": "1014740",
-      "name": "Carte 1014740",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1014740.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -12999,20 +10227,6 @@
       }
     },
     {
-      "sourceId": "1014950",
-      "id": "1014950",
-      "name": "Carte 1014950",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1014950.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1014970",
       "id": "1014970",
       "name": "Carte 1014970",
@@ -13024,34 +10238,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1014990",
-      "id": "1014990",
-      "name": "Carte 1014990",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1014990.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1015010",
-      "id": "1015010",
-      "name": "Carte 1015010",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015010.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -13083,20 +10269,6 @@
       }
     },
     {
-      "sourceId": "1015100",
-      "id": "1015100",
-      "name": "Carte 1015100",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015100.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1015110",
       "id": "1015110",
       "name": "Carte 1015110",
@@ -13125,20 +10297,6 @@
       }
     },
     {
-      "sourceId": "1015170",
-      "id": "1015170",
-      "name": "Carte 1015170",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015170.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1015180",
       "id": "1015180",
       "name": "Carte 1015180",
@@ -13150,34 +10308,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1015210",
-      "id": "1015210",
-      "name": "Carte 1015210",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015210.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1015270",
-      "id": "1015270",
-      "name": "Carte 1015270",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015270.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -13238,20 +10368,6 @@
       }
     },
     {
-      "sourceId": "1015420",
-      "id": "1015420",
-      "name": "Carte 1015420",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015420.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1015451",
       "id": "1015451",
       "name": "Métal Cooler",
@@ -13263,118 +10379,6 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://dbz-dokkanbattle.com/card/1015451",
         "verified": "2026-09-27"
-      }
-    },
-    {
-      "sourceId": "1015470",
-      "id": "1015470",
-      "name": "Carte 1015470",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015470.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1015490",
-      "id": "1015490",
-      "name": "Carte 1015490",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015490.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1015500",
-      "id": "1015500",
-      "name": "Carte 1015500",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015500.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1015510",
-      "id": "1015510",
-      "name": "Carte 1015510",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015510.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1015590",
-      "id": "1015590",
-      "name": "Carte 1015590",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015590.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1015600",
-      "id": "1015600",
-      "name": "Carte 1015600",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015600.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1015650",
-      "id": "1015650",
-      "name": "Carte 1015650",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015650.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1015670",
-      "id": "1015670",
-      "name": "Carte 1015670",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015670.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -13422,20 +10426,6 @@
       }
     },
     {
-      "sourceId": "1015760",
-      "id": "1015760",
-      "name": "Carte 1015760",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015760.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1015790",
       "id": "1015790",
       "name": "Carte 1015790",
@@ -13447,20 +10437,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1015800",
-      "id": "1015800",
-      "name": "Carte 1015800",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015800.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -13478,20 +10454,6 @@
       }
     },
     {
-      "sourceId": "1015820",
-      "id": "1015820",
-      "name": "Carte 1015820",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015820.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1015870",
       "id": "1015870",
       "name": "Carte 1015870",
@@ -13503,20 +10465,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1015890",
-      "id": "1015890",
-      "name": "Carte 1015890",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1015890.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -13559,20 +10507,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1016030",
-      "id": "1016030",
-      "name": "Carte 1016030",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016030.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -13632,34 +10566,6 @@
       }
     },
     {
-      "sourceId": "1016240",
-      "id": "1016240",
-      "name": "Carte 1016240",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016240.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1016290",
-      "id": "1016290",
-      "name": "Carte 1016290",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016290.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1016300",
       "id": "1016300",
       "name": "Carte 1016300",
@@ -13671,20 +10577,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1016310",
-      "id": "1016310",
-      "name": "Carte 1016310",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016310.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -13716,76 +10608,6 @@
       }
     },
     {
-      "sourceId": "1016440",
-      "id": "1016440",
-      "name": "Carte 1016440",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016440.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1016450",
-      "id": "1016450",
-      "name": "Carte 1016450",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016450.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1016460",
-      "id": "1016460",
-      "name": "Carte 1016460",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016460.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1016490",
-      "id": "1016490",
-      "name": "Carte 1016490",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016490.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1016560",
-      "id": "1016560",
-      "name": "Carte 1016560",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016560.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1016580",
       "id": "1016580",
       "name": "Carte 1016580",
@@ -13814,34 +10636,6 @@
       }
     },
     {
-      "sourceId": "1016690",
-      "id": "1016690",
-      "name": "Carte 1016690",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016690.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1016710",
-      "id": "1016710",
-      "name": "Carte 1016710",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016710.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1016740",
       "id": "1016740",
       "name": "Carte 1016740",
@@ -13853,76 +10647,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1016750",
-      "id": "1016750",
-      "name": "Carte 1016750",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016750.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1016780",
-      "id": "1016780",
-      "name": "Carte 1016780",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016780.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1016860",
-      "id": "1016860",
-      "name": "Carte 1016860",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016860.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1016950",
-      "id": "1016950",
-      "name": "Carte 1016950",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1016950.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1017020",
-      "id": "1017020",
-      "name": "Carte 1017020",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017020.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -13940,20 +10664,6 @@
       }
     },
     {
-      "sourceId": "1017050",
-      "id": "1017050",
-      "name": "Carte 1017050",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017050.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1017060",
       "id": "1017060",
       "name": "Carte 1017060",
@@ -13965,20 +10675,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1017070",
-      "id": "1017070",
-      "name": "Carte 1017070",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017070.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -14024,34 +10720,6 @@
       }
     },
     {
-      "sourceId": "1017290",
-      "id": "1017290",
-      "name": "Carte 1017290",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017290.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1017300",
-      "id": "1017300",
-      "name": "Carte 1017300",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017300.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1017350",
       "id": "1017350",
       "name": "Carte 1017350",
@@ -14063,20 +10731,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1017360",
-      "id": "1017360",
-      "name": "Carte 1017360",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017360.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -14150,48 +10804,6 @@
       }
     },
     {
-      "sourceId": "1017520",
-      "id": "1017520",
-      "name": "Carte 1017520",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017520.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1017530",
-      "id": "1017530",
-      "name": "Carte 1017530",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017530.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1017540",
-      "id": "1017540",
-      "name": "Carte 1017540",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017540.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1017560",
       "id": "1017560",
       "name": "Carte 1017560",
@@ -14220,76 +10832,6 @@
       }
     },
     {
-      "sourceId": "1017580",
-      "id": "1017580",
-      "name": "Carte 1017580",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017580.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1017590",
-      "id": "1017590",
-      "name": "Carte 1017590",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017590.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1017680",
-      "id": "1017680",
-      "name": "Carte 1017680",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017680.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1017710",
-      "id": "1017710",
-      "name": "Carte 1017710",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017710.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1017810",
-      "id": "1017810",
-      "name": "Carte 1017810",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017810.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1017820",
       "id": "1017820",
       "name": "Carte 1017820",
@@ -14301,20 +10843,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1017830",
-      "id": "1017830",
-      "name": "Carte 1017830",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017830.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -14332,34 +10860,6 @@
       }
     },
     {
-      "sourceId": "1017920",
-      "id": "1017920",
-      "name": "Carte 1017920",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017920.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1017940",
-      "id": "1017940",
-      "name": "Carte 1017940",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1017940.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1017950",
       "id": "1017950",
       "name": "Carte 1017950",
@@ -14371,34 +10871,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1018000",
-      "id": "1018000",
-      "name": "Carte 1018000",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018000.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1018020",
-      "id": "1018020",
-      "name": "Carte 1018020",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018020.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -14430,20 +10902,6 @@
       }
     },
     {
-      "sourceId": "1018150",
-      "id": "1018150",
-      "name": "Carte 1018150",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018150.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1018190",
       "id": "1018190",
       "name": "Carte 1018190",
@@ -14455,20 +10913,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1018240",
-      "id": "1018240",
-      "name": "Carte 1018240",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018240.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -14486,76 +10930,6 @@
       }
     },
     {
-      "sourceId": "1018290",
-      "id": "1018290",
-      "name": "Carte 1018290",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018290.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1018300",
-      "id": "1018300",
-      "name": "Carte 1018300",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018300.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1018310",
-      "id": "1018310",
-      "name": "Carte 1018310",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018310.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1018340",
-      "id": "1018340",
-      "name": "Carte 1018340",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018340.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1018370",
-      "id": "1018370",
-      "name": "Carte 1018370",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018370.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1018410",
       "id": "1018410",
       "name": "Carte 1018410",
@@ -14567,20 +10941,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1018460",
-      "id": "1018460",
-      "name": "Carte 1018460",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018460.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -14626,20 +10986,6 @@
       }
     },
     {
-      "sourceId": "1018620",
-      "id": "1018620",
-      "name": "Carte 1018620",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018620.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1018660",
       "id": "1018660",
       "name": "Carte 1018660",
@@ -14682,20 +11028,6 @@
       }
     },
     {
-      "sourceId": "1018750",
-      "id": "1018750",
-      "name": "Carte 1018750",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018750.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1018800",
       "id": "1018800",
       "name": "Carte 1018800",
@@ -14710,48 +11042,6 @@
       }
     },
     {
-      "sourceId": "1018860",
-      "id": "1018860",
-      "name": "Carte 1018860",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018860.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1018870",
-      "id": "1018870",
-      "name": "Carte 1018870",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018870.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1018930",
-      "id": "1018930",
-      "name": "Carte 1018930",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018930.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1018950",
       "id": "1018950",
       "name": "Carte 1018950",
@@ -14763,34 +11053,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1018980",
-      "id": "1018980",
-      "name": "Carte 1018980",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1018980.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1019000",
-      "id": "1019000",
-      "name": "Carte 1019000",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019000.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -14892,48 +11154,6 @@
       }
     },
     {
-      "sourceId": "1019230",
-      "id": "1019230",
-      "name": "Carte 1019230",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019230.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1019260",
-      "id": "1019260",
-      "name": "Carte 1019260",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019260.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1019270",
-      "id": "1019270",
-      "name": "Carte 1019270",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019270.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1019280",
       "id": "1019280",
       "name": "Carte 1019280",
@@ -14959,48 +11179,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1019340",
-      "id": "1019340",
-      "name": "Carte 1019340",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019340.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1019360",
-      "id": "1019360",
-      "name": "Carte 1019360",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019360.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1019390",
-      "id": "1019390",
-      "name": "Carte 1019390",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019390.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -15032,20 +11210,6 @@
       }
     },
     {
-      "sourceId": "1019520",
-      "id": "1019520",
-      "name": "Carte 1019520",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019520.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1019530",
       "id": "1019530",
       "name": "Carte 1019530",
@@ -15074,20 +11238,6 @@
       }
     },
     {
-      "sourceId": "1019590",
-      "id": "1019590",
-      "name": "Carte 1019590",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019590.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1019630",
       "id": "1019630",
       "name": "Carte 1019630",
@@ -15099,90 +11249,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1019680",
-      "id": "1019680",
-      "name": "Carte 1019680",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019680.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1019790",
-      "id": "1019790",
-      "name": "Carte 1019790",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019790.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1019860",
-      "id": "1019860",
-      "name": "Carte 1019860",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019860.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1019900",
-      "id": "1019900",
-      "name": "Carte 1019900",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1019900.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1020020",
-      "id": "1020020",
-      "name": "Carte 1020020",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1020020.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1020050",
-      "id": "1020050",
-      "name": "Carte 1020050",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1020050.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -15214,20 +11280,6 @@
       }
     },
     {
-      "sourceId": "1020220",
-      "id": "1020220",
-      "name": "Carte 1020220",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1020220.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1020250",
       "id": "1020250",
       "name": "Carte 1020250",
@@ -15239,34 +11291,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1020360",
-      "id": "1020360",
-      "name": "Carte 1020360",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1020360.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1020390",
-      "id": "1020390",
-      "name": "Carte 1020390",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1020390.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -15285,20 +11309,6 @@
       }
     },
     {
-      "sourceId": "1020540",
-      "id": "1020540",
-      "name": "Carte 1020540",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1020540.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1020550",
       "id": "1020550",
       "name": "Carte 1020550",
@@ -15310,48 +11320,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1020620",
-      "id": "1020620",
-      "name": "Carte 1020620",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1020620.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1020640",
-      "id": "1020640",
-      "name": "Carte 1020640",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1020640.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1020850",
-      "id": "1020850",
-      "name": "Carte 1020850",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1020850.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -15380,20 +11348,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1020910",
-      "id": "1020910",
-      "name": "Carte 1020910",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1020910.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -15453,34 +11407,6 @@
       }
     },
     {
-      "sourceId": "1020980",
-      "id": "1020980",
-      "name": "Carte 1020980",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1020980.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1020990",
-      "id": "1020990",
-      "name": "Carte 1020990",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1020990.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1021010",
       "id": "1021010",
       "name": "Carte 1021010",
@@ -15523,20 +11449,6 @@
       }
     },
     {
-      "sourceId": "1021120",
-      "id": "1021120",
-      "name": "Carte 1021120",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1021120.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1021140",
       "id": "1021140",
       "name": "Carte 1021140",
@@ -15548,20 +11460,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1021280",
-      "id": "1021280",
-      "name": "Carte 1021280",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1021280.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -15607,20 +11505,6 @@
       }
     },
     {
-      "sourceId": "1021390",
-      "id": "1021390",
-      "name": "Carte 1021390",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1021390.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1021440",
       "id": "1021440",
       "name": "Carte 1021440",
@@ -15635,62 +11519,6 @@
       }
     },
     {
-      "sourceId": "1021480",
-      "id": "1021480",
-      "name": "Carte 1021480",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1021480.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1021630",
-      "id": "1021630",
-      "name": "Carte 1021630",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1021630.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1021680",
-      "id": "1021680",
-      "name": "Carte 1021680",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1021680.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1021720",
-      "id": "1021720",
-      "name": "Carte 1021720",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1021720.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1021810",
       "id": "1021810",
       "name": "Carte 1021810",
@@ -15702,62 +11530,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1021870",
-      "id": "1021870",
-      "name": "Carte 1021870",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1021870.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1021950",
-      "id": "1021950",
-      "name": "Carte 1021950",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1021950.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1021990",
-      "id": "1021990",
-      "name": "Carte 1021990",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1021990.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1022070",
-      "id": "1022070",
-      "name": "Carte 1022070",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1022070.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -15786,76 +11558,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1022210",
-      "id": "1022210",
-      "name": "Carte 1022210",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1022210.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1022220",
-      "id": "1022220",
-      "name": "Carte 1022220",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1022220.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1022260",
-      "id": "1022260",
-      "name": "Carte 1022260",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1022260.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1022320",
-      "id": "1022320",
-      "name": "Carte 1022320",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1022320.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1022330",
-      "id": "1022330",
-      "name": "Carte 1022330",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1022330.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -15901,20 +11603,6 @@
       }
     },
     {
-      "sourceId": "1022580",
-      "id": "1022580",
-      "name": "Carte 1022580",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1022580.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1022590",
       "id": "1022590",
       "name": "Carte 1022590",
@@ -15957,20 +11645,6 @@
       }
     },
     {
-      "sourceId": "1022700",
-      "id": "1022700",
-      "name": "Carte 1022700",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1022700.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1022770",
       "id": "1022770",
       "name": "Carte 1022770",
@@ -15982,48 +11656,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1022780",
-      "id": "1022780",
-      "name": "Carte 1022780",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1022780.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1022800",
-      "id": "1022800",
-      "name": "Carte 1022800",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1022800.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1022930",
-      "id": "1022930",
-      "name": "Carte 1022930",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1022930.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -16069,34 +11701,6 @@
       }
     },
     {
-      "sourceId": "1023060",
-      "id": "1023060",
-      "name": "Carte 1023060",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1023060.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1023150",
-      "id": "1023150",
-      "name": "Carte 1023150",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1023150.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1023280",
       "id": "1023280",
       "name": "Carte 1023280",
@@ -16108,34 +11712,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1023290",
-      "id": "1023290",
-      "name": "Carte 1023290",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1023290.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1023300",
-      "id": "1023300",
-      "name": "Carte 1023300",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1023300.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -16167,62 +11743,6 @@
       }
     },
     {
-      "sourceId": "1023510",
-      "id": "1023510",
-      "name": "Carte 1023510",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1023510.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1023600",
-      "id": "1023600",
-      "name": "Carte 1023600",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1023600.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1023610",
-      "id": "1023610",
-      "name": "Carte 1023610",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1023610.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1023620",
-      "id": "1023620",
-      "name": "Carte 1023620",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1023620.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1023670",
       "id": "1023670",
       "name": "Carte 1023670",
@@ -16237,20 +11757,6 @@
       }
     },
     {
-      "sourceId": "1023700",
-      "id": "1023700",
-      "name": "Carte 1023700",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1023700.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1023730",
       "id": "1023730",
       "name": "Carte 1023730",
@@ -16262,34 +11768,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1023790",
-      "id": "1023790",
-      "name": "Carte 1023790",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1023790.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1023800",
-      "id": "1023800",
-      "name": "Carte 1023800",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1023800.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -16335,34 +11813,6 @@
       }
     },
     {
-      "sourceId": "1024080",
-      "id": "1024080",
-      "name": "Carte 1024080",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1024080.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1024090",
-      "id": "1024090",
-      "name": "Carte 1024090",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1024090.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1024120",
       "id": "1024120",
       "name": "Carte 1024120",
@@ -16374,34 +11824,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1024160",
-      "id": "1024160",
-      "name": "Carte 1024160",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1024160.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1024240",
-      "id": "1024240",
-      "name": "Carte 1024240",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1024240.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -16419,20 +11841,6 @@
       }
     },
     {
-      "sourceId": "1024340",
-      "id": "1024340",
-      "name": "Carte 1024340",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1024340.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1024380",
       "id": "1024380",
       "name": "Carte 1024380",
@@ -16444,20 +11852,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1024440",
-      "id": "1024440",
-      "name": "Carte 1024440",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1024440.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -16489,62 +11883,6 @@
       }
     },
     {
-      "sourceId": "1024680",
-      "id": "1024680",
-      "name": "Carte 1024680",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1024680.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1024690",
-      "id": "1024690",
-      "name": "Carte 1024690",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1024690.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1024850",
-      "id": "1024850",
-      "name": "Carte 1024850",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1024850.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1024880",
-      "id": "1024880",
-      "name": "Carte 1024880",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1024880.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1024910",
       "id": "1024910",
       "name": "Métal Cooler",
@@ -16572,20 +11910,6 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://dbz-dokkanbattle.com/card/1024921",
         "verified": "2026-09-27"
-      }
-    },
-    {
-      "sourceId": "1024940",
-      "id": "1024940",
-      "name": "Carte 1024940",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1024940.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -16631,48 +11955,6 @@
       }
     },
     {
-      "sourceId": "1025030",
-      "id": "1025030",
-      "name": "Carte 1025030",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025030.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1025040",
-      "id": "1025040",
-      "name": "Carte 1025040",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025040.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1025090",
-      "id": "1025090",
-      "name": "Carte 1025090",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025090.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1025150",
       "id": "1025150",
       "name": "Métal Cooler",
@@ -16688,20 +11970,6 @@
       }
     },
     {
-      "sourceId": "1025160",
-      "id": "1025160",
-      "name": "Carte 1025160",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025160.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1025180",
       "id": "1025180",
       "name": "Carte 1025180",
@@ -16713,20 +11981,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1025190",
-      "id": "1025190",
-      "name": "Carte 1025190",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025190.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -16745,20 +11999,6 @@
       }
     },
     {
-      "sourceId": "1025220",
-      "id": "1025220",
-      "name": "Carte 1025220",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025220.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1025230",
       "id": "1025230",
       "name": "Carte 1025230",
@@ -16773,20 +12013,6 @@
       }
     },
     {
-      "sourceId": "1025250",
-      "id": "1025250",
-      "name": "Carte 1025250",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025250.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1025350",
       "id": "1025350",
       "name": "Carte 1025350",
@@ -16798,20 +12024,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1025370",
-      "id": "1025370",
-      "name": "Carte 1025370",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025370.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -16857,20 +12069,6 @@
       }
     },
     {
-      "sourceId": "1025570",
-      "id": "1025570",
-      "name": "Carte 1025570",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025570.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1025590",
       "id": "1025590",
       "name": "Carte 1025590",
@@ -16882,20 +12080,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1025720",
-      "id": "1025720",
-      "name": "Carte 1025720",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025720.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -16913,118 +12097,6 @@
       }
     },
     {
-      "sourceId": "1025790",
-      "id": "1025790",
-      "name": "Carte 1025790",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025790.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1025840",
-      "id": "1025840",
-      "name": "Carte 1025840",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025840.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1025900",
-      "id": "1025900",
-      "name": "Carte 1025900",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1025900.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1026000",
-      "id": "1026000",
-      "name": "Carte 1026000",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1026000.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1026030",
-      "id": "1026030",
-      "name": "Carte 1026030",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1026030.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1026110",
-      "id": "1026110",
-      "name": "Carte 1026110",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1026110.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1026120",
-      "id": "1026120",
-      "name": "Carte 1026120",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1026120.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1026150",
-      "id": "1026150",
-      "name": "Carte 1026150",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1026150.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1026330",
       "id": "1026330",
       "name": "Carte 1026330",
@@ -17036,20 +12108,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1026340",
-      "id": "1026340",
-      "name": "Carte 1026340",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1026340.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -17081,20 +12139,6 @@
       }
     },
     {
-      "sourceId": "1026420",
-      "id": "1026420",
-      "name": "Carte 1026420",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1026420.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1026430",
       "id": "1026430",
       "name": "Carte 1026430",
@@ -17120,20 +12164,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1026480",
-      "id": "1026480",
-      "name": "Carte 1026480",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1026480.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -17179,20 +12209,6 @@
       }
     },
     {
-      "sourceId": "1026760",
-      "id": "1026760",
-      "name": "Carte 1026760",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1026760.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1026780",
       "id": "1026780",
       "name": "Carte 1026780",
@@ -17204,48 +12220,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1026820",
-      "id": "1026820",
-      "name": "Carte 1026820",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1026820.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1026840",
-      "id": "1026840",
-      "name": "Carte 1026840",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1026840.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1026990",
-      "id": "1026990",
-      "name": "Carte 1026990",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1026990.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -17263,62 +12237,6 @@
       }
     },
     {
-      "sourceId": "1027060",
-      "id": "1027060",
-      "name": "Carte 1027060",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027060.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1027080",
-      "id": "1027080",
-      "name": "Carte 1027080",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027080.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1027150",
-      "id": "1027150",
-      "name": "Carte 1027150",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027150.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1027160",
-      "id": "1027160",
-      "name": "Carte 1027160",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027160.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1027220",
       "id": "1027220",
       "name": "Carte 1027220",
@@ -17330,62 +12248,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1027280",
-      "id": "1027280",
-      "name": "Carte 1027280",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027280.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1027330",
-      "id": "1027330",
-      "name": "Carte 1027330",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027330.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1027420",
-      "id": "1027420",
-      "name": "Carte 1027420",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027420.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1027490",
-      "id": "1027490",
-      "name": "Carte 1027490",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027490.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -17403,90 +12265,6 @@
       }
     },
     {
-      "sourceId": "1027550",
-      "id": "1027550",
-      "name": "Carte 1027550",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027550.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1027580",
-      "id": "1027580",
-      "name": "Carte 1027580",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027580.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1027600",
-      "id": "1027600",
-      "name": "Carte 1027600",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027600.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1027610",
-      "id": "1027610",
-      "name": "Carte 1027610",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027610.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1027740",
-      "id": "1027740",
-      "name": "Carte 1027740",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027740.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1027750",
-      "id": "1027750",
-      "name": "Carte 1027750",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027750.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "1027890",
       "id": "1027890",
       "name": "Carte 1027890",
@@ -17498,202 +12276,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "1027950",
-      "id": "1027950",
-      "name": "Carte 1027950",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1027950.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028050",
-      "id": "1028050",
-      "name": "Carte 1028050",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028050.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028130",
-      "id": "1028130",
-      "name": "Carte 1028130",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028130.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028150",
-      "id": "1028150",
-      "name": "Carte 1028150",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028150.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028270",
-      "id": "1028270",
-      "name": "Carte 1028270",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028270.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028280",
-      "id": "1028280",
-      "name": "Carte 1028280",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028280.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028420",
-      "id": "1028420",
-      "name": "Carte 1028420",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028420.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028630",
-      "id": "1028630",
-      "name": "Carte 1028630",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028630.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028730",
-      "id": "1028730",
-      "name": "Carte 1028730",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028730.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028780",
-      "id": "1028780",
-      "name": "Carte 1028780",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028780.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028790",
-      "id": "1028790",
-      "name": "Carte 1028790",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028790.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028840",
-      "id": "1028840",
-      "name": "Carte 1028840",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028840.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028880",
-      "id": "1028880",
-      "name": "Carte 1028880",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028880.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "1028970",
-      "id": "1028970",
-      "name": "Carte 1028970",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/1028970.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     },
     {
@@ -18537,34 +13119,6 @@
       }
     },
     {
-      "sourceId": "2000020",
-      "id": "2000020",
-      "name": "Carte 2000020",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/2000020.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
-      "sourceId": "2000060",
-      "id": "2000060",
-      "name": "Carte 2000060",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/2000060.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "2000200",
       "id": "2000200",
       "name": "Carte 2000200",
@@ -18579,20 +13133,6 @@
       }
     },
     {
-      "sourceId": "2000690",
-      "id": "2000690",
-      "name": "Carte 2000690",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/2000690.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
-      }
-    },
-    {
       "sourceId": "2000710",
       "id": "2000710",
       "name": "Carte 2000710",
@@ -18604,20 +13144,6 @@
       "source": {
         "provider": "DokkanOS Box",
         "verified": true
-      }
-    },
-    {
-      "sourceId": "2000760",
-      "id": "2000760",
-      "name": "Carte 2000760",
-      "title": "",
-      "rarity": "",
-      "type": "",
-      "class": "",
-      "image": "assets/cards/2000760.webp",
-      "source": {
-        "provider": "DokkanOS Box",
-        "verified": false
       }
     }
   ],
@@ -18636,11 +13162,11 @@
     }
   },
   "audit": {
-    "count": 1552,
-    "uniqueIds": 1552,
+    "count": 1161,
+    "uniqueIds": 1161,
     "duplicateIds": 0,
-    "coverageVsWideReference": 112.5,
-    "boxIdsMissingFromCatalog": 0,
-    "status": "in_progress"
+    "referenceWideCount": 1380,
+    "status": "in_progress",
+    "note": "La référence 1380 et DokkanOS n'ont pas encore un périmètre strictement identique; aucun pourcentage de complétude n'est déclaré tant que les ensembles ne sont pas réconciliés."
   }
 }

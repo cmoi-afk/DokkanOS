@@ -1,0 +1,33 @@
+{
+  "milestone": "Pre-release audit after v0.5 Intelligence",
+  "status": "pass-with-known-data-review",
+  "version": "0.5.2-audit",
+  "reviewed": [
+    "collection/inventory precedence",
+    "manual ownership persistence",
+    "duplicates/missing flows",
+    "overlap conflict accounting",
+    "Team Builder leader consistency",
+    "manual cards in Team Builder",
+    "kit role/condition heuristics",
+    "PWA cache lifecycle",
+    "navigation/views"
+  ],
+  "fixes": [
+    "Load inventory before restoring team; preserve MANUAL-* team members and leaders.",
+    "Count every non-resolved overlap conflict, including suggested cases.",
+    "Selecting a leader inserts it into the six-member team.",
+    "Do not feed transformation names into base-kit role/condition heuristics.",
+    "Use an explicit versioned service-worker cache and retain old-cache cleanup."
+  ],
+  "knownDataReview": {
+    "overlapConflictsOutstanding": 4,
+    "note": "These remain user-verification items, not silently accepted identities."
+  },
+  "limitations": [
+    "Role/condition detection is heuristic text analysis.",
+    "Team scores are structural guidance, not combat simulation or damage ranking.",
+    "Browser/device interaction still needs a real iPhone smoke test after deployment."
+  ],
+  "result": "Core architecture is coherent after fixes; safe to continue development once the deployed PWA smoke test is clean."
+}

@@ -1,0 +1,274 @@
+{
+  "version": "0.3",
+  "cards": 975,
+  "suspectCards": 38,
+  "issues": [
+    {
+      "id": "1000190",
+      "name": "Captain Ginyu",
+      "issues": [
+        "leader anormalement court"
+      ]
+    },
+    {
+      "id": "1000600",
+      "name": "Cell Jr.",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1000620",
+      "name": "Yamu",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1000970",
+      "name": "Android #19",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001030",
+      "name": "Mercenary Tao",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001140",
+      "name": "Nappa",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001160",
+      "name": "Krillin",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001180",
+      "name": "Tien",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001200",
+      "name": "Yamcha",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001230",
+      "name": "Android #19",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001240",
+      "name": "Dr. Gero",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001270",
+      "name": "Android #16",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001300",
+      "name": "Recoome",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001330",
+      "name": "Jeice",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001670",
+      "name": "Guldo",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001750",
+      "name": "Goku",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001850",
+      "name": "Gohan (Teen)",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1001970",
+      "name": "Buu (Kid)",
+      "issues": [
+        "leader anormalement court"
+      ]
+    },
+    {
+      "id": "1002000",
+      "name": "Goten (Kid)",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1002040",
+      "name": "Pan (Kid)",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1002060",
+      "name": "Yakon",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1002190",
+      "name": "Gohan (Teen)",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1002680",
+      "name": "Gohan (Youth)",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1003150",
+      "name": "King Chappa",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1003840",
+      "name": "Goku",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1003950",
+      "name": "Rasin",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1004660",
+      "name": "Giran",
+      "issues": [
+        "rareté invalide/absente",
+        "leader anormalement court"
+      ]
+    },
+    {
+      "id": "1004670",
+      "name": "Staff Officer Black",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1005460",
+      "name": "Goku (Youth)",
+      "issues": [
+        "leader anormalement court"
+      ]
+    },
+    {
+      "id": "1005470",
+      "name": "Bulma (Youth)",
+      "issues": [
+        "leader anormalement court"
+      ]
+    },
+    {
+      "id": "1005600",
+      "name": "Bacterian",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1006150",
+      "name": "Pamput",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1006380",
+      "name": "Oceanus Shenron",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "1007300",
+      "name": "Goku (GT)",
+      "issues": [
+        "leader anormalement court"
+      ]
+    },
+    {
+      "id": "1009210",
+      "name": "Piccolo",
+      "issues": [
+        "leader anormalement court"
+      ]
+    },
+    {
+      "id": "1009870",
+      "name": "Goku (Youth)",
+      "issues": [
+        "leader anormalement court"
+      ]
+    },
+    {
+      "id": "1013140",
+      "name": "Yajirobe",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    },
+    {
+      "id": "2000020",
+      "name": "Gohan (Kid)",
+      "issues": [
+        "rareté invalide/absente"
+      ]
+    }
+  ]
+}

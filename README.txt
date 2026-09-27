@@ -1,5 +1,18 @@
-DokkanOS v0.1
+DokkanOS v0.3 — Foundations
 
-Ouvrir index.html pour prévisualiser sur ordinateur. Pour l'installation iPhone en mode application, le dossier doit être servi via HTTPS (PWA), puis Safari > Partager > Sur l'écran d'accueil.
+Gestionnaire mobile personnel de box Dragon Ball Z Dokkan Battle.
 
-Cette V1 contient les 1243 observations, les artworks officiels candidats, les scores de confiance et l'écran de validation visuelle.
+État actuel :
+- 1243 observations issues des captures de la Box ;
+- artworks candidats et scores de confiance ;
+- validation visuelle manuelle persistante sur l'appareil ;
+- recherche, filtres et tris ;
+- Team Builder local jusqu'à 6 cartes ;
+- tableau d'analyse de la qualité de détection ;
+- PWA installable sur iPhone avec fonctionnement hors-ligne du cœur de l'application.
+
+Installation iPhone : publier le dossier via HTTPS, ouvrir DokkanOS dans Safari, Partager > Sur l'écran d'accueil.
+
+Branche de développement v0.3 : dev/v0.3-foundations.
+
+Prochaine phase : enrichissement des fiches à partir des IDs Dokkan validés, puis analyse des catégories, liens, rôles et synergies d'équipe.

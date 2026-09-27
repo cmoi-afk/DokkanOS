@@ -1,0 +1,138 @@
+{
+  "version": "0.3",
+  "count": 4,
+  "conflicts": [
+    {
+      "physicalPosition": "BOX-0021",
+      "observations": [
+        "BOX-0021",
+        "BOX-0026"
+      ],
+      "candidates": [
+        {
+          "boxId": "BOX-0021",
+          "candidateId": "1015360",
+          "runnerId": "1012160",
+          "confidence": "À vérifier",
+          "inliers": 5,
+          "validated": false,
+          "crop": "assets/crops/BOX_0021_IMG_0075_L5C1.webp",
+          "image": "assets/cards/1015360.webp",
+          "runnerImage": "assets/cards/1012160.webp"
+        },
+        {
+          "boxId": "BOX-0026",
+          "candidateId": "1001980",
+          "runnerId": "1015030",
+          "confidence": "À vérifier",
+          "inliers": 4,
+          "validated": false,
+          "crop": "assets/crops/BOX_0026_IMG_0076_L1C1.webp",
+          "image": "assets/cards/1001980.webp",
+          "runnerImage": "assets/cards/1015030.webp"
+        }
+      ],
+      "suggestedId": null,
+      "status": "review"
+    },
+    {
+      "physicalPosition": "BOX-0227",
+      "observations": [
+        "BOX-0222",
+        "BOX-0227"
+      ],
+      "candidates": [
+        {
+          "boxId": "BOX-0227",
+          "candidateId": "1017410",
+          "runnerId": "1015890",
+          "confidence": "Très forte",
+          "inliers": 55,
+          "validated": true,
+          "crop": "assets/crops/BOX_0227_IMG_0084_L1C2.webp",
+          "image": "assets/cards/1017410.webp",
+          "runnerImage": "assets/cards/1015890.webp"
+        },
+        {
+          "boxId": "BOX-0222",
+          "candidateId": "1011730",
+          "runnerId": "1004200",
+          "confidence": "À vérifier",
+          "inliers": 4,
+          "validated": false,
+          "crop": "assets/crops/BOX_0222_IMG_0083_L5C2.webp",
+          "image": "assets/cards/1011730.webp",
+          "runnerImage": "assets/cards/1004200.webp"
+        }
+      ],
+      "suggestedId": "1017410",
+      "status": "suggested"
+    },
+    {
+      "physicalPosition": "BOX-0249",
+      "observations": [
+        "BOX-0249",
+        "BOX-0254"
+      ],
+      "candidates": [
+        {
+          "boxId": "BOX-0249",
+          "candidateId": "1011060",
+          "runnerId": "1004740",
+          "confidence": "Très forte",
+          "inliers": 33,
+          "validated": true,
+          "crop": "assets/crops/BOX_0249_IMG_0084_L5C4.webp",
+          "image": "assets/cards/1011060.webp",
+          "runnerImage": "assets/cards/1004740.webp"
+        },
+        {
+          "boxId": "BOX-0254",
+          "candidateId": "1005280",
+          "runnerId": "1016780",
+          "confidence": "À vérifier",
+          "inliers": 4,
+          "validated": false,
+          "crop": "assets/crops/BOX_0254_IMG_0085_L1C4.webp",
+          "image": "assets/cards/1005280.webp",
+          "runnerImage": "assets/cards/1016780.webp"
+        }
+      ],
+      "suggestedId": "1011060",
+      "status": "suggested"
+    },
+    {
+      "physicalPosition": "BOX-1214",
+      "observations": [
+        "BOX-1214",
+        "BOX-1219"
+      ],
+      "candidates": [
+        {
+          "boxId": "BOX-1214",
+          "candidateId": "1001040",
+          "runnerId": "1021770",
+          "confidence": "Très forte",
+          "inliers": 51,
+          "validated": true,
+          "crop": "assets/crops/BOX_1214_IMG_0124_L5C1.webp",
+          "image": "assets/cards/1001040.webp",
+          "runnerImage": "assets/cards/1021770.webp"
+        },
+        {
+          "boxId": "BOX-1219",
+          "candidateId": "1020990",
+          "runnerId": "1019900",
+          "confidence": "À vérifier",
+          "inliers": 4,
+          "validated": false,
+          "crop": "assets/crops/BOX_1219_IMG_0125_L1C1.webp",
+          "image": "assets/cards/1020990.webp",
+          "runnerImage": "assets/cards/1019900.webp"
+        }
+      ],
+      "suggestedId": "1001040",
+      "status": "suggested"
+    }
+  ]
+}

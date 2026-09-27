@@ -1,0 +1,42 @@
+{
+  "milestone": "v0.5 Intelligence",
+  "status": "complete",
+  "version": "0.5.1",
+  "checks": {
+    "kitRoleDetection": true,
+    "conditionDetection": true,
+    "reliabilityMetric": true,
+    "leaderAwareScoring": true,
+    "roleBalance": true,
+    "conditionalTeamDiagnostics": true,
+    "candidateExplanations": true,
+    "cardProfileUI": true,
+    "conditionProfileUI": true
+  },
+  "semanticScope": [
+    "défense",
+    "esquive",
+    "stack DEF",
+    "support",
+    "soin",
+    "critique",
+    "additionnelles",
+    "ki",
+    "revive",
+    "standby",
+    "domaine",
+    "PV",
+    "slot",
+    "tours",
+    "attaques reçues",
+    "attaques lancées",
+    "allié requis",
+    "ennemi requis",
+    "transformation"
+  ],
+  "limitations": [
+    "Analyse heuristique du texte des aptitudes, pas simulation du moteur Dokkan.",
+    "Les valeurs de disponibilité et cohérence ne sont pas des tier lists ni des estimations de dégâts.",
+    "Les mécaniques très spécifiques peuvent nécessiter une règle dédiée ultérieure."
+  ]
+}

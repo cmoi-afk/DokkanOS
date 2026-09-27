@@ -1,0 +1,4542 @@
+{
+  "version": "0.3",
+  "stage": "step-1-card-data",
+  "cards": 975,
+  "coverage": {
+    "name": {
+      "count": 975,
+      "pct": 100.0
+    },
+    "rarity": {
+      "count": 975,
+      "pct": 100.0
+    },
+    "type": {
+      "count": 975,
+      "pct": 100.0
+    },
+    "class": {
+      "count": 485,
+      "pct": 49.7
+    },
+    "leader": {
+      "count": 975,
+      "pct": 100.0
+    },
+    "passive": {
+      "count": 972,
+      "pct": 99.7
+    },
+    "superAttack": {
+      "count": 975,
+      "pct": 100.0
+    },
+    "categories": {
+      "count": 972,
+      "pct": 99.7
+    },
+    "links": {
+      "count": 974,
+      "pct": 99.9
+    },
+    "ultraSuperAttack": {
+      "count": 62,
+      "pct": 6.4
+    },
+    "active": {
+      "count": 59,
+      "pct": 6.1
+    },
+    "transformations": {
+      "count": 458,
+      "pct": 47.0
+    },
+    "eza": {
+      "count": 975,
+      "pct": 100.0
+    }
+  },
+  "completeCore": 485,
+  "issuesCount": 490,
+  "issues": [
+    {
+      "id": "1000020",
+      "name": "Super Saiyan Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1000070",
+      "name": "Cell (1st Form)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1000090",
+      "name": "Gohan (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1000110",
+      "name": "Krillin",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1000190",
+      "name": "Captain Ginyu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1000200",
+      "name": "Android #19",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1000210",
+      "name": "Dr. Gero",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1000600",
+      "name": "Cell Jr.",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1000620",
+      "name": "Yamu",
+      "missingCore": [
+        "class",
+        "passive"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1000830",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1000860",
+      "name": "Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1000870",
+      "name": "Gohan (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1000890",
+      "name": "Krillin",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1000930",
+      "name": "Yamcha",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1000970",
+      "name": "Android #19",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1000980",
+      "name": "Dr. Gero",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001020",
+      "name": "Master Roshi",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001030",
+      "name": "Mercenary Tao",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001040",
+      "name": "Chi-Chi",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001060",
+      "name": "Recoome",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001120",
+      "name": "Videl",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001140",
+      "name": "Nappa",
+      "missingCore": [
+        "class",
+        "passive"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001160",
+      "name": "Krillin",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001180",
+      "name": "Tien",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001200",
+      "name": "Yamcha",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001230",
+      "name": "Android #19",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001240",
+      "name": "Dr. Gero",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001270",
+      "name": "Android #16",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001300",
+      "name": "Recoome",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001330",
+      "name": "Jeice",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001390",
+      "name": "Super Saiyan Gohan (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001400",
+      "name": "Goku (Kaioken)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001420",
+      "name": "Nappa",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001440",
+      "name": "Yamcha",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001450",
+      "name": "Tien",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001620",
+      "name": "Gohan (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001630",
+      "name": "Piccolo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001670",
+      "name": "Guldo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001690",
+      "name": "Perfect Cell",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001700",
+      "name": "Super Saiyan 2 Gohan (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001710",
+      "name": "Cell (2nd Form)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001750",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001760",
+      "name": "Trunks (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001790",
+      "name": "Super Saiyan 2 Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001840",
+      "name": "Dr. Gero",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001850",
+      "name": "Gohan (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1001860",
+      "name": "Trunks (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001960",
+      "name": "Buu (Super)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001970",
+      "name": "Buu (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1001980",
+      "name": "Dabura",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002000",
+      "name": "Goten (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1002020",
+      "name": "Ultimate Gohan",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002040",
+      "name": "Pan (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1002050",
+      "name": "Babidi",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002060",
+      "name": "Yakon",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1002080",
+      "name": "Super Saiyan God SS Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002100",
+      "name": "Golden Frieza",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002130",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002190",
+      "name": "Gohan (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1002220",
+      "name": "Master Roshi (Max Power)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002260",
+      "name": "Demon King Piccolo (Elder)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002270",
+      "name": "Demon King Piccolo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002310",
+      "name": "General Blue",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002330",
+      "name": "Yamcha",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002360",
+      "name": "Devilman",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002390",
+      "name": "Vegito",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002400",
+      "name": "Gotenks",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002410",
+      "name": "Veku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002430",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002450",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002460",
+      "name": "Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002490",
+      "name": "Thouser",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002570",
+      "name": "Super Saiyan Trunks (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002580",
+      "name": "Super Saiyan Goten (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002670",
+      "name": "Whis",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002680",
+      "name": "Gohan (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1002700",
+      "name": "Super Saiyan 2 Gohan (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002790",
+      "name": "Janemba",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002810",
+      "name": "Bardock (Giant Ape)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002860",
+      "name": "Goku (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002870",
+      "name": "Gohan (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002910",
+      "name": "Chiaotzu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002920",
+      "name": "Yamcha",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002930",
+      "name": "Krillin",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1002990",
+      "name": "Super Saiyan Trunks (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003000",
+      "name": "Vegeta (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003020",
+      "name": "Super Saiyan Goku (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003040",
+      "name": "Super Saiyan 3 Goku (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003070",
+      "name": "Super Saiyan 3 Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003150",
+      "name": "King Chappa",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1003160",
+      "name": "Oolong",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003180",
+      "name": "Super Saiyan 2 Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003190",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003200",
+      "name": "Super Saiyan 2 Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003220",
+      "name": "Super Saiyan Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003230",
+      "name": "Super Saiyan 2 Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003240",
+      "name": "Super Saiyan 3 Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003260",
+      "name": "Super Saiyan Gohan (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003270",
+      "name": "Super Saiyan 2 Gohan (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003290",
+      "name": "Super Trunks",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003340",
+      "name": "Goku (Kaioken)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003370",
+      "name": "Whis",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003380",
+      "name": "Hatchiyack",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003470",
+      "name": "Kibito Kai",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003500",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003560",
+      "name": "Majin Buu (Ultimate Gohan)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003570",
+      "name": "Majin Buu (Gotenks)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003600",
+      "name": "Super Saiyan God SS Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003680",
+      "name": "Super Saiyan Bardock",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003690",
+      "name": "Super Saiyan God Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003750",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003830",
+      "name": "Gohan (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003840",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1003940",
+      "name": "Amond",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1003950",
+      "name": "Rasin",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1003980",
+      "name": "Bulma (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004020",
+      "name": "Goten (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004080",
+      "name": "Super Saiyan God SS Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004090",
+      "name": "Golden Frieza",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004190",
+      "name": "Launch",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004210",
+      "name": "Super Saiyan 2 Goku (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004300",
+      "name": "Cooler",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004380",
+      "name": "Super Saiyan Bardock",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004460",
+      "name": "Krillin",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004490",
+      "name": "Babidi",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004520",
+      "name": "Videl",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004600",
+      "name": "Metal Cooler",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004660",
+      "name": "Giran",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1004670",
+      "name": "Staff Officer Black",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1004680",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004690",
+      "name": "Super Saiyan Gohan (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004710",
+      "name": "Ultimate Gohan",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004740",
+      "name": "Super Saiyan 2 Gohan (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004750",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004760",
+      "name": "Super Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004810",
+      "name": "Gotenks (Failure) B",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004910",
+      "name": "Fusion Android #13",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004930",
+      "name": "Boujack",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1004990",
+      "name": "Super Saiyan Trunks (Xeno)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005010",
+      "name": "Frieza (Full Power)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005090",
+      "name": "Super Saiyan Goten (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005100",
+      "name": "Super Saiyan Trunks (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005110",
+      "name": "Lord Slug",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005180",
+      "name": "Super Saiyan 2 Goku (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005190",
+      "name": "Super Saiyan 2 Trunks (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005200",
+      "name": "Super Saiyan Bardock",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005210",
+      "name": "Great Saiyaman (SS2)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005220",
+      "name": "Super Saiyan God Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005260",
+      "name": "Vegito",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005270",
+      "name": "Super Gogeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005360",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005410",
+      "name": "Gotenks",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005460",
+      "name": "Goku (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005470",
+      "name": "Bulma (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005500",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005530",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005590",
+      "name": "Namu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005600",
+      "name": "Bacterian",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1005760",
+      "name": "Mr. Buu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005830",
+      "name": "Whis",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005870",
+      "name": "Pan (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005920",
+      "name": "General Rilldo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1005940",
+      "name": "Meta-Rilldo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1006000",
+      "name": "Baby (Youth Form)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1006080",
+      "name": "Ox King",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1006150",
+      "name": "Pamput",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1006360",
+      "name": "Nuova Shenron",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1006380",
+      "name": "Oceanus Shenron",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1006430",
+      "name": "Champa",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1006480",
+      "name": "Fasha (Giant Ape)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1006490",
+      "name": "Shugesh (Giant Ape)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1006500",
+      "name": "Borgos (Giant Ape)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1006710",
+      "name": "Majin Buu (Good)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1006750",
+      "name": "Super Saiyan 3 Goku (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1006760",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1006780",
+      "name": "Super Saiyan Bardock",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007020",
+      "name": "Botamo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007030",
+      "name": "Frost",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007040",
+      "name": "Frost (Assault Form)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007060",
+      "name": "Cabba",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007090",
+      "name": "Hit",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007300",
+      "name": "Goku (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007310",
+      "name": "Yamcha",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007370",
+      "name": "Super Saiyan God SS Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007380",
+      "name": "Super Saiyan God SS Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007410",
+      "name": "Majin Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007440",
+      "name": "Super Saiyan Gotenks (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007700",
+      "name": "Cooler (Final Form)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007720",
+      "name": "Buu (Kid) (Babidi)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007780",
+      "name": "Super Saiyan Goten (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007860",
+      "name": "Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007890",
+      "name": "Super Saiyan Trunks (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007900",
+      "name": "Krillin",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1007930",
+      "name": "Super Saiyan 3 Gotenks",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008010",
+      "name": "Bio-Broly",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008020",
+      "name": "Vegeta (GT)",
+      "missingCore": [
+        "class",
+        "categories"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008100",
+      "name": "Majin Buu (Ultimate Gohan)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008140",
+      "name": "Buu (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008150",
+      "name": "West Supreme Kai",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008340",
+      "name": "Karoly",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008370",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008520",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008590",
+      "name": "Ultimate Gohan",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008670",
+      "name": "Barlot",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008680",
+      "name": "Chiaoman",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008690",
+      "name": "Bulpan",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008700",
+      "name": "Janembu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008760",
+      "name": "Super Saiyan 3 Vegeta (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008840",
+      "name": "Goku Black",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008860",
+      "name": "Trunks (Teen) (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1008880",
+      "name": "Mai (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009080",
+      "name": "Cooler (Final Form)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009160",
+      "name": "Zamasu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009210",
+      "name": "Piccolo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009290",
+      "name": "Nappa",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009320",
+      "name": "Super Saiyan God SS Vegito",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009490",
+      "name": "Super Saiyan Gohan (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009530",
+      "name": "Super Saiyan God SS Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009540",
+      "name": "Super Saiyan God SS Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009550",
+      "name": "Trunks (Teen) (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009570",
+      "name": "Super Saiyan Trunks (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009600",
+      "name": "Fusion Zamasu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009650",
+      "name": "Buu (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009680",
+      "name": "Fusion Zamasu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009760",
+      "name": "Super Saiyan Trunks (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009810",
+      "name": "Yamcha",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1009990",
+      "name": "Pan (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010100",
+      "name": "Bulma (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010110",
+      "name": "Android #18",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010230",
+      "name": "Gohan (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010420",
+      "name": "Broly",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010510",
+      "name": "Saibaiman",
+      "missingCore": [
+        "class",
+        "categories"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010520",
+      "name": "Android #17",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010530",
+      "name": "Hell Fighter #17",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010540",
+      "name": "Android #17",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010630",
+      "name": "Paikuhan",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010640",
+      "name": "Goku (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010670",
+      "name": "Super Saiyan Goku (Angel) (Super Kaioken)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010840",
+      "name": "Super Gogeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010920",
+      "name": "Goten (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1010930",
+      "name": "Gohan (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011120",
+      "name": "Goku Black",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011160",
+      "name": "Super Saiyan 3 Broly",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011200",
+      "name": "Jackie Chun",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011230",
+      "name": "Yamcha",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011260",
+      "name": "Tien",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011270",
+      "name": "Vegito",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011290",
+      "name": "Super Saiyan 4 Gogeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011580",
+      "name": "Bergamo (Giant Form)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011590",
+      "name": "Toppo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011660",
+      "name": "Vegito",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011730",
+      "name": "Super Saiyan 2 Goku (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011770",
+      "name": "Super Saiyan 3 Bardock",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011790",
+      "name": "Ultimate Gohan",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011810",
+      "name": "Ultimate Gohan",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011820",
+      "name": "Whirus",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011830",
+      "name": "Cellza",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011940",
+      "name": "Majin Buu (Shape-Up)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011950",
+      "name": "Android #17",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011970",
+      "name": "Frieza (Final Form) (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1011990",
+      "name": "Buu (Super)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012010",
+      "name": "Ultimate Gohan",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012020",
+      "name": "Golden Frieza (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012040",
+      "name": "Android #18",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012050",
+      "name": "Supreme Kai",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012170",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012300",
+      "name": "Ribrianne",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012310",
+      "name": "Kakunsa",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012410",
+      "name": "Tapion (Hirudegarn)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012450",
+      "name": "Tapion",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012480",
+      "name": "Minotia",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012490",
+      "name": "Great Saiyaman",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012590",
+      "name": "Vegito",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012610",
+      "name": "Dyspo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012640",
+      "name": "Super Saiyan 2 Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012690",
+      "name": "Super Saiyan Kefla",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012710",
+      "name": "Jiren",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012750",
+      "name": "Goku Black (Super Saiyan Rosé)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012850",
+      "name": "Super Saiyan 3 Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012860",
+      "name": "Tapion",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012950",
+      "name": "Super Saiyan Trunks (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012970",
+      "name": "Zamasu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1012980",
+      "name": "Zamasu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013020",
+      "name": "Jeice",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013040",
+      "name": "Burter",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013060",
+      "name": "Guldo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013080",
+      "name": "Captain Ginyu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013140",
+      "name": "Yajirobe",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "1013150",
+      "name": "Gohan (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013180",
+      "name": "Majin Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013310",
+      "name": "Krillin",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013350",
+      "name": "Yamcha",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013360",
+      "name": "Great Saiyaman 1 & 2",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013440",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013480",
+      "name": "Jiren",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013560",
+      "name": "Turles",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013650",
+      "name": "Kale",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013700",
+      "name": "Lord Slug",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013720",
+      "name": "Goku (Kaioken)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013900",
+      "name": "Android #18",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013920",
+      "name": "Super Saiyan 3 Vegeta (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1013930",
+      "name": "Super Saiyan 3 Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014090",
+      "name": "Super Saiyan 2 Goku (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014100",
+      "name": "Trunks (Kid) & Goten (Kid) & Marron",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014200",
+      "name": "Brianne de Chateau",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014250",
+      "name": "Hit",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014280",
+      "name": "Mighty Mask",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014290",
+      "name": "Hell Fighter #17",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014360",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014430",
+      "name": "Frieza (Final Form)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014630",
+      "name": "Android #21 (Normal)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014700",
+      "name": "Jiren (Full Power)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014730",
+      "name": "Android #16",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014810",
+      "name": "Frieza (1st Form)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1014950",
+      "name": "Goku & Frieza (Final Form) (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015010",
+      "name": "Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015040",
+      "name": "Buu (Super)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015090",
+      "name": "Hercule",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015160",
+      "name": "Yamcha",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015270",
+      "name": "Super Saiyan Gotenks & Ghost",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015280",
+      "name": "Piccolo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015320",
+      "name": "Cyclopian Guard",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015360",
+      "name": "Metal Cooler",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015490",
+      "name": "Super Saiyan 3 Goku (Xeno)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015500",
+      "name": "Super Saiyan 3 Vegeta (Xeno)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015510",
+      "name": "Supreme Kai of Time (Power of Time Unleashed)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015520",
+      "name": "Super Mira",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015600",
+      "name": "Trunks (Teen) (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015630",
+      "name": "Boujack",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015760",
+      "name": "Super Saiyan 4 Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1015800",
+      "name": "Bota Magetta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016020",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016110",
+      "name": "Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016240",
+      "name": "Launch",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016270",
+      "name": "Kale",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016280",
+      "name": "Pan (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016290",
+      "name": "Giru",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016560",
+      "name": "Goku (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016710",
+      "name": "Goku (Dokkan Butoden)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016820",
+      "name": "Caulifla & Kale",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016850",
+      "name": "Super Saiyan Broly",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016950",
+      "name": "Cyborg Tao",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016980",
+      "name": "Mecha Frieza",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1016990",
+      "name": "Hell Fighter #17",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017010",
+      "name": "Gowasu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017030",
+      "name": "Vados",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017050",
+      "name": "Kale",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017070",
+      "name": "Trunks (Teen) (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017250",
+      "name": "Beat",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017290",
+      "name": "Sealas",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017330",
+      "name": "Cell (1st Form)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017360",
+      "name": "Ahms (2nd Form)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017390",
+      "name": "Goku (Xeno)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017450",
+      "name": "Super Saiyan God SS Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017520",
+      "name": "Goten (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017560",
+      "name": "Cell Jr.",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017580",
+      "name": "Android #16",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017710",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017810",
+      "name": "Krillin",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017830",
+      "name": "Android #18",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017860",
+      "name": "Hercule",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017880",
+      "name": "Cell (Perfect Form)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017920",
+      "name": "Android #17 (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1017940",
+      "name": "Android #18 (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018000",
+      "name": "Grandpa Gohan",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018170",
+      "name": "Invisible Man",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018210",
+      "name": "Trunks (Kid) (Great Saiyaman)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018290",
+      "name": "Golden Cooler",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018310",
+      "name": "Fu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018370",
+      "name": "Gohanks (Xeno)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018380",
+      "name": "Gotenks (Xeno)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018450",
+      "name": "Cumber",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018530",
+      "name": "Super Saiyan God SS Goku (Kaioken)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018600",
+      "name": "Gogeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018630",
+      "name": "Vegito",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018750",
+      "name": "Super Saiyan 2 Goku (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018770",
+      "name": "Super Saiyan 2 Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018860",
+      "name": "Goku Black (Super Saiyan Rosé)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1018980",
+      "name": "Broly",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1019050",
+      "name": "Zamasu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1019130",
+      "name": "Bardock",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1019190",
+      "name": "Tora",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1019210",
+      "name": "Shugesh",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1019230",
+      "name": "Bardock",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1019270",
+      "name": "Super Saiyan Trunks (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1019290",
+      "name": "Raditz",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1019580",
+      "name": "Majin Buu (Good)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1019620",
+      "name": "Gotenks",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1019960",
+      "name": "Bulma (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020020",
+      "name": "Krillin",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020060",
+      "name": "Annin",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020200",
+      "name": "Vegeta (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020250",
+      "name": "Gohan (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020540",
+      "name": "Demon Goddess Towa",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020610",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020640",
+      "name": "Super Saiyan 4 Vegito (Xeno)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020680",
+      "name": "Super Saiyan 4 Bardock",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020730",
+      "name": "Turles",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020860",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020880",
+      "name": "Demon God Salsa",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020900",
+      "name": "Demon God Dabura (Xeno)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020960",
+      "name": "Nuova Shenron",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1020980",
+      "name": "Super Saiyan 4 Gogeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1021040",
+      "name": "Boujack",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1021120",
+      "name": "Super Saiyan Gohan (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1021270",
+      "name": "Tien",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1021280",
+      "name": "Janemba",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1021320",
+      "name": "Paikuhan",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1021340",
+      "name": "Ultimate Gohan",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1021410",
+      "name": "Golden Frieza (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1021630",
+      "name": "Krillin & Android #18",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1021680",
+      "name": "Super Saiyan Trunks (Kid) & \nSuper Saiyan Goten (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1021770",
+      "name": "Goten (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1021840",
+      "name": "Great Saiyaman",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1021950",
+      "name": "Tapion & Minotia",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1022070",
+      "name": "Super #17",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1022100",
+      "name": "Goku & Piccolo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1022170",
+      "name": "Goku (Angel) & Vegeta (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1022210",
+      "name": "Gohan (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1022260",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1022320",
+      "name": "Mercenary Tao",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1022440",
+      "name": "Piccolo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1022610",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1022730",
+      "name": "Frieza (Full Power)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1023050",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1023150",
+      "name": "Hacchan (Berserk)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1023230",
+      "name": "Super Saiyan God Trunks (Xeno)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1023250",
+      "name": "Pan (Xeno)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1023450",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1023600",
+      "name": "Goku (Kaioken)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1023790",
+      "name": "Super Saiyan Trunks (Kid) & Super Saiyan Goten (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1023920",
+      "name": "Chi-Chi",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1023940",
+      "name": "Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1024120",
+      "name": "Goku & Piccolo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1024200",
+      "name": "Goten (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1024240",
+      "name": "Androids #16 & #18",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1024280",
+      "name": "Super Saiyan Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1024560",
+      "name": "Gohan (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1024640",
+      "name": "Fusion Zamasu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1024680",
+      "name": "Shen",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1024940",
+      "name": "Piccolo",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1024960",
+      "name": "Krillin & Gohan (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1024980",
+      "name": "Pan (GT)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1025020",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1025030",
+      "name": "Hacchan",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1025220",
+      "name": "Dabura (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1025430",
+      "name": "Golden Metal Cooler",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1025450",
+      "name": "Lagss",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1025570",
+      "name": "Piccolo (Power Awakening)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1025710",
+      "name": "Super Saiyan 3 Goku & Super Saiyan 2 Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1025790",
+      "name": "Yamcha",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026020",
+      "name": "Yajirobe",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026110",
+      "name": "Gohan (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026140",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026220",
+      "name": "Dr. Myuu & Dr. Gero",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026370",
+      "name": "Babidi",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026470",
+      "name": "Kale (Berserk)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026550",
+      "name": "Piccolo Jr.",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026740",
+      "name": "Turles",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026760",
+      "name": "Amond & Rasin",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026780",
+      "name": "Daiz & Cacao",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026800",
+      "name": "Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026860",
+      "name": "Baby",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1026990",
+      "name": "Super Saiyan Trunks (Teen)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1027150",
+      "name": "Android #18",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1027170",
+      "name": "Mamba",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1027380",
+      "name": "Zamasu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1027420",
+      "name": "Androids #17 & #18",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1027490",
+      "name": "Zirloin & Rabanra & Zarbuto",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1027530",
+      "name": "Krillin (Youth)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1027610",
+      "name": "Super Saiyan 3 Goku",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1027670",
+      "name": "Android #21 (Transformed, Evil)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1027740",
+      "name": "Crimson Masked Saiyan (Super Saiyan Rosé 3)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1027890",
+      "name": "Dark King Fu",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1028150",
+      "name": "Hirudegarn",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1028270",
+      "name": "Goku Black (Super Saiyan Rosé)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1028620",
+      "name": "Buyon",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1028640",
+      "name": "Icarus",
+      "missingCore": [
+        "class",
+        "passive",
+        "categories",
+        "links"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1028780",
+      "name": "Super Saiyan 3 Goku (Angel)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1028800",
+      "name": "Majin Buu (Good)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1028840",
+      "name": "Majin Buu (Pure Evil)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "1028970",
+      "name": "Super Saiyan 2 Trunks (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "2000020",
+      "name": "Gohan (Kid)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [
+        "rarity"
+      ],
+      "errors": []
+    },
+    {
+      "id": "2000060",
+      "name": "Vegeta",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "2000200",
+      "name": "Mighty Mask",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "2000220",
+      "name": "Trunks (Youth) (Future)",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "2000690",
+      "name": "Great Saiyaman",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "2000710",
+      "name": "Zangya",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "2000750",
+      "name": "Turles",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    },
+    {
+      "id": "2000760",
+      "name": "Paragus",
+      "missingCore": [
+        "class"
+      ],
+      "invalid": [],
+      "errors": []
+    }
+  ]
+}

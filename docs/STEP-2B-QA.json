@@ -1,0 +1,19 @@
+{
+  "milestone": "2B — Collection intelligence",
+  "status": "complete",
+  "version": "0.3.12",
+  "checks": {
+    "captureValidatedHasPriority": true,
+    "manualOwnedDeduplicatedAgainstCaptures": true,
+    "duplicatesUseValidatedPositionsOnly": true,
+    "missingExcludesOwned": true,
+    "inventoryRoutesOwnedAndMissing": true,
+    "manualChangesRefreshAllCollectionViews": true,
+    "uniqueCountUsesCanonicalOwnership": true,
+    "collectionWarningsEnabled": true,
+    "synergyReadinessEnabled": true,
+    "pwaCoreIncludesCanonicalData": true,
+    "pwaCacheVersion": "dokkanos-v0.3.12"
+  },
+  "next": "Team Builder avancé"
+}

@@ -7984,7 +7984,7 @@
       "image": "",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1015360",
+        "url": "https://dbz-dokkanbattle.com/card/1015360",
         "verified": "2026-09-27"
       }
     },
@@ -7999,7 +7999,37 @@
       "image": "https://www.dbz-dokkanbattle.com/assets/cards/1015451.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1015451",
+        "url": "https://dbz-dokkanbattle.com/card/1015451",
+        "verified": "2026-09-27"
+      }
+    },
+    {
+      "sourceId": "1015691",
+      "id": "1015691",
+      "name": "Métal Cooler (TEC)",
+      "title": "Effroyable corps de métal",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême",
+      "image": "",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://dbz-dokkanbattle.com/card/1015691",
+        "verified": "2026-09-27"
+      }
+    },
+    {
+      "sourceId": "1015701",
+      "id": "1015701",
+      "name": "Métal Cooler (INT)",
+      "title": "Effroyable corps de métal",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://dbz-dokkanbattle.com/card/1015701",
         "verified": "2026-09-27"
       }
     },
@@ -8014,7 +8044,7 @@
       "image": "https://www.dbz-dokkanbattle.com/assets/cards/1015711.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1015711",
+        "url": "https://dbz-dokkanbattle.com/card/1015711",
         "verified": "2026-09-27"
       }
     },
@@ -8029,7 +8059,7 @@
       "image": "",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1024910",
+        "url": "https://dbz-dokkanbattle.com/card/1024910",
         "verified": "2026-09-27"
       }
     },
@@ -8044,7 +8074,22 @@
       "image": "",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1024921",
+        "url": "https://dbz-dokkanbattle.com/card/1024921",
+        "verified": "2026-09-27"
+      }
+    },
+    {
+      "sourceId": "1025150",
+      "id": "1025150",
+      "name": "Métal Cooler",
+      "title": "Guerrier de l'étoile robotique",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://dbz-dokkanbattle.com/card/1025150",
         "verified": "2026-09-27"
       }
     },
@@ -8074,7 +8119,7 @@
       "image": "https://www.dbz-dokkanbattle.com/assets/cards/9115360.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/9115360",
+        "url": "https://dbz-dokkanbattle.com/card/9115360",
         "verified": "2026-09-27"
       }
     },
@@ -8089,7 +8134,7 @@
       "image": "https://www.dbz-dokkanbattle.com/assets/cards/9124931.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/9124931",
+        "url": "https://dbz-dokkanbattle.com/card/9124931",
         "verified": "2026-09-27"
       }
     }

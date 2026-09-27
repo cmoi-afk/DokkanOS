@@ -27,7 +27,7 @@ CATEGORY_FR={
  "Terrifying Conquerors":"Conquérants terrifiants","Movie Heroes":"Héros des films","Transformation Boost":"Transformation fortifiante",
  "Time Travelers":"Voyageurs du temps","Battle of Wits":"Combat cérébral","Earthlings":"Terriens",
  "Youth":"Enfance","Namekians":"Nameks","Giant Form":"Forme géante","Power Absorption":"Absorption de puissance",
- "Rapid Growth":"Croissance rapide","Crossover":"Crossover","Final Trump Card":"Dernier atout",
+ "Rapid Growth":"Croissance rapide","Crossover":"Crossover","Final Trump Card":"Dernier atout","Accelerated Battle":"Combat accéléré","Entrusted Will":"Volonté confiée","Powerful Comeback":"Retour en force","Worldwide Chaos":"Chaos mondial","Exploding Rage":"Colère explosive","Revenge":"Vengeance","Corroded Body and Mind":"Corps et esprit corrodés","Space-Traveling Warriors":"Guerriers voyageant dans l’espace","Defenders of Justice":"Défenseurs de la justice","Connected Hope":"Espoir connecté","Heavenly Events":"Événements célestes","Storied Figures":"Personnages légendaires","Gifted Warriors":"Guerriers doués","Saviors":"Sauveurs","Otherworld Warriors":"Guerriers de l’au-delà","Target: Goku":"Cible : Goku","Artificial Life Forms":"Formes de vie artificielles","Majin Power":"Puissance de Majin","Planetary Destruction":"Destruction planétaire",
  "Bond of Parent and Child":"Lien parent-enfant","Battle of Fate":"Combat fatidique","Power Beyond Super Saiyan":"Puissance au-delà du Super Saiyan"
 }
 LINK_FR={
@@ -35,7 +35,7 @@ LINK_FR={
  "Shocking Speed":"Vitesse époustouflante","Fierce Battle":"Combat acharné","Legendary Power":"Pouvoir légendaire",
  "Big Bad Bosses":"Boss","Nightmare":"Cauchemar","Fear and Faith":"Peur et désespoir",
  "Golden Warrior":"Guerrier doré","The Saiyan Lineage":"Lignée Saiyan","Royal Lineage":"Lignée royale",
- "Prodigies":"Prodiges","Cold Judgment":"Jugement froid","Brainiacs":"Cerveau","Solid Support":"Soutien solide"
+ "Prodigies":"Prodiges","Cold Judgment":"Jugement froid","Brainiacs":"Cerveau","Solid Support":"Soutien solide","Over in a Flash":"Combat éclair","Saiyan Warrior Race":"Race guerrière Saiyan","Experienced Fighters":"Combattants expérimentés","Infighter":"Combattant rapproché","Berserker":"Berserker","Metamorphosis":"Métamorphose","Infinite Regeneration":"Régénération infinie","Majin":"Majin","Wall Standing Tall":"Mur infranchissable","Thirst for Conquest":"Soif de conquête","Strongest Clan in Space":"Clan le plus puissant de l’espace","Universe’s Most Malevolent":"Le plus maléfique de l’univers","Godly Power":"Pouvoir divin","Warrior Gods":"Dieux guerriers","Tournament of Power":"Tournoi du pouvoir","Power Bestowed by God":"Pouvoir conféré par Dieu","Dismal Future":"Futur sombre","Messenger from the Future":"Messager du futur"
 }
 def tr_name(s):
     if not s:return s

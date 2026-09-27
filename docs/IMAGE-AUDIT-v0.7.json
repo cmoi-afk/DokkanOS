@@ -1,16 +1,4 @@
 {
-  "verifiedAndFilled": [
-    "1003640",
-    "1015360",
-    "1024910",
-    "1025150",
-    "1004631",
-    "1015451",
-    "1015691",
-    "1015701",
-    "1015711",
-    "1024921"
-  ],
-  "stillMissing": [],
-  "additionalMethod": "6 miniatures reprises des balises image de la fiche de chaque ID exact; URL image vérifiée 200 image/png"
+  "verifiedAndFilled": [],
+  "stillMissing": []
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fusionne les kits détaillés de DokkanAPI avec les 975 identités DokkanOS.
+"""Fusionne automatiquement les kits détaillés de DokkanAPI avec les 975 identités DokkanOS.
 Le fournisseur utilise un autre espace d'IDs : le rapprochement est donc fait
 sur (nom,titre) normalisés, puis nom seul uniquement s'il est non ambigu.
 """

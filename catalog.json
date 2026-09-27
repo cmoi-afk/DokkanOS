@@ -21257,7 +21257,7 @@
     "notes": "Les 794 IDs du fournisseur historique étaient calculés depuis sourceId au lieu de l'ID de l'image. IDs corrigés depuis le nom d'asset, puis entrées identiques fusionnées; les 130 SSR de Box ont été vérifiés sur l'index DokkanInfo.",
     "reconciledBoxIdsAdded": 5,
     "reconciledAttributeConflicts": 22,
-    "unknownResolvedFromDokkanInfo": 12,
+    "unknownResolvedFromDokkanInfo": 0,
     "unknownPendingAfterDokkanInfo": 20
   }
 }

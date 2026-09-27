@@ -36,5 +36,7 @@ def main():
    else:
     d["cards"][cid].setdefault("localizationErrors",[]).append(err);fail+=1
  d.setdefault("generated",{})["officialFrench"]={"requested":len(ids),"success":ok,"failed":fail,"provider":"DokkanInfo GLOBAL FR"}
+ # Preserve official FR as the authoritative payload. Never overwrite it later with EN-derived localization.
+ d["localization"]={"default":"fr","fallback":"source","officialFrench":True}
  p.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding="utf-8");print("FR officiel",ok,fail)
 if __name__=="__main__":main()

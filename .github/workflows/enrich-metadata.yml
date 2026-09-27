@@ -19,7 +19,7 @@ jobs:
       - run: python tools/dedupe_overlaps.py
       - run: python tools/build_overlap_conflicts.py
       - run: python tools/enrich_identity.py
-      - run: python tools/enrich_kits.py
+      - run: python tools/enrich_dokkaninfo.py
       - run: python tools/localize_fr.py
       - run: python tools/build_catalog.py
       - name: Commit metadata

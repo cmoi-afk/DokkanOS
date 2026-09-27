@@ -32,7 +32,9 @@ def main():
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
   for cid,fr,err in ex.map(one,ids):
    if fr:
-    d["cards"][cid]["fr"]={k:v for k,v in fr.items() if v not in (None,"",[],{})};ok+=1
+    d["cards"][cid]["fr"]={k:v for k,v in fr.items() if v not in (None,"",[],{})}
+    d["cards"][cid]["fr"]["_official"]=True
+    d["cards"][cid]["fr"].pop("_fallbackFields",None);ok+=1
    else:
     d["cards"][cid].setdefault("localizationErrors",[]).append(err);fail+=1
  d.setdefault("generated",{})["officialFrench"]={"requested":len(ids),"success":ok,"failed":fail,"provider":"DokkanInfo GLOBAL FR"}

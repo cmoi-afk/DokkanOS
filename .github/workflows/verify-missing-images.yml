@@ -1,7 +1,7 @@
 name: Verify missing images v0.7
 on:
   push:
-    branches: [data/catalog-fr-completion-v07]
+    branches: [main]
     paths:
       - tools/verify_missing_images.py
       - .github/workflows/verify-missing-images.yml
@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: data/catalog-fr-completion-v07
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -25,5 +25,5 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add catalog.json docs/IMAGE-AUDIT-v0.7.json
           git commit -m "Fill source-verified catalogue images"
-          git pull --rebase origin data/catalog-fr-completion-v07
-          git push origin HEAD:data/catalog-fr-completion-v07
+          git pull --rebase origin main
+          git push origin HEAD:main

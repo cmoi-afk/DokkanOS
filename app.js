@@ -4,6 +4,34 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const FR_TERMS={
 'Movie Bosses':'Boss des films','Wicked Bloodline':'Lignée diabolique','Resurrected Warriors':'Ressuscité','Giant Form':'Forme géante','Artificial Life Forms':'Forme de vie artificielle','Terrifying Conquerors':'Terrifiants conquérants','Target: Goku':'Objectif Son Goku','Corroded Body and Mind':'Corps et esprit corrompus','Gifted Warriors':'Guerriers de génie','Otherworld Warriors':"Combattants de l’au-delà",'Transformation Boost':'Transformation fortifiante','Power Absorption':'Absorption de puissance','Revenge':'Vengeance','Planetary Destruction':'Destruction planétaire','Accelerated Battle':'Combat accéléré','Battle of Fate':'Combat du destin','Final Trump Card':'Dernier recours','Joined Forces':'Forces jointes','Pure Saiyans':'Saiyans purs','Hybrid Saiyans':'Saiyans de sang mêlé','Realm of Gods':'Puissance divine','Majin Buu Saga':'Saga de Boo','Future Saga':'Saga du futur','Androids':'Cyborge','Androids/Cell Saga':'Saga des cyborgs/Cell','Full Power':'Pleine puissance','Time Travelers':'Voyageurs du temps','Kamehameha':'Kamehameha','Bond of Parent and Child':'Lien parent-enfant','Bond of Friendship':"Lien d’amitié",'Earth-Bred Fighters':'Combattants élevés sur Terre','Power Beyond Super Saiyan':'Pouvoir au-delà du Super Saiyan','Super Heroes':'Super héros','Movie Heroes':'Héros des films','Fusion':'Fusion','Fused Fighters':'Combattants fusionnés','Legendary Power':'Pouvoir légendaire','Big Bad Bosses':'Boss','Thirst for Conquest':'Ambition de conquête','Strongest Clan in Space':'Le plus puissant peuple','Auto Regeneration':'Auto-régénération','Nightmare':'Cauchemar','Fear and Faith':'Peur et désespoir','Shocking Speed':'Vitesse époustouflante','Brutal Beatdown':'Boost de handicap','Metamorphosis':'Métamorphose','Fierce Battle':'Combat acharné','Shattering the Limit':'Briser la limite','Prepared for Battle':'Préparé au combat','Super Saiyan':'Super Saiyan','Golden Warrior':'Guerrier doré','Royal Lineage':'Lignée royale','Saiyan Warrior Race':'Race guerrière Saiyan','Prodigies':'Prodiges','Cold Judgment':'Jugement froid','Brainiacs':'Cerveau','Infighter':'Combattant aguerri','Over in a Flash':'Vitesse éclair','Tournament of Power':'Tournoi du pouvoir','Godly Power':'Pouvoir divin','Warrior Gods':'Dieux guerriers','Kamehameha':'Kamehameha'
 };
+FR_TERMS["DB Saga"]="Arc enfant";
+FR_TERMS["Planet Namek Saga"]="Saga de Namek";
+FR_TERMS["Universe Survival Saga"]="Survie de l’Univers";
+FR_TERMS["Shadow Dragon Saga"]="Dragon maléfique";
+FR_TERMS["Miraculous Awakening"]="Éveil miraculeux";
+FR_TERMS["Powerful Comeback"]="Puissance restaurée";
+FR_TERMS["World Tournament"]="Tenkaichi Budokai";
+FR_TERMS["Ginyu Force"]="Commando Ginyu";
+FR_TERMS["Rapid Growth"]="Croissance rapide";
+FR_TERMS["Saviors"]="Sauveur";
+FR_TERMS["Universe 6"]="Univers 6";
+FR_TERMS["Representatives of Universe 7"]="Représentants de l’Univers 7";
+FR_TERMS["Majin Power"]="Pouvoir de Majin";
+FR_TERMS["Potara"]="Potalas";
+FR_TERMS["Dragon Ball Seekers"]="Chercheurs de boules de cristal";
+FR_TERMS["Heavenly Events"]="Péripéties célestes";
+FR_TERMS["Battle of Wits"]="Combat plein d’astuces";
+FR_TERMS["Earthlings"]="Terriens";
+FR_TERMS["Special Pose"]="Pose spéciale";
+FR_TERMS["Space-Traveling Warriors"]="Guerriers galactiques";
+FR_TERMS["Defenders of Justice"]="Défenseurs de la justice";
+FR_TERMS["Connected Hope"]="Espoir connecté";
+FR_TERMS["Entrusted Will"]="Volonté confiée";
+FR_TERMS["Fused Fighters"]="Combattants fusionnés";
+FR_TERMS["Worldwide Chaos"]="Chaos mondial";
+FR_TERMS["Power of Wishes"]="Pouvoir des souhaits";
+FR_TERMS["Super Heroes"]="Super héros";
+FR_TERMS["Movie Heroes"]="Héros des films";
 function frTerm(v){return FR_TERMS[v]||v}
 function frList(a){return (a||[]).map(frTerm)}
 

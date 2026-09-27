@@ -3234,7 +3234,10 @@
         "provider": "okfaygo/dokkan-translation",
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
-      }
+      },
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003640_thumb/card_1003640_thumb.png",
+      "imageSource": "https://www.dbz-dokkanbattle.com/card/1004631",
+      "imageMatch": "miniature affichée pour l'ID exact (asset 1003640)"
     },
     {
       "sourceId": "1465",
@@ -16656,7 +16659,10 @@
         "provider": "okfaygo/dokkan-translation",
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
-      }
+      },
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015450_thumb/card_1015450_thumb.png",
+      "imageSource": "https://www.dbz-dokkanbattle.com/card/1015451",
+      "imageMatch": "miniature affichée pour l'ID exact (asset 1015450)"
     },
     {
       "sourceId": "1015471",
@@ -16830,7 +16836,7 @@
       "rarity": "SSR",
       "type": "TEC",
       "class": "Extrême",
-      "image": "",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015680_thumb/card_1015680_thumb.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://dbz-dokkanbattle.com/card/1015691",
@@ -16840,7 +16846,9 @@
         "provider": "okfaygo/dokkan-translation",
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
-      }
+      },
+      "imageSource": "https://www.dbz-dokkanbattle.com/card/1015691",
+      "imageMatch": "miniature affichée pour l'ID exact (asset 1015680)"
     },
     {
       "sourceId": "1015701",
@@ -16850,7 +16858,7 @@
       "rarity": "SSR",
       "type": "INT",
       "class": "Extrême",
-      "image": "",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015680_thumb/card_1015680_thumb.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://dbz-dokkanbattle.com/card/1015701",
@@ -16860,7 +16868,9 @@
         "provider": "okfaygo/dokkan-translation",
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
-      }
+      },
+      "imageSource": "https://www.dbz-dokkanbattle.com/card/1015701",
+      "imageMatch": "miniature affichée pour l'ID exact (asset 1015680)"
     },
     {
       "sourceId": "1015711",
@@ -16879,7 +16889,10 @@
         "provider": "okfaygo/dokkan-translation",
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
-      }
+      },
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015680_thumb/card_1015680_thumb.png",
+      "imageSource": "https://www.dbz-dokkanbattle.com/card/1015711",
+      "imageMatch": "miniature affichée pour l'ID exact (asset 1015680)"
     },
     {
       "sourceId": "11575",
@@ -30881,7 +30894,7 @@
       "rarity": "UR",
       "type": "END",
       "class": "Extrême",
-      "image": "",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024920_thumb/card_1024920_thumb.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://dbz-dokkanbattle.com/card/1024921",
@@ -30892,7 +30905,9 @@
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
       },
-      "awakensFrom": "1024920"
+      "awakensFrom": "1024920",
+      "imageSource": "https://www.dbz-dokkanbattle.com/card/1024921",
+      "imageMatch": "miniature affichée pour l'ID exact (asset 1024920)"
     },
     {
       "sourceId": "12493",

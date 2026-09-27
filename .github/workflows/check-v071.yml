@@ -1,0 +1,16 @@
+name: Verify v0.7.1 fixes
+on:
+  push:
+    branches: [fix/verification-and-missing-v07]
+  pull_request:
+    paths: [app.js, catalog.json, index.html, sw.js, tools/test_v071.cjs]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check app.js
+      - run: node tools/test_v071.cjs

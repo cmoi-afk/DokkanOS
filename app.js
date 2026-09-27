@@ -114,6 +114,19 @@ FR_TERMS["Majin Buu Saga"]="Saga de Boo";
 FR_TERMS["Future Saga"]="Saga du futur";
 FR_TERMS["Androids/Cell Saga"]="Saga des cyborgs/Cell";
 function isLikelyNonPlayable(x){const s=((x&&[x.name,x.title,x.kind,x.type,x.category,x.description].filter(Boolean).join(' '))||'').toLowerCase();return /(mr\.?\s*satan|hercule).*(statue)|statue.*(mr\.?\s*satan|hercule)|awakening medal|training item|support item|treasure item|objet d'entraînement|médaille d'éveil|objet de soutien/.test(s)}
+FR_TERMS["All-Out Struggle"]="Combat acharné";
+FR_TERMS["Battle of Wits"]="Combat plein d'astuces";
+FR_TERMS["Majin Power"]="Pouvoir de Majin";
+FR_TERMS["Rapid Growth"]="Croissance rapide";
+FR_TERMS["Power Absorption"]="Absorption de puissance";
+FR_TERMS["Heavenly Events"]="Péripéties célestes";
+FR_TERMS["Mastered Evolution"]="Évolution maîtrisée";
+FR_TERMS["Battle of Fate"]="Combat fatidique";
+FR_TERMS["Power Beyond Super Saiyan"]="Puissance au-delà du Super Saiyan";
+FR_TERMS["Super Bosses"]="Boss de DB Super";
+FR_TERMS["Tournament Participants"]="Participants aux tournois";
+FR_TERMS["Accelerated Battle"]="Combat rapide";
+FR_TERMS["Exploding Rage"]="Colère explosive";
 function frTerm(v){return FR_TERMS[v]||v}
 function frList(a){return (a||[]).map(frTerm)}
 
@@ -167,6 +180,7 @@ function imageAuditSummary(){try{return JSON.parse(localStorage.getItem('dokkano
 function reportBrokenImage(id){if(!id)return;try{let a=JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]');if(!a.includes(String(id))){a.push(String(id));localStorage.setItem('dokkanos-broken-images',JSON.stringify(a))}}catch(e){}}
 function isPlayableCard(card){
   if(!card)return false;
+  if(isLikelyNonPlayable(card))return false;
   const name=[card.name,card.title,card.fr?.name,card.fr?.title].filter(Boolean).join(' ');
   if(NON_PLAYABLE_NAME_RE.test(name))return false;
   const leader=String(card.leader||card.fr?.leader||'');

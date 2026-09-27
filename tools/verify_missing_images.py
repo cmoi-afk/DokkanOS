@@ -4,6 +4,8 @@ import json,re,urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
+IMAGE_ALIASES={"1004631":"1003640","1015691":"1015680","1015701":"1015680","1015711":"1015680"}
+
 path=root/"catalog.json"; data=json.loads(path.read_text(encoding="utf-8"))
 
 def check(card):

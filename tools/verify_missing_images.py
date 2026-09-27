@@ -11,7 +11,13 @@ for card in data["cards"]:
         url=f"https://www.dbz-dokkanbattle.com/img/character/thumb/card_{cid}_thumb/card_{cid}_thumb.png"
         missing.append(cid)
     m=re.search(r"card_(\d+)_thumb",url)
-    if m and m.group(1)!=cid: mismatched.append({"id":cid,"imageId":m.group(1),"url":url})
+    if m and m.group(1)!=cid:
+        image_id=m.group(1)
+        # French reference pages commonly expose awakened page IDs ending in 1
+        # while the official asset uses the base ID ending in 0.
+        canonical_asset=(cid.endswith("1") and image_id==cid[:-1]+"0")
+        if not canonical_asset:
+            mismatched.append({"id":cid,"imageId":image_id,"url":url})
     try:
         req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0"})
         with urllib.request.urlopen(req,timeout=20) as r:

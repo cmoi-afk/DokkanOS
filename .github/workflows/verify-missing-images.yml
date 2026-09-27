@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - tools/verify_missing_images.py
+      - catalog.json
       - assets/cards/**
       - docs/IMAGE-AUDIT-TRIGGER
       - tools/verify_missing_images.py

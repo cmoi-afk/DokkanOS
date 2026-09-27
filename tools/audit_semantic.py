@@ -9,7 +9,7 @@ def main():
   x=[]
   if c.get("rarity") not in {"SR","SSR","UR","LR"}:x.append("rareté invalide/absente")
   if c.get("type") not in {"AGL","TEQ","INT","STR","PHY"}:x.append("type invalide/absent")
-  if c.get("class") not in {"Super","Extreme"}:x.append("classe invalide/absente")
+  if c.get("class") not in {"",None,"Super","Extreme"}:x.append("classe invalide")
   if c.get("leader") and len(str(c["leader"]))<8:x.append("leader anormalement court")
   if c.get("passive") and len(str(c["passive"]))<8:x.append("passif anormalement court")
   if c.get("categories") is not None and not isinstance(c["categories"],list):x.append("catégories non-listes")

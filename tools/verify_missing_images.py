@@ -17,7 +17,7 @@ for card in data["cards"]:
         request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(request, timeout=20) as response:
             body = response.read(16)
-            valid = response.status == 200 and response.headers.get("Content-Type", "").startswith("image/") and body.startswith(b"\\x89PNG")
+            valid = response.status == 200 and response.headers.get("Content-Type", "").startswith("image/") and body.startswith(bytes([137, 80, 78, 71]))
         if valid:
             card["image"] = url
             resolved.append(card_id)

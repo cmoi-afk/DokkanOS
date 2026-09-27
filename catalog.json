@@ -1558,6 +1558,21 @@
       }
     },
     {
+      "sourceId": "1001851",
+      "id": "1001851",
+      "name": "Son Gohan (jeune)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001851_thumb/card_1001851_thumb.png",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001851",
+        "match": "verified SR awakening source"
+      }
+    },
+    {
       "sourceId": "1001860",
       "id": "1001860",
       "name": "Trunks (jeune)",
@@ -43291,15 +43306,15 @@
     }
   },
   "audit": {
-    "count": 2044,
-    "uniqueIds": 2044,
+    "count": 2045,
+    "uniqueIds": 2045,
     "duplicateIds": 0,
     "referenceWideCount": 1380,
     "status": "in_progress",
     "note": "Contrôle des IDs de Box validés sur data.json : 64 manquants ajoutés; noms obtenus par ID exact, rareté/type uniquement après correspondance de l'ID asset. Aucun attribut inféré pour les fiches restantes.",
     "rarityCounts": {
       "LR": 293,
-      "SR": 158,
+      "SR": 159,
       "SSR": 251,
       "UR": 1342
     },
@@ -43307,7 +43322,7 @@
       "AGI": 407,
       "END": 404,
       "INT": 404,
-      "PUI": 425,
+      "PUI": 426,
       "TEC": 404
     },
     "boxIdentityResolved": 363,
@@ -43322,9 +43337,9 @@
     "reconciledAttributeConflicts": 22,
     "unknownResolvedFromDokkanInfo": 0,
     "unknownPendingAfterDokkanInfo": 0,
-    "frenchReferenceNewCards": 3,
+    "frenchReferenceNewCards": 4,
     "frenchReferenceConflicts": 0,
-    "srAwaitingAwakeningReview": 1,
+    "srAwaitingAwakeningReview": 0,
     "srAwakeningConfirmed": 144,
     "srAwakeningPending": 2,
     "exactAwakeningPairs": 126,

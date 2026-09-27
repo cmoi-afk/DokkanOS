@@ -1,15 +1,5 @@
 {
   "reason": "éveil utile à vérifier par chaîne d'ID",
-  "count": 1,
-  "cards": [
-    {
-      "id": "1001851",
-      "name": "Son Gohan (jeune)",
-      "rarity": "SR",
-      "type": "PUI",
-      "class": "Super",
-      "hasDokkan": "2",
-      "url": "https://www.dbz-dokkanbattle.com/card/1001851"
-    }
-  ]
+  "count": 0,
+  "cards": []
 }

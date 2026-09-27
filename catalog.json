@@ -43322,12 +43322,12 @@
     "reconciledAttributeConflicts": 22,
     "unknownResolvedFromDokkanInfo": 0,
     "unknownPendingAfterDokkanInfo": 0,
-    "frenchReferenceNewCards": 0,
+    "frenchReferenceNewCards": 3,
     "frenchReferenceConflicts": 0,
     "srAwaitingAwakeningReview": 2,
     "srAwakeningConfirmed": 144,
     "srAwakeningPending": 2,
     "exactAwakeningPairs": 126,
-    "nonPlayableRemoved": 4
+    "nonPlayableRemoved": 3
   }
 }

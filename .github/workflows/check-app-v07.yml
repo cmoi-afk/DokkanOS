@@ -18,7 +18,7 @@ jobs:
         run: |
           node <<'JS'
           const fs=require('fs'),vm=require('vm'),assert=require('assert');
-          const script=fs.readFileSync('app.js','utf8');
+          const script=fs.readFileSync('app.js','utf8').split("boot().catch(")[0];
           const catalogue={cards:[
             {id:'100',rarity:'SSR',awakensTo:'101'},
             {id:'101',rarity:'UR',awakensTo:'102'},

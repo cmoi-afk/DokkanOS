@@ -1,0 +1,735 @@
+{
+  "requested": 146,
+  "confirmed": [
+    {
+      "id": "1000030",
+      "awakensTo": "1000031",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000040",
+      "awakensTo": "1000041",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000070",
+      "awakensTo": "1000071",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000090",
+      "awakensTo": "1000091",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000100",
+      "awakensTo": "1000101",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000110",
+      "awakensTo": "1000111",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000120",
+      "awakensTo": "1000121",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000130",
+      "awakensTo": "1000131",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000140",
+      "awakensTo": "1000141",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000150",
+      "awakensTo": "1000151",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000160",
+      "awakensTo": "1000161",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000170",
+      "awakensTo": "1000171",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000180",
+      "awakensTo": "1000181",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000190",
+      "awakensTo": "1000191",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000200",
+      "awakensTo": "1000201",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000210",
+      "awakensTo": "1000211",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000220",
+      "awakensTo": "1000221",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000230",
+      "awakensTo": "1000231",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000240",
+      "awakensTo": "1000241",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000250",
+      "awakensTo": "1000251",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000260",
+      "awakensTo": "1000261",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000810",
+      "awakensTo": "1000811",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000820",
+      "awakensTo": "1000821",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000850",
+      "awakensTo": "1000851",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000870",
+      "awakensTo": "1000871",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000880",
+      "awakensTo": "1000881",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000890",
+      "awakensTo": "1000891",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000900",
+      "awakensTo": "1000901",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000910",
+      "awakensTo": "1000911",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000920",
+      "awakensTo": "1000921",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000930",
+      "awakensTo": "1000931",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000940",
+      "awakensTo": "1000941",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000950",
+      "awakensTo": "1000951",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000960",
+      "awakensTo": "1000961",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000980",
+      "awakensTo": "1000981",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1000990",
+      "awakensTo": "1000991",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001000",
+      "awakensTo": "1001001",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001010",
+      "awakensTo": "1001011",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001050",
+      "awakensTo": "1001051",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001060",
+      "awakensTo": "1001061",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001070",
+      "awakensTo": "1001071",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001080",
+      "awakensTo": "1001081",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001090",
+      "awakensTo": "1001091",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001100",
+      "awakensTo": "1001101",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001110",
+      "awakensTo": "1001111",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001380",
+      "awakensTo": "1001381",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001420",
+      "awakensTo": "1001421",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001430",
+      "awakensTo": "1001431",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001440",
+      "awakensTo": "1001441",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001450",
+      "awakensTo": "1001451",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001460",
+      "awakensTo": "1001461",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001500",
+      "awakensTo": "1001501",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001530",
+      "awakensTo": "1001531",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001610",
+      "awakensTo": "1001611",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001620",
+      "awakensTo": "1001621",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001710",
+      "awakensTo": "1001711",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001720",
+      "awakensTo": "1001721",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001730",
+      "awakensTo": "1001731",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001740",
+      "awakensTo": "1001741",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001760",
+      "awakensTo": "1001761",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001770",
+      "awakensTo": "1001771",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001830",
+      "awakensTo": "1001831",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001840",
+      "awakensTo": "1001841",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001860",
+      "awakensTo": "1001861",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1001980",
+      "awakensTo": "1001981",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002030",
+      "awakensTo": "1002031",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002130",
+      "awakensTo": "1002131",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002140",
+      "awakensTo": "1002141",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002200",
+      "awakensTo": "1002201",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002210",
+      "awakensTo": "1002211",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002220",
+      "awakensTo": "1002221",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002280",
+      "awakensTo": "1002281",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002310",
+      "awakensTo": "1002311",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002320",
+      "awakensTo": "1002321",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002330",
+      "awakensTo": "1002331",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002340",
+      "awakensTo": "1002341",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002410",
+      "awakensTo": "1002411",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002420",
+      "awakensTo": "1002421",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002430",
+      "awakensTo": "1002431",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002570",
+      "awakensTo": "1002571",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002580",
+      "awakensTo": "1002581",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002600",
+      "awakensTo": "1002601",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002710",
+      "awakensTo": "1002711",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002870",
+      "awakensTo": "1002871",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002940",
+      "awakensTo": "1002941",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1002980",
+      "awakensTo": "1002981",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003000",
+      "awakensTo": "1003001",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003130",
+      "awakensTo": "1003131",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003160",
+      "awakensTo": "1003161",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003220",
+      "awakensTo": "1003221",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003280",
+      "awakensTo": "1003281",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003330",
+      "awakensTo": "1003331",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003400",
+      "awakensTo": "1003401",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003450",
+      "awakensTo": "1003451",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003460",
+      "awakensTo": "1003461",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003470",
+      "awakensTo": "1003471",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003480",
+      "awakensTo": "1003481",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003510",
+      "awakensTo": "1003511",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003540",
+      "awakensTo": "1003541",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003700",
+      "awakensTo": "1003701",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003820",
+      "awakensTo": "1003821",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003870",
+      "awakensTo": "1003871",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003900",
+      "awakensTo": "1003901",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003920",
+      "awakensTo": "1003921",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003930",
+      "awakensTo": "1003931",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1003940",
+      "awakensTo": "1003941",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1004020",
+      "awakensTo": "1004021",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1004190",
+      "awakensTo": "1004191",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1004280",
+      "awakensTo": "1004281",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1004440",
+      "awakensTo": "1004441",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1004460",
+      "awakensTo": "1004461",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1004830",
+      "awakensTo": "1004831",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1004840",
+      "awakensTo": "1004841",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1004870",
+      "awakensTo": "1004871",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1005240",
+      "awakensTo": "1005241",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1005250",
+      "awakensTo": "1005251",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1005420",
+      "awakensTo": "1005421",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1005510",
+      "awakensTo": "1005511",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1005590",
+      "awakensTo": "1005591",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1005870",
+      "awakensTo": "1005871",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1006000",
+      "awakensTo": "1006001",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1006080",
+      "awakensTo": "1006081",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1006250",
+      "awakensTo": "1006251",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1007030",
+      "awakensTo": "1007031",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1007040",
+      "awakensTo": "1007041",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1007050",
+      "awakensTo": "1007051",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1007750",
+      "awakensTo": "1007751",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1008500",
+      "awakensTo": "1008501",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1010700",
+      "awakensTo": "1010701",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1011220",
+      "awakensTo": "1011221",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1011230",
+      "awakensTo": "1011231",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1011790",
+      "awakensTo": "1011791",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1012470",
+      "awakensTo": "1012471",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1012480",
+      "awakensTo": "1012481",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1012560",
+      "awakensTo": "1012561",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1012940",
+      "awakensTo": "1012941",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1013310",
+      "awakensTo": "1013311",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1013350",
+      "awakensTo": "1013351",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1016430",
+      "awakensTo": "1016431",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "1018170",
+      "awakensTo": "1018171",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "2000160",
+      "awakensTo": "2000161",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "2000180",
+      "awakensTo": "2000181",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "2000690",
+      "awakensTo": "2000691",
+      "rarityAfterAwakening": "SSR"
+    },
+    {
+      "id": "2000760",
+      "awakensTo": "2000761",
+      "rarityAfterAwakening": "SSR"
+    }
+  ],
+  "pending": [
+    {
+      "id": "1001851",
+      "reason": "forme +1 non affichée sur la page"
+    },
+    {
+      "id": "1002640",
+      "reason": "forme +1 non affichée sur la page"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+name: Resolve catalogue unknowns v0.7
+on:
+  push:
+    branches: [data/catalog-fr-completion-v07]
+    paths:
+      - tools/resolve_catalog_unknown.py
+      - .github/workflows/resolve-catalog-unknown.yml
+      - tools/snapshot_dbz_catalog.py
+      - tools/merge_dbz_catalog.py
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data/catalog-fr-completion-v07
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python tools/snapshot_dbz_catalog.py
+      - run: python tools/resolve_catalog_unknown.py
+      - run: python tools/merge_dbz_catalog.py
+      - name: Commit verified catalogue data and unresolved report
+        run: |
+          git config user.name "DokkanOS Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add catalog.json docs/CATALOG-UNKNOWN-v0.7.json docs/DBZ-CARD-INDEX-v0.7.json docs/DBZ-RECONCILIATION-v0.7.json docs/SR-AWAKENING-REVIEW-v0.7.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "data: verify pending catalogue metadata by exact DokkanInfo ID"
+          git pull --rebase origin data/catalog-fr-completion-v07
+          git push origin HEAD:data/catalog-fr-completion-v07

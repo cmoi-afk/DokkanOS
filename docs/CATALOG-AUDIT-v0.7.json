@@ -1,0 +1,109 @@
+{
+  "version": "0.7-catalog-fr",
+  "date": "2026-09-27",
+  "status": "in_progress",
+  "catalog": {
+    "entries": 2048,
+    "uniqueIds": 2048,
+    "duplicateIds": 0,
+    "sourceCounts": {
+      "DBZ Dokkan Battle France": 1088,
+      "DokkanOS Box": 368,
+      "feijoes/DokkanAPI": 592
+    },
+    "rarityCounts": {
+      "LR": 293,
+      "SR": 158,
+      "SSR": 254,
+      "UR": 1343
+    },
+    "typeCounts": {
+      "AGI": 379,
+      "END": 380,
+      "INT": 375,
+      "PUI": 392,
+      "TEC": 378
+    },
+    "identityResolvedFromBox": 368,
+    "attributesResolvedFromBox": 368,
+    "attributesPendingFromBox": 0,
+    "legacyIdsReconciled": 794,
+    "exactIdMerges": 202,
+    "boxValidatedIdsRestoredAfterReconciliation": 5,
+    "attributesCorrectedFromIndependentIndex": 22,
+    "boxIdentitiesPresent": 376,
+    "frenchReferenceNewCards": 876,
+    "srAwaitingAwakeningReview": 2,
+    "srAwakeningConfirmed": 144,
+    "exactAwakeningPairsConfirmed": 126,
+    "exactAwakeningPairsPending": 3
+  },
+  "references": {
+    "dbzDokkanBattleFrance": {
+      "observed": 1441,
+      "scope": "page Cartes au 27/09/2026, 1 441 IDs de N à LR ; périmètre différent de DokkanOS",
+      "url": "https://www.dbz-dokkanbattle.com/cards"
+    },
+    "dokkanEssentials": {
+      "observed": 1071,
+      "scope": "Essencyclopédie personnages",
+      "url": "https://dokkanessentials.com/Rechercher-une-carte"
+    }
+  },
+  "gates": {
+    "allBoxValidatedIdsPresent": true,
+    "noDuplicateIds": true,
+    "fullReferenceReconciliation": false,
+    "allDisplayedDataFrench": false
+  },
+  "notes": [
+    "Les deux références n'ont pas exactement le même périmètre; leurs nombres ne sont pas utilisés comme égalité stricte.",
+    "Les identifications Box non validées sont exclues du catalogue maître.",
+    "Aucune donnée inventée ne doit être ajoutée pour atteindre artificiellement un nombre cible.",
+    "794 fiches héritées portaient un ID synthétique différent de l'ID présent dans leur image; 202 chevauchements d'IDs réels ont été fusionnés.",
+    "144 SR avec forme SSR voisine vérifiée; 2 SR restent isolées en attente de confirmation d'un éveil.",
+    "126 paires supplémentaires relient les formes déjà présentes; 3 paires candidates sont laissées séparées car les noms/types source diffèrent."
+  ],
+  "provenance": {
+    "identity": {
+      "provider": "DokkanBattleLibrary/allData.json",
+      "match": "exact card ID",
+      "count": 363
+    },
+    "rarityTypeClass": {
+      "provider": "feijoes/DokkanAPI/DokkanCharacterData.json",
+      "match": "asset ID extracted from thumbnail URL",
+      "count": 336
+    },
+    "independentIndex": {
+      "provider": "okfaygo/dokkan-translation (DokkanInfo index)",
+      "match": "exact card ID",
+      "uses": "SSR/UR/LR rarity, type and conflicting attributes"
+    },
+    "dokkanInfoDirect": {
+      "provider": "DokkanInfo GLOBAL",
+      "match": "exact card ID and name",
+      "resolved": 12,
+      "requested": 40
+    },
+    "frenchListing": {
+      "provider": "DBZ Dokkan Battle France",
+      "url": "https://www.dbz-dokkanbattle.com/cards",
+      "cardsListed": 1441,
+      "newSSRURLR": 876,
+      "individualPagesVerified": 28
+    },
+    "srAwakenings": {
+      "provider": "DBZ Dokkan Battle France",
+      "method": "ID SR exact et ID +1 SSR de même nom/type sur la fiche SR",
+      "confirmed": 144,
+      "pending": 2
+    },
+    "awakeningPairs": {
+      "provider": "DBZ Dokkan Battle France",
+      "method": "deux IDs adjacents présents sur la fiche source, même nom et même type",
+      "confirmed": 126,
+      "pending": 3
+    }
+  }
+}

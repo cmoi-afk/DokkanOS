@@ -1,0 +1,23 @@
+{
+  "milestone": "v0.4 Team Builder avancé",
+  "status": "complete",
+  "version": "0.4.2",
+  "checks": {
+    "ownedCardsOnly": true,
+    "manualOwnedSupported": true,
+    "leaderParser": true,
+    "leaderCoverage": true,
+    "candidateRanking": true,
+    "autoBuild": true,
+    "teamMetrics": true,
+    "rotations": true,
+    "unitDiagnostics": true,
+    "replacementSuggestions": true,
+    "explanations": true,
+    "quickRemove": true
+  },
+  "limitations": [
+    "Le score est une cohérence structurelle, pas une simulation de dégâts.",
+    "Les conditions complexes des passifs et transformations ne sont pas simulées tour par tour."
+  ]
+}

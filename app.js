@@ -149,6 +149,43 @@ FR_TERMS["Movie Bosses"]="Boss des films";
 FR_TERMS["Movie Heroes"]="Héros des films";
 FR_TERMS["Super Bosses"]="Boss de DB Super";
 FR_TERMS["Super Heroes"]="Héros de DB Super";
+FR_TERMS["Turtle School"]="École tortue";
+FR_TERMS["Uncontrollable Power"]="Puissance incontrôlable";
+FR_TERMS["Worthy Rivals"]="Digne rival";
+FR_TERMS["High Compatibility"]="Super compatibilité";
+FR_TERMS["All in the Family"]="Liens familiaux";
+FR_TERMS["Galactic Visitor"]="Visiteur d'ailleurs";
+FR_TERMS["The Innocents"]="Innocent";
+FR_TERMS["Experienced Fighters"]="Guerrier vétéran";
+FR_TERMS["Messenger from the Future"]="Messager du futur";
+FR_TERMS["Supreme Warrior"]="Guerrier suprême";
+FR_TERMS["Demonic Power"]="Pouvoir démoniaque";
+FR_TERMS["Crane School"]="École de la grue";
+FR_TERMS["Master and Disciple"]="Disciple";
+FR_TERMS["Courage"]="Courage";
+FR_TERMS["World Tournament Champion"]="Champion du monde";
+FR_TERMS["More Than Meets the Eye"]="Look trompeur";
+FR_TERMS["Coward"]="Lâche";
+FR_TERMS["Twins"]="Jumeaux";
+FR_TERMS["Mechanical Menaces"]="Mécanique";
+FR_TERMS["Solid Support"]="Soutien infaillible";
+FR_TERMS["Android Assault"]="Amélioration cybernétique";
+FR_TERMS["Resurrection 'F'"]="Résurrection 'F'";
+FR_TERMS["Despair Future"]="Futur désespéré";
+FR_TERMS["The Wall Standing Tall"]="Mur gênant";
+FR_TERMS["Supreme Power"]="La puissance suprême";
+FR_TERMS["Soul vs Soul"]="Âme vs âme";
+FR_TERMS["Limit-Breaking Form"]="Forme brisant la limite";
+FR_TERMS["Hatred of Saiyans"]="Haine des Saiyans";
+FR_TERMS["Fusion Failure"]="Échec de fusion";
+FR_TERMS["Infinite Energy"]="Énergie infinie";
+FR_TERMS["Ultimate Lifeform"]="Forme ultime";
+FR_TERMS["God's Power"]="Le pouvoir d'un dieu";
+FR_TERMS["Dismal Future"]="Futur désespéré";
+FR_TERMS["Universe 6's Warriors"]="Guerriers de l'Univers 6";
+FR_TERMS["Shadow Dragons"]="Dragons maléfiques";
+FR_TERMS["Saiyan Roar"]="Rugissement saiyan";
+FR_TERMS["The First Awakened"]="Le premier éveillé";
 function frTerm(v){return FR_TERMS[v]||v}
 function frList(a){return (a||[]).map(frTerm)}
 
@@ -160,8 +197,8 @@ async function boot(){
   applyMetadata(); restoreEdits(); initAdvancedFilters();
   render(); stats(); renderDuplicates(); renderMissing(); renderInventory(); renderManualOwned(); renderTeam(); renderAnalysis();
 }
-function localized(m){if(!m)return null;let fr=m.fr||{};return {...m,name:fr.name||m.name,title:fr.title||m.title,type:fr.type||m.type,class:fr.class||m.class,categories:frList(fr.categories||m.categories),links:frList(fr.links||m.links),leader:fr.leader||m.leader,passive:fr.passive||m.passive,superAttack:fr.superAttack||m.superAttack,active:fr.active||m.active}}
-function applyMetadata(){DB.cards.forEach(c=>{let m=localized(META.cards?.[String(c.candidateId)]);if(m)Object.assign(c,m)})}
+function localized(m){if(!m)return null;let fr=m.fr||{};return {...m,name:frCardName(fr.name||m.name),title:fr.title||m.title,type:fr.type||m.type,class:fr.class||m.class,categories:frList(fr.categories||m.categories),links:frList(fr.links||m.links),leader:fr.leader||m.leader,passiveName:fr.passiveName||m.passiveName,passive:fr.passive||m.passive,superAttack:fr.superAttack||m.superAttack,ultraSuperAttack:fr.ultraSuperAttack||m.ultraSuperAttack,activeName:fr.activeName||m.activeName,active:fr.active||m.active,transformations:fr.transformations||m.transformations}}
+function applyMetadata(){DB.cards.forEach(c=>{let m=localized(META.cards?.[String(c.candidateId)]);if(m)Object.assign(c,m);c.name=frCardName(c.name||'');c.categories=frList(c.categories);c.links=frList(c.links)})}
 function confClass(c){return c==='Très forte'?'tf':c==='Forte'?'f':c==='Moyenne'?'m':c==='Validée manuellement'?'manual':'v'}
 function restoreEdits(){
   let edits=[]; try{edits=JSON.parse(localStorage.getItem('dokkanos-edits')||'[]')}catch(e){}
@@ -211,7 +248,7 @@ function isPlayableCard(card){
   if(hp===0&&atk===0&&def===0)return false;
   return true;
 }
-function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};let image=cat.image||m.image||('assets/cards/'+id+'.webp');return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:frCardName(cat.name||m.name||''),categories:frList(m.categories||cat.categories),links:frList(m.links||cat.links),image}}
+function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};let image=cat.image||m.image||('assets/cards/'+id+'.webp');return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:frCardName(m.name||cat.name||''),title:m.title||cat.title,categories:frList(m.categories||cat.categories),links:frList(m.links||cat.links),image}}
 function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach(c=>{let id=String(c.id||'');if(id&&!seen.has(id)){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(id);out.push(card)}}});Object.keys(META.cards||{}).forEach(id=>{if(!seen.has(String(id))){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(String(id));out.push(card)}}});return out}
 let verifyDraft={boxId:'',cardId:'',query:''};
 

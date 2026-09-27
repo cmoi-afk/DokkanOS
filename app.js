@@ -63,6 +63,16 @@ FR_TERMS["Android Assault"]="Amélioration cybernétique";
 FR_TERMS["GT"]="GT";
 FR_TERMS["Legendary Power"]="Pouvoir légendaire";
 FR_TERMS["Tournament of Power"]="Tournoi du Pouvoir";
+FR_TERMS["Sibling's Bond"]="Lien de fratrie";
+FR_TERMS["Bond of Master and Disciple"]="Lien maître et disciple";
+FR_TERMS["Time Limit"]="Temps limité";
+FR_TERMS["Storied Figures"]="Légende ancestrale";
+FR_TERMS["Power of Wishes"]="Le pouvoir des vœux";
+FR_TERMS["Bond of Friendship"]="Liens d'amitié";
+FR_TERMS["Fusion"]="Fusion";
+FR_TERMS["Dragon Ball Heroes"]="Dragon Ball Heroes";
+FR_TERMS["Final Trump Card"]="Dernier recours";
+FR_TERMS["Earth-Bred Fighters"]="Combattants élevés sur Terre";
 function frTerm(v){return FR_TERMS[v]||v}
 function frList(a){return (a||[]).map(frTerm)}
 

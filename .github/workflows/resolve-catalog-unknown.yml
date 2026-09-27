@@ -5,6 +5,7 @@ on:
     paths:
       - tools/resolve_catalog_unknown.py
       - .github/workflows/resolve-catalog-unknown.yml
+      - tools/snapshot_dbz_catalog.py
   workflow_dispatch:
 permissions:
   contents: write
@@ -19,30 +20,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Inspect public card catalogue
-        run: |
-          python - <<'PY'
-          import re, urllib.request
-          for url in ("https://www.dbz-dokkanbattle.com/cards",
-                      "https://www.dbz-dokkanbattle.com/card/1005050"):
-              try:
-                  req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-                  page = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "ignore")
-                  ids = re.findall(r'data-id="([0-9]+)"', page)
-                  print(url, "bytes", len(page), "card tags", len(ids), "unique", len(set(ids)),
-                        "examples", ids[:10])
-                  match = re.search(r'data-rarity="[0-9]+"[^>]*data-id="1005050"', page, re.S)
-                  if match:
-                      print("sample tag", re.sub(r"\\s+", " ", match.group(0))[-900:])
-              except Exception as exc:
-                  print(url, "error", repr(exc))
-          PY
+      - run: python tools/snapshot_dbz_catalog.py
       - run: python tools/resolve_catalog_unknown.py
       - name: Commit verified catalogue data and unresolved report
         run: |
           git config user.name "DokkanOS Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add catalog.json docs/CATALOG-UNKNOWN-v0.7.json
+          git add catalog.json docs/CATALOG-UNKNOWN-v0.7.json docs/DBZ-CARD-INDEX-v0.7.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "data: verify pending catalogue metadata by exact DokkanInfo ID"
           git pull --rebase origin data/catalog-fr-completion-v07

@@ -31,6 +31,11 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
+      "id": "1017470",
+      "url": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/e/e2/Card_1017470_thumb.png/revision/latest?cb=20200105175631",
+      "reason": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+    },
+    {
       "id": "2000780",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000780_thumb/card_2000780_thumb.png",
       "reason": "HTTP Error 404: Not Found"

@@ -49,9 +49,19 @@ CATEGORY_FR={
 LINK_FR={
  "Super Saiyan":"Super Saiyan","Kamehameha":"Kamehameha","Prepared for Battle":"Paré au combat",
  "Shocking Speed":"Vitesse époustouflante","Fierce Battle":"Combat acharné","Legendary Power":"Pouvoir légendaire",
- "Big Bad Bosses":"Boss","Nightmare":"Cauchemar","Fear and Faith":"Peur et désespoir",
- "Golden Warrior":"Guerrier doré","The Saiyan Lineage":"Lignée Saiyan","Royal Lineage":"Lignée royale",
- "Prodigies":"Prodiges","Cold Judgment":"Jugement froid","Brainiacs":"Cerveau","Solid Support":"Soutien solide","Over in a Flash":"Combat éclair","Saiyan Warrior Race":"Race guerrière Saiyan","Experienced Fighters":"Combattants expérimentés","Infighter":"Combattant rapproché","Berserker":"Berserker","Metamorphosis":"Métamorphose","Infinite Regeneration":"Régénération infinie","Majin":"Majin","Wall Standing Tall":"Mur infranchissable","Thirst for Conquest":"Soif de conquête","Strongest Clan in Space":"Clan le plus puissant de l’espace","Universe’s Most Malevolent":"Le plus maléfique de l’univers","Godly Power":"Pouvoir divin","Warrior Gods":"Dieux guerriers","Tournament of Power":"Tournoi du pouvoir","Power Bestowed by God":"Pouvoir conféré par Dieu","Dismal Future":"Futur sombre","Messenger from the Future":"Messager du futur"
+ "Big Bad Bosses":"Boss","Nightmare":"Cauchemar","Fear and Faith":"Peur et désespoir","Golden Warrior":"Guerrier doré",
+ "The Saiyan Lineage":"L'origine des saiyans","Saiyan Warrior Race":"Race saiyan","Royal Lineage":"Lignée royale",
+ "Prodigies":"Génie","Cold Judgment":"Jugement serein","Brainiacs":"Intello","Solid Support":"Soutien infaillible",
+ "Over in a Flash":"Combat éclair","Experienced Fighters":"Guerrier vétéran","Infighter":"Fonceur",
+ "Berserker":"Berserker","Metamorphosis":"Métamorphose","Infinite Regeneration":"Régénération infinie",
+ "Majin":"Majin","Thirst for Conquest":"Soif de conquête","Godly Power":"Pouvoir divin","Warrior Gods":"Dieux guerriers",
+ "Tournament of Power":"Tournoi du Pouvoir","Messenger from the Future":"Messager du futur",
+ "Turtle School":"École tortue","All in the Family":"Liens familiaux","Galactic Visitor":"Visiteur d'ailleurs",
+ "High Compatibility":"Super compatibilité","Android Assault":"Amélioration cybernétique","Saiyan Roar":"Rugissement saiyan",
+ "The First Awakened":"Le premier éveillé","Limit-Breaking Form":"Forme brisant la limite","Hatred of Saiyans":"Haine des Saiyans",
+ "Fusion Failure":"Échec de fusion","Infinite Energy":"Énergie infinie","Ultimate Lifeform":"Forme ultime",
+ "Shadow Dragons":"Dragons maléfiques","Dismal Future":"Futur désespéré","Supreme Power":"La puissance suprême",
+ "Soul vs Soul":"Âme vs âme"
 }
 def tr_name(s):
     if not s:return s

@@ -1,7 +1,7 @@
 {
   "version": "0.7.0-fr-completion",
   "provider": "DokkanOS — catalogue fusionné",
-  "note": "Catalogue en cours d’enrichissement exhaustif. Les entrées DBZ Dokkan Battle France servent de référence française et complètent la base existante.",
+  "note": "Catalogue fusionné en cours d’audit exhaustif. Les entrées marquées source DBZ Dokkan Battle France ont été recoupées sur leur fiche française; aucune complétude totale n’est déclarée avant clôture QA.",
   "cards": [
     {
       "sourceId": "1321",
@@ -1284,31 +1284,18 @@
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/f/ff/Card_1009980_thumb.png/revision/latest?cb=20170825072716"
     },
     {
-      "sourceId": "1003641",
-      "id": "1003641",
+      "sourceId": "1003640",
+      "id": "1003640",
       "name": "Métal Cooler (AGI)",
-      "title": "Horreur sans fin",
+      "title": "",
       "rarity": "UR",
       "type": "AGI",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/assets/cards/1003641.png",
+      "image": "",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1003641"
-      }
-    },
-    {
-      "sourceId": "1004621",
-      "id": "1004621",
-      "name": "Métal Cooler (TEC)",
-      "title": "Horreur sans fin",
-      "rarity": "UR",
-      "type": "TEC",
-      "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/assets/cards/1004621.png",
-      "source": {
-        "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1004621"
+        "url": "https://www.dbz-dokkanbattle.com/card/1003640",
+        "verified": "2026-09-27"
       }
     },
     {
@@ -1322,21 +1309,8 @@
       "image": "https://www.dbz-dokkanbattle.com/assets/cards/1004631.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1004631"
-      }
-    },
-    {
-      "sourceId": "1009930",
-      "id": "1009930",
-      "name": "Métal Cooler",
-      "title": "Haine d'acier",
-      "rarity": "UR",
-      "type": "INT",
-      "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/assets/cards/1009930.png",
-      "source": {
-        "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1009930"
+        "url": "https://www.dbz-dokkanbattle.com/card/1004631",
+        "verified": "2026-09-27"
       }
     },
     {
@@ -1618,16 +1592,6 @@
       "type": "TEC",
       "class": "Super",
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/8/80/Card_1010620_thumb.png/revision/latest?cb=20170428101309"
-    },
-    {
-      "sourceId": "11066",
-      "id": "1011066",
-      "name": "Super Saiyan Goku (Angel) (Super Kaioken)",
-      "title": "Burning to the Last",
-      "rarity": "UR",
-      "type": "END",
-      "class": "Super",
-      "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/9/98/Card_1010660_thumb.png/revision/latest?cb=20170712112013"
     },
     {
       "sourceId": "11066",
@@ -7682,16 +7646,6 @@
     {
       "sourceId": "12521",
       "id": "1012521",
-      "name": "Métal Cooler",
-      "title": "Fighter of the Mechanical Planet",
-      "rarity": "UR",
-      "type": "PUI",
-      "class": "Extrême",
-      "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/8/8a/Card_1025150_thumb.png/revision/latest?cb=20220908064526"
-    },
-    {
-      "sourceId": "12521",
-      "id": "1012521",
       "name": "Cooler",
       "title": "Restoring Our Clan's Reputation",
       "rarity": "UR",
@@ -8020,6 +7974,21 @@
       "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/7/70/Card_1026090_thumb.png/revision/latest?cb=20221227102331"
     },
     {
+      "sourceId": "1015360",
+      "id": "1015360",
+      "name": "Métal Cooler",
+      "title": "Pouvoir de récupération inégalé",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1015360",
+        "verified": "2026-09-27"
+      }
+    },
+    {
       "sourceId": "1015451",
       "id": "1015451",
       "name": "Métal Cooler",
@@ -8030,35 +7999,8 @@
       "image": "https://www.dbz-dokkanbattle.com/assets/cards/1015451.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1015451"
-      }
-    },
-    {
-      "sourceId": "1015691",
-      "id": "1015691",
-      "name": "Métal Cooler (TEC)",
-      "title": "Effroyable corps de métal",
-      "rarity": "UR",
-      "type": "TEC",
-      "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/assets/cards/1015691.png",
-      "source": {
-        "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1015691"
-      }
-    },
-    {
-      "sourceId": "1015701",
-      "id": "1015701",
-      "name": "Métal Cooler (INT)",
-      "title": "Effroyable corps de métal",
-      "rarity": "UR",
-      "type": "INT",
-      "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/assets/cards/1015701.png",
-      "source": {
-        "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1015701"
+        "url": "https://www.dbz-dokkanbattle.com/card/1015451",
+        "verified": "2026-09-27"
       }
     },
     {
@@ -8072,35 +8014,53 @@
       "image": "https://www.dbz-dokkanbattle.com/assets/cards/1015711.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1015711"
+        "url": "https://www.dbz-dokkanbattle.com/card/1015711",
+        "verified": "2026-09-27"
       }
     },
     {
-      "sourceId": "1025160",
-      "id": "1025160",
-      "name": "Métal Cooler (AGI)",
-      "title": "Soldat d'acier",
+      "sourceId": "1024910",
+      "id": "1024910",
+      "name": "Métal Cooler",
+      "title": "Persistance illimitée",
+      "rarity": "SSR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1024910",
+        "verified": "2026-09-27"
+      }
+    },
+    {
+      "sourceId": "1024921",
+      "id": "1024921",
+      "name": "Métal Cooler",
+      "title": "Coup d'acier",
       "rarity": "UR",
       "type": "AGI",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/assets/cards/1025160.png",
+      "image": "",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1025160"
+        "url": "https://www.dbz-dokkanbattle.com/card/1024921",
+        "verified": "2026-09-27"
       }
     },
     {
-      "sourceId": "1025190",
-      "id": "1025190",
-      "name": "Métal Cooler (PUI)",
+      "sourceId": "1025200",
+      "id": "1025200",
+      "name": "Métal Cooler (END)",
       "title": "Soldat d'acier",
       "rarity": "UR",
-      "type": "PUI",
+      "type": "END",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/assets/cards/1025190.png",
+      "image": "",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1025190"
+        "url": "https://www.dbz-dokkanbattle.com/card/1025200",
+        "verified": "2026-09-27"
       }
     },
     {
@@ -8114,7 +8074,8 @@
       "image": "https://www.dbz-dokkanbattle.com/assets/cards/9115360.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/9115360"
+        "url": "https://www.dbz-dokkanbattle.com/card/9115360",
+        "verified": "2026-09-27"
       }
     },
     {
@@ -8128,7 +8089,8 @@
       "image": "https://www.dbz-dokkanbattle.com/assets/cards/9124931.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/9124931"
+        "url": "https://www.dbz-dokkanbattle.com/card/9124931",
+        "verified": "2026-09-27"
       }
     }
   ]

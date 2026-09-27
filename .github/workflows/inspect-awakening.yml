@@ -1,0 +1,27 @@
+name: Inspect SR awakening links
+on:
+  push:
+    branches: [data/catalog-fr-completion-v07]
+    paths: [.github/workflows/inspect-awakening.yml]
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python - <<'PY'
+          import re, urllib.request
+          for cid in ("1000030", "1004631", "1005050"):
+              req=urllib.request.Request("https://www.dbz-dokkanbattle.com/card/"+cid,
+                                         headers={"User-Agent":"Mozilla/5.0"})
+              s=urllib.request.urlopen(req,timeout=30).read().decode("utf-8","ignore")
+              print("CARD",cid,"length",len(s))
+              for key in ("awakening", "dokkan", "evolution", "1000031",
+                          "1004632", "1005051", "data-has-dokkan"):
+                  matches=list(re.finditer(re.escape(key),s,re.I))
+                  print("KEY",key,"matches",len(matches))
+                  for m in matches[:2]:
+                      print(re.sub(r"\s+"," ",s[max(0,m.start()-170):m.end()+180]))
+          PY

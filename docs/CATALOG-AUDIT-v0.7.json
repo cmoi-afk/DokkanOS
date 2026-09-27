@@ -12,19 +12,22 @@
       "DBZ Dokkan Battle France": 68
     },
     "rarityCounts": {
-      "inconnue": 299,
-      "UR": 737,
-      "LR": 113,
-      "SSR": 12
+      "LR": 146,
+      "SSR": 12,
+      "UR": 877,
+      "inconnu": 126
     },
     "typeCounts": {
-      "inconnu": 359,
-      "AGI": 159,
-      "END": 161,
-      "INT": 156,
-      "PUI": 172,
-      "TEC": 154
-    }
+      "AGI": 200,
+      "END": 193,
+      "INT": 188,
+      "PUI": 206,
+      "TEC": 188,
+      "inconnu": 186
+    },
+    "identityResolvedFromBox": 299,
+    "attributesResolvedFromBox": 173,
+    "attributesPendingFromBox": 126
   },
   "references": {
     "dbzDokkanBattleFrance": {
@@ -47,6 +50,19 @@
   "notes": [
     "Les deux références n'ont pas exactement le même périmètre; leurs nombres ne sont pas utilisés comme égalité stricte.",
     "Les identifications Box non validées sont exclues du catalogue maître.",
-    "Aucune donnée inventée ne doit être ajoutée pour atteindre artificiellement un nombre cible."
-  ]
+    "Aucune donnée inventée ne doit être ajoutée pour atteindre artificiellement un nombre cible.",
+    "Les 126 cartes de Box sans rareté vérifiée restent en attente; aucun SSR/SR n'est supposé par défaut."
+  ],
+  "provenance": {
+    "identity": {
+      "provider": "DokkanBattleLibrary/allData.json",
+      "match": "exact card ID",
+      "count": 299
+    },
+    "rarityTypeClass": {
+      "provider": "feijoes/DokkanAPI/DokkanCharacterData.json",
+      "match": "asset ID extracted from thumbnail URL",
+      "count": 173
+    }
+  }
 }

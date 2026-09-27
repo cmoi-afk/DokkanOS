@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - tools/resolve_catalog_unknown.py
+      - tools/merge_dbz_catalog.py
       - .github/workflows/resolve-catalog-unknown.yml
       - tools/snapshot_dbz_catalog.py
       - tools/merge_dbz_catalog.py

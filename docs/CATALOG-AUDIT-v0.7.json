@@ -1,0 +1,52 @@
+{
+  "version": "0.7-catalog-fr",
+  "date": "2026-09-27",
+  "status": "in_progress",
+  "catalog": {
+    "entries": 1161,
+    "uniqueIds": 1161,
+    "duplicateIds": 0,
+    "sourceCounts": {
+      "DokkanOS Box": 299,
+      "DokkanOS — catalogue fusionné": 794,
+      "DBZ Dokkan Battle France": 68
+    },
+    "rarityCounts": {
+      "inconnue": 299,
+      "UR": 737,
+      "LR": 113,
+      "SSR": 12
+    },
+    "typeCounts": {
+      "inconnu": 359,
+      "AGI": 159,
+      "END": 161,
+      "INT": 156,
+      "PUI": 172,
+      "TEC": 154
+    }
+  },
+  "references": {
+    "dbzDokkanBattleFrance": {
+      "observed": 1380,
+      "scope": "page Cartes, périmètre large",
+      "url": "https://www.dbz-dokkanbattle.com/cards"
+    },
+    "dokkanEssentials": {
+      "observed": 1071,
+      "scope": "Essencyclopédie personnages",
+      "url": "https://dokkanessentials.com/Rechercher-une-carte"
+    }
+  },
+  "gates": {
+    "allBoxValidatedIdsPresent": true,
+    "noDuplicateIds": true,
+    "fullReferenceReconciliation": false,
+    "allDisplayedDataFrench": false
+  },
+  "notes": [
+    "Les deux références n'ont pas exactement le même périmètre; leurs nombres ne sont pas utilisés comme égalité stricte.",
+    "Les identifications Box non validées sont exclues du catalogue maître.",
+    "Aucune donnée inventée ne doit être ajoutée pour atteindre artificiellement un nombre cible."
+  ]
+}

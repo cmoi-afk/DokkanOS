@@ -3,5 +3,23 @@
   "added": 0,
   "resolvedFromIndividualPages": 0,
   "conflicts": [],
-  "errors": []
+  "errors": [],
+  "nonPlayableRemoved": [
+    {
+      "id": "1002630",
+      "name": "Statue de M. Satan (or)"
+    },
+    {
+      "id": "1005480",
+      "name": "Statue de M. Satan (platine)"
+    },
+    {
+      "id": "1011480",
+      "name": "Hercule Statue (Diamond)"
+    },
+    {
+      "id": "1011481",
+      "name": "Statue de M. Satan (diamant)"
+    }
+  ]
 }

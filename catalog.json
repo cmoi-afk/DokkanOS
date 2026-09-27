@@ -2324,26 +2324,6 @@
       }
     },
     {
-      "sourceId": "1002630",
-      "id": "1002630",
-      "name": "Statue de M. Satan (or)",
-      "title": "",
-      "rarity": "SSR",
-      "type": "END",
-      "class": "Super",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002630_thumb/card_1002630_thumb.png",
-      "source": {
-        "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1002630",
-        "match": "exact card ID"
-      },
-      "attributeSource": {
-        "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1002630",
-        "match": "exact data-id on public card listing or individual card page"
-      }
-    },
-    {
       "sourceId": "1002700",
       "id": "1002700",
       "name": "Super Saiyan 2 Gohan (Youth)",
@@ -4747,26 +4727,6 @@
       "attributeSource": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1005470",
-        "match": "exact data-id on public card listing or individual card page"
-      }
-    },
-    {
-      "sourceId": "1005480",
-      "id": "1005480",
-      "name": "Statue de M. Satan (platine)",
-      "title": "",
-      "rarity": "SSR",
-      "type": "END",
-      "class": "Super",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005480_thumb/card_1005480_thumb.png",
-      "source": {
-        "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1005480",
-        "match": "exact card ID"
-      },
-      "attributeSource": {
-        "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1005480",
         "match": "exact data-id on public card listing or individual card page"
       }
     },
@@ -12486,47 +12446,6 @@
       "attributeSource": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1011470",
-        "match": "exact data-id on public card listing or individual card page"
-      }
-    },
-    {
-      "sourceId": "11148",
-      "id": "1011480",
-      "name": "Hercule Statue (Diamond)",
-      "title": "Worth 5,000,000 Zeni",
-      "rarity": "SSR",
-      "type": "END",
-      "class": "",
-      "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/d/da/Card_1011480_thumb.png/revision/latest?cb=20170706162051",
-      "legacyId": "1011148",
-      "source": {
-        "provider": "feijoes/DokkanAPI",
-        "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
-        "match": "exact asset ID in imageURL"
-      },
-      "attributeSource": {
-        "provider": "okfaygo/dokkan-translation",
-        "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
-        "match": "exact card ID from DokkanInfo index"
-      }
-    },
-    {
-      "sourceId": "1011481",
-      "id": "1011481",
-      "name": "Statue de M. Satan (diamant)",
-      "title": "",
-      "rarity": "UR",
-      "type": "END",
-      "class": "Super",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011481_thumb/card_1011481_thumb.png",
-      "source": {
-        "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1011481",
-        "match": "exact card ID"
-      },
-      "attributeSource": {
-        "provider": "DBZ Dokkan Battle France",
-        "url": "https://www.dbz-dokkanbattle.com/card/1011481",
         "match": "exact data-id on public card listing or individual card page"
       }
     },
@@ -43372,8 +43291,8 @@
     }
   },
   "audit": {
-    "count": 2048,
-    "uniqueIds": 2048,
+    "count": 2044,
+    "uniqueIds": 2044,
     "duplicateIds": 0,
     "referenceWideCount": 1380,
     "status": "in_progress",
@@ -43381,12 +43300,12 @@
     "rarityCounts": {
       "LR": 293,
       "SR": 158,
-      "SSR": 254,
-      "UR": 1343
+      "SSR": 251,
+      "UR": 1342
     },
     "typeCounts": {
       "AGI": 407,
-      "END": 408,
+      "END": 404,
       "INT": 404,
       "PUI": 425,
       "TEC": 404
@@ -43408,6 +43327,7 @@
     "srAwaitingAwakeningReview": 2,
     "srAwakeningConfirmed": 144,
     "srAwakeningPending": 2,
-    "exactAwakeningPairs": 126
+    "exactAwakeningPairs": 126,
+    "nonPlayableRemoved": 4
   }
 }

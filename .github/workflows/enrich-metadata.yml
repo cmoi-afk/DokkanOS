@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [dev/v0.3-foundations]
-    paths: [data.json, tools/enrich_identity.py, tools/enrich_dokkaninfo.py, tools/localize_fr.py, tools/dedupe_overlaps.py, tools/build_overlap_conflicts.py, tools/build_catalog.py]
+    paths: [data.json, tools/enrich_identity.py, tools/enrich_dokkaninfo.py, tools/enrich_fr_dokkaninfo.py, tools/localize_fr.py, tools/dedupe_overlaps.py, tools/build_overlap_conflicts.py, tools/build_catalog.py]
 permissions:
   contents: write
 jobs:
@@ -21,6 +21,7 @@ jobs:
       - run: python tools/enrich_identity.py
       - run: python tools/enrich_dokkaninfo.py
       - run: python tools/retry_incomplete.py
+      - run: python tools/enrich_fr_dokkaninfo.py
       - run: python tools/localize_fr.py
       - run: python tools/build_catalog.py
       - run: python tools/audit_card_data.py

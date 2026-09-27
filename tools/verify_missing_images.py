@@ -1,31 +1,28 @@
 #!/usr/bin/env python3
-"""Résout uniquement les miniatures sans image qui répondent avec un type image."""
-import json
-import urllib.request
+"""Audit complet des miniatures du catalogue DokkanOS."""
+import json,re,urllib.request
 from pathlib import Path
-
-root = Path(__file__).resolve().parents[1]
-path = root / "catalog.json"
-data = json.loads(path.read_text(encoding="utf-8"))
-resolved, pending = [], []
+root=Path(__file__).resolve().parents[1]
+path=root/"catalog.json"; data=json.loads(path.read_text(encoding="utf-8"))
+resolved=[]; missing=[]; broken=[]; mismatched=[]; checked=0
 for card in data["cards"]:
-    if card.get("image"):
-        continue
-    card_id = str(card["id"])
-    url = f"https://www.dbz-dokkanbattle.com/img/character/thumb/card_{card_id}_thumb/card_{card_id}_thumb.png"
+    cid=str(card["id"]); url=card.get("image") or ""
+    if not url:
+        url=f"https://www.dbz-dokkanbattle.com/img/character/thumb/card_{cid}_thumb/card_{cid}_thumb.png"
+        missing.append(cid)
+    m=re.search(r"card_(\d+)_thumb",url)
+    if m and m.group(1)!=cid: mismatched.append({"id":cid,"imageId":m.group(1),"url":url})
     try:
-        request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(request, timeout=20) as response:
-            body = response.read(16)
-            valid = response.status == 200 and response.headers.get("Content-Type", "").startswith("image/") and body.startswith(bytes([137, 80, 78, 71]))
+        req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0"})
+        with urllib.request.urlopen(req,timeout=20) as r:
+            head=r.read(16); ctype=r.headers.get("Content-Type","")
+            valid=r.status==200 and ctype.startswith("image/") and (head.startswith(bytes([137,80,78,71])) or head[:3]==b"\xff\xd8\xff")
+        checked+=1
         if valid:
-            card["image"] = url
-            resolved.append(card_id)
-        else:
-            pending.append(card_id)
-    except Exception:
-        pending.append(card_id)
-path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-report = root / "docs" / "IMAGE-AUDIT-v0.7.json"
-report.write_text(json.dumps({"verifiedAndFilled": resolved, "stillMissing": pending}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-print(f"Images vérifiées: {len(resolved)}; encore absentes: {len(pending)}")
+            if not card.get("image"): card["image"]=url; resolved.append(cid)
+        else: broken.append({"id":cid,"url":url,"reason":"réponse non-image"})
+    except Exception as e: broken.append({"id":cid,"url":url,"reason":str(e)[:120]})
+path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+report={"catalogCards":len(data["cards"]),"urlsChecked":checked,"verifiedAndFilled":resolved,"emptyBeforeAudit":missing,"stillMissing":[x["id"] for x in broken if x["id"] in missing],"brokenImages":broken,"idImageMismatches":mismatched}
+(root/"docs"/"IMAGE-AUDIT-v0.7.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+print(json.dumps({k:(len(v) if isinstance(v,list) else v) for k,v in report.items()},ensure_ascii=False))

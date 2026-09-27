@@ -95,6 +95,24 @@ FR_TERMS["Resurrected Warriors"]="Ressuscité";
 FR_TERMS["Giant Form"]="Forme géante";
 FR_TERMS["World Tournament"]="Tenkaichi Budokai";
 FR_TERMS["Realm of Gods"]="Divin";
+FR_TERMS["Transformation Boost"]="Transformation fortifiante";
+FR_TERMS["Wicked Bloodline"]="Lignée diabolique";
+FR_TERMS["Terrifying Conquerors"]="Conquérants terrifiants";
+FR_TERMS["Target: Goku"]="Cible : Goku";
+FR_TERMS["Revenge"]="Vengeance";
+FR_TERMS["Inhuman Deeds"]="Actes inhumains";
+FR_TERMS["Corroded Body and Mind"]="Corps et esprit corrompus";
+FR_TERMS["Sworn Enemies"]="Ennemis jurés";
+FR_TERMS["Gifted Warriors"]="Guerriers de génie";
+FR_TERMS["Heavenly Events"]="Péripéties célestes";
+FR_TERMS["Battle of Fate"]="Combat fatidique";
+FR_TERMS["Exploding Rage"]="Colère explosive";
+FR_TERMS["Otherworld Warriors"]="Guerriers de l'au-delà";
+FR_TERMS["Super Saiyans"]="Super Saiyan";
+FR_TERMS["Kamehameha"]="Kamehameha";
+FR_TERMS["Majin Buu Saga"]="Saga de Boo";
+FR_TERMS["Future Saga"]="Saga du futur";
+FR_TERMS["Androids/Cell Saga"]="Saga des cyborgs/Cell";
 function frTerm(v){return FR_TERMS[v]||v}
 function frList(a){return (a||[]).map(frTerm)}
 
@@ -144,6 +162,7 @@ const FR_NAME_FIXES=[[/Metal Cooler Army/gi,'Armée de Métal Cooler'],[/Metal C
 function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);return s}
 function cardImageCandidates(id,preferred){id=String(id||'');return [...new Set([preferred,'assets/cards/'+id+'.webp','https://www.dbz-dokkanbattle.com/img/character/card/'+id+'/card_'+id+'_thumb.png','https://dokkaninfo.com/assets/global/en/character/card/'+id+'.png'].filter(Boolean))]}
 function imageFallback(el,id,preferred){let a=cardImageCandidates(id,preferred),n=Number(el.dataset.fallback||0)+1;el.dataset.fallback=String(n);if(n<a.length){el.src=a[n]}else{el.classList.add('imgfail');reportBrokenImage(id)}}
+function imageAuditSummary(){try{return JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]')}catch(e){return []}}
 function reportBrokenImage(id){if(!id)return;try{let a=JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]');if(!a.includes(String(id))){a.push(String(id));localStorage.setItem('dokkanos-broken-images',JSON.stringify(a))}}catch(e){}}
 function isPlayableCard(card){
   if(!card)return false;

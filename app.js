@@ -2,7 +2,7 @@ let DB={cards:[]}, META={cards:{}}, CATALOG={cards:[]}, filter='all', query='', 
 const norm=s=>(s??'').toString().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 async function boot(){
-  DB=await fetch('data.json').then(r=>r.json());
+  DB=await fetch('collection.json').then(r=>r.ok?r.json():fetch('data.json').then(x=>x.json()));
   try{META=await fetch('card-meta.json').then(r=>r.ok?r.json():({cards:{}}))}catch(e){META={cards:{}}}
   try{CATALOG=await fetch('catalog.json').then(r=>r.ok?r.json():({cards:[]}))}catch(e){CATALOG={cards:[]}}
   applyMetadata(); restoreEdits();

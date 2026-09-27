@@ -34,7 +34,9 @@
     "boxIdentitiesPresent": 376,
     "frenchReferenceNewCards": 876,
     "srAwaitingAwakeningReview": 2,
-    "srAwakeningConfirmed": 144
+    "srAwakeningConfirmed": 144,
+    "exactAwakeningPairsConfirmed": 126,
+    "exactAwakeningPairsPending": 3
   },
   "references": {
     "dbzDokkanBattleFrance": {
@@ -59,7 +61,8 @@
     "Les identifications Box non validées sont exclues du catalogue maître.",
     "Aucune donnée inventée ne doit être ajoutée pour atteindre artificiellement un nombre cible.",
     "794 fiches héritées portaient un ID synthétique différent de l'ID présent dans leur image; 202 chevauchements d'IDs réels ont été fusionnés.",
-    "144 SR avec forme SSR voisine vérifiée; 2 SR restent isolées en attente de confirmation d'un éveil."
+    "144 SR avec forme SSR voisine vérifiée; 2 SR restent isolées en attente de confirmation d'un éveil.",
+    "126 paires supplémentaires relient les formes déjà présentes; 3 paires candidates sont laissées séparées car les noms/types source diffèrent."
   ],
   "provenance": {
     "identity": {
@@ -95,6 +98,12 @@
       "method": "ID SR exact et ID +1 SSR de même nom/type sur la fiche SR",
       "confirmed": 144,
       "pending": 2
+    },
+    "awakeningPairs": {
+      "provider": "DBZ Dokkan Battle France",
+      "method": "deux IDs adjacents présents sur la fiche source, même nom et même type",
+      "confirmed": 126,
+      "pending": 3
     }
   }
 }

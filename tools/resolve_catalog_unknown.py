@@ -45,9 +45,12 @@ def main():
             payload = fetch(card_id)
             source = payload.get("card") or {}
             returned_id = str(source.get("id") or "")
-            if returned_id != card_id:
-                raise ValueError("ID de fiche différent: " + returned_id)
+            # DokkanInfo may canonicalize legacy form IDs from ...0 to ...1.
+            # Accept that only when the canonical ID is exactly +1 and the source name matches.
+            canonical_alias = returned_id.isdigit() and card_id.isdigit() and int(returned_id)==int(card_id)+1
             source_name = (source.get("name") or "").replace("\n", " ")
+            if returned_id != card_id and not canonical_alias:
+                raise ValueError("ID de fiche différent: " + returned_id)
             if source_name and norm(source_name) != norm(card.get("name")):
                 raise ValueError("nom différent: " + source_name[:80])
             rarity = RARITY.get(int(source["rarity"]))
@@ -66,7 +69,7 @@ def main():
             card["attributeSource"] = {
                 "provider": "DokkanInfo GLOBAL",
                 "url": BASE + card_id,
-                "match": "exact card ID and name",
+                "match": "canonical +1 alias and name" if canonical_alias else "exact card ID and name",
             }
             resolved.append(card_id)
         except Exception as exc:

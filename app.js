@@ -113,6 +113,7 @@ FR_TERMS["Kamehameha"]="Kamehameha";
 FR_TERMS["Majin Buu Saga"]="Saga de Boo";
 FR_TERMS["Future Saga"]="Saga du futur";
 FR_TERMS["Androids/Cell Saga"]="Saga des cyborgs/Cell";
+function isLikelyNonPlayable(x){const s=((x&&[x.name,x.title,x.kind,x.type,x.category,x.description].filter(Boolean).join(' '))||'').toLowerCase();return /(mr\.?\s*satan|hercule).*(statue)|statue.*(mr\.?\s*satan|hercule)|awakening medal|training item|support item|treasure item|objet d'entraînement|médaille d'éveil|objet de soutien/.test(s)}
 function frTerm(v){return FR_TERMS[v]||v}
 function frList(a){return (a||[]).map(frTerm)}
 

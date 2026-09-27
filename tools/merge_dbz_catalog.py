@@ -20,6 +20,7 @@ REVIEW = ROOT / "docs" / "SR-AWAKENING-REVIEW-v0.7.json"
 REPORT = ROOT / "docs" / "DBZ-RECONCILIATION-v0.7.json"
 BASE = "https://www.dbz-dokkanbattle.com"
 NON_PLAYABLE = ("statue de m. satan", "statue de mr satan", "mr. satan statue", "hercule statue")
+VERIFIED_SR_AWAKENINGS = {"1001851": {"name":"Son Gohan (jeune)","reason":"hasDokkan=2 on French reference; retained as useful SR awakening source"}}
 
 
 def thumb(card_id):
@@ -64,6 +65,16 @@ def main():
             if source["rarity"] == "SR":
                 sname=(source.get("name") or "").lower()
                 if any(token in sname for token in NON_PLAYABLE):
+                    continue
+                if card_id in VERIFIED_SR_AWAKENINGS:
+                    card = {
+                        "sourceId": card_id, "id": card_id, "name": source["name"], "title": "",
+                        "rarity": source["rarity"], "type": source["type"], "class": source["class"],
+                        "image": source.get("image") or thumb(card_id),
+                        "source": {"provider":"DBZ Dokkan Battle France","url":source["url"],"match":"verified SR awakening source"}
+                    }
+                    by_id[card_id]=card
+                    added.append(card_id)
                     continue
                 reviewed.append(source)
                 continue

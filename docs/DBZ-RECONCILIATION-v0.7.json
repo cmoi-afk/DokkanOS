@@ -1,0 +1,85 @@
+{
+  "referenceCount": 1441,
+  "added": 876,
+  "resolvedFromIndividualPages": 28,
+  "conflicts": [
+    {
+      "id": "1020410",
+      "old": [
+        "SSR",
+        ""
+      ],
+      "verified": [
+        "UR",
+        "AGI"
+      ]
+    },
+    {
+      "id": "1032520",
+      "old": [
+        "SSR",
+        ""
+      ],
+      "verified": [
+        "LR",
+        "PUI"
+      ]
+    },
+    {
+      "id": "1032770",
+      "old": [
+        "SSR",
+        ""
+      ],
+      "verified": [
+        "LR",
+        "TEC"
+      ]
+    },
+    {
+      "id": "1032790",
+      "old": [
+        "SSR",
+        ""
+      ],
+      "verified": [
+        "UR",
+        "AGI"
+      ]
+    },
+    {
+      "id": "1032830",
+      "old": [
+        "SSR",
+        ""
+      ],
+      "verified": [
+        "UR",
+        "PUI"
+      ]
+    },
+    {
+      "id": "1033520",
+      "old": [
+        "SSR",
+        ""
+      ],
+      "verified": [
+        "SR",
+        "INT"
+      ]
+    },
+    {
+      "id": "1034550",
+      "old": [
+        "SSR",
+        ""
+      ],
+      "verified": [
+        "UR",
+        "PUI"
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -3,42 +3,42 @@
   "date": "2026-09-27",
   "status": "in_progress",
   "catalog": {
-    "entries": 1028,
-    "uniqueIds": 1028,
+    "entries": 1904,
+    "uniqueIds": 1904,
     "duplicateIds": 0,
     "sourceCounts": {
       "DokkanOS Box": 368,
-      "feijoes/DokkanAPI": 592,
-      "DBZ Dokkan Battle France": 68
+      "DBZ Dokkan Battle France": 944,
+      "feijoes/DokkanAPI": 592
     },
     "rarityCounts": {
-      "LR": 127,
-      "SR": 13,
-      "SSR": 153,
-      "UR": 715,
-      "inconnu": 20
+      "LR": 293,
+      "SR": 14,
+      "SSR": 254,
+      "UR": 1343
     },
     "typeCounts": {
-      "AGI": 204,
-      "END": 198,
-      "INT": 197,
-      "PUI": 208,
-      "TEC": 193,
-      "inconnu": 28
+      "AGI": 379,
+      "END": 380,
+      "INT": 375,
+      "PUI": 392,
+      "TEC": 378
     },
     "identityResolvedFromBox": 368,
-    "attributesResolvedFromBox": 348,
-    "attributesPendingFromBox": 20,
+    "attributesResolvedFromBox": 368,
+    "attributesPendingFromBox": 0,
     "legacyIdsReconciled": 794,
     "exactIdMerges": 202,
     "boxValidatedIdsRestoredAfterReconciliation": 5,
     "attributesCorrectedFromIndependentIndex": 22,
-    "boxIdentitiesPresent": 376
+    "boxIdentitiesPresent": 376,
+    "frenchReferenceNewCards": 876,
+    "srAwaitingAwakeningReview": 146
   },
   "references": {
     "dbzDokkanBattleFrance": {
-      "observed": 1380,
-      "scope": "page Cartes, périmètre large",
+      "observed": 1441,
+      "scope": "page Cartes au 27/09/2026, 1 441 IDs de N à LR ; périmètre différent de DokkanOS",
       "url": "https://www.dbz-dokkanbattle.com/cards"
     },
     "dokkanEssentials": {
@@ -58,7 +58,7 @@
     "Les identifications Box non validées sont exclues du catalogue maître.",
     "Aucune donnée inventée ne doit être ajoutée pour atteindre artificiellement un nombre cible.",
     "794 fiches héritées portaient un ID synthétique différent de l'ID présent dans leur image; 202 chevauchements d'IDs réels ont été fusionnés.",
-    "12 raretés SR vérifiées directement ; 20 pré-éveils renvoient vers un autre ID et restent non attribués."
+    "Aucune rareté ni aucun type ne manque dans les 1 904 entrées; 146 SR supplémentaires sont isolées pour validation des éveils."
   ],
   "provenance": {
     "identity": {
@@ -81,6 +81,13 @@
       "match": "exact card ID and name",
       "resolved": 12,
       "requested": 40
+    },
+    "frenchListing": {
+      "provider": "DBZ Dokkan Battle France",
+      "url": "https://www.dbz-dokkanbattle.com/cards",
+      "cardsListed": 1441,
+      "newSSRURLR": 876,
+      "individualPagesVerified": 28
     }
   }
 }

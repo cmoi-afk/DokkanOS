@@ -51,29 +51,29 @@ function stats(){
 function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:(cat.name||m.name||'').replace(/Metal Cooler/g,'Métal Cooler').replace(/Metal Cooler Army/g,'Armée de Métal Cooler'),categories:frList(m.categories||cat.categories),links:frList(m.links||cat.links),image:cat.image||('assets/cards/'+id+'.webp')}}
 function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach(c=>{let id=String(c.id||'');if(id&&!seen.has(id)){seen.add(id);out.push(verifyCandidate(id))}});Object.keys(META.cards||{}).forEach(id=>{if(!seen.has(String(id))){seen.add(String(id));out.push(verifyCandidate(id))}});return out}
 function verifySearch(boxId,value){
-  let host=document.querySelector('[data-verify-results="'+boxId+'"]');if(!host)return;
-  let q=norm(value).trim();if(q.length<2){host.innerHTML='';return}
-  let terms=q.split(/\s+/).filter(Boolean),rows=verifyCatalogue().map(card=>{
-    let hay=norm([card.id,card.name,card.title,card.rarity,card.type,card.class].join(' '));
-    let score=terms.reduce((n,t)=>n+(hay.includes(t)?1:0),0)+(String(card.id)===value.trim()?10:0)+(norm(card.name||'').startsWith(q)?3:0);
-    return {card,score}
-  }).filter(x=>x.score>=terms.length).sort((a,b)=>b.score-a.score).slice(0,18);
-  host.innerHTML='';
-  if(!rows.length){host.innerHTML='<div class="empty compact">Aucune carte trouvée. Essaie le nom du personnage ou son ID.</div>';return}
-  rows.forEach(({card})=>{
-    const btn=document.createElement('button');btn.type='button';btn.className='verify-search-card';
-    const img=document.createElement('img');img.loading='lazy';img.src=card.image||'';img.onerror=()=>img.classList.add('imgfail');
-    const name=document.createElement('b');name.textContent=card.name||('ID '+card.id);
-    const info=document.createElement('small');info.textContent=[card.rarity||'',card.type||'','ID '+card.id].filter(Boolean).join(' · ');
-    btn.append(img,name,info);
-    btn.addEventListener('click',e=>{e.preventDefault();verifyPick(boxId,String(card.id),btn)});
-    host.appendChild(btn);
-  });
+  const host=document.querySelector('[data-verify-results="'+CSS.escape(String(boxId))+'"]');if(!host)return;
+  const raw=String(value||'').trim(),q=norm(raw);if(q.length<1){host.innerHTML='';return}
+  const terms=q.split(/\s+/).filter(Boolean);
+  const rows=verifyCatalogue().map(card=>{
+    const hay=norm([card.id,card.name,card.title,card.rarity,card.type,card.class,...(card.categories||[])].join(' '));
+    let score=0;for(const t of terms)if(hay.includes(t))score+=1;
+    if(String(card.id)===raw)score+=100;if(norm(card.name||'').startsWith(q))score+=20;if(hay.includes(q))score+=10;
+    return {card,score};
+  }).filter(x=>x.score>0).sort((x,y)=>y.score-x.score||String(x.card.name||'').localeCompare(String(y.card.name||''),'fr')).slice(0,60);
+  host.innerHTML=rows.length?rows.map(({card})=>'<button type="button" class="verify-search-card" data-pick-box="'+String(boxId).replace(/"/g,'&quot;')+'" data-pick-card="'+String(card.id).replace(/"/g,'&quot;')+'"><img loading="lazy" src="'+(card.image||'')+'" onerror="this.classList.add(\'imgfail\')"><b>'+(card.name||'ID '+card.id)+'</b><small>'+([card.rarity||'',card.type||'','ID '+card.id].filter(Boolean).join(' · '))+'</small></button>').join(''):'<div class="empty compact">Aucune carte trouvée. Essaie une partie du nom ou son ID.</div>';
 }
-function verifyPick(boxId,cardId,button){
-  boxId=decodeURIComponent(boxId);cardId=decodeURIComponent(cardId);
-  if(button){button.disabled=true;button.classList.add('selected');}
-  choose(boxId,cardId);
+function verifyPick(boxId,cardId){
+  const c=DB.cards.find(x=>String(x.boxId)===String(boxId));
+  if(!c){alert('DokkanOS : position introuvable ('+boxId+').');return false}
+  const candidate=verifyCandidate(cardId);
+  if(!candidate){alert('DokkanOS : carte introuvable ('+cardId+').');return false}
+  c._edited=true;c.candidateId=String(cardId);c.image=candidate.image||('assets/cards/'+cardId+'.webp');
+  c.name=candidate.name||c.name;c.rarity=candidate.rarity||c.rarity;c.type=candidate.type||c.type;
+  const m=localized(META.cards?.[String(cardId)]);if(m)Object.assign(c,m);
+  c.validated=true;c.confidence='Validée manuellement';
+  saveEdits();
+  const status=$('#verificationStatus');if(status){status.textContent='✓ '+(c.name||'ID '+cardId)+' validée pour '+boxId+'.';status.hidden=false}
+  render();stats();renderDuplicates();renderMissing();renderInventory();renderManualOwned();renderAnalysis();
   return false;
 }
 function renderVerify(){
@@ -82,17 +82,17 @@ function renderVerify(){
 }
 function loadMoreVerify(){verifyLimit+=30;renderVerify()}
 function bindVerifyChoices(){
-  if(document.documentElement.dataset.verifyChoicesBound==='1')return;
-  document.documentElement.dataset.verifyChoicesBound='1';
+  if(document.documentElement.dataset.verifyChoicesBound==='2')return;
+  document.documentElement.dataset.verifyChoicesBound='2';
   document.addEventListener('click',function(e){
-    const btn=e.target.closest('[data-verify-choice="1"]');
+    const btn=e.target.closest&&e.target.closest('[data-pick-card]');
     if(!btn)return;
     e.preventDefault();e.stopPropagation();
-    const boxId=btn.dataset.boxId, cardId=btn.dataset.cardId;
-    if(boxId&&cardId)choose(boxId,cardId);
+    verifyPick(btn.getAttribute('data-pick-box'),btn.getAttribute('data-pick-card'));
   },true);
 }
 bindVerifyChoices();
+
 function saveEdits(){
   try{
     localStorage.setItem('dokkanos-edits',JSON.stringify(DB.cards.filter(x=>x._edited).map(x=>({boxId:x.boxId,candidateId:x.candidateId,validated:x.validated,confidence:x.confidence,_edited:true}))));

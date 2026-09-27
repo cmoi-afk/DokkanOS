@@ -17,7 +17,7 @@ for(const key of ['render','stats','renderDuplicates','renderInventory','renderM
 assert.equal(vm.runInContext('catalogFamilies().length > 1000',context),true);
 assert.equal(vm.runInContext('catalogFamilies()===catalogFamilies()',context),true);
 vm.runInContext('renderMissing()',context);
-assert(Number(element('#missingCount').textContent)>1000);
+assert(parseInt(element('#missingCount').textContent,10)>1000);
 assert(element('#missingList').innerHTML.includes('À confirmer'));
 const card=data.cards.find(x=>x.image&&x.rarity==='UR');
 assert(card);

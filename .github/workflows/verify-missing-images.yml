@@ -6,6 +6,7 @@ on:
       - tools/verify_missing_images.py
       - assets/cards/**
       - docs/IMAGE-AUDIT-TRIGGER
+      - tools/verify_missing_images.py
       - .github/workflows/verify-missing-images.yml
 permissions:
   contents: write

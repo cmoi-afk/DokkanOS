@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Localisation française officielle via le serveur GLOBAL FR de DokkanInfo.
+"""Localisation française officielle v1 via le serveur GLOBAL FR de DokkanInfo.
 Récupère les mêmes IDs que la fiche anglaise et place le kit sous card.fr.
 Fallback: la couche lexicale locale reste disponible si une page FR manque.
 """

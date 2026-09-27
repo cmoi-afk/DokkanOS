@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Enrichissement principal DokkanOS v1 depuis les pages GLOBAL DokkanInfo.
+"""Enrichissement principal DokkanOS v2 depuis les pages GLOBAL DokkanInfo.
 Travaille uniquement sur les IDs déjà reconnus dans card-meta.json.
 Cache local réutilisable; reprise possible; aucune donnée existante n'est effacée.
 """

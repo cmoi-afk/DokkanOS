@@ -73,6 +73,28 @@ FR_TERMS["Fusion"]="Fusion";
 FR_TERMS["Dragon Ball Heroes"]="Dragon Ball Heroes";
 FR_TERMS["Final Trump Card"]="Dernier recours";
 FR_TERMS["Earth-Bred Fighters"]="Combattants élevés sur Terre";
+FR_TERMS["Super Heroes"]="Héros de DB Super";
+FR_TERMS["Movie Heroes"]="Héros des films";
+FR_TERMS["Movie Bosses"]="Boss des films";
+FR_TERMS["GT Heroes"]="Héros de GT";
+FR_TERMS["GT Bosses"]="Boss de GT";
+FR_TERMS["Pure Saiyans"]="Saiyan pur";
+FR_TERMS["Hybrid Saiyans"]="Saiyan de sang-mêlé";
+FR_TERMS["Earthlings"]="Terrien";
+FR_TERMS["Artificial Life Forms"]="Vie artificielle";
+FR_TERMS["Full Power"]="Lutte à pleine puissance";
+FR_TERMS["Rapid Growth"]="Croissance rapide";
+FR_TERMS["Accelerated Battle"]="Combat rapide";
+FR_TERMS["Power Beyond Super Saiyan"]="Puissance au-delà du Super Saiyan";
+FR_TERMS["Powerful Comeback"]="Puissance restaurée";
+FR_TERMS["Planetary Destruction"]="Destructeurs de planètes";
+FR_TERMS["Time Travelers"]="Voyageur du temps";
+FR_TERMS["Bond of Parent and Child"]="Lien parental";
+FR_TERMS["Joined Forces"]="Forces jointes";
+FR_TERMS["Resurrected Warriors"]="Ressuscité";
+FR_TERMS["Giant Form"]="Forme géante";
+FR_TERMS["World Tournament"]="Tenkaichi Budokai";
+FR_TERMS["Realm of Gods"]="Divin";
 function frTerm(v){return FR_TERMS[v]||v}
 function frList(a){return (a||[]).map(frTerm)}
 

@@ -1,0 +1,41 @@
+{
+  "version": "0.3",
+  "count": 4,
+  "conflicts": [
+    {
+      "physicalPosition": "BOX-0021",
+      "observations": [
+        "BOX-0021",
+        "BOX-0026"
+      ],
+      "status": "review"
+    },
+    {
+      "physicalPosition": "BOX-0227",
+      "observations": [
+        "BOX-0222",
+        "BOX-0227"
+      ],
+      "status": "suggested",
+      "suggestedId": "1017410"
+    },
+    {
+      "physicalPosition": "BOX-0249",
+      "observations": [
+        "BOX-0249",
+        "BOX-0254"
+      ],
+      "status": "suggested",
+      "suggestedId": "1011060"
+    },
+    {
+      "physicalPosition": "BOX-1214",
+      "observations": [
+        "BOX-1214",
+        "BOX-1219"
+      ],
+      "status": "suggested",
+      "suggestedId": "1001040"
+    }
+  ]
+}

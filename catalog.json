@@ -3535,7 +3535,9 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1005050",
         "match": "exact data-id on public card listing or individual card page"
-      }
+      },
+      "awakensTo": "1005051",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1005050"
     },
     {
       "sourceId": "1005051",
@@ -3550,7 +3552,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1005051",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1005050"
     },
     {
       "sourceId": "1005080",
@@ -3751,7 +3754,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1001528"
         }
-      ]
+      ],
+      "awakensTo": "1005281",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1005280"
     },
     {
       "sourceId": "1005281",
@@ -3766,7 +3771,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1005281",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1005280"
     },
     {
       "sourceId": "1530",
@@ -3782,7 +3788,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1005301",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1005300"
     },
     {
       "sourceId": "1005301",
@@ -3797,7 +3805,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1005301",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1005300"
     },
     {
       "sourceId": "1531",
@@ -3954,7 +3963,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1001544"
         }
-      ]
+      ],
+      "awakensTo": "1005441",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1005440"
     },
     {
       "sourceId": "1005441",
@@ -3969,7 +3980,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1005441",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1005440"
     },
     {
       "sourceId": "1005470",
@@ -5029,7 +5041,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1001710"
         }
-      ]
+      ],
+      "awakensTo": "1007101",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1007100"
     },
     {
       "sourceId": "1007101",
@@ -5044,7 +5058,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1007101",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1007100"
     },
     {
       "sourceId": "1712",
@@ -6834,7 +6849,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1001885"
         }
-      ]
+      ],
+      "awakensTo": "1008851",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1008850"
     },
     {
       "sourceId": "1008851",
@@ -6849,7 +6866,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1008851",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1008850"
     },
     {
       "sourceId": "1008860",
@@ -7255,7 +7273,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1009111",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1009110"
     },
     {
       "sourceId": "1009111",
@@ -7270,7 +7290,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1009111",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1009110"
     },
     {
       "sourceId": "1913",
@@ -7286,7 +7307,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1009131",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1009130"
     },
     {
       "sourceId": "1009131",
@@ -7301,7 +7324,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1009131",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1009130"
     },
     {
       "sourceId": "1922",
@@ -7385,7 +7409,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1009251",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1009250"
     },
     {
       "sourceId": "1009251",
@@ -7400,7 +7426,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1009251",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1009250"
     },
     {
       "sourceId": "1926",
@@ -7534,7 +7561,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1001935"
         }
-      ]
+      ],
+      "awakensTo": "1009351",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1009350"
     },
     {
       "sourceId": "1009351",
@@ -7549,7 +7578,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1009351",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1009350"
     },
     {
       "sourceId": "1937",
@@ -7700,7 +7730,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1009511",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1009510"
     },
     {
       "sourceId": "1009511",
@@ -7715,7 +7747,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1009511",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1009510"
     },
     {
       "sourceId": "1952",
@@ -8644,7 +8677,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011000"
         }
-      ]
+      ],
+      "awakensTo": "1010001",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1010000"
     },
     {
       "sourceId": "1010001",
@@ -8659,7 +8694,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1010001",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1010000"
     },
     {
       "sourceId": "11002",
@@ -9325,7 +9361,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1010501",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1010500"
     },
     {
       "sourceId": "1010501",
@@ -9340,7 +9378,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1010501",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1010500"
     },
     {
       "sourceId": "1010510",
@@ -9999,7 +10038,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1010851",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1010850"
     },
     {
       "sourceId": "1010851",
@@ -10014,7 +10055,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1010851",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1010850"
     },
     {
       "sourceId": "1010870",
@@ -10038,7 +10080,9 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1010870",
         "match": "exact data-id on public card listing or individual card page"
-      }
+      },
+      "awakensTo": "1010871",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1010870"
     },
     {
       "sourceId": "1010871",
@@ -10053,7 +10097,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1010871",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1010870"
     },
     {
       "sourceId": "11089",
@@ -10254,7 +10299,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1011041",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1011040"
     },
     {
       "sourceId": "1011041",
@@ -10269,7 +10316,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1011041",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1011040"
     },
     {
       "sourceId": "1011060",
@@ -10446,7 +10494,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1011141",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1011140"
     },
     {
       "sourceId": "1011141",
@@ -10461,7 +10511,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1011141",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1011140"
     },
     {
       "sourceId": "11115",
@@ -10597,7 +10648,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1011211",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1011210"
     },
     {
       "sourceId": "1011211",
@@ -10612,7 +10665,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1011211",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1011210"
     },
     {
       "sourceId": "1011220",
@@ -11489,7 +11543,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1011901",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1011900"
     },
     {
       "sourceId": "1011901",
@@ -11504,7 +11560,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1011901",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1011900"
     },
     {
       "sourceId": "1011920",
@@ -12018,7 +12075,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1012461",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1012460"
     },
     {
       "sourceId": "1012461",
@@ -12033,7 +12092,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1012461",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1012460"
     },
     {
       "sourceId": "1012470",
@@ -12231,7 +12291,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1012681",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1012680"
     },
     {
       "sourceId": "1012681",
@@ -12246,7 +12308,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1012681",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1012680"
     },
     {
       "sourceId": "11270",
@@ -12262,7 +12325,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1012701",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1012700"
     },
     {
       "sourceId": "1012701",
@@ -12277,7 +12342,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1012701",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1012700"
     },
     {
       "sourceId": "1012710",
@@ -12442,7 +12508,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011276"
         }
-      ]
+      ],
+      "awakensTo": "1012761",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1012760"
     },
     {
       "sourceId": "1012761",
@@ -12457,7 +12525,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1012761",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1012760"
     },
     {
       "sourceId": "1012770",
@@ -12797,7 +12866,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1012991",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1012990"
     },
     {
       "sourceId": "1012991",
@@ -12812,7 +12883,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1012991",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1012990"
     },
     {
       "sourceId": "11301",
@@ -13009,7 +13081,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1013071",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1013070"
     },
     {
       "sourceId": "1013071",
@@ -13024,7 +13098,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1013071",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1013070"
     },
     {
       "sourceId": "1013080",
@@ -13888,7 +13963,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1013771",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1013770"
     },
     {
       "sourceId": "1013771",
@@ -13903,7 +13980,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1013771",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1013770"
     },
     {
       "sourceId": "11378",
@@ -14261,7 +14339,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1013941",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1013940"
     },
     {
       "sourceId": "1013941",
@@ -14276,7 +14356,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1013941",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1013940"
     },
     {
       "sourceId": "11395",
@@ -14355,7 +14436,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1014021",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1014020"
     },
     {
       "sourceId": "1014021",
@@ -14370,7 +14453,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1014021",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1014020"
     },
     {
       "sourceId": "11404",
@@ -14433,7 +14517,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1014061",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1014060"
     },
     {
       "sourceId": "1014061",
@@ -14448,7 +14534,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1014061",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1014060"
     },
     {
       "sourceId": "11408",
@@ -14573,7 +14660,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1014141",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1014140"
     },
     {
       "sourceId": "1014141",
@@ -14588,7 +14677,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1014141",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1014140"
     },
     {
       "sourceId": "11415",
@@ -14604,7 +14694,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1014151",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1014150"
     },
     {
       "sourceId": "1014151",
@@ -14619,7 +14711,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1014151",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1014150"
     },
     {
       "sourceId": "11416",
@@ -14697,7 +14790,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1014181",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1014180"
     },
     {
       "sourceId": "1014181",
@@ -14712,7 +14807,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1014181",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1014180"
     },
     {
       "sourceId": "11419",
@@ -15295,7 +15391,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1014681",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1014680"
     },
     {
       "sourceId": "1014681",
@@ -15310,7 +15408,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1014681",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1014680"
     },
     {
       "sourceId": "11471",
@@ -15660,7 +15759,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1014991",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1014990"
     },
     {
       "sourceId": "1014991",
@@ -15675,7 +15776,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1014991",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1014990"
     },
     {
       "sourceId": "11500",
@@ -16083,7 +16185,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1015211",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1015210"
     },
     {
       "sourceId": "1015211",
@@ -16098,7 +16202,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1015211",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1015210"
     },
     {
       "sourceId": "11522",
@@ -16145,7 +16250,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1015231",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1015230"
     },
     {
       "sourceId": "1015231",
@@ -16160,7 +16267,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1015231",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1015230"
     },
     {
       "sourceId": "11524",
@@ -16293,7 +16401,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1015291",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1015290"
     },
     {
       "sourceId": "1015291",
@@ -16308,7 +16418,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1015291",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1015290"
     },
     {
       "sourceId": "11531",
@@ -16508,7 +16619,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011542"
         }
-      ]
+      ],
+      "awakensTo": "1015421",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1015420"
     },
     {
       "sourceId": "1015421",
@@ -16523,7 +16636,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1015421",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1015420"
     },
     {
       "sourceId": "1015451",
@@ -16688,7 +16802,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1015671",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1015670"
     },
     {
       "sourceId": "1015671",
@@ -16703,7 +16819,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1015671",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1015670"
     },
     {
       "sourceId": "1015691",
@@ -16873,7 +16990,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011581"
         }
-      ]
+      ],
+      "awakensTo": "1015811",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1015810"
     },
     {
       "sourceId": "1015811",
@@ -16888,7 +17007,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1015811",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1015810"
     },
     {
       "sourceId": "1015820",
@@ -16934,7 +17054,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1015841",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1015840"
     },
     {
       "sourceId": "1015841",
@@ -16949,7 +17071,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1015841",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1015840"
     },
     {
       "sourceId": "1015850",
@@ -17027,7 +17150,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1015881",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1015880"
     },
     {
       "sourceId": "1015881",
@@ -17042,7 +17167,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1015881",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1015880"
     },
     {
       "sourceId": "1015890",
@@ -17121,7 +17247,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011590"
         }
-      ]
+      ],
+      "awakensTo": "1015901",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1015900"
     },
     {
       "sourceId": "1015901",
@@ -17136,7 +17264,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1015901",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1015900"
     },
     {
       "sourceId": "1015910",
@@ -17387,7 +17516,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011608"
         }
-      ]
+      ],
+      "awakensTo": "1016081",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1016080"
     },
     {
       "sourceId": "1016081",
@@ -17402,7 +17533,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1016081",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1016080"
     },
     {
       "sourceId": "1016100",
@@ -17972,7 +18104,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1016491",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1016490"
     },
     {
       "sourceId": "1016491",
@@ -17987,7 +18121,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1016491",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1016490"
     },
     {
       "sourceId": "11651",
@@ -18073,7 +18208,9 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1016580",
         "match": "exact data-id on public card listing or individual card page"
-      }
+      },
+      "awakensTo": "1016581",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1016580"
     },
     {
       "sourceId": "11658",
@@ -18089,7 +18226,8 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensFrom": "1016580"
     },
     {
       "sourceId": "1016610",
@@ -18113,7 +18251,9 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1016610",
         "match": "exact data-id on public card listing or individual card page"
-      }
+      },
+      "awakensTo": "1016611",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1016610"
     },
     {
       "sourceId": "1016611",
@@ -18128,7 +18268,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1016611",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1016610"
     },
     {
       "sourceId": "11663",
@@ -18221,7 +18362,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1016731",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1016730"
     },
     {
       "sourceId": "1016731",
@@ -18236,7 +18379,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1016731",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1016730"
     },
     {
       "sourceId": "1016740",
@@ -18299,7 +18443,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1016751",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1016750"
     },
     {
       "sourceId": "1016751",
@@ -18314,7 +18460,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1016751",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1016750"
     },
     {
       "sourceId": "11676",
@@ -18619,7 +18766,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1017021",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1017020"
     },
     {
       "sourceId": "1017021",
@@ -18634,7 +18783,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1017021",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1017020"
     },
     {
       "sourceId": "1017040",
@@ -18666,7 +18816,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011704"
         }
-      ]
+      ],
+      "awakensTo": "1017041",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1017040"
     },
     {
       "sourceId": "1017041",
@@ -18681,7 +18833,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1017041",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1017040"
     },
     {
       "sourceId": "1017060",
@@ -18807,7 +18960,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011712"
         }
-      ]
+      ],
+      "awakensTo": "1017121",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1017120"
     },
     {
       "sourceId": "1017121",
@@ -18822,7 +18977,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1017121",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1017120"
     },
     {
       "sourceId": "11716",
@@ -18947,7 +19103,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1017241",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1017240"
     },
     {
       "sourceId": "1017241",
@@ -18962,7 +19120,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1017241",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1017240"
     },
     {
       "sourceId": "11726",
@@ -18978,7 +19137,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1017261",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1017260"
     },
     {
       "sourceId": "1017261",
@@ -18993,7 +19154,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1017261",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1017260"
     },
     {
       "sourceId": "11728",
@@ -19009,7 +19171,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1017281",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1017280"
     },
     {
       "sourceId": "1017281",
@@ -19024,7 +19188,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1017281",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1017280"
     },
     {
       "sourceId": "11730",
@@ -19040,7 +19205,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1017301",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1017300"
     },
     {
       "sourceId": "1017301",
@@ -19055,7 +19222,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1017301",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1017300"
     },
     {
       "sourceId": "11732",
@@ -19429,7 +19597,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1017471",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1017470"
     },
     {
       "sourceId": "1017471",
@@ -19444,7 +19614,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1017471",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1017470"
     },
     {
       "sourceId": "1017490",
@@ -19476,7 +19647,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011749"
         }
-      ]
+      ],
+      "awakensTo": "1017491",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1017490"
     },
     {
       "sourceId": "1017491",
@@ -19491,7 +19664,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1017491",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1017490"
     },
     {
       "sourceId": "11751",
@@ -19562,7 +19736,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1017551",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1017550"
     },
     {
       "sourceId": "1017551",
@@ -19577,7 +19753,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1017551",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1017550"
     },
     {
       "sourceId": "1017560",
@@ -19726,7 +19903,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1017661",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1017660"
     },
     {
       "sourceId": "1017661",
@@ -19741,7 +19920,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1017661",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1017660"
     },
     {
       "sourceId": "1017680",
@@ -19981,7 +20161,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011782"
         }
-      ]
+      ],
+      "awakensTo": "1017821",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1017820"
     },
     {
       "sourceId": "1017821",
@@ -19996,7 +20178,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1017821",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1017820"
     },
     {
       "sourceId": "11784",
@@ -20519,7 +20702,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011819"
         }
-      ]
+      ],
+      "awakensTo": "1018191",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1018190"
     },
     {
       "sourceId": "1018191",
@@ -20534,7 +20719,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1018191",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1018190"
     },
     {
       "sourceId": "11822",
@@ -20675,7 +20861,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1018301",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1018300"
     },
     {
       "sourceId": "1018301",
@@ -20690,7 +20878,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1018301",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1018300"
     },
     {
       "sourceId": "11832",
@@ -20800,7 +20989,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1018401",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1018400"
     },
     {
       "sourceId": "1018401",
@@ -20815,7 +21006,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1018401",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1018400"
     },
     {
       "sourceId": "1018410",
@@ -21222,7 +21414,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011862"
         }
-      ]
+      ],
+      "awakensTo": "1018621",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1018620"
     },
     {
       "sourceId": "1018621",
@@ -21237,7 +21431,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1018621",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1018620"
     },
     {
       "sourceId": "11864",
@@ -21627,7 +21822,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1018881",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1018880"
     },
     {
       "sourceId": "1018881",
@@ -21642,7 +21839,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1018881",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1018880"
     },
     {
       "sourceId": "1018930",
@@ -21768,7 +21966,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1019001",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019000"
     },
     {
       "sourceId": "1019001",
@@ -21783,7 +21983,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019001",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019000"
     },
     {
       "sourceId": "1019040",
@@ -21815,7 +22016,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011904"
         }
-      ]
+      ],
+      "awakensTo": "1019041",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019040"
     },
     {
       "sourceId": "1019041",
@@ -21830,7 +22033,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019041",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019040"
     },
     {
       "sourceId": "1019050",
@@ -22017,7 +22221,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011914"
         }
-      ]
+      ],
+      "awakensTo": "1019141",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019140"
     },
     {
       "sourceId": "1019141",
@@ -22032,7 +22238,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019141",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019140"
     },
     {
       "sourceId": "11917",
@@ -22197,7 +22404,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1019241",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019240"
     },
     {
       "sourceId": "1019241",
@@ -22212,7 +22421,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019241",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019240"
     },
     {
       "sourceId": "11926",
@@ -22312,7 +22522,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011930"
         }
-      ]
+      ],
+      "awakensTo": "1019301",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019300"
     },
     {
       "sourceId": "1019301",
@@ -22327,7 +22539,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019301",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019300"
     },
     {
       "sourceId": "11934",
@@ -22343,7 +22556,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1019341",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019340"
     },
     {
       "sourceId": "1019341",
@@ -22358,7 +22573,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019341",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019340"
     },
     {
       "sourceId": "1019360",
@@ -22390,7 +22606,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011936"
         }
-      ]
+      ],
+      "awakensTo": "1019361",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019360"
     },
     {
       "sourceId": "1019361",
@@ -22405,7 +22623,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019361",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019360"
     },
     {
       "sourceId": "1019371",
@@ -22468,7 +22687,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011940"
         }
-      ]
+      ],
+      "awakensTo": "1019401",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019400"
     },
     {
       "sourceId": "1019401",
@@ -22483,7 +22704,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019401",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019400"
     },
     {
       "sourceId": "1019460",
@@ -22577,7 +22799,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1019491",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019490"
     },
     {
       "sourceId": "1019491",
@@ -22592,7 +22816,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019491",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019490"
     },
     {
       "sourceId": "11952",
@@ -22640,7 +22865,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011953"
         }
-      ]
+      ],
+      "awakensTo": "1019531",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019530"
     },
     {
       "sourceId": "1019531",
@@ -22655,7 +22882,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019531",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019530"
     },
     {
       "sourceId": "1019580",
@@ -22742,7 +22970,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1011963"
         }
-      ]
+      ],
+      "awakensTo": "1019631",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019630"
     },
     {
       "sourceId": "1019631",
@@ -22757,7 +22987,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019631",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019630"
     },
     {
       "sourceId": "11966",
@@ -22773,7 +23004,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1019661",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019660"
     },
     {
       "sourceId": "1019661",
@@ -22788,7 +23021,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019661",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019660"
     },
     {
       "sourceId": "11968",
@@ -22877,7 +23111,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1019711",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019710"
     },
     {
       "sourceId": "1019711",
@@ -22892,7 +23128,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019711",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019710"
     },
     {
       "sourceId": "11972",
@@ -22908,7 +23145,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1019721",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019720"
     },
     {
       "sourceId": "1019721",
@@ -22923,7 +23162,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019721",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019720"
     },
     {
       "sourceId": "11974",
@@ -22939,7 +23179,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1019741",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019740"
     },
     {
       "sourceId": "1019741",
@@ -22954,7 +23196,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019741",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019740"
     },
     {
       "sourceId": "11979",
@@ -23038,7 +23281,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1019841",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019840"
     },
     {
       "sourceId": "1019841",
@@ -23053,7 +23298,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019841",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019840"
     },
     {
       "sourceId": "11985",
@@ -23198,7 +23444,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1019901",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1019900"
     },
     {
       "sourceId": "1019901",
@@ -23213,7 +23461,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1019901",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1019900"
     },
     {
       "sourceId": "11991",
@@ -23370,7 +23619,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1020011",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1020010"
     },
     {
       "sourceId": "1020011",
@@ -23385,7 +23636,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1020011",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1020010"
     },
     {
       "sourceId": "12003",
@@ -23401,7 +23653,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1020031",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1020030"
     },
     {
       "sourceId": "1020031",
@@ -23416,7 +23670,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1020031",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1020030"
     },
     {
       "sourceId": "12004",
@@ -23682,7 +23937,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1020181",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1020180"
     },
     {
       "sourceId": "1020181",
@@ -23697,7 +23954,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1020181",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1020180"
     },
     {
       "sourceId": "12019",
@@ -24989,7 +25247,9 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1021030",
         "match": "exact data-id on public card listing or individual card page"
-      }
+      },
+      "awakensTo": "1021031",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1021030"
     },
     {
       "sourceId": "1021031",
@@ -25004,7 +25264,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1021031",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1021030"
     },
     {
       "sourceId": "1021050",
@@ -25223,7 +25484,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1012129"
         }
-      ]
+      ],
+      "awakensTo": "1021291",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1021290"
     },
     {
       "sourceId": "1021291",
@@ -25238,7 +25501,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1021291",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1021290"
     },
     {
       "sourceId": "1021311",
@@ -25293,7 +25557,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1021331",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1021330"
     },
     {
       "sourceId": "1021331",
@@ -25308,7 +25574,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1021331",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1021330"
     },
     {
       "sourceId": "1021350",
@@ -25502,7 +25769,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1021451",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1021450"
     },
     {
       "sourceId": "1021451",
@@ -25517,7 +25786,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1021451",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1021450"
     },
     {
       "sourceId": "12147",
@@ -25611,7 +25881,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1021501",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1021500"
     },
     {
       "sourceId": "1021501",
@@ -25626,7 +25898,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1021501",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1021500"
     },
     {
       "sourceId": "12154",
@@ -25673,7 +25946,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1021561",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1021560"
     },
     {
       "sourceId": "1021561",
@@ -25688,7 +25963,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1021561",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1021560"
     },
     {
       "sourceId": "12161",
@@ -25963,7 +26239,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1012181"
         }
-      ]
+      ],
+      "awakensTo": "1021811",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1021810"
     },
     {
       "sourceId": "1021811",
@@ -25978,7 +26256,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1021811",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1021810"
     },
     {
       "sourceId": "12185",
@@ -25994,7 +26273,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1021851",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1021850"
     },
     {
       "sourceId": "1021851",
@@ -26009,7 +26290,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1021851",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1021850"
     },
     {
       "sourceId": "1021870",
@@ -26041,7 +26323,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1012187"
         }
-      ]
+      ],
+      "awakensTo": "1021871",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1021870"
     },
     {
       "sourceId": "1021871",
@@ -26056,7 +26340,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1021871",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1021870"
     },
     {
       "sourceId": "12188",
@@ -27000,7 +27285,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1012259"
         }
-      ]
+      ],
+      "awakensTo": "1022591",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1022590"
     },
     {
       "sourceId": "1022591",
@@ -27015,7 +27302,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1022591",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1022590"
     },
     {
       "sourceId": "12262",
@@ -27110,7 +27398,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1012265"
         }
-      ]
+      ],
+      "awakensTo": "1022651",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1022650"
     },
     {
       "sourceId": "1022651",
@@ -27125,7 +27415,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1022651",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1022650"
     },
     {
       "sourceId": "12268",
@@ -27141,7 +27432,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1022681",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1022680"
     },
     {
       "sourceId": "1022681",
@@ -27156,7 +27449,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1022681",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1022680"
     },
     {
       "sourceId": "12270",
@@ -27422,7 +27716,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1022831",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1022830"
     },
     {
       "sourceId": "1022831",
@@ -27437,7 +27733,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1022831",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1022830"
     },
     {
       "sourceId": "12286",
@@ -27484,7 +27781,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1022881",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1022880"
     },
     {
       "sourceId": "1022881",
@@ -27499,7 +27798,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1022881",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1022880"
     },
     {
       "sourceId": "12293",
@@ -27639,7 +27939,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1012300"
         }
-      ]
+      ],
+      "awakensTo": "1023001",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1023000"
     },
     {
       "sourceId": "1023001",
@@ -27654,7 +27956,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1023001",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1023000"
     },
     {
       "sourceId": "12303",
@@ -27979,7 +28282,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1023261",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1023260"
     },
     {
       "sourceId": "1023261",
@@ -27994,7 +28299,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1023261",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1023260"
     },
     {
       "sourceId": "12327",
@@ -28483,7 +28789,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1023571",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1023570"
     },
     {
       "sourceId": "1023571",
@@ -28498,7 +28806,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1023571",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1023570"
     },
     {
       "sourceId": "12359",
@@ -28629,7 +28938,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1023641",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1023640"
     },
     {
       "sourceId": "1023641",
@@ -28644,7 +28955,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1023641",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1023640"
     },
     {
       "sourceId": "12365",
@@ -28800,7 +29112,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1023691",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1023690"
     },
     {
       "sourceId": "1023691",
@@ -28815,7 +29129,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1023691",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1023690"
     },
     {
       "sourceId": "12370",
@@ -28831,7 +29146,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1023701",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1023700"
     },
     {
       "sourceId": "1023701",
@@ -28846,7 +29163,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1023701",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1023700"
     },
     {
       "sourceId": "12371",
@@ -29295,7 +29613,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1023951",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1023950"
     },
     {
       "sourceId": "1023951",
@@ -29310,7 +29630,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1023951",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1023950"
     },
     {
       "sourceId": "12398",
@@ -29326,7 +29647,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1023981",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1023980"
     },
     {
       "sourceId": "1023981",
@@ -29341,7 +29664,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1023981",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1023980"
     },
     {
       "sourceId": "1024000",
@@ -29456,7 +29780,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1024061",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1024060"
     },
     {
       "sourceId": "1024061",
@@ -29471,7 +29797,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1024061",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1024060"
     },
     {
       "sourceId": "12408",
@@ -29487,7 +29814,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1024081",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1024080"
     },
     {
       "sourceId": "1024081",
@@ -29502,7 +29831,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1024081",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1024080"
     },
     {
       "sourceId": "12409",
@@ -30070,7 +30400,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1024601",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1024600"
     },
     {
       "sourceId": "1024601",
@@ -30085,7 +30417,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1024601",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1024600"
     },
     {
       "sourceId": "1024630",
@@ -30258,7 +30591,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1024751",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1024750"
     },
     {
       "sourceId": "1024751",
@@ -30273,7 +30608,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1024751",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1024750"
     },
     {
       "sourceId": "12478",
@@ -30533,7 +30869,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1024921",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1024920"
     },
     {
       "sourceId": "1024921",
@@ -30553,7 +30891,8 @@
         "provider": "okfaygo/dokkan-translation",
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
-      }
+      },
+      "awakensFrom": "1024920"
     },
     {
       "sourceId": "12493",
@@ -30569,7 +30908,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1024931",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1024930"
     },
     {
       "sourceId": "1024931",
@@ -30584,7 +30925,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1024931",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1024930"
     },
     {
       "sourceId": "1024940",
@@ -30640,7 +30982,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1012495"
         }
-      ]
+      ],
+      "awakensTo": "1024951",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1024950"
     },
     {
       "sourceId": "1024951",
@@ -30655,7 +30999,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1024951",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1024950"
     },
     {
       "sourceId": "12497",
@@ -30726,7 +31071,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1024991",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1024990"
     },
     {
       "sourceId": "1024991",
@@ -30741,7 +31088,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1024991",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1024990"
     },
     {
       "sourceId": "1025020",
@@ -30883,7 +31231,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1025091",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1025090"
     },
     {
       "sourceId": "1025091",
@@ -30898,7 +31248,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1025091",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1025090"
     },
     {
       "sourceId": "12511",
@@ -30986,7 +31337,9 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://dbz-dokkanbattle.com/card/1025150",
         "verified": "2026-09-27"
-      }
+      },
+      "awakensTo": "1025151",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1025150"
     },
     {
       "sourceId": "1025151",
@@ -31001,7 +31354,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1025151",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1025150"
     },
     {
       "sourceId": "12516",
@@ -31151,7 +31505,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1025211",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1025210"
     },
     {
       "sourceId": "1025211",
@@ -31166,7 +31522,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1025211",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1025210"
     },
     {
       "sourceId": "1025230",
@@ -31245,7 +31602,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1012525"
         }
-      ]
+      ],
+      "awakensTo": "1025251",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1025250"
     },
     {
       "sourceId": "1025251",
@@ -31260,7 +31619,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1025251",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1025250"
     },
     {
       "sourceId": "12531",
@@ -31478,7 +31838,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1025411",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1025410"
     },
     {
       "sourceId": "1025411",
@@ -31493,7 +31855,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1025411",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1025410"
     },
     {
       "sourceId": "1025430",
@@ -31557,7 +31920,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1025461",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1025460"
     },
     {
       "sourceId": "1025461",
@@ -31572,7 +31937,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1025461",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1025460"
     },
     {
       "sourceId": "12547",
@@ -31609,7 +31975,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1025511",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1025510"
     },
     {
       "sourceId": "1025511",
@@ -31624,7 +31992,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1025511",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1025510"
     },
     {
       "sourceId": "1025530",
@@ -31656,7 +32025,9 @@
           "match": "exact asset ID in imageURL",
           "legacyId": "1012553"
         }
-      ]
+      ],
+      "awakensTo": "1025531",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1025530"
     },
     {
       "sourceId": "1025531",
@@ -31671,7 +32042,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1025531",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1025530"
     },
     {
       "sourceId": "12555",
@@ -32002,7 +32374,9 @@
         "provider": "feijoes/DokkanAPI",
         "url": "https://github.com/feijoes/DokkanAPI/blob/main/data/DokkanCharacterData.json",
         "match": "exact asset ID in imageURL"
-      }
+      },
+      "awakensTo": "1025801",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1025800"
     },
     {
       "sourceId": "1025801",
@@ -32017,7 +32391,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1025801",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1025800"
     },
     {
       "sourceId": "1025821",
@@ -32511,7 +32886,9 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1026390",
         "match": "exact data-id on public card listing or individual card page"
-      }
+      },
+      "awakensTo": "1026391",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1026390"
     },
     {
       "sourceId": "1026391",
@@ -32526,7 +32903,8 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1026391",
         "match": "exact card ID"
-      }
+      },
+      "awakensFrom": "1026390"
     },
     {
       "sourceId": "1026430",
@@ -37914,6 +38292,7 @@
     "frenchReferenceConflicts": 7,
     "srAwaitingAwakeningReview": 146,
     "srAwakeningConfirmed": 144,
-    "srAwakeningPending": 2
+    "srAwakeningPending": 2,
+    "exactAwakeningPairs": 126
   }
 }

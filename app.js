@@ -286,6 +286,20 @@ FR_TERMS["Revenge"]="Vengeance";
 FR_TERMS["Artificial Life Forms"]="Vie artificielle";
 FR_TERMS["Entrusted Will"]="Volonté confiée";
 FR_TERMS["Time Travelers"]="Voyageur du temps";
+FR_TERMS["The Saiyan Lineage"]="L'origine des saiyans";
+FR_TERMS["Saiyan Warrior Race"]="Race saiyan";
+FR_TERMS["Prodigies"]="Génie";
+FR_TERMS["Cold Judgment"]="Jugement serein";
+FR_TERMS["Brainiacs"]="Intello";
+FR_TERMS["Solid Support"]="Soutien infaillible";
+FR_TERMS["Experienced Fighters"]="Guerrier vétéran";
+FR_TERMS["Infighter"]="Fonceur";
+FR_TERMS["Shocking Speed"]="Vitesse époustouflante";
+FR_TERMS["Turtle School"]="École tortue";
+FR_TERMS["High Compatibility"]="Super compatibilité";
+FR_TERMS["All in the Family"]="Liens familiaux";
+FR_TERMS["Galactic Visitor"]="Visiteur d'ailleurs";
+FR_TERMS["Messenger from the Future"]="Messager du futur";
 function frTerm(v){return FR_TERMS[v]||v}
 function frList(a){return (a||[]).map(frTerm)}
 

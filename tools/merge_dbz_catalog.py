@@ -19,6 +19,7 @@ INDEX = ROOT / "docs" / "DBZ-CARD-INDEX-v0.7.json"
 REVIEW = ROOT / "docs" / "SR-AWAKENING-REVIEW-v0.7.json"
 REPORT = ROOT / "docs" / "DBZ-RECONCILIATION-v0.7.json"
 BASE = "https://www.dbz-dokkanbattle.com"
+NON_PLAYABLE = ("statue de m. satan", "statue de mr satan", "mr. satan statue", "hercule statue")
 
 
 def thumb(card_id):
@@ -90,6 +91,13 @@ def main():
             "provider": "DBZ Dokkan Battle France", "url": source["url"],
             "match": "exact data-id on public card listing or individual card page",
         }
+    # Remove sell-only treasure/statue entries: they are not playable characters.
+    removed_non_playable=[]
+    for cid, card in list(by_id.items()):
+        name=(card.get("name") or "").lower()
+        if any(token in name for token in NON_PLAYABLE):
+            removed_non_playable.append({"id":cid,"name":card.get("name")})
+            del by_id[cid]
     doc["cards"] = sorted(by_id.values(), key=lambda card: int(card["id"]))
     if len(doc["cards"]) != len(by_id):
         raise ValueError("doublons après réconciliation")
@@ -99,6 +107,7 @@ def main():
     doc["audit"]["count"] = len(doc["cards"])
     doc["audit"]["uniqueIds"] = len(by_id)
     doc["audit"]["duplicateIds"] = 0
+    doc["audit"]["nonPlayableRemoved"] = len(removed_non_playable)
     doc["audit"]["frenchReferenceNewCards"] = len(added)
     doc["audit"]["frenchReferenceConflicts"] = len(conflicts)
     doc["audit"]["srAwaitingAwakeningReview"] = len(reviewed)
@@ -107,7 +116,8 @@ def main():
                                  ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     REPORT.write_text(json.dumps({"referenceCount": index["count"], "added": len(added),
                                   "resolvedFromIndividualPages": len(resolved),
-                                  "conflicts": conflicts, "errors": errors},
+                                  "conflicts": conflicts, "errors": errors,
+                                  "nonPlayableRemoved": removed_non_playable},
                                  ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     CATALOG.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Catalogue {len(doc['cards'])}; nouvelles cartes {len(added)}; "

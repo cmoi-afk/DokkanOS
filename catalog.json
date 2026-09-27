@@ -4,6 +4,414 @@
   "note": "Catalogue fusionné en cours d’audit exhaustif. Les entrées marquées source DBZ Dokkan Battle France ont été recoupées sur leur fiche française; aucune complétude totale n’est déclarée avant clôture QA.",
   "cards": [
     {
+      "sourceId": "1000030",
+      "id": "1000030",
+      "name": "Son Goku",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000030_thumb/card_1000030_thumb.png",
+      "awakensTo": "1000031",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000030",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000030",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000040",
+      "id": "1000040",
+      "name": "Vegeta",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000040_thumb/card_1000040_thumb.png",
+      "awakensTo": "1000041",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000040",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000040",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000070",
+      "id": "1000070",
+      "name": "Cell (1re forme)",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000070_thumb/card_1000070_thumb.png",
+      "awakensTo": "1000071",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000070",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000070",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000090",
+      "id": "1000090",
+      "name": "Son Gohan (petit)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000090_thumb/card_1000090_thumb.png",
+      "awakensTo": "1000091",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000090",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000090",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000100",
+      "id": "1000100",
+      "name": "Trunks (jeune)",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000100_thumb/card_1000100_thumb.png",
+      "awakensTo": "1000101",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000100",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000100",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000110",
+      "id": "1000110",
+      "name": "Krillin",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000110_thumb/card_1000110_thumb.png",
+      "awakensTo": "1000111",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000110",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000110",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000120",
+      "id": "1000120",
+      "name": "Piccolo",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000120_thumb/card_1000120_thumb.png",
+      "awakensTo": "1000121",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000120",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000120",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000130",
+      "id": "1000130",
+      "name": "Tenshinhan",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000130_thumb/card_1000130_thumb.png",
+      "awakensTo": "1000131",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000130",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000130",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000140",
+      "id": "1000140",
+      "name": "Chaozu",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000140_thumb/card_1000140_thumb.png",
+      "awakensTo": "1000141",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000140",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000140",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000150",
+      "id": "1000150",
+      "name": "Yamcha",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000150_thumb/card_1000150_thumb.png",
+      "awakensTo": "1000151",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000150",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000150",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000160",
+      "id": "1000160",
+      "name": "Raditz",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000160_thumb/card_1000160_thumb.png",
+      "awakensTo": "1000161",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000160",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000160",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000170",
+      "id": "1000170",
+      "name": "Nappa",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000170_thumb/card_1000170_thumb.png",
+      "awakensTo": "1000171",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000170",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000170",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000180",
+      "id": "1000180",
+      "name": "Zarbon",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000180_thumb/card_1000180_thumb.png",
+      "awakensTo": "1000181",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000180",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000180",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000190",
+      "id": "1000190",
+      "name": "Ginyu",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000190_thumb/card_1000190_thumb.png",
+      "awakensTo": "1000191",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000190",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000190",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000200",
+      "id": "1000200",
+      "name": "C-19",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000200_thumb/card_1000200_thumb.png",
+      "awakensTo": "1000201",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000200",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000200",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000210",
+      "id": "1000210",
+      "name": "Dr. Gero",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000210_thumb/card_1000210_thumb.png",
+      "awakensTo": "1000211",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000210",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000210",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000220",
+      "id": "1000220",
+      "name": "C-17",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000220_thumb/card_1000220_thumb.png",
+      "awakensTo": "1000221",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000220",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000220",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000230",
+      "id": "1000230",
+      "name": "C-18",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000230_thumb/card_1000230_thumb.png",
+      "awakensTo": "1000231",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000230",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000230",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000240",
+      "id": "1000240",
+      "name": "C-16",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000240_thumb/card_1000240_thumb.png",
+      "awakensTo": "1000241",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000240",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000240",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000250",
+      "id": "1000250",
+      "name": "Kamesennin",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000250_thumb/card_1000250_thumb.png",
+      "awakensTo": "1000251",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000250",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000250",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000260",
+      "id": "1000260",
+      "name": "Tao Pai Pai",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000260_thumb/card_1000260_thumb.png",
+      "awakensTo": "1000261",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000260",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000260",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000810",
+      "id": "1000810",
+      "name": "Trunks (jeune)",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000810_thumb/card_1000810_thumb.png",
+      "awakensTo": "1000811",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000810",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000810",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000820",
+      "id": "1000820",
+      "name": "M. Satan",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000820_thumb/card_1000820_thumb.png",
+      "awakensTo": "1000821",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000820",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000820",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000850",
+      "id": "1000850",
+      "name": "Son Goku",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000850_thumb/card_1000850_thumb.png",
+      "awakensTo": "1000851",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000850",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000850",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1000860",
       "id": "1000860",
       "name": "Vegeta",
@@ -28,6 +436,244 @@
       }
     },
     {
+      "sourceId": "1000870",
+      "id": "1000870",
+      "name": "Son Gohan (petit)",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000870_thumb/card_1000870_thumb.png",
+      "awakensTo": "1000871",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000870",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000870",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000880",
+      "id": "1000880",
+      "name": "Trunks (jeune)",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000880_thumb/card_1000880_thumb.png",
+      "awakensTo": "1000881",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000880",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000880",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000890",
+      "id": "1000890",
+      "name": "Krillin",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000890_thumb/card_1000890_thumb.png",
+      "awakensTo": "1000891",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000890",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000890",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000900",
+      "id": "1000900",
+      "name": "Piccolo",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000900_thumb/card_1000900_thumb.png",
+      "awakensTo": "1000901",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000900",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000900",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000910",
+      "id": "1000910",
+      "name": "Tenshinhan",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000910_thumb/card_1000910_thumb.png",
+      "awakensTo": "1000911",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000910",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000910",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000920",
+      "id": "1000920",
+      "name": "Chaozu",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000920_thumb/card_1000920_thumb.png",
+      "awakensTo": "1000921",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000920",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000920",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000930",
+      "id": "1000930",
+      "name": "Yamcha",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000930_thumb/card_1000930_thumb.png",
+      "awakensTo": "1000931",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000930",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000930",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000940",
+      "id": "1000940",
+      "name": "Zarbon",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000940_thumb/card_1000940_thumb.png",
+      "awakensTo": "1000941",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000940",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000940",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000950",
+      "id": "1000950",
+      "name": "Ginyu",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000950_thumb/card_1000950_thumb.png",
+      "awakensTo": "1000951",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000950",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000950",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000960",
+      "id": "1000960",
+      "name": "Nappa",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000960_thumb/card_1000960_thumb.png",
+      "awakensTo": "1000961",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000960",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000960",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000980",
+      "id": "1000980",
+      "name": "Dr. Gero",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000980_thumb/card_1000980_thumb.png",
+      "awakensTo": "1000981",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000980",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000980",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1000990",
+      "id": "1000990",
+      "name": "C-17",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000990_thumb/card_1000990_thumb.png",
+      "awakensTo": "1000991",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1000990",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1000990",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001000",
+      "id": "1001000",
+      "name": "C-18",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001000_thumb/card_1001000_thumb.png",
+      "awakensTo": "1001001",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001000",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001000",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001010",
+      "id": "1001010",
+      "name": "C-16",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001010_thumb/card_1001010_thumb.png",
+      "awakensTo": "1001011",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001010",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001010",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1001040",
       "id": "1001040",
       "name": "Chi-Chi",
@@ -49,6 +695,142 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1001040",
         "match": "exact data-id on public card listing or individual card page"
+      }
+    },
+    {
+      "sourceId": "1001050",
+      "id": "1001050",
+      "name": "Dodoria",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001050_thumb/card_1001050_thumb.png",
+      "awakensTo": "1001051",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001050",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001050",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001060",
+      "id": "1001060",
+      "name": "Reacum",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001060_thumb/card_1001060_thumb.png",
+      "awakensTo": "1001061",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001060",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001060",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001070",
+      "id": "1001070",
+      "name": "Guldo",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001070_thumb/card_1001070_thumb.png",
+      "awakensTo": "1001071",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001070",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001070",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001080",
+      "id": "1001080",
+      "name": "Butta",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001080_thumb/card_1001080_thumb.png",
+      "awakensTo": "1001081",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001080",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001080",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001090",
+      "id": "1001090",
+      "name": "Jeese",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001090_thumb/card_1001090_thumb.png",
+      "awakensTo": "1001091",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001090",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001090",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001100",
+      "id": "1001100",
+      "name": "Nail",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001100_thumb/card_1001100_thumb.png",
+      "awakensTo": "1001101",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001100",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001100",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001110",
+      "id": "1001110",
+      "name": "Kiwi",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001110_thumb/card_1001110_thumb.png",
+      "awakensTo": "1001111",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001110",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001110",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001380",
+      "id": "1001380",
+      "name": "Maître des Grues",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001380_thumb/card_1001380_thumb.png",
+      "awakensTo": "1001381",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001380",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001380",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -100,6 +882,159 @@
       }
     },
     {
+      "sourceId": "1001420",
+      "id": "1001420",
+      "name": "Nappa",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001420_thumb/card_1001420_thumb.png",
+      "awakensTo": "1001421",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001420",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001420",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001430",
+      "id": "1001430",
+      "name": "Raditz",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001430_thumb/card_1001430_thumb.png",
+      "awakensTo": "1001431",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001430",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001430",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001440",
+      "id": "1001440",
+      "name": "Yamcha",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001440_thumb/card_1001440_thumb.png",
+      "awakensTo": "1001441",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001440",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001440",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001450",
+      "id": "1001450",
+      "name": "Tenshinhan",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001450_thumb/card_1001450_thumb.png",
+      "awakensTo": "1001451",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001450",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001450",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001460",
+      "id": "1001460",
+      "name": "Chaozu",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001460_thumb/card_1001460_thumb.png",
+      "awakensTo": "1001461",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001460",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001460",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001500",
+      "id": "1001500",
+      "name": "Sélipa",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001500_thumb/card_1001500_thumb.png",
+      "awakensTo": "1001501",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001500",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001500",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001530",
+      "id": "1001530",
+      "name": "Super Zarbon",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001530_thumb/card_1001530_thumb.png",
+      "awakensTo": "1001531",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001530",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001530",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001610",
+      "id": "1001610",
+      "name": "Ginyu (Son Goku)",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001610_thumb/card_1001610_thumb.png",
+      "awakensTo": "1001611",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001610",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001610",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001620",
+      "id": "1001620",
+      "name": "Son Gohan (petit)",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001620_thumb/card_1001620_thumb.png",
+      "awakensTo": "1001621",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001620",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001620",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1001690",
       "id": "1001690",
       "name": "Perfect Cell",
@@ -148,6 +1083,108 @@
       }
     },
     {
+      "sourceId": "1001710",
+      "id": "1001710",
+      "name": "Cell (2e forme)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001710_thumb/card_1001710_thumb.png",
+      "awakensTo": "1001711",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001710",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001710",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001720",
+      "id": "1001720",
+      "name": "Cell (forme parfaite)",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001720_thumb/card_1001720_thumb.png",
+      "awakensTo": "1001721",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001720",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001720",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001730",
+      "id": "1001730",
+      "name": "C-17 (futur)",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001730_thumb/card_1001730_thumb.png",
+      "awakensTo": "1001731",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001730",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001730",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001740",
+      "id": "1001740",
+      "name": "C-18 (futur)",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001740_thumb/card_1001740_thumb.png",
+      "awakensTo": "1001741",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001740",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001740",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001760",
+      "id": "1001760",
+      "name": "Trunks (petit)",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001760_thumb/card_1001760_thumb.png",
+      "awakensTo": "1001761",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001760",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001760",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001770",
+      "id": "1001770",
+      "name": "Tenshinhan",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001770_thumb/card_1001770_thumb.png",
+      "awakensTo": "1001771",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001770",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001770",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1001790",
       "id": "1001790",
       "name": "Super Saiyan 2 Vegeta",
@@ -169,6 +1206,57 @@
         "provider": "okfaygo/dokkan-translation",
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
+      }
+    },
+    {
+      "sourceId": "1001830",
+      "id": "1001830",
+      "name": "C-19",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001830_thumb/card_1001830_thumb.png",
+      "awakensTo": "1001831",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001830",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001830",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001840",
+      "id": "1001840",
+      "name": "Dr. Gero",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001840_thumb/card_1001840_thumb.png",
+      "awakensTo": "1001841",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001840",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001840",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1001860",
+      "id": "1001860",
+      "name": "Trunks (jeune)",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001860_thumb/card_1001860_thumb.png",
+      "awakensTo": "1001861",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001860",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001860",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -217,6 +1305,40 @@
         "provider": "okfaygo/dokkan-translation",
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
+      }
+    },
+    {
+      "sourceId": "1001980",
+      "id": "1001980",
+      "name": "Dabra",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001980_thumb/card_1001980_thumb.png",
+      "awakensTo": "1001981",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1001980",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1001980",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002030",
+      "id": "1002030",
+      "name": "Oub (enfant)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002030_thumb/card_1002030_thumb.png",
+      "awakensTo": "1002031",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002030",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002030",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -292,6 +1414,91 @@
       }
     },
     {
+      "sourceId": "1002130",
+      "id": "1002130",
+      "name": "Son Goku",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002130_thumb/card_1002130_thumb.png",
+      "awakensTo": "1002131",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002130",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002130",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002140",
+      "id": "1002140",
+      "name": "Vegeta",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002140_thumb/card_1002140_thumb.png",
+      "awakensTo": "1002141",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002140",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002140",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002200",
+      "id": "1002200",
+      "name": "Son Gohan Super Saiyan (jeune)",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002200_thumb/card_1002200_thumb.png",
+      "awakensTo": "1002201",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002200",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002200",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002210",
+      "id": "1002210",
+      "name": "Jaco",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002210_thumb/card_1002210_thumb.png",
+      "awakensTo": "1002211",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002210",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002210",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002220",
+      "id": "1002220",
+      "name": "Kamesennin (puissance max)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002220_thumb/card_1002220_thumb.png",
+      "awakensTo": "1002221",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002220",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002220",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1002241",
       "id": "1002241",
       "name": "Son Goku (enfant)",
@@ -328,6 +1535,91 @@
         "provider": "okfaygo/dokkan-translation",
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
+      }
+    },
+    {
+      "sourceId": "1002280",
+      "id": "1002280",
+      "name": "Piccolo Junior",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002280_thumb/card_1002280_thumb.png",
+      "awakensTo": "1002281",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002280",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002280",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002310",
+      "id": "1002310",
+      "name": "Commandant Blue",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002310_thumb/card_1002310_thumb.png",
+      "awakensTo": "1002311",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002310",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002310",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002320",
+      "id": "1002320",
+      "name": "Chichi (enfant)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002320_thumb/card_1002320_thumb.png",
+      "awakensTo": "1002321",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002320",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002320",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002330",
+      "id": "1002330",
+      "name": "Yamcha",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002330_thumb/card_1002330_thumb.png",
+      "awakensTo": "1002331",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002330",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002330",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002340",
+      "id": "1002340",
+      "name": "Krillin (enfant)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002340_thumb/card_1002340_thumb.png",
+      "awakensTo": "1002341",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002340",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002340",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -418,6 +1710,57 @@
       }
     },
     {
+      "sourceId": "1002410",
+      "id": "1002410",
+      "name": "Veku",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002410_thumb/card_1002410_thumb.png",
+      "awakensTo": "1002411",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002410",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002410",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002420",
+      "id": "1002420",
+      "name": "Son Goku Super Saiyan divin SS",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002420_thumb/card_1002420_thumb.png",
+      "awakensTo": "1002421",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002420",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002420",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002430",
+      "id": "1002430",
+      "name": "Son Goku",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002430_thumb/card_1002430_thumb.png",
+      "awakensTo": "1002431",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002430",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002430",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1002450",
       "id": "1002450",
       "name": "Goku",
@@ -505,6 +1848,57 @@
       }
     },
     {
+      "sourceId": "1002570",
+      "id": "1002570",
+      "name": "Trunks Super Saiyan (petit)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002570_thumb/card_1002570_thumb.png",
+      "awakensTo": "1002571",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002570",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002570",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002580",
+      "id": "1002580",
+      "name": "Son Goten Super Saiyan (petit)",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002580_thumb/card_1002580_thumb.png",
+      "awakensTo": "1002581",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002580",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002580",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1002600",
+      "id": "1002600",
+      "name": "Tenshinhan",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002600_thumb/card_1002600_thumb.png",
+      "awakensTo": "1002601",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002600",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002600",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1002630",
       "id": "1002630",
       "name": "Statue de M. Satan (or)",
@@ -541,6 +1935,23 @@
         "provider": "okfaygo/dokkan-translation",
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
+      }
+    },
+    {
+      "sourceId": "1002710",
+      "id": "1002710",
+      "name": "Son Goku",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002710_thumb/card_1002710_thumb.png",
+      "awakensTo": "1002711",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002710",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002710",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -583,6 +1994,23 @@
       }
     },
     {
+      "sourceId": "1002870",
+      "id": "1002870",
+      "name": "Son Gohan (enfant)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002870_thumb/card_1002870_thumb.png",
+      "awakensTo": "1002871",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002870",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002870",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1002910",
       "id": "1002910",
       "name": "Chaozu",
@@ -613,6 +2041,23 @@
       }
     },
     {
+      "sourceId": "1002940",
+      "id": "1002940",
+      "name": "Great Saiyaman",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002940_thumb/card_1002940_thumb.png",
+      "awakensTo": "1002941",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002940",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002940",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1002950",
       "id": "1002950",
       "name": "Great Saiyaman 2",
@@ -625,6 +2070,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1002950",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1002980",
+      "id": "1002980",
+      "name": "Pan (GT)",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002980_thumb/card_1002980_thumb.png",
+      "awakensTo": "1002981",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1002980",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1002980",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -649,6 +2111,23 @@
         "provider": "okfaygo/dokkan-translation",
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
+      }
+    },
+    {
+      "sourceId": "1003000",
+      "id": "1003000",
+      "name": "Vegeta (GT)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003000_thumb/card_1003000_thumb.png",
+      "awakensTo": "1003001",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003000",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003000",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -697,6 +2176,40 @@
         "provider": "okfaygo/dokkan-translation",
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
+      }
+    },
+    {
+      "sourceId": "1003130",
+      "id": "1003130",
+      "name": "Son Gohan Super Saiyan (GT)",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003130_thumb/card_1003130_thumb.png",
+      "awakensTo": "1003131",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003130",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003130",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1003160",
+      "id": "1003160",
+      "name": "Oolong",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003160_thumb/card_1003160_thumb.png",
+      "awakensTo": "1003161",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003160",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003160",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -792,6 +2305,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1003211",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1003220",
+      "id": "1003220",
+      "name": "Vegeta Super Saiyan",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003220_thumb/card_1003220_thumb.png",
+      "awakensTo": "1003221",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003220",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003220",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -891,6 +2421,23 @@
       }
     },
     {
+      "sourceId": "1003280",
+      "id": "1003280",
+      "name": "Trunks Super Saiyan (jeune)",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003280_thumb/card_1003280_thumb.png",
+      "awakensTo": "1003281",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003280",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003280",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1003290",
       "id": "1003290",
       "name": "Super Trunks",
@@ -946,6 +2493,23 @@
       }
     },
     {
+      "sourceId": "1003330",
+      "id": "1003330",
+      "name": "M. Boo",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003330_thumb/card_1003330_thumb.png",
+      "awakensTo": "1003331",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003330",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003330",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1003370",
       "id": "1003370",
       "name": "Whis",
@@ -970,6 +2534,108 @@
       }
     },
     {
+      "sourceId": "1003400",
+      "id": "1003400",
+      "name": "Litchi",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003400_thumb/card_1003400_thumb.png",
+      "awakensTo": "1003401",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003400",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003400",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1003450",
+      "id": "1003450",
+      "name": "Mutaïto",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003450_thumb/card_1003450_thumb.png",
+      "awakensTo": "1003451",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003450",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003450",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1003460",
+      "id": "1003460",
+      "name": "Kibito",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003460_thumb/card_1003460_thumb.png",
+      "awakensTo": "1003461",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003460",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003460",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1003470",
+      "id": "1003470",
+      "name": "Kibitoshin",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003470_thumb/card_1003470_thumb.png",
+      "awakensTo": "1003471",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003470",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003470",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1003480",
+      "id": "1003480",
+      "name": "Kaïo Shin",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003480_thumb/card_1003480_thumb.png",
+      "awakensTo": "1003481",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003480",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003480",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1003510",
+      "id": "1003510",
+      "name": "Piccolo",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003510_thumb/card_1003510_thumb.png",
+      "awakensTo": "1003511",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003510",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003510",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1003530",
       "id": "1003530",
       "name": "Kamesennin (puissance max)",
@@ -982,6 +2648,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1003530",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1003540",
+      "id": "1003540",
+      "name": "Chichi (enfant)",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003540_thumb/card_1003540_thumb.png",
+      "awakensTo": "1003541",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003540",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003540",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -1069,6 +2752,23 @@
       }
     },
     {
+      "sourceId": "1003700",
+      "id": "1003700",
+      "name": "Oub (enfant)",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003700_thumb/card_1003700_thumb.png",
+      "awakensTo": "1003701",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003700",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003700",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1376",
       "id": "1003760",
       "name": "Perfect Cell",
@@ -1121,6 +2821,108 @@
       }
     },
     {
+      "sourceId": "1003820",
+      "id": "1003820",
+      "name": "Dabra",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003820_thumb/card_1003820_thumb.png",
+      "awakensTo": "1003821",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003820",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003820",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1003870",
+      "id": "1003870",
+      "name": "Vegeta",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003870_thumb/card_1003870_thumb.png",
+      "awakensTo": "1003871",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003870",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003870",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1003900",
+      "id": "1003900",
+      "name": "Beerus",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003900_thumb/card_1003900_thumb.png",
+      "awakensTo": "1003901",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003900",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003900",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1003920",
+      "id": "1003920",
+      "name": "Cacao",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003920_thumb/card_1003920_thumb.png",
+      "awakensTo": "1003921",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003920",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003920",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1003930",
+      "id": "1003930",
+      "name": "Daïzu",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003930_thumb/card_1003930_thumb.png",
+      "awakensTo": "1003931",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003930",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003930",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1003940",
+      "id": "1003940",
+      "name": "Amondo",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003940_thumb/card_1003940_thumb.png",
+      "awakensTo": "1003941",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1003940",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1003940",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1003980",
       "id": "1003980",
       "name": "Bulma (Youth)",
@@ -1157,6 +2959,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1003991",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1004020",
+      "id": "1004020",
+      "name": "Son Goten (GT)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1004020_thumb/card_1004020_thumb.png",
+      "awakensTo": "1004021",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1004020",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1004020",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -1199,6 +3018,23 @@
       }
     },
     {
+      "sourceId": "1004190",
+      "id": "1004190",
+      "name": "Lunch",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1004190_thumb/card_1004190_thumb.png",
+      "awakensTo": "1004191",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1004190",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1004190",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1425",
       "id": "1004250",
       "name": "Frieza (Full Power)",
@@ -1227,6 +3063,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1004251",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1004280",
+      "id": "1004280",
+      "name": "Vegeta Super Saiyan",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1004280_thumb/card_1004280_thumb.png",
+      "awakensTo": "1004281",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1004280",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1004280",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -1313,6 +3166,40 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1004410",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1004440",
+      "id": "1004440",
+      "name": "Trunks Super Saiyan (petit)",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1004440_thumb/card_1004440_thumb.png",
+      "awakensTo": "1004441",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1004440",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1004440",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1004460",
+      "id": "1004460",
+      "name": "Krillin",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1004460_thumb/card_1004460_thumb.png",
+      "awakensTo": "1004461",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1004460",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1004460",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -1447,6 +3334,57 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1004760",
         "match": "exact data-id on public card listing or individual card page"
+      }
+    },
+    {
+      "sourceId": "1004830",
+      "id": "1004830",
+      "name": "Kamesennin (puissance max)",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1004830_thumb/card_1004830_thumb.png",
+      "awakensTo": "1004831",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1004830",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1004830",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1004840",
+      "id": "1004840",
+      "name": "Son Gohan Super Saiyan (jeune)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1004840_thumb/card_1004840_thumb.png",
+      "awakensTo": "1004841",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1004840",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1004840",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1004870",
+      "id": "1004870",
+      "name": "Jaco",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1004870_thumb/card_1004870_thumb.png",
+      "awakensTo": "1004871",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1004870",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1004870",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -1726,6 +3664,40 @@
       }
     },
     {
+      "sourceId": "1005240",
+      "id": "1005240",
+      "name": "Nail",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005240_thumb/card_1005240_thumb.png",
+      "awakensTo": "1005241",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1005240",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1005240",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1005250",
+      "id": "1005250",
+      "name": "Oub (jeune)",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005250_thumb/card_1005250_thumb.png",
+      "awakensTo": "1005251",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1005250",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1005250",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1005260",
       "id": "1005260",
       "name": "Vegito",
@@ -1936,6 +3908,23 @@
       }
     },
     {
+      "sourceId": "1005420",
+      "id": "1005420",
+      "name": "Table",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005420_thumb/card_1005420_thumb.png",
+      "awakensTo": "1005421",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1005420",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1005420",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1005440",
       "id": "1005440",
       "name": "Bio-Broly",
@@ -2019,6 +4008,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1005480",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1005510",
+      "id": "1005510",
+      "name": "Kaïo Shin du temps",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005510_thumb/card_1005510_thumb.png",
+      "awakensTo": "1005511",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1005510",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1005510",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -2108,6 +4114,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1005580",
         "match": "exact data-id on public card listing or individual card page"
+      }
+    },
+    {
+      "sourceId": "1005590",
+      "id": "1005590",
+      "name": "Nam",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005590_thumb/card_1005590_thumb.png",
+      "awakensTo": "1005591",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1005590",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1005590",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -2347,6 +4370,23 @@
       }
     },
     {
+      "sourceId": "1005870",
+      "id": "1005870",
+      "name": "Pan (GT)",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005870_thumb/card_1005870_thumb.png",
+      "awakensTo": "1005871",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1005870",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1005870",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1005940",
       "id": "1005940",
       "name": "Meta-Rilldo",
@@ -2371,6 +4411,23 @@
       }
     },
     {
+      "sourceId": "1006000",
+      "id": "1006000",
+      "name": "Baby (forme juvénile)",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1006000_thumb/card_1006000_thumb.png",
+      "awakensTo": "1006001",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1006000",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1006000",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1602",
       "id": "1006020",
       "name": "Super Baby 1",
@@ -2389,6 +4446,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1006020",
         "match": "exact data-id on public card listing or individual card page"
+      }
+    },
+    {
+      "sourceId": "1006080",
+      "id": "1006080",
+      "name": "Gyumao",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1006080_thumb/card_1006080_thumb.png",
+      "awakensTo": "1006081",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1006080",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1006080",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -2436,6 +4510,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1006211",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1006250",
+      "id": "1006250",
+      "name": "Son Gohan (GT)",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1006250_thumb/card_1006250_thumb.png",
+      "awakensTo": "1006251",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1006250",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1006250",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -2831,6 +4922,57 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1006791",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1007030",
+      "id": "1007030",
+      "name": "Frost",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1007030_thumb/card_1007030_thumb.png",
+      "awakensTo": "1007031",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1007030",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1007030",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1007040",
+      "id": "1007040",
+      "name": "Frost (forme d'assaut)",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1007040_thumb/card_1007040_thumb.png",
+      "awakensTo": "1007041",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1007040",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1007040",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1007050",
+      "id": "1007050",
+      "name": "Frost (forme finale)",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1007050_thumb/card_1007050_thumb.png",
+      "awakensTo": "1007051",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1007050",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1007050",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -3415,6 +5557,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1007741",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1007750",
+      "id": "1007750",
+      "name": "Vegeta",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1007750_thumb/card_1007750_thumb.png",
+      "awakensTo": "1007751",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1007750",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1007750",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -4035,6 +6194,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1008490",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1008500",
+      "id": "1008500",
+      "name": "Son Goku",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008500_thumb/card_1008500_thumb.png",
+      "awakensTo": "1008501",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1008500",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1008500",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -7469,6 +9645,23 @@
       }
     },
     {
+      "sourceId": "1010700",
+      "id": "1010700",
+      "name": "Roi Cold (ange)",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010700_thumb/card_1010700_thumb.png",
+      "awakensTo": "1010701",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1010700",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1010700",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1010710",
       "id": "1010710",
       "name": "Son Goku Super Saiyan",
@@ -8422,6 +10615,40 @@
       }
     },
     {
+      "sourceId": "1011220",
+      "id": "1011220",
+      "name": "Lanfan",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011220_thumb/card_1011220_thumb.png",
+      "awakensTo": "1011221",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1011220",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1011220",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1011230",
+      "id": "1011230",
+      "name": "Yamcha",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011230_thumb/card_1011230_thumb.png",
+      "awakensTo": "1011231",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1011230",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1011230",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1011260",
       "id": "1011260",
       "name": "Tien",
@@ -9122,6 +11349,23 @@
       }
     },
     {
+      "sourceId": "1011790",
+      "id": "1011790",
+      "name": "Son Gohan ultime",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011790_thumb/card_1011790_thumb.png",
+      "awakensTo": "1011791",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1011790",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1011790",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "11180",
       "id": "1011800",
       "name": "Ultimate Gohan",
@@ -9792,6 +12036,40 @@
       }
     },
     {
+      "sourceId": "1012470",
+      "id": "1012470",
+      "name": "Hoï",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012470_thumb/card_1012470_thumb.png",
+      "awakensTo": "1012471",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1012470",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1012470",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "1012480",
+      "id": "1012480",
+      "name": "Minoshia",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012480_thumb/card_1012480_thumb.png",
+      "awakensTo": "1012481",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1012480",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1012480",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1012490",
       "id": "1012490",
       "name": "Great Saiyaman",
@@ -9843,6 +12121,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1012540",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1012560",
+      "id": "1012560",
+      "name": "Chaozu",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012560_thumb/card_1012560_thumb.png",
+      "awakensTo": "1012561",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1012560",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1012560",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -10374,6 +12669,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1012931",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1012940",
+      "id": "1012940",
+      "name": "Trunks Super Saiyan (futur)",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012940_thumb/card_1012940_thumb.png",
+      "awakensTo": "1012941",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1012940",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1012940",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -11037,6 +13349,23 @@
       }
     },
     {
+      "sourceId": "1013310",
+      "id": "1013310",
+      "name": "Krillin",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013310_thumb/card_1013310_thumb.png",
+      "awakensTo": "1013311",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1013310",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1013310",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "11332",
       "id": "1013320",
       "name": "Goku (Youth)",
@@ -11076,6 +13405,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1013340",
         "match": "exact data-id on public card listing or individual card page"
+      }
+    },
+    {
+      "sourceId": "1013350",
+      "id": "1013350",
+      "name": "Yamcha",
+      "title": "",
+      "rarity": "SR",
+      "type": "INT",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013350_thumb/card_1013350_thumb.png",
+      "awakensTo": "1013351",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1013350",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1013350",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -15496,6 +17842,23 @@
       }
     },
     {
+      "sourceId": "1016430",
+      "id": "1016430",
+      "name": "Trunks Super Saiyan (GT)",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016430_thumb/card_1016430_thumb.png",
+      "awakensTo": "1016431",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1016430",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1016430",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "1016440",
       "id": "1016440",
       "name": "Super Saiyan Trunks (GT)",
@@ -18107,6 +20470,23 @@
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1018160",
         "match": "exact card ID"
+      }
+    },
+    {
+      "sourceId": "1018170",
+      "id": "1018170",
+      "name": "Suké",
+      "title": "",
+      "rarity": "SR",
+      "type": "AGI",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018170_thumb/card_1018170_thumb.png",
+      "awakensTo": "1018171",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/1018170",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1018170",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -35233,6 +37613,40 @@
       }
     },
     {
+      "sourceId": "2000160",
+      "id": "2000160",
+      "name": "Trunks (Xeno)",
+      "title": "",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000160_thumb/card_2000160_thumb.png",
+      "awakensTo": "2000161",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/2000160",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/2000160",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
+      "sourceId": "2000180",
+      "id": "2000180",
+      "name": "Chilled",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000180_thumb/card_2000180_thumb.png",
+      "awakensTo": "2000181",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/2000180",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/2000180",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "2000200",
       "id": "2000200",
       "name": "Mighty Mask",
@@ -35257,6 +37671,23 @@
       }
     },
     {
+      "sourceId": "2000690",
+      "id": "2000690",
+      "name": "Great Saiyaman",
+      "title": "",
+      "rarity": "SR",
+      "type": "TEC",
+      "class": "Super",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000690_thumb/card_2000690_thumb.png",
+      "awakensTo": "2000691",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/2000690",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/2000690",
+        "match": "exact SR and adjacent awakened ID"
+      }
+    },
+    {
       "sourceId": "2000710",
       "id": "2000710",
       "name": "Zangya",
@@ -35278,6 +37709,23 @@
         "provider": "DokkanInfo GLOBAL",
         "url": "https://dokkaninfo.com/cards/2000710",
         "match": "exact card ID and name"
+      }
+    },
+    {
+      "sourceId": "2000760",
+      "id": "2000760",
+      "name": "Paragus",
+      "title": "",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Extrême",
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000760_thumb/card_2000760_thumb.png",
+      "awakensTo": "2000761",
+      "awakeningSource": "https://www.dbz-dokkanbattle.com/card/2000760",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/2000760",
+        "match": "exact SR and adjacent awakened ID"
       }
     },
     {
@@ -35431,15 +37879,15 @@
     }
   },
   "audit": {
-    "count": 1904,
-    "uniqueIds": 1904,
+    "count": 2048,
+    "uniqueIds": 2048,
     "duplicateIds": 0,
     "referenceWideCount": 1380,
     "status": "in_progress",
     "note": "Contrôle des IDs de Box validés sur data.json : 64 manquants ajoutés; noms obtenus par ID exact, rareté/type uniquement après correspondance de l'ID asset. Aucun attribut inféré pour les fiches restantes.",
     "rarityCounts": {
       "LR": 293,
-      "SR": 14,
+      "SR": 158,
       "SSR": 254,
       "UR": 1343
     },
@@ -35464,6 +37912,8 @@
     "unknownPendingAfterDokkanInfo": 20,
     "frenchReferenceNewCards": 876,
     "frenchReferenceConflicts": 7,
-    "srAwaitingAwakeningReview": 146
+    "srAwaitingAwakeningReview": 146,
+    "srAwakeningConfirmed": 144,
+    "srAwakeningPending": 2
   }
 }

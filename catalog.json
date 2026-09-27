@@ -1306,7 +1306,6 @@
       "rarity": "UR",
       "type": "PUI",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/assets/cards/1004631.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1004631",
@@ -7996,7 +7995,6 @@
       "rarity": "SSR",
       "type": "INT",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/assets/cards/1015451.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://dbz-dokkanbattle.com/card/1015451",
@@ -8041,7 +8039,6 @@
       "rarity": "UR",
       "type": "PUI",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/assets/cards/1015711.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://dbz-dokkanbattle.com/card/1015711",
@@ -8962,36 +8959,27 @@
         "url": "https://dbz-dokkanbattle.com/card/1034701",
         "verified": "2026-09-27"
       }
-    },
-    {
-      "sourceId": "9115360",
-      "id": "9115360",
-      "name": "Métal Cooler",
-      "title": "",
-      "rarity": "UR",
-      "type": "",
-      "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/assets/cards/9115360.png",
-      "source": {
-        "provider": "DBZ Dokkan Battle France",
-        "url": "https://dbz-dokkanbattle.com/card/9115360",
-        "verified": "2026-09-27"
-      }
-    },
-    {
-      "sourceId": "9124931",
-      "id": "9124931",
-      "name": "Métal Cooler",
-      "title": "",
-      "rarity": "LR",
-      "type": "",
-      "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/assets/cards/9124931.png",
-      "source": {
-        "provider": "DBZ Dokkan Battle France",
-        "url": "https://dbz-dokkanbattle.com/card/9124931",
-        "verified": "2026-09-27"
-      }
     }
-  ]
+  ],
+  "reference": {
+    "wideCatalog": {
+      "provider": "DBZ Dokkan Battle France",
+      "observedCount": 1380,
+      "observedAt": "2026-09-27",
+      "scope": "page Cartes"
+    },
+    "encyclopedia": {
+      "provider": "Dokkan Essentials",
+      "observedCount": 1071,
+      "observedAt": "2026-09-27",
+      "scope": "Essencyclopédie personnages"
+    }
+  },
+  "audit": {
+    "count": 862,
+    "uniqueIds": 862,
+    "duplicateIds": 0,
+    "coverageVsWideReference": 62.5,
+    "status": "in_progress"
+  }
 }

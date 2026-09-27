@@ -32,6 +32,37 @@ FR_TERMS["Worldwide Chaos"]="Chaos mondial";
 FR_TERMS["Power of Wishes"]="Pouvoir des souhaits";
 FR_TERMS["Super Heroes"]="Super héros";
 FR_TERMS["Movie Heroes"]="Héros des films";
+FR_TERMS["Energy Absorption"]="Absorbeur d'énergie";
+FR_TERMS["Big Bad Bosses"]="Boss";
+FR_TERMS["Nightmare"]="Cauchemar";
+FR_TERMS["Thirst for Conquest"]="Ambition de conquête";
+FR_TERMS["Metamorphosis"]="Métamorphose";
+FR_TERMS["Fierce Battle"]="Combat acharné";
+FR_TERMS["Shattering the Limit"]="Briser la limite";
+FR_TERMS["Prepared for Battle"]="Paré au combat";
+FR_TERMS["Prodigies"]="Génie";
+FR_TERMS["Cold Judgment"]="Jugement serein";
+FR_TERMS["Brainiacs"]="Intello";
+FR_TERMS["Infighter"]="Combattant aguerri";
+FR_TERMS["Over in a Flash"]="Vitesse époustouflante";
+FR_TERMS["Godly Power"]="Pouvoir divin";
+FR_TERMS["Warrior Gods"]="Dieux guerriers";
+FR_TERMS["Infinite Regeneration"]="Régénération infinie";
+FR_TERMS["Fear and Faith"]="Peur et désespoir";
+FR_TERMS["Universe's Most Malevolent"]="Le plus puissant peuple";
+FR_TERMS["Strongest Clan in Space"]="Le plus puissant peuple";
+FR_TERMS["Frieza's Army"]="Armée de Freezer";
+FR_TERMS["Cooler's Armored Squad"]="Commando de Cooler";
+FR_TERMS["The Saiyan Lineage"]="L’origine des Saiyans";
+FR_TERMS["Saiyan Pride"]="Fierté Saiyan";
+FR_TERMS["Z Fighters"]="Guerrier Z";
+FR_TERMS["Family Ties"]="Liens familiaux";
+FR_TERMS["Master of Magic"]="L'étonnant sortilège";
+FR_TERMS["Demonic Ways"]="Style de démon";
+FR_TERMS["Android Assault"]="Amélioration cybernétique";
+FR_TERMS["GT"]="GT";
+FR_TERMS["Legendary Power"]="Pouvoir légendaire";
+FR_TERMS["Tournament of Power"]="Tournoi du Pouvoir";
 function frTerm(v){return FR_TERMS[v]||v}
 function frList(a){return (a||[]).map(frTerm)}
 

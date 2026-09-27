@@ -17,6 +17,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: python tools/enrich_identity.py
+      - run: python tools/localize_fr.py
       - name: Commit metadata
         run: |
           if git diff --quiet card-meta.json; then exit 0; fi

@@ -1,4 +1,4 @@
-let DB={cards:[]}, META={cards:{}}, CATALOG={cards:[]}, OVERLAP={conflicts:[]}, filter='all', query='', sortMode='box', selectedTeam=[], verifyLimit=30, inventory={}, inventoryFilter='review', inventoryQuery='', rarityFilter='', typeFilter='', classFilter='', categoryFilter='', linkFilter='', ezaFilter='', favoriteOnly=false, favorites=new Set(), teamLeader='';
+let DB={cards:[]}, META={cards:{}}, CATALOG={cards:[]}, OVERLAP={conflicts:[]}, filter='all', query='', sortMode='box', selectedTeam=[], verifyLimit=30, inventory={}, inventoryFilter='review', inventoryQuery='', missingQuery='', rarityFilter='', typeFilter='', classFilter='', categoryFilter='', linkFilter='', ezaFilter='', favoriteOnly=false, favorites=new Set(), teamLeader='';
 const norm=s=>(s??'').toString().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const FR_TERMS={
@@ -20,7 +20,7 @@ function applyMetadata(){DB.cards.forEach(c=>{let m=localized(META.cards?.[Strin
 function confClass(c){return c==='Très forte'?'tf':c==='Forte'?'f':c==='Moyenne'?'m':c==='Validée manuellement'?'manual':'v'}
 function restoreEdits(){
   let edits=[]; try{edits=JSON.parse(localStorage.getItem('dokkanos-edits')||'[]')}catch(e){}
-  edits.forEach(a=>{let c=DB.cards.find(x=>x.boxId===a.boxId);if(!c)return;Object.assign(c,a);if(a.candidateId){c.image='assets/cards/'+a.candidateId+'.webp';let m=localized(META.cards?.[String(a.candidateId)]);if(m)Object.assign(c,m)}});
+  edits.forEach(a=>{let c=DB.cards.find(x=>x.boxId===a.boxId);if(!c)return;Object.assign(c,a);if(a.candidateId){let m=localized(META.cards?.[String(a.candidateId)]);if(m)Object.assign(c,m);let choice=verifyCandidate(a.candidateId);c.image=choice?.image||'assets/cards/'+a.candidateId+'.webp';c.name=choice?.name||c.name;c.rarity=choice?.rarity||c.rarity;c.type=choice?.type||c.type}});
   try{inventory=JSON.parse(localStorage.getItem('dokkanos-inventory')||'{}')}catch(e){inventory={}}
   try{selectedTeam=JSON.parse(localStorage.getItem('dokkanos-team')||'[]').filter(id=>DB.cards.some(c=>c.boxId===id)||(String(id).startsWith('MANUAL-')&&inventory[String(id).slice(7)]==='owned')).slice(0,6)}catch(e){selectedTeam=[]}
   try{teamLeader=localStorage.getItem('dokkanos-team-leader')||'';if(teamLeader&&!resolveCard(teamLeader))teamLeader=''}catch(e){teamLeader=''}
@@ -48,7 +48,7 @@ function stats(){
   $('#progressBar').style.width=(DB.cards.length?Math.round(v/DB.cards.length*100):0)+'%';
   $('#progressText').textContent=(DB.cards.length?Math.round(v/DB.cards.length*100):0)+'% validé';
 }
-function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};return {id,...cat,...m,name:(cat.name||m.name||'').replace(/Metal Cooler/g,'Métal Cooler').replace(/Metal Cooler Army/g,'Armée de Métal Cooler'),categories:frList(m.categories||cat.categories),links:frList(m.links||cat.links),image:cat.image||('assets/cards/'+id+'.webp')}}
+function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:(cat.name||m.name||'').replace(/Metal Cooler/g,'Métal Cooler').replace(/Metal Cooler Army/g,'Armée de Métal Cooler'),categories:frList(m.categories||cat.categories),links:frList(m.links||cat.links),image:cat.image||('assets/cards/'+id+'.webp')}}
 function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach(c=>{let id=String(c.id||'');if(id&&!seen.has(id)){seen.add(id);out.push(verifyCandidate(id))}});Object.keys(META.cards||{}).forEach(id=>{if(!seen.has(String(id))){seen.add(String(id));out.push(verifyCandidate(id))}});return out}
 function verifySearch(boxId,value){let host=document.querySelector('[data-verify-results="'+boxId+'"]');if(!host)return;let q=norm(value).trim();if(q.length<2){host.innerHTML='';return}let terms=q.split(/\s+/).filter(Boolean),rows=verifyCatalogue().map(c=>{let hay=norm([c.id,c.name,c.title,c.rarity,c.type,c.class].join(' ')),score=terms.reduce((n,t)=>n+(hay.includes(t)?1:0),0)+(String(c.id)===value.trim()?10:0)+(norm(c.name||'').startsWith(q)?3:0);return {c,score}}).filter(x=>x.score>=terms.length).sort((a,b)=>b.score-a.score).slice(0,18);host.innerHTML=rows.map(({c})=>`<button class="verify-search-card" onclick="choose('${boxId}','${c.id}')"><img loading="lazy" src="${c.image}" onerror="this.classList.add('imgfail')"><b>${c.name||'ID '+c.id}</b><small>${c.rarity||''} · ${c.type||''} · ID ${c.id}</small></button>`).join('')||'<div class="empty compact">Aucune carte trouvée. Essaie le nom du personnage ou son ID.</div>'}
 function renderVerify(){
@@ -58,11 +58,22 @@ function renderVerify(){
 function loadMoreVerify(){verifyLimit+=30;renderVerify()}
 function saveEdits(){localStorage.setItem('dokkanos-edits',JSON.stringify(DB.cards.filter(x=>x._edited).map(x=>({boxId:x.boxId,candidateId:x.candidateId,validated:x.validated,confidence:x.confidence,_edited:true}))))}
 function choose(id,val){
-  let c=DB.cards.find(x=>x.boxId===id);if(!c)return;c._edited=true;
-  if(val){c.candidateId=val;c.image='assets/cards/'+val+'.webp';let m=localized(META.cards?.[String(val)]);if(m)Object.assign(c,m);c.validated=true;c.confidence='Validée manuellement'}
-  else{c.candidateId='';c.validated=false;c.confidence='À revoir'}
+  let c=DB.cards.find(x=>x.boxId===id);if(!c)return;
+  c._edited=true;
+  if(val){
+    let candidate=verifyCandidate(val),m=localized(META.cards?.[String(val)]);
+    if(m)Object.assign(c,m);
+    c.candidateId=String(val);
+    c.image=candidate?.image||'assets/cards/'+val+'.webp';
+    c.name=candidate?.name||c.name;
+    c.rarity=candidate?.rarity||c.rarity;
+    c.type=candidate?.type||c.type;
+    c.validated=true;c.confidence='Validée manuellement';
+  }else{c.candidateId='';c.validated=false;c.confidence='À revoir'}
   saveEdits();render();stats();renderDuplicates();renderMissing();renderInventory();renderManualOwned();renderAnalysis();
+  let status=$('#verificationStatus');if(status){status.textContent=val?'Carte '+id+' validée : '+(c.name||'ID '+val)+' (ID '+val+').':'Carte '+id+' laissée à vérifier.';status.hidden=false}
 }
+
 function skillText(v){if(!v)return '—';if(typeof v==='string')return v;if(Array.isArray(v))return v.map(skillText).join(' · ');return [v.name,v.description,v.condition].filter(Boolean).join(' — ')||'—'}
 function tagBlock(title,arr){return arr?.length?`<section class="detail-section"><h3>${title}</h3><div class="tags">${arr.map(x=>`<span>${x}</span>`).join('')}</div></section>`:''}
 function statsBlock(c){let vals=[['PV',c.maxHP||c.rainbowHP],['ATQ',c.maxATK||c.rainbowATK],['DEF',c.maxDEF||c.rainbowDEF],['Coût',c.cost],['Niv. max',c.maxLevel],['SP max',c.maxSALevel]].filter(x=>x[1]!==undefined&&x[1]!==null&&x[1]!=='');return vals.length?`<section class="detail-section"><h3>Statistiques</h3><div class="statline">${vals.map(([k,v])=>`<span><small>${k}</small><b>${Number(v).toLocaleString('fr-FR')}</b></span>`).join('')}</div></section>`:''}
@@ -136,15 +147,19 @@ function commonValues(cards,key){if(cards.length<2)return[];let count={};cards.f
 function teamInsights(){let cards=selectedTeam.map(resolveCard).filter(Boolean),cats=commonValues(cards,'categories'),links=commonValues(cards,'links');if(!cards.length)return '<p class="muted">Ajoute des cartes pour analyser les synergies.</p>';return `<div class="team-insights"><h3>Synergies détectées</h3><p class="muted">${cards.filter(c=>c.name||c.categories?.length||c.links?.length).length}/${cards.length} cartes avec données enrichies</p>${cats.length?`<h4>Catégories communes</h4><div class="tags">${cats.map(([x,n])=>`<span>${x} · ${n}</span>`).join('')}</div>`:''}${links.length?`<h4>Liens communs</h4><div class="tags">${links.map(([x,n])=>`<span>${x} · ${n}</span>`).join('')}</div>`:''}${!cats.length&&!links.length?'<p class="muted">Les synergies apparaîtront automatiquement à mesure que les fiches seront enrichies.</p>':''}</div>`}
 function renderDuplicates(){let el=$('#duplicateList');if(!el)return;let groups={};DB.cards.filter(c=>c.validated&&c.candidateId).forEach(c=>(groups[c.candidateId]??=[]).push(c));let d=Object.entries(groups).filter(([,a])=>a.length>1).sort((a,b)=>b[1].length-a[1].length);$('#dupCount').textContent=d.length+' IDs';el.innerHTML=d.map(([id,a])=>`<div class="panel dup-row clickable" onclick="openCard('${a[0].boxId}')"><img src="${a[0].image}"><div><b>${a[0].name||'ID '+id}</b><p class="muted">${a.length} exemplaires · ${a.length-1} doublon(s)</p><small>${a.map(x=>x.boxId).join(' · ')}</small></div></div>`).join('')||'<div class="empty">Aucun doublon détecté.</div>'}
 function catalogSelectable(c){return ['SSR','UR','LR'].includes(c.rarity)||(c.rarity==='SR'&&!!c.awakensTo)}
+let CACHED_FAMILIES=null, CACHED_FAMILY_BY_ID=null;
 function catalogFamilies(){
+  if(CACHED_FAMILIES)return CACHED_FAMILIES;
   const cards=(CATALOG.cards||[]).filter(catalogSelectable), byId=new Map(cards.map(c=>[String(c.id),c])), parent=new Map(cards.map(c=>[String(c.id),String(c.id)]));
   const root=id=>{id=String(id);if(!parent.has(id))return id;let p=parent.get(id);while(p!==parent.get(p))p=parent.get(p);return p};
   for(const c of cards){let from=String(c.id),to=String(c.awakensTo||'');if(to&&byId.has(to)){let a=root(from),b=root(to);if(a!==b)parent.set(a,b)}}
   const groups=new Map();for(const c of cards){let key=root(c.id);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(c)}
   const rank={LR:4,UR:3,SSR:2,SR:1};
-  return [...groups.values()].map(group=>{group.sort((a,b)=>(rank[b.rarity]||0)-(rank[a.rarity]||0)||Number(b.id)-Number(a.id));return group})
+  CACHED_FAMILIES=[...groups.values()].map(group=>{group.sort((a,b)=>(rank[b.rarity]||0)-(rank[a.rarity]||0)||Number(b.id)-Number(a.id));return group});
+  CACHED_FAMILY_BY_ID=new Map(CACHED_FAMILIES.flatMap(group=>group.map(card=>[String(card.id),group])));
+  return CACHED_FAMILIES
 }
-function familyFor(id){return catalogFamilies().find(group=>group.some(c=>String(c.id)===String(id)))||[{id:String(id)}]}
+function familyFor(id){catalogFamilies();return CACHED_FAMILY_BY_ID.get(String(id))||[{id:String(id)}]}
 function familyState(group){
   const ids=group.map(c=>String(c.id));
   if(ids.some(id=>capturedOwned(id)||inventory[id]==='owned'))return 'owned';
@@ -152,7 +167,7 @@ function familyState(group){
   return 'review'
 }
 function familyCard(group){return group.find(c=>capturedOwned(c.id)||inventory[String(c.id)]==='owned')||group[0]}
-function renderMissing(){let el=$('#missingList');if(!el)return;let a=catalogFamilies().filter(group=>familyState(group)==='missing').map(familyCard);$('#missingCount').textContent=a.length;el.innerHTML=a.slice(0,300).map(c=>`<article class="unit"><img loading="lazy" src="${c.image||''}" onerror="this.classList.add('imgfail')"><div class="meta"><strong>${c.name||'ID '+c.id}</strong><small>${c.rarity||''} · ${c.type||''}</small></div></article>`).join('')||'<div class="empty">Aucune unité indiquée comme manquante.</div>'}
+function renderMissing(){let el=$('#missingList');if(!el)return;let q=norm(missingQuery),all=catalogFamilies().filter(group=>familyState(group)!=='owned').map(group=>({card:familyCard(group),state:familyState(group)})).filter(({card})=>!q||norm(`${card.id} ${card.name} ${card.title} ${card.rarity} ${card.type}`).includes(q)),a=all.slice(0,300);$('#missingCount').textContent=all.length+(all.length>300?' · 300 affichées':'');el.innerHTML=a.map(({card:c,state})=>`<article class="unit"><img loading="lazy" src="${c.image||''}" onerror="this.classList.add('imgfail')"><div class="meta"><strong>${c.name||'ID '+c.id}</strong><small>${c.rarity||''} · ${c.type||''} · ${state==='missing'?'Non possédée':'À confirmer'}</small></div></article>`).join('')||'<div class="empty">Aucune carte à confirmer pour cette recherche.</div>'}
 function capturedOwned(id){return DB.cards.some(c=>c.validated&&String(c.candidateId)===String(id))}
 function inventoryState(card){return familyState(familyFor(card.id||card.candidateId||''))}
 function ownedIds(){let s=new Set(DB.cards.filter(c=>c.validated&&c.candidateId).map(c=>String(c.candidateId)));Object.entries(inventory).forEach(([id,state])=>{if(state==='owned')s.add(id)});return s}

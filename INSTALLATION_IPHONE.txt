@@ -1,0 +1,10 @@
+DOKKANOS v0.2 — INSTALLATION IPHONE
+
+1. Le dossier doit être publié sur un hébergement HTTPS statique.
+2. Ouvre ensuite l'adresse de DokkanOS dans SAFARI sur l'iPhone.
+3. Appuie sur Partager (carré avec flèche vers le haut).
+4. Choisis « Sur l’écran d’accueil ».
+5. Appuie sur « Ajouter ».
+6. Lance DokkanOS depuis son icône.
+
+Important : ouvrir index.html directement depuis l’app Fichiers ne permet pas à iOS d’installer correctement la PWA ni son service worker.

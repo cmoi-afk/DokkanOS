@@ -11,6 +11,16 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
+      "id": "1013760",
+      "url": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/6/63/Card_1013760_thumb.png/revision/latest?cb=20180816223910",
+      "reason": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+    },
+    {
+      "id": "1015200",
+      "url": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/a/ad/Card_1015200_thumb.png/revision/latest?cb=20190115230549",
+      "reason": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+    },
+    {
       "id": "1015691",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015690_thumb/card_1015690_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -29,11 +39,6 @@
       "id": "1015830",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015830_thumb/card_1015830_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1017470",
-      "url": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/e/e2/Card_1017470_thumb.png/revision/latest?cb=20200105175631",
-      "reason": "<urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "id": "2000780",

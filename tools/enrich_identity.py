@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Enrichit card-meta.json à partir d'une source ID->nom/titre.
+"""Enrichit automatiquement card-meta.json à partir d'une source ID->nom/titre.
 Le script ne modifie que les IDs présents dans data.json et conserve les champs
 plus riches déjà renseignés manuellement ou par de futures sources.
 """

@@ -1,10 +1,11 @@
-let DB={cards:[]}, META={cards:{}}, CATALOG={cards:[]}, filter='all', query='', sortMode='box', selectedTeam=[], verifyLimit=30;
+let DB={cards:[]}, META={cards:{}}, CATALOG={cards:[]}, OVERLAP={conflicts:[]}, filter='all', query='', sortMode='box', selectedTeam=[], verifyLimit=30;
 const norm=s=>(s??'').toString().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 async function boot(){
   DB=await fetch('collection.json').then(r=>r.ok?r.json():fetch('data.json').then(x=>x.json()));
   try{META=await fetch('card-meta.json').then(r=>r.ok?r.json():({cards:{}}))}catch(e){META={cards:{}}}
   try{CATALOG=await fetch('catalog.json').then(r=>r.ok?r.json():({cards:[]}))}catch(e){CATALOG={cards:[]}}
+  try{OVERLAP=await fetch('overlap-conflicts.json').then(r=>r.ok?r.json():({conflicts:[]}))}catch(e){OVERLAP={conflicts:[]}}
   applyMetadata(); restoreEdits();
   render(); stats(); renderDuplicates(); renderMissing(); renderTeam(); renderAnalysis();
 }
@@ -36,7 +37,7 @@ function stats(){
   $('#progressText').textContent=(DB.cards.length?Math.round(v/DB.cards.length*100):0)+'% validé';
 }
 function renderVerify(){
-  let pending=DB.cards.filter(c=>!c.validated), a=pending.slice(0,verifyLimit);
+  let priority=new Set((OVERLAP.conflicts||[]).flatMap(x=>x.observations||[])), pending=DB.cards.filter(c=>!c.validated).sort((a,b)=>(priority.has(b.boxId)?1:0)-(priority.has(a.boxId)?1:0)), a=pending.slice(0,verifyLimit);
   $('#verifyList').innerHTML=a.map(c=>`<div class="panel"><b>${c.boxId}</b><p class="muted">${c.capture} · ${c.position} · ${c.confidence}</p><div class="verify"><div><img src="${c.crop}"><label>Ta capture</label></div><div><img src="${c.image}"><label>ID ${c.candidateId}</label></div><div><img src="${c.runnerImage}"><label>ID ${c.runnerId}</label></div><button onclick="choose('${c.boxId}','${c.candidateId}')">Choisir 1</button><button onclick="choose('${c.boxId}','${c.runnerId}')">Choisir 2</button><button onclick="choose('${c.boxId}','')">Aucun</button></div></div>` ).join('')+(pending.length>verifyLimit?`<button class="loadmore" onclick="loadMoreVerify()">Afficher ${Math.min(30,pending.length-verifyLimit)} de plus · ${pending.length-verifyLimit} restantes</button>`:'')||'<div class="empty">Tout est validé 🎉</div>';
 }
 function loadMoreVerify(){verifyLimit+=30;renderVerify()}

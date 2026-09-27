@@ -19,7 +19,7 @@ def check(card):
     mismatch=None
     m=re.search(r"card_(\d+)_thumb",url)
     if m and m.group(1)!=cid:
-        image_id=m.group(1); canonical=(cid.endswith("1") and image_id==cid[:-1]+"0")
+        image_id=m.group(1); canonical=(cid in IMAGE_ALIASES and image_id==IMAGE_ALIASES[cid]) or (cid.endswith("1") and image_id==cid[:-1]+"0")
         if not canonical:mismatch={"id":cid,"imageId":image_id,"url":url}
     try:
         if not re.match(r"^https?://",url):

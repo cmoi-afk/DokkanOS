@@ -31,7 +31,7 @@ CATEGORY_FR={
  "Miraculous Awakening":"Eveil miraculeux","Mastered Evolution":"Evolution maîtrisée","Exploding Rage":"Explosion de colère",
  "Goku's Family":"Famille de Son Goku","Vegeta's Family":"Famille de Vegeta","Peppy Gals":"Fille pleine de vie","Joined Forces":"Forces jointes",
  "Giant Form":"Forme géante","Fusion":"Fusion","Fused Fighters":"Guerrier fusionné","Low-Class Warrior":"Guerrier inférieur",
- "Gifted Warriors":"Guerriers de génie","Space-Traveling Warriors":"Guerriers Galactiques","Successors":"Héritier",
+ "Gifted Warriors":"Guerriers de génie","Space-Traveling Warriors":"Guerriers galactiques","Successors":"Héritier",
  "Super Heroes":"Héros de DB Super","GT Heroes":"Héros de GT","Defenders of Justice":"Héros de la justice","Movie Heroes":"Héros des films",
  "Kamehameha":"Kamehameha","Power of Wishes":"Le Pouvoir des voeux","Storied Figures":"Légende ancestrale","Sibling's Bond":"Lien de fratrie",
  "Bond of Master and Disciple":"Lien maître et disciple","Bond of Parent and Child":"Lien Parental","Bond of Friendship":"Liens d'amitié",

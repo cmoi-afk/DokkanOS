@@ -48,14 +48,14 @@ function stats(){
   $('#progressBar').style.width=(DB.cards.length?Math.round(v/DB.cards.length*100):0)+'%';
   $('#progressText').textContent=(DB.cards.length?Math.round(v/DB.cards.length*100):0)+'% validé';
 }
-const NON_PLAYABLE_NAME_RE=/(statue de (m\.?\s*satan|jackie chun)|hercule statue|mr\.? satan statue|jackie chun statue)/i;
+const NON_PLAYABLE_NAME_RE=/(statue de (m\.?\s*satan)|hercule statue|mr\.? satan statue)/i;
 function isPlayableCard(card){
   if(!card)return false;
   const name=[card.name,card.title,card.fr?.name,card.fr?.title].filter(Boolean).join(' ');
   if(NON_PLAYABLE_NAME_RE.test(name))return false;
   const leader=String(card.leader||card.fr?.leader||'');
   const hp=Number(card.hpMax??card.hp_max??card.hp??NaN),atk=Number(card.atkMax??card.atk_max??card.atk??NaN),def=Number(card.defMax??card.def_max??card.def??NaN);
-  if(/personnage à vendre|character to sell/i.test(leader))return false;
+  if(/personnage à vendre|character to sell|sell-only|for sale/i.test(leader))return false;
   if(hp===0&&atk===0&&def===0)return false;
   return true;
 }

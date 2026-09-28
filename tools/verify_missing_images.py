@@ -17,14 +17,14 @@ def check(card):
         if not re.match(r"^https?://",url):
             p=root/url
             if not p.is_file(): return cid,url,False,"fichier local absent",mismatch
-            b=p.read_bytes()[:16]
+            b=p.read_bytes()[:32]
         else:
             req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0"})
             with urllib.request.urlopen(req,timeout=12) as r:
                 if r.status!=200 or not r.headers.get("Content-Type","").startswith("image/"):
                     return cid,url,False,"réponse distante non-image",mismatch
-                b=r.read(16)
-        valid=b.startswith(b"\\x89PNG") or b[:3]==b"\\xff\\xd8\\xff" or (b.startswith(b"RIFF") and b[8:12]==b"WEBP")
+                b=r.read(32)
+        valid=(b.startswith(b"\\x89PNG") or b[:3]==b"\\xff\\xd8\\xff" or (b.startswith(b"RIFF") and b[8:12]==b"WEBP") or b.startswith((b"GIF87a",b"GIF89a")) or (len(b)>=12 and b[4:12] in (b"ftypavif",b"ftypavis",b"ftypheic",b"ftypheix",b"ftypmif1")) )
         return cid,url,valid,None if valid else "signature image invalide",mismatch
     except Exception as e: return cid,url,False,str(e)[:160],mismatch
 

@@ -44,9 +44,10 @@ jobs:
               cid=str(c.get("resourceId") or c.get("resource_id") or c.get("imageId") or c.get("id") or "")
               if not cid: continue
               if not any((assets/(cid+ext)).exists() for ext in (".webp",".png",".jpg",".jpeg")):
-                  # Les fiches éveillées ...1 réutilisent souvent la ressource ...0.
-                  alt=(cid[:-1]+"0") if cid.endswith("1") else cid
-                  if not any((assets/(alt+ext)).exists() for ext in (".webp",".png",".jpg",".jpeg")):
+                  # Pas d'alias implicite entre deux éveils : accepter uniquement
+                  # une ressource distante explicitement associée à cette fiche.
+                  remote=str(c.get("image") or c.get("imageUrl") or "")
+                  if not remote.startswith(("https://","http://")):
                       missing.append((c.get("id"),cid))
           print("images locales non résolues",len(missing))
           # French residue gate: flag known English vocabulary that must never leak to UI when FR exists.

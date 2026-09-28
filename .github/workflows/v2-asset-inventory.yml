@@ -1,0 +1,21 @@
+name: DokkanOS V2 existing asset inventory
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "v2/inventory_assets.py"
+permissions:
+  contents: write
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python v2/inventory_assets.py
+      - name: Commit inventory
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add v2/ASSET-INVENTORY.json
+          git commit -m "Inventory existing local card assets for V2" || exit 0
+          git push

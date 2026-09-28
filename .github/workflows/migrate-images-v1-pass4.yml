@@ -1,0 +1,57 @@
+name: Catalogue v1 image recovery pass 4
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/migrate_images_v1_pass4.py"
+      - ".github/workflows/migrate-images-v1-pass4.yml"
+permissions:
+  contents: write
+jobs:
+  shards:
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        shard: [0,1,2,3,4,5,6,7]
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process shard
+        env:
+          SHARD: ${{ matrix.shard }}
+          TOTAL_SHARDS: 8
+        run: python tools/migrate_images_v1_pass4.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pass4-shard-${{ matrix.shard }}
+          path: docs/IMAGE-MIGRATION-v1-PASS4-SHARD-${{ matrix.shard }}.json
+  merge:
+    needs: shards
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: pass4-shard-*
+          path: pass4
+          merge-multiple: true
+      - name: Merge reports
+        run: |
+          python - <<'PY'
+          import json,glob
+          from pathlib import Path
+          files=sorted(glob.glob("pass4/*.json"))
+          items=[]
+          for f in files: items += json.load(open(f,encoding="utf-8"))["items"]
+          Path("docs/IMAGE-MIGRATION-v1-PASS4.json").write_text(json.dumps({"shards":len(files),"cards":len(items),"items":items},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          print("merged",len(items))
+          PY
+      - name: Commit merged report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/IMAGE-MIGRATION-v1-PASS4.json
+          git commit -m "Prepare sharded catalogue v1 image recovery pass 4" || exit 0
+          git push

@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - ".github/workflows/repair-final-images.yml"
+      - "tools/repair_final_images.py"
 
 permissions:
   contents: write

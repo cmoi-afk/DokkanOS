@@ -76,6 +76,12 @@ jobs:
           # Ces paires sont des candidats resourceId, pas des validations automatiques.
           # Exemple confirmé par la source FR: la fiche 1031761 expose card_1031760_thumb.png.
           print("éveils avec visuel voisin disponible mais non validé",len(sibling))
+          # Échantillons validés manuellement contre les assets affichés par la base FR.
+          # 1009371 -> card_1009370_* est confirmé par la fiche française.
+          confirmed_resource_samples={"1009371":"1009370"}
+          for logical,resource in confirmed_resource_samples.items():
+              assert any((assets/(resource+ext)).exists() for ext in (".webp",".png",".jpg",".jpeg")), f"asset confirmé absent {logical}->{resource}"
+          print("resourceId échantillons FR confirmés",confirmed_resource_samples)
           if sibling: print("exemples éveils voisins",sibling[:50])
           sibling_ids={b for _,b,_ in sibling}
           independent=[x for x in missing if x[1] not in sibling_ids]

@@ -21,28 +21,11 @@ jobs:
           for id in "${ids[@]}"; do
             url="https://dbz-dokkanbattle.fandom.com/wiki/Special:Redirect/file/Card_${id}_thumb.png"
             curl -fL --retry 4 --retry-delay 2 --connect-timeout 15 --max-time 60 -A "Mozilla/5.0" "$url" -o "assets/cards/${id}.png"
-            python - "$id" <<'PY'
-import sys
-from pathlib import Path
-p=Path("assets/cards")/(sys.argv[1]+".png")
-b=p.read_bytes()[:16]
-assert b.startswith(b"\x89PNG") or b[:3]==b"\xff\xd8\xff" or (b.startswith(b"RIFF") and b[8:12]==b"WEBP"), f"Not an image: {p}"
-PY
+            python -c 'import sys; from pathlib import Path; p=Path(sys.argv[1]); b=p.read_bytes()[:16]; assert b.startswith(b"\x89PNG") or b[:3]==b"\xff\xd8\xff" or (b.startswith(b"RIFF") and b[8:12]==b"WEBP")' "assets/cards/${id}.png"
           done
       - name: Point catalogue to local assets
         run: |
-          python - <<'PY'
-import json
-from pathlib import Path
-ids={"1004631","1013760","1015200","1015691","1015701","1015711","1015830","2000780","2000790","2000800","2000810","2000820","2000830","2000840","2000850"}
-p=Path("catalog.json"); d=json.loads(p.read_text()); seen=set()
-for c in d["cards"]:
-    cid=str(c["id"])
-    if cid in ids:
-        c["image"]=f"assets/cards/{cid}.png"; seen.add(cid)
-assert seen==ids, f"Missing IDs: {sorted(ids-seen)}"
-p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n")
-PY
+          python -c 'import json; from pathlib import Path; ids=set("1004631 1013760 1015200 1015691 1015701 1015711 1015830 2000780 2000790 2000800 2000810 2000820 2000830 2000840 2000850".split()); p=Path("catalog.json"); d=json.loads(p.read_text()); seen=set(); [(c.update(image=f"assets/cards/{str(c[\"id\"])}.png"),seen.add(str(c["id"]))) for c in d["cards"] if str(c["id"]) in ids]; assert seen==ids; p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\\n")'
       - name: Commit repaired assets
         run: |
           git config user.name "github-actions[bot]"

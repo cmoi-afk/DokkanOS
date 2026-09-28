@@ -1,5 +1,6 @@
 name: Verify missing images v0.7
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:

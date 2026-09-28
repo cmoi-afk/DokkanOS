@@ -7,6 +7,7 @@ on:
       - assets/cards/**
       - tools/verify_missing_images.py
       - .github/workflows/verify-missing-images.yml
+      - docs/FINAL-IMAGE-REPAIR.json
 permissions:
   contents: write
 jobs:

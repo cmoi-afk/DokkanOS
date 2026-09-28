@@ -427,10 +427,20 @@ function verifyResults(){
     return {card,score};
   }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||String(a.card.name||'').localeCompare(String(b.card.name||''),'fr')).slice(0,80).map(x=>x.card);
 }
+function awakeningLabel(card,rows){
+  const name=norm(card?.name||'');
+  const same=(rows||[]).filter(x=>x!==card&&norm(x.name||'')===name);
+  if(!same.length)return '';
+  const ordered=[card,...same].sort((a,b)=>Number(a.id||0)-Number(b.id||0));
+  const pos=ordered.findIndex(x=>String(x.id)===String(card.id));
+  if(pos<0)return '';
+  if(pos===0)return 'Base';
+  return pos===ordered.length-1?'Éveil final':'Éveil '+pos;
+}
 function renderVerifyResults(){
   const host=document.getElementById('verifyResults');if(!host)return;
   const rows=verifyResults();
-  host.innerHTML=verifyDraft.query.trim()?(rows.map(card=>'<label class="verify-result-row"><input type="radio" name="verify-card" value="'+String(card.id)+'" '+(verifyDraft.cardId===String(card.id)?'checked':'')+'><img src="'+(card.image||'')+'" onerror="this.classList.add(\'imgfail\')"><span><b>'+(card.name||'ID '+card.id)+'</b><small>'+[card.rarity||'',card.type||'','ID '+card.id].filter(Boolean).join(' · ')+'</small></span></label>').join('')||'<div class="empty compact">Aucune carte trouvée. Essaie un autre mot ou l’ID Dokkan.</div>'):'<div class="verify-tip">Saisis un nom ou un ID pour afficher les cartes.</div>';
+  host.innerHTML=verifyDraft.query.trim()?(rows.map(card=>{const stage=awakeningLabel(card,rows);return '<label class="verify-result-row"><input type="radio" name="verify-card" value="'+String(card.id)+'" '+(verifyDraft.cardId===String(card.id)?'checked':'')+'><img src="'+(card.image||'')+'" onerror="imageFallback(this,\''+String(card.id)+'\',\''+(card.image||'')+'\')"><span><b>'+(card.name||'ID '+card.id)+(stage?' · '+stage:'')+'</b><small>'+[card.rarity||'',card.type||'','ID '+card.id].filter(Boolean).join(' · ')+'</small></span></label>'}).join('')||'<div class="empty compact">Aucune carte trouvée. Essaie un autre mot ou l’ID Dokkan.</div>'):'<div class="verify-tip">Saisis un nom ou un ID pour afficher les cartes.</div>';
 }
 function verifyChooseCard(id){
   verifyDraft.cardId=String(id||'');

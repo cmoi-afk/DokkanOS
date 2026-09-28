@@ -352,6 +352,7 @@ const FR_NAME_FIXES=[
  [/Chiaotzu/g,'Chaozu'],[/Jeice/g,'Jeese'],[/Recoome/g,'Reacum'],[/Burter/g,'Butta'],[/Pikkon/g,'Paikuhan'],
  [/King Cold/g,'Roi Cold'],[/King Vegeta/g,'Roi Vegeta'],[/Kid Buu/g,'Boo (petit)'],[/Super Buu/g,'Boo (super)'],
  [/Gohan \(Kid\)/g,'Son Gohan (petit)'],[/Gohan \(Youth\)/g,'Son Gohan (enfant)'],[/Gohan \(Teen\)/g,'Son Gohan (jeune)'],
+ [/Trunks \(Teen\)/g,'Trunks (jeune)'],[/Trunks \(Youth\)/g,'Trunks (jeune)'],[/Trunks \(Kid\)/g,'Trunks (petit)'],
  [/Goten \(Kid\)/g,'Son Goten (petit)'],[/Trunks \(Kid\)/g,'Trunks (petit)'],[/Bulma \(Youth\)/g,'Bulma (enfant)'],[/Pan \(Kid\)/g,'Pan (petit)'],
  [/\bGoku\b/g,'Son Goku'],[/\bBuu\b/g,'Boo'],[/\(Angel\)/g,'(ange)'],[/\(Future\)/g,'(futur)']
 ];

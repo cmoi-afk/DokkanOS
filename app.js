@@ -220,7 +220,22 @@ FR_TERMS["Corroded Body and Mind"]="Corps et esprit corrompus";
 FR_TERMS["Rapid Growth"]="Croissance rapide";
 FR_TERMS["Androids"]="Cyborg";
 FR_TERMS["Androids/Cell Saga"]="Cyborg - Saga de cell";
+
 FR_TERMS["Golden Fighters"]="Combattants dorés";
+FR_TERMS["Blazing Battle"]="Combat ardent";
+FR_TERMS["Mission Execution"]="Exécution de mission";
+FR_TERMS["Galactic Warriors"]="Guerriers galactiques";
+FR_TERMS["Galactic Warrior"]="Guerrier galactique";
+FR_TERMS["Signature Pose"]="Pose signature";
+FR_TERMS["The Incredible Adventure"]="Aventure incroyable";
+FR_TERMS["Guidance of the Dragon Balls"]="Guide des Dragon Balls";
+FR_TERMS["World Tournament Reborn"]="Renaissance du Tenkaichi Budokai";
+FR_TERMS["Brutal Beatdown"]="Boost de handicap";
+FR_TERMS["Coward"]="Lâche";
+FR_TERMS["Mechanical Menaces"]="Mécanique";
+FR_TERMS["Solid Support"]="Soutien infaillible";
+FR_TERMS["More Than Meets the Eye"]="Look trompeur";
+
 FR_TERMS["Mission Execution"]="Exécution de mission";
 FR_TERMS["Blazing Battle"]="Combat ardent";
 FR_TERMS["Galactic Warriors"]="Guerriers galactiques";

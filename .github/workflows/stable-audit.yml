@@ -96,6 +96,10 @@ jobs:
           print("assets locaux encore absents pour ancres confirmées",local_anchor_missing)
           confirmed_present=[(logical,resource) for logical,resource in confirmed_resource_samples.items() if (logical,resource) not in local_anchor_missing]
           print("ancres confirmées déjà couvertes localement",confirmed_present)
+          # Les ancres présentes localement peuvent être utilisées comme tests de non-régression.
+          assert ("1009371","1009370") in confirmed_present
+          assert ("1025561","1025560") in confirmed_present
+          assert ("2000021","2000020") in confirmed_present
           if sibling: print("exemples éveils voisins",sibling[:50])
           sibling_ids={b for _,b,_ in sibling}
           independent=[x for x in missing if x[1] not in sibling_ids]

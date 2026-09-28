@@ -1,36 +1,59 @@
-name: Repair final 15 card images
+name: Repair final card images individually
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
+    paths:
+      - '.github/workflows/repair-final-images.yml'
 permissions:
   contents: write
 jobs:
   repair:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - name: Download exact card thumbnails
+      - name: Repair cards independently
         shell: bash
         run: |
-          set -euo pipefail
+          set -u
           mkdir -p assets/cards
+          : > /tmp/repaired.txt
+          : > /tmp/failed.txt
           ids=(1004631 1013760 1015200 1015691 1015701 1015711 1015830 2000780 2000790 2000800 2000810 2000820 2000830 2000840 2000850)
           for id in "${ids[@]}"; do
-            url="https://dbz-dokkanbattle.fandom.com/wiki/Special:Redirect/file/Card_${id}_thumb.png"
-            curl -fL --retry 4 --retry-delay 2 --connect-timeout 15 --max-time 60 -A "Mozilla/5.0" "$url" -o "assets/cards/${id}.png"
-            python -c 'import sys; from pathlib import Path; p=Path(sys.argv[1]); b=p.read_bytes()[:16]; assert b.startswith(b"\x89PNG") or b[:3]==b"\xff\xd8\xff" or (b.startswith(b"RIFF") and b[8:12]==b"WEBP")' "assets/cards/${id}.png"
+            echo "=== ${id} ==="
+            page="https://www.dbz-dokkanbattle.com/card/${id}"
+            html=$(curl -fsSL --retry 2 --connect-timeout 10 --max-time 30 -A "Mozilla/5.0" "$page" 2>/dev/null || true)
+            src=$(printf '%s' "$html" | grep -oE 'https?://[^"'\'' ]+card_[0-9]+_thumb[^"'\'' ]*\.png|/[^"'\'' ]*card_[0-9]+_thumb[^"'\'' ]*\.png' | head -1 || true)
+            if [ -z "$src" ]; then echo "$id no_asset_in_page" >> /tmp/failed.txt; continue; fi
+            case "$src" in http*) url="$src";; /*) url="https://www.dbz-dokkanbattle.com$src";; *) url="https://www.dbz-dokkanbattle.com/$src";; esac
+            tmp="/tmp/${id}.img"
+            if ! curl -fsSL --retry 3 --connect-timeout 10 --max-time 45 -A "Mozilla/5.0" "$url" -o "$tmp"; then echo "$id download_failed $url" >> /tmp/failed.txt; continue; fi
+            if ! python -c 'import sys; b=open(sys.argv[1],"rb").read(16); assert b.startswith(b"\x89PNG") or b[:3]==b"\xff\xd8\xff" or (b.startswith(b"RIFF") and b[8:12]==b"WEBP")' "$tmp"; then echo "$id invalid_image" >> /tmp/failed.txt; continue; fi
+            cp "$tmp" "assets/cards/${id}.png"
+            echo "$id" >> /tmp/repaired.txt
           done
-      - name: Point catalogue to local assets
+          echo "REPAIRED:"; cat /tmp/repaired.txt || true
+          echo "FAILED:"; cat /tmp/failed.txt || true
+      - name: Update catalogue only for repaired cards
         run: |
-          python -c 'import json; from pathlib import Path; ids=set("1004631 1013760 1015200 1015691 1015701 1015711 1015830 2000780 2000790 2000800 2000810 2000820 2000830 2000840 2000850".split()); p=Path("catalog.json"); d=json.loads(p.read_text()); seen=set(); [(c.update(image=f"assets/cards/{str(c[\"id\"])}.png"),seen.add(str(c["id"]))) for c in d["cards"] if str(c["id"]) in ids]; assert seen==ids; p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\\n")'
-      - name: Commit repaired assets
+          python - <<'PY'
+import json
+from pathlib import Path
+p=Path("catalog.json"); d=json.loads(p.read_text())
+ok=set(Path("/tmp/repaired.txt").read_text().split())
+for c in d["cards"]:
+    cid=str(c["id"])
+    if cid in ok: c["image"]=f"assets/cards/{cid}.png"
+p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n")
+print("repaired",len(ok),sorted(ok))
+PY
+      - name: Commit successful repairs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/cards catalog.json
-          git diff --cached --quiet && exit 0
-          git commit -m "Store final 15 verified card thumbnails locally"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "Repair final card images individually"
+            git push
+          fi

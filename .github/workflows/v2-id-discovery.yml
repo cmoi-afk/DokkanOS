@@ -1,0 +1,20 @@
+name: DokkanOS V2 canonical ID discovery
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Discover confirmed card routes
+        run: python v2/discover_card_ids.py
+      - name: Commit discovery report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add v2/ID-DISCOVERY-103.json
+          git commit -m "Discover canonical V2 card IDs from live card routes" || exit 0
+          git push

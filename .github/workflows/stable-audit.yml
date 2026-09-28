@@ -48,7 +48,10 @@ jobs:
                   # Pas d'alias implicite entre deux éveils : accepter uniquement
                   # une ressource distante explicitement associée à cette fiche.
                   remote=str(c.get("image") or c.get("imageUrl") or "")
-                  if not remote.startswith(("https://","http://")):
+                  # Les anciennes URL dbz-dokkanbattle du rapport historique sont
+                  # connues cassées : elles ne comptent plus comme couverture valide.
+                  legacy_broken=("dbz-dokkanbattle.com/img/character/thumb/" in remote)
+                  if not remote.startswith(("https://","http://")) or legacy_broken:
                       missing.append((c.get("id"),cid))
           print("images locales non résolues",len(missing))
           # French residue gate: flag known English vocabulary that must never leak to UI when FR exists.

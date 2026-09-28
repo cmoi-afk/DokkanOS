@@ -1,0 +1,24 @@
+name: Build catalogue v1 draft
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/build_catalog_v1.py"
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build canonical draft
+        run: python tools/build_catalog_v1.py
+      - name: Commit draft and report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog-v1.draft.json docs/CATALOG-REFONTE-v1.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate canonical catalogue v1 draft"
+            git push
+          fi

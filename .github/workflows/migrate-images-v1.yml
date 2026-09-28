@@ -1,0 +1,26 @@
+name: Migrate catalogue v1 images locally
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/migrate_images_v1.py"
+      - ".github/workflows/migrate-images-v1.yml"
+permissions:
+  contents: write
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Migrate images
+        run: python tools/migrate_images_v1.py
+      - name: Commit local assets and report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards catalog-v1.draft.json docs/IMAGE-MIGRATION-v1.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Migrate catalogue v1 images to local assets"
+            git push
+          fi

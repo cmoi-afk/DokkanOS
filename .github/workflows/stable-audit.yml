@@ -73,6 +73,8 @@ jobs:
                   alt=cid[:-1]+"0"
                   if any((assets/(alt+ext)).exists() for ext in (".webp",".png",".jpg",".jpeg")):
                       sibling.append((card_id,cid,alt))
+          # Ces paires sont des candidats resourceId, pas des validations automatiques.
+          # Exemple confirmé par la source FR: la fiche 1031761 expose card_1031760_thumb.png.
           print("éveils avec visuel voisin disponible mais non validé",len(sibling))
           if sibling: print("exemples éveils voisins",sibling[:50])
           sibling_ids={b for _,b,_ in sibling}

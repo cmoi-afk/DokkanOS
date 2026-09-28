@@ -392,7 +392,7 @@ const FR_FORM_FIXES=[
  [/\\(3rd Form\\)/gi,'(3e forme)'],[/\\(Final Form\\)/gi,'(forme finale)'],[/\\(Perfect Form\\)/gi,'(forme parfaite)'],
  [/Power Awakening/gi,'éveil de puissance'],[/Full Power/gi,'pleine puissance'],[/Legendary Super Saiyan/gi,'Super Saiyan Légendaire']
 ];
-function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);for(const [re,to] of FR_FORM_FIXES)s=s.replace(re,to);s=s.replace(/\bSon(?:\s+Son)+\s+Goku\b/gi,'Son Goku').replace(/\bSon(?:\s+Son)+\s+Gohan\b/gi,'Son Gohan').replace(/\bSon(?:\s+Son)+\s+Goten\b/gi,'Son Goten');return s}
+function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);for(const [re,to] of FR_FORM_FIXES)s=s.replace(re,to);s=s.replace(/\bSon(?:\s+Son)+\s+Goku\b/gi,'Son Goku').replace(/\bSon(?:\s+Son)+\s+Gohan\b/gi,'Son Gohan').replace(/\bSon(?:\s+Son)+\s+Goten\b/gi,'Son Goten').replace(/\s+/g,' ').trim();return s}
 function cardImageCandidates(id,preferred){
   id=String(id||'');let rid=localAssetIdFor(id),cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};
   const exactRemote=cat.image||preferred;

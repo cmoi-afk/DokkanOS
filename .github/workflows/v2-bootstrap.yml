@@ -1,0 +1,22 @@
+name: DokkanOS V2 bootstrap audit
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "v2/bootstrap_v2.py"
+      - ".github/workflows/v2-bootstrap.yml"
+permissions:
+  contents: write
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python v2/bootstrap_v2.py
+      - name: Commit V2 bootstrap
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add v2/schema.card.json v2/catalog.json
+          git commit -m "Initialize clean V2 catalogue" || exit 0
+          git push

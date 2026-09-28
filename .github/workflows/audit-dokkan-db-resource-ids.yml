@@ -1,0 +1,28 @@
+name: Audit remaining cards against Dokkan client DB
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/audit_dokkan_db_resource_ids.py"
+      - ".github/workflows/audit-dokkan-db-resource-ids.yml"
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download public Dokkan client database
+        run: curl -L --fail --retry 3 -o /tmp/glb.db https://raw.githubusercontent.com/Ignaadex/Dokkan-Database-Updated-/main/Global/glb.db
+      - name: Query cards table
+        env:
+          DOKKAN_DB: /tmp/glb.db
+        run: python tools/audit_dokkan_db_resource_ids.py
+      - name: Commit audit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/DOKKAN-DB-RESOURCE-ID-AUDIT.json
+          git commit -m "Audit remaining V1 cards against public Dokkan client DB" || exit 0
+          git push

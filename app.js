@@ -323,7 +323,15 @@ FR_TERMS["High Compatibility"]="Super compatibilité";
 FR_TERMS["All in the Family"]="Liens familiaux";
 FR_TERMS["Galactic Visitor"]="Visiteur d'ailleurs";
 FR_TERMS["Messenger from the Future"]="Messager du futur";
-function frTerm(v){return FR_TERMS[v]||v}
+function frTerm(v){
+  const s=String(v||'').trim();
+  if(!s)return s;
+  return FR_TERMS[s]||s
+    .replace(/\bGolden Fighters\b/g,'Combattants dorés')
+    .replace(/\bMission Execution\b/g,'Exécution de mission')
+    .replace(/\bGinyu Force\b/g,'Commando Ginyu')
+    .replace(/\bGalactic Warriors?\b/g,'Guerriers galactiques');
+}
 function frList(a){return (a||[]).map(frTerm)}
 
 async function boot(){
@@ -335,7 +343,7 @@ async function boot(){
   applyMetadata(); restoreEdits(); initAdvancedFilters();
   render(); stats(); renderDuplicates(); renderMissing(); renderInventory(); renderManualOwned(); renderTeam(); renderAnalysis();
 }
-function localized(m){if(!m)return null;let fr=m.fr||{},off=!!fr._official;return {...m,name:frCardName(fr.name||m.name),title:fr.title||m.title,type:fr.type||m.type,class:fr.class||m.class,categories:frList(fr.categories||m.categories),links:frList(fr.links||m.links),leader:fr.leader||m.leader,passiveName:fr.passiveName||m.passiveName,passive:fr.passive||m.passive,superAttack:fr.superAttack||m.superAttack,ultraSuperAttack:fr.ultraSuperAttack||m.ultraSuperAttack,activeName:fr.activeName||m.activeName,active:fr.active||m.active,transformations:fr.transformations||m.transformations,_officialFR:off}}
+function localized(m){if(!m)return null;let fr=m.fr||{},off=!!fr._official;return {...m,name:frCardName(fr.name||m.name),title:frTerm(fr.title||m.title),type:fr.type||m.type,class:fr.class||m.class,categories:frList(fr.categories||m.categories),links:frList(fr.links||m.links),leader:fr.leader||m.leader,passiveName:fr.passiveName||m.passiveName,passive:fr.passive||m.passive,superAttack:fr.superAttack||m.superAttack,ultraSuperAttack:fr.ultraSuperAttack||m.ultraSuperAttack,activeName:fr.activeName||m.activeName,active:fr.active||m.active,transformations:fr.transformations||m.transformations,_officialFR:off}}
 function applyMetadata(){DB.cards.forEach(c=>{let m=localized(META.cards?.[String(c.candidateId)]);if(m)Object.assign(c,m);c.name=frCardName(c.name||'');c.categories=frList(c.categories);c.links=frList(c.links)})}
 function confClass(c){return c==='Très forte'?'tf':c==='Forte'?'f':c==='Moyenne'?'m':c==='Validée manuellement'?'manual':'v'}
 function restoreEdits(){
@@ -441,7 +449,7 @@ function localCardImage(cardId,preferred){
   const cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};
   return cat.image||preferred||(rid?'assets/cards/'+rid+'.webp':'')||'';
 }
-function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};let image=localCardImage(id,cat.image||m.image);return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:bestFrenchName({...m,id},cat),title:cat.titleFr||cat.fr?.title||m.title||cat.title,categories:frList(cat.fr?.categories||m.categories||cat.categories),links:frList(cat.fr?.links||m.links||cat.links),image}}
+function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};let image=localCardImage(id,cat.image||m.image);return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:bestFrenchName({...m,id},cat),title:frTerm(cat.titleFr||cat.fr?.title||m.title||cat.title),categories:frList(cat.fr?.categories||m.categories||cat.categories),links:frList(cat.fr?.links||m.links||cat.links),image}}
 function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach(c=>{let id=String(c.id||'');if(id&&!seen.has(id)){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(id);out.push(card)}}});Object.keys(META.cards||{}).forEach(id=>{if(!seen.has(String(id))){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(String(id));out.push(card)}}});return out}
 let verifyDraft={boxId:'',cardId:'',query:''};
 

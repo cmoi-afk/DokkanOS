@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DokkanOS V2 Card",
+  "type": "object",
+  "required": [
+    "id",
+    "nameFr",
+    "rarity",
+    "playable",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9]+$"
+    },
+    "resourceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nameFr": {
+      "type": "string"
+    },
+    "titleFr": {
+      "type": "string"
+    },
+    "rarity": {
+      "enum": [
+        "N",
+        "R",
+        "SR",
+        "SSR",
+        "UR",
+        "LR"
+      ]
+    },
+    "type": {
+      "enum": [
+        "AGI",
+        "TEC",
+        "INT",
+        "PUI",
+        "END",
+        null
+      ]
+    },
+    "playable": {
+      "type": "boolean"
+    },
+    "awakensFrom": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "awakensTo": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "image": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

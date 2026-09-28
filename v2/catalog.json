@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "status": "bootstrap",
+  "cards": [],
+  "stats": {
+    "cards": 0
+  },
+  "notes": [
+    "Catalogue construit sans import automatique de V0/V1.",
+    "IDs obligatoirement vérifiés avant insertion."
+  ]
+}

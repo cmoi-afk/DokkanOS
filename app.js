@@ -371,7 +371,19 @@ function isPlayableCard(card){
   if(hp===0&&atk===0&&def===0)return false;
   return true;
 }
-function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};let image=cat.image||m.image||('assets/cards/'+id+'.webp');return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:frCardName(m.name||cat.name||''),title:m.title||cat.title,categories:frList(m.categories||cat.categories),links:frList(m.links||cat.links),image}}
+function bestFrenchName(meta,cat){
+  const raw=META.cards?.[String(meta?.id||cat?.id||'')]||{};
+  const candidates=[
+    raw.fr?._official&&raw.fr?.name?raw.fr.name:'',
+    cat?.nameFr||cat?.fr?.name||'',
+    meta?._officialFR&&meta?.name?meta.name:'',
+    raw.fr?.name||'',
+    cat?.name||'',
+    meta?.name||raw.name||''
+  ].filter(Boolean);
+  return frCardName(candidates[0]||'');
+}
+function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};let image=cat.image||m.image||('assets/cards/'+id+'.webp');return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:bestFrenchName({...m,id},cat),title:cat.titleFr||cat.fr?.title||m.title||cat.title,categories:frList(cat.fr?.categories||m.categories||cat.categories),links:frList(cat.fr?.links||m.links||cat.links),image}}
 function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach(c=>{let id=String(c.id||'');if(id&&!seen.has(id)){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(id);out.push(card)}}});Object.keys(META.cards||{}).forEach(id=>{if(!seen.has(String(id))){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(String(id));out.push(card)}}});return out}
 let verifyDraft={boxId:'',cardId:'',query:''};
 

@@ -1,0 +1,56 @@
+name: Catalogue v1 final external image pass
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/migrate_images_v1_pass5.py"
+      - ".github/workflows/migrate-images-v1-pass5.yml"
+permissions:
+  contents: write
+jobs:
+  shards:
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        shard: [0,1,2,3,4,5,6,7]
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare external-search shard
+        env:
+          SHARD: ${{ matrix.shard }}
+          TOTAL_SHARDS: 8
+        run: python tools/migrate_images_v1_pass5.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pass5-shard-${{ matrix.shard }}
+          path: docs/IMAGE-MIGRATION-v1-PASS5-SHARD-${{ matrix.shard }}.json
+  merge:
+    needs: shards
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: pass5-shard-*
+          path: pass5
+          merge-multiple: true
+      - name: Merge
+        run: |
+          python - <<'PY'
+          import json,glob
+          from pathlib import Path
+          fs=sorted(glob.glob("pass5/*.json")); items=[]
+          for f in fs: items += json.load(open(f,encoding="utf-8"))["items"]
+          Path("docs/IMAGE-MIGRATION-v1-PASS5.json").write_text(json.dumps({"shards":len(fs),"cards":len(items),"items":items},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          print("merged",len(items))
+          PY
+      - name: Commit report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/IMAGE-MIGRATION-v1-PASS5.json
+          git commit -m "Prepare final 241 external image recoveries" || exit 0
+          git push

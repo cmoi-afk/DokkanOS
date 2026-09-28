@@ -79,6 +79,12 @@ jobs:
           independent=[x for x in missing if x[1] not in sibling_ids]
           print("images réellement indépendantes à retrouver",len(independent))
           if independent: print("premiers IDs indépendants",independent[:100])
+          from collections import Counter
+          buckets=Counter(cid[:4] for _,cid in independent if len(cid)>=4)
+          print("répartition images indépendantes par préfixe",dict(sorted(buckets.items())))
+          old=[x for x in independent if int(x[1])<1025000]
+          recent=[x for x in independent if int(x[1])>=1025000]
+          print("indépendantes anciennes",len(old),"récentes",len(recent))
           # Le rapport doit rester visible dans les logs CI, même sans artefact.
           if missing:
               print("premiers IDs sans couverture exacte",missing[:50])

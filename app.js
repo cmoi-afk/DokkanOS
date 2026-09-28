@@ -384,7 +384,22 @@ function bestFrenchName(meta,cat){
   ].filter(Boolean);
   return frCardName(candidates[0]||'');
 }
-function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};let image=cat.image||m.image||('assets/cards/'+id+'.webp');return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:bestFrenchName({...m,id},cat),title:cat.titleFr||cat.fr?.title||m.title||cat.title,categories:frList(cat.fr?.categories||m.categories||cat.categories),links:frList(cat.fr?.links||m.links||cat.links),image}}
+function localAssetIdFor(cardId){
+  cardId=String(cardId||''); if(!cardId)return '';
+  const cat=(CATALOG.cards||[]).find(x=>String(x.id)===cardId)||{};
+  const m=META.cards?.[cardId]||{};
+  const explicit=cat.resourceId||cat.resource_id||m.resourceId||m.resource_id||cat.imageId||m.imageId;
+  if(explicit)return String(explicit);
+  // Dokkan utilise fréquemment ...0 pour la ressource et ...1 pour la fiche éveillée.
+  if(/1$/.test(cardId))return cardId.slice(0,-1)+'0';
+  return cardId;
+}
+function localCardImage(cardId,preferred){
+  const rid=localAssetIdFor(cardId);
+  const local=rid?'assets/cards/'+rid+'.webp':'';
+  return local||preferred||'';
+}
+function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};let image=localCardImage(id,cat.image||m.image);return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:bestFrenchName({...m,id},cat),title:cat.titleFr||cat.fr?.title||m.title||cat.title,categories:frList(cat.fr?.categories||m.categories||cat.categories),links:frList(cat.fr?.links||m.links||cat.links),image}}
 function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach(c=>{let id=String(c.id||'');if(id&&!seen.has(id)){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(id);out.push(card)}}});Object.keys(META.cards||{}).forEach(id=>{if(!seen.has(String(id))){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(String(id));out.push(card)}}});return out}
 let verifyDraft={boxId:'',cardId:'',query:''};
 

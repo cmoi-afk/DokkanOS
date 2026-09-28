@@ -1,0 +1,53 @@
+name: Repair final 15 card images
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/repair-final-images.yml'
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download exact card thumbnails
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/cards
+          ids=(1004631 1013760 1015200 1015691 1015701 1015711 1015830 2000780 2000790 2000800 2000810 2000820 2000830 2000840 2000850)
+          for id in "${ids[@]}"; do
+            url="https://dbz-dokkanbattle.fandom.com/wiki/Special:Redirect/file/Card_${id}_thumb.png"
+            curl -fL --retry 4 --retry-delay 2 --connect-timeout 15 --max-time 60 -A "Mozilla/5.0" "$url" -o "assets/cards/${id}.png"
+            python - "$id" <<'PY'
+import sys
+from pathlib import Path
+p=Path("assets/cards")/(sys.argv[1]+".png")
+b=p.read_bytes()[:16]
+assert b.startswith(b"\x89PNG") or b[:3]==b"\xff\xd8\xff" or (b.startswith(b"RIFF") and b[8:12]==b"WEBP"), f"Not an image: {p}"
+PY
+          done
+      - name: Point catalogue to local assets
+        run: |
+          python - <<'PY'
+import json
+from pathlib import Path
+ids={"1004631","1013760","1015200","1015691","1015701","1015711","1015830","2000780","2000790","2000800","2000810","2000820","2000830","2000840","2000850"}
+p=Path("catalog.json"); d=json.loads(p.read_text()); seen=set()
+for c in d["cards"]:
+    cid=str(c["id"])
+    if cid in ids:
+        c["image"]=f"assets/cards/{cid}.png"; seen.add(cid)
+assert seen==ids, f"Missing IDs: {sorted(ids-seen)}"
+p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n")
+PY
+      - name: Commit repaired assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards catalog.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Store final 15 verified card thumbnails locally"
+          git push

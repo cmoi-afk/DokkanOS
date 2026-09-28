@@ -305,6 +305,7 @@ function frList(a){return (a||[]).map(frTerm)}
 
 async function boot(){
   DB=await fetch('collection.json').then(r=>r.ok?r.json():fetch('data.json').then(x=>x.json()));
+  if(!DB||!Array.isArray(DB.cards))throw new Error('Collection DokkanOS invalide');
   try{META=await fetch('card-meta.json').then(r=>r.ok?r.json():({cards:{}}))}catch(e){META={cards:{}}}
   try{CATALOG=await fetch('catalog.json').then(r=>r.ok?r.json():({cards:[]}))}catch(e){CATALOG={cards:[]}}
   try{OVERLAP=await fetch('overlap-conflicts.json').then(r=>r.ok?r.json():({conflicts:[]}))}catch(e){OVERLAP={conflicts:[]}}
@@ -355,7 +356,7 @@ const FR_NAME_FIXES=[
  [/\bGoku\b/g,'Son Goku'],[/\bBuu\b/g,'Boo'],[/\(Angel\)/g,'(ange)'],[/\(Future\)/g,'(futur)']
 ];
 function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);return s}
-function cardImageCandidates(id,preferred){id=String(id||'');return [...new Set([preferred,'assets/cards/'+id+'.webp','https://www.dbz-dokkanbattle.com/img/character/card/'+id+'/card_'+id+'_thumb.png','https://dokkaninfo.com/assets/global/en/character/card/'+id+'.png'].filter(Boolean))]}
+function cardImageCandidates(id,preferred){id=String(id||'');return [...new Set([preferred,id&&('assets/cards/'+id+'.webp')].filter(Boolean))]}
 function imageFallback(el,id,preferred){let a=cardImageCandidates(id,preferred),n=Number(el.dataset.fallback||0)+1;el.dataset.fallback=String(n);if(n<a.length){el.src=a[n]}else{el.classList.add('imgfail');reportBrokenImage(id)}}
 function imageAuditSummary(){try{return JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]')}catch(e){return []}}
 function reportBrokenImage(id){if(!id)return;try{let a=JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]');if(!a.includes(String(id))){a.push(String(id));localStorage.setItem('dokkanos-broken-images',JSON.stringify(a))}}catch(e){}}

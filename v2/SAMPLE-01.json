@@ -1,0 +1,36 @@
+{
+  "version": "2.0-sample-1",
+  "createdAt": "2026-09-28",
+  "purpose": "Validate V2 pipeline before full catalogue import",
+  "sourceEvidence": {
+    "frenchCatalogue": "DBZ Dokkan Battle France current cards/summons",
+    "structuralCatalogue": "Dokkan Battle Database current September 2026 content"
+  },
+  "cards": [
+    {
+      "nameFr": "Son Gohan Super Saiyan (enfant)",
+      "evidence": "featured new SSR on 2026-09-13 Dokkan Festival",
+      "rarity": "SSR",
+      "status": "identity_confirmed_id_pending"
+    },
+    {
+      "nameFr": "Cell Parfait",
+      "evidence": "featured new SSR on 2026-09-13 Legendary Summon",
+      "rarity": "SSR",
+      "status": "identity_confirmed_id_pending"
+    },
+    {
+      "nameFr": "Freezer (forme finale)",
+      "evidence": "new SSR on 2026-09-15 Dokkan Festival",
+      "rarity": "SSR",
+      "status": "identity_confirmed_id_pending"
+    },
+    {
+      "nameFr": "Son Goku Super Saiyan",
+      "evidence": "new SSR awakening to LR on 2026-09-15 Legendary Summon",
+      "rarity": "SSR",
+      "status": "identity_confirmed_id_pending"
+    }
+  ],
+  "rule": "No card receives a canonical ID or local image until the structural source exposes/validates that exact identity."
+}

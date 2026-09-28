@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0-reset",
+  "status": "source_audit",
+  "createdAt": "2026-09-28",
+  "principle": "Reconstruction indépendante. Aucun héritage automatique de catalog.json, catalog-v1.draft.json ou des rapports de migration.",
+  "sourcePolicy": {
+    "primaryCandidate": "dokkanbattle.net",
+    "frenchCandidate": "dbz-dokkanbattle.com",
+    "rules": [
+      "Ne fixer aucun nombre de cartes à l'avance",
+      "Conserver l'ID canonique fourni par la source",
+      "Exclure les entrées non jouables seulement sur critère documenté",
+      "Télécharger les images localement après validation de l'identité",
+      "Auditer la base avant branchement à l'interface"
+    ]
+  },
+  "legacyFilesIgnored": [
+    "catalog.json",
+    "catalog-v1.draft.json",
+    "docs/IMAGE-MIGRATION-*",
+    "docs/CATALOG-*"
+  ],
+  "phases": [
+    "audit_sources",
+    "build_clean_catalog",
+    "filter_playable",
+    "localize_french",
+    "download_local_assets",
+    "catalog_audit",
+    "ui_integration",
+    "functional_audit"
+  ]
+}

@@ -75,6 +75,10 @@ jobs:
                       sibling.append((card_id,cid,alt))
           print("éveils avec visuel voisin disponible mais non validé",len(sibling))
           if sibling: print("exemples éveils voisins",sibling[:50])
+          sibling_ids={b for _,b,_ in sibling}
+          independent=[x for x in missing if x[1] not in sibling_ids]
+          print("images réellement indépendantes à retrouver",len(independent))
+          if independent: print("premiers IDs indépendants",independent[:100])
           # Le rapport doit rester visible dans les logs CI, même sans artefact.
           if missing:
               print("premiers IDs sans couverture exacte",missing[:50])

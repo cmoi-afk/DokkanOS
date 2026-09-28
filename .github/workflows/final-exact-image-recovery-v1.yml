@@ -1,0 +1,23 @@
+name: Final exact catalogue v1 image recovery
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/final_exact_image_recovery_v1.py"
+      - ".github/workflows/final-exact-image-recovery-v1.yml"
+permissions:
+  contents: write
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: python tools/final_exact_image_recovery_v1.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards catalog-v1.draft.json docs/IMAGE-MIGRATION-v1-FINAL.json
+          git commit -m "Recover validated exact-ID final images" || exit 0
+          git push

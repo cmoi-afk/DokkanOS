@@ -220,6 +220,14 @@ FR_TERMS["Corroded Body and Mind"]="Corps et esprit corrompus";
 FR_TERMS["Rapid Growth"]="Croissance rapide";
 FR_TERMS["Androids"]="Cyborg";
 FR_TERMS["Androids/Cell Saga"]="Cyborg - Saga de cell";
+FR_TERMS["Golden Fighters"]="Combattants dorés";
+FR_TERMS["Mission Execution"]="Exécution de mission";
+FR_TERMS["Blazing Battle"]="Combat ardent";
+FR_TERMS["Galactic Warriors"]="Guerriers galactiques";
+FR_TERMS["Galactic Warrior"]="Guerrier galactique";
+FR_TERMS["Signature Pose"]="Pose signature";
+FR_TERMS["Coward"]="Lâche";
+
 FR_TERMS["Final Trump Card"]="Dernier atout";
 FR_TERMS["Planetary Destruction"]="Destructeurs de planètes";
 FR_TERMS["Inhuman Deeds"]="Diaboliques et sans merci";

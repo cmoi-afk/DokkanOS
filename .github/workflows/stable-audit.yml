@@ -74,6 +74,14 @@ jobs:
           assert "c.image=choice?.image||'assets/cards/'+a.candidateId+'.webp'" not in s, "restored cards bypass exact artwork resolver"
           assert "c.title=frTerm(c.title||'')" in s, "box titles bypass French mapper"
           print("French/image runtime invariants OK")
+          # Historical audit is diagnostic only: it still records broken remote artwork.
+          import json
+          hist=Path("docs/IMAGE-AUDIT-FINAL.json")
+          if hist.exists():
+              h=json.loads(hist.read_text(encoding="utf-8"))
+              print("historical broken remote images",len(h.get("brokenImages",[])))
+              assert h.get("idImageMismatches",[])==[], "known ID/image mismatches remain"
+          print("Historical image audit must not be treated as clean merely because stillMissing is empty")
           PY
       - name: Required PWA files
         run: |

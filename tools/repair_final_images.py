@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json, re, urllib.request, urllib.parse
 from pathlib import Path
-IDS=["1004631","1013760","1015200","1015691","1015701","1015711","1015830","2000780","2000790","2000800","2000810","2000820","2000830","2000840","2000850"]
+FORCE_LOCAL_ONLY=True\nIDS=["1004631","1013760","1015200","1015691","1015701","1015711","1015830","2000780","2000790","2000800","2000810","2000820","2000830","2000840","2000850"]
 root=Path(__file__).resolve().parents[1]; out=root/"assets/cards"; out.mkdir(parents=True,exist_ok=True)
 ok=[]; failed=[]
 headers={"User-Agent":"Mozilla/5.0"}

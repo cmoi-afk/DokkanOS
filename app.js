@@ -382,9 +382,9 @@ const FR_NAME_FIXES=[
  [/Piccolo \(Power Awakening\)/gi,'Piccolo (éveil de puissance)'],[/Piccolo \(Fused with Kami\)/gi,'Piccolo (fusion avec Kami)'],
  [/Team Bardock/gi,'Équipe Bardock'],[/Lord Slug/gi,'Slug'],[/Ultimate Gohan/gi,'Son Gohan ultime'],
  [/Shadow Dragon Army/gi,'Équipe des dragons maléfiques'],[/Legion of Shadow Dragons/gi,'Équipe des dragons maléfiques'],
- [/Great Saiyaman/gi,'Great Saiyaman'],[/Turles/gi,'Thalès'],
+ [/Great Saiyaman/gi,'Great Saiyaman'],[/Turles/gi,'Thalès'],[/General Blue/gi,'Commandant Blue'],[/Dr\. Gero/g,'Dr Gero'],
  [/Goten \(Kid\)/g,'Son Goten (petit)'],[/Trunks \(Kid\)/g,'Trunks (petit)'],[/Bulma \(Youth\)/g,'Bulma (enfant)'],[/Pan \(Kid\)/g,'Pan (petit)'],
- [/\bGoku\b/g,'Son Goku'],[/\bBuu\b/g,'Boo'],[/\bGood\b/gi,'gentil'],[/\bEvil\b/gi,'maléfique'],[/\bGinyu Force\b/gi,'Commando Ginyu'],[/\bGalactic Warrior\b/gi,'Guerrier galactique'],[/\bJeese\b/gi,'Jeese'],[/\bButta\b/gi,'Butta'],[/\bAhms \(2nd Form\)/gi,'Ahms (2e forme)'],[/\(Angel\)/g,'(ange)'],[/\(Future\)/g,'(futur)']
+ [/\bGoku\b/g,'Son Goku'],[/\bBuu\b/g,'Boo'],[/\bGood\b/gi,'gentil'],[/\bEvil\b/gi,'maléfique'],[/\bGinyu Force\b/gi,'Commando Ginyu'],[/\bGalactic Warrior\b/gi,'Guerrier galactique'],[/\bJeese\b/gi,'Jeese'],[/\bButta\b/gi,'Butta'],[/\bAhms \(2nd Form\)/gi,'Ahms (2e forme)'],[/\b1st Form\b/gi,'1re forme'],[/\b2nd Form\b/gi,'2e forme'],[/\b3rd Form\b/gi,'3e forme'],[/\bFinal Form\b/gi,'forme finale'],[/\bGiant Ape\b/gi,'gorille géant'],[/\(Angel\)/g,'(ange)'],[/\(Future\)/g,'(futur)']
 ];
 const FR_FORM_FIXES=[
  [/\\(Elder\\)/gi,'(vieux)'],[/\\(Teen\\)/gi,'(jeune)'],[/\\(Youth\\)/gi,'(jeune)'],[/\\(Kid\\)/gi,'(petit)'],

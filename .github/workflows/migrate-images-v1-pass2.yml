@@ -1,0 +1,26 @@
+name: Migrate catalogue v1 images pass 2
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/migrate_images_v1_pass2.py"
+      - ".github/workflows/migrate-images-v1-pass2.yml"
+permissions:
+  contents: write
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recover remaining exact-ID images
+        run: python tools/migrate_images_v1_pass2.py
+      - name: Commit recovered assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards catalog-v1.draft.json docs/IMAGE-MIGRATION-v1-PASS2.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Recover remaining catalogue v1 images pass 2"
+            git push
+          fi

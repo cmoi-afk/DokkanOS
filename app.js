@@ -378,7 +378,7 @@ const FR_FORM_FIXES=[
  [/Power Awakening/gi,'éveil de puissance'],[/Full Power/gi,'pleine puissance'],[/Legendary Super Saiyan/gi,'Super Saiyan Légendaire']
 ];
 function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);for(const [re,to] of FR_FORM_FIXES)s=s.replace(re,to);s=s.replace(/\bSon(?:\s+Son)+\s+Goku\b/gi,'Son Goku').replace(/\bSon(?:\s+Son)+\s+Gohan\b/gi,'Son Gohan').replace(/\bSon(?:\s+Son)+\s+Goten\b/gi,'Son Goten');return s}
-function cardImageCandidates(id,preferred){id=String(id||'');let rid=localAssetIdFor(id);return [...new Set([id&&('assets/cards/'+id+'.webp'),id&&('assets/cards/'+id+'.png'),rid&&('assets/cards/'+rid+'.webp'),rid&&('assets/cards/'+rid+'.png'),preferred].filter(Boolean))]}
+function cardImageCandidates(id,preferred){id=String(id||'');let rid=localAssetIdFor(id),cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};return [...new Set([id&&('assets/cards/'+id+'.webp'),id&&('assets/cards/'+id+'.png'),rid&&('assets/cards/'+rid+'.webp'),rid&&('assets/cards/'+rid+'.png'),preferred,cat.image].filter(Boolean))]}
 function imageFallback(el,id,preferred){let a=cardImageCandidates(id,preferred),n=Number(el.dataset.fallback||0)+1;el.dataset.fallback=String(n);if(n<a.length){el.src=a[n]}else{el.classList.add('imgfail');reportBrokenImage(id)}}
 function imageAuditSummary(){try{return JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]')}catch(e){return []}}
 function reportBrokenImage(id){if(!id)return;try{let a=JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]');if(!a.includes(String(id))){a.push(String(id));localStorage.setItem('dokkanos-broken-images',JSON.stringify(a))}}catch(e){}}
@@ -417,7 +417,9 @@ function localAssetIdFor(cardId){
 }
 function localCardImage(cardId,preferred){
   const rid=localAssetIdFor(cardId);
-  return (rid?'assets/cards/'+rid+'.webp':'')||preferred||'';
+  const cat=(CATALOG.cards||[]).find(x=>String(x.id)===String(cardId))||{};
+  const remote=preferred||cat.image||'';
+  return (rid?'assets/cards/'+rid+'.webp':'')||remote||'';
 }
 function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};let image=localCardImage(id,cat.image||m.image);return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:bestFrenchName({...m,id},cat),title:cat.titleFr||cat.fr?.title||m.title||cat.title,categories:frList(cat.fr?.categories||m.categories||cat.categories),links:frList(cat.fr?.links||m.links||cat.links),image}}
 function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach(c=>{let id=String(c.id||'');if(id&&!seen.has(id)){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(id);out.push(card)}}});Object.keys(META.cards||{}).forEach(id=>{if(!seen.has(String(id))){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(String(id));out.push(card)}}});return out}

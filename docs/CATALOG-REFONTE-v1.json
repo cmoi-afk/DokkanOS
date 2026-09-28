@@ -1,0 +1,113 @@
+{
+  "sourceCards": 2045,
+  "accepted": 2030,
+  "rejected": 15,
+  "uniqueAccepted": 2030,
+  "rejectedItems": [
+    {
+      "id": "1000860",
+      "name": "Vegeta",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "1001040",
+      "name": "Chi-Chi",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "1001851",
+      "name": "Son Gohan (jeune)",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "1002050",
+      "name": "Babidi",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "1002360",
+      "name": "Devilman",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "1002490",
+      "name": "Thouser",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "1003980",
+      "name": "Bulma (Youth)",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "1004631",
+      "name": "Métal Cooler (PUI)",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "1004760",
+      "name": "Super Vegeta",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "1005470",
+      "name": "Bulma (Youth)",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "1010520",
+      "name": "Android #17",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "1012970",
+      "name": "Zamasu",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "1033520",
+      "name": "Dendé",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "2000200",
+      "name": "Mighty Mask",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    },
+    {
+      "id": "2000710",
+      "name": "Zangya",
+      "reasons": [
+        "SR sans éveil utile vérifié"
+      ]
+    }
+  ]
+}

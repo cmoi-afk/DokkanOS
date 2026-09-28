@@ -85,6 +85,12 @@ jobs:
           old=[x for x in independent if int(x[1])<1025000]
           recent=[x for x in independent if int(x[1])>=1025000]
           print("indépendantes anciennes",len(old),"récentes",len(recent))
+          if old: print("IDs indépendants anciens prioritaires",old)
+          recent_buckets={}
+          for item in recent:
+              recent_buckets.setdefault(item[1][:4],[]).append(item)
+          for k in sorted(recent_buckets):
+              print("lot récent",k,"count",len(recent_buckets[k]),"ids",recent_buckets[k][:60])
           # Le rapport doit rester visible dans les logs CI, même sans artefact.
           if missing:
               print("premiers IDs sans couverture exacte",missing[:50])

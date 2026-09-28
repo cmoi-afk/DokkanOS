@@ -1,0 +1,1340 @@
+{
+  "dbColumns": [
+    "id",
+    "name",
+    "character_id",
+    "card_unique_info_id",
+    "cost",
+    "rarity",
+    "hp_init",
+    "hp_max",
+    "atk_init",
+    "atk_max",
+    "def_init",
+    "def_max",
+    "element",
+    "lv_max",
+    "skill_lv_max",
+    "grow_type",
+    "optimal_awakening_grow_type",
+    "price",
+    "exp_type",
+    "training_exp",
+    "special_motion",
+    "passive_skill_set_id",
+    "leader_skill_set_id",
+    "link_skill1_id",
+    "link_skill2_id",
+    "link_skill3_id",
+    "link_skill4_id",
+    "link_skill5_id",
+    "link_skill6_id",
+    "link_skill7_id",
+    "eball_mod_min",
+    "eball_mod_num100",
+    "eball_mod_mid",
+    "eball_mod_mid_num",
+    "eball_mod_max",
+    "eball_mod_max_num",
+    "max_level_reward_id",
+    "max_level_reward_type",
+    "collectable_type",
+    "face_x",
+    "face_y",
+    "aura_id",
+    "aura_scale",
+    "aura_offset_x",
+    "aura_offset_y",
+    "is_aura_front",
+    "is_selling_only",
+    "awakening_number",
+    "resource_id",
+    "bg_effect_id",
+    "selling_exchange_point",
+    "awakening_element_type",
+    "potential_board_id",
+    "open_at",
+    "created_at",
+    "updated_at"
+  ],
+  "pending": 240,
+  "matched": 15,
+  "unmatched": 225,
+  "items": [
+    {
+      "id": "1002241",
+      "name": "Son Goku (enfant)",
+      "db": {
+        "id": 1002241,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1003991",
+      "name": "Son Goku Super Saiyan",
+      "db": {
+        "id": 1003991,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1008601",
+      "name": "Goku Black",
+      "db": {
+        "id": 1008601,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1010041",
+      "name": "Freezer (1re forme)",
+      "db": {
+        "id": 1010041,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1013711",
+      "name": "Slug (forme géante)",
+      "db": {
+        "id": 1013711,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1014331",
+      "name": "Freezer (forme finale) (GT)",
+      "db": {
+        "id": 1014331,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1019201",
+      "name": "Toma",
+      "db": {
+        "id": 1019201,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1019371",
+      "name": "Boo (athlétique)",
+      "db": {
+        "id": 1019371,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1020891",
+      "name": "Majin Salsa",
+      "db": {
+        "id": 1020891,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1021101",
+      "name": "Son Gohan (grand-père) & Pan (GT)",
+      "db": {
+        "id": 1021101,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1021311",
+      "name": "Tenshinhan",
+      "db": {
+        "id": 1021311,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1025771",
+      "name": "Son Goku (GT) & Vegeta Super Saiyan 4",
+      "db": null
+    },
+    {
+      "id": "1026131",
+      "name": "Son Gohan (petit)",
+      "db": null
+    },
+    {
+      "id": "1026161",
+      "name": "Son Goku",
+      "db": null
+    },
+    {
+      "id": "1026201",
+      "name": "C-17 & C-17 (Hell Fighter)",
+      "db": null
+    },
+    {
+      "id": "1026231",
+      "name": "Docteur Myuu & Dr. Gero",
+      "db": null
+    },
+    {
+      "id": "1026251",
+      "name": "Son Goku Super Saiyan divin",
+      "db": {
+        "id": 1026251,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1026281",
+      "name": "Vegeta Super Saiyan",
+      "db": {
+        "id": 1026281,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1026311",
+      "name": "Bulma (enfant)",
+      "db": {
+        "id": 1026311,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1026511",
+      "name": "Frost (forme finale)",
+      "db": null
+    },
+    {
+      "id": "1026581",
+      "name": "Krillin",
+      "db": {
+        "id": 1026581,
+        "resource_id": null,
+        "is_selling_only": 0,
+        "awakening_number": null
+      }
+    },
+    {
+      "id": "1026611",
+      "name": "Bulma (enfant)",
+      "db": null
+    },
+    {
+      "id": "1026751",
+      "name": "Thalès",
+      "db": null
+    },
+    {
+      "id": "1026771",
+      "name": "Amondo & Rezun",
+      "db": null
+    },
+    {
+      "id": "1026791",
+      "name": "Daïzu & Cacao",
+      "db": null
+    },
+    {
+      "id": "1026871",
+      "name": "Baby",
+      "db": null
+    },
+    {
+      "id": "1026901",
+      "name": "Son Goku Super Saiyan 4",
+      "db": null
+    },
+    {
+      "id": "1027041",
+      "name": "Oméga Shenron",
+      "db": null
+    },
+    {
+      "id": "1027121",
+      "name": "Son Goku Super Saiyan divin SS \n& Vegeta Super Saiyan divin SS",
+      "db": null
+    },
+    {
+      "id": "1027181",
+      "name": "Mamba",
+      "db": null
+    },
+    {
+      "id": "1027191",
+      "name": "Piccolo Junior",
+      "db": null
+    },
+    {
+      "id": "1027291",
+      "name": "Trunks Super Saiyan (futur)",
+      "db": null
+    },
+    {
+      "id": "1027371",
+      "name": "Mai (futur)",
+      "db": null
+    },
+    {
+      "id": "1027431",
+      "name": "C-17 et C-18",
+      "db": null
+    },
+    {
+      "id": "1027461",
+      "name": "Ribrianne & Kakunsa & Rosie",
+      "db": null
+    },
+    {
+      "id": "1027471",
+      "name": "Cell (forme parfaite) (GT) & \nFreezer (forme finale) (GT)",
+      "db": null
+    },
+    {
+      "id": "1027501",
+      "name": "Zirloin & Rabanra & Zabuto",
+      "db": null
+    },
+    {
+      "id": "1027511",
+      "name": "C-18 (GT)",
+      "db": null
+    },
+    {
+      "id": "1027621",
+      "name": "Son Goku Super Saiyan 3",
+      "db": null
+    },
+    {
+      "id": "1027681",
+      "name": "C-21 (transformée, mauvaise)",
+      "db": null
+    },
+    {
+      "id": "1027711",
+      "name": "Vegetto Super Saiyan 4 ultra puissance max - Limites brisées (Xeno)",
+      "db": null
+    },
+    {
+      "id": "1027731",
+      "name": "Broly Super Saiyan 4 ultra puissance max - Limites brisées",
+      "db": null
+    },
+    {
+      "id": "1027781",
+      "name": "Vegeta Super Saiyan divin SS (Berserker contrôlé)",
+      "db": null
+    },
+    {
+      "id": "1027801",
+      "name": "Towa",
+      "db": null
+    },
+    {
+      "id": "1027841",
+      "name": "C-17",
+      "db": null
+    },
+    {
+      "id": "1027851",
+      "name": "C-18",
+      "db": null
+    },
+    {
+      "id": "1027901",
+      "name": "Fû roi sombre",
+      "db": null
+    },
+    {
+      "id": "1027921",
+      "name": "Janemba (modifié)",
+      "db": null
+    },
+    {
+      "id": "1027941",
+      "name": "Oolong & Lunch",
+      "db": null
+    },
+    {
+      "id": "1027981",
+      "name": "Gogeta Super Saiyan",
+      "db": null
+    },
+    {
+      "id": "1028021",
+      "name": "Broly Super Saiyan",
+      "db": null
+    },
+    {
+      "id": "1028161",
+      "name": "Hildegarn",
+      "db": null
+    },
+    {
+      "id": "1028201",
+      "name": "Yamcha",
+      "db": null
+    },
+    {
+      "id": "1028231",
+      "name": "Golden Freezer",
+      "db": null
+    },
+    {
+      "id": "1028321",
+      "name": "Son Gohan (Beast)",
+      "db": null
+    },
+    {
+      "id": "1028371",
+      "name": "Gamma 1 & Gamma 2/Gamma 1",
+      "db": null
+    },
+    {
+      "id": "1028471",
+      "name": "Krillin & C-18",
+      "db": null
+    },
+    {
+      "id": "1028491",
+      "name": "Vegeta",
+      "db": null
+    },
+    {
+      "id": "1028521",
+      "name": "Roi Vegeta",
+      "db": null
+    },
+    {
+      "id": "1028551",
+      "name": "Beerus (chemise de nuit)",
+      "db": null
+    },
+    {
+      "id": "1028571",
+      "name": "Freezer (1re forme)",
+      "db": null
+    },
+    {
+      "id": "1028591",
+      "name": "Dodoria",
+      "db": null
+    },
+    {
+      "id": "1028601",
+      "name": "Freezer (1re forme)",
+      "db": null
+    },
+    {
+      "id": "1028681",
+      "name": "Toppo",
+      "db": null
+    },
+    {
+      "id": "1028721",
+      "name": "Ginyu (commando)",
+      "db": null
+    },
+    {
+      "id": "1028761",
+      "name": "Catopesra",
+      "db": null
+    },
+    {
+      "id": "1028811",
+      "name": "Boo",
+      "db": null
+    },
+    {
+      "id": "1028831",
+      "name": "Gotenks",
+      "db": null
+    },
+    {
+      "id": "1028851",
+      "name": "Boo (mal incarné)",
+      "db": null
+    },
+    {
+      "id": "1028891",
+      "name": "Son Gohan ultime",
+      "db": null
+    },
+    {
+      "id": "1028921",
+      "name": "Son Goku (enfant) & Krillin (enfant) \n& Bulma (enfant)",
+      "db": null
+    },
+    {
+      "id": "1028961",
+      "name": "Cell Max",
+      "db": null
+    },
+    {
+      "id": "1029021",
+      "name": "Dyspo",
+      "db": null
+    },
+    {
+      "id": "1029051",
+      "name": "Son Goku (Signes de l'Ultra Instinct)",
+      "db": null
+    },
+    {
+      "id": "1029091",
+      "name": "Jiren",
+      "db": null
+    },
+    {
+      "id": "1029121",
+      "name": "Hit",
+      "db": null
+    },
+    {
+      "id": "1029141",
+      "name": "Kamesennin",
+      "db": null
+    },
+    {
+      "id": "1029161",
+      "name": "Bulma (lapin)",
+      "db": null
+    },
+    {
+      "id": "1029181",
+      "name": "Cocotte",
+      "db": null
+    },
+    {
+      "id": "1029201",
+      "name": "Mai",
+      "db": null
+    },
+    {
+      "id": "1029271",
+      "name": "Bio Broly",
+      "db": null
+    },
+    {
+      "id": "1029281",
+      "name": "Saonel & Pilina",
+      "db": null
+    },
+    {
+      "id": "1029291",
+      "name": "Champa",
+      "db": null
+    },
+    {
+      "id": "1029331",
+      "name": "Devilman",
+      "db": null
+    },
+    {
+      "id": "1029361",
+      "name": "Son Goku Super Saiyan & Son Gohan Super Saiyan (enfant) & \nTrunks Super Saiyan (jeune)",
+      "db": null
+    },
+    {
+      "id": "1029401",
+      "name": "Broly",
+      "db": null
+    },
+    {
+      "id": "1029441",
+      "name": "Broly Super Saiyan Légendaire",
+      "db": null
+    },
+    {
+      "id": "1029471",
+      "name": "Son Gohan Super Saiyan (jeune)",
+      "db": null
+    },
+    {
+      "id": "1029551",
+      "name": "Anilaza",
+      "db": null
+    },
+    {
+      "id": "1029571",
+      "name": "Vegeta",
+      "db": null
+    },
+    {
+      "id": "1029591",
+      "name": "Kiwi",
+      "db": null
+    },
+    {
+      "id": "1029621",
+      "name": "Videl",
+      "db": null
+    },
+    {
+      "id": "1029641",
+      "name": "Paragus",
+      "db": null
+    },
+    {
+      "id": "1029671",
+      "name": "Trunks Super Saiyan (petit)",
+      "db": null
+    },
+    {
+      "id": "1029701",
+      "name": "Son Gohan (petit)/Piccolo",
+      "db": null
+    },
+    {
+      "id": "1029731",
+      "name": "Slug",
+      "db": null
+    },
+    {
+      "id": "1029751",
+      "name": "Anguila & Medamatcha",
+      "db": null
+    },
+    {
+      "id": "1029771",
+      "name": "Piccolo/Vegeta Super Saiyan",
+      "db": null
+    },
+    {
+      "id": "1029831",
+      "name": "Bardock Super Saiyan",
+      "db": null
+    },
+    {
+      "id": "1029851",
+      "name": "Freezer (forme finale)/Cooler (forme finale)",
+      "db": null
+    },
+    {
+      "id": "1029891",
+      "name": "Fû (enfant) (Dogidogi absorbé)",
+      "db": null
+    },
+    {
+      "id": "1029911",
+      "name": "Aeos",
+      "db": null
+    },
+    {
+      "id": "1029931",
+      "name": "Demigra roi sombre (pouvoir temporel libéré)",
+      "db": null
+    },
+    {
+      "id": "1029951",
+      "name": "Son Goku Super Saiyan divin SS (Énergie de l'arbre universel)",
+      "db": null
+    },
+    {
+      "id": "1029981",
+      "name": "Boo (Son Gohan ultime)",
+      "db": null
+    },
+    {
+      "id": "1030021",
+      "name": "Gotenks Super Saiyan 3",
+      "db": null
+    },
+    {
+      "id": "1030041",
+      "name": "Piccolo & Son Gohan (petit)",
+      "db": null
+    },
+    {
+      "id": "1030061",
+      "name": "Krillin",
+      "db": null
+    },
+    {
+      "id": "1030081",
+      "name": "Yamcha",
+      "db": null
+    },
+    {
+      "id": "1030101",
+      "name": "Tenshinhan",
+      "db": null
+    },
+    {
+      "id": "1030121",
+      "name": "Chaozu",
+      "db": null
+    },
+    {
+      "id": "1030141",
+      "name": "Combattant vêtu de noir (Super Saiyan) \n(renforcé par les boules de cristal sombres)",
+      "db": null
+    },
+    {
+      "id": "1030181",
+      "name": "Grand Kaïo Shin",
+      "db": null
+    },
+    {
+      "id": "1030211",
+      "name": "Son Goten (petit) & Hire Dragon Jr",
+      "db": null
+    },
+    {
+      "id": "1030221",
+      "name": "Son Gohan (petit)",
+      "db": null
+    },
+    {
+      "id": "1030311",
+      "name": "Krillin (enfant)",
+      "db": null
+    },
+    {
+      "id": "1030341",
+      "name": "Son Goku Super Saiyan 3 (GT) (gorille doré)",
+      "db": null
+    },
+    {
+      "id": "1030391",
+      "name": "Son Gohan Super Saiyan 2 (enfant)",
+      "db": null
+    },
+    {
+      "id": "1030431",
+      "name": "Son Goku Super Saiyan + Vegeta Super Saiyan (ange)",
+      "db": null
+    },
+    {
+      "id": "1030481",
+      "name": "Vegeta Super Saiyan (ange) + Son Goku Super Saiyan (ange)",
+      "db": null
+    },
+    {
+      "id": "1030531",
+      "name": "Freezer (forme finale) (ange) + Son Goku",
+      "db": null
+    },
+    {
+      "id": "1030571",
+      "name": "Vegeta Super Saiyan divin SS évolué",
+      "db": null
+    },
+    {
+      "id": "1030611",
+      "name": "Trunks (petit) + Son Goten (petit)",
+      "db": null
+    },
+    {
+      "id": "1030641",
+      "name": "Glorio",
+      "db": null
+    },
+    {
+      "id": "1030661",
+      "name": "Son Goku Super Saiyan (Mini) (DAIMA)",
+      "db": null
+    },
+    {
+      "id": "1030731",
+      "name": "M. Satan",
+      "db": null
+    },
+    {
+      "id": "1030791",
+      "name": "Piccolo Daimaô (vieux)",
+      "db": null
+    },
+    {
+      "id": "1030831",
+      "name": "Beerus",
+      "db": null
+    },
+    {
+      "id": "1030921",
+      "name": "C-18",
+      "db": null
+    },
+    {
+      "id": "1030941",
+      "name": "Cell (forme parfaite)",
+      "db": null
+    },
+    {
+      "id": "1030971",
+      "name": "Paikuhan",
+      "db": null
+    },
+    {
+      "id": "1031021",
+      "name": "Piccolo",
+      "db": null
+    },
+    {
+      "id": "1031041",
+      "name": "Magetta",
+      "db": null
+    },
+    {
+      "id": "1031061",
+      "name": "Vegeta Super Saiyan 3 (Mini) (DAIMA)",
+      "db": null
+    },
+    {
+      "id": "1031081",
+      "name": "Son Goku (enfant)",
+      "db": null
+    },
+    {
+      "id": "1031101",
+      "name": "Chichi (enfant)",
+      "db": null
+    },
+    {
+      "id": "1031121",
+      "name": "Hit",
+      "db": null
+    },
+    {
+      "id": "1031181",
+      "name": "Son Goku Super Saiyan divin SS (Kaioken)",
+      "db": null
+    },
+    {
+      "id": "1031221",
+      "name": "Caulifla Super Saiyan 2 + Kale Super Saiyan 2",
+      "db": null
+    },
+    {
+      "id": "1031281",
+      "name": "Tenshinhan",
+      "db": null
+    },
+    {
+      "id": "1031301",
+      "name": "Tao Pai Pai",
+      "db": null
+    },
+    {
+      "id": "1031341",
+      "name": "Commandant Blue",
+      "db": null
+    },
+    {
+      "id": "1031361",
+      "name": "Chaozu",
+      "db": null
+    },
+    {
+      "id": "1031391",
+      "name": "Son Goku Super Saiyan divin SS + Vegeta Super Saiyan divin SS",
+      "db": null
+    },
+    {
+      "id": "1031431",
+      "name": "Goku Black (Super Saiyan Rosé) + Zamasu",
+      "db": null
+    },
+    {
+      "id": "1031471",
+      "name": "Gogeta Super Saiyan 4",
+      "db": null
+    },
+    {
+      "id": "1031501",
+      "name": "Oméga Shenron",
+      "db": null
+    },
+    {
+      "id": "1031521",
+      "name": "Champa",
+      "db": null
+    },
+    {
+      "id": "1031541",
+      "name": "Pan (GT)",
+      "db": null
+    },
+    {
+      "id": "1031591",
+      "name": "Son Gohan Super Saiyan (jeune) + Trunks Super \nSaiyan (petit) & Son Goten Super Saiyan (petit)",
+      "db": null
+    },
+    {
+      "id": "1031621",
+      "name": "Spopovitch",
+      "db": null
+    },
+    {
+      "id": "1031641",
+      "name": "Lanfan",
+      "db": null
+    },
+    {
+      "id": "1031691",
+      "name": "Videl",
+      "db": null
+    },
+    {
+      "id": "1031721",
+      "name": "Golden Freezer + Gogeta",
+      "db": null
+    },
+    {
+      "id": "1031751",
+      "name": "Vegeta",
+      "db": null
+    },
+    {
+      "id": "1031761",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [AGI]",
+      "db": null
+    },
+    {
+      "id": "1031771",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [AGI]",
+      "db": null
+    },
+    {
+      "id": "1031781",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [TEC]",
+      "db": null
+    },
+    {
+      "id": "1031791",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [INT]",
+      "db": null
+    },
+    {
+      "id": "1031801",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [PUI]",
+      "db": null
+    },
+    {
+      "id": "1031811",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [END]",
+      "db": null
+    },
+    {
+      "id": "1031821",
+      "name": "Suu Shenron",
+      "db": null
+    },
+    {
+      "id": "1031921",
+      "name": "Broly (furieux) ",
+      "db": null
+    },
+    {
+      "id": "1031961",
+      "name": "Super Baby 1",
+      "db": null
+    },
+    {
+      "id": "1032011",
+      "name": "Son Gohan SS possédé (GT) & Son Goten SS possédé (GT)",
+      "db": null
+    },
+    {
+      "id": "1032051",
+      "name": "Trunks possédé (GT)",
+      "db": null
+    },
+    {
+      "id": "1032071",
+      "name": "C-16",
+      "db": null
+    },
+    {
+      "id": "1032091",
+      "name": "C-17",
+      "db": null
+    },
+    {
+      "id": "1032121",
+      "name": "Son Gohan Super Saiyan (futur)/\nTrunks Super Saiyan (enfant) (futur)",
+      "db": null
+    },
+    {
+      "id": "1032161",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [TEC]",
+      "db": null
+    },
+    {
+      "id": "1032171",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [INT]",
+      "db": null
+    },
+    {
+      "id": "1032181",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [PUI]",
+      "db": null
+    },
+    {
+      "id": "1032191",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [END]",
+      "db": null
+    },
+    {
+      "id": "1032241",
+      "name": "Yamcha (ange) & Princesse Hébi",
+      "db": null
+    },
+    {
+      "id": "1032261",
+      "name": "Son Goku Super Saiyan 4 (Mini) (DAIMA)",
+      "db": null
+    },
+    {
+      "id": "1032281",
+      "name": "Piccolo (Mini) (DAIMA)",
+      "db": null
+    },
+    {
+      "id": "1032311",
+      "name": "Gomah - Troisième Œil",
+      "db": null
+    },
+    {
+      "id": "1032331",
+      "name": "Gamma 2 + Piccolo (éveil de puissance)",
+      "db": null
+    },
+    {
+      "id": "1032361",
+      "name": "Son Gohan ultime + Gamma 1",
+      "db": null
+    },
+    {
+      "id": "1032391",
+      "name": "Majin masqué (Panzy)",
+      "db": null
+    },
+    {
+      "id": "1032411",
+      "name": "Kaïo Shin (Mini) (DAIMA)",
+      "db": null
+    },
+    {
+      "id": "1032431",
+      "name": "Glorio",
+      "db": null
+    },
+    {
+      "id": "1032461",
+      "name": "Super Garlic Jr.",
+      "db": null
+    },
+    {
+      "id": "1032551",
+      "name": "Son Goku Super Saiyan 4 (DAIMA)",
+      "db": null
+    },
+    {
+      "id": "1032581",
+      "name": "Vegeta Super Saiyan 3 (DAIMA)",
+      "db": null
+    },
+    {
+      "id": "1032611",
+      "name": "Son Goku",
+      "db": null
+    },
+    {
+      "id": "1032621",
+      "name": "Vegeta",
+      "db": null
+    },
+    {
+      "id": "1032631",
+      "name": "Piccolo Junior (forme géante)",
+      "db": null
+    },
+    {
+      "id": "1032641",
+      "name": "Freezer (forme finale)",
+      "db": null
+    },
+    {
+      "id": "1032651",
+      "name": "Son Gohan Super Saiyan 2 (enfant)",
+      "db": null
+    },
+    {
+      "id": "1032661",
+      "name": "Boo",
+      "db": null
+    },
+    {
+      "id": "1032691",
+      "name": "Majin Duu",
+      "db": null
+    },
+    {
+      "id": "1032711",
+      "name": "Lude",
+      "db": null
+    },
+    {
+      "id": "1032731",
+      "name": "Tamagami Numéro Deux",
+      "db": null
+    },
+    {
+      "id": "1032741",
+      "name": "Tamagami Numéro Trois",
+      "db": null
+    },
+    {
+      "id": "1032811",
+      "name": "Tamagami Numéro Un",
+      "db": null
+    },
+    {
+      "id": "1032851",
+      "name": "Majin Kuu",
+      "db": null
+    },
+    {
+      "id": "1032881",
+      "name": "Vegeta Super Saiyan 4 + Son Goku Super Saiyan 4",
+      "db": null
+    },
+    {
+      "id": "1032921",
+      "name": "Son Goku (Signes de l'Ultra Instinct) + Vegeta Super Saiyan divin SS évolué",
+      "db": null
+    },
+    {
+      "id": "1032961",
+      "name": "Lezick",
+      "db": null
+    },
+    {
+      "id": "1032981",
+      "name": "Yakon",
+      "db": null
+    },
+    {
+      "id": "1033011",
+      "name": "Dabra",
+      "db": null
+    },
+    {
+      "id": "1033031",
+      "name": "Puipui",
+      "db": null
+    },
+    {
+      "id": "1033061",
+      "name": "Majin Vegeta + Son Goku Super Saiyan 2 (ange)",
+      "db": null
+    },
+    {
+      "id": "1033551",
+      "name": "Vegeta + Nappa",
+      "db": null
+    },
+    {
+      "id": "1033591",
+      "name": "Vegeta Super Saiyan divin (Ultra Super méchant)",
+      "db": null
+    },
+    {
+      "id": "1033621",
+      "name": "Trunks (Xeno)",
+      "db": null
+    },
+    {
+      "id": "1033641",
+      "name": "Towa & Mira",
+      "db": null
+    },
+    {
+      "id": "1033661",
+      "name": "Jiren (pleine puissance) (Ultra Super méchant)",
+      "db": null
+    },
+    {
+      "id": "1033701",
+      "name": "Saibaiman",
+      "db": null
+    },
+    {
+      "id": "1033721",
+      "name": "Chaozu",
+      "db": null
+    },
+    {
+      "id": "1033761",
+      "name": "Piccolo",
+      "db": null
+    },
+    {
+      "id": "1033821",
+      "name": "Son Goku Super Saiyan divin",
+      "db": null
+    },
+    {
+      "id": "1033841",
+      "name": "Armée de Métal Cooler",
+      "db": null
+    },
+    {
+      "id": "1033871",
+      "name": "Roi Cold",
+      "db": null
+    },
+    {
+      "id": "1033941",
+      "name": "Thalès",
+      "db": null
+    },
+    {
+      "id": "1033971",
+      "name": "Freezer (forme finale)",
+      "db": null
+    },
+    {
+      "id": "1034001",
+      "name": "Freezer (2e forme)",
+      "db": null
+    },
+    {
+      "id": "1034031",
+      "name": "Son Goku Super Saiyan",
+      "db": null
+    },
+    {
+      "id": "1034071",
+      "name": "Son Gohan Super Saiyan (enfant)",
+      "db": null
+    },
+    {
+      "id": "1034091",
+      "name": "Trunks Super Saiyan (futur)",
+      "db": null
+    },
+    {
+      "id": "1034121",
+      "name": "Cell Parfait",
+      "db": null
+    },
+    {
+      "id": "1034221",
+      "name": "Beerus",
+      "db": null
+    },
+    {
+      "id": "1034241",
+      "name": "Piccolo (Armée du Ruban Rouge)",
+      "db": null
+    },
+    {
+      "id": "1034301",
+      "name": "Son Goku Super Saiyan 3 (Mini) (DAIMA)",
+      "db": null
+    },
+    {
+      "id": "1034341",
+      "name": "Son Gohan (Beast)",
+      "db": null
+    },
+    {
+      "id": "1034381",
+      "name": "Cell Max",
+      "db": null
+    },
+    {
+      "id": "1034391",
+      "name": "Saibaiman",
+      "db": null
+    },
+    {
+      "id": "1034411",
+      "name": "Panzy",
+      "db": null
+    },
+    {
+      "id": "1034431",
+      "name": "Dr Arinsu",
+      "db": null
+    },
+    {
+      "id": "1034461",
+      "name": "Son Goku Super Saiyan divin",
+      "db": null
+    },
+    {
+      "id": "1034481",
+      "name": "Son Goku Super Saiyan 3 (ange)",
+      "db": null
+    },
+    {
+      "id": "1034611",
+      "name": "Cell Junior (AGI)",
+      "db": null
+    },
+    {
+      "id": "1034621",
+      "name": "Cell Junior (TEC)",
+      "db": null
+    },
+    {
+      "id": "1034631",
+      "name": "Cell Junior (INT)",
+      "db": null
+    },
+    {
+      "id": "1034641",
+      "name": "Cell Junior (PUI)",
+      "db": null
+    },
+    {
+      "id": "1034651",
+      "name": "Cell Junior (END)",
+      "db": null
+    },
+    {
+      "id": "1034661",
+      "name": "Jeese + Butta",
+      "db": null
+    },
+    {
+      "id": "1034691",
+      "name": "Ginyu (Son Goku)",
+      "db": null
+    },
+    {
+      "id": "1034701",
+      "name": "Reacum + Guldo",
+      "db": null
+    }
+  ]
+}

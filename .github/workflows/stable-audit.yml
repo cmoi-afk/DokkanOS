@@ -61,6 +61,18 @@ jobs:
               Path("image-gaps-audit.txt").write_text("\n".join(f"{a}\t{b}" for a,b in missing),encoding="utf-8")
           print("couverture exacte à réparer",len(missing))
           PY
+      - name: UI source invariants
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          s=Path("app.js").read_text(encoding="utf-8")
+          assert "function frCardName" in s
+          assert "function frTerm" in s
+          assert "function cardImageCandidates" in s
+          assert "return cardId;" in s, "unsafe implicit awakening resource alias may have returned"
+          assert "cardId.slice(0,-1)+'0'" not in s, "unsafe ...1 -> ...0 image alias detected"
+          print("French/image runtime invariants OK")
+          PY
       - name: Required PWA files
         run: |
           test -f assets/icon-192.png

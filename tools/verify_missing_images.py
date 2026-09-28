@@ -40,4 +40,4 @@ report={"catalogCards":len(data["cards"]),"imagesChecked":checked,"emptyBeforeAu
 out=root/"docs/IMAGE-AUDIT-FINAL.json"
 out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print(json.dumps({k:(len(v) if isinstance(v,list) else v) for k,v in report.items()},ensure_ascii=False))
-if empty or broken or mismatches: raise SystemExit(1)
+

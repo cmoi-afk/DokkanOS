@@ -360,7 +360,13 @@ const FR_NAME_FIXES=[
  [/Goten \(Kid\)/g,'Son Goten (petit)'],[/Trunks \(Kid\)/g,'Trunks (petit)'],[/Bulma \(Youth\)/g,'Bulma (enfant)'],[/Pan \(Kid\)/g,'Pan (petit)'],
  [/\bGoku\b/g,'Son Goku'],[/\bBuu\b/g,'Boo'],[/\(Angel\)/g,'(ange)'],[/\(Future\)/g,'(futur)']
 ];
-function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);return s}
+const FR_FORM_FIXES=[
+ [/\\(Elder\\)/gi,'(vieux)'],[/\\(Teen\\)/gi,'(jeune)'],[/\\(Youth\\)/gi,'(jeune)'],[/\\(Kid\\)/gi,'(petit)'],
+ [/\\(Future\\)/gi,'(futur)'],[/\\(Angel\\)/gi,'(ange)'],[/\\(1st Form\\)/gi,'(1re forme)'],[/\\(2nd Form\\)/gi,'(2e forme)'],
+ [/\\(3rd Form\\)/gi,'(3e forme)'],[/\\(Final Form\\)/gi,'(forme finale)'],[/\\(Perfect Form\\)/gi,'(forme parfaite)'],
+ [/Power Awakening/gi,'éveil de puissance'],[/Full Power/gi,'pleine puissance'],[/Legendary Super Saiyan/gi,'Super Saiyan Légendaire']
+];
+function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);for(const [re,to] of FR_FORM_FIXES)s=s.replace(re,to);return s}
 function cardImageCandidates(id,preferred){id=String(id||'');let rid=localAssetIdFor(id);return [...new Set([id&&('assets/cards/'+id+'.webp'),rid&&('assets/cards/'+rid+'.webp'),preferred].filter(Boolean))]}
 function imageFallback(el,id,preferred){let a=cardImageCandidates(id,preferred),n=Number(el.dataset.fallback||0)+1;el.dataset.fallback=String(n);if(n<a.length){el.src=a[n]}else{el.classList.add('imgfail');reportBrokenImage(id)}}
 function imageAuditSummary(){try{return JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]')}catch(e){return []}}

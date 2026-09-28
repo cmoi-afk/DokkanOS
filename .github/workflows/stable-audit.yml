@@ -83,7 +83,8 @@ jobs:
             "1031761":"1031760",
             "1030131":"1030130",
             "1025561":"1025560",
-            "2000021":"2000020"
+            "2000021":"2000020",
+            "1033990":"1034000"
           }
           # Conserver ces validations comme ancres seulement : aucune généralisation.
           # Une relation officielle peut être confirmée alors que le fichier local reste à importer.

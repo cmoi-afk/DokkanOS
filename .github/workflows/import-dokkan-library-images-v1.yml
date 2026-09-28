@@ -1,0 +1,40 @@
+name: Import final images from DokkanBattleLibrary
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/import_dokkan_library_images_v1.py"
+      - ".github/workflows/import-dokkan-library-images-v1.yml"
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download thumbnail database
+        run: |
+          python - <<'PY'
+          import urllib.request
+          u='https://drive.usercontent.google.com/download?id=1S2PKE_XEqhTnccEcyJL8YDt5keTpjn44&export=download&confirm=t'
+          req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0'})
+          with urllib.request.urlopen(req,timeout=120) as r, open('/tmp/dokkan-images.zip','wb') as f:
+            while True:
+              b=r.read(1024*1024)
+              if not b: break
+              f.write(b)
+          PY
+          mkdir -p /tmp/dokkan-images
+          unzip -q /tmp/dokkan-images.zip -d /tmp/dokkan-images
+      - name: Import exact card IDs
+        env:
+          THUMB_DIR: /tmp/dokkan-images
+        run: python tools/import_dokkan_library_images_v1.py
+      - name: Commit recovered images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards catalog-v1.draft.json docs/IMAGE-MIGRATION-v1-LIBRARY.json
+          git commit -m "Import exact-ID thumbnails for remaining catalogue v1 cards" || exit 0
+          git push

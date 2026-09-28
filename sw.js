@@ -1,4 +1,4 @@
-const VERSION='0.9.10-fr-verified';
+const VERSION='0.9.11-stable';
 const CACHE='dokkanos-v'+VERSION;
 const CORE=['./','./index.html','./style.css','./app.js','./data.json','./collection.json','./overlap-map.json','./overlap-conflicts.json','./card-meta.json','./catalog.json','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));

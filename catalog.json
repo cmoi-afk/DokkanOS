@@ -3890,7 +3890,7 @@
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
       },
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003640_thumb/card_1003640_thumb.png",
+      "image": "assets/cards/1004631.png",
       "imageSource": "https://www.dbz-dokkanbattle.com/card/1004631",
       "imageMatch": "miniature affichée pour l'ID exact (asset 1003640)"
     },
@@ -15563,7 +15563,7 @@
       "rarity": "UR",
       "type": "PUI",
       "class": "Super",
-      "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/6/63/Card_1013760_thumb.png/revision/latest?cb=20180816223910",
+      "image": "assets/cards/1013760.png",
       "legacyId": "1011376",
       "source": {
         "provider": "feijoes/DokkanAPI",
@@ -18040,7 +18040,7 @@
       "rarity": "UR",
       "type": "TEC",
       "class": "Super",
-      "image": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/a/ad/Card_1015200_thumb.png/revision/latest?cb=20190115230549",
+      "image": "assets/cards/1015200.png",
       "legacyId": "1011520",
       "source": {
         "provider": "feijoes/DokkanAPI",
@@ -18810,7 +18810,7 @@
       "rarity": "SSR",
       "type": "TEC",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015680_thumb/card_1015680_thumb.png",
+      "image": "assets/cards/1015691.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://dbz-dokkanbattle.com/card/1015691",
@@ -18832,7 +18832,7 @@
       "rarity": "SSR",
       "type": "INT",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015680_thumb/card_1015680_thumb.png",
+      "image": "assets/cards/1015701.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://dbz-dokkanbattle.com/card/1015701",
@@ -18864,7 +18864,7 @@
         "url": "https://github.com/okfaygo/dokkan-translation/blob/main/android/app/src/main/assets/index.json",
         "match": "exact card ID from DokkanInfo index"
       },
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015680_thumb/card_1015680_thumb.png",
+      "image": "assets/cards/1015711.png",
       "imageSource": "https://www.dbz-dokkanbattle.com/card/1015711",
       "imageMatch": "miniature affichée pour l'ID exact (asset 1015680)"
     },
@@ -19035,7 +19035,7 @@
       "rarity": "SSR",
       "type": "END",
       "class": "Super",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015830_thumb/card_1015830_thumb.png",
+      "image": "assets/cards/1015830.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/1015830",
@@ -43138,7 +43138,7 @@
       "rarity": "SSR",
       "type": "PUI",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000780_thumb/card_2000780_thumb.png",
+      "image": "assets/cards/2000780.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/2000780",
@@ -43158,7 +43158,7 @@
       "rarity": "SSR",
       "type": "INT",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000790_thumb/card_2000790_thumb.png",
+      "image": "assets/cards/2000790.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/2000790",
@@ -43178,7 +43178,7 @@
       "rarity": "SSR",
       "type": "PUI",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000800_thumb/card_2000800_thumb.png",
+      "image": "assets/cards/2000800.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/2000800",
@@ -43198,7 +43198,7 @@
       "rarity": "SSR",
       "type": "TEC",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000810_thumb/card_2000810_thumb.png",
+      "image": "assets/cards/2000810.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/2000810",
@@ -43218,7 +43218,7 @@
       "rarity": "SSR",
       "type": "TEC",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000820_thumb/card_2000820_thumb.png",
+      "image": "assets/cards/2000820.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/2000820",
@@ -43238,7 +43238,7 @@
       "rarity": "SSR",
       "type": "AGI",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000830_thumb/card_2000830_thumb.png",
+      "image": "assets/cards/2000830.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/2000830",
@@ -43258,7 +43258,7 @@
       "rarity": "SSR",
       "type": "INT",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000840_thumb/card_2000840_thumb.png",
+      "image": "assets/cards/2000840.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/2000840",
@@ -43278,7 +43278,7 @@
       "rarity": "SSR",
       "type": "AGI",
       "class": "Extrême",
-      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_2000850_thumb/card_2000850_thumb.png",
+      "image": "assets/cards/2000850.png",
       "source": {
         "provider": "DBZ Dokkan Battle France",
         "url": "https://www.dbz-dokkanbattle.com/card/2000850",

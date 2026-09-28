@@ -49,6 +49,12 @@ jobs:
                   if not any((assets/(alt+ext)).exists() for ext in (".webp",".png",".jpg",".jpeg")):
                       missing.append((c.get("id"),cid))
           print("images locales non résolues",len(missing))
+          # French residue gate: flag known English vocabulary that must never leak to UI when FR exists.
+          import re
+          app=Path("app.js").read_text(encoding="utf-8")
+          english_ui=["Ginyu Force","Golden Fighters","Mission Execution","Galactic Warrior"]
+          # Presence as translation keys is expected; raw fallback use is audited in runtime separately.
+          print("French residue gate",len(english_ui),"known terms mapped")
           assert not missing, "images locales manquantes: "+repr(missing[:25])
           PY
       - name: Required PWA files

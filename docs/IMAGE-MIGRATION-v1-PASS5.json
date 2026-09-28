@@ -1,0 +1,1934 @@
+{
+  "shards": 8,
+  "cards": 241,
+  "items": [
+    {
+      "id": "1002241",
+      "name": "Son Goku (enfant)",
+      "rarity": "SSR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1020891",
+      "name": "Majin Salsa",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026251",
+      "name": "Son Goku Super Saiyan divin",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026791",
+      "name": "Daïzu & Cacao",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027371",
+      "name": "Mai (futur)",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027711",
+      "name": "Vegetto Super Saiyan 4 ultra puissance max - Limites brisées (Xeno)",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027941",
+      "name": "Oolong & Lunch",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028371",
+      "name": "Gamma 1 & Gamma 2/Gamma 1",
+      "rarity": "LR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028681",
+      "name": "Toppo",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028961",
+      "name": "Cell Max",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029201",
+      "name": "Mai",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029471",
+      "name": "Son Gohan Super Saiyan (jeune)",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029731",
+      "name": "Slug",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029951",
+      "name": "Son Goku Super Saiyan divin SS (Énergie de l'arbre universel)",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030141",
+      "name": "Combattant vêtu de noir (Super Saiyan) \n(renforcé par les boules de cristal sombres)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030481",
+      "name": "Vegeta Super Saiyan (ange) + Son Goku Super Saiyan (ange)",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030831",
+      "name": "Beerus",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031101",
+      "name": "Chichi (enfant)",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031391",
+      "name": "Son Goku Super Saiyan divin SS + Vegeta Super Saiyan divin SS",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031641",
+      "name": "Lanfan",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031801",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [PUI]",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032091",
+      "name": "C-17",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032281",
+      "name": "Piccolo (Mini) (DAIMA)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032551",
+      "name": "Son Goku Super Saiyan 4 (DAIMA)",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "Bataille totale",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032691",
+      "name": "Majin Duu",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032961",
+      "name": "Lezick",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "Noble code du combat",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033641",
+      "name": "Towa & Mira",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "Les envahisseurs de l'Histoire",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033941",
+      "name": "Thalès",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "L'arbre sacré suprême",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034241",
+      "name": "Piccolo (Armée du Ruban Rouge)",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "Une mission solitaire",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034481",
+      "name": "Son Goku Super Saiyan 3 (ange)",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "Une grande bataille dont le temps est compté",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034701",
+      "name": "Reacum + Guldo",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "Commando spécial aux techniques variées",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1003991",
+      "name": "Son Goku Super Saiyan",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1021101",
+      "name": "Son Gohan (grand-père) & Pan (GT)",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026281",
+      "name": "Vegeta Super Saiyan",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026871",
+      "name": "Baby",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027431",
+      "name": "C-17 et C-18",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027731",
+      "name": "Broly Super Saiyan 4 ultra puissance max - Limites brisées",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027981",
+      "name": "Gogeta Super Saiyan",
+      "rarity": "LR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028471",
+      "name": "Krillin & C-18",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028721",
+      "name": "Ginyu (commando)",
+      "rarity": "LR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029021",
+      "name": "Dyspo",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029271",
+      "name": "Bio Broly",
+      "rarity": "LR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029551",
+      "name": "Anilaza",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029751",
+      "name": "Anguila & Medamatcha",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029981",
+      "name": "Boo (Son Gohan ultime)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030181",
+      "name": "Grand Kaïo Shin",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030531",
+      "name": "Freezer (forme finale) (ange) + Son Goku",
+      "rarity": "LR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030921",
+      "name": "C-18",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031121",
+      "name": "Hit",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031431",
+      "name": "Goku Black (Super Saiyan Rosé) + Zamasu",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031691",
+      "name": "Videl",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031811",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [END]",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032121",
+      "name": "Son Gohan Super Saiyan (futur)/\nTrunks Super Saiyan (enfant) (futur)",
+      "rarity": "LR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032311",
+      "name": "Gomah - Troisième Œil",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032581",
+      "name": "Vegeta Super Saiyan 3 (DAIMA)",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "Apogée époustouflant",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032711",
+      "name": "Lude",
+      "rarity": "LR",
+      "type": "INT",
+      "title": "Dieu de la destruction du culte de Lude",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032981",
+      "name": "Yakon",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "Attaque venue des ténèbres",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033661",
+      "name": "Jiren (pleine puissance) (Ultra Super méchant)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "Lutte entre le bien et le mal",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033971",
+      "name": "Freezer (forme finale)",
+      "rarity": "LR",
+      "type": "END",
+      "title": "Puissance maléfique du vrai souverain",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034301",
+      "name": "Son Goku Super Saiyan 3 (Mini) (DAIMA)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "Assaut héroïque pour guider les alliés",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034611",
+      "name": "Cell Junior (AGI)",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "Clone ultra-dangereux",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1008601",
+      "name": "Goku Black",
+      "rarity": "SSR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1021311",
+      "name": "Tenshinhan",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026311",
+      "name": "Bulma (enfant)",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026901",
+      "name": "Son Goku Super Saiyan 4",
+      "rarity": "LR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027461",
+      "name": "Ribrianne & Kakunsa & Rosie",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027781",
+      "name": "Vegeta Super Saiyan divin SS (Berserker contrôlé)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028021",
+      "name": "Broly Super Saiyan",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028491",
+      "name": "Vegeta",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028761",
+      "name": "Catopesra",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029051",
+      "name": "Son Goku (Signes de l'Ultra Instinct)",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029281",
+      "name": "Saonel & Pilina",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029571",
+      "name": "Vegeta",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029771",
+      "name": "Piccolo/Vegeta Super Saiyan",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030021",
+      "name": "Gotenks Super Saiyan 3",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030211",
+      "name": "Son Goten (petit) & Hire Dragon Jr",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030571",
+      "name": "Vegeta Super Saiyan divin SS évolué",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030941",
+      "name": "Cell (forme parfaite)",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031181",
+      "name": "Son Goku Super Saiyan divin SS (Kaioken)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031471",
+      "name": "Gogeta Super Saiyan 4",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031721",
+      "name": "Golden Freezer + Gogeta",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031821",
+      "name": "Suu Shenron",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032161",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [TEC]",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032331",
+      "name": "Gamma 2 + Piccolo (éveil de puissance)",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032611",
+      "name": "Son Goku",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032731",
+      "name": "Tamagami Numéro Deux",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033011",
+      "name": "Dabra",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "Bataille pour la résurrection du Majin",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033701",
+      "name": "Saibaiman",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "Force de combat non négligeable",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034001",
+      "name": "Freezer (2e forme)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "Coup dévastateur qui plonge en enfer",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034341",
+      "name": "Son Gohan (Beast)",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "Terrifiante lueur du coup de grâce",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034621",
+      "name": "Cell Junior (TEC)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "Clone ultra-dangereux",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1010041",
+      "name": "Freezer (1re forme)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1025771",
+      "name": "Son Goku (GT) & Vegeta Super Saiyan 4",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026511",
+      "name": "Frost (forme finale)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027041",
+      "name": "Oméga Shenron",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027471",
+      "name": "Cell (forme parfaite) (GT) & \nFreezer (forme finale) (GT)",
+      "rarity": "LR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027801",
+      "name": "Towa",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028061",
+      "name": "Son Goku Super Saiyan & Vegeta Super Saiyan & \nTrunks Super Saiyan (jeune)",
+      "rarity": "LR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028521",
+      "name": "Roi Vegeta",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028811",
+      "name": "Boo",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029091",
+      "name": "Jiren",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029291",
+      "name": "Champa",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029591",
+      "name": "Kiwi",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029831",
+      "name": "Bardock Super Saiyan",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030041",
+      "name": "Piccolo & Son Gohan (petit)",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030221",
+      "name": "Son Gohan (petit)",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030611",
+      "name": "Trunks (petit) + Son Goten (petit)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030971",
+      "name": "Paikuhan",
+      "rarity": "LR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031221",
+      "name": "Caulifla Super Saiyan 2 + Kale Super Saiyan 2",
+      "rarity": "LR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031501",
+      "name": "Oméga Shenron",
+      "rarity": "LR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031751",
+      "name": "Vegeta",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031921",
+      "name": "Broly (furieux) ",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032171",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [INT]",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032361",
+      "name": "Son Gohan ultime + Gamma 1",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "Lutter ensemble pour la justice",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032621",
+      "name": "Vegeta",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032741",
+      "name": "Tamagami Numéro Trois",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033031",
+      "name": "Puipui",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033721",
+      "name": "Chaozu",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "Renforcement de la force mentale",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034031",
+      "name": "Son Goku Super Saiyan",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "Surpuissance du combattant en colère",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034381",
+      "name": "Cell Max",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "Calamité qui fait trembler le monde",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034631",
+      "name": "Cell Junior (INT)",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "Clone ultra-dangereux",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1013711",
+      "name": "Slug (forme géante)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026131",
+      "name": "Son Gohan (petit)",
+      "rarity": "LR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026581",
+      "name": "Krillin",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027121",
+      "name": "Son Goku Super Saiyan divin SS \n& Vegeta Super Saiyan divin SS",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027501",
+      "name": "Zirloin & Rabanra & Zabuto",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027841",
+      "name": "C-17",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028161",
+      "name": "Hildegarn",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028551",
+      "name": "Beerus (chemise de nuit)",
+      "rarity": "LR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028831",
+      "name": "Gotenks",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029121",
+      "name": "Hit",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029331",
+      "name": "Devilman",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029621",
+      "name": "Videl",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029851",
+      "name": "Freezer (forme finale)/Cooler (forme finale)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030061",
+      "name": "Krillin",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030311",
+      "name": "Krillin (enfant)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "Un combat acharné de niveau surhumain",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030641",
+      "name": "Glorio",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031021",
+      "name": "Piccolo",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031281",
+      "name": "Tenshinhan",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031521",
+      "name": "Champa",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031761",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [AGI]",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031961",
+      "name": "Super Baby 1",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032181",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [PUI]",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032391",
+      "name": "Majin masqué (Panzy)",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032631",
+      "name": "Piccolo Junior (forme géante)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032811",
+      "name": "Tamagami Numéro Un",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "La tranche du gardien",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033061",
+      "name": "Majin Vegeta + Son Goku Super Saiyan 2 (ange)",
+      "rarity": "LR",
+      "type": "END",
+      "title": "Affrontement fatidique",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033761",
+      "name": "Piccolo",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "Une percée dans une situation difficile",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034071",
+      "name": "Son Gohan Super Saiyan (enfant)",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "Déchaînement d'une puissance colossale",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034391",
+      "name": "Saibaiman",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "Soldats qui se multiplient",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034641",
+      "name": "Cell Junior (PUI)",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "Clone ultra-dangereux",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1014331",
+      "name": "Freezer (forme finale) (GT)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026161",
+      "name": "Son Goku",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026611",
+      "name": "Bulma (enfant)",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027181",
+      "name": "Mamba",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027511",
+      "name": "C-18 (GT)",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027851",
+      "name": "C-18",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028201",
+      "name": "Yamcha",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028571",
+      "name": "Freezer (1re forme)",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028851",
+      "name": "Boo (mal incarné)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029141",
+      "name": "Kamesennin",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029361",
+      "name": "Son Goku Super Saiyan & Son Gohan Super Saiyan (enfant) & \nTrunks Super Saiyan (jeune)",
+      "rarity": "LR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029641",
+      "name": "Paragus",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029891",
+      "name": "Fû (enfant) (Dogidogi absorbé)",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030081",
+      "name": "Yamcha",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030341",
+      "name": "Son Goku Super Saiyan 3 (GT) (gorille doré)",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030661",
+      "name": "Son Goku Super Saiyan (Mini) (DAIMA)",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031041",
+      "name": "Magetta",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031301",
+      "name": "Tao Pai Pai",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031541",
+      "name": "Pan (GT)",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031771",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [AGI]",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032011",
+      "name": "Son Gohan SS possédé (GT) & Son Goten SS possédé (GT)",
+      "rarity": "LR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032191",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [END]",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032411",
+      "name": "Kaïo Shin (Mini) (DAIMA)",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "Analyse sereine et capacité d'exécution",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032641",
+      "name": "Freezer (forme finale)",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032851",
+      "name": "Majin Kuu",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033551",
+      "name": "Vegeta + Nappa",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033821",
+      "name": "Son Goku Super Saiyan divin",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "Une bataille épique au niveau divin",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034091",
+      "name": "Trunks Super Saiyan (futur)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "Opportunité de se régénérer",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034411",
+      "name": "Panzy",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "Héroïne du voyage dans le Royaume des démons",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034651",
+      "name": "Cell Junior (END)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "Clone ultra-dangereux",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1019201",
+      "name": "Toma",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026201",
+      "name": "C-17 & C-17 (Hell Fighter)",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026751",
+      "name": "Thalès",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027191",
+      "name": "Piccolo Junior",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027621",
+      "name": "Son Goku Super Saiyan 3",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027901",
+      "name": "Fû roi sombre",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028231",
+      "name": "Golden Freezer",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028591",
+      "name": "Dodoria",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028891",
+      "name": "Son Gohan ultime",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029161",
+      "name": "Bulma (lapin)",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029401",
+      "name": "Broly",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029671",
+      "name": "Trunks Super Saiyan (petit)",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029911",
+      "name": "Aeos",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030101",
+      "name": "Tenshinhan",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030391",
+      "name": "Son Gohan Super Saiyan 2 (enfant)",
+      "rarity": "LR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030731",
+      "name": "M. Satan",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031061",
+      "name": "Vegeta Super Saiyan 3 (Mini) (DAIMA)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031341",
+      "name": "Commandant Blue",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031591",
+      "name": "Son Gohan Super Saiyan (jeune) + Trunks Super \nSaiyan (petit) & Son Goten Super Saiyan (petit)",
+      "rarity": "LR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031781",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [TEC]",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032051",
+      "name": "Trunks possédé (GT)",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032241",
+      "name": "Yamcha (ange) & Princesse Hébi",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032431",
+      "name": "Glorio",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032651",
+      "name": "Son Gohan Super Saiyan 2 (enfant)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032881",
+      "name": "Vegeta Super Saiyan 4 + Son Goku Super Saiyan 4",
+      "rarity": "LR",
+      "type": "INT",
+      "title": "Ultime lutte contre les dragons maléfiques",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033591",
+      "name": "Vegeta Super Saiyan divin (Ultra Super méchant)",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033841",
+      "name": "Armée de Métal Cooler",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "Une armée qui recouvre la planète",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034121",
+      "name": "Cell Parfait",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "Maîtrise totale de la puissance",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034431",
+      "name": "Dr Arinsu",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "Ambitions tournées vers l'avenir dans le Royaume des démons",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034661",
+      "name": "Jeese + Butta",
+      "rarity": "UR",
+      "type": "END",
+      "title": "Commando spécial dévoilant des techniques de premier ordre",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1019371",
+      "name": "Boo (athlétique)",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026231",
+      "name": "Docteur Myuu & Dr. Gero",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1026771",
+      "name": "Amondo & Rezun",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027291",
+      "name": "Trunks Super Saiyan (futur)",
+      "rarity": "LR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027681",
+      "name": "C-21 (transformée, mauvaise)",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1027921",
+      "name": "Janemba (modifié)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028321",
+      "name": "Son Gohan (Beast)",
+      "rarity": "LR",
+      "type": "PUI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028601",
+      "name": "Freezer (1re forme)",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1028921",
+      "name": "Son Goku (enfant) & Krillin (enfant) \n& Bulma (enfant)",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029181",
+      "name": "Cocotte",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029441",
+      "name": "Broly Super Saiyan Légendaire",
+      "rarity": "LR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029701",
+      "name": "Son Gohan (petit)/Piccolo",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1029931",
+      "name": "Demigra roi sombre (pouvoir temporel libéré)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030121",
+      "name": "Chaozu",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030431",
+      "name": "Son Goku Super Saiyan + Vegeta Super Saiyan (ange)",
+      "rarity": "LR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1030791",
+      "name": "Piccolo Daimaô (vieux)",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031081",
+      "name": "Son Goku (enfant)",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031361",
+      "name": "Chaozu",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031621",
+      "name": "Spopovitch",
+      "rarity": "UR",
+      "type": "END",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1031791",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [INT]",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032071",
+      "name": "C-16",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032261",
+      "name": "Son Goku Super Saiyan 4 (Mini) (DAIMA)",
+      "rarity": "UR",
+      "type": "TEC",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032461",
+      "name": "Super Garlic Jr.",
+      "rarity": "LR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032661",
+      "name": "Boo",
+      "rarity": "UR",
+      "type": "AGI",
+      "title": "",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1032921",
+      "name": "Son Goku (Signes de l'Ultra Instinct) + Vegeta Super Saiyan divin SS évolué",
+      "rarity": "LR",
+      "type": "END",
+      "title": "Défi lancé à la force absolue",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033621",
+      "name": "Trunks (Xeno)",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "Recherche d'un être maléfique",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1033871",
+      "name": "Roi Cold",
+      "rarity": "UR",
+      "type": "END",
+      "title": "Attaque-surprise lancée depuis les hauteurs",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034221",
+      "name": "Beerus",
+      "rarity": "UR",
+      "type": "INT",
+      "title": "Une force destructrice colossale",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034461",
+      "name": "Son Goku Super Saiyan divin",
+      "rarity": "UR",
+      "type": "END",
+      "title": "Combattant qui porte la foi de ses compagnons",
+      "status": "external_search_required"
+    },
+    {
+      "id": "1034691",
+      "name": "Ginyu (Son Goku)",
+      "rarity": "UR",
+      "type": "PUI",
+      "title": "Technique qui fait des vagues",
+      "status": "external_search_required"
+    }
+  ]
+}

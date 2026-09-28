@@ -8,6 +8,7 @@ on:
       - tools/verify_missing_images.py
       - .github/workflows/verify-missing-images.yml
       - docs/FINAL-IMAGE-REPAIR.json
+      - tools/verify_missing_images.py
 permissions:
   contents: write
 jobs:

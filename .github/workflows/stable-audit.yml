@@ -71,6 +71,8 @@ jobs:
           assert "function cardImageCandidates" in s
           assert "return cardId;" in s, "unsafe implicit awakening resource alias may have returned"
           assert "cardId.slice(0,-1)+'0'" not in s, "unsafe ...1 -> ...0 image alias detected"
+          assert "c.image=choice?.image||'assets/cards/'+a.candidateId+'.webp'" not in s, "restored cards bypass exact artwork resolver"
+          assert "c.title=frTerm(c.title||'')" in s, "box titles bypass French mapper"
           print("French/image runtime invariants OK")
           PY
       - name: Required PWA files

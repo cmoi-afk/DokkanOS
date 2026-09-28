@@ -442,6 +442,8 @@ function localAssetIdFor(cardId){
   const m=META.cards?.[cardId]||{};
   const explicit=cat.resourceId||cat.resource_id||m.resourceId||m.resource_id||cat.imageId||m.imageId;
   if(explicit)return String(explicit);
+  // Les fiches Dokkan peuvent avoir un ID logique ...1 tandis que leurs assets officiels
+  // portent un autre resourceId (souvent ...0). On ne le déduit jamais : il doit être déclaré.
   return cardId;
 }
 function localCardImage(cardId,preferred){

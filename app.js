@@ -352,12 +352,16 @@ const FR_NAME_FIXES=[
  [/Chiaotzu/g,'Chaozu'],[/Jeice/g,'Jeese'],[/Recoome/g,'Reacum'],[/Burter/g,'Butta'],[/Pikkon/g,'Paikuhan'],
  [/King Cold/g,'Roi Cold'],[/King Vegeta/g,'Roi Vegeta'],[/Kid Buu/g,'Boo (petit)'],[/Super Buu/g,'Boo (super)'],
  [/Gohan \(Kid\)/g,'Son Gohan (petit)'],[/Gohan \(Youth\)/g,'Son Gohan (enfant)'],[/Gohan \(Teen\)/g,'Son Gohan (jeune)'],
- [/Trunks \(Teen\)/g,'Trunks (jeune)'],[/Trunks \(Youth\)/g,'Trunks (jeune)'],[/Trunks \(Kid\)/g,'Trunks (petit)'],
+ [/Trunks \(Teen\)/gi,'Trunks (jeune)'],[/Trunks \(Youth\)/gi,'Trunks (jeune)'],[/Trunks \(Kid\)/gi,'Trunks (petit)'],
+ [/Demon King Piccolo \(Elder\)/gi,'Piccolo Daimaô (vieux)'],[/Demon King Piccolo/gi,'Piccolo Daimaô'],
+ [/Cell \(1st Form\)/gi,'Cell (1re forme)'],[/Cell \(2nd Form\)/gi,'Cell (2e forme)'],[/Perfect Cell/gi,'Cell Parfait'],
+ [/Broly \(Wrathful\)/gi,'Broly (colère)'],[/Broly \(Kid\)/gi,'Broly (petit)'],[/Broly \(Youth\)/gi,'Broly (jeune)'],
+ [/Piccolo \(Power Awakening\)/gi,'Piccolo (éveil de puissance)'],[/Piccolo \(Fused with Kami\)/gi,'Piccolo (fusion avec Kami)'],
  [/Goten \(Kid\)/g,'Son Goten (petit)'],[/Trunks \(Kid\)/g,'Trunks (petit)'],[/Bulma \(Youth\)/g,'Bulma (enfant)'],[/Pan \(Kid\)/g,'Pan (petit)'],
  [/\bGoku\b/g,'Son Goku'],[/\bBuu\b/g,'Boo'],[/\(Angel\)/g,'(ange)'],[/\(Future\)/g,'(futur)']
 ];
 function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);return s}
-function cardImageCandidates(id,preferred){id=String(id||'');return [...new Set([preferred,id&&('assets/cards/'+id+'.webp')].filter(Boolean))]}
+function cardImageCandidates(id,preferred){id=String(id||'');let rid=localAssetIdFor(id);return [...new Set([id&&('assets/cards/'+id+'.webp'),rid&&('assets/cards/'+rid+'.webp'),preferred].filter(Boolean))]}
 function imageFallback(el,id,preferred){let a=cardImageCandidates(id,preferred),n=Number(el.dataset.fallback||0)+1;el.dataset.fallback=String(n);if(n<a.length){el.src=a[n]}else{el.classList.add('imgfail');reportBrokenImage(id)}}
 function imageAuditSummary(){try{return JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]')}catch(e){return []}}
 function reportBrokenImage(id){if(!id)return;try{let a=JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]');if(!a.includes(String(id))){a.push(String(id));localStorage.setItem('dokkanos-broken-images',JSON.stringify(a))}}catch(e){}}

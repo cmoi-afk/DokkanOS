@@ -1,0 +1,44 @@
+name: DokkanOS stable audit
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "app.js"
+      - "index.html"
+      - "sw.js"
+      - "catalog.json"
+      - "collection.json"
+      - "card-meta.json"
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: JavaScript syntax
+        run: |
+          node --check app.js
+          node --check sw.js
+      - name: Core JSON integrity
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for name in ("collection.json","catalog.json","card-meta.json","overlap-conflicts.json","manifest.webmanifest"):
+              p=Path(name)
+              assert p.exists() and p.stat().st_size>0, f"{name}: absent ou vide"
+              json.loads(p.read_text(encoding="utf-8"))
+              print(name, p.stat().st_size, "OK")
+          db=json.loads(Path("collection.json").read_text())
+          assert isinstance(db.get("cards"),list) and db["cards"], "collection sans cartes"
+          cat=json.loads(Path("catalog.json").read_text())
+          assert isinstance(cat.get("cards"),list) and cat["cards"], "catalogue sans cartes"
+          print("collection",len(db["cards"]),"catalogue",len(cat["cards"]))
+          PY
+      - name: Required PWA files
+        run: |
+          test -f assets/icon-192.png
+          test -f assets/icon-512.png
+          test -f style.css
+          echo "PWA core OK"

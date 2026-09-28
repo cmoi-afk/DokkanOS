@@ -9,6 +9,7 @@ on:
       - "catalog.json"
       - "collection.json"
       - "card-meta.json"
+      - ".github/workflows/**"
 permissions:
   contents: read
 jobs:

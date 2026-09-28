@@ -1,0 +1,54 @@
+{
+  "auditedAt": "2026-09-28",
+  "phase": "source_audit",
+  "candidates": [
+    {
+      "name": "Dokkan Battle Database",
+      "role": "primary_structural_candidate",
+      "url": "https://dokkanbattle.net/",
+      "freshness": "current September 2026 content confirmed",
+      "strengths": [
+        "current cards",
+        "current gachas",
+        "current EZA/SEZA"
+      ],
+      "decision": "retain"
+    },
+    {
+      "name": "DBZ Dokkan Battle France",
+      "role": "french_metadata_candidate",
+      "url": "https://dbz-dokkanbattle.com/cards",
+      "strengths": [
+        "French names",
+        "rarity",
+        "type",
+        "class",
+        "categories",
+        "EZA filters"
+      ],
+      "risks": [
+        "catalogue includes non-playable/selling entries such as Mr. Satan statues"
+      ],
+      "decision": "retain_with_playability_filter"
+    }
+  ],
+  "admissionPolicy": {
+    "include": [
+      "playable character/unit cards",
+      "SR cards only when relevant to a playable awakening chain",
+      "SSR/UR/LR and playable awakened forms"
+    ],
+    "exclude": [
+      "selling-only cards",
+      "Mr. Satan statues",
+      "training/items/support objects represented as cards",
+      "entries with no playable unit identity"
+    ],
+    "verification": [
+      "canonical identity must be supported by structural source",
+      "French metadata may enrich but cannot alone establish playability",
+      "image association occurs only after canonical ID is established"
+    ]
+  },
+  "next": "Build a small clean V2 sample from the retained sources and audit it before full import."
+}

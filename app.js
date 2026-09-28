@@ -335,7 +335,7 @@ function toggleFavorite(id){favorites.has(id)?favorites.delete(id):favorites.add
 function activeFilterSummary(){let x=[];if(query)x.push('Recherche');if(filter!=='all')x.push(filter==='valid'?'Validées':'À vérifier');if(rarityFilter)x.push(rarityFilter);if(typeFilter)x.push(typeFilter);if(classFilter)x.push(classFilter);if(categoryFilter)x.push(categoryFilter);if(linkFilter)x.push(linkFilter);if(ezaFilter)x.push(ezaFilter==='yes'?'EZA':'Non-EZA');if(favoriteOnly)x.push('★ Favoris');let el=$('#activeFilters');if(el)el.innerHTML=x.length?x.map(v=>`<span>${v}</span>`).join(''):''}
 function render(){
   let a=visibleCards();activeFilterSummary();
-  $('#grid').innerHTML=a.map(c=>`<article class="unit" onclick="openCard('${c.boxId}')"><i class="dot ${confClass(c.confidence)}"></i>${favorites.has(c.boxId)?'<b class="favmark">★</b>':''}<img loading="lazy" src="${c.image}" onerror="imageFallback(this,'','')"><div class="meta"><strong>${c.name||'ID '+(c.candidateId||'—')}</strong><small>${c.boxId} · ${c.confidence}</small></div></article>`).join('')||'<div class="empty">Aucune carte</div>';
+  $('#grid').innerHTML=a.map(c=>`<article class="unit" onclick="openCard('${c.boxId}')"><i class="dot ${confClass(c.confidence)}"></i>${favorites.has(c.boxId)?'<b class="favmark">★</b>':''}<img loading="lazy" src="${c.image}" onerror="imageFallback(this,'${String(c.candidateId||'')}','${c.image||''}')"><div class="meta"><strong>${frCardName(c.name||'ID '+(c.candidateId||'—'))}</strong><small>${c.boxId} · ${c.confidence}</small></div></article>`).join('')||'<div class="empty">Aucune carte</div>';
   $('#resultCount').textContent=a.length+' résultat'+(a.length>1?'s':'');
   renderVerify();
 }
@@ -357,6 +357,9 @@ const FR_NAME_FIXES=[
  [/Cell \(1st Form\)/gi,'Cell (1re forme)'],[/Cell \(2nd Form\)/gi,'Cell (2e forme)'],[/Perfect Cell/gi,'Cell Parfait'],
  [/Broly \(Wrathful\)/gi,'Broly (colère)'],[/Broly \(Kid\)/gi,'Broly (petit)'],[/Broly \(Youth\)/gi,'Broly (jeune)'],
  [/Piccolo \(Power Awakening\)/gi,'Piccolo (éveil de puissance)'],[/Piccolo \(Fused with Kami\)/gi,'Piccolo (fusion avec Kami)'],
+ [/Team Bardock/gi,'Équipe Bardock'],[/Lord Slug/gi,'Slug'],[/Ultimate Gohan/gi,'Son Gohan ultime'],
+ [/Shadow Dragon Army/gi,'Équipe des dragons maléfiques'],[/Legion of Shadow Dragons/gi,'Équipe des dragons maléfiques'],
+ [/Great Saiyaman/gi,'Great Saiyaman'],[/Turles/gi,'Thalès'],
  [/Goten \(Kid\)/g,'Son Goten (petit)'],[/Trunks \(Kid\)/g,'Trunks (petit)'],[/Bulma \(Youth\)/g,'Bulma (enfant)'],[/Pan \(Kid\)/g,'Pan (petit)'],
  [/\bGoku\b/g,'Son Goku'],[/\bBuu\b/g,'Boo'],[/\(Angel\)/g,'(ange)'],[/\(Future\)/g,'(futur)']
 ];

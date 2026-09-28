@@ -65,6 +65,16 @@ jobs:
           if missing:
               Path("image-gaps-audit.txt").write_text("\n".join(f"{a}\t{b}" for a,b in missing),encoding="utf-8")
           print("couverture exacte à réparer",len(missing))
+          # Diagnostiquer séparément les IDs d'éveil dont le visuel exact manque,
+          # sans les considérer pour autant comme couverts.
+          sibling=[]
+          for card_id,cid in missing:
+              if cid.endswith("1"):
+                  alt=cid[:-1]+"0"
+                  if any((assets/(alt+ext)).exists() for ext in (".webp",".png",".jpg",".jpeg")):
+                      sibling.append((card_id,cid,alt))
+          print("éveils avec visuel voisin disponible mais non validé",len(sibling))
+          if sibling: print("exemples éveils voisins",sibling[:50])
           # Le rapport doit rester visible dans les logs CI, même sans artefact.
           if missing:
               print("premiers IDs sans couverture exacte",missing[:50])

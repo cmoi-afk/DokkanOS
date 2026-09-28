@@ -2,8 +2,8 @@ name: Repair final 15 card images
 on:
   workflow_dispatch:
   push:
-    paths:
-      - '.github/workflows/repair-final-images.yml'
+    branches:
+      - main
 permissions:
   contents: write
 jobs:

@@ -57,4 +57,13 @@ assert(element('#duplicateList').innerHTML.includes('3 exemplaires possédés'))
 assert(element('#duplicateList').innerHTML.includes('2 doublons'));
 assert(element('#duplicateList').innerHTML.includes('Positions dans ta Box'));
 console.log('duplicates summary and wording: OK');
+vm.runInContext('rainbow100=new Set(); toggleRainbow100("10")',context);
+assert.equal(JSON.parse(saved.get('dokkanos-rainbow100'))[0],'10');
+assert.equal(vm.runInContext('rainbow100.has("10")',context),true);
+assert(element('#duplicateSummary').textContent.includes('2 restants après 100 %'));
+assert(element('#duplicateList').innerHTML.includes('Potentiel 100 %'));
+assert(element('#duplicateList').innerHTML.includes('2 doublons restants'));
+vm.runInContext('toggleRainbow100("10")',context);
+assert.equal(vm.runInContext('rainbow100.has("10")',context),false);
+console.log('100% potential persistence and remaining duplicates: OK');
 console.log('verification, persistence, unconfirmed list and catalogue images: OK');

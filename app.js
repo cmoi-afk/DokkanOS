@@ -620,12 +620,12 @@ function toggleRainbowFromCard(boxId,candidateId){toggleRainbow100(candidateId);
 function renderDuplicates(){
   let el=$('#duplicateList');if(!el)return;
   let owned={};DB.cards.filter(c=>c.validated&&c.candidateId).forEach(c=>(owned[String(c.candidateId)]??=[]).push(c));
-  let source=(CATALOG.cards||[]).filter(c=>catalogSelectable(c)), seen=new Set(), rows=[];
+  let source=(CATALOG.cards||[]).filter(c=>['UR','LR'].includes(String(c.rarity||'').toUpperCase())), seen=new Set(), rows=[];
   source.forEach(c=>{let id=String(c.id||c.candidateId||'');if(!id||seen.has(id))return;seen.add(id);let copies=owned[id]||[],dupes=Math.min(4,Math.max(0,copies.length-1)),rainbow=rainbow100.has(id),ready=dupes>=4;rows.push({id,c,copies,dupes,rainbow,ready})});
-  Object.entries(owned).forEach(([id,copies])=>{if(seen.has(id))return;let c=copies[0];rows.push({id,c,copies,dupes:Math.min(4,copies.length-1),rainbow:rainbow100.has(id),ready:copies.length>=5})});
+  Object.entries(owned).forEach(([id,copies])=>{if(seen.has(id))return;let c=copies[0];if(!['UR','LR'].includes(String(c.rarity||'').toUpperCase()))return;rows.push({id,c,copies,dupes:Math.min(4,copies.length-1),rainbow:rainbow100.has(id),ready:copies.length>=5})});
   rows.sort((a,b)=>Number(b.rainbow)-Number(a.rainbow)||b.dupes-a.dupes||frCardName(a.c.name||'').localeCompare(frCardName(b.c.name||''),'fr'));
   let ownedCount=rows.filter(x=>x.copies.length).length, rainbowCount=rows.filter(x=>x.rainbow).length;
-  $('#dupCount').textContent=rows.length+' cartes';let summary=$('#duplicateSummary');if(summary)summary.textContent=rows.length+' cartes jouables · '+ownedCount+' possédées · '+rainbowCount+' à 100 %';
+  $('#dupCount').textContent=rows.length+' cartes';let summary=$('#duplicateSummary');if(summary)summary.textContent=rows.length+' cartes UR/LR · '+ownedCount+' possédées · '+rainbowCount+' à 100 %';
   el.innerHTML=rows.map(x=>{let img=x.copies[0]?.image||x.c.image||localCardImage(x.id,''),name=frCardName(x.copies[0]?.name||x.c.name||'ID '+x.id),dots=[1,2,3,4].map(n=>`<i class="${x.dupes>=n?'filled':''}"></i>`).join(''),state=x.rainbow?'🌈 100 %':x.copies.length?(x.ready?'4/4':' '+x.dupes+'/4'):'Non possédée',boxId=x.copies[0]?.boxId;return `<div class="potential-line ${x.copies.length?'owned':'unowned'}" ${boxId?`onclick="openCard('${boxId}')"`:''}><img loading="lazy" src="${img}" onerror="imageFallback(this,'${x.id}','${img}')"><div class="potential-line-main"><b>${name}</b><div class="potential-meter">${dots}</div></div><span class="potential-state ${x.rainbow?'rainbow':x.ready?'ready':''}">${state}</span>${x.ready||x.rainbow?`<button class="potential-100" onclick="event.stopPropagation();toggleRainbow100('${x.id}')">${x.rainbow?'✓':'100 %'}</button>`:''}</div>`}).join('')||'<div class="empty">Catalogue indisponible.</div>'
 }
 function catalogSelectable(c){return ['SSR','UR','LR'].includes(c.rarity)||(c.rarity==='SR'&&!!c.awakensTo)}

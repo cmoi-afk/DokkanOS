@@ -621,8 +621,8 @@ function changePotentialDuplicate(id,delta){id=String(id);let current=Math.max(0
 function renderDuplicates(){
   let el=$('#duplicateList');if(!el)return;
   let owned={};DB.cards.filter(c=>c.validated&&c.candidateId).forEach(c=>(owned[String(c.candidateId)]??=[]).push(c));
-  let source=(CATALOG.cards||[]).filter(c=>['UR','LR'].includes(String(c.rarity||'').toUpperCase())), seen=new Set(), rows=[];
-  source.forEach(c=>{let id=String(c.id||c.candidateId||'');if(!id||seen.has(id))return;seen.add(id);let copies=owned[id]||[],auto=Math.min(4,Math.max(0,copies.length-1)),dupes=Math.max(auto,Math.min(4,Number(potentialManual[id]||0))),rainbow=rainbow100.has(id),ready=dupes>=4;rows.push({id,c,copies,dupes,rainbow,ready})});
+  let source=(CATALOG.cards||[]).filter(c=>['UR','LR'].includes(String(c.rarity||'').toUpperCase())), seen=new Set(), familySeen=new Set(), rows=[];
+  source.forEach(c=>{let id=String(c.id||c.candidateId||'');if(!id||seen.has(id))return;let family=familyFor(id),ur=family.filter(x=>['UR','LR'].includes(String(x.rarity||'').toUpperCase())),key=ur.map(x=>String(x.id)).sort().join('|')||id;if(familySeen.has(key))return;familySeen.add(key);let preferred=ur.find(x=>owned[String(x.id)]?.length)||ur.find(x=>String(x.rarity).toUpperCase()==='LR')||ur[0]||c;id=String(preferred.id||id);seen.add(id);let copies=owned[id]||[],auto=Math.min(4,Math.max(0,copies.length-1)),dupes=Math.max(auto,Math.min(4,Number(potentialManual[id]||0))),rainbow=rainbow100.has(id),ready=dupes>=4;rows.push({id,c,copies,dupes,rainbow,ready})});
   Object.entries(owned).forEach(([id,copies])=>{if(seen.has(id))return;let c=copies[0];if(!['UR','LR'].includes(String(c.rarity||'').toUpperCase()))return;let auto=Math.min(4,copies.length-1),dupes=Math.max(auto,Math.min(4,Number(potentialManual[id]||0)));rows.push({id,c,copies,dupes,rainbow:rainbow100.has(id),ready:dupes>=4})});
   rows.sort((a,b)=>Number(b.rainbow)-Number(a.rainbow)||b.dupes-a.dupes||frCardName(a.c.name||'').localeCompare(frCardName(b.c.name||''),'fr'));
   let ownedCount=rows.filter(x=>x.copies.length).length, rainbowCount=rows.filter(x=>x.rainbow).length;

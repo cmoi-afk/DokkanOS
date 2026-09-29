@@ -13,7 +13,7 @@ const context={
 };
 vm.createContext(context);
 vm.runInContext(source+'\nCATALOG='+JSON.stringify(data)+'; META={cards:{}}; DB={cards:[{boxId:"BOX-TEST",candidateId:"",validated:false,image:""}]}; inventory={};',context);
-for(const key of ['render','stats','renderDuplicates','renderInventory','renderManualOwned','renderAnalysis'])vm.runInContext(key+'=()=>{}',context);
+for(const key of ['render','stats','renderInventory','renderManualOwned','renderAnalysis'])vm.runInContext(key+'=()=>{}',context);
 assert.equal(vm.runInContext('catalogFamilies().length > 1000',context),true);
 assert.equal(vm.runInContext('catalogFamilies()===catalogFamilies()',context),true);
 vm.runInContext('renderMissing()',context);

@@ -7,7 +7,7 @@ const context={
   console,
   window:{addEventListener(){}},
   navigator:{onLine:true},
-  document:{querySelector:element,querySelectorAll(){return []},addEventListener(){}},
+  document:{querySelector:element,querySelectorAll(){return []},getElementById(id){return element('#'+id)},addEventListener(){}},
   localStorage:{setItem(k,v){saved.set(k,v)},getItem(k){return saved.get(k)||null}},
   alert(){throw Error('unexpected alert')}
 };

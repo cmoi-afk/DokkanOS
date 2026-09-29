@@ -96,8 +96,8 @@ const frenchDupRows=(element('#duplicateList').innerHTML.match(/potential-line /
 assert.equal(frenchDupRows,1);
 assert(element('#duplicateList').innerHTML.includes('Son Goku Super Saiyan'));
 console.log('French canonical potential duplicate collapse: OK');
-assert.equal(vm.runInContext("frCardName('Bojack')",context),'Boujack');
-assert.equal(vm.runInContext("frCardName('Full Power Boujack')",context),'Boujack pleine puissance');
+assert.equal(vm.runInContext("frCardName('Bojack')",context),'Bojack');
+assert.equal(vm.runInContext("frCardName('Full Power Boujack')",context),'Bojack puissance max');
 assert.equal(vm.runInContext("frCardName('Super Saiyan 4 Goku')",context),'Son Goku Super Saiyan 4');
 assert.equal(vm.runInContext("frCardName('Super Saiyan 4 Vegeta')",context),'Vegeta Super Saiyan 4');
 assert.equal(vm.runInContext("frCardName('Androids #17 & #18')",context),'C-17 & C-18');

@@ -60,6 +60,17 @@ jobs:
           english_ui=["Ginyu Force","Golden Fighters","Mission Execution","Galactic Warrior"]
           # Presence as translation keys is expected; raw fallback use is audited in runtime separately.
           print("French residue gate",len(english_ui),"known terms mapped")
+          # Strict UI gate: English source vocabulary may exist only as mapping keys,
+          # never as raw labels rendered by fallback code.
+          raw_render_patterns=[
+              r'\?\?\s*["\'](?:Golden Fighters|Mission Execution|Galactic Warrior|Ginyu Force|Final Form|Giant Ape)["\']',
+              r'fallback[^\n]{0,120}["\'](?:Golden Fighters|Mission Execution|Galactic Warrior|Ginyu Force|Final Form|Giant Ape)["\']'
+          ]
+          raw_hits=[]
+          for pat in raw_render_patterns:
+              raw_hits += re.findall(pat,app,re.I)
+          print("FR-RAW-UI-HITS",raw_hits)
+          print("FR-STRICT-UI-READY",len(raw_hits)==0)
           # Pendant la branche d'audit, produire un inventaire exact sans faire passer
           # une mauvaise image d'éveil pour une ressource valide.
           if missing:

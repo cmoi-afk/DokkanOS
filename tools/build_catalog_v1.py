@@ -6,7 +6,17 @@ ROOT=Path(__file__).resolve().parents[1]
 src=json.loads((ROOT/"catalog.json").read_text(encoding="utf-8"))
 allowed={"LR","UR","SSR","SR"}
 nonplay=re.compile(r"(statue de (?:m\.?|mr\.?|hercule)|hercule statue)",re.I)
-cards=[]; rejected=[]; seen=set()\nby_id={str(c.get("id")):c for c in src.get("cards",[]) if c.get("id")}\n\ndef terminal_id(card):\n    """Retourne la forme maximale vérifiée de la chaîne, sans deviner les éveils manquants."""\n    cur=card; visited=set()\n    while cur.get("awakensTo"):\n        cid=str(cur.get("id")); nxt=str(cur.get("awakensTo"))\n        if cid in visited or nxt not in by_id: break\n        visited.add(cid); cur=by_id[nxt]\n    return str(cur.get("id") or "")
+cards=[]; rejected=[]; seen=set()
+by_id={str(c.get("id")):c for c in src.get("cards",[]) if c.get("id")}
+
+def terminal_id(card):
+    """Retourne la forme maximale vérifiée de la chaîne, sans deviner les éveils manquants."""
+    cur=card; visited=set()
+    while cur.get("awakensTo"):
+        cid=str(cur.get("id")); nxt=str(cur.get("awakensTo"))
+        if cid in visited or nxt not in by_id: break
+        visited.add(cid); cur=by_id[nxt]
+    return str(cur.get("id") or "")
 for c in src.get("cards",[]):
     cid=str(c.get("id") or "").strip()
     reasons=[]
@@ -14,7 +24,10 @@ for c in src.get("cards",[]):
     if cid in seen: reasons.append("ID dupliqué")
     if c.get("rarity") not in allowed: reasons.append("rareté hors périmètre")
     if nonplay.search(c.get("name") or ""): reasons.append("entrée non jouable")
-    # Une chaîne d’éveil ne doit produire qu’une entrée: sa forme maximale vérifiée.\n    terminal=terminal_id(c)\n    if terminal and terminal != cid: reasons.append("forme intermédiaire d’une chaîne d’éveil")\n    if c.get("rarity")=="SR" and not c.get("awakensFrom") and not c.get("awakensTo"): reasons.append("SR isolé sans chaîne d’éveil vérifiée")
+    # Une chaîne d’éveil ne doit produire qu’une entrée: sa forme maximale vérifiée.
+    terminal=terminal_id(c)
+    if terminal and terminal != cid: reasons.append("forme intermédiaire d’une chaîne d’éveil")
+    if c.get("rarity")=="SR" and not c.get("awakensFrom") and not c.get("awakensTo"): reasons.append("SR isolé sans chaîne d’éveil vérifiée")
     if reasons:
         rejected.append({"id":cid,"name":c.get("name"),"reasons":reasons}); continue
     seen.add(cid)
@@ -27,7 +40,9 @@ for c in src.get("cards",[]):
       "legacySource":c.get("source") or c.get("attributeSource") or None
     })
 out={"version":"1.0-refonte-draft","status":"draft","sourceVersion":src.get("version"),"cards":cards}
-(ROOT/"catalog-v1.draft.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+(ROOT/"catalog-v1.draft.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"
+",encoding="utf-8")
 report={"sourceCards":len(src.get("cards",[])),"accepted":len(cards),"rejected":len(rejected),"uniqueAccepted":len({c["id"] for c in cards}),"intermediateAwakeningsRemoved":sum("forme intermédiaire" in r for x in rejected for r in x["reasons"]),"rejectedItems":rejected}
-(ROOT/"docs/CATALOG-REFONTE-v1.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+(ROOT/"docs/CATALOG-REFONTE-v1.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"
+",encoding="utf-8")
 print(json.dumps({k:v for k,v in report.items() if k!="rejectedItems"},ensure_ascii=False))

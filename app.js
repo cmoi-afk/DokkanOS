@@ -353,7 +353,8 @@ function restoreEdits(){
   try{selectedTeam=JSON.parse(localStorage.getItem('dokkanos-team')||'[]').filter(id=>DB.cards.some(c=>c.boxId===id)||(String(id).startsWith('MANUAL-')&&inventory[String(id).slice(7)]==='owned')).slice(0,6)}catch(e){selectedTeam=[]}
   try{teamLeader=localStorage.getItem('dokkanos-team-leader')||'';if(teamLeader&&!resolveCard(teamLeader))teamLeader=''}catch(e){teamLeader=''}
   try{favorites=new Set(JSON.parse(localStorage.getItem('dokkanos-favorites')||'[]'))}catch(e){favorites=new Set()}
-  try{rainbow100=new Set(JSON.parse(localStorage.getItem('dokkanos-rainbow100')||'[]').map(String))}catch(e){rainbow100=new Set()}\n  try{potentialManual=JSON.parse(localStorage.getItem('dokkanos-potential-manual')||'{}')||{}}catch(e){potentialManual={}}
+  try{rainbow100=new Set(JSON.parse(localStorage.getItem('dokkanos-rainbow100')||'[]').map(String))}catch(e){rainbow100=new Set()}
+  try{potentialManual=JSON.parse(localStorage.getItem('dokkanos-potential-manual')||'{}')||{}}catch(e){potentialManual={}}
 }
 function searchText(c){return norm([c.boxId,c.candidateId,c.name,c.title,c.rarity,c.type,c.class,c.leader,c.passive,c.superAttack,c.active,...(c.categories||[]),...(c.links||[])].join(' '))}
 function visibleCards(){

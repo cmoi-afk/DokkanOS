@@ -24,6 +24,5 @@ for c in cards:
  if not files: missing.append(row)
 same_binary=[v for v in hashes.values() if len(v)>1]
 out={"catalogSource":cat_path.name,"catalogCards":len(cards),"uniqueCardIds":len({str(c.get("id")) for c in cards}),"numericAssetIds":len(assets),"directAssetMatches":len(cards)-len(missing),"missingDirectAssets":len(missing),"duplicateBinaryGroups":len(same_binary),"missing":missing,"duplicateBinaryFiles":same_binary}
-(R/"docs/CATALOG-ASSET-AUDIT-v0.9.11.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"
-",encoding="utf-8")
+(R/"docs/CATALOG-ASSET-AUDIT-v0.9.11.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+chr(10),encoding="utf-8")
 print({k:out[k] for k in ("catalogCards","uniqueCardIds","numericAssetIds","directAssetMatches","missingDirectAssets","duplicateBinaryGroups")})

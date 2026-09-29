@@ -11,8 +11,9 @@ def check(card):
     cid=str(card["id"]); url=card.get("image") or ""
     if not url: return cid,url,False,"image vide",None
     mismatch=None
-    m=re.search(r"card_(\\d+)_thumb",url)\n    expected={cid,str(card.get("resourceId") or "")}-{""}\n    if m and m.group(1) not in expected: mismatch={"id":cid,"imageId":m.group(1),"resourceId":card.get("resourceId"),"url":url}
-    if m and m.group(1)!=cid: mismatch={"id":cid,"imageId":m.group(1),"url":url}
+    m=re.search(r"card_(\\d+)_thumb",url)
+    expected={cid,str(card.get("resourceId") or "")}-{""}
+    if m and m.group(1) not in expected: mismatch={"id":cid,"imageId":m.group(1),"resourceId":card.get("resourceId"),"url":url}
     try:
         if not re.match(r"^https?://",url):
             p=root/url
@@ -38,6 +39,7 @@ with ThreadPoolExecutor(max_workers=24) as ex:
 empty=[str(c["id"]) for c in data["cards"] if not c.get("image")]
 report={"catalogSource":catalog.name,"catalogCards":len(data["cards"]),"imagesChecked":checked,"emptyBeforeAudit":empty,"stillMissing":empty,"brokenImages":sorted(broken,key=lambda x:x["id"]),"idImageMismatches":sorted(mismatches,key=lambda x:x["id"])}
 out=root/"docs/IMAGE-AUDIT-FINAL.json"
-out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"
+",encoding="utf-8")
 print(json.dumps({k:(len(v) if isinstance(v,list) else v) for k,v in report.items()},ensure_ascii=False))
 

@@ -34,7 +34,7 @@ for c in src.get("cards",[]):
         rejected.append({"id":cid,"name":c.get("name"),"reasons":reasons}); continue
     seen.add(cid)
     official_fr=(meta.get(cid,{}).get("fr") or {})
-    fr_ok=bool(official_fr.get("_official"))
+    # Prefer any stored FR payload; _official only records provenance, not usability.\n    fr_ok=bool(official_fr.get("name") or official_fr.get("title"))
     cards.append({
       "id":cid,"name":(official_fr.get("name") if fr_ok else None) or c.get("name") or "",
       "title":(official_fr.get("title") if fr_ok else None) or c.get("title") or "",

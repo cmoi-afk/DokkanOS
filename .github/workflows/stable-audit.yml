@@ -149,3 +149,5 @@ jobs:
           test -f assets/icon-512.png
           test -f style.css
           echo "PWA core OK"
+
+# graphics repair completion audit trigger

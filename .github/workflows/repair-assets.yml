@@ -47,7 +47,11 @@ jobs:
                   for p in pats: ids += re.findall(p,html,re.I)
                   ids=list(dict.fromkeys(ids))
                   # Prefer explicit id, then exact logical id, otherwise require one unambiguous page artwork id.
-                  rid=explicit if explicit in ids else (cid if cid in ids else (ids[0] if len(ids)==1 else ""))
+                  # The French card page lists its own primary artwork first. For awakening
+                  # logical IDs ending in 1, accept the adjacent ...0 only when it is literally
+                  # the first artwork resource exposed by that exact requested page.
+                  adjacent=(cid[:-1]+"0") if cid.endswith("1") else ""
+                  rid=explicit if explicit in ids else (cid if cid in ids else (adjacent if adjacent and ids and ids[0]==adjacent else (ids[0] if len(ids)==1 else "")))
                   if not rid:
                       unresolved.append((cid,ids[:8])); continue
                   # Locate a concrete image URL containing the selected resource id.

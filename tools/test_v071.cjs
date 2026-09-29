@@ -77,6 +77,17 @@ assert.equal(vm.runInContext('potentialManual["10"]',context),3);
 vm.runInContext('changePotentialDuplicate("10",-1); changePotentialDuplicate("10",-1); changePotentialDuplicate("10",-1); changePotentialDuplicate("10",-1)',context);
 assert.equal(vm.runInContext('potentialManual["10"]||0',context),0);
 console.log('manual potential +/- persistence and bounds: OK');
+vm.runInContext(`CATALOG={cards:[
+{id:"900",name:"Test SSR",rarity:"SSR",awakensTo:"901"},
+{id:"901",name:"Test UR",rarity:"UR",awakensTo:"902"},
+{id:"902",name:"Test LR",rarity:"LR"},
+{id:"910",name:"UR Final",rarity:"UR"}
+]}; CACHED_FAMILIES=null; CACHED_FAMILY_BY_ID=null; DB={cards:[]}; potentialManual={}; rainbow100=new Set(); renderDuplicates()`,context);
+assert(element('#duplicateList').innerHTML.includes('Test LR'));
+assert(!element('#duplicateList').innerHTML.includes('Test UR'));
+assert(!element('#duplicateList').innerHTML.includes('Test SSR'));
+assert(element('#duplicateList').innerHTML.includes('UR Final'));
+console.log('max-awakened potential family display: OK');
 vm.runInContext('DB={cards:[{boxId:"SHEET-1",candidateId:"77",validated:true,name:"Test",image:"x.webp"}]}; rainbow100=new Set()',context);
 vm.runInContext('openCard("SHEET-1")',context);
 assert(element('#sheet').innerHTML.includes('Marquer potentiel 100 %'));

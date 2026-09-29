@@ -1,6 +1,7 @@
 {
-  "catalogCards": 2045,
-  "imagesChecked": 2045,
+  "catalogSource": "catalog-v1.draft.json",
+  "catalogCards": 1904,
+  "imagesChecked": 1904,
   "emptyBeforeAudit": [],
   "stillMissing": [],
   "brokenImages": [
@@ -17,7 +18,7 @@
     {
       "id": "1000070",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000070_thumb/card_1000070_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1000090",
@@ -37,7 +38,7 @@
     {
       "id": "1000120",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000120_thumb/card_1000120_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1000130",
@@ -52,7 +53,7 @@
     {
       "id": "1000150",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000150_thumb/card_1000150_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1000160",
@@ -77,7 +78,7 @@
     {
       "id": "1000200",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000200_thumb/card_1000200_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1000210",
@@ -117,7 +118,7 @@
     {
       "id": "1000820",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000820_thumb/card_1000820_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1000850",
@@ -127,22 +128,22 @@
     {
       "id": "1000870",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000870_thumb/card_1000870_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1000880",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000880_thumb/card_1000880_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1000890",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000890_thumb/card_1000890_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1000900",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000900_thumb/card_1000900_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1000910",
@@ -152,12 +153,12 @@
     {
       "id": "1000920",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000920_thumb/card_1000920_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1000930",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000930_thumb/card_1000930_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1000940",
@@ -172,7 +173,7 @@
     {
       "id": "1000960",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000960_thumb/card_1000960_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1000980",
@@ -182,17 +183,17 @@
     {
       "id": "1000990",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1000990_thumb/card_1000990_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001000",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001000_thumb/card_1001000_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001010",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001010_thumb/card_1001010_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001050",
@@ -207,7 +208,7 @@
     {
       "id": "1001070",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001070_thumb/card_1001070_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001080",
@@ -222,12 +223,12 @@
     {
       "id": "1001100",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001100_thumb/card_1001100_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001110",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001110_thumb/card_1001110_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001380",
@@ -242,7 +243,7 @@
     {
       "id": "1001430",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001430_thumb/card_1001430_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001440",
@@ -252,7 +253,7 @@
     {
       "id": "1001450",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001450_thumb/card_1001450_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001460",
@@ -262,17 +263,17 @@
     {
       "id": "1001500",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001500_thumb/card_1001500_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001530",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001530_thumb/card_1001530_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001610",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001610_thumb/card_1001610_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001620",
@@ -282,7 +283,7 @@
     {
       "id": "1001710",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001710_thumb/card_1001710_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001720",
@@ -297,7 +298,7 @@
     {
       "id": "1001740",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001740_thumb/card_1001740_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1001760",
@@ -318,11 +319,6 @@
       "id": "1001840",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001840_thumb/card_1001840_thumb.png",
       "reason": "signature image invalide"
-    },
-    {
-      "id": "1001851",
-      "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1001851_thumb/card_1001851_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1001860",
@@ -352,7 +348,7 @@
     {
       "id": "1002200",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002200_thumb/card_1002200_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1002210",
@@ -397,7 +393,7 @@
     {
       "id": "1002350",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002350_thumb/card_1002350_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1002410",
@@ -442,7 +438,7 @@
     {
       "id": "1002861",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002861_thumb/card_1002861_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1002870",
@@ -532,7 +528,7 @@
     {
       "id": "1003470",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003470_thumb/card_1003470_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1003480",
@@ -562,7 +558,7 @@
     {
       "id": "1003580",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003580_thumb/card_1003580_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1003590",
@@ -572,12 +568,12 @@
     {
       "id": "1003640",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003640_thumb/card_1003640_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1003700",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003700_thumb/card_1003700_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1003801",
@@ -637,7 +633,7 @@
     {
       "id": "1004251",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1004251_thumb/card_1004251_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1004280",
@@ -667,12 +663,7 @@
     {
       "id": "1004470",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1004470_thumb/card_1004470_thumb.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004631",
-      "url": "assets/cards/1004631.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1004651",
@@ -692,7 +683,7 @@
     {
       "id": "1004740",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1004740_thumb/card_1004740_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1004830",
@@ -732,7 +723,7 @@
     {
       "id": "1005250",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005250_thumb/card_1005250_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1005281",
@@ -767,7 +758,7 @@
     {
       "id": "1005590",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005590_thumb/card_1005590_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1005731",
@@ -782,7 +773,7 @@
     {
       "id": "1005840",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005840_thumb/card_1005840_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1005870",
@@ -802,7 +793,7 @@
     {
       "id": "1006211",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1006211_thumb/card_1006211_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1006250",
@@ -837,7 +828,7 @@
     {
       "id": "1006791",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1006791_thumb/card_1006791_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1007030",
@@ -857,7 +848,7 @@
     {
       "id": "1007101",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1007101_thumb/card_1007101_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1007170",
@@ -877,7 +868,7 @@
     {
       "id": "1007210",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1007210_thumb/card_1007210_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1007391",
@@ -937,7 +928,7 @@
     {
       "id": "1008110",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008110_thumb/card_1008110_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1008120",
@@ -962,12 +953,12 @@
     {
       "id": "1008380",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008380_thumb/card_1008380_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1008390",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008390_thumb/card_1008390_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1008480",
@@ -1002,7 +993,7 @@
     {
       "id": "1008711",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008711_thumb/card_1008711_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1008821",
@@ -1027,12 +1018,12 @@
     {
       "id": "1008961",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008961_thumb/card_1008961_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1008981",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008981_thumb/card_1008981_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1009001",
@@ -1042,22 +1033,22 @@
     {
       "id": "1009030",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009030_thumb/card_1009030_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1009050",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009050_thumb/card_1009050_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1009060",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009060_thumb/card_1009060_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1009070",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009070_thumb/card_1009070_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1009091",
@@ -1067,12 +1058,12 @@
     {
       "id": "1009111",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009111_thumb/card_1009111_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1009131",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009131_thumb/card_1009131_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1009230",
@@ -1127,7 +1118,7 @@
     {
       "id": "1009511",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009511_thumb/card_1009511_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1009581",
@@ -1152,7 +1143,7 @@
     {
       "id": "1009681",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009681_thumb/card_1009681_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1009701",
@@ -1187,7 +1178,7 @@
     {
       "id": "1009890",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009890_thumb/card_1009890_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1009911",
@@ -1207,12 +1198,12 @@
     {
       "id": "1010021",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010021_thumb/card_1010021_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1010041",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010041_thumb/card_1010041_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1010071",
@@ -1237,7 +1228,7 @@
     {
       "id": "1010261",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010261_thumb/card_1010261_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1010291",
@@ -1267,12 +1258,12 @@
     {
       "id": "1010470",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010470_thumb/card_1010470_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1010501",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010501_thumb/card_1010501_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1010561",
@@ -1297,12 +1288,12 @@
     {
       "id": "1010700",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010700_thumb/card_1010700_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1010710",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010710_thumb/card_1010710_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1010801",
@@ -1312,12 +1303,12 @@
     {
       "id": "1010820",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010820_thumb/card_1010820_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1010851",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010851_thumb/card_1010851_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1010871",
@@ -1340,14 +1331,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1011140",
-      "url": "https://vignette.wikia.nocookie.net/dbz-dokkanbattle/images/7/7c/Card_1011140_thumb_apng.png/revision/latest?cb=20190117162156&format=original",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1011141",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011141_thumb/card_1011141_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1011171",
@@ -1357,12 +1343,12 @@
     {
       "id": "1011190",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011190_thumb/card_1011190_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1011211",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011211_thumb/card_1011211_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1011220",
@@ -1387,7 +1373,7 @@
     {
       "id": "1011341",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011341_thumb/card_1011341_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1011400",
@@ -1397,12 +1383,12 @@
     {
       "id": "1011410",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011410_thumb/card_1011410_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1011431",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011431_thumb/card_1011431_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1011441",
@@ -1457,7 +1443,7 @@
     {
       "id": "1011790",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011790_thumb/card_1011790_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1011801",
@@ -1477,7 +1463,7 @@
     {
       "id": "1011920",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011920_thumb/card_1011920_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1011980",
@@ -1492,7 +1478,7 @@
     {
       "id": "1012011",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012011_thumb/card_1012011_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1012031",
@@ -1517,7 +1503,7 @@
     {
       "id": "1012350",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012350_thumb/card_1012350_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1012360",
@@ -1587,7 +1573,7 @@
     {
       "id": "1012701",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012701_thumb/card_1012701_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1012710",
@@ -1652,7 +1638,7 @@
     {
       "id": "1012991",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012991_thumb/card_1012991_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1013011",
@@ -1682,7 +1668,7 @@
     {
       "id": "1013101",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013101_thumb/card_1013101_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1013161",
@@ -1722,12 +1708,12 @@
     {
       "id": "1013431",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013431_thumb/card_1013431_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1013541",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013541_thumb/card_1013541_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1013571",
@@ -1737,7 +1723,7 @@
     {
       "id": "1013681",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013681_thumb/card_1013681_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1013711",
@@ -1752,11 +1738,6 @@
     {
       "id": "1013760",
       "url": "assets/cards/1013760.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1013770",
-      "url": "https://vignette.wikia.nocookie.net/dbz-dokkanbattle/images/d/d7/Card_1013770_thumb_apng.png/revision/latest?cb=20190117153652&format=original",
       "reason": "signature image invalide"
     },
     {
@@ -1777,7 +1758,7 @@
     {
       "id": "1013831",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013831_thumb/card_1013831_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1013861",
@@ -1792,7 +1773,7 @@
     {
       "id": "1013881",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013881_thumb/card_1013881_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1013911",
@@ -1810,11 +1791,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1014020",
-      "url": "https://vignette.wikia.nocookie.net/dbz-dokkanbattle/images/e/e7/Card_1014020_thumb_apng.png/revision/latest?cb=20190117153324&format=original",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1014021",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014021_thumb/card_1014021_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -1827,7 +1803,7 @@
     {
       "id": "1014051",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014051_thumb/card_1014051_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1014061",
@@ -1857,7 +1833,7 @@
     {
       "id": "1014141",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014141_thumb/card_1014141_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1014151",
@@ -1917,12 +1893,12 @@
     {
       "id": "1014351",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014351_thumb/card_1014351_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1014371",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014371_thumb/card_1014371_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1014391",
@@ -1932,7 +1908,7 @@
     {
       "id": "1014400",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014400_thumb/card_1014400_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1014430",
@@ -1997,7 +1973,7 @@
     {
       "id": "1014911",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014911_thumb/card_1014911_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1014940",
@@ -2007,7 +1983,7 @@
     {
       "id": "1014941",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014941_thumb/card_1014941_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1014971",
@@ -2017,7 +1993,7 @@
     {
       "id": "1014981",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014981_thumb/card_1014981_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1014991",
@@ -2032,7 +2008,7 @@
     {
       "id": "1015031",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015031_thumb/card_1015031_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1015051",
@@ -2057,7 +2033,7 @@
     {
       "id": "1015141",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015141_thumb/card_1015141_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1015200",
@@ -2107,12 +2083,12 @@
     {
       "id": "1015311",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015311_thumb/card_1015311_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1015350",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015350_thumb/card_1015350_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1015360",
@@ -2192,7 +2168,7 @@
     {
       "id": "1015820",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015820_thumb/card_1015820_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1015830",
@@ -2232,7 +2208,7 @@
     {
       "id": "1015911",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015911_thumb/card_1015911_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1015971",
@@ -2322,7 +2298,7 @@
     {
       "id": "1016430",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016430_thumb/card_1016430_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1016461",
@@ -2472,7 +2448,7 @@
     {
       "id": "1017241",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017241_thumb/card_1017241_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1017261",
@@ -2497,7 +2473,7 @@
     {
       "id": "1017321",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017321_thumb/card_1017321_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1017351",
@@ -2507,12 +2483,12 @@
     {
       "id": "1017371",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017371_thumb/card_1017371_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1017411",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017411_thumb/card_1017411_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1017421",
@@ -2567,7 +2543,7 @@
     {
       "id": "1017631",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017631_thumb/card_1017631_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1017661",
@@ -2577,7 +2553,7 @@
     {
       "id": "1017681",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017681_thumb/card_1017681_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1017701",
@@ -2602,7 +2578,7 @@
     {
       "id": "1017801",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017801_thumb/card_1017801_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1017821",
@@ -2647,7 +2623,7 @@
     {
       "id": "1018031",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018031_thumb/card_1018031_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1018061",
@@ -2687,7 +2663,7 @@
     {
       "id": "1018221",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018221_thumb/card_1018221_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1018250",
@@ -2712,7 +2688,7 @@
     {
       "id": "1018321",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018321_thumb/card_1018321_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1018401",
@@ -2727,7 +2703,7 @@
     {
       "id": "1018461",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018461_thumb/card_1018461_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1018490",
@@ -2737,7 +2713,7 @@
     {
       "id": "1018491",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018491_thumb/card_1018491_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1018501",
@@ -2757,7 +2733,7 @@
     {
       "id": "1018561",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018561_thumb/card_1018561_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1018581",
@@ -2782,7 +2758,7 @@
     {
       "id": "1018651",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018651_thumb/card_1018651_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1018681",
@@ -2815,11 +2791,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1018880",
-      "url": "https://vignette.wikia.nocookie.net/dbz-dokkanbattle/images/3/34/Card_1018880_thumb_apng.png/revision/latest?cb=20200217122839&format=original",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1018881",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018881_thumb/card_1018881_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -2832,12 +2803,7 @@
     {
       "id": "1018951",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018951_thumb/card_1018951_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1019000",
-      "url": "https://vignette.wikia.nocookie.net/dbz-dokkanbattle/images/9/9e/Card_1019000_thumb_apng.png/revision/latest?cb=20200217115345&format=original",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1019001",
@@ -2857,7 +2823,7 @@
     {
       "id": "1019091",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019091_thumb/card_1019091_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1019100",
@@ -2872,7 +2838,7 @@
     {
       "id": "1019171",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019171_thumb/card_1019171_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1019201",
@@ -2897,7 +2863,7 @@
     {
       "id": "1019301",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019301_thumb/card_1019301_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1019341",
@@ -2912,7 +2878,7 @@
     {
       "id": "1019371",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019371_thumb/card_1019371_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1019401",
@@ -2987,7 +2953,7 @@
     {
       "id": "1019821",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019821_thumb/card_1019821_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1019841",
@@ -3037,7 +3003,7 @@
     {
       "id": "1019991",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019991_thumb/card_1019991_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1020011",
@@ -3052,7 +3018,7 @@
     {
       "id": "1020041",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020041_thumb/card_1020041_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1020091",
@@ -3097,7 +3063,7 @@
     {
       "id": "1020230",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020230_thumb/card_1020230_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1020260",
@@ -3137,7 +3103,7 @@
     {
       "id": "1020371",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020371_thumb/card_1020371_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1020410",
@@ -3172,12 +3138,12 @@
     {
       "id": "1020551",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020551_thumb/card_1020551_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1020591",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020591_thumb/card_1020591_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1020601",
@@ -3217,7 +3183,7 @@
     {
       "id": "1020811",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020811_thumb/card_1020811_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1020870",
@@ -3237,7 +3203,7 @@
     {
       "id": "1020971",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020971_thumb/card_1020971_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1020991",
@@ -3257,7 +3223,7 @@
     {
       "id": "1021051",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021051_thumb/card_1021051_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1021081",
@@ -3267,7 +3233,7 @@
     {
       "id": "1021101",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021101_thumb/card_1021101_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1021111",
@@ -3287,7 +3253,7 @@
     {
       "id": "1021311",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021311_thumb/card_1021311_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1021331",
@@ -3317,7 +3283,7 @@
     {
       "id": "1021451",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021451_thumb/card_1021451_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1021480",
@@ -3347,7 +3313,7 @@
     {
       "id": "1021561",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021561_thumb/card_1021561_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1021620",
@@ -3382,7 +3348,7 @@
     {
       "id": "1021700",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021700_thumb/card_1021700_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1021721",
@@ -3472,7 +3438,7 @@
     {
       "id": "1022091",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022091_thumb/card_1022091_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1022120",
@@ -3492,7 +3458,7 @@
     {
       "id": "1022191",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022191_thumb/card_1022191_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1022221",
@@ -3572,7 +3538,7 @@
     {
       "id": "1022721",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022721_thumb/card_1022721_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1022750",
@@ -3587,7 +3553,7 @@
     {
       "id": "1022771",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022771_thumb/card_1022771_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1022781",
@@ -3622,7 +3588,7 @@
     {
       "id": "1022941",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022941_thumb/card_1022941_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1022960",
@@ -3677,7 +3643,7 @@
     {
       "id": "1023130",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023130_thumb/card_1023130_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1023161",
@@ -3747,7 +3713,7 @@
     {
       "id": "1023421",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023421_thumb/card_1023421_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1023461",
@@ -3767,7 +3733,7 @@
     {
       "id": "1023521",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023521_thumb/card_1023521_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1023571",
@@ -3792,7 +3758,7 @@
     {
       "id": "1023651",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023651_thumb/card_1023651_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1023661",
@@ -3867,7 +3833,7 @@
     {
       "id": "1023951",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023951_thumb/card_1023951_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1023981",
@@ -3877,7 +3843,7 @@
     {
       "id": "1024000",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024000_thumb/card_1024000_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1024061",
@@ -3997,7 +3963,7 @@
     {
       "id": "1024751",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024751_thumb/card_1024751_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1024781",
@@ -4007,7 +3973,7 @@
     {
       "id": "1024801",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024801_thumb/card_1024801_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1024830",
@@ -4050,11 +4016,6 @@
       "reason": "signature image invalide"
     },
     {
-      "id": "1024930",
-      "url": "https://static.wikia.nocookie.net/dbz-dokkanbattle/images/5/58/Card_1024930_thumb_apng.png/revision/latest?cb=20220914064956&format=original",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024931",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024931_thumb/card_1024931_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -4077,7 +4038,7 @@
     {
       "id": "1025041",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025041_thumb/card_1025041_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1025071",
@@ -4093,11 +4054,6 @@
       "id": "1025111",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025111_thumb/card_1025111_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1025150",
-      "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025150_thumb/card_1025150_thumb.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1025151",
@@ -4157,7 +4113,7 @@
     {
       "id": "1025411",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025411_thumb/card_1025411_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1025461",
@@ -4222,7 +4178,7 @@
     {
       "id": "1025771",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025771_thumb/card_1025771_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1025801",
@@ -4252,7 +4208,7 @@
     {
       "id": "1026031",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026031_thumb/card_1026031_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1026071",
@@ -4287,7 +4243,7 @@
     {
       "id": "1026201",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026201_thumb/card_1026201_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1026231",
@@ -4297,7 +4253,7 @@
     {
       "id": "1026251",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026251_thumb/card_1026251_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1026281",
@@ -4362,7 +4318,7 @@
     {
       "id": "1026630",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026630_thumb/card_1026630_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1026731",
@@ -4377,7 +4333,7 @@
     {
       "id": "1026771",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026771_thumb/card_1026771_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1026791",
@@ -4387,7 +4343,7 @@
     {
       "id": "1026821",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026821_thumb/card_1026821_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1026840",
@@ -4412,7 +4368,7 @@
     {
       "id": "1026940",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026940_thumb/card_1026940_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1027001",
@@ -4422,7 +4378,7 @@
     {
       "id": "1027041",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027041_thumb/card_1027041_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1027061",
@@ -4527,12 +4483,12 @@
     {
       "id": "1027580",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027580_thumb/card_1027580_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1027601",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027601_thumb/card_1027601_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1027621",
@@ -4597,7 +4553,7 @@
     {
       "id": "1027911",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027911_thumb/card_1027911_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1027921",
@@ -4617,7 +4573,7 @@
     {
       "id": "1027981",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027981_thumb/card_1027981_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1028021",
@@ -4642,12 +4598,12 @@
     {
       "id": "1028090",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1028090_thumb/card_1028090_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1028111",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1028111_thumb/card_1028111_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1028131",
@@ -4752,7 +4708,7 @@
     {
       "id": "1028731",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1028731_thumb/card_1028731_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1028761",
@@ -4767,7 +4723,7 @@
     {
       "id": "1028791",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1028791_thumb/card_1028791_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1028811",
@@ -4822,7 +4778,7 @@
     {
       "id": "1029091",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1029091_thumb/card_1029091_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1029121",
@@ -4832,7 +4788,7 @@
     {
       "id": "1029141",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1029141_thumb/card_1029141_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1029161",
@@ -4897,7 +4853,7 @@
     {
       "id": "1029551",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1029551_thumb/card_1029551_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1029571",
@@ -5042,7 +4998,7 @@
     {
       "id": "1030311",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1030311_thumb/card_1030311_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1030341",
@@ -5062,7 +5018,7 @@
     {
       "id": "1030481",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1030481_thumb/card_1030481_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1030531",
@@ -5072,7 +5028,7 @@
     {
       "id": "1030571",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1030571_thumb/card_1030571_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1030611",
@@ -5092,7 +5048,7 @@
     {
       "id": "1030670",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1030670_thumb/card_1030670_thumb.png",
-      "reason": "signature image invalide"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1030680",
@@ -5117,7 +5073,7 @@
     {
       "id": "1030921",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1030921_thumb/card_1030921_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1030941",
@@ -5212,7 +5168,7 @@
     {
       "id": "1031501",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1031501_thumb/card_1031501_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1031521",
@@ -5512,7 +5468,7 @@
     {
       "id": "1032851",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1032851_thumb/card_1032851_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1032881",
@@ -5548,11 +5504,6 @@
       "id": "1033061",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1033061_thumb/card_1033061_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1033520",
-      "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1033520_thumb/card_1033520_thumb.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1033551",
@@ -5687,7 +5638,7 @@
     {
       "id": "1034411",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1034411_thumb/card_1034411_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1034431",
@@ -5737,7 +5688,7 @@
     {
       "id": "1034651",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1034651_thumb/card_1034651_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1034661",
@@ -5747,7 +5698,7 @@
     {
       "id": "1034691",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1034691_thumb/card_1034691_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "The read operation timed out"
     },
     {
       "id": "1034701",

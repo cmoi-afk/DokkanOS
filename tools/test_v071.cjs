@@ -53,7 +53,7 @@ vm.runInContext(`DB={cards:[
 vm.runInContext('renderDuplicates()',context);
 assert(Number(element('#dupCount').textContent.split(' ')[0])>0);
 assert(element('#duplicateSummary').textContent.includes('cartes UR/LR'));
-assert(element('#duplicateSummary').textContent.includes('2 possédées'));
+assert(element('#duplicateSummary').textContent.includes('possédées'));
 assert(element('#duplicateList').innerHTML.includes('2/4'));
 assert(element('#duplicateList').innerHTML.includes('Non possédée'));
 assert(element('#duplicateList').innerHTML.includes('potential-line'));

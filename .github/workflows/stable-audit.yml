@@ -117,7 +117,10 @@ jobs:
               absent=[x for x in needles if x not in app]
               if absent: flow_missing[flow]=absent
           print("CRITICAL-FLOW-MISSING",flow_missing)
-          print("CRITICAL-FLOWS-READY",not flow_missing)
+          critical_ready=not flow_missing
+          print("CRITICAL-FLOWS-READY",critical_ready)
+          final_ready=(len(missing)==0 and len(raw_hits)==0 and len(bad_names)==0 and not unnamed and not duplicate_ids and not implicit_alias and not missing_tabs and not duplicate_sections and not missing_nav and critical_ready)
+          print("FINAL-APP-READY",final_ready)
           # Pendant la branche d'audit, produire un inventaire exact sans faire passer
           # une mauvaise image d'éveil pour une ressource valide.
           if missing:

@@ -1,7 +1,7 @@
 {
   "recovered": 1,
   "failed": 0,
-  "remaining": 240,
+  "remaining": 271,
   "recoveredItems": [
     {
       "id": "1028061",
@@ -27,12 +27,32 @@
       "name": "Freezer (1re forme)"
     },
     {
+      "id": "1010610",
+      "name": "Goku (Youth)"
+    },
+    {
+      "id": "1010620",
+      "name": "Arale Norimaki"
+    },
+    {
       "id": "1013711",
       "name": "Slug (forme géante)"
     },
     {
+      "id": "1013780",
+      "name": "Dragon Ball Heroines"
+    },
+    {
       "id": "1014331",
       "name": "Freezer (forme finale) (GT)"
+    },
+    {
+      "id": "1015451",
+      "name": "Métal Cooler"
+    },
+    {
+      "id": "1016581",
+      "name": "Goku (GT)"
     },
     {
       "id": "1019201",
@@ -41,6 +61,10 @@
     {
       "id": "1019371",
       "name": "Boo (athlétique)"
+    },
+    {
+      "id": "1020410",
+      "name": "Son Gohan (petit)"
     },
     {
       "id": "1020891",
@@ -53,6 +77,14 @@
     {
       "id": "1021311",
       "name": "Tenshinhan"
+    },
+    {
+      "id": "1023820",
+      "name": "Statue de Jackie Chun (diamant)"
+    },
+    {
+      "id": "1024921",
+      "name": "Métal Cooler"
     },
     {
       "id": "1025771",
@@ -215,6 +247,14 @@
       "name": "Broly Super Saiyan"
     },
     {
+      "id": "1028080",
+      "name": "Caulifla"
+    },
+    {
+      "id": "1028090",
+      "name": "Kale"
+    },
+    {
       "id": "1028161",
       "name": "Hildegarn"
     },
@@ -229,6 +269,10 @@
     {
       "id": "1028321",
       "name": "Son Gohan (Beast)"
+    },
+    {
+      "id": "1028330",
+      "name": "Gogeta"
     },
     {
       "id": "1028371",
@@ -363,6 +407,10 @@
       "name": "Son Gohan Super Saiyan (jeune)"
     },
     {
+      "id": "1029510",
+      "name": "Son Gohan (grand-père)"
+    },
+    {
       "id": "1029551",
       "name": "Anilaza"
     },
@@ -411,6 +459,10 @@
       "name": "Freezer (forme finale)/Cooler (forme finale)"
     },
     {
+      "id": "1029870",
+      "name": "C-17 (Hell Fighter)"
+    },
+    {
       "id": "1029891",
       "name": "Fû (enfant) (Dogidogi absorbé)"
     },
@@ -457,6 +509,10 @@
     {
       "id": "1030141",
       "name": "Combattant vêtu de noir (Super Saiyan) \n(renforcé par les boules de cristal sombres)"
+    },
+    {
+      "id": "1030160",
+      "name": "Combattante vêtue de noir"
     },
     {
       "id": "1030181",
@@ -511,6 +567,14 @@
       "name": "Son Goku Super Saiyan (Mini) (DAIMA)"
     },
     {
+      "id": "1030670",
+      "name": "Son Goku (Mini) (DAIMA)"
+    },
+    {
+      "id": "1030680",
+      "name": "Vegeta (Mini) (DAIMA)"
+    },
+    {
       "id": "1030731",
       "name": "M. Satan"
     },
@@ -533,6 +597,10 @@
     {
       "id": "1030971",
       "name": "Paikuhan"
+    },
+    {
+      "id": "1030990",
+      "name": "Mecha Freezer"
     },
     {
       "id": "1031021",
@@ -671,6 +739,10 @@
       "name": "Son Gohan SS possédé (GT) & Son Goten SS possédé (GT)"
     },
     {
+      "id": "1032030",
+      "name": "Vegeta (petit)"
+    },
+    {
       "id": "1032051",
       "name": "Trunks possédé (GT)"
     },
@@ -701,6 +773,10 @@
     {
       "id": "1032191",
       "name": "Goku Black (Super Saiyan Rosé) (clonage) [END]"
+    },
+    {
+      "id": "1032220",
+      "name": "Chichi"
     },
     {
       "id": "1032241",
@@ -739,8 +815,28 @@
       "name": "Glorio"
     },
     {
+      "id": "1032450",
+      "name": "Trunks (jeune)"
+    },
+    {
       "id": "1032461",
       "name": "Super Garlic Jr."
+    },
+    {
+      "id": "1032470",
+      "name": "Son Gohan SS possédé (GT)"
+    },
+    {
+      "id": "1032480",
+      "name": "Son Goten SS possédé (GT)"
+    },
+    {
+      "id": "1032490",
+      "name": "Trunks SS possédé (GT)"
+    },
+    {
+      "id": "1032520",
+      "name": "Son Goku"
     },
     {
       "id": "1032551",
@@ -791,8 +887,20 @@
       "name": "Tamagami Numéro Trois"
     },
     {
+      "id": "1032770",
+      "name": "Son Goku"
+    },
+    {
+      "id": "1032790",
+      "name": "Son Goku"
+    },
+    {
       "id": "1032811",
       "name": "Tamagami Numéro Un"
+    },
+    {
+      "id": "1032830",
+      "name": "Krillin"
     },
     {
       "id": "1032851",
@@ -859,6 +967,10 @@
       "name": "Piccolo"
     },
     {
+      "id": "1033800",
+      "name": "Son Goku"
+    },
+    {
       "id": "1033821",
       "name": "Son Goku Super Saiyan divin"
     },
@@ -907,6 +1019,10 @@
       "name": "Piccolo (Armée du Ruban Rouge)"
     },
     {
+      "id": "1034270",
+      "name": "Son Gohan (enfant)"
+    },
+    {
       "id": "1034301",
       "name": "Son Goku Super Saiyan 3 (Mini) (DAIMA)"
     },
@@ -937,6 +1053,14 @@
     {
       "id": "1034481",
       "name": "Son Goku Super Saiyan 3 (ange)"
+    },
+    {
+      "id": "1034550",
+      "name": "Dr. Gero"
+    },
+    {
+      "id": "1034560",
+      "name": "Robot espion"
     },
     {
       "id": "1034611",

@@ -5,6 +5,7 @@ on:
     paths:
       - "app.js"
       - "index.html"
+      - "style.css"
       - "sw.js"
       - "catalog.json"
       - "collection.json"

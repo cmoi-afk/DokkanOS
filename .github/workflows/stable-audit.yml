@@ -93,6 +93,19 @@ jobs:
           print("CATALOG-DUPLICATE-IDS",duplicate_ids[:30])
           print("CATALOG-IMPLICIT-IMAGE-ALIASES",len(implicit_alias),implicit_alias[:30])
           print("CATALOG-IDENTITY-READY",not unnamed and not duplicate_ids and not implicit_alias)
+          # Seven-tab structural gate: every navigation target must exist exactly once.
+          html=Path("index.html").read_text(encoding="utf-8")
+          tabs=["box","duplicates","catalog","inventory","teams","analysis","verify"]
+          missing_tabs=[]; duplicate_sections=[]; missing_nav=[]
+          for tab in tabs:
+              count=len(re.findall(r'<section\s+id=["\']'+re.escape(tab)+r'["\']',html,re.I))
+              if count==0: missing_tabs.append(tab)
+              if count>1: duplicate_sections.append(tab)
+              if not re.search(r'data-v=["\']'+re.escape(tab)+r'["\']',html,re.I): missing_nav.append(tab)
+          print("SEVEN-TABS-MISSING",missing_tabs)
+          print("SEVEN-TABS-DUPLICATE",duplicate_sections)
+          print("SEVEN-TABS-NAV-MISSING",missing_nav)
+          print("SEVEN-TABS-READY",not missing_tabs and not duplicate_sections and not missing_nav)
           # Pendant la branche d'audit, produire un inventaire exact sans faire passer
           # une mauvaise image d'éveil pour une ressource valide.
           if missing:

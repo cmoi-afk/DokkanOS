@@ -338,7 +338,7 @@ async function boot(){
   DB=await fetch('collection.json').then(r=>r.ok?r.json():fetch('data.json').then(x=>x.json()));
   if(!DB||!Array.isArray(DB.cards))throw new Error('Collection DokkanOS invalide');
   try{META=await fetch('card-meta.json').then(r=>r.ok?r.json():({cards:{}}))}catch(e){META={cards:{}}}
-  try{CATALOG=await fetch('catalog.json').then(r=>r.ok?r.json():({cards:[]}))}catch(e){CATALOG={cards:[]}}
+  try{CATALOG=await fetch('catalog-v1.draft.json').then(r=>r.ok?r.json():fetch('catalog.json').then(x=>x.ok?x.json():({cards:[]})))}catch(e){CATALOG={cards:[]}}
   try{OVERLAP=await fetch('overlap-conflicts.json').then(r=>r.ok?r.json():({conflicts:[]}))}catch(e){OVERLAP={conflicts:[]}}
   applyMetadata(); restoreEdits(); initAdvancedFilters();
   render(); stats(); renderDuplicates(); renderMissing(); renderInventory(); renderManualOwned(); renderTeam(); renderAnalysis();

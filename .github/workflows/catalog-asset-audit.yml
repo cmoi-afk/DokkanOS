@@ -7,6 +7,7 @@ on:
       - "tools/verify_missing_images.py"
       - "catalog-v1.draft.json"
       - "assets/cards/**"
+      - "docs/IMAGE-MIGRATION-v1-APPLY.json"
       - ".github/workflows/catalog-asset-audit.yml"
 permissions:
   contents: write

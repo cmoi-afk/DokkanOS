@@ -4,13 +4,13 @@ import json,os,shutil
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]; CAT=ROOT/"catalog-v1.draft.json"; OUT=ROOT/"assets/cards"; SRC=Path(os.environ["THUMB_DIR"])
 d=json.loads(CAT.read_text(encoding="utf-8")); byid={str(c["id"]):c for c in d["cards"]}
-pending={cid for cid,c in byid.items() if not (c.get("image") or "").startswith("assets/cards/")}
+audit_path=ROOT/"docs/IMAGE-AUDIT-FINAL.json"\nbroken=set()\nif audit_path.exists():\n audit=json.loads(audit_path.read_text(encoding="utf-8")); broken={str(x["id"]) for x in audit.get("brokenImages",[])}\npending={cid for cid,c in byid.items() if cid in broken or not (c.get("image") or "").startswith("assets/cards/")}
 found={}
 for p in SRC.rglob("*"):
  if not p.is_file(): continue
  stem=p.stem
  if stem in pending and p.suffix.lower() in {".png",".jpg",".jpeg",".webp"}:
-  found.setdefault(stem,p)
+  found.setdefault(key,p)
 ok=[]
 for cid,p in found.items():
  ext=".jpg" if p.suffix.lower()==".jpeg" else p.suffix.lower()

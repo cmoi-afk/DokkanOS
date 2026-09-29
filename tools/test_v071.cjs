@@ -45,10 +45,10 @@ vm.runInContext('ezaFilter=""; filter="valid"',context); assert.deepEqual(Array.
 vm.runInContext('filter="check"',context); assert.deepEqual(Array.from(vm.runInContext('visibleCards().map(c=>c.boxId)',context)),['B']);
 console.log('top rarity/type/class/category/link/EZA/status filters: OK');
 vm.runInContext(`DB={cards:[
- {boxId:"B01",candidateId:"10",validated:true,name:"Goku",image:"x.webp"},
- {boxId:"B02",candidateId:"10",validated:true,name:"Goku",image:"x.webp"},
- {boxId:"B03",candidateId:"10",validated:true,name:"Goku",image:"x.webp"},
- {boxId:"B04",candidateId:"11",validated:true,name:"Vegeta",image:"y.webp"}
+ {boxId:"B01",candidateId:"10",validated:true,name:"Goku",image:"x.webp",rarity:"UR"},
+ {boxId:"B02",candidateId:"10",validated:true,name:"Goku",image:"x.webp",rarity:"UR"},
+ {boxId:"B03",candidateId:"10",validated:true,name:"Goku",image:"x.webp",rarity:"UR"},
+ {boxId:"B04",candidateId:"11",validated:true,name:"Vegeta",image:"y.webp",rarity:"UR"}
 ]}`,context);
 vm.runInContext('renderDuplicates()',context);
 assert(Number(element('#dupCount').textContent.split(' ')[0])>0);

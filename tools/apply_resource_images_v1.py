@@ -16,9 +16,11 @@ for x in rep["items"]:
  c=byid.get(cid)
  if not c: errors.append({"id":cid,"reason":"carte absente du draft"}); continue
  c["image"]=img; c["resourceId"]=rid; applied.append(cid)
-catp.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+catp.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"
+",encoding="utf-8")
 remaining=[str(c["id"]) for c in d["cards"] if not (c.get("image") or "").startswith("assets/cards/")]
 out={"applied":len(applied),"errors":len(errors),"remainingExternal":len(remaining),"appliedIds":applied,"errorsItems":errors,"remainingIds":remaining}
-(ROOT/"docs/IMAGE-MIGRATION-v1-APPLY.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+(ROOT/"docs/IMAGE-MIGRATION-v1-APPLY.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"
+",encoding="utf-8")
 print("applied",len(applied),"errors",len(errors),"remaining",len(remaining))
 if errors: raise SystemExit(1)

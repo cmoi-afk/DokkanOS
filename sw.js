@@ -1,6 +1,6 @@
-const VERSION='1.1-stable';
+const VERSION='1.1-stable-r2';
 const CACHE='dokkanos-v'+VERSION;
-const CORE=['./','./index.html','./style.css','./app.js','./data.json','./collection.json','./overlap-map.json','./overlap-conflicts.json','./card-meta.json','./catalog.json','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png'];
+const CORE=['./','./index.html','./style.css','./app.js','./data.json','./collection.json','./overlap-map.json','./overlap-conflicts.json','./card-meta.json','./catalog-v1.draft.json','./catalog.json','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(fetch(e.request).then(res=>{if(res&&res.ok){const copy=res.clone();caches.open(CACHE).then(c=>c.put(e.request,copy))}return res}).catch(()=>caches.match(e.request)).then(hit=>hit||fetch(e.request).then(res=>{if(res&&res.ok){const copy=res.clone();caches.open(CACHE).then(c=>c.put(e.request,copy))}return res}).catch(()=>e.request.mode==='navigate'?caches.match('./index.html'):Response.error())))});

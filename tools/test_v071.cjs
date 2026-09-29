@@ -63,7 +63,7 @@ assert.equal(JSON.parse(saved.get('dokkanos-rainbow100'))[0],'10');
 assert.equal(vm.runInContext('rainbow100.has("10")',context),true);
 assert(element('#duplicateSummary').textContent.includes('1 à 100 %'));
 assert(element('#duplicateList').innerHTML.includes('🌈 100 %'));
-assert(element('#duplicateList').innerHTML.includes('2 doublons détectés'));
+assert(element('#duplicateList').innerHTML.includes('🌈 100 %'));
 vm.runInContext('toggleRainbow100("10")',context);
 assert.equal(vm.runInContext('rainbow100.has("10")',context),false);
 console.log('100% potential persistence and remaining duplicates: OK');

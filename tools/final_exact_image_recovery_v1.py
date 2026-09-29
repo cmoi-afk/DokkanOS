@@ -20,9 +20,7 @@ for cid,url in SOURCES.items():
   if not valid(b[:32]): raise ValueError("format invalide")
   p=OUT/(cid+".png"); p.write_bytes(b); byid[cid]["image"]=p.relative_to(ROOT).as_posix(); ok.append({"id":cid,"source":url})
  except Exception as e: fail.append({"id":cid,"reason":str(e)})
-CAT.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"
-",encoding="utf-8")
+CAT.write_text(json.dumps(d,ensure_ascii=False,indent=2)+chr(10),encoding="utf-8")
 remaining=[{"id":str(c["id"]),"name":c.get("name")} for c in d["cards"] if not (c.get("image") or "").startswith("assets/cards/")]
-(ROOT/"docs/IMAGE-MIGRATION-v1-FINAL.json").write_text(json.dumps({"recovered":len(ok),"failed":len(fail),"remaining":len(remaining),"recoveredItems":ok,"failedItems":fail,"remainingItems":remaining},ensure_ascii=False,indent=2)+"
-",encoding="utf-8")
+(ROOT/"docs/IMAGE-MIGRATION-v1-FINAL.json").write_text(json.dumps({"recovered":len(ok),"failed":len(fail),"remaining":len(remaining),"recoveredItems":ok,"failedItems":fail,"remainingItems":remaining},ensure_ascii=False,indent=2)+chr(10),encoding="utf-8")
 print("recovered",len(ok),"remaining",len(remaining))

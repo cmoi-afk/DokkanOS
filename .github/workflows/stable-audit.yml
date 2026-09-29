@@ -81,6 +81,18 @@ jobs:
                   bad_names.append((c.get("id"),name))
           print("NAME-ANOMALIES",bad_names[:50],"total",len(bad_names))
           print("NAME-ANOMALY-READY",len(bad_names)==0)
+          # Identity/awakening coherence: every catalogue row must keep a stable unique
+          # logical ID and a non-empty display name; resource sharing is allowed only
+          # through explicit resourceId fields.
+          rows=cat.get("cards",[])
+          logical=[str(c.get("id") or "") for c in rows]
+          unnamed=[str(c.get("id") or "") for c in rows if not str(c.get("name") or c.get("title") or "").strip()]
+          duplicate_ids=sorted({x for x in logical if x and logical.count(x)>1})
+          implicit_alias=[str(c.get("id")) for c in rows if c.get("imageId") and not c.get("resourceId") and str(c.get("imageId"))!=str(c.get("id"))]
+          print("CATALOG-UNNAMED",len(unnamed),unnamed[:30])
+          print("CATALOG-DUPLICATE-IDS",duplicate_ids[:30])
+          print("CATALOG-IMPLICIT-IMAGE-ALIASES",len(implicit_alias),implicit_alias[:30])
+          print("CATALOG-IDENTITY-READY",not unnamed and not duplicate_ids and not implicit_alias)
           # Pendant la branche d'audit, produire un inventaire exact sans faire passer
           # une mauvaise image d'éveil pour une ressource valide.
           if missing:

@@ -4,10 +4,10 @@
   "rejected": 141,
   "uniqueAccepted": 1904,
   "intermediateAwakeningsRemoved": 126,
-  "officialFrenchNames": 0,
-  "officialFrenchTitles": 0,
-  "sourceNameFallbacks": 1904,
-  "sourceTitleFallbacks": 1904,
+  "officialFrenchNames": 549,
+  "officialFrenchTitles": 549,
+  "sourceNameFallbacks": 1355,
+  "sourceTitleFallbacks": 1355,
   "rejectedItems": [
     {
       "id": "1000860",

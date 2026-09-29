@@ -39,7 +39,6 @@ with ThreadPoolExecutor(max_workers=24) as ex:
 empty=[str(c["id"]) for c in data["cards"] if not c.get("image")]
 report={"catalogSource":catalog.name,"catalogCards":len(data["cards"]),"imagesChecked":checked,"emptyBeforeAudit":empty,"stillMissing":empty,"brokenImages":sorted(broken,key=lambda x:x["id"]),"idImageMismatches":sorted(mismatches,key=lambda x:x["id"])}
 out=root/"docs/IMAGE-AUDIT-FINAL.json"
-out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"
-",encoding="utf-8")
+out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+chr(10),encoding="utf-8")
 print(json.dumps({k:(len(v) if isinstance(v,list) else v) for k,v in report.items()},ensure_ascii=False))
 

@@ -71,6 +71,16 @@ jobs:
               raw_hits += re.findall(pat,app,re.I)
           print("FR-RAW-UI-HITS",raw_hits)
           print("FR-STRICT-UI-READY",len(raw_hits)==0)
+          # Name-quality gate for regressions previously observed in the UI.
+          cat=json.loads(Path("catalog.json").read_text(encoding="utf-8"))
+          bad_names=[]
+          for c in cat.get("cards",[]):
+              name=str(c.get("name") or c.get("title") or "")
+              low=name.lower()
+              if re.search(r'\b(son\s+){2,}',low) or re.search(r'\b(goku\s+){2,}',low):
+                  bad_names.append((c.get("id"),name))
+          print("NAME-ANOMALIES",bad_names[:50],"total",len(bad_names))
+          print("NAME-ANOMALY-READY",len(bad_names)==0)
           # Pendant la branche d'audit, produire un inventaire exact sans faire passer
           # une mauvaise image d'éveil pour une ressource valide.
           if missing:

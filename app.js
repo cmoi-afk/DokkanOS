@@ -678,7 +678,22 @@ function useCollectionFilter(kind,value){if(kind==='category'){categoryFilter=va
 function switchView(v){$$('.view').forEach(x=>x.classList.remove('on'));$('#'+v).classList.add('on');$$('nav button').forEach(x=>x.classList.toggle('on',x.dataset.v===v));if(v==='duplicates')renderDuplicates();if(v==='inventory')renderInventory();if(v==='catalog')renderMissing();if(v==='teams')renderTeam();if(v==='analysis')renderAnalysis();let active=document.querySelector('nav button.on');if(active)active.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'})}
 document.addEventListener('click',e=>{if(e.target.id==='resetFilters'){rarityFilter=typeFilter=classFilter=categoryFilter=linkFilter=ezaFilter='';favoriteOnly=false;['rarityFilter','typeFilter','classFilter','categoryFilter','linkFilter','ezaFilter'].forEach(id=>$('#'+id).value='');$('#favoriteFilter').classList.remove('on');render()}if(e.target.id==='favoriteFilter'){favoriteOnly=!favoriteOnly;e.target.classList.toggle('on',favoriteOnly);render()}if(e.target.matches('.invchip')){$('.invchip').forEach(x=>x.classList.remove('on'));e.target.classList.add('on');inventoryFilter=e.target.dataset.invf;renderInventory()}if(e.target.matches('.chip')){$$('.chip').forEach(x=>x.classList.remove('on'));e.target.classList.add('on');filter=e.target.dataset.f;render()}if(e.target.id==='autoTeam')autoBuildTeam();if(e.target.id==='clearTeam')clearTeam();if(e.target.matches('nav button'))switchView(e.target.dataset.v)});
 document.addEventListener('input',e=>{if(e.target.id==='search'){query=norm(e.target.value);render()}if(e.target.id==='inventorySearch'){inventoryQuery=e.target.value;renderInventory()}});
-document.addEventListener('change',e=>{if(e.target.id==='sort')sortMode=e.target.value;if(e.target.id==='rarityFilter')rarityFilter=e.target.value;if(e.target.id==='typeFilter')typeFilter=e.target.value;if(e.target.id==='classFilter')classFilter=e.target.value;if(e.target.id==='categoryFilter')categoryFilter=e.target.value;if(e.target.id==='linkFilter')linkFilter=e.target.value;if(e.target.id==='ezaFilter')ezaFilter=e.target.value;if(e.target.id==='leaderSelect'){teamLeader=e.target.value;localStorage.setItem('dokkanos-team-leader',teamLeader);if(teamLeader&&!selectedTeam.includes(teamLeader)){if(selectedTeam.length>=6)selectedTeam.pop();selectedTeam.unshift(teamLeader);localStorage.setItem('dokkanos-team',JSON.stringify(selectedTeam))}renderTeam()}render()});
+document.addEventListener('change',e=>{
+  let refreshBox=false;
+  if(e.target.id==='sort'){sortMode=e.target.value;refreshBox=true}
+  if(e.target.id==='rarityFilter'){rarityFilter=e.target.value;refreshBox=true}
+  if(e.target.id==='typeFilter'){typeFilter=e.target.value;refreshBox=true}
+  if(e.target.id==='classFilter'){classFilter=e.target.value;refreshBox=true}
+  if(e.target.id==='categoryFilter'){categoryFilter=e.target.value;refreshBox=true}
+  if(e.target.id==='linkFilter'){linkFilter=e.target.value;refreshBox=true}
+  if(e.target.id==='ezaFilter'){ezaFilter=e.target.value;refreshBox=true}
+  if(e.target.id==='leaderSelect'){
+    teamLeader=e.target.value;localStorage.setItem('dokkanos-team-leader',teamLeader);
+    if(teamLeader&&!selectedTeam.includes(teamLeader)){if(selectedTeam.length>=6)selectedTeam.pop();selectedTeam.unshift(teamLeader);localStorage.setItem('dokkanos-team',JSON.stringify(selectedTeam))}
+    renderTeam()
+  }
+  if(refreshBox)render()
+});
 window.addEventListener('online',()=>document.body.classList.remove('offline'));window.addEventListener('offline',()=>document.body.classList.add('offline'));if(!navigator.onLine)document.body.classList.add('offline');
 boot().catch(()=>{document.body.innerHTML='<div class="fatal"><h2>DokkanOS</h2><p>Impossible de charger la Box. Réessaie avec une connexion internet.</p><button onclick="location.reload()">Réessayer</button></div>'});
 if('serviceWorker'in navigator){navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(reg=>{reg.update().catch(()=>{});navigator.serviceWorker.addEventListener('controllerchange',()=>{if(!sessionStorage.getItem('dokkanos-sw-reloaded')){sessionStorage.setItem('dokkanos-sw-reloaded','1');location.reload()}})}).catch(()=>{});}

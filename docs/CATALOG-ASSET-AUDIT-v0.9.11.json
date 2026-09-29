@@ -5,7 +5,7 @@
   "numericAssetIds": 1851,
   "directAssetMatches": 1124,
   "missingDirectAssets": 780,
-  "duplicateBinaryGroups": 10,
+  "duplicateBinaryGroups": 9,
   "missing": [
     {
       "id": "1002241",
@@ -7043,7 +7043,6 @@
       "assets/cards/2000780.png",
       "assets/cards/2000830.png",
       "assets/cards/2000820.png",
-      "assets/cards/2000770.png",
       "assets/cards/2000810.png",
       "assets/cards/2000840.png"
     ],
@@ -7055,10 +7054,6 @@
     [
       "assets/cards/1002320.png",
       "assets/cards/1003540.png"
-    ],
-    [
-      "assets/cards/1004631.png",
-      "assets/cards/1003640.png"
     ],
     [
       "assets/cards/1002350.png",

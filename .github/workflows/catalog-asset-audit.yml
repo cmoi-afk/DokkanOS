@@ -8,6 +8,7 @@ on:
       - "catalog-v1.draft.json"
       - "assets/cards/**"
       - "docs/IMAGE-MIGRATION-v1-APPLY.json"
+      - "docs/IMAGE-MIGRATION-v1-FINAL.json"
       - ".github/workflows/catalog-asset-audit.yml"
 permissions:
   contents: write

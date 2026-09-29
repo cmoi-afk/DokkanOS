@@ -30,4 +30,18 @@ assert.equal(JSON.parse(saved.get('dokkanos-edits'))[0].candidateId,String(card.
 vm.runInContext('DB.cards=[{boxId:"BOX-TEST",candidateId:"",validated:false,image:""}]; restoreEdits()',context);
 assert.equal(vm.runInContext('DB.cards[0].image',context),card.image);
 assert.equal(data.cards.filter(x=>!x.image).length,0);
+vm.runInContext(`DB={cards:[
+ {boxId:"A",candidateId:"1",validated:true,rarity:"SSR",type:"AGI",class:"Super",categories:["Kamehameha"],links:["Super Saiyan"],eza:true},
+ {boxId:"B",candidateId:"2",validated:false,rarity:"UR",type:"TEC",class:"Extrême",categories:["Boss des films"],links:["Boss"],eza:false},
+ {boxId:"C",candidateId:"3",validated:true,rarity:"LR",type:"INT",class:"Super",categories:["Kamehameha"],links:["Pouvoir légendaire"],eza:false}
+]}; filter="all"; rarityFilter="SSR"; typeFilter=classFilter=categoryFilter=linkFilter=ezaFilter=""; favoriteOnly=false; query=""`,context);
+assert.deepEqual(Array.from(vm.runInContext('visibleCards().map(c=>c.boxId)',context)),['A']);
+vm.runInContext('rarityFilter=""; typeFilter="TEC"',context); assert.deepEqual(Array.from(vm.runInContext('visibleCards().map(c=>c.boxId)',context)),['B']);
+vm.runInContext('typeFilter=""; classFilter="Super"',context); assert.deepEqual(Array.from(vm.runInContext('visibleCards().map(c=>c.boxId)',context)),['A','C']);
+vm.runInContext('classFilter=""; categoryFilter="Kamehameha"',context); assert.deepEqual(Array.from(vm.runInContext('visibleCards().map(c=>c.boxId)',context)),['A','C']);
+vm.runInContext('categoryFilter=""; linkFilter="Boss"',context); assert.deepEqual(Array.from(vm.runInContext('visibleCards().map(c=>c.boxId)',context)),['B']);
+vm.runInContext('linkFilter=""; ezaFilter="yes"',context); assert.deepEqual(Array.from(vm.runInContext('visibleCards().map(c=>c.boxId)',context)),['A']);
+vm.runInContext('ezaFilter=""; filter="valid"',context); assert.deepEqual(Array.from(vm.runInContext('visibleCards().map(c=>c.boxId)',context)),['A','C']);
+vm.runInContext('filter="check"',context); assert.deepEqual(Array.from(vm.runInContext('visibleCards().map(c=>c.boxId)',context)),['B']);
+console.log('top rarity/type/class/category/link/EZA/status filters: OK');
 console.log('verification, persistence, unconfirmed list and catalogue images: OK');

@@ -88,6 +88,14 @@ assert(!element('#duplicateList').innerHTML.includes('Test UR'));
 assert(!element('#duplicateList').innerHTML.includes('Test SSR'));
 assert(element('#duplicateList').innerHTML.includes('UR Final'));
 console.log('max-awakened potential family display: OK');
+vm.runInContext(`CATALOG={cards:[
+{id:"920",name:"Goku Super Saiyan",nameFr:"Son Goku Super Saiyan",rarity:"UR",type:"AGL"},
+{id:"921",name:"Son Goku Super Saiyan",nameFr:"Son Goku Super Saiyan",rarity:"UR",type:"AGL"}
+]}; CACHED_FAMILIES=null; CACHED_FAMILY_BY_ID=null; DB={cards:[]}; renderDuplicates()`,context);
+const frenchDupRows=(element('#duplicateList').innerHTML.match(/potential-line /g)||[]).length;
+assert.equal(frenchDupRows,1);
+assert(element('#duplicateList').innerHTML.includes('Son Goku Super Saiyan'));
+console.log('French canonical potential duplicate collapse: OK');
 vm.runInContext('DB={cards:[{boxId:"SHEET-1",candidateId:"77",validated:true,name:"Test",image:"x.webp"}]}; rainbow100=new Set()',context);
 vm.runInContext('openCard("SHEET-1")',context);
 assert(element('#sheet').innerHTML.includes('Marquer potentiel 100 %'));

@@ -51,18 +51,18 @@ vm.runInContext(`DB={cards:[
  {boxId:"B04",candidateId:"11",validated:true,name:"Vegeta",image:"y.webp"}
 ]}`,context);
 vm.runInContext('renderDuplicates()',context);
-assert.equal(element('#dupCount').textContent,'1 carte');
-assert(element('#duplicateSummary').textContent.includes('2 doublons au total'));
-assert(element('#duplicateList').innerHTML.includes('3 exemplaires possédés'));
-assert(element('#duplicateList').innerHTML.includes('2 doublons'));
-assert(element('#duplicateList').innerHTML.includes('Positions dans ta Box'));
-console.log('duplicates summary and wording: OK');
+assert.equal(element('#dupCount').textContent,'2 persos');
+assert(element('#duplicateSummary').textContent.includes('2 personnages'));
+assert(element('#duplicateList').innerHTML.includes('2/4'));
+assert(element('#duplicateList').innerHTML.includes('0/4'));
+assert(element('#duplicateList').innerHTML.includes('2 doublons détectés'));
+console.log('potential 0-4 tracker including zero duplicates: OK');
 vm.runInContext('rainbow100=new Set(); toggleRainbow100("10")',context);
 assert.equal(JSON.parse(saved.get('dokkanos-rainbow100'))[0],'10');
 assert.equal(vm.runInContext('rainbow100.has("10")',context),true);
-assert(element('#duplicateSummary').textContent.includes('2 restants après 100 %'));
-assert(element('#duplicateList').innerHTML.includes('Potentiel 100 %'));
-assert(element('#duplicateList').innerHTML.includes('2 doublons restants'));
+assert(element('#duplicateSummary').textContent.includes('1 confirmés 🌈'));
+assert(element('#duplicateList').innerHTML.includes('🌈 100 %'));
+assert(element('#duplicateList').innerHTML.includes('2 doublons détectés'));
 vm.runInContext('toggleRainbow100("10")',context);
 assert.equal(vm.runInContext('rainbow100.has("10")',context),false);
 console.log('100% potential persistence and remaining duplicates: OK');

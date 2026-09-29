@@ -486,12 +486,15 @@ function awakeningChainFor(id){
   return out;
 }
 function awakeningLabel(card){
-  const chain=awakeningChainFor(card?.id);
-  if(chain.length<2)return '';
-  const pos=chain.findIndex(x=>String(x.id)===String(card.id));
-  if(pos<0)return '';
-  if(pos===0)return 'Base';
-  return pos===chain.length-1?'Éveil final':'Éveil '+pos;
+  // Ne jamais numéroter des cartes différentes comme une chaîne d'éveil.
+  // L'interface affiche uniquement le statut réel de la carte.
+  const rarity=String(card?.rarity||'').toUpperCase();
+  const raw=String(card?.awakeningStatus||card?.awakening||card?.ezaType||'').toUpperCase();
+  const superEza=!!card?.superEza||/SUPER[ _-]?(EZA|ZTUR|ZLR)/.test(raw);
+  const eza=!!card?.eza||superEza||/(^|[ _-])(EZA|ZTUR|ZLR)($|[ _-])/.test(raw);
+  if(rarity==='LR') return superEza?'Super ZLR':eza?'ZLR':'LR';
+  if(rarity==='UR') return superEza?'Super ZTUR':eza?'ZTUR':'TUR';
+  return rarity||'';
 }
 function renderVerifyResults(){
   const host=document.getElementById('verifyResults');if(!host)return;

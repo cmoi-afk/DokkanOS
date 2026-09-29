@@ -10,6 +10,7 @@ on:
       - "collection.json"
       - "card-meta.json"
       - ".github/workflows/**"
+      - "tools/**"
 permissions:
   contents: read
 jobs:
@@ -21,6 +22,8 @@ jobs:
         run: |
           node --check app.js
           node --check sw.js
+      - name: Top filter regression suite
+        run: node tools/test_v071.cjs
       - name: Core JSON integrity
         run: |
           python - <<'PY'

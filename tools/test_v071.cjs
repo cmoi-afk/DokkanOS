@@ -7,7 +7,7 @@ const context={
   console,
   window:{addEventListener(){}},
   navigator:{onLine:true},
-  document:{querySelector:element,querySelectorAll(){return []},addEventListener(){}},
+  document:{querySelector:element,querySelectorAll(){return []},getElementById(id){return element('#'+id)},addEventListener(){}},
   localStorage:{setItem(k,v){saved.set(k,v)},getItem(k){return saved.get(k)||null}},
   alert(){throw Error('unexpected alert')}
 };
@@ -21,7 +21,7 @@ assert(parseInt(element('#missingCount').textContent,10)>1000);
 assert(element('#missingList').innerHTML.includes('À confirmer'));
 const card=data.cards.find(x=>x.image&&x.rarity==='UR');
 assert(card);
-vm.runInContext('choose("BOX-TEST",'+JSON.stringify(card.id)+')',context);
+vm.runInContext('verifyDraft={boxId:"BOX-TEST",cardId:"",query:""}; verifyChooseCard('+JSON.stringify(card.id)+'); verifyConfirm()',context);
 assert.equal(vm.runInContext('DB.cards[0].candidateId',context),String(card.id));
 assert.equal(vm.runInContext('DB.cards[0].image',context),card.image);
 assert.equal(vm.runInContext('DB.cards[0].validated',context),true);

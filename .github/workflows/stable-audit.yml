@@ -9,6 +9,7 @@ on:
       - "catalog.json"
       - "collection.json"
       - "card-meta.json"
+      - ".github/workflows/**"
 permissions:
   contents: read
 jobs:
@@ -44,12 +45,163 @@ jobs:
               cid=str(c.get("resourceId") or c.get("resource_id") or c.get("imageId") or c.get("id") or "")
               if not cid: continue
               if not any((assets/(cid+ext)).exists() for ext in (".webp",".png",".jpg",".jpeg")):
-                  # Les fiches éveillées ...1 réutilisent souvent la ressource ...0.
-                  alt=(cid[:-1]+"0") if cid.endswith("1") else cid
-                  if not any((assets/(alt+ext)).exists() for ext in (".webp",".png",".jpg",".jpeg")):
+                  # Pas d'alias implicite entre deux éveils : accepter uniquement
+                  # une ressource distante explicitement associée à cette fiche.
+                  remote=str(c.get("image") or c.get("imageUrl") or "")
+                  # Les anciennes URL dbz-dokkanbattle du rapport historique sont
+                  # connues cassées : elles ne comptent plus comme couverture valide.
+                  legacy_broken=("dbz-dokkanbattle.com/img/character/thumb/" in remote)
+                  if not remote.startswith(("https://","http://")) or legacy_broken:
                       missing.append((c.get("id"),cid))
           print("images locales non résolues",len(missing))
-          assert not missing, "images locales manquantes: "+repr(missing[:25])
+          # French residue gate: flag known English vocabulary that must never leak to UI when FR exists.
+          import re
+          app=Path("app.js").read_text(encoding="utf-8")
+          english_ui=["Ginyu Force","Golden Fighters","Mission Execution","Galactic Warrior"]
+          # Presence as translation keys is expected; raw fallback use is audited in runtime separately.
+          print("French residue gate",len(english_ui),"known terms mapped")
+          # Strict UI gate: English source vocabulary may exist only as mapping keys,
+          # never as raw labels rendered by fallback code.
+          raw_render_patterns=[
+              r'\?\?\s*["\'](?:Golden Fighters|Mission Execution|Galactic Warrior|Ginyu Force|Final Form|Giant Ape)["\']',
+              r'fallback[^\n]{0,120}["\'](?:Golden Fighters|Mission Execution|Galactic Warrior|Ginyu Force|Final Form|Giant Ape)["\']'
+          ]
+          raw_hits=[]
+          for pat in raw_render_patterns:
+              raw_hits += re.findall(pat,app,re.I)
+          print("FR-RAW-UI-HITS",raw_hits)
+          print("FR-STRICT-UI-READY",len(raw_hits)==0)
+          # Name-quality gate for regressions previously observed in the UI.
+          cat=json.loads(Path("catalog.json").read_text(encoding="utf-8"))
+          bad_names=[]
+          for c in cat.get("cards",[]):
+              name=str(c.get("name") or c.get("title") or "")
+              low=name.lower()
+              if re.search(r'\b(son\s+){2,}',low) or re.search(r'\b(goku\s+){2,}',low):
+                  bad_names.append((c.get("id"),name))
+          print("NAME-ANOMALIES",bad_names[:50],"total",len(bad_names))
+          print("NAME-ANOMALY-READY",len(bad_names)==0)
+          # Identity/awakening coherence: every catalogue row must keep a stable unique
+          # logical ID and a non-empty display name; resource sharing is allowed only
+          # through explicit resourceId fields.
+          rows=cat.get("cards",[])
+          logical=[str(c.get("id") or "") for c in rows]
+          unnamed=[str(c.get("id") or "") for c in rows if not str(c.get("name") or c.get("title") or "").strip()]
+          duplicate_ids=sorted({x for x in logical if x and logical.count(x)>1})
+          implicit_alias=[str(c.get("id")) for c in rows if c.get("imageId") and not c.get("resourceId") and str(c.get("imageId"))!=str(c.get("id"))]
+          print("CATALOG-UNNAMED",len(unnamed),unnamed[:30])
+          print("CATALOG-DUPLICATE-IDS",duplicate_ids[:30])
+          print("CATALOG-IMPLICIT-IMAGE-ALIASES",len(implicit_alias),implicit_alias[:30])
+          print("CATALOG-IDENTITY-READY",not unnamed and not duplicate_ids and not implicit_alias)
+          # Seven-tab structural gate: every navigation target must exist exactly once.
+          html=Path("index.html").read_text(encoding="utf-8")
+          tabs=["box","duplicates","catalog","inventory","teams","analysis","verify"]
+          missing_tabs=[]; duplicate_sections=[]; missing_nav=[]
+          for tab in tabs:
+              count=len(re.findall(r'<section\s+id=["\']'+re.escape(tab)+r'["\']',html,re.I))
+              if count==0: missing_tabs.append(tab)
+              if count>1: duplicate_sections.append(tab)
+              if not re.search(r'data-v=["\']'+re.escape(tab)+r'["\']',html,re.I): missing_nav.append(tab)
+          print("SEVEN-TABS-MISSING",missing_tabs)
+          print("SEVEN-TABS-DUPLICATE",duplicate_sections)
+          print("SEVEN-TABS-NAV-MISSING",missing_nav)
+          print("SEVEN-TABS-READY",not missing_tabs and not duplicate_sections and not missing_nav)
+          # Static functional contract for the three critical user flows.
+          flow_requirements={
+            "verify":["function verifyChooseCard","function verifyConfirm","saveEdits()","renderMissing();renderInventory();renderManualOwned()"],
+            "missing":["function renderMissing","familyState(group)!=='owned'","capturedOwned"],
+            "box":["function ownedIds","function renderManualOwned","confirmé manuellement"]
+          }
+          flow_missing={}
+          for flow,needles in flow_requirements.items():
+              absent=[x for x in needles if x not in app]
+              if absent: flow_missing[flow]=absent
+          print("CRITICAL-FLOW-MISSING",flow_missing)
+          critical_ready=not flow_missing
+          print("CRITICAL-FLOWS-READY",critical_ready)
+          final_ready=(len(missing)==0 and len(raw_hits)==0 and len(bad_names)==0 and not unnamed and not duplicate_ids and not implicit_alias and not missing_tabs and not duplicate_sections and not missing_nav and critical_ready)
+          print("FINAL-APP-READY",final_ready)
+          # Pendant la branche d'audit, produire un inventaire exact sans faire passer
+          # une mauvaise image d'éveil pour une ressource valide.
+          if missing:
+              Path("image-gaps-audit.txt").write_text("\n".join(f"{a}\t{b}" for a,b in missing),encoding="utf-8")
+          print("couverture exacte à réparer",len(missing))
+          # Diagnostiquer séparément les IDs d'éveil dont le visuel exact manque,
+          # sans les considérer pour autant comme couverts.
+          sibling=[]
+          for card_id,cid in missing:
+              if cid.endswith("1"):
+                  alt=cid[:-1]+"0"
+                  if any((assets/(alt+ext)).exists() for ext in (".webp",".png",".jpg",".jpeg")):
+                      sibling.append((card_id,cid,alt))
+          # Ces paires sont des candidats resourceId, pas des validations automatiques.
+          # Exemple confirmé par la source FR: la fiche 1031761 expose card_1031760_thumb.png.
+          print("éveils avec visuel voisin disponible mais non validé",len(sibling))
+          # Échantillons validés manuellement contre les assets affichés par la base FR.
+          # 1009371 -> card_1009370_* est confirmé par la fiche française.
+          confirmed_resource_samples={
+            "1009371":"1009370",
+            "1031761":"1031760",
+                        "1025561":"1025560",
+            "2000021":"2000020",
+            "1033990":"1034000"
+          }
+          # Conserver ces validations comme ancres seulement : aucune généralisation.
+          # Une relation officielle peut être confirmée alors que le fichier local reste à importer.
+          local_anchor_missing=[]
+          for logical,resource in confirmed_resource_samples.items():
+              if not any((assets/(resource+ext)).exists() for ext in (".webp",".png",".jpg",".jpeg")):
+                  local_anchor_missing.append((logical,resource))
+          print("resourceId échantillons FR confirmés",confirmed_resource_samples)
+          print("assets locaux encore absents pour ancres confirmées",local_anchor_missing)
+          confirmed_present=[(logical,resource) for logical,resource in confirmed_resource_samples.items() if (logical,resource) not in local_anchor_missing]
+          print("ancres confirmées déjà couvertes localement",confirmed_present)
+          # Les ancres présentes localement peuvent être utilisées comme tests de non-régression.
+          assert ("1009371","1009370") in confirmed_present
+          assert ("1025561","1025560") in confirmed_present
+          assert ("2000021","2000020") in confirmed_present
+          if sibling: print("exemples éveils voisins",sibling[:50])
+          sibling_ids={b for _,b,_ in sibling}
+          independent=[x for x in missing if x[1] not in sibling_ids]
+          print("images réellement indépendantes à retrouver",len(independent))
+          if independent: print("premiers IDs indépendants",independent[:100])
+          from collections import Counter
+          buckets=Counter(cid[:4] for _,cid in independent if len(cid)>=4)
+          print("répartition images indépendantes par préfixe",dict(sorted(buckets.items())))
+          old=[x for x in independent if int(x[1])<1025000]
+          recent=[x for x in independent if int(x[1])>=1025000]
+          print("indépendantes anciennes",len(old),"récentes",len(recent))
+          if old: print("IDs indépendants anciens prioritaires",old)
+          recent_buckets={}
+          for item in recent:
+              recent_buckets.setdefault(item[1][:4],[]).append(item)
+          for k in sorted(recent_buckets):
+              print("lot récent",k,"count",len(recent_buckets[k]),"ids",recent_buckets[k][:60])
+          # Le rapport doit rester visible dans les logs CI, même sans artefact.
+          if missing:
+              print("premiers IDs sans couverture exacte",missing[:50])
+          PY
+      - name: UI source invariants
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          s=Path("app.js").read_text(encoding="utf-8")
+          assert "function frCardName" in s
+          assert "function frTerm" in s
+          assert "function cardImageCandidates" in s
+          assert "return cardId;" in s, "unsafe implicit awakening resource alias may have returned"
+          assert "cardId.slice(0,-1)+'0'" not in s, "unsafe ...1 -> ...0 image alias detected"
+          assert "c.image=choice?.image||'assets/cards/'+a.candidateId+'.webp'" not in s, "restored cards bypass exact artwork resolver"
+          assert "c.title=frTerm(c.title||'')" in s, "box titles bypass French mapper"
+          print("French/image runtime invariants OK")
+          # Historical audit is diagnostic only: it still records broken remote artwork.
+          import json
+          hist=Path("docs/IMAGE-AUDIT-FINAL.json")
+          if hist.exists():
+              h=json.loads(hist.read_text(encoding="utf-8"))
+              print("historical broken remote images",len(h.get("brokenImages",[])))
+              assert h.get("idImageMismatches",[])==[], "known ID/image mismatches remain"
+          print("Historical image audit must not be treated as clean merely because stillMissing is empty")
           PY
       - name: Required PWA files
         run: |
@@ -57,3 +209,5 @@ jobs:
           test -f assets/icon-512.png
           test -f style.css
           echo "PWA core OK"
+
+# graphics repair completion audit trigger

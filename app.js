@@ -220,7 +220,22 @@ FR_TERMS["Corroded Body and Mind"]="Corps et esprit corrompus";
 FR_TERMS["Rapid Growth"]="Croissance rapide";
 FR_TERMS["Androids"]="Cyborg";
 FR_TERMS["Androids/Cell Saga"]="Cyborg - Saga de cell";
+
 FR_TERMS["Golden Fighters"]="Combattants dorés";
+FR_TERMS["Blazing Battle"]="Combat ardent";
+FR_TERMS["Mission Execution"]="Exécution de mission";
+FR_TERMS["Galactic Warriors"]="Guerriers galactiques";
+FR_TERMS["Galactic Warrior"]="Guerrier galactique";
+FR_TERMS["Signature Pose"]="Pose signature";
+FR_TERMS["The Incredible Adventure"]="Aventure incroyable";
+FR_TERMS["Guidance of the Dragon Balls"]="Guide des Dragon Balls";
+FR_TERMS["World Tournament Reborn"]="Renaissance du Tenkaichi Budokai";
+FR_TERMS["Brutal Beatdown"]="Boost de handicap";
+FR_TERMS["Coward"]="Lâche";
+FR_TERMS["Mechanical Menaces"]="Mécanique";
+FR_TERMS["Solid Support"]="Soutien infaillible";
+FR_TERMS["More Than Meets the Eye"]="Look trompeur";
+
 FR_TERMS["Mission Execution"]="Exécution de mission";
 FR_TERMS["Blazing Battle"]="Combat ardent";
 FR_TERMS["Galactic Warriors"]="Guerriers galactiques";
@@ -308,7 +323,15 @@ FR_TERMS["High Compatibility"]="Super compatibilité";
 FR_TERMS["All in the Family"]="Liens familiaux";
 FR_TERMS["Galactic Visitor"]="Visiteur d'ailleurs";
 FR_TERMS["Messenger from the Future"]="Messager du futur";
-function frTerm(v){return FR_TERMS[v]||v}
+function frTerm(v){
+  const s=String(v||'').trim();
+  if(!s)return s;
+  return FR_TERMS[s]||s
+    .replace(/\bGolden Fighters\b/g,'Combattants dorés')
+    .replace(/\bMission Execution\b/g,'Exécution de mission')
+    .replace(/\bGinyu Force\b/g,'Commando Ginyu')
+    .replace(/\bGalactic Warriors?\b/g,'Guerriers galactiques');
+}
 function frList(a){return (a||[]).map(frTerm)}
 
 async function boot(){
@@ -320,12 +343,12 @@ async function boot(){
   applyMetadata(); restoreEdits(); initAdvancedFilters();
   render(); stats(); renderDuplicates(); renderMissing(); renderInventory(); renderManualOwned(); renderTeam(); renderAnalysis();
 }
-function localized(m){if(!m)return null;let fr=m.fr||{},off=!!fr._official;return {...m,name:frCardName(fr.name||m.name),title:fr.title||m.title,type:fr.type||m.type,class:fr.class||m.class,categories:frList(fr.categories||m.categories),links:frList(fr.links||m.links),leader:fr.leader||m.leader,passiveName:fr.passiveName||m.passiveName,passive:fr.passive||m.passive,superAttack:fr.superAttack||m.superAttack,ultraSuperAttack:fr.ultraSuperAttack||m.ultraSuperAttack,activeName:fr.activeName||m.activeName,active:fr.active||m.active,transformations:fr.transformations||m.transformations,_officialFR:off}}
-function applyMetadata(){DB.cards.forEach(c=>{let m=localized(META.cards?.[String(c.candidateId)]);if(m)Object.assign(c,m);c.name=frCardName(c.name||'');c.categories=frList(c.categories);c.links=frList(c.links)})}
+function localized(m){if(!m)return null;let fr=m.fr||{},off=!!fr._official;return {...m,name:frCardName(fr.name||m.name),title:frTerm(fr.title||m.title),type:fr.type||m.type,class:fr.class||m.class,categories:frList(fr.categories||m.categories),links:frList(fr.links||m.links),leader:fr.leader||m.leader,passiveName:fr.passiveName||m.passiveName,passive:fr.passive||m.passive,superAttack:fr.superAttack||m.superAttack,ultraSuperAttack:fr.ultraSuperAttack||m.ultraSuperAttack,activeName:fr.activeName||m.activeName,active:fr.active||m.active,transformations:fr.transformations||m.transformations,_officialFR:off}}
+function applyMetadata(){DB.cards.forEach(c=>{let m=localized(META.cards?.[String(c.candidateId)]);if(m)Object.assign(c,m);c.name=frCardName(c.name||'');c.title=frTerm(c.title||'');c.categories=frList(c.categories);c.links=frList(c.links)})}
 function confClass(c){return c==='Très forte'?'tf':c==='Forte'?'f':c==='Moyenne'?'m':c==='Validée manuellement'?'manual':'v'}
 function restoreEdits(){
   let edits=[]; try{edits=JSON.parse(localStorage.getItem('dokkanos-edits')||'[]')}catch(e){}
-  edits.forEach(a=>{let c=DB.cards.find(x=>x.boxId===a.boxId);if(!c)return;Object.assign(c,a);if(a.candidateId){let m=localized(META.cards?.[String(a.candidateId)]);if(m)Object.assign(c,m);let choice=verifyCandidate(a.candidateId);c.image=choice?.image||'assets/cards/'+a.candidateId+'.webp';c.name=choice?.name||c.name;c.rarity=choice?.rarity||c.rarity;c.type=choice?.type||c.type}});
+  edits.forEach(a=>{let c=DB.cards.find(x=>x.boxId===a.boxId);if(!c)return;Object.assign(c,a);if(a.candidateId){let m=localized(META.cards?.[String(a.candidateId)]);if(m)Object.assign(c,m);let choice=verifyCandidate(a.candidateId);c.image=choice?.image||localCardImage(a.candidateId,'');c.name=frCardName(choice?.name||c.name);c.title=frTerm(choice?.title||c.title||'');c.categories=frList(choice?.categories||c.categories);c.links=frList(choice?.links||c.links);c.rarity=choice?.rarity||c.rarity;c.type=choice?.type||c.type}});
   try{inventory=JSON.parse(localStorage.getItem('dokkanos-inventory')||'{}')}catch(e){inventory={}}
   try{selectedTeam=JSON.parse(localStorage.getItem('dokkanos-team')||'[]').filter(id=>DB.cards.some(c=>c.boxId===id)||(String(id).startsWith('MANUAL-')&&inventory[String(id).slice(7)]==='owned')).slice(0,6)}catch(e){selectedTeam=[]}
   try{teamLeader=localStorage.getItem('dokkanos-team-leader')||'';if(teamLeader&&!resolveCard(teamLeader))teamLeader=''}catch(e){teamLeader=''}
@@ -367,9 +390,9 @@ const FR_NAME_FIXES=[
  [/Piccolo \(Power Awakening\)/gi,'Piccolo (éveil de puissance)'],[/Piccolo \(Fused with Kami\)/gi,'Piccolo (fusion avec Kami)'],
  [/Team Bardock/gi,'Équipe Bardock'],[/Lord Slug/gi,'Slug'],[/Ultimate Gohan/gi,'Son Gohan ultime'],
  [/Shadow Dragon Army/gi,'Équipe des dragons maléfiques'],[/Legion of Shadow Dragons/gi,'Équipe des dragons maléfiques'],
- [/Great Saiyaman/gi,'Great Saiyaman'],[/Turles/gi,'Thalès'],
+ [/Great Saiyaman/gi,'Great Saiyaman'],[/Turles/gi,'Thalès'],[/General Blue/gi,'Commandant Blue'],[/Dr\. Gero/g,'Dr Gero'],
  [/Goten \(Kid\)/g,'Son Goten (petit)'],[/Trunks \(Kid\)/g,'Trunks (petit)'],[/Bulma \(Youth\)/g,'Bulma (enfant)'],[/Pan \(Kid\)/g,'Pan (petit)'],
- [/\bGoku\b/g,'Son Goku'],[/\bBuu\b/g,'Boo'],[/\bGood\b/gi,'gentil'],[/\bEvil\b/gi,'maléfique'],[/\bGinyu Force\b/gi,'Commando Ginyu'],[/\bGalactic Warrior\b/gi,'Guerrier galactique'],[/\bJeese\b/gi,'Jeese'],[/\bButta\b/gi,'Butta'],[/\bAhms \(2nd Form\)/gi,'Ahms (2e forme)'],[/\(Angel\)/g,'(ange)'],[/\(Future\)/g,'(futur)']
+ [/\bGoku\b/g,'Son Goku'],[/\bBuu\b/g,'Boo'],[/\bGood\b/gi,'gentil'],[/\bEvil\b/gi,'maléfique'],[/\bGinyu Force\b/gi,'Commando Ginyu'],[/\bGalactic Warrior\b/gi,'Guerrier galactique'],[/\bJeese\b/gi,'Jeese'],[/\bButta\b/gi,'Butta'],[/\bAhms \(2nd Form\)/gi,'Ahms (2e forme)'],[/\b1st Form\b/gi,'1re forme'],[/\b2nd Form\b/gi,'2e forme'],[/\b3rd Form\b/gi,'3e forme'],[/\bFinal Form\b/gi,'forme finale'],[/\bGiant Ape\b/gi,'gorille géant'],[/\(Angel\)/g,'(ange)'],[/\(Future\)/g,'(futur)']
 ];
 const FR_FORM_FIXES=[
  [/\\(Elder\\)/gi,'(vieux)'],[/\\(Teen\\)/gi,'(jeune)'],[/\\(Youth\\)/gi,'(jeune)'],[/\\(Kid\\)/gi,'(petit)'],
@@ -377,8 +400,16 @@ const FR_FORM_FIXES=[
  [/\\(3rd Form\\)/gi,'(3e forme)'],[/\\(Final Form\\)/gi,'(forme finale)'],[/\\(Perfect Form\\)/gi,'(forme parfaite)'],
  [/Power Awakening/gi,'éveil de puissance'],[/Full Power/gi,'pleine puissance'],[/Legendary Super Saiyan/gi,'Super Saiyan Légendaire']
 ];
-function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);for(const [re,to] of FR_FORM_FIXES)s=s.replace(re,to);s=s.replace(/\bSon(?:\s+Son)+\s+Goku\b/gi,'Son Goku').replace(/\bSon(?:\s+Son)+\s+Gohan\b/gi,'Son Gohan').replace(/\bSon(?:\s+Son)+\s+Goten\b/gi,'Son Goten');return s}
-function cardImageCandidates(id,preferred){id=String(id||'');let rid=localAssetIdFor(id),cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};return [...new Set([id&&('assets/cards/'+id+'.webp'),id&&('assets/cards/'+id+'.png'),rid&&('assets/cards/'+rid+'.webp'),rid&&('assets/cards/'+rid+'.png'),preferred,cat.image].filter(Boolean))]}
+function frCardName(v){let s=String(v||'');for(const [re,to] of FR_NAME_FIXES)s=s.replace(re,to);for(const [re,to] of FR_FORM_FIXES)s=s.replace(re,to);s=s.replace(/\bSon(?:\s+Son)+\s+Goku\b/gi,'Son Goku').replace(/\bSon(?:\s+Son)+\s+Gohan\b/gi,'Son Gohan').replace(/\bSon(?:\s+Son)+\s+Goten\b/gi,'Son Goten').replace(/\s+/g,' ').trim();return s}
+function cardImageCandidates(id,preferred){
+  id=String(id||'');let rid=localAssetIdFor(id),cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};
+  const exactRemote=cat.image||preferred;
+  return [...new Set([
+    exactRemote,
+    id&&('assets/cards/'+id+'.webp'),id&&('assets/cards/'+id+'.png'),
+    rid&&('assets/cards/'+rid+'.webp'),rid&&('assets/cards/'+rid+'.png')
+  ].filter(Boolean))];
+}
 function imageFallback(el,id,preferred){let a=cardImageCandidates(id,preferred),n=Number(el.dataset.fallback||0)+1;el.dataset.fallback=String(n);if(n<a.length){el.src=a[n]}else{el.classList.add('imgfail');reportBrokenImage(id)}}
 function imageAuditSummary(){try{return JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]')}catch(e){return []}}
 function reportBrokenImage(id){if(!id)return;try{let a=JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]');if(!a.includes(String(id))){a.push(String(id));localStorage.setItem('dokkanos-broken-images',JSON.stringify(a))}}catch(e){}}
@@ -411,17 +442,16 @@ function localAssetIdFor(cardId){
   const m=META.cards?.[cardId]||{};
   const explicit=cat.resourceId||cat.resource_id||m.resourceId||m.resource_id||cat.imageId||m.imageId;
   if(explicit)return String(explicit);
-  // Dokkan utilise fréquemment ...0 pour la ressource et ...1 pour la fiche éveillée.
-  if(/1$/.test(cardId))return cardId.slice(0,-1)+'0';
+  // Les fiches Dokkan peuvent avoir un ID logique ...1 tandis que leurs assets officiels
+  // portent un autre resourceId (souvent ...0). On ne le déduit jamais : il doit être déclaré.
   return cardId;
 }
 function localCardImage(cardId,preferred){
-  const rid=localAssetIdFor(cardId);
-  const cat=(CATALOG.cards||[]).find(x=>String(x.id)===String(cardId))||{};
-  const remote=preferred||cat.image||'';
-  return (rid?'assets/cards/'+rid+'.webp':'')||remote||'';
+  const id=String(cardId||''),rid=localAssetIdFor(id);
+  const cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};
+  return cat.image||preferred||(rid?'assets/cards/'+rid+'.webp':'')||'';
 }
-function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};let image=localCardImage(id,cat.image||m.image);return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:bestFrenchName({...m,id},cat),title:cat.titleFr||cat.fr?.title||m.title||cat.title,categories:frList(cat.fr?.categories||m.categories||cat.categories),links:frList(cat.fr?.links||m.links||cat.links),image}}
+function verifyCandidate(id){id=String(id||'');if(!id)return null;let m=localized(META.cards?.[id])||{},cat=(CATALOG.cards||[]).find(x=>String(x.id)===id)||{};let image=localCardImage(id,cat.image||m.image);return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:bestFrenchName({...m,id},cat),title:frTerm(cat.titleFr||cat.fr?.title||m.title||cat.title),categories:frList(cat.fr?.categories||m.categories||cat.categories),links:frList(cat.fr?.links||m.links||cat.links),image}}
 function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach(c=>{let id=String(c.id||'');if(id&&!seen.has(id)){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(id);out.push(card)}}});Object.keys(META.cards||{}).forEach(id=>{if(!seen.has(String(id))){let card=verifyCandidate(id);if(card&&isPlayableCard(card)){seen.add(String(id));out.push(card)}}});return out}
 let verifyDraft={boxId:'',cardId:'',query:''};
 

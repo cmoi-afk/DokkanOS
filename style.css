@@ -22,3 +22,5 @@ nav button.on{background:linear-gradient(180deg,transparent,rgba(242,120,35,.08)
 .verify-v2-confirm{position:sticky;bottom:72px;margin-top:12px;padding:10px;background:#101722f2;border:1px solid #303d52;border-radius:14px;backdrop-filter:blur(8px);z-index:4}.verify-v2-confirm>div{font-size:10px;color:var(--muted);margin-bottom:7px}.verify-v2-confirm button{width:100%;padding:11px;border-radius:10px;margin-top:6px}.verify-v2-confirm .primary{background:var(--accent);color:#fff;border:0;font-weight:800}.verify-v2-confirm .primary:disabled{opacity:.4}.verify-status.error{background:#3b1c22;color:#ffc2c9;border-color:#7a3340}
 
 .duplicate-help{margin-bottom:14px}.duplicate-help p{margin:7px 0 0;line-height:1.45}.duplicate-summary{margin:0 0 12px;font-size:.92rem}.dup-counts{display:flex;gap:7px;flex-wrap:wrap;margin-top:7px}.dup-counts span{padding:4px 8px;border-radius:999px;background:var(--panel2,#20242d);font-size:.8rem}.dup-action{display:block;margin-top:6px;font-size:.78rem;opacity:.75}
+
+.dup-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}.dup-actions button{font-size:.78rem;padding:7px 9px}.dup-row>div{min-width:0;flex:1}

@@ -4,14 +4,14 @@ import json,re,urllib.request
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
-catalog=root/"catalog.json"
+catalog=(root/"catalog-v1.draft.json") if (root/"catalog-v1.draft.json").exists() else (root/"catalog.json")
 data=json.loads(catalog.read_text(encoding="utf-8"))
 
 def check(card):
     cid=str(card["id"]); url=card.get("image") or ""
     if not url: return cid,url,False,"image vide",None
     mismatch=None
-    m=re.search(r"card_(\\d+)_thumb",url)
+    m=re.search(r"card_(\\d+)_thumb",url)\n    expected={cid,str(card.get("resourceId") or "")}-{""}\n    if m and m.group(1) not in expected: mismatch={"id":cid,"imageId":m.group(1),"resourceId":card.get("resourceId"),"url":url}
     if m and m.group(1)!=cid: mismatch={"id":cid,"imageId":m.group(1),"url":url}
     try:
         if not re.match(r"^https?://",url):
@@ -36,7 +36,7 @@ with ThreadPoolExecutor(max_workers=24) as ex:
         if not valid: broken.append({"id":cid,"url":url,"reason":reason})
         if mismatch: mismatches.append(mismatch)
 empty=[str(c["id"]) for c in data["cards"] if not c.get("image")]
-report={"catalogCards":len(data["cards"]),"imagesChecked":checked,"emptyBeforeAudit":empty,"stillMissing":empty,"brokenImages":sorted(broken,key=lambda x:x["id"]),"idImageMismatches":sorted(mismatches,key=lambda x:x["id"])}
+report={"catalogSource":catalog.name,"catalogCards":len(data["cards"]),"imagesChecked":checked,"emptyBeforeAudit":empty,"stillMissing":empty,"brokenImages":sorted(broken,key=lambda x:x["id"]),"idImageMismatches":sorted(mismatches,key=lambda x:x["id"])}
 out=root/"docs/IMAGE-AUDIT-FINAL.json"
 out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print(json.dumps({k:(len(v) if isinstance(v,list) else v) for k,v in report.items()},ensure_ascii=False))

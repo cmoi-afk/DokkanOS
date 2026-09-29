@@ -40,7 +40,7 @@ for c in src.get("cards",[]):
       "legacySource":c.get("source") or c.get("attributeSource") or None
     })
 out={"version":"1.0-refonte-draft","status":"draft","sourceVersion":src.get("version"),"cards":cards}
-(ROOT/"catalog-v1.draft.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+(ROOT/"catalog-v1.draft.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 report={"sourceCards":len(src.get("cards",[])),"accepted":len(cards),"rejected":len(rejected),"uniqueAccepted":len({c["id"] for c in cards}),"intermediateAwakeningsRemoved":sum("forme intermédiaire" in r for x in rejected for r in x["reasons"]),"rejectedItems":rejected}
-(ROOT/"docs/CATALOG-REFONTE-v1.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+(ROOT/"docs/CATALOG-REFONTE-v1.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print(json.dumps({k:v for k,v in report.items() if k!="rejectedItems"},ensure_ascii=False))

@@ -622,8 +622,8 @@ function changePotentialDuplicate(id,delta){id=String(id);let current=Math.max(0
 function renderDuplicates(){
   let el=$('#duplicateList');if(!el)return;
   let owned={};DB.cards.filter(c=>c.validated&&c.candidateId).forEach(c=>(owned[String(c.candidateId)]??=[]).push(c));
-  let families=catalogFamilies(), seen=new Set(), rows=[];
-  families.forEach(family=>{let eligible=family.filter(c=>['UR','LR'].includes(String(c.rarity||'').toUpperCase()));if(!eligible.length)return;let rank={LR:2,UR:1},maxRank=Math.max(...eligible.map(c=>rank[String(c.rarity||'').toUpperCase()]||0)),maxForms=eligible.filter(c=>(rank[String(c.rarity||'').toUpperCase()]||0)===maxRank),preferred=maxForms.sort((a,b)=>Number(b.id)-Number(a.id))[0],id=String(preferred.id),ids=family.map(c=>String(c.id)),copies=ids.flatMap(x=>owned[x]||[]);ids.forEach(x=>seen.add(x));let manual=Math.max(0,...ids.map(x=>Number(potentialManual[x]||0))),rainbow=ids.some(x=>rainbow100.has(x)),auto=Math.min(4,Math.max(0,copies.length-1)),dupes=Math.max(auto,Math.min(4,manual)),ready=dupes>=4;rows.push({id,c:preferred,copies,dupes,rainbow,ready,familyIds:ids})});
+  let families=canonicalPotentialFamilies(), seen=new Set(), rows=[];
+  families.forEach(entry=>{let family=entry.family,preferred=entry.card,id=String(preferred.id),ids=family.map(c=>String(c.id)),copies=ids.flatMap(x=>owned[x]||[]);ids.forEach(x=>seen.add(x));let manual=Math.max(0,...ids.map(x=>Number(potentialManual[x]||0))),rainbow=ids.some(x=>rainbow100.has(x)),auto=Math.min(4,Math.max(0,copies.length-1)),dupes=Math.max(auto,Math.min(4,manual)),ready=dupes>=4;rows.push({id,c:preferred,copies,dupes,rainbow,ready,familyIds:ids})});
   Object.entries(owned).forEach(([id,copies])=>{if(seen.has(id))return;let c=copies[0];if(!['UR','LR'].includes(String(c.rarity||'').toUpperCase()))return;let auto=Math.min(4,copies.length-1),dupes=Math.max(auto,Math.min(4,Number(potentialManual[id]||0)));rows.push({id,c,copies,dupes,rainbow:rainbow100.has(id),ready:dupes>=4})});
   rows.sort((a,b)=>Number(b.rainbow)-Number(a.rainbow)||b.dupes-a.dupes||frCardName(a.c.name||'').localeCompare(frCardName(b.c.name||''),'fr'));
   let ownedCount=rows.filter(x=>x.copies.length).length, rainbowCount=rows.filter(x=>x.rainbow).length;
@@ -644,6 +644,20 @@ function catalogFamilies(){
   return CACHED_FAMILIES
 }
 function familyFor(id){catalogFamilies();return CACHED_FAMILY_BY_ID.get(String(id))||[{id:String(id)}]}
+function canonicalPotentialFamilies(){
+  const groups=catalogFamilies(), out=[], seen=new Set();
+  for(const family of groups){
+    const eligible=family.filter(c=>['UR','LR'].includes(String(c.rarity||'').toUpperCase()));if(!eligible.length)continue;
+    const rank={LR:2,UR:1},max=Math.max(...eligible.map(c=>rank[String(c.rarity||'').toUpperCase()]||0));
+    const finals=eligible.filter(c=>(rank[String(c.rarity||'').toUpperCase()]||0)===max);
+    for(const c of finals){
+      const name=norm(bestFrenchName({id:c.id,name:c.name},c)).replace(/\[[^\]]*\]|\([^)]*\)/g,'').replace(/\b(super|extreme|teq|agl|int|str|phy)\b/g,'').replace(/[^a-z0-9]+/g,' ').trim();
+      const key=[String(c.rarity||'').toUpperCase(),String(c.type||''),name].join('|');
+      if(seen.has(key))continue;seen.add(key);out.push({family,card:c});
+    }
+  }
+  return out
+}
 function familyState(group){
   const ids=group.map(c=>String(c.id));
   if(ids.some(id=>capturedOwned(id)||inventory[id]==='owned'))return 'owned';

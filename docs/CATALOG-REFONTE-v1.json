@@ -1,113 +1,996 @@
 {
   "sourceCards": 2045,
-  "accepted": 2030,
-  "rejected": 15,
-  "uniqueAccepted": 2030,
+  "accepted": 1904,
+  "rejected": 141,
+  "uniqueAccepted": 1904,
+  "intermediateAwakeningsRemoved": 126,
   "rejectedItems": [
     {
       "id": "1000860",
       "name": "Vegeta",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
       ]
     },
     {
       "id": "1001040",
       "name": "Chi-Chi",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
       ]
     },
     {
       "id": "1001851",
       "name": "Son Gohan (jeune)",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
       ]
     },
     {
       "id": "1002050",
       "name": "Babidi",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
       ]
     },
     {
       "id": "1002360",
       "name": "Devilman",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
       ]
     },
     {
       "id": "1002490",
       "name": "Thouser",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
       ]
     },
     {
       "id": "1003980",
       "name": "Bulma (Youth)",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
       ]
     },
     {
       "id": "1004631",
       "name": "Métal Cooler (PUI)",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
       ]
     },
     {
       "id": "1004760",
       "name": "Super Vegeta",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
+      ]
+    },
+    {
+      "id": "1005050",
+      "name": "Super Janemba",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1005280",
+      "name": "Super Gogeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1005300",
+      "name": "Beerus",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1005440",
+      "name": "Bio-Broly",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
       ]
     },
     {
       "id": "1005470",
       "name": "Bulma (Youth)",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
+      ]
+    },
+    {
+      "id": "1007100",
+      "name": "Hit",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1008850",
+      "name": "Goku Black",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1009110",
+      "name": "Cooler",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1009130",
+      "name": "Jaco",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1009250",
+      "name": "Pandel",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1009350",
+      "name": "Goku Black (Super Saiyan Rosé)",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1009510",
+      "name": "Zamasu",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1010000",
+      "name": "Pan (GT)",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1010500",
+      "name": "Yamcha",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
       ]
     },
     {
       "id": "1010520",
       "name": "Android #17",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
+      ]
+    },
+    {
+      "id": "1010850",
+      "name": "Super Gogeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1010870",
+      "name": "Super Janemba",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1011040",
+      "name": "Paikuhan",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1011140",
+      "name": "Goku Black (Super Saiyan Rosé) & Zamasu",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1011210",
+      "name": "Jackie Chun",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1011900",
+      "name": "Piccolo",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1012460",
+      "name": "Tapion",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1012680",
+      "name": "Beerus",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1012700",
+      "name": "Raditz",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1012760",
+      "name": "Goku Black (Super Saiyan Rosé)",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
       ]
     },
     {
       "id": "1012970",
       "name": "Zamasu",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
+      ]
+    },
+    {
+      "id": "1012990",
+      "name": "Zamasu",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1013070",
+      "name": "Guldo",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1013770",
+      "name": "Beerus & Whis",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1013940",
+      "name": "Jiren",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1014020",
+      "name": "Bardock",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1014060",
+      "name": "Brianne de Chateau",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1014140",
+      "name": "Videl",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1014150",
+      "name": "Pan (GT)",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1014180",
+      "name": "Chi-Chi",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1014680",
+      "name": "Piccolo",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1014990",
+      "name": "Vegeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1015210",
+      "name": "Hit",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1015230",
+      "name": "Pan (GT)",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1015290",
+      "name": "Piccolo",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1015420",
+      "name": "Super Ribrianne",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1015670",
+      "name": "Hit",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1015810",
+      "name": "Bota Magetta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1015840",
+      "name": "Champa",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1015880",
+      "name": "Majin Vegeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1015900",
+      "name": "Majin Vegeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1016080",
+      "name": "Paragus & Broly",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1016490",
+      "name": "Vegeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1016580",
+      "name": "Goku (GT)",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1016610",
+      "name": "Super Vegeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1016730",
+      "name": "Baby Janemba",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1016750",
+      "name": "Super Paikuhan",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1017020",
+      "name": "Gowasu & Zamasu",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1017040",
+      "name": "Vados",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1017120",
+      "name": "Zamasu",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1017240",
+      "name": "Gogeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1017260",
+      "name": "Great Saiyaman 4",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1017280",
+      "name": "Great Saiyaman 3",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1017300",
+      "name": "Sealas",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1017470",
+      "name": "Nail",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1017490",
+      "name": "Piccolo",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1017550",
+      "name": "Videl",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1017660",
+      "name": "Super Vegeta/Super Trunks",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1017820",
+      "name": "Krillin",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1018190",
+      "name": "Cooler",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1018300",
+      "name": "Golden Cooler",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1018400",
+      "name": "Cumber",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1018620",
+      "name": "Gogeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1018880",
+      "name": "Goku Black (Super Saiyan Rosé)",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019000",
+      "name": "Broly & Cheelai & Lemo",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019040",
+      "name": "Bardock & Gine",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019140",
+      "name": "Bardock",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019240",
+      "name": "Bardock",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019300",
+      "name": "Raditz",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019340",
+      "name": "Beerus",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019360",
+      "name": "Whis",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019400",
+      "name": "Nappa/Vegeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019490",
+      "name": "Great Saiyaman 2/1",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019530",
+      "name": "Krillin",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019630",
+      "name": "Gotenks",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019660",
+      "name": "Whis",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019710",
+      "name": "Caulifla",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019720",
+      "name": "Kale",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019740",
+      "name": "Kefla",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019840",
+      "name": "Vados",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1019900",
+      "name": "Gotenks",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1020010",
+      "name": "Toppo (Pride Troopers)",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1020030",
+      "name": "Krillin",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1020180",
+      "name": "Kakunsa",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1021030",
+      "name": "Zangya",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1021290",
+      "name": "Janemba",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1021330",
+      "name": "Paikuhan",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1021450",
+      "name": "Krillin",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1021500",
+      "name": "Vegeta (Dokkan Butoden)",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1021560",
+      "name": "Veku",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1021810",
+      "name": "Videl",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1021850",
+      "name": "Great Saiyaman & Videl",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1021870",
+      "name": "Krillin",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1022590",
+      "name": "Super Janemba",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1022650",
+      "name": "Super Vegeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1022680",
+      "name": "Marcarita",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1022830",
+      "name": "Caulifla & Kale",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1022880",
+      "name": "Krillin/Vegeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1023000",
+      "name": "Zarbon & Dodoria",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1023260",
+      "name": "Pan (Xeno)",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1023570",
+      "name": "Broly",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1023640",
+      "name": "Yamhan",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1023690",
+      "name": "Tekka",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1023700",
+      "name": "Pinich",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1023950",
+      "name": "Vegeta & Bulma",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1023980",
+      "name": "Majin Vegeta",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1024060",
+      "name": "Raditz",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1024080",
+      "name": "Nappa",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1024600",
+      "name": "Goku Black",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1024750",
+      "name": "Cheelai",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1024920",
+      "name": "Métal Cooler",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1024930",
+      "name": "Métal Cooler",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1024950",
+      "name": "Piccolo",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1024990",
+      "name": "Pan (GT)",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1025090",
+      "name": "Bardock",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1025150",
+      "name": "Métal Cooler",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1025210",
+      "name": "Cooler",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1025250",
+      "name": "Yamcha",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1025410",
+      "name": "Super Hearts",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1025460",
+      "name": "Lagss",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1025510",
+      "name": "Gamma 1",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1025530",
+      "name": "Gamma 2",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1025800",
+      "name": "Yamcha",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
+      ]
+    },
+    {
+      "id": "1026390",
+      "name": "Babidi",
+      "reasons": [
+        "forme intermédiaire d’une chaîne d’éveil"
       ]
     },
     {
       "id": "1033520",
       "name": "Dendé",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
       ]
     },
     {
       "id": "2000200",
       "name": "Mighty Mask",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
       ]
     },
     {
       "id": "2000710",
       "name": "Zangya",
       "reasons": [
-        "SR sans éveil utile vérifié"
+        "SR isolé sans chaîne d’éveil vérifiée"
       ]
     }
   ]
-}
+}\n

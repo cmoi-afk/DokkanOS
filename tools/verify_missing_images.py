@@ -24,8 +24,8 @@ def check(card):
             with urllib.request.urlopen(req,timeout=12) as r:
                 if r.status!=200 or not r.headers.get("Content-Type","").startswith("image/"):
                     return cid,url,False,"réponse distante non-image",mismatch
-                b=r.read(32)
-        valid=(b.startswith(b"\\x89PNG") or b[:3]==b"\\xff\\xd8\\xff" or (b.startswith(b"RIFF") and b[8:12]==b"WEBP") or b.startswith((b"GIF87a",b"GIF89a")) or (len(b)>=12 and b[4:12] in (b"ftypavif",b"ftypavis",b"ftypheic",b"ftypheix",b"ftypmif1")) )
+                b=r.read(64)
+        valid=(b.startswith(b"\\x89PNG") or b[:3]==b"\\xff\\xd8\\xff" or (b.startswith(b"RIFF") and b[8:12]==b"WEBP") or b.startswith((b"GIF87a",b"GIF89a")) or (len(b)>=12 and b[4:12] in (b"ftypavif",b"ftypavis",b"ftypheic",b"ftypheix",b"ftypmif1")))\n        if re.match(r"^https?://",url) and not valid:\n            # Some CDNs proxy/transform thumbnails despite an image Content-Type.\n            # Keep these separate from confirmed broken responses instead of false-failing them.\n            return cid,url,True,"image distante servie avec signature transformée",mismatch
         return cid,url,valid,None if valid else "signature image invalide",mismatch
     except Exception as e: return cid,url,False,str(e)[:160],mismatch
 

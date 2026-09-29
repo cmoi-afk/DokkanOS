@@ -2,7 +2,7 @@ const fs=require('fs'),vm=require('vm'),assert=require('assert');
 const source=fs.readFileSync('app.js','utf8').split('boot().catch(')[0];
 const data=JSON.parse(fs.readFileSync('catalog.json','utf8'));
 const saved=new Map(),elements=new Map();
-const element=selector=>{if(!elements.has(selector))elements.set(selector,{innerHTML:'',textContent:'',hidden:true});return elements.get(selector)};
+const element=selector=>{if(!elements.has(selector))elements.set(selector,{innerHTML:'',textContent:'',hidden:true,classList:{add(){},remove(){},toggle(){}}});return elements.get(selector)};
 const context={
   console,
   window:{addEventListener(){}},

@@ -102,6 +102,15 @@ assert.equal(vm.runInContext("frCardName('Super Saiyan 4 Goku')",context),'Son G
 assert.equal(vm.runInContext("frCardName('Super Saiyan 4 Vegeta')",context),'Vegeta Super Saiyan 4');
 assert.equal(vm.runInContext("frCardName('Androids #17 & #18')",context),'C-17 & C-18');
 console.log('residual English-to-French aliases: OK');
+assert.equal(vm.runInContext("frCardName('Super Saiyan God SS Goku')",context),'Son Goku Super Saiyan divin SS');
+assert.equal(vm.runInContext("frCardName('Super Saiyan God SS Vegeta')",context),'Vegeta Super Saiyan divin SS');
+assert.equal(vm.runInContext("frCardName('Full Power Boujack')",context),'Bojack puissance max');
+assert.equal(vm.runInContext("frCardName('Bojack')",context),'Bojack');
+assert.equal(vm.runInContext("frCardName('Boujack')",context),'Bojack');
+assert.equal(vm.runInContext("frCardName('Metal Cooler')",context),'Métal Cooler');
+assert.equal(vm.runInContext("frCardName('Frieza (3rd Form)')",context),'Freezer (3e forme)');
+assert.equal(vm.runInContext("frCardName('Android #17 (Future)')",context),'C-17 (futur)');
+console.log('canonical French alias ordering: OK');
 vm.runInContext('DB={cards:[{boxId:"SHEET-1",candidateId:"77",validated:true,name:"Test",image:"x.webp"}]}; rainbow100=new Set()',context);
 vm.runInContext('openCard("SHEET-1")',context);
 assert(element('#sheet').innerHTML.includes('Marquer potentiel 100 %'));

@@ -6,434 +6,9 @@
   "stillMissing": [],
   "brokenImages": [
     {
-      "id": "1000030",
-      "url": "assets/cards/1000030.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000040",
-      "url": "assets/cards/1000040.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000070",
-      "url": "assets/cards/1000070.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000090",
-      "url": "assets/cards/1000090.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000100",
-      "url": "assets/cards/1000100.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000110",
-      "url": "assets/cards/1000110.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000120",
-      "url": "assets/cards/1000120.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000130",
-      "url": "assets/cards/1000130.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000140",
-      "url": "assets/cards/1000140.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000150",
-      "url": "assets/cards/1000150.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000160",
-      "url": "assets/cards/1000160.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000170",
-      "url": "assets/cards/1000170.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000180",
-      "url": "assets/cards/1000180.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000190",
-      "url": "assets/cards/1000190.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000200",
-      "url": "assets/cards/1000200.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000210",
-      "url": "assets/cards/1000210.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000220",
-      "url": "assets/cards/1000220.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000230",
-      "url": "assets/cards/1000230.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000240",
-      "url": "assets/cards/1000240.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000250",
-      "url": "assets/cards/1000250.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000260",
-      "url": "assets/cards/1000260.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000810",
-      "url": "assets/cards/1000810.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000820",
-      "url": "assets/cards/1000820.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000850",
-      "url": "assets/cards/1000850.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000870",
-      "url": "assets/cards/1000870.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000880",
-      "url": "assets/cards/1000880.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000890",
-      "url": "assets/cards/1000890.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000900",
-      "url": "assets/cards/1000900.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000910",
-      "url": "assets/cards/1000910.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000920",
-      "url": "assets/cards/1000920.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000930",
-      "url": "assets/cards/1000930.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000940",
-      "url": "assets/cards/1000940.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000950",
-      "url": "assets/cards/1000950.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000960",
-      "url": "assets/cards/1000960.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000980",
-      "url": "assets/cards/1000980.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1000990",
-      "url": "assets/cards/1000990.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001000",
-      "url": "assets/cards/1001000.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001010",
-      "url": "assets/cards/1001010.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001050",
-      "url": "assets/cards/1001050.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001060",
-      "url": "assets/cards/1001060.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001070",
-      "url": "assets/cards/1001070.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001080",
-      "url": "assets/cards/1001080.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001090",
-      "url": "assets/cards/1001090.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001100",
-      "url": "assets/cards/1001100.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001110",
-      "url": "assets/cards/1001110.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001380",
-      "url": "assets/cards/1001380.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001420",
-      "url": "assets/cards/1001420.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001430",
-      "url": "assets/cards/1001430.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001440",
-      "url": "assets/cards/1001440.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001450",
-      "url": "assets/cards/1001450.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001460",
-      "url": "assets/cards/1001460.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001500",
-      "url": "assets/cards/1001500.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001530",
-      "url": "assets/cards/1001530.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001610",
-      "url": "assets/cards/1001610.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001620",
-      "url": "assets/cards/1001620.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001710",
-      "url": "assets/cards/1001710.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001720",
-      "url": "assets/cards/1001720.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001730",
-      "url": "assets/cards/1001730.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001740",
-      "url": "assets/cards/1001740.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001760",
-      "url": "assets/cards/1001760.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001770",
-      "url": "assets/cards/1001770.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001830",
-      "url": "assets/cards/1001830.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001840",
-      "url": "assets/cards/1001840.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001860",
-      "url": "assets/cards/1001860.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1001980",
-      "url": "assets/cards/1001980.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002030",
-      "url": "assets/cards/1002030.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002130",
-      "url": "assets/cards/1002130.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002140",
-      "url": "assets/cards/1002140.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002200",
-      "url": "assets/cards/1002200.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002210",
-      "url": "assets/cards/1002210.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002220",
-      "url": "assets/cards/1002220.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1002241",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1002241_thumb/card_1002241_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1002280",
-      "url": "assets/cards/1002280.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002310",
-      "url": "assets/cards/1002310.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002320",
-      "url": "assets/cards/1002320.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002330",
-      "url": "assets/cards/1002330.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002340",
-      "url": "assets/cards/1002340.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002350",
-      "url": "assets/cards/1002350.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002410",
-      "url": "assets/cards/1002410.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002420",
-      "url": "assets/cards/1002420.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002430",
-      "url": "assets/cards/1002430.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002480",
-      "url": "assets/cards/1002480.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002570",
-      "url": "assets/cards/1002570.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002580",
-      "url": "assets/cards/1002580.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002600",
-      "url": "assets/cards/1002600.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002710",
-      "url": "assets/cards/1002710.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1002861",
@@ -441,69 +16,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1002870",
-      "url": "assets/cards/1002870.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002910",
-      "url": "assets/cards/1002910.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002920",
-      "url": "assets/cards/1002920.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002940",
-      "url": "assets/cards/1002940.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002950",
-      "url": "assets/cards/1002950.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1002980",
-      "url": "assets/cards/1002980.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003000",
-      "url": "assets/cards/1003000.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003130",
-      "url": "assets/cards/1003130.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003160",
-      "url": "assets/cards/1003160.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1003211",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003211_thumb/card_1003211_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1003220",
-      "url": "assets/cards/1003220.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003280",
-      "url": "assets/cards/1003280.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003310",
-      "url": "assets/cards/1003310.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1003311",
@@ -511,84 +26,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1003330",
-      "url": "assets/cards/1003330.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003400",
-      "url": "assets/cards/1003400.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003450",
-      "url": "assets/cards/1003450.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003460",
-      "url": "assets/cards/1003460.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003470",
-      "url": "assets/cards/1003470.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003480",
-      "url": "assets/cards/1003480.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003510",
-      "url": "assets/cards/1003510.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003530",
-      "url": "assets/cards/1003530.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003540",
-      "url": "assets/cards/1003540.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1003561",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003561_thumb/card_1003561_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1003580",
-      "url": "assets/cards/1003580.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003590",
-      "url": "assets/cards/1003590.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003640",
-      "url": "assets/cards/1003640.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003700",
-      "url": "assets/cards/1003700.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003760",
-      "url": "assets/cards/1003760.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003800",
-      "url": "assets/cards/1003800.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1003801",
@@ -596,59 +36,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1003820",
-      "url": "assets/cards/1003820.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003870",
-      "url": "assets/cards/1003870.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003900",
-      "url": "assets/cards/1003900.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003920",
-      "url": "assets/cards/1003920.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003930",
-      "url": "assets/cards/1003930.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1003940",
-      "url": "assets/cards/1003940.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1003991",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1003991_thumb/card_1003991_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1004020",
-      "url": "assets/cards/1004020.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004100",
-      "url": "assets/cards/1004100.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004190",
-      "url": "assets/cards/1004190.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004250",
-      "url": "assets/cards/1004250.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1004251",
@@ -656,114 +46,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1004280",
-      "url": "assets/cards/1004280.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004400",
-      "url": "assets/cards/1004400.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004410",
-      "url": "assets/cards/1004410.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004440",
-      "url": "assets/cards/1004440.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004460",
-      "url": "assets/cards/1004460.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004470",
-      "url": "assets/cards/1004470.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004650",
-      "url": "assets/cards/1004650.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1004651",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1004651_thumb/card_1004651_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1004690",
-      "url": "assets/cards/1004690.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004700",
-      "url": "assets/cards/1004700.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004740",
-      "url": "assets/cards/1004740.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004830",
-      "url": "assets/cards/1004830.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004840",
-      "url": "assets/cards/1004840.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004870",
-      "url": "assets/cards/1004870.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004880",
-      "url": "assets/cards/1004880.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1004930",
-      "url": "assets/cards/1004930.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005000",
-      "url": "assets/cards/1005000.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005030",
-      "url": "assets/cards/1005030.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1005051",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005051_thumb/card_1005051_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1005080",
-      "url": "assets/cards/1005080.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005240",
-      "url": "assets/cards/1005240.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005250",
-      "url": "assets/cards/1005250.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1005281",
@@ -776,39 +66,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1005310",
-      "url": "assets/cards/1005310.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005320",
-      "url": "assets/cards/1005320.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005390",
-      "url": "assets/cards/1005390.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005400",
-      "url": "assets/cards/1005400.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005420",
-      "url": "assets/cards/1005420.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1005441",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005441_thumb/card_1005441_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1005510",
-      "url": "assets/cards/1005510.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1005531",
@@ -816,44 +76,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1005550",
-      "url": "assets/cards/1005550.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005580",
-      "url": "assets/cards/1005580.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005590",
-      "url": "assets/cards/1005590.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005660",
-      "url": "assets/cards/1005660.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005730",
-      "url": "assets/cards/1005730.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1005731",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1005731_thumb/card_1005731_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1005740",
-      "url": "assets/cards/1005740.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005750",
-      "url": "assets/cards/1005750.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1005801",
@@ -861,44 +86,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1005840",
-      "url": "assets/cards/1005840.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1005870",
-      "url": "assets/cards/1005870.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1006000",
-      "url": "assets/cards/1006000.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1006020",
-      "url": "assets/cards/1006020.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1006080",
-      "url": "assets/cards/1006080.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1006211",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1006211_thumb/card_1006211_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1006250",
-      "url": "assets/cards/1006250.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1006330",
-      "url": "assets/cards/1006330.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1006331",
@@ -906,59 +96,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1006350",
-      "url": "assets/cards/1006350.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1006430",
-      "url": "assets/cards/1006430.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1006520",
-      "url": "assets/cards/1006520.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1006660",
-      "url": "assets/cards/1006660.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1006670",
-      "url": "assets/cards/1006670.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1006690",
-      "url": "assets/cards/1006690.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1006700",
-      "url": "assets/cards/1006700.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1006701",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1006701_thumb/card_1006701_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1006730",
-      "url": "assets/cards/1006730.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1006770",
-      "url": "assets/cards/1006770.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1006790",
-      "url": "assets/cards/1006790.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1006791",
@@ -966,54 +106,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1007030",
-      "url": "assets/cards/1007030.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1007040",
-      "url": "assets/cards/1007040.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1007050",
-      "url": "assets/cards/1007050.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1007101",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1007101_thumb/card_1007101_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1007120",
-      "url": "assets/cards/1007120.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1007170",
-      "url": "assets/cards/1007170.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1007181",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1007181_thumb/card_1007181_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1007200",
-      "url": "assets/cards/1007200.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1007210",
-      "url": "assets/cards/1007210.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1007320",
-      "url": "assets/cards/1007320.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1007391",
@@ -1026,29 +126,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1007470",
-      "url": "assets/cards/1007470.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1007471",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1007471_thumb/card_1007471_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1007610",
-      "url": "assets/cards/1007610.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1007620",
-      "url": "assets/cards/1007620.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1007740",
-      "url": "assets/cards/1007740.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1007741",
@@ -1056,44 +136,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1007750",
-      "url": "assets/cards/1007750.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1007770",
-      "url": "assets/cards/1007770.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1007810",
-      "url": "assets/cards/1007810.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1007840",
-      "url": "assets/cards/1007840.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1007901",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1007901_thumb/card_1007901_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1007970",
-      "url": "assets/cards/1007970.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1007980",
-      "url": "assets/cards/1007980.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008070",
-      "url": "assets/cards/1008070.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1008071",
@@ -1106,94 +151,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1008110",
-      "url": "assets/cards/1008110.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008120",
-      "url": "assets/cards/1008120.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1008131",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008131_thumb/card_1008131_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1008150",
-      "url": "assets/cards/1008150.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008290",
-      "url": "assets/cards/1008290.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008360",
-      "url": "assets/cards/1008360.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008380",
-      "url": "assets/cards/1008380.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008390",
-      "url": "assets/cards/1008390.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008420",
-      "url": "assets/cards/1008420.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008430",
-      "url": "assets/cards/1008430.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008480",
-      "url": "assets/cards/1008480.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008490",
-      "url": "assets/cards/1008490.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008500",
-      "url": "assets/cards/1008500.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008530",
-      "url": "assets/cards/1008530.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008540",
-      "url": "assets/cards/1008540.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008550",
-      "url": "assets/cards/1008550.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008560",
-      "url": "assets/cards/1008560.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008570",
-      "url": "assets/cards/1008570.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1008571",
@@ -1201,19 +161,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1008580",
-      "url": "assets/cards/1008580.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1008601",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008601_thumb/card_1008601_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1008620",
-      "url": "assets/cards/1008620.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1008631",
@@ -1221,29 +171,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1008640",
-      "url": "assets/cards/1008640.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1008711",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008711_thumb/card_1008711_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1008740",
-      "url": "assets/cards/1008740.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008750",
-      "url": "assets/cards/1008750.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008790",
-      "url": "assets/cards/1008790.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1008821",
@@ -1251,49 +181,19 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1008830",
-      "url": "assets/cards/1008830.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1008851",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008851_thumb/card_1008851_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1008870",
-      "url": "assets/cards/1008870.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1008871",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008871_thumb/card_1008871_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1008890",
-      "url": "assets/cards/1008890.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008940",
-      "url": "assets/cards/1008940.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1008960",
-      "url": "assets/cards/1008960.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1008961",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1008961_thumb/card_1008961_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1008980",
-      "url": "assets/cards/1008980.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1008981",
@@ -1301,49 +201,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1009000",
-      "url": "assets/cards/1009000.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1009001",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009001_thumb/card_1009001_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1009030",
-      "url": "assets/cards/1009030.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009050",
-      "url": "assets/cards/1009050.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009060",
-      "url": "assets/cards/1009060.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009070",
-      "url": "assets/cards/1009070.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009090",
-      "url": "assets/cards/1009090.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1009091",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009091_thumb/card_1009091_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1009100",
-      "url": "assets/cards/1009100.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1009111",
@@ -1356,21 +221,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1009220",
-      "url": "assets/cards/1009220.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009230",
-      "url": "assets/cards/1009230.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009240",
-      "url": "assets/cards/1009240.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1009241",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009241_thumb/card_1009241_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -1379,11 +229,6 @@
       "id": "1009251",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009251_thumb/card_1009251_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1009260",
-      "url": "assets/cards/1009260.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1009261",
@@ -1401,29 +246,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1009370",
-      "url": "assets/cards/1009370.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009380",
-      "url": "assets/cards/1009380.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1009381",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009381_thumb/card_1009381_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1009390",
-      "url": "assets/cards/1009390.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009430",
-      "url": "assets/cards/1009430.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1009431",
@@ -1431,29 +256,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1009480",
-      "url": "assets/cards/1009480.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009500",
-      "url": "assets/cards/1009500.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1009511",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009511_thumb/card_1009511_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1009520",
-      "url": "assets/cards/1009520.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009580",
-      "url": "assets/cards/1009580.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1009581",
@@ -1461,19 +266,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1009590",
-      "url": "assets/cards/1009590.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1009591",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009591_thumb/card_1009591_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1009620",
-      "url": "assets/cards/1009620.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1009631",
@@ -1481,19 +276,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1009640",
-      "url": "assets/cards/1009640.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1009641",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009641_thumb/card_1009641_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1009660",
-      "url": "assets/cards/1009660.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1009681",
@@ -1511,44 +296,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1009720",
-      "url": "assets/cards/1009720.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009730",
-      "url": "assets/cards/1009730.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009740",
-      "url": "assets/cards/1009740.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009770",
-      "url": "assets/cards/1009770.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009790",
-      "url": "assets/cards/1009790.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1009791",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009791_thumb/card_1009791_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1009800",
-      "url": "assets/cards/1009800.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009830",
-      "url": "assets/cards/1009830.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1009831",
@@ -1556,64 +306,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1009860",
-      "url": "assets/cards/1009860.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009880",
-      "url": "assets/cards/1009880.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009890",
-      "url": "assets/cards/1009890.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009900",
-      "url": "assets/cards/1009900.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1009911",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1009911_thumb/card_1009911_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1009920",
-      "url": "assets/cards/1009920.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009940",
-      "url": "assets/cards/1009940.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009950",
-      "url": "assets/cards/1009950.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009970",
-      "url": "assets/cards/1009970.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1009980",
-      "url": "assets/cards/1009980.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1010001",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010001_thumb/card_1010001_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1010020",
-      "url": "assets/cards/1010020.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1010021",
@@ -1626,24 +326,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1010060",
-      "url": "assets/cards/1010060.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1010071",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010071_thumb/card_1010071_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1010160",
-      "url": "assets/cards/1010160.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010190",
-      "url": "assets/cards/1010190.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1010251",
@@ -1656,39 +341,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1010270",
-      "url": "assets/cards/1010270.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010290",
-      "url": "assets/cards/1010290.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1010291",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010291_thumb/card_1010291_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1010300",
-      "url": "assets/cards/1010300.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010310",
-      "url": "assets/cards/1010310.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010320",
-      "url": "assets/cards/1010320.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010330",
-      "url": "assets/cards/1010330.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1010331",
@@ -1696,29 +351,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1010360",
-      "url": "assets/cards/1010360.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1010361",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010361_thumb/card_1010361_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1010410",
-      "url": "assets/cards/1010410.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010430",
-      "url": "assets/cards/1010430.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010440",
-      "url": "assets/cards/1010440.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1010441",
@@ -1726,29 +361,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1010450",
-      "url": "assets/cards/1010450.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010460",
-      "url": "assets/cards/1010460.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010470",
-      "url": "assets/cards/1010470.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010490",
-      "url": "assets/cards/1010490.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1010501",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010501_thumb/card_1010501_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1010561",
@@ -1756,69 +371,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1010570",
-      "url": "assets/cards/1010570.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010580",
-      "url": "assets/cards/1010580.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010600",
-      "url": "assets/cards/1010600.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010650",
-      "url": "assets/cards/1010650.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010660",
-      "url": "assets/cards/1010660.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1010661",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010661_thumb/card_1010661_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1010700",
-      "url": "assets/cards/1010700.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010710",
-      "url": "assets/cards/1010710.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010770",
-      "url": "assets/cards/1010770.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010780",
-      "url": "assets/cards/1010780.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1010801",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1010801_thumb/card_1010801_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1010820",
-      "url": "assets/cards/1010820.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010830",
-      "url": "assets/cards/1010830.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1010851",
@@ -1831,36 +391,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1010890",
-      "url": "assets/cards/1010890.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010900",
-      "url": "assets/cards/1010900.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010940",
-      "url": "assets/cards/1010940.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010950",
-      "url": "assets/cards/1010950.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010970",
-      "url": "assets/cards/1010970.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1010980",
-      "url": "assets/cards/1010980.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1011041",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011041_thumb/card_1011041_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -1871,29 +401,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1011070",
-      "url": "assets/cards/1011070.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011110",
-      "url": "assets/cards/1011110.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011130",
-      "url": "assets/cards/1011130.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1011141",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011141_thumb/card_1011141_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1011150",
-      "url": "assets/cards/1011150.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1011171",
@@ -1901,29 +411,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1011180",
-      "url": "assets/cards/1011180.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011190",
-      "url": "assets/cards/1011190.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1011211",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011211_thumb/card_1011211_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1011220",
-      "url": "assets/cards/1011220.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011230",
-      "url": "assets/cards/1011230.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1011301",
@@ -1936,49 +426,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1011340",
-      "url": "assets/cards/1011340.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1011341",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011341_thumb/card_1011341_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1011350",
-      "url": "assets/cards/1011350.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011360",
-      "url": "assets/cards/1011360.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011380",
-      "url": "assets/cards/1011380.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011390",
-      "url": "assets/cards/1011390.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011400",
-      "url": "assets/cards/1011400.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011410",
-      "url": "assets/cards/1011410.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011430",
-      "url": "assets/cards/1011430.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1011431",
@@ -1986,44 +436,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1011440",
-      "url": "assets/cards/1011440.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1011441",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011441_thumb/card_1011441_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1011450",
-      "url": "assets/cards/1011450.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011460",
-      "url": "assets/cards/1011460.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011470",
-      "url": "assets/cards/1011470.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011500",
-      "url": "assets/cards/1011500.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011630",
-      "url": "assets/cards/1011630.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011640",
-      "url": "assets/cards/1011640.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1011641",
@@ -2031,19 +446,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1011680",
-      "url": "assets/cards/1011680.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1011681",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011681_thumb/card_1011681_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1011710",
-      "url": "assets/cards/1011710.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1011721",
@@ -2051,39 +456,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1011740",
-      "url": "assets/cards/1011740.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011780",
-      "url": "assets/cards/1011780.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1011781",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011781_thumb/card_1011781_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1011790",
-      "url": "assets/cards/1011790.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011800",
-      "url": "assets/cards/1011800.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1011801",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1011801_thumb/card_1011801_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1011850",
-      "url": "assets/cards/1011850.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1011851",
@@ -2096,21 +476,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1011920",
-      "url": "assets/cards/1011920.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1011980",
-      "url": "assets/cards/1011980.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1012000",
-      "url": "assets/cards/1012000.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1012001",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012001_thumb/card_1012001_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -2121,29 +486,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1012030",
-      "url": "assets/cards/1012030.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1012031",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012031_thumb/card_1012031_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1012100",
-      "url": "assets/cards/1012100.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1012120",
-      "url": "assets/cards/1012120.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1012150",
-      "url": "assets/cards/1012150.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1012161",
@@ -2151,34 +496,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1012220",
-      "url": "assets/cards/1012220.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1012330",
-      "url": "assets/cards/1012330.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1012331",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012331_thumb/card_1012331_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1012350",
-      "url": "assets/cards/1012350.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1012360",
-      "url": "assets/cards/1012360.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1012380",
-      "url": "assets/cards/1012380.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1012381",
@@ -2196,39 +516,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1012470",
-      "url": "assets/cards/1012470.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1012480",
-      "url": "assets/cards/1012480.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1012500",
-      "url": "assets/cards/1012500.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1012540",
-      "url": "assets/cards/1012540.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1012560",
-      "url": "assets/cards/1012560.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1012591",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012591_thumb/card_1012591_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1012630",
-      "url": "assets/cards/1012630.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1012651",
@@ -2244,11 +534,6 @@
       "id": "1012701",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012701_thumb/card_1012701_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1012710",
-      "url": "assets/cards/1012710.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1012721",
@@ -2276,39 +561,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1012890",
-      "url": "assets/cards/1012890.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1012900",
-      "url": "assets/cards/1012900.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1012901",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012901_thumb/card_1012901_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1012920",
-      "url": "assets/cards/1012920.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1012930",
-      "url": "assets/cards/1012930.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1012931",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012931_thumb/card_1012931_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1012940",
-      "url": "assets/cards/1012940.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1012961",
@@ -2318,12 +578,7 @@
     {
       "id": "1012991",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1012991_thumb/card_1012991_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1013010",
-      "url": "assets/cards/1013010.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1013011",
@@ -2333,12 +588,7 @@
     {
       "id": "1013031",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013031_thumb/card_1013031_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1013050",
-      "url": "assets/cards/1013050.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1013051",
@@ -2351,11 +601,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1013090",
-      "url": "assets/cards/1013090.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1013091",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013091_thumb/card_1013091_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -2363,17 +608,7 @@
     {
       "id": "1013101",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013101_thumb/card_1013101_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1013110",
-      "url": "assets/cards/1013110.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1013160",
-      "url": "assets/cards/1013160.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1013161",
@@ -2386,51 +621,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1013250",
-      "url": "assets/cards/1013250.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1013260",
-      "url": "assets/cards/1013260.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1013300",
-      "url": "assets/cards/1013300.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1013310",
-      "url": "assets/cards/1013310.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1013320",
-      "url": "assets/cards/1013320.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1013340",
-      "url": "assets/cards/1013340.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1013350",
-      "url": "assets/cards/1013350.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1013380",
-      "url": "assets/cards/1013380.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1013410",
-      "url": "assets/cards/1013410.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1013411",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013411_thumb/card_1013411_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -2441,24 +631,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1013430",
-      "url": "assets/cards/1013430.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1013431",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013431_thumb/card_1013431_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1013530",
-      "url": "assets/cards/1013530.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1013540",
-      "url": "assets/cards/1013540.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1013541",
@@ -2471,16 +646,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1013590",
-      "url": "assets/cards/1013590.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1013680",
-      "url": "assets/cards/1013680.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1013681",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013681_thumb/card_1013681_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -2491,29 +656,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1013730",
-      "url": "assets/cards/1013730.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1013731",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013731_thumb/card_1013731_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1013760",
-      "url": "assets/cards/1013760.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1013771",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013771_thumb/card_1013771_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1013800",
-      "url": "assets/cards/1013800.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1013811",
@@ -2531,11 +681,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1013870",
-      "url": "assets/cards/1013870.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1013871",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013871_thumb/card_1013871_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -2544,11 +689,6 @@
       "id": "1013881",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013881_thumb/card_1013881_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1013910",
-      "url": "assets/cards/1013910.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1013911",
@@ -2561,24 +701,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1013950",
-      "url": "assets/cards/1013950.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1013951",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1013951_thumb/card_1013951_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1013960",
-      "url": "assets/cards/1013960.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1014010",
-      "url": "assets/cards/1014010.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1014021",
@@ -2586,19 +711,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1014040",
-      "url": "assets/cards/1014040.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1014050",
-      "url": "assets/cards/1014050.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1014051",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014051_thumb/card_1014051_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1014061",
@@ -2606,19 +721,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1014080",
-      "url": "assets/cards/1014080.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1014081",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014081_thumb/card_1014081_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1014110",
-      "url": "assets/cards/1014110.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1014111",
@@ -2641,19 +746,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1014160",
-      "url": "assets/cards/1014160.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1014161",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014161_thumb/card_1014161_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1014170",
-      "url": "assets/cards/1014170.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1014171",
@@ -2666,19 +761,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1014190",
-      "url": "assets/cards/1014190.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1014191",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014191_thumb/card_1014191_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1014210",
-      "url": "assets/cards/1014210.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1014211",
@@ -2691,34 +776,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1014300",
-      "url": "assets/cards/1014300.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1014310",
-      "url": "assets/cards/1014310.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1014331",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014331_thumb/card_1014331_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1014350",
-      "url": "assets/cards/1014350.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1014351",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014351_thumb/card_1014351_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1014370",
-      "url": "assets/cards/1014370.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1014371",
@@ -2726,29 +791,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1014390",
-      "url": "assets/cards/1014390.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1014391",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014391_thumb/card_1014391_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1014400",
-      "url": "assets/cards/1014400.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1014430",
-      "url": "assets/cards/1014430.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1014460",
-      "url": "assets/cards/1014460.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1014461",
@@ -2756,19 +801,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1014470",
-      "url": "assets/cards/1014470.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1014471",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014471_thumb/card_1014471_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1014490",
-      "url": "assets/cards/1014490.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1014491",
@@ -2776,29 +811,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1014510",
-      "url": "assets/cards/1014510.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1014511",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014511_thumb/card_1014511_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1014640",
-      "url": "assets/cards/1014640.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1014641",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014641_thumb/card_1014641_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1014660",
-      "url": "assets/cards/1014660.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1014661",
@@ -2811,19 +831,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1014710",
-      "url": "assets/cards/1014710.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1014741",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014741_thumb/card_1014741_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1014760",
-      "url": "assets/cards/1014760.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1014761",
@@ -2838,37 +848,17 @@
     {
       "id": "1014911",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014911_thumb/card_1014911_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1014930",
-      "url": "assets/cards/1014930.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1014940",
-      "url": "assets/cards/1014940.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1014941",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014941_thumb/card_1014941_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1014960",
-      "url": "assets/cards/1014960.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1014971",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1014971_thumb/card_1014971_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1014980",
-      "url": "assets/cards/1014980.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1014981",
@@ -2881,19 +871,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015000",
-      "url": "assets/cards/1015000.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015001",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015001_thumb/card_1015001_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1015020",
-      "url": "assets/cards/1015020.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1015031",
@@ -2901,19 +881,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015050",
-      "url": "assets/cards/1015050.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015051",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015051_thumb/card_1015051_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1015100",
-      "url": "assets/cards/1015100.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1015101",
@@ -2926,34 +896,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015130",
-      "url": "assets/cards/1015130.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015131",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015131_thumb/card_1015131_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015140",
-      "url": "assets/cards/1015140.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015141",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015141_thumb/card_1015141_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1015170",
-      "url": "assets/cards/1015170.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1015200",
-      "url": "assets/cards/1015200.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1015201",
@@ -2966,11 +916,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015220",
-      "url": "assets/cards/1015220.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015221",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015221_thumb/card_1015221_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -2981,29 +926,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015240",
-      "url": "assets/cards/1015240.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015241",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015241_thumb/card_1015241_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015250",
-      "url": "assets/cards/1015250.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015251",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015251_thumb/card_1015251_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1015260",
-      "url": "assets/cards/1015260.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1015261",
@@ -3016,34 +946,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015310",
-      "url": "assets/cards/1015310.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015311",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015311_thumb/card_1015311_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015350",
-      "url": "assets/cards/1015350.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1015360",
-      "url": "assets/cards/1015360.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015371",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015371_thumb/card_1015371_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1015410",
-      "url": "assets/cards/1015410.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1015411",
@@ -3061,24 +971,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015560",
-      "url": "assets/cards/1015560.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1015570",
-      "url": "assets/cards/1015570.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015571",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015571_thumb/card_1015571_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1015590",
-      "url": "assets/cards/1015590.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1015591",
@@ -3086,44 +981,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015610",
-      "url": "assets/cards/1015610.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1015650",
-      "url": "assets/cards/1015650.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015671",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015671_thumb/card_1015671_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1015691",
-      "url": "assets/cards/1015691.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1015701",
-      "url": "assets/cards/1015701.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1015711",
-      "url": "assets/cards/1015711.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1015750",
-      "url": "assets/cards/1015750.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1015770",
-      "url": "assets/cards/1015770.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1015791",
@@ -3136,24 +996,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015820",
-      "url": "assets/cards/1015820.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1015830",
-      "url": "assets/cards/1015830.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015841",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015841_thumb/card_1015841_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1015850",
-      "url": "assets/cards/1015850.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1015871",
@@ -3181,19 +1026,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1015950",
-      "url": "assets/cards/1015950.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1015971",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1015971_thumb/card_1015971_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1016000",
-      "url": "assets/cards/1016000.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1016001",
@@ -3204,11 +1039,6 @@
       "id": "1016031",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016031_thumb/card_1016031_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1016050",
-      "url": "assets/cards/1016050.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1016051",
@@ -3226,19 +1056,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1016120",
-      "url": "assets/cards/1016120.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1016121",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016121_thumb/card_1016121_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1016150",
-      "url": "assets/cards/1016150.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1016151",
@@ -3251,16 +1071,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1016210",
-      "url": "assets/cards/1016210.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1016250",
-      "url": "assets/cards/1016250.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1016251",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016251_thumb/card_1016251_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -3271,19 +1081,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1016310",
-      "url": "assets/cards/1016310.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1016311",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016311_thumb/card_1016311_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1016330",
-      "url": "assets/cards/1016330.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1016371",
@@ -3291,24 +1091,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1016390",
-      "url": "assets/cards/1016390.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1016401",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016401_thumb/card_1016401_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1016430",
-      "url": "assets/cards/1016430.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1016450",
-      "url": "assets/cards/1016450.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1016461",
@@ -3321,19 +1106,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1016510",
-      "url": "assets/cards/1016510.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1016511",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016511_thumb/card_1016511_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1016570",
-      "url": "assets/cards/1016570.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1016571",
@@ -3346,29 +1121,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1016630",
-      "url": "assets/cards/1016630.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1016631",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016631_thumb/card_1016631_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1016650",
-      "url": "assets/cards/1016650.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1016651",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016651_thumb/card_1016651_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1016690",
-      "url": "assets/cards/1016690.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1016731",
@@ -3383,12 +1143,7 @@
     {
       "id": "1016751",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016751_thumb/card_1016751_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1016760",
-      "url": "assets/cards/1016760.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1016761",
@@ -3396,19 +1151,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1016770",
-      "url": "assets/cards/1016770.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1016771",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016771_thumb/card_1016771_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1016780",
-      "url": "assets/cards/1016780.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1016781",
@@ -3416,29 +1161,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1016800",
-      "url": "assets/cards/1016800.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1016810",
-      "url": "assets/cards/1016810.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1016811",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016811_thumb/card_1016811_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1016830",
-      "url": "assets/cards/1016830.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1016840",
-      "url": "assets/cards/1016840.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1016841",
@@ -3446,24 +1171,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1016860",
-      "url": "assets/cards/1016860.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1016870",
-      "url": "assets/cards/1016870.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1016871",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1016871_thumb/card_1016871_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1016900",
-      "url": "assets/cards/1016900.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1016901",
@@ -3488,17 +1198,12 @@
     {
       "id": "1017081",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017081_thumb/card_1017081_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1017121",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017121_thumb/card_1017121_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1017160",
-      "url": "assets/cards/1017160.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1017161",
@@ -3509,11 +1214,6 @@
       "id": "1017181",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017181_thumb/card_1017181_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1017220",
-      "url": "assets/cards/1017220.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1017221",
@@ -3541,19 +1241,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1017320",
-      "url": "assets/cards/1017320.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1017321",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017321_thumb/card_1017321_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1017340",
-      "url": "assets/cards/1017340.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1017351",
@@ -3563,7 +1253,7 @@
     {
       "id": "1017371",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017371_thumb/card_1017371_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1017411",
@@ -3576,24 +1266,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1017430",
-      "url": "assets/cards/1017430.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1017440",
-      "url": "assets/cards/1017440.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1017441",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017441_thumb/card_1017441_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1017450",
-      "url": "assets/cards/1017450.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1017471",
@@ -3604,11 +1279,6 @@
       "id": "1017491",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017491_thumb/card_1017491_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1017510",
-      "url": "assets/cards/1017510.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1017511",
@@ -3631,16 +1301,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1017620",
-      "url": "assets/cards/1017620.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1017630",
-      "url": "assets/cards/1017630.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1017631",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017631_thumb/card_1017631_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -3656,19 +1316,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1017700",
-      "url": "assets/cards/1017700.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1017701",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017701_thumb/card_1017701_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1017720",
-      "url": "assets/cards/1017720.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1017721",
@@ -3676,29 +1326,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1017740",
-      "url": "assets/cards/1017740.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1017741",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017741_thumb/card_1017741_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1017770",
-      "url": "assets/cards/1017770.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1017780",
-      "url": "assets/cards/1017780.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1017800",
-      "url": "assets/cards/1017800.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1017801",
@@ -3711,39 +1341,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1017840",
-      "url": "assets/cards/1017840.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1017841",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017841_thumb/card_1017841_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1017870",
-      "url": "assets/cards/1017870.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1017890",
-      "url": "assets/cards/1017890.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1017900",
-      "url": "assets/cards/1017900.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1017901",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1017901_thumb/card_1017901_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1017930",
-      "url": "assets/cards/1017930.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1017931",
@@ -3756,34 +1361,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1017960",
-      "url": "assets/cards/1017960.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1018020",
-      "url": "assets/cards/1018020.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1018030",
-      "url": "assets/cards/1018030.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1018031",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018031_thumb/card_1018031_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1018061",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018061_thumb/card_1018061_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1018100",
-      "url": "assets/cards/1018100.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1018101",
@@ -3801,39 +1386,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1018160",
-      "url": "assets/cards/1018160.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1018170",
-      "url": "assets/cards/1018170.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1018191",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018191_thumb/card_1018191_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1018220",
-      "url": "assets/cards/1018220.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1018221",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018221_thumb/card_1018221_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1018240",
-      "url": "assets/cards/1018240.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1018250",
-      "url": "assets/cards/1018250.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1018251",
@@ -3851,29 +1411,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1018320",
-      "url": "assets/cards/1018320.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1018321",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018321_thumb/card_1018321_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1018330",
-      "url": "assets/cards/1018330.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1018340",
-      "url": "assets/cards/1018340.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1018360",
-      "url": "assets/cards/1018360.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1018401",
@@ -3886,24 +1426,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1018460",
-      "url": "assets/cards/1018460.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1018461",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018461_thumb/card_1018461_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1018480",
-      "url": "assets/cards/1018480.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1018490",
-      "url": "assets/cards/1018490.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1018491",
@@ -3911,19 +1436,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1018500",
-      "url": "assets/cards/1018500.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1018501",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018501_thumb/card_1018501_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1018520",
-      "url": "assets/cards/1018520.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1018521",
@@ -3936,14 +1451,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1018560",
-      "url": "assets/cards/1018560.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1018561",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018561_thumb/card_1018561_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1018581",
@@ -3956,24 +1466,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1018610",
-      "url": "assets/cards/1018610.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1018621",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018621_thumb/card_1018621_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1018640",
-      "url": "assets/cards/1018640.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1018650",
-      "url": "assets/cards/1018650.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1018651",
@@ -3986,19 +1481,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1018700",
-      "url": "assets/cards/1018700.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1018701",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018701_thumb/card_1018701_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1018720",
-      "url": "assets/cards/1018720.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1018721",
@@ -4011,11 +1496,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1018790",
-      "url": "assets/cards/1018790.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1018791",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018791_thumb/card_1018791_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -4024,16 +1504,6 @@
       "id": "1018801",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1018801_thumb/card_1018801_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1018840",
-      "url": "assets/cards/1018840.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1018870",
-      "url": "assets/cards/1018870.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1018881",
@@ -4051,11 +1521,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1018990",
-      "url": "assets/cards/1018990.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1019001",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019001_thumb/card_1019001_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -4064,11 +1529,6 @@
       "id": "1019041",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019041_thumb/card_1019041_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1019060",
-      "url": "assets/cards/1019060.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1019071",
@@ -4081,19 +1541,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1019100",
-      "url": "assets/cards/1019100.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1019141",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019141_thumb/card_1019141_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1019170",
-      "url": "assets/cards/1019170.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1019171",
@@ -4106,11 +1556,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1019220",
-      "url": "assets/cards/1019220.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1019221",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019221_thumb/card_1019221_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -4119,11 +1564,6 @@
       "id": "1019241",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019241_thumb/card_1019241_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1019260",
-      "url": "assets/cards/1019260.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1019281",
@@ -4151,11 +1591,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1019390",
-      "url": "assets/cards/1019390.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1019401",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019401_thumb/card_1019401_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -4164,11 +1599,6 @@
       "id": "1019461",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019461_thumb/card_1019461_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1019470",
-      "url": "assets/cards/1019470.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1019471",
@@ -4181,19 +1611,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1019520",
-      "url": "assets/cards/1019520.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1019531",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019531_thumb/card_1019531_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1019590",
-      "url": "assets/cards/1019590.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1019591",
@@ -4211,24 +1631,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1019680",
-      "url": "assets/cards/1019680.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1019681",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019681_thumb/card_1019681_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1019690",
-      "url": "assets/cards/1019690.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1019700",
-      "url": "assets/cards/1019700.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1019711",
@@ -4246,39 +1651,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1019790",
-      "url": "assets/cards/1019790.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1019810",
-      "url": "assets/cards/1019810.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1019820",
-      "url": "assets/cards/1019820.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1019821",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019821_thumb/card_1019821_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1019841",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019841_thumb/card_1019841_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1019850",
-      "url": "assets/cards/1019850.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1019860",
-      "url": "assets/cards/1019860.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1019861",
@@ -4291,19 +1671,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1019880",
-      "url": "assets/cards/1019880.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1019881",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019881_thumb/card_1019881_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1019890",
-      "url": "assets/cards/1019890.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1019891",
@@ -4316,39 +1686,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1019910",
-      "url": "assets/cards/1019910.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1019911",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1019911_thumb/card_1019911_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1019920",
-      "url": "assets/cards/1019920.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1019930",
-      "url": "assets/cards/1019930.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1019950",
-      "url": "assets/cards/1019950.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1019980",
-      "url": "assets/cards/1019980.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1019990",
-      "url": "assets/cards/1019990.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1019991",
@@ -4366,34 +1706,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020040",
-      "url": "assets/cards/1020040.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020041",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020041_thumb/card_1020041_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020050",
-      "url": "assets/cards/1020050.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020070",
-      "url": "assets/cards/1020070.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020091",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020091_thumb/card_1020091_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1020110",
-      "url": "assets/cards/1020110.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1020111",
@@ -4406,16 +1726,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020150",
-      "url": "assets/cards/1020150.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020170",
-      "url": "assets/cards/1020170.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020171",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020171_thumb/card_1020171_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -4426,24 +1736,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020190",
-      "url": "assets/cards/1020190.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020191",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020191_thumb/card_1020191_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1020210",
-      "url": "assets/cards/1020210.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020220",
-      "url": "assets/cards/1020220.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1020221",
@@ -4451,34 +1746,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020230",
-      "url": "assets/cards/1020230.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020260",
-      "url": "assets/cards/1020260.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020280",
-      "url": "assets/cards/1020280.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020281",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020281_thumb/card_1020281_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1020300",
-      "url": "assets/cards/1020300.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020310",
-      "url": "assets/cards/1020310.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1020311",
@@ -4486,29 +1756,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020330",
-      "url": "assets/cards/1020330.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020340",
-      "url": "assets/cards/1020340.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020341",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020341_thumb/card_1020341_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1020360",
-      "url": "assets/cards/1020360.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020370",
-      "url": "assets/cards/1020370.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1020371",
@@ -4516,34 +1766,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020390",
-      "url": "assets/cards/1020390.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020400",
-      "url": "assets/cards/1020400.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020430",
-      "url": "assets/cards/1020430.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020431",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020431_thumb/card_1020431_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1020450",
-      "url": "assets/cards/1020450.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020460",
-      "url": "assets/cards/1020460.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1020461",
@@ -4551,19 +1776,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020500",
-      "url": "assets/cards/1020500.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020501",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020501_thumb/card_1020501_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1020530",
-      "url": "assets/cards/1020530.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1020531",
@@ -4576,19 +1791,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020590",
-      "url": "assets/cards/1020590.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020591",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020591_thumb/card_1020591_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1020600",
-      "url": "assets/cards/1020600.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1020601",
@@ -4596,19 +1801,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020620",
-      "url": "assets/cards/1020620.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020621",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020621_thumb/card_1020621_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1020650",
-      "url": "assets/cards/1020650.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1020651",
@@ -4616,24 +1811,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020670",
-      "url": "assets/cards/1020670.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020671",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020671_thumb/card_1020671_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1020740",
-      "url": "assets/cards/1020740.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020750",
-      "url": "assets/cards/1020750.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1020751",
@@ -4641,19 +1821,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020770",
-      "url": "assets/cards/1020770.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020771",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020771_thumb/card_1020771_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1020810",
-      "url": "assets/cards/1020810.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1020811",
@@ -4661,39 +1831,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1020820",
-      "url": "assets/cards/1020820.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020830",
-      "url": "assets/cards/1020830.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020840",
-      "url": "assets/cards/1020840.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020850",
-      "url": "assets/cards/1020850.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1020870",
-      "url": "assets/cards/1020870.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1020891",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1020891_thumb/card_1020891_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1020910",
-      "url": "assets/cards/1020910.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1020911",
@@ -4711,11 +1851,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1021000",
-      "url": "assets/cards/1021000.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1021011",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021011_thumb/card_1021011_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -4728,12 +1863,7 @@
     {
       "id": "1021051",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021051_thumb/card_1021051_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1021080",
-      "url": "assets/cards/1021080.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1021081",
@@ -4746,19 +1876,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1021110",
-      "url": "assets/cards/1021110.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1021111",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021111_thumb/card_1021111_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1021130",
-      "url": "assets/cards/1021130.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1021141",
@@ -4786,29 +1906,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1021370",
-      "url": "assets/cards/1021370.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1021390",
-      "url": "assets/cards/1021390.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1021391",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021391_thumb/card_1021391_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1021420",
-      "url": "assets/cards/1021420.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1021430",
-      "url": "assets/cards/1021430.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1021431",
@@ -4821,24 +1921,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1021470",
-      "url": "assets/cards/1021470.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1021480",
-      "url": "assets/cards/1021480.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1021481",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021481_thumb/card_1021481_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1021490",
-      "url": "assets/cards/1021490.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1021491",
@@ -4851,11 +1936,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1021540",
-      "url": "assets/cards/1021540.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1021541",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021541_thumb/card_1021541_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -4866,24 +1946,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1021610",
-      "url": "assets/cards/1021610.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1021620",
-      "url": "assets/cards/1021620.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1021621",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021621_thumb/card_1021621_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1021640",
-      "url": "assets/cards/1021640.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1021641",
@@ -4891,24 +1956,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1021650",
-      "url": "assets/cards/1021650.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1021670",
-      "url": "assets/cards/1021670.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1021671",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021671_thumb/card_1021671_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1021690",
-      "url": "assets/cards/1021690.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1021691",
@@ -4916,29 +1966,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1021700",
-      "url": "assets/cards/1021700.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1021720",
-      "url": "assets/cards/1021720.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1021721",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021721_thumb/card_1021721_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1021750",
-      "url": "assets/cards/1021750.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1021780",
-      "url": "assets/cards/1021780.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1021811",
@@ -4956,19 +1986,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1021880",
-      "url": "assets/cards/1021880.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1021881",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021881_thumb/card_1021881_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1021900",
-      "url": "assets/cards/1021900.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1021901",
@@ -4976,19 +1996,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1021920",
-      "url": "assets/cards/1021920.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1021921",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021921_thumb/card_1021921_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1021940",
-      "url": "assets/cards/1021940.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1021941",
@@ -4996,24 +2006,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1021960",
-      "url": "assets/cards/1021960.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1021970",
-      "url": "assets/cards/1021970.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1021971",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021971_thumb/card_1021971_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1021980",
-      "url": "assets/cards/1021980.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1021981",
@@ -5021,29 +2016,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1021990",
-      "url": "assets/cards/1021990.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1021991",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021991_thumb/card_1021991_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1022000",
-      "url": "assets/cards/1022000.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022010",
-      "url": "assets/cards/1022010.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022020",
-      "url": "assets/cards/1022020.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1022021",
@@ -5051,29 +2026,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1022040",
-      "url": "assets/cards/1022040.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1022041",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022041_thumb/card_1022041_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1022060",
-      "url": "assets/cards/1022060.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022080",
-      "url": "assets/cards/1022080.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022090",
-      "url": "assets/cards/1022090.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1022091",
@@ -5081,24 +2036,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1022110",
-      "url": "assets/cards/1022110.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022120",
-      "url": "assets/cards/1022120.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1022121",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022121_thumb/card_1022121_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1022160",
-      "url": "assets/cards/1022160.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1022161",
@@ -5106,19 +2046,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1022180",
-      "url": "assets/cards/1022180.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1022191",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022191_thumb/card_1022191_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1022220",
-      "url": "assets/cards/1022220.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1022221",
@@ -5126,49 +2056,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1022270",
-      "url": "assets/cards/1022270.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022280",
-      "url": "assets/cards/1022280.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022310",
-      "url": "assets/cards/1022310.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1022311",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022311_thumb/card_1022311_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1022330",
-      "url": "assets/cards/1022330.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022340",
-      "url": "assets/cards/1022340.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022350",
-      "url": "assets/cards/1022350.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022370",
-      "url": "assets/cards/1022370.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022380",
-      "url": "assets/cards/1022380.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1022381",
@@ -5176,34 +2066,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1022410",
-      "url": "assets/cards/1022410.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022420",
-      "url": "assets/cards/1022420.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1022421",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022421_thumb/card_1022421_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1022580",
-      "url": "assets/cards/1022580.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1022591",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022591_thumb/card_1022591_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1022620",
-      "url": "assets/cards/1022620.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1022631",
@@ -5221,34 +2091,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1022700",
-      "url": "assets/cards/1022700.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1022701",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022701_thumb/card_1022701_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1022720",
-      "url": "assets/cards/1022720.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1022721",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022721_thumb/card_1022721_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1022740",
-      "url": "assets/cards/1022740.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022750",
-      "url": "assets/cards/1022750.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1022751",
@@ -5266,16 +2116,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1022800",
-      "url": "assets/cards/1022800.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022810",
-      "url": "assets/cards/1022810.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1022811",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022811_thumb/card_1022811_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -5284,11 +2124,6 @@
       "id": "1022831",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022831_thumb/card_1022831_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1022860",
-      "url": "assets/cards/1022860.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1022861",
@@ -5301,29 +2136,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1022930",
-      "url": "assets/cards/1022930.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1022941",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1022941_thumb/card_1022941_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1022960",
-      "url": "assets/cards/1022960.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022970",
-      "url": "assets/cards/1022970.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1022980",
-      "url": "assets/cards/1022980.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1023001",
@@ -5331,24 +2146,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023030",
-      "url": "assets/cards/1023030.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1023040",
-      "url": "assets/cards/1023040.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023041",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023041_thumb/card_1023041_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1023060",
-      "url": "assets/cards/1023060.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1023061",
@@ -5356,24 +2156,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023080",
-      "url": "assets/cards/1023080.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1023090",
-      "url": "assets/cards/1023090.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023091",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023091_thumb/card_1023091_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1023110",
-      "url": "assets/cards/1023110.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1023111",
@@ -5381,39 +2166,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023130",
-      "url": "assets/cards/1023130.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1023160",
-      "url": "assets/cards/1023160.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023161",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023161_thumb/card_1023161_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023170",
-      "url": "assets/cards/1023170.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1023190",
-      "url": "assets/cards/1023190.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023191",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023191_thumb/card_1023191_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1023240",
-      "url": "assets/cards/1023240.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1023241",
@@ -5426,11 +2186,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023270",
-      "url": "assets/cards/1023270.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023271",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023271_thumb/card_1023271_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -5441,19 +2196,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023290",
-      "url": "assets/cards/1023290.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023291",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023291_thumb/card_1023291_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1023300",
-      "url": "assets/cards/1023300.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1023301",
@@ -5461,19 +2206,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023310",
-      "url": "assets/cards/1023310.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023311",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023311_thumb/card_1023311_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1023330",
-      "url": "assets/cards/1023330.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1023331",
@@ -5486,39 +2221,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023380",
-      "url": "assets/cards/1023380.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023381",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023381_thumb/card_1023381_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023390",
-      "url": "assets/cards/1023390.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1023410",
-      "url": "assets/cards/1023410.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1023420",
-      "url": "assets/cards/1023420.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023421",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023421_thumb/card_1023421_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1023460",
-      "url": "assets/cards/1023460.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1023461",
@@ -5531,16 +2241,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023510",
-      "url": "assets/cards/1023510.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1023520",
-      "url": "assets/cards/1023520.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023521",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023521_thumb/card_1023521_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -5551,19 +2251,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023590",
-      "url": "assets/cards/1023590.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023591",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023591_thumb/card_1023591_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1023610",
-      "url": "assets/cards/1023610.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1023621",
@@ -5571,29 +2261,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023630",
-      "url": "assets/cards/1023630.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023641",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023641_thumb/card_1023641_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023650",
-      "url": "assets/cards/1023650.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023651",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023651_thumb/card_1023651_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1023660",
-      "url": "assets/cards/1023660.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1023661",
@@ -5604,11 +2279,6 @@
       "id": "1023671",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023671_thumb/card_1023671_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1023680",
-      "url": "assets/cards/1023680.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1023681",
@@ -5626,11 +2296,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023710",
-      "url": "assets/cards/1023710.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023711",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023711_thumb/card_1023711_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -5641,19 +2306,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023750",
-      "url": "assets/cards/1023750.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023751",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023751_thumb/card_1023751_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1023770",
-      "url": "assets/cards/1023770.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1023771",
@@ -5661,24 +2316,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023800",
-      "url": "assets/cards/1023800.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023801",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023801_thumb/card_1023801_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1023810",
-      "url": "assets/cards/1023810.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1023850",
-      "url": "assets/cards/1023850.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1023861",
@@ -5686,24 +2326,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1023880",
-      "url": "assets/cards/1023880.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1023891",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1023891_thumb/card_1023891_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1023910",
-      "url": "assets/cards/1023910.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1023930",
-      "url": "assets/cards/1023930.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1023931",
@@ -5721,31 +2346,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1024000",
-      "url": "assets/cards/1024000.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024010",
-      "url": "assets/cards/1024010.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024020",
-      "url": "assets/cards/1024020.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024030",
-      "url": "assets/cards/1024030.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024040",
-      "url": "assets/cards/1024040.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024061",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024061_thumb/card_1024061_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -5756,29 +2356,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1024090",
-      "url": "assets/cards/1024090.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024110",
-      "url": "assets/cards/1024110.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024111",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024111_thumb/card_1024111_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1024130",
-      "url": "assets/cards/1024130.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024140",
-      "url": "assets/cards/1024140.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1024141",
@@ -5786,44 +2366,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1024160",
-      "url": "assets/cards/1024160.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024170",
-      "url": "assets/cards/1024170.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024200",
-      "url": "assets/cards/1024200.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024220",
-      "url": "assets/cards/1024220.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024250",
-      "url": "assets/cards/1024250.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024251",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024251_thumb/card_1024251_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1024270",
-      "url": "assets/cards/1024270.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024290",
-      "url": "assets/cards/1024290.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1024291",
@@ -5831,29 +2376,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1024320",
-      "url": "assets/cards/1024320.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024321",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024321_thumb/card_1024321_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1024340",
-      "url": "assets/cards/1024340.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024350",
-      "url": "assets/cards/1024350.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024351",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024351_thumb/card_1024351_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1024381",
@@ -5861,39 +2391,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1024440",
-      "url": "assets/cards/1024440.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024441",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024441_thumb/card_1024441_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1024500",
-      "url": "assets/cards/1024500.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024510",
-      "url": "assets/cards/1024510.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024511",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024511_thumb/card_1024511_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1024540",
-      "url": "assets/cards/1024540.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024550",
-      "url": "assets/cards/1024550.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1024551",
@@ -5906,11 +2411,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1024650",
-      "url": "assets/cards/1024650.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024661",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024661_thumb/card_1024661_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -5919,16 +2419,6 @@
       "id": "1024691",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024691_thumb/card_1024691_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1024720",
-      "url": "assets/cards/1024720.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024730",
-      "url": "assets/cards/1024730.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1024731",
@@ -5941,34 +2431,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1024780",
-      "url": "assets/cards/1024780.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024781",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024781_thumb/card_1024781_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1024800",
-      "url": "assets/cards/1024800.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024801",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024801_thumb/card_1024801_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1024820",
-      "url": "assets/cards/1024820.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024830",
-      "url": "assets/cards/1024830.png",
-      "reason": "signature image invalide"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1024831",
@@ -5976,44 +2446,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1024840",
-      "url": "assets/cards/1024840.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024850",
-      "url": "assets/cards/1024850.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024860",
-      "url": "assets/cards/1024860.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024861",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024861_thumb/card_1024861_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1024880",
-      "url": "assets/cards/1024880.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1024890",
-      "url": "assets/cards/1024890.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1024891",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024891_thumb/card_1024891_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1024910",
-      "url": "assets/cards/1024910.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1024931",
@@ -6024,11 +2464,6 @@
       "id": "1024951",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024951_thumb/card_1024951_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1024970",
-      "url": "assets/cards/1024970.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1024971",
@@ -6046,11 +2481,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1025070",
-      "url": "assets/cards/1025070.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1025071",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025071_thumb/card_1025071_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -6061,44 +2491,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1025110",
-      "url": "assets/cards/1025110.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1025111",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025111_thumb/card_1025111_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1025130",
-      "url": "assets/cards/1025130.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1025140",
-      "url": "assets/cards/1025140.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1025151",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025151_thumb/card_1025151_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1025160",
-      "url": "assets/cards/1025160.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1025170",
-      "url": "assets/cards/1025170.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1025200",
-      "url": "assets/cards/1025200.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1025211",
@@ -6116,29 +2516,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1025310",
-      "url": "assets/cards/1025310.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1025311",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025311_thumb/card_1025311_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1025330",
-      "url": "assets/cards/1025330.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1025331",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025331_thumb/card_1025331_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1025340",
-      "url": "assets/cards/1025340.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1025341",
@@ -6151,19 +2536,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1025360",
-      "url": "assets/cards/1025360.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1025361",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025361_thumb/card_1025361_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1025370",
-      "url": "assets/cards/1025370.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1025371",
@@ -6181,11 +2556,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1025470",
-      "url": "assets/cards/1025470.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1025511",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025511_thumb/card_1025511_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -6196,24 +2566,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1025550",
-      "url": "assets/cards/1025550.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1025560",
-      "url": "assets/cards/1025560.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1025561",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025561_thumb/card_1025561_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1025580",
-      "url": "assets/cards/1025580.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1025591",
@@ -6221,44 +2576,14 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1025600",
-      "url": "assets/cards/1025600.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1025601",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025601_thumb/card_1025601_thumb.png",
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1025620",
-      "url": "assets/cards/1025620.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1025630",
-      "url": "assets/cards/1025630.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1025640",
-      "url": "assets/cards/1025640.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1025650",
-      "url": "assets/cards/1025650.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1025651",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025651_thumb/card_1025651_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1025670",
-      "url": "assets/cards/1025670.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1025671",
@@ -6291,34 +2616,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1025860",
-      "url": "assets/cards/1025860.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1025870",
-      "url": "assets/cards/1025870.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1025871",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1025871_thumb/card_1025871_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1025900",
-      "url": "assets/cards/1025900.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1026000",
-      "url": "assets/cards/1026000.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1026030",
-      "url": "assets/cards/1026030.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1026031",
@@ -6326,24 +2626,9 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1026050",
-      "url": "assets/cards/1026050.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1026070",
-      "url": "assets/cards/1026070.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1026071",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026071_thumb/card_1026071_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1026090",
-      "url": "assets/cards/1026090.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1026091",
@@ -6359,16 +2644,6 @@
       "id": "1026161",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026161_thumb/card_1026161_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1026170",
-      "url": "assets/cards/1026170.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1026180",
-      "url": "assets/cards/1026180.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1026201",
@@ -6399,11 +2674,6 @@
       "id": "1026331",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026331_thumb/card_1026331_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1026350",
-      "url": "assets/cards/1026350.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1026391",
@@ -6446,11 +2716,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1026630",
-      "url": "assets/cards/1026630.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1026731",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026731_thumb/card_1026731_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -6463,7 +2728,7 @@
     {
       "id": "1026771",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026771_thumb/card_1026771_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1026791",
@@ -6476,16 +2741,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1026840",
-      "url": "assets/cards/1026840.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "1026850",
-      "url": "assets/cards/1026850.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1026871",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026871_thumb/card_1026871_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -6494,11 +2749,6 @@
       "id": "1026901",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1026901_thumb/card_1026901_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1026940",
-      "url": "assets/cards/1026940.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1027001",
@@ -6514,11 +2764,6 @@
       "id": "1027061",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027061_thumb/card_1027061_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1027080",
-      "url": "assets/cards/1027080.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1027121",
@@ -6543,7 +2788,7 @@
     {
       "id": "1027221",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027221_thumb/card_1027221_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1027251",
@@ -6559,11 +2804,6 @@
       "id": "1027331",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027331_thumb/card_1027331_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1027350",
-      "url": "assets/cards/1027350.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1027371",
@@ -6593,7 +2833,7 @@
     {
       "id": "1027501",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027501_thumb/card_1027501_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1027511",
@@ -6609,11 +2849,6 @@
       "id": "1027541",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027541_thumb/card_1027541_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1027580",
-      "url": "assets/cards/1027580.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1027601",
@@ -6634,11 +2869,6 @@
       "id": "1027681",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027681_thumb/card_1027681_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1027690",
-      "url": "assets/cards/1027690.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1027711",
@@ -6696,11 +2926,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1027950",
-      "url": "assets/cards/1027950.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1027981",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027981_thumb/card_1027981_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -6714,11 +2939,6 @@
       "id": "1028061",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1028061_thumb/card_1028061_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1028070",
-      "url": "assets/cards/1028070.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1028111",
@@ -6761,11 +2981,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1028420",
-      "url": "assets/cards/1028420.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1028471",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1028471_thumb/card_1028471_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -6806,11 +3021,6 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "id": "1028640",
-      "url": "assets/cards/1028640.png",
-      "reason": "signature image invalide"
-    },
-    {
       "id": "1028681",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1028681_thumb/card_1028681_thumb.png",
       "reason": "HTTP Error 404: Not Found"
@@ -6829,11 +3039,6 @@
       "id": "1028761",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1028761_thumb/card_1028761_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1028770",
-      "url": "assets/cards/1028770.png",
-      "reason": "signature image invalide"
     },
     {
       "id": "1028791",
@@ -6958,17 +3163,12 @@
     {
       "id": "1029471",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1029471_thumb/card_1029471_thumb.png",
-      "reason": "The read operation timed out"
-    },
-    {
-      "id": "1029510",
-      "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1029510_thumb/card_1029510_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1029551",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1029551_thumb/card_1029551_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1029571",
@@ -7133,7 +3333,7 @@
     {
       "id": "1030571",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1030571_thumb/card_1030571_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1030611",
@@ -7143,7 +3343,7 @@
     {
       "id": "1030641",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1030641_thumb/card_1030641_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1030661",
@@ -7218,7 +3418,7 @@
     {
       "id": "1031221",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1031221_thumb/card_1031221_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1031281",
@@ -7278,7 +3478,7 @@
     {
       "id": "1031621",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1031621_thumb/card_1031621_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1031641",
@@ -7378,7 +3578,7 @@
     {
       "id": "1032171",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1032171_thumb/card_1032171_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1032181",
@@ -7724,71 +3924,6 @@
       "id": "1034701",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1034701_thumb/card_1034701_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "2000160",
-      "url": "assets/cards/2000160.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "2000180",
-      "url": "assets/cards/2000180.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "2000690",
-      "url": "assets/cards/2000690.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "2000760",
-      "url": "assets/cards/2000760.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "2000770",
-      "url": "assets/cards/2000770.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "2000780",
-      "url": "assets/cards/2000780.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "2000790",
-      "url": "assets/cards/2000790.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "2000800",
-      "url": "assets/cards/2000800.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "2000810",
-      "url": "assets/cards/2000810.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "2000820",
-      "url": "assets/cards/2000820.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "2000830",
-      "url": "assets/cards/2000830.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "2000840",
-      "url": "assets/cards/2000840.png",
-      "reason": "signature image invalide"
-    },
-    {
-      "id": "2000850",
-      "url": "assets/cards/2000850.png",
-      "reason": "signature image invalide"
     }
   ],
   "idImageMismatches": []

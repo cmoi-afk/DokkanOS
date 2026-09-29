@@ -24,3 +24,5 @@ nav button.on{background:linear-gradient(180deg,transparent,rgba(242,120,35,.08)
 .duplicate-help{margin-bottom:14px}.duplicate-help p{margin:7px 0 0;line-height:1.45}.duplicate-summary{margin:0 0 12px;font-size:.92rem}.dup-counts{display:flex;gap:7px;flex-wrap:wrap;margin-top:7px}.dup-counts span{padding:4px 8px;border-radius:999px;background:var(--panel2,#20242d);font-size:.8rem}.dup-action{display:block;margin-top:6px;font-size:.78rem;opacity:.75}
 
 .dup-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}.dup-actions button{font-size:.78rem;padding:7px 9px}.dup-row>div{min-width:0;flex:1}
+
+.unit{position:relative}.rainbowmark{position:absolute;left:6px;bottom:42px;z-index:3;padding:3px 6px;border-radius:999px;background:rgba(10,12,18,.88);font-size:.68rem;font-weight:800;box-shadow:0 1px 5px rgba(0,0,0,.35)}

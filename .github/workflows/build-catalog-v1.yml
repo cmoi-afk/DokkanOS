@@ -3,7 +3,10 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "tools/build_catalog_v1.py"\n      - "catalog.json"\n      - "card-meta.json"\n      - ".github/workflows/build-catalog-v1.yml"
+      - "tools/build_catalog_v1.py"
+      - "catalog.json"
+      - "card-meta.json"
+      - ".github/workflows/build-catalog-v1.yml"
 permissions:
   contents: write
 jobs:

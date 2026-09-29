@@ -34,7 +34,7 @@ for c in src.get("cards",[]):
         rejected.append({"id":cid,"name":c.get("name"),"reasons":reasons}); continue
     seen.add(cid)
     cards.append({
-      "id":cid,"name":c.get("name") or "","title":c.get("title") or "",
+      "id":cid,"name":(official_fr.get("name") if fr_ok else None) or c.get("name") or "",\n      "title":(official_fr.get("title") if fr_ok else None) or c.get("title") or "",
       "rarity":c.get("rarity"),"type":c.get("type"),"class":c.get("class") or "",
       "image":c.get("image") or "",
       **({"awakensTo":str(c["awakensTo"])} if c.get("awakensTo") else {}),

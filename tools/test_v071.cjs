@@ -44,4 +44,17 @@ vm.runInContext('linkFilter=""; ezaFilter="yes"',context); assert.deepEqual(Arra
 vm.runInContext('ezaFilter=""; filter="valid"',context); assert.deepEqual(Array.from(vm.runInContext('visibleCards().map(c=>c.boxId)',context)),['A','C']);
 vm.runInContext('filter="check"',context); assert.deepEqual(Array.from(vm.runInContext('visibleCards().map(c=>c.boxId)',context)),['B']);
 console.log('top rarity/type/class/category/link/EZA/status filters: OK');
+vm.runInContext(`DB={cards:[
+ {boxId:"B01",candidateId:"10",validated:true,name:"Goku",image:"x.webp"},
+ {boxId:"B02",candidateId:"10",validated:true,name:"Goku",image:"x.webp"},
+ {boxId:"B03",candidateId:"10",validated:true,name:"Goku",image:"x.webp"},
+ {boxId:"B04",candidateId:"11",validated:true,name:"Vegeta",image:"y.webp"}
+]}`,context);
+vm.runInContext('renderDuplicates()',context);
+assert.equal(element('#dupCount').textContent,'1 carte');
+assert(element('#duplicateSummary').textContent.includes('2 doublons au total'));
+assert(element('#duplicateList').innerHTML.includes('3 exemplaires possédés'));
+assert(element('#duplicateList').innerHTML.includes('2 doublons'));
+assert(element('#duplicateList').innerHTML.includes('Positions dans ta Box'));
+console.log('duplicates summary and wording: OK');
 console.log('verification, persistence, unconfirmed list and catalogue images: OK');

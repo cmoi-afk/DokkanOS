@@ -380,11 +380,11 @@ function stats(){
 }
 const NON_PLAYABLE_NAME_RE=/(statue de (m\.?\s*satan)|hercule statue|mr\.? satan statue)/i;
 const FR_NAME_FIXES=[
- [/Golden Frieza/g,'Golden Freezer'],[/Mecha Frieza/g,'Mecha Freezer'],[/Frieza/g,'Freezer'],[/Captain Ginyu/g,'Ginyu'],
- [/Android #?(\d+)/g,'C-$1'],[/Master Roshi/g,'Kamesennin'],[/Mercenary Tao/g,'Tao Pai Pai'],[/\bTien\b/g,'Tenshinhan'],
+ [/Golden Frieza/g,'Golden Freezer'],[/\bBojack\b/gi,'Boujack'],[/Full Power Boujack/gi,'Boujack pleine puissance'],[/Mecha Frieza/g,'Mecha Freezer'],[/Frieza/g,'Freezer'],[/Captain Ginyu/g,'Ginyu'],
+ [/Androids #?(\d+)\s*&\s*#?(\d+)/gi,'C-$1 & C-$2'],[/Android #?(\d+)/g,'C-$1'],[/Androids #?(\d+)/g,'C-$1'],[/Master Roshi/g,'Kamesennin'],[/Mercenary Tao/g,'Tao Pai Pai'],[/\bTien\b/g,'Tenshinhan'],
  [/Chiaotzu/g,'Chaozu'],[/Jeice/g,'Jeese'],[/Recoome/g,'Reacum'],[/Burter/g,'Butta'],[/Pikkon/g,'Paikuhan'],
  [/King Cold/g,'Roi Cold'],[/King Vegeta/g,'Roi Vegeta'],[/Kid Buu/g,'Boo (petit)'],[/Super Buu/g,'Boo (super)'],
- [/Gohan \(Kid\)/g,'Son Gohan (petit)'],[/Gohan \(Youth\)/g,'Son Gohan (enfant)'],[/Gohan \(Teen\)/g,'Son Gohan (jeune)'],
+ [/Super Saiyan 4 Goku/gi,'Son Goku Super Saiyan 4'],[/Super Saiyan 4 Vegeta/gi,'Vegeta Super Saiyan 4'],[/Gohan \(Kid\)/g,'Son Gohan (petit)'],[/Gohan \(Youth\)/g,'Son Gohan (enfant)'],[/Gohan \(Teen\)/g,'Son Gohan (jeune)'],
  [/Trunks \(Teen\)/gi,'Trunks (jeune)'],[/Trunks \(Youth\)/gi,'Trunks (jeune)'],[/Trunks \(Kid\)/gi,'Trunks (petit)'],
  [/Demon King Piccolo \(Elder\)/gi,'Piccolo Daimaô (vieux)'],[/Demon King Piccolo/gi,'Piccolo Daimaô'],
  [/Cell \(1st Form\)/gi,'Cell (1re forme)'],[/Cell \(2nd Form\)/gi,'Cell (2e forme)'],[/Perfect Cell/gi,'Cell Parfait'],

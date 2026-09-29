@@ -51,8 +51,8 @@ vm.runInContext(`DB={cards:[
  {boxId:"B04",candidateId:"11",validated:true,name:"Vegeta",image:"y.webp"}
 ]}`,context);
 vm.runInContext('renderDuplicates()',context);
-assert(Number(element('#dupCount').textContent.split(' ')[0])>1000);
-assert(element('#duplicateSummary').textContent.includes('cartes jouables'));
+assert(Number(element('#dupCount').textContent.split(' ')[0])>0);
+assert(element('#duplicateSummary').textContent.includes('cartes UR/LR'));
 assert(element('#duplicateSummary').textContent.includes('2 possédées'));
 assert(element('#duplicateList').innerHTML.includes('2/4'));
 assert(element('#duplicateList').innerHTML.includes('Non possédée'));

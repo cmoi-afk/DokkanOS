@@ -110,7 +110,7 @@ jobs:
           flow_requirements={
             "verify":["function verifyChooseCard","function verifyConfirm","saveEdits()","renderMissing();renderInventory();renderManualOwned()"],
             "missing":["function renderMissing","familyState(group)!=='owned'","capturedOwned"],
-            "box":["function ownedIds","function renderManualOwned","confirmed manually".replace("confirmed","confirmé")]
+            "box":["function ownedIds","function renderManualOwned","confirmé manuellement"]
           }
           flow_missing={}
           for flow,needles in flow_requirements.items():

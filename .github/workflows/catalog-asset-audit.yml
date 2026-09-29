@@ -3,7 +3,9 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "tools/audit_catalog_assets.py"\n      - "tools/verify_missing_images.py"\n      - "catalog-v1.draft.json"
+      - "tools/audit_catalog_assets.py"
+      - "tools/verify_missing_images.py"
+      - "catalog-v1.draft.json"
 permissions:
   contents: write
 jobs:
@@ -11,7 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python tools/audit_catalog_assets.py\n      - run: python tools/verify_missing_images.py
+      - run: python tools/audit_catalog_assets.py
+      - run: python tools/verify_missing_images.py
       - name: Commit report
         run: |
           git config user.name "github-actions[bot]"

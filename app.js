@@ -351,6 +351,7 @@ async function boot(){
   try{CATALOG=await fetch('catalog.json').then(r=>r.ok?r.json():({cards:[]}))}catch(e){CATALOG={cards:[]}}
   try{OVERLAP=await fetch('overlap-conflicts.json').then(r=>r.ok?r.json():({conflicts:[]}))}catch(e){OVERLAP={conflicts:[]}}
   try{const extra=await fetch('recent-cards.json').then(r=>r.ok?r.json():null);mergeRecentCards(extra)}catch(e){console.warn('Cartes récentes indisponibles',e)}
+  CATALOG.cards=(CATALOG.cards||[]).filter(c=>c.rarity!=='SR');
   applyMetadata(); restoreEdits(); initAdvancedFilters();
   render(); stats(); renderDuplicates(); renderMissing(); renderInventory(); renderManualOwned(); renderTeam(); renderAnalysis();
 }
@@ -635,7 +636,7 @@ function renderDuplicates(){
   $('#dupCount').textContent=rows.length+' cartes';let summary=$('#duplicateSummary');if(summary)summary.textContent=rows.length+' cartes UR/LR · '+ownedCount+' possédées · '+rainbowCount+' à 100 %';
   el.innerHTML=rows.map(x=>{let img=x.copies[0]?.image||x.c.image||localCardImage(x.id,''),name=frCardName(x.copies[0]?.name||x.c.name||'ID '+x.id),dots=[1,2,3,4].map(n=>`<i class="${x.dupes>=n?'filled':''}"></i>`).join(''),state=x.rainbow?'🌈 100 %':x.copies.length?(x.ready?'4/4':' '+x.dupes+'/4'):'Non possédée',boxId=x.copies[0]?.boxId;return `<div class="potential-line ${x.copies.length?'owned':'unowned'}" ${boxId?`onclick="openCard('${boxId}')"`:''}><img loading="lazy" src="${img}" onerror="imageFallback(this,'${x.id}','${img}')"><div class="potential-line-main"><b>${name}</b><div class="potential-meter">${dots}</div></div><span class="potential-state ${x.rainbow?'rainbow':x.ready?'ready':''}">${state}</span><div class="potential-stepper"><button onclick="event.stopPropagation();changePotentialDuplicate('${x.id}',-1)">−</button><b>${x.dupes}</b><button onclick="event.stopPropagation();changePotentialDuplicate('${x.id}',1)">+</button></div>${x.ready||x.rainbow?`<button class="potential-100" onclick="event.stopPropagation();toggleRainbow100('${x.id}')">${x.rainbow?'✓':'100 %'}</button>`:''}</div>`}).join('')||'<div class="empty">Catalogue indisponible.</div>'
 }
-function catalogSelectable(c){return ['SSR','UR','LR'].includes(c.rarity)||(c.rarity==='SR'&&!!c.awakensTo)}
+function catalogSelectable(c){return ['SSR','UR','LR'].includes(c.rarity)}
 let CACHED_FAMILIES=null, CACHED_FAMILY_BY_ID=null;
 function catalogFamilies(){
   if(CACHED_FAMILIES)return CACHED_FAMILIES;

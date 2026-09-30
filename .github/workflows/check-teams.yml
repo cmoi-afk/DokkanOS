@@ -1,9 +1,9 @@
 name: Check teams and missions
 on:
   push:
-    paths: [index.html, sw.js, app.js, tools/test_app_dom.cjs, tools/test_sw.cjs, team-engine.js, teams.js, team-worker.js, recent-cards.json, style.css, tools/test_team_builder.cjs, events.json, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
+    paths: [index.html, sw.js, app.js, tools/test_app_dom.cjs, tools/test_sw.cjs, team-engine.js, teams.js, team-worker.js, recent-cards.json, style.css, tools/test_team_builder.cjs, catalog-model.js, catalogue.js, catalogue-report.json, catalog.json, card-meta.json, tools/test_catalogue_data.cjs, tools/test_catalogue.cjs, events.json, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
   pull_request:
-    paths: [app.js, tools/test_app_dom.cjs, tools/test_sw.cjs, team-engine.js, teams.js, team-worker.js, recent-cards.json, style.css, tools/test_team_builder.cjs, events.json, index.html, sw.js, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
+    paths: [app.js, tools/test_app_dom.cjs, tools/test_sw.cjs, team-engine.js, teams.js, team-worker.js, recent-cards.json, style.css, tools/test_team_builder.cjs, catalog-model.js, catalogue.js, catalogue-report.json, catalog.json, card-meta.json, tools/test_catalogue_data.cjs, tools/test_catalogue.cjs, events.json, index.html, sw.js, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
 permissions:
   contents: read
 jobs:
@@ -14,9 +14,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --check team-engine.js && node --check teams.js && node --check app.js && node --check team-worker.js
+      - run: node --check team-engine.js && node --check teams.js && node --check app.js && node --check team-worker.js && node --check catalog-model.js && node --check catalogue.js
       - run: node tools/test_teams.cjs
       - run: node tools/test_team_builder.cjs
+      - run: node tools/test_catalogue.cjs
+      - run: node tools/test_catalogue_data.cjs
       - run: node tools/test_v071.cjs
       - run: node tools/test_sw.cjs
       - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom@0.18.12

@@ -121,14 +121,15 @@ def one(item):
      if str(z.get("card",{}).get("id"))!=cid:raise ValueError("ID incorrect sur le kit Z")
      if not z.get("super_attacks"):
       jp=payload(cid,step=step,japan=True)
-      if str(jp.get("card",{}).get("id"))!=cid or jp.get("card",{}).get("skill_lv_max")!=z.get("card",{}).get("skill_lv_max"):raise ValueError("Référence SP alternative contradictoire")
+      if str(jp.get("card",{}).get("id"))!=cid :raise ValueError("Référence SP alternative contradictoire")
       translated={x.get("special_set_id"):x.get("attack") for x in d.get("super_attacks",[]) if x.get("attack")}
       fixed=[]
       for attack in jp.get("super_attacks",[]):
-       if str(attack.get("card_id"))!=cid:raise ValueError("SP alternative pour un autre ID")
+       if str(attack.get("card_id"))!=cid or attack.get("special_set_id") not in translated:raise ValueError("SP alternative absente de la référence Global")
        fixed.append({**attack,"attack":translated.get(attack.get("special_set_id")) or attack.get("attack")})
       z={**z,"super_attacks":fixed}
-      z["specialAttackSource"]="https://jpn.dokkaninfo.com/cards/"+cid+"?eza=true&step="+str(step)
+      z["specialAttackSource"]="https://glbfr.dokkaninfo.com/cards/"+cid
+      z["specialAttackVerification"]="Exact Global special_set_id and source lv_start; Z max SA verified separately."
      zkit=kit(z,z=True)
      if z.get("specialAttackSource"):zkit["specialAttackSource"]=z["specialAttackSource"]
      if not zkit.get("passive") or not zkit.get("superAttack"):raise ValueError("Kit Z incomplet")

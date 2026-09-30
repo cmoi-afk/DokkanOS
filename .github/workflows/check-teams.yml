@@ -1,0 +1,20 @@
+name: Check teams and missions
+on:
+  push:
+    paths: [team-engine.js, teams.js, events.json, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
+  pull_request:
+    paths: [team-engine.js, teams.js, events.json, index.html, sw.js, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check team-engine.js && node --check teams.js && node --check app.js
+      - run: node tools/test_teams.cjs
+      - run: node tools/test_v071.cjs
+      - run: python -c "import json; from tools.import_events import validate; print(validate(json.load(open('events.json'))))"

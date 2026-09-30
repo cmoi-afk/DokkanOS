@@ -19,6 +19,16 @@ V={
     "1012761":"ZTUR",
     # DokkanStats exact-ID 1008031: UR + badge EZA + étape EZA Awakening.
     "1008031":"ZTUR",
+    # DokkanStats exact-ID confirmations (EZA/SEZA shown on the card page).
+    "1004651":"Super ZTUR",
+    "1002091":"ZTUR",
+    "1019491":"ZTUR",
+    "1021851":"ZTUR",
+    "1023241":"ZTUR",
+    "1019991":"ZLR",
+    "1025771":"ZLR",
+    "1019391":"ZTUR",
+
 }
 counts={}; unresolved=[]
 def status(c,m):

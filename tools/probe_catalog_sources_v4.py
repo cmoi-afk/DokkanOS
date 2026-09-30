@@ -17,7 +17,10 @@ for cid in ["1003210","1003211","1010070","1034201"]:
  try:
   url="https://glbfr.dokkaninfo.com/cards/"+cid;text=fetch(url);d=embedded(text,"datajson")
   report["cards"][cid]={"keys":list(d),"card":d.get("card"),"max_eza_step":d.get("max_eza_step"),"eza_medals":d.get("eza_medals"),"eza":d.get("eza"),"awake":{k:v for k,v in d.items() if any(t in k for t in ["awak","resource","image","stat","open","asset"])},"images":re.findall(r'https?[^"<>\\s]+(?:thumb|card_)[^"<>\\s]+',html.unescape(text))[:12],"passive":d.get("passive_skill"),"leader":d.get("leader_skill")}
-  try:\n   api=json.loads(fetch("https://glbfr.dokkaninfo.com/api/cards/"+cid+"/transformation"));report["cards"][cid]["api"]={"keys":list(api),"card":api.get("card"),"passive":api.get("passive_skill")}\n  except Exception as e:report["cards"][cid]["api"]={"error":str(e)}\n  step=d.get("max_eza_step")
+  try:
+   api=json.loads(fetch("https://glbfr.dokkaninfo.com/api/cards/"+cid+"/transformation"));report["cards"][cid]["api"]={"keys":list(api),"card":api.get("card"),"passive":api.get("passive_skill")}
+  except Exception as e:report["cards"][cid]["api"]={"error":str(e)}
+  step=d.get("max_eza_step")
   if step:
    alt=embedded(fetch(url+"?eza=true&step="+str(step)),"datajson");report["cards"][cid]["alt"]={"card":alt.get("card"),"passive":alt.get("passive_skill"),"keys":list(alt)}
  except Exception as e:report["cards"][cid]={"error":str(e)}

@@ -39,7 +39,8 @@ def clean(s):
  markers={"once":"1 fois","forever":"permanent","stun":"étourdissement","atk_down":"ATT réduite","def_down":"DÉF réduite"}
  return re.sub(r"\{passiveImg:([^}]+)\}",lambda m:" ["+markers[m[1]]+"]" if m[1] in markers else "",str(s or "")).strip()
 def names(d,key):return [x["name"] for x in d.get(key,[]) if isinstance(x,dict) and x.get("name")]
-def kit(d):
+def rank(c):return (int(c.get("rarity",0)) if isinstance(c.get("rarity"),int) else {"SSR":3,"UR":4,"LR":5}.get(c.get("rarity"),0),int(c.get("lv_max") or c.get("maxLevel") or c.get("level") or 0))
+def kit(d,z=False):
  c=d.get("card") or {};leader=d.get("leader_skill") or {};passive=d.get("passive_skill") or {};active=d.get("active_skill") or {}
  supers=[];seen=set()
  for x in d.get("super_attacks") or []:
@@ -49,7 +50,15 @@ def kit(d):
   sig=json.dumps(item,ensure_ascii=False,sort_keys=True)
   if sig not in seen:supers.append(item);seen.add(sig)
  element=int(c.get("element",0))
- out={"name":c.get("name"),"title":leader.get("name"),"rarity":RAR.get(int(c.get("rarity",0))),"type":TYPES.get(element%10),"class":{1:"Super",2:"Extrême"}.get(element//10,""),"leader":clean(leader.get("description")),"passiveName":passive.get("name"),"passive":clean(passive.get("itemized_description") or passive.get("description")),"superAttack":supers[0] if supers else None,"ultraSuperAttack":next((s for s in supers if s["ki"]>=18),None),"supers":supers,"activeName":active.get("name"),"active":" — ".join(clean(active.get(k)) for k in ["effect_description","condition_description"] if active.get(k)),"categories":names(d,"categories"),"links":names(d,"links"),"cost":c.get("cost"),"maxLevel":c.get("lv_max"),"maxSALevel":c.get("skill_lv_max"),"maxHP":c.get("hp_max"),"maxATK":c.get("atk_max"),"maxDEF":c.get("def_max"),"rainbowHP":d.get("hp_hipo"),"rainbowATK":d.get("atk_hipo"),"rainbowDEF":d.get("def_hipo")}
+ out={"name":c.get("name"),"title":leader.get("name"),"rarity":RAR.get(int(c.get("rarity",0))),"type":TYPES.get(element%10),"class":{1:"Super",2:"Extrême"}.get(element//10,""),"leader":clean(leader.get("description")),"passiveName":passive.get("name"),"passive":clean(passive.get("itemized_description") or passive.get("description")),"superAttack":supers[0] if supers else None,"ultraSuperAttack":next((s for s in supers if s["ki"]>=18),None),"supers":supers,"activeName":active.get("name"),"active":" — ".join(clean(active.get(k)) for k in ["effect_description","condition_description"] if active.get(k)),"categories":names(d,"categories"),"links":names(d,"links"),"cost":c.get("cost"),"maxLevel":c.get("lv_max"),"maxSALevel":c.get("skill_lv_max"),"maxHP":c.get("hp_max"),"maxATK":c.get("atk_max"),"maxDEF":c.get("def_max"),"potentialBonusHP":d.get("hp_hipo"),"potentialBonusATK":d.get("atk_hipo"),"potentialBonusDEF":d.get("def_hipo")}
+ for prefix,label in [("hp","HP"),("atk","ATK"),("def","DEF")]:
+  value=c.get(prefix+"_max")
+  # DokkanInfo's published card component uses Math.round((max-init)*.4839).
+  if z and int(c.get("rarity",0))==4 and int(c.get("lv_max",0))==140 and value is not None:
+   value+=int((value-int(c.get(prefix+"_init",0)))*.4839+.5)
+  out["max"+label]=value
+  bonus=d.get(prefix+"_hipo")
+  out["rainbow"+label]=value+bonus if value is not None and bonus is not None else None
  return out
 def playable(row):
  if int(row.get("rarity",0)) not in RAR:return False
@@ -93,12 +102,12 @@ def one(item):
   parsed=kit(d)
   if parsed.get("rarity") not in RAR.values():return cid,{"excluded":True},None
   if not row.get("_legacy") and parsed.get("rarity")!=RAR[int(row["rarity"])]:raise ValueError("Rareté contradictoire pour l'ID exact")
-  rid=str(c.get("resource_id") or c.get("asset_id") or c.get("icon_id") or row.get("icon_id") or cid)
+  rid=str(c.get("asset_id") or c.get("icon_id") or c.get("resource_id") or row.get("icon_id") or cid)
   parsed.update({"id":cid,"resourceId":rid,"categoriesComplete":True,"source":{"provider":"DokkanInfo GLOBAL FR","url":url,"verified":CHECKED,"exactId":cid},"zAwakenings":[],"eza":False,"seza":False,"ezaStep":None,"ezaAvailable":False,"openAt":row.get("open_at"),"dataStatus":{"identity":"verified","kit":"verified" if all(parsed.get(k) for k in ["leader","passive","superAttack","links"]) else "partial","checkedAt":CHECKED}})
   if redirected:
    parsed["source"]["apiUrl"]=BASE+"/api/cards/"+cid+"/transformation"
    # This is a genuine pre-Z-awakening stage, not an alias to upgrade silently.
-   if original.get("character_id")==c.get("character_id") and original.get("card_unique_info_id")==c.get("card_unique_info_id"):
+   if original.get("character_id")==c.get("character_id") and original.get("card_unique_info_id")==c.get("card_unique_info_id") and rank(original)>rank(c):
     parsed["awakensTo"]=actual;parsed["awakeningSource"]=url
   else:
    route=d.get("eza_open_date");super_route=d.get("seza_open_date")
@@ -110,7 +119,7 @@ def one(item):
     try:
      z=payload(cid,step=step)
      if str(z.get("card",{}).get("id"))!=cid:raise ValueError("ID incorrect sur le kit Z")
-     zkit=kit(z)
+     zkit=kit(z,z=True)
      if not zkit.get("passive") or not zkit.get("superAttack"):raise ValueError("Kit Z incomplet")
      parsed["zAwakenings"].append({"kind":kind,"step":step,"available":True,"verified":True,"kit":zkit,"medals":medals(d.get("eza_medals"),is_super),"source":{"provider":"DokkanInfo GLOBAL FR","url":url+"?eza=true&step="+str(step),"verified":CHECKED}})
     except Exception as e:parsed.setdefault("zErrors",[]).append({"kind":kind,"reason":str(e)[:160]})
@@ -183,7 +192,7 @@ def main():
  edges={}
  for cid,c in results.items():
   if c.get("awakensTo") in results:edges[cid]=c["awakensTo"]
-  prior=c.get("awakeningOrigins",[])
+  prior=[x for x in c.get("awakeningOrigins",[]) if x["id"]!=cid and rank(x)<rank(c)]
   path=[x["id"] for x in sorted(prior,key=lambda x:({"SSR":3,"UR":4,"LR":5}[x["rarity"]],x.get("level") or 0)) if x["id"] in results]+[cid]
   for a,b in zip(path,path[1:]):
    if a!=b and (a not in edges or edges[a]==b):edges[a]=b
@@ -197,7 +206,10 @@ def main():
  for cid,c in results.items():
   report["zErrors"].extend({"id":cid,**e} for e in c.pop("zErrors",[]))
   previous=meta["cards"].get(cid,{})
-  m={**previous,**c};m["fr"]={k:v for k,v in c.items() if k in ["name","title","leader","passiveName","passive","superAttack","ultraSuperAttack","supers","activeName","active","categories","links","transformations","type","class"]};m["fr"]["_official"]=True
+  m={**previous,**c};
+  for key in ["awakensTo","awakensFrom","awakeningOrigins","awakeningSource"]:
+   if key not in c:m.pop(key,None)
+  m["fr"]={k:v for k,v in c.items() if k in ["name","title","leader","passiveName","passive","superAttack","ultraSuperAttack","supers","activeName","active","categories","links","transformations","type","class"]};m["fr"]["_official"]=True
   meta["cards"][cid]=m
  # Failed historical entries remain explicit partial records; fresh source IDs are still all present.
  catalogue=[]
@@ -218,7 +230,7 @@ def main():
   image=images.get(c["resourceId"],{})
   if image.get("path"):c["image"]=image["path"];c["dataStatus"]["image"]="verified";meta["cards"].setdefault(c["id"],{})["image"]=c["image"];meta["cards"][c["id"]]["resourceId"]=c["resourceId"]
   else:
-   c["dataStatus"]["image"]="missing";c["image"]=old.get(c["id"],{}).get("image","");image_errors.append({"id":c["id"],"resourceId":c["resourceId"],"reason":image.get("error","Identifiant de ressource absent")})
+   c["dataStatus"]["image"]="missing";c["image"]=old.get(c["id"],{}).get("image","") or "https://dokkaninfo.com/assets/global/en/character/thumb/card_"+c["resourceId"]+"_thumb/card_"+c["resourceId"]+"_thumb.png";image_errors.append({"id":c["id"],"resourceId":c["resourceId"],"reason":image.get("error","Identifiant de ressource absent")})
  missing=sorted(set(rows)-{c["id"] for c in catalogue}-set(report["excluded"]))
  report.update({"after":{"cards":len(catalogue),"rarities":dict(Counter(c["rarity"] for c in catalogue)),"kitsVerified":sum(c["dataStatus"]["kit"]=="verified" for c in catalogue),"imagesVerified":len(catalogue)-len(image_errors),"zKits":dict(Counter(v["kind"] for c in results.values() for v in c["zAwakenings"]))},"imageErrors":image_errors,"missingSourceIds":missing,"indexConflicts":conflicts})
  report["status"]="complete" if not missing and not image_errors and not report["errors"] and not report["zErrors"] and report["after"]["kitsVerified"]==len(catalogue) else "partial"

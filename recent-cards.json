@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "verifiedAt": "2026-09-30",
+  "note": "Ajout ciblé des formes éveillées finales ; résumés, catégories partielles explicites. La possession doit être confirmée par l’utilisateur.",
+  "cards": [
+    {
+      "id": "1034201",
+      "resourceId": "1034200",
+      "name": "Son Goku Super Saiyan 3",
+      "title": "Summum du combat",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Super",
+      "categories": [
+        "Dernier atout",
+        "Saga de Boo"
+      ],
+      "categoriesComplete": false,
+      "links": [
+        "Race guerrière Saiyan",
+        "Guerrier doré",
+        "Super Saiyan",
+        "Paré au combat",
+        "Kamehameha",
+        "Combat acharné",
+        "Pouvoir légendaire"
+      ],
+      "leader": "Ki +3 ; PV, ATT et DÉF +220 % : \"Dernier atout\" ou \"Saga de Boo\".",
+      "passive": "*Effets de base*\nATT et DÉF +300 %. Ki +3/sphère. ATT SP supplémentaire ; esquive élevée ; critique et réduction des dégâts +25 %.\n*Début : 6 tours*\nEsquive +35 %.\n*Rotation : 3 persos d'une même catégorie requise*\nDernier atout, Saga de Boo ou Combattant doré : esquive +15 % avant attaque (4 tours) ; annulation des attaques infaillibles (6 tours).\n*Ki et attaques*\nKi ≥18 : DÉF +100 % en défense, ATT SP supplémentaire. Ki 24/active : ATT +200 %. Chaque attaque : ATT et DÉF +100 %, plafond 300 %. Après 3 puis 9 attaques : critique +25 % chacun.",
+      "superAttack": "DÉF cumulable +50 % ; dégâts gigantesques.",
+      "ultraSuperAttack": "ATT cumulable +100 % ; dégâts titanesques.",
+      "active": "Une fois : après 3 esquives, 9 attaques ou dès le 5e tour après apparition. Dégâts, critique ; DÉF alliée +39 %, sphères END→arc-en-ciel et détection des ATT SP pendant 1 tour.",
+      "eza": false,
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1034200_thumb/card_1034200_thumb.png",
+      "dataNote": "Résumé du kit vérifié ; seules les catégories contrôlées sont renseignées.",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1034201",
+        "verified": "2026-09-30",
+        "level": "kit-summary"
+      },
+      "teamRules": {
+        "interactions": [
+          {
+            "id": "rotation-categories",
+            "label": "Trois alliés du tour dans Dernier atout, Saga de Boo ou Combattant doré",
+            "scope": "rotation",
+            "kind": "categoryCount",
+            "categories": [
+              "Dernier atout",
+              "Saga de Boo",
+              "Combattant doré"
+            ],
+            "min": 3,
+            "includeSelf": true,
+            "weight": 16,
+            "timing": "Début du combat"
+          },
+          {
+            "id": "joint-vegeta",
+            "label": "Attaque jointe avec Vegeta : soutien ATT et DÉF +39 % (1 tour)",
+            "scope": "rotation",
+            "kind": "name",
+            "names": [
+              "Vegeta"
+            ],
+            "excludeNames": [
+              "petit",
+              "Jr",
+              "Roi",
+              "Baby",
+              "Copie"
+            ],
+            "includeSelf": false,
+            "min": 1,
+            "weight": 12,
+            "timing": "Ki ≥18"
+          },
+          {
+            "id": "joint-boo-satan",
+            "label": "Attaque jointe avec Boo ou M. Satan : soutien ATT et DÉF +39 % (2 tours)",
+            "scope": "rotation",
+            "kind": "name",
+            "names": [
+              "Boo",
+              "M. Satan"
+            ],
+            "excludeNames": [
+              "Janemboo"
+            ],
+            "includeSelf": false,
+            "min": 1,
+            "weight": 12,
+            "timing": "Ki ≥18"
+          }
+        ],
+        "support": []
+      }
+    },
+    {
+      "id": "1034151",
+      "resourceId": "1034150",
+      "name": "Boo (petit)",
+      "title": "Présence hors norme",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Extrême",
+      "categories": [
+        "Pouvoir de Majin",
+        "Ennemi juré",
+        "Saga de Boo",
+        "Pouvoir démoniaque",
+        "Destructeurs de planètes",
+        "Ressuscité"
+      ],
+      "categoriesComplete": false,
+      "links": [
+        "Cruel",
+        "Boss",
+        "Majin",
+        "Régénération infinie",
+        "Kamehameha",
+        "Combat acharné",
+        "Pouvoir légendaire"
+      ],
+      "leader": "Ki +3, PV +200 %, ATT et DÉF +170 % : \"Pouvoir de Majin\", \"Ennemi juré\" ou \"Saga de Boo\" ; PV, ATT et DÉF +50 % en plus : \"Pouvoir démoniaque\", \"Destructeurs de planètes\" ou \"Ressuscité\".",
+      "passive": "*Effets de base*\nATT et DÉF +350 %. Réduction des dégâts 50 % à l'apparition. Survie au K.O. une fois/tour ; soin 20 %.\n*Quatre premiers tours*\nKi +5 ; réduction +20 % lors de l'attaque.\n*Ki, PV et attaques*\nActive ou ki ≥18 : ATT SP supplémentaire. Dès le 5e tour après apparition/PV ≤20 % : ATT SP et critique garantis. Attaque reçue/esquivée : ki +5 (max.15), ATT et DÉF +100 % (max.300), critique +20 % (max.60).\n*Rotation : 3 Pouvoir de Majin, Saga de Boo ou Ennemi juré*\nPV ≤1 % : esquive selon timing et réduction +10 % à l'attaque.\n*Fin du tour*\nSoin 30 %.",
+      "superAttack": "DÉF cumulable +50 %, dégâts gigantesques, soin 10 %.",
+      "ultraSuperAttack": "ATT cumulable +100 %, dégâts titanesques, soin 20 %.",
+      "active": "Après 3 coups reçus/5 esquives : ATT temporaire +500 %, dégâts à tous, une action ennemie interrompue.",
+      "eza": false,
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1034150_thumb/card_1034150_thumb.png",
+      "dataNote": "Résumé du kit vérifié ; seules les catégories contrôlées sont renseignées.",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1034151",
+        "verified": "2026-09-30",
+        "level": "kit-summary"
+      },
+      "teamRules": {
+        "interactions": [
+          {
+            "id": "rotation-categories",
+            "label": "Trois alliés du tour dans Pouvoir de Majin, Saga de Boo ou Ennemi juré",
+            "scope": "rotation",
+            "kind": "categoryCount",
+            "categories": [
+              "Pouvoir de Majin",
+              "Saga de Boo",
+              "Ennemi juré"
+            ],
+            "min": 3,
+            "includeSelf": true,
+            "weight": 12,
+            "timing": "PV ≤1 %"
+          },
+          {
+            "id": "all-sworn",
+            "label": "Équipe entière Ennemi juré : critique +50 % pour les alliés",
+            "scope": "team",
+            "kind": "allCategory",
+            "categories": [
+              "Ennemi juré"
+            ],
+            "includeSelf": true,
+            "weight": 24,
+            "timing": "Composition"
+          }
+        ],
+        "support": [
+          {
+            "crit": 50,
+            "requiresAllCategory": "Ennemi juré",
+            "scope": "team"
+          }
+        ]
+      }
+    },
+    {
+      "id": "1034171",
+      "resourceId": "1034170",
+      "name": "Boo (Kaïo Shin du Sud)",
+      "title": "Violence déchaînée",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême",
+      "categories": [
+        "Saga de Boo",
+        "Ennemi juré",
+        "Pouvoir de Majin"
+      ],
+      "categoriesComplete": false,
+      "links": [
+        "Majin",
+        "Cruel",
+        "Berserk",
+        "Boss",
+        "Régénération infinie",
+        "Mur gênant",
+        "Combat acharné"
+      ],
+      "leader": "Ki +3, PV +170 %, ATT et DÉF +140 % : \"Saga de Boo\" ; PV, ATT et DÉF +30 % en plus pour la classe Extrême.",
+      "passive": "*Effets de base*\nKi +3, ATT et DÉF +250 %. Critique 20 %, réduction des dégâts 20 %, soin 15 %.\n*Nombre d'alliés*\nATT +100 % par allié de la catégorie majoritaire entre Ennemi juré et Saga de Boo, plafond 500 %.\n*Rotation avec un autre Ennemi juré ou Saga de Boo*\nATT et DÉF +300 % et réduction +55 %.\n*Combat*\nPremière attaque : bonus ATT selon PV, jusqu'à 1 000 %. PV ≥60 % : critique +20 %. À l'encaissement : DÉF +250 %.",
+      "superAttack": "ATT et DÉF +50 % pendant 1 tour, dégâts colossaux, soin 5 % ; bonus ATT possible.",
+      "ultraSuperAttack": "",
+      "active": "",
+      "eza": false,
+      "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1034170_thumb/card_1034170_thumb.png",
+      "dataNote": "Résumé du kit vérifié ; seules les catégories contrôlées sont renseignées.",
+      "source": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1034171",
+        "verified": "2026-09-30",
+        "level": "kit-summary"
+      },
+      "teamRules": {
+        "interactions": [
+          {
+            "id": "rotation-ally",
+            "label": "Un autre Ennemi juré ou Saga de Boo dans le tour : protection renforcée",
+            "scope": "rotation",
+            "kind": "categoryCount",
+            "categories": [
+              "Ennemi juré",
+              "Saga de Boo"
+            ],
+            "includeSelf": false,
+            "min": 1,
+            "weight": 22,
+            "timing": "Rotation"
+          }
+        ],
+        "support": [
+          {
+            "class": "Extrême",
+            "atk": 20,
+            "def": 20,
+            "scope": "team"
+          },
+          {
+            "class": "Extrême",
+            "categories": [
+              "Pouvoir de Majin"
+            ],
+            "crit": 10,
+            "scope": "team"
+          }
+        ]
+      }
+    }
+  ]
+}

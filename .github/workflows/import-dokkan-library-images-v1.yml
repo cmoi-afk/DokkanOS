@@ -5,6 +5,7 @@ on:
     paths:
       - "tools/import_dokkan_library_images_v1.py"
       - ".github/workflows/import-dokkan-library-images-v1.yml"
+      - "docs/ARTWORK-QUALITY-AUDIT-v1.json"
 permissions:
   contents: write
 jobs:

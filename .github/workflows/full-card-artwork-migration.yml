@@ -1,0 +1,36 @@
+name: Full card artwork migration
+on:
+  workflow_dispatch:
+  push:
+    branches: [audit-fr-images-v1]
+    paths:
+      - 'tools/build_full_card_render_manifest_v1.py'
+      - 'tools/acquire_full_card_assets_v1.py'
+      - '.github/workflows/full-card-artwork-migration.yml'
+permissions:
+  contents: write
+concurrency:
+  group: full-card-artwork-migration
+  cancel-in-progress: false
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Build manifest
+        run: python tools/build_full_card_render_manifest_v1.py
+      - name: Acquire source assets
+        run: python tools/acquire_full_card_assets_v1.py
+      - name: Commit acquisition report and assets
+        run: |
+          git config user.name "dokkanos-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/FULL-CARD-RENDER-MANIFEST-v1.json docs/FULL-CARD-ASSET-ACQUISITION-v1.json assets/card-source || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Acquire full-card source assets"
+          git pull --rebase origin audit-fr-images-v1
+          git push origin HEAD:audit-fr-images-v1

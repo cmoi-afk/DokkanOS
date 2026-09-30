@@ -20,8 +20,12 @@ V={
 }
 counts={}; unresolved=[]
 def status(c,m):
+    cid=str(c.get("id") or "")
+    if cid in V:return V[cid],"external-exact-id"
     explicit=str(c.get("awakeningStatus") or m.get("awakeningStatus") or m.get("awakening_status") or "").strip()
-    if explicit in allowed:return explicit,"explicit"
+    prior=str(c.get("awakeningStatusProof") or "")
+    if explicit in allowed and prior in {"structured","external-exact-id"}:return explicit,prior
+    if explicit in {"SR","SSR"}:return explicit,prior or "rarity"
     rarity=str(c.get("rarity") or m.get("rarity") or "").upper()
     raw=str(c.get("ezaType") or m.get("ezaType") or m.get("eza_type") or "").upper()
     super_eza=bool(c.get("superEza") or m.get("superEza") or m.get("super_eza"))

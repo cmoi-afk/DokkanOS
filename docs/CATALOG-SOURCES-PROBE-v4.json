@@ -1090,6 +1090,11 @@
       "eza": null,
       "awake": {
         "awakening_medals": [],
+        "card_growth_lv": 1,
+        "card_growth_coef": 0,
+        "hp_hipo": 6440,
+        "atk_hipo": 7000,
+        "def_hipo": 7560,
         "eza_open_date": {
           "id": 1302,
           "type": "CardAwakeningRoute::Optimal",
@@ -1299,6 +1304,13 @@
           "updated_at": "2026-09-23T09:57:30.000000Z"
         }
       },
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-5M9LE6NDPX",
+        "https://hb.vntsm.com/v3/live/ad-manager.min.js",
+        "https://glbfr.dokkaninfo.com/build/assets/app.47a02461.js",
+        "//cdn.intergient.com/ramp_core.js",
+        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+      ],
       "alt": {
         "card": {
           "id": 1003211,
@@ -1371,6 +1383,13 @@
           "kobetu_only_itemized_description": null,
           "created_at": "2026-09-04T08:28:17.000000Z",
           "updated_at": "2026-09-23T09:57:30.000000Z"
+        },
+        "growth": {
+          "card_growth_lv": 1,
+          "card_growth_coef": 0,
+          "hp_hipo": 6440,
+          "atk_hipo": 7000,
+          "def_hipo": 7560
         },
         "keys": [
           "max_eza_step",
@@ -1692,6 +1711,11 @@
       "eza": null,
       "awake": {
         "awakening_medals": [],
+        "card_growth_lv": 1,
+        "card_growth_coef": 0,
+        "hp_hipo": 6440,
+        "atk_hipo": 7000,
+        "def_hipo": 7560,
         "eza_open_date": {
           "id": 1302,
           "type": "CardAwakeningRoute::Optimal",
@@ -1820,6 +1844,13 @@
       "api": {
         "error": "HTTP Error 500: Internal Server Error"
       },
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-5M9LE6NDPX",
+        "https://hb.vntsm.com/v3/live/ad-manager.min.js",
+        "https://glbfr.dokkaninfo.com/build/assets/app.47a02461.js",
+        "//cdn.intergient.com/ramp_core.js",
+        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+      ],
       "alt": {
         "card": {
           "id": 1003211,
@@ -1892,6 +1923,13 @@
           "kobetu_only_itemized_description": null,
           "created_at": "2026-09-04T08:28:18.000000Z",
           "updated_at": "2026-09-23T09:57:30.000000Z"
+        },
+        "growth": {
+          "card_growth_lv": 1,
+          "card_growth_coef": 0,
+          "hp_hipo": 6440,
+          "atk_hipo": 7000,
+          "def_hipo": 7560
         },
         "keys": [
           "max_eza_step",
@@ -2127,6 +2165,11 @@
       "eza": null,
       "awake": {
         "awakening_medals": [],
+        "card_growth_lv": 1,
+        "card_growth_coef": 0,
+        "hp_hipo": 5000,
+        "atk_hipo": 5000,
+        "def_hipo": 5000,
         "eza_open_date": {
           "id": 3495,
           "type": "CardAwakeningRoute::Optimal",
@@ -2399,6 +2442,13 @@
           "updated_at": "2026-09-23T09:57:30.000000Z"
         }
       },
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-5M9LE6NDPX",
+        "https://hb.vntsm.com/v3/live/ad-manager.min.js",
+        "https://glbfr.dokkaninfo.com/build/assets/app.47a02461.js",
+        "//cdn.intergient.com/ramp_core.js",
+        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+      ],
       "alt": {
         "card": {
           "id": 1010071,
@@ -2471,6 +2521,13 @@
           "kobetu_only_itemized_description": null,
           "created_at": "2026-09-04T08:28:17.000000Z",
           "updated_at": "2026-09-23T09:57:30.000000Z"
+        },
+        "growth": {
+          "card_growth_lv": 1,
+          "card_growth_coef": 0,
+          "hp_hipo": 5000,
+          "atk_hipo": 5000,
+          "def_hipo": 5000
         },
         "keys": [
           "max_eza_step",
@@ -2617,6 +2674,11 @@
       "eza": null,
       "awake": {
         "awakening_medals": [],
+        "card_growth_lv": 1,
+        "card_growth_coef": 0,
+        "hp_hipo": 5000,
+        "atk_hipo": 5000,
+        "def_hipo": 5000,
         "awakening_cards": [
           {
             "id": 1034180,
@@ -2862,7 +2924,14 @@
           "created_at": "2026-09-21T11:18:08.000000Z",
           "updated_at": "2026-09-23T09:57:31.000000Z"
         }
-      }
+      },
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-5M9LE6NDPX",
+        "https://hb.vntsm.com/v3/live/ad-manager.min.js",
+        "https://glbfr.dokkaninfo.com/build/assets/app.47a02461.js",
+        "//cdn.intergient.com/ramp_core.js",
+        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+      ]
     }
   }
 }

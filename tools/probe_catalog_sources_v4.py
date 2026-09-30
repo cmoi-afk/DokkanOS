@@ -24,7 +24,7 @@ for cid in ["1003210","1003211","1010070","1034201"]:
   report["cards"][cid]["scripts"]=scripts
   if cid=="1003211":
    for script in scripts:
-    if "app.js" in script:
+    if "app.js" in script or "/app." in script:
      try:
       bundle=fetch(script if script.startswith("http") else "https://glbfr.dokkaninfo.com"+script)
       snippets=[]

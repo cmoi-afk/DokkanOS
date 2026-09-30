@@ -15,8 +15,8 @@ allowed={"SR","SSR","TUR","ZTUR","Super ZTUR","LR","ZLR","Super ZLR"}
 # External-source confirmations can be added here only after exact card-ID verification.
 # Never infer EZA/SEZA from name alone because Dokkan has many same-name cards.
 V={
-    # Confirmations exact-ID provenant de fiches externes vérifiées.
-    # Ajouter uniquement lorsque la fiche documente explicitement un EZA/SEZA.
+    # Dokkan Wiki exact-ID: la fiche 1012761 affiche une étape EZA distincte sortie le 5 déc. 2022.
+    "1012761":"ZTUR",
 }
 counts={}; unresolved=[]
 def status(c,m):

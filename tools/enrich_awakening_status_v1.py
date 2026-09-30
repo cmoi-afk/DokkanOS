@@ -17,6 +17,8 @@ allowed={"SR","SSR","TUR","ZTUR","Super ZTUR","LR","ZLR","Super ZLR"}
 V={
     # Dokkan Wiki exact-ID: la fiche 1012761 affiche une étape EZA distincte sortie le 5 déc. 2022.
     "1012761":"ZTUR",
+    # DokkanStats exact-ID 1008031: UR + badge EZA + étape EZA Awakening.
+    "1008031":"ZTUR",
 }
 counts={}; unresolved=[]
 def status(c,m):

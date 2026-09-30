@@ -1,0 +1,34 @@
+name: Canonical catalogue quality pass
+on:
+  workflow_dispatch:
+  push:
+    branches: [audit-fr-images-v1]
+    paths:
+      - 'tools/enrich_awakening_status_v1.py'
+      - 'tools/audit_artwork_quality_v1.py'
+      - 'tools/audit_code_hygiene_v1.py'
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit-fr-images-v1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Enrich canonical awakening status
+        run: python tools/enrich_awakening_status_v1.py
+      - name: Audit artwork quality
+        run: python tools/audit_artwork_quality_v1.py
+      - name: Audit code hygiene
+        run: python tools/audit_code_hygiene_v1.py
+      - name: Commit reports and enrichment
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog-v1.draft.json docs/AWAKENING-STATUS-AUDIT-v1.json docs/ARTWORK-QUALITY-AUDIT-v1.json docs/CODE-HYGIENE-AUDIT-v1.json
+          git diff --cached --quiet || git commit -m "Apply canonical quality pass"
+          git push

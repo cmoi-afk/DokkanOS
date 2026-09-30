@@ -16,7 +16,7 @@ for host in ["https://glbfr.dokkaninfo.com","https://dokkaninfo.com"]:
 for cid in ["1003210","1003211","1010070","1034201","1010900","1023631","1028551","1015691","1015831","1030360"]:
  try:
   url="https://glbfr.dokkaninfo.com/cards/"+cid;text=fetch(url);d=embedded(text,"datajson")
-  report["cards"][cid]={"keys":list(d),"card":d.get("card"),"max_eza_step":d.get("max_eza_step"),"eza_medals":d.get("eza_medals"),"eza":d.get("eza"),"awake":{k:v for k,v in d.items() if any(t in k for t in ["awak","resource","image","stat","open","asset","growth","hipo"])},"images":re.findall(r'https?[^"<>\\s]+(?:thumb|card_)[^"<>\\s]+',html.unescape(text))[:12],"passive":d.get("passive_skill"),"leader":d.get("leader_skill")}
+  report["cards"][cid]={"keys":list(d),"card":d.get("card"),"max_eza_step":d.get("max_eza_step"),"eza_medals":d.get("eza_medals"),"eza":d.get("eza"),"awake":{k:v for k,v in d.items() if any(t in k for t in ["awak","resource","image","stat","open","asset","growth","hipo"])},"images":re.findall(r'https?[^"<>\\s]+(?:thumb|card_)[^"<>\\s]+',html.unescape(text))[:12],"supers":d.get("super_attacks"),"passive":d.get("passive_skill"),"leader":d.get("leader_skill")}
   try:
    api=json.loads(fetch("https://glbfr.dokkaninfo.com/api/cards/"+cid+"/transformation"));report["cards"][cid]["api"]={"keys":list(api),"card":api.get("card"),"passive":api.get("passive_skill")}
   except Exception as e:report["cards"][cid]["api"]={"error":str(e)}
@@ -32,7 +32,7 @@ for cid in ["1003210","1003211","1010070","1034201","1010900","1023631","1028551
        i=bundle.find(pattern)
        if i>=0:snippets.append(bundle[max(0,i-400):i+1200])
       report["cards"][cid]["statFormulaSnippets"]=snippets
-      report["cards"][cid]["allGrowthSnippets"]=[bundle[max(0,m.start()-500):m.start()+1600] for m in list(re.finditer(r"hp_max|growth|0\\.4839",bundle,re.I))[:50]]
+      report["cards"][cid]["allGrowthSnippets"]=[bundle[max(0,m.start()-500):m.start()+1600] for m in list(re.finditer(r"hp_max|growth|0\\.4839",bundle,re.I))[:20]]
       chunks=re.findall(r'["\x27](?:\./)?([^"\x27/]+\.js)["\x27]',bundle)
       chosen=[x for x in chunks if "card" in x.lower() or "stat" in x.lower()]
       report["cards"][cid]["statChunks"]=chosen

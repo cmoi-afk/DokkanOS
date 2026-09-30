@@ -7,6 +7,7 @@ on:
       - 'tools/enrich_awakening_status_v1.py'
       - 'tools/audit_artwork_quality_v1.py'
       - 'tools/audit_code_hygiene_v1.py'
+      - '.github/workflows/canonical-quality-pass.yml'
 jobs:
   quality:
     runs-on: ubuntu-latest

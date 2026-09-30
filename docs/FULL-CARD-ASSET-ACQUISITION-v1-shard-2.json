@@ -1,0 +1,3102 @@
+{
+  "shard": 2,
+  "shards": 8,
+  "cards": 238,
+  "completeSourceSets": 0,
+  "items": [
+    {
+      "id": "1000070",
+      "resourceId": "1000070",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1000160",
+      "resourceId": "1000160",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1000240",
+      "resourceId": "1000240",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1000890",
+      "resourceId": "1000890",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1000980",
+      "resourceId": "1000980",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1001090",
+      "resourceId": "1001090",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1001440",
+      "resourceId": "1001440",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1001700",
+      "resourceId": "1001700",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1001830",
+      "resourceId": "1001830",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1002100",
+      "resourceId": "1002100",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1002280",
+      "resourceId": "1002280",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1002410",
+      "resourceId": "1002410",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1002600",
+      "resourceId": "1002600",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1002940",
+      "resourceId": "1002940",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1003160",
+      "resourceId": "1003160",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1003260",
+      "resourceId": "1003260",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1003400",
+      "resourceId": "1003400",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1003561",
+      "resourceId": "1003560",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1003801",
+      "resourceId": "1003800",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1004020",
+      "resourceId": "1004020",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1004390",
+      "resourceId": "1004390",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1004690",
+      "resourceId": "1004690",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1004930",
+      "resourceId": "1004930",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1005190",
+      "resourceId": "1005190",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1005320",
+      "resourceId": "1005320",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1005540",
+      "resourceId": "1005540",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1005730",
+      "resourceId": "1005730",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1005940",
+      "resourceId": "1005940",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1006331",
+      "resourceId": "1006330",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1006660",
+      "resourceId": "1006660",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1006780",
+      "resourceId": "1006780",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1007120",
+      "resourceId": "1007120",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1007320",
+      "resourceId": "1007320",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1007461",
+      "resourceId": "1007460",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1007750",
+      "resourceId": "1007750",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1007980",
+      "resourceId": "1007980",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1008120",
+      "resourceId": "1008120",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1008360",
+      "resourceId": "1008360",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1008500",
+      "resourceId": "1008500",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1008601",
+      "resourceId": "1008601",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1008690",
+      "resourceId": "1008690",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1008820",
+      "resourceId": "1008820",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1008880",
+      "resourceId": "1008880",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1008981",
+      "resourceId": "1008980",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1009091",
+      "resourceId": "1009090",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1009251",
+      "resourceId": "1009250",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1009380",
+      "resourceId": "1009380",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1009520",
+      "resourceId": "1009520",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1009620",
+      "resourceId": "1009620",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1009701",
+      "resourceId": "1009700",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1009790",
+      "resourceId": "1009790",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1009890",
+      "resourceId": "1009890",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1009960",
+      "resourceId": "1009960",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1010041",
+      "resourceId": "1010041",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1010251",
+      "resourceId": "1010250",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1010320",
+      "resourceId": "1010320",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1010441",
+      "resourceId": "1010440",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1010540",
+      "resourceId": "1010540",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1010630",
+      "resourceId": "1010630",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1010730",
+      "resourceId": "1010730",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1010810",
+      "resourceId": "1010810",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1010950",
+      "resourceId": "1010950",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1011070",
+      "resourceId": "1011070",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1011170",
+      "resourceId": "1011170",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1011300",
+      "resourceId": "1011300",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1011370",
+      "resourceId": "1011370",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1011441",
+      "resourceId": "1011440",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1011640",
+      "resourceId": "1011640",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1011780",
+      "resourceId": "1011780",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1011851",
+      "resourceId": "1011850",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1012020",
+      "resourceId": "1012020",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1012161",
+      "resourceId": "1012160",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1012400",
+      "resourceId": "1012400",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1012500",
+      "resourceId": "1012500",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1012701",
+      "resourceId": "1012700",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1012770",
+      "resourceId": "1012770",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1012920",
+      "resourceId": "1012920",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1013010",
+      "resourceId": "1013010",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1013060",
+      "resourceId": "1013060",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1013120",
+      "resourceId": "1013120",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1013300",
+      "resourceId": "1013300",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1013411",
+      "resourceId": "1013410",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1013541",
+      "resourceId": "1013540",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1013711",
+      "resourceId": "1013711",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1013810",
+      "resourceId": "1013810",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1013880",
+      "resourceId": "1013880",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1013960",
+      "resourceId": "1013960",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1014081",
+      "resourceId": "1014080",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1014161",
+      "resourceId": "1014160",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1014220",
+      "resourceId": "1014220",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1014351",
+      "resourceId": "1014350",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1014460",
+      "resourceId": "1014460",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1014511",
+      "resourceId": "1014510",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1014741",
+      "resourceId": "1014740",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1014940",
+      "resourceId": "1014940",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1015000",
+      "resourceId": "1015000",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1015100",
+      "resourceId": "1015100",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1015160",
+      "resourceId": "1015160",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1015231",
+      "resourceId": "1015230",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1015291",
+      "resourceId": "1015290",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1015410",
+      "resourceId": "1015410",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1015590",
+      "resourceId": "1015590",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1015750",
+      "resourceId": "1015750",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1015850",
+      "resourceId": "1015850",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1015911",
+      "resourceId": "1015910",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1016050",
+      "resourceId": "1016050",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1016151",
+      "resourceId": "1016150",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1016301",
+      "resourceId": "1016300",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1016401",
+      "resourceId": "1016400",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1016511",
+      "resourceId": "1016510",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1016651",
+      "resourceId": "1016650",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1016770",
+      "resourceId": "1016770",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1016840",
+      "resourceId": "1016840",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1017021",
+      "resourceId": "1017020",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1017161",
+      "resourceId": "1017160",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1017301",
+      "resourceId": "1017300",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1017371",
+      "resourceId": "1017370",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1017441",
+      "resourceId": "1017440",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1017560",
+      "resourceId": "1017560",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1017680",
+      "resourceId": "1017680",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1017770",
+      "resourceId": "1017770",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1017870",
+      "resourceId": "1017870",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1017951",
+      "resourceId": "1017950",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1018101",
+      "resourceId": "1018100",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1018220",
+      "resourceId": "1018220",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1018320",
+      "resourceId": "1018320",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1018460",
+      "resourceId": "1018460",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1018521",
+      "resourceId": "1018520",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1018591",
+      "resourceId": "1018590",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1018681",
+      "resourceId": "1018680",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1018790",
+      "resourceId": "1018790",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1018931",
+      "resourceId": "1018930",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1019070",
+      "resourceId": "1019070",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1019190",
+      "resourceId": "1019190",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1019280",
+      "resourceId": "1019280",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1019460",
+      "resourceId": "1019460",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1019590",
+      "resourceId": "1019590",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1019711",
+      "resourceId": "1019710",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1019850",
+      "resourceId": "1019850",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1019901",
+      "resourceId": "1019900",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1019991",
+      "resourceId": "1019990",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1020091",
+      "resourceId": "1020090",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1020181",
+      "resourceId": "1020180",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1020260",
+      "resourceId": "1020260",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1020341",
+      "resourceId": "1020340",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1020431",
+      "resourceId": "1020430",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1020550",
+      "resourceId": "1020550",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1020650",
+      "resourceId": "1020650",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1020771",
+      "resourceId": "1020770",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1020870",
+      "resourceId": "1020870",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1020970",
+      "resourceId": "1020970",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1021050",
+      "resourceId": "1021050",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1021140",
+      "resourceId": "1021140",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1021370",
+      "resourceId": "1021370",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1021470",
+      "resourceId": "1021470",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1021561",
+      "resourceId": "1021560",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1021671",
+      "resourceId": "1021670",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1021811",
+      "resourceId": "1021810",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1021921",
+      "resourceId": "1021920",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1021990",
+      "resourceId": "1021990",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1022060",
+      "resourceId": "1022060",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1022160",
+      "resourceId": "1022160",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1022280",
+      "resourceId": "1022280",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1022381",
+      "resourceId": "1022380",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1022591",
+      "resourceId": "1022590",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1022720",
+      "resourceId": "1022720",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1022781",
+      "resourceId": "1022780",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1022930",
+      "resourceId": "1022930",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1023040",
+      "resourceId": "1023040",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1023110",
+      "resourceId": "1023110",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1023240",
+      "resourceId": "1023240",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1023291",
+      "resourceId": "1023290",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1023361",
+      "resourceId": "1023360",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1023461",
+      "resourceId": "1023460",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1023591",
+      "resourceId": "1023590",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1023660",
+      "resourceId": "1023660",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1023710",
+      "resourceId": "1023710",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1023790",
+      "resourceId": "1023790",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1023880",
+      "resourceId": "1023880",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1023981",
+      "resourceId": "1023980",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1024090",
+      "resourceId": "1024090",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1024170",
+      "resourceId": "1024170",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1024291",
+      "resourceId": "1024290",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1024440",
+      "resourceId": "1024440",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1024601",
+      "resourceId": "1024600",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1024731",
+      "resourceId": "1024730",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1024831",
+      "resourceId": "1024830",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1024910",
+      "resourceId": "1024910",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1024991",
+      "resourceId": "1024990",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1025110",
+      "resourceId": "1025110",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1025190",
+      "resourceId": "1025190",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1025330",
+      "resourceId": "1025330",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1025370",
+      "resourceId": "1025370",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1025531",
+      "resourceId": "1025530",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1025601",
+      "resourceId": "1025600",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1025730",
+      "resourceId": "1025730",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1025871",
+      "resourceId": "1025870",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1026090",
+      "resourceId": "1026090",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1026251",
+      "resourceId": "1026251",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1026391",
+      "resourceId": "1026390",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1026550",
+      "resourceId": "1026550",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1026771",
+      "resourceId": "1026771",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1026940",
+      "resourceId": "1026940",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1027161",
+      "resourceId": "1027160",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1027350",
+      "resourceId": "1027350",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1027520",
+      "resourceId": "1027520",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1027690",
+      "resourceId": "1027690",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1027890",
+      "resourceId": "1027890",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1028061",
+      "resourceId": "1028061",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1028231",
+      "resourceId": "1028231",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1028521",
+      "resourceId": "1028521",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1028721",
+      "resourceId": "1028721",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1028891",
+      "resourceId": "1028891",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1029121",
+      "resourceId": "1029121",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1029331",
+      "resourceId": "1029331",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1029591",
+      "resourceId": "1029591",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1029831",
+      "resourceId": "1029831",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1030021",
+      "resourceId": "1030021",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1030181",
+      "resourceId": "1030181",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1030531",
+      "resourceId": "1030531",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1030791",
+      "resourceId": "1030791",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1031061",
+      "resourceId": "1031061",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1031341",
+      "resourceId": "1031341",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1031591",
+      "resourceId": "1031591",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1031781",
+      "resourceId": "1031781",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1032030",
+      "resourceId": "1032030",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1032191",
+      "resourceId": "1032191",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1032391",
+      "resourceId": "1032391",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1032520",
+      "resourceId": "1032520",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1032661",
+      "resourceId": "1032661",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1032830",
+      "resourceId": "1032830",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1033061",
+      "resourceId": "1033061",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1033761",
+      "resourceId": "1033761",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1034031",
+      "resourceId": "1034031",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1034341",
+      "resourceId": "1034341",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1034560",
+      "resourceId": "1034560",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "1034701",
+      "resourceId": "1034701",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    },
+    {
+      "id": "2000800",
+      "resourceId": "2000800",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ]
+    }
+  ]
+}

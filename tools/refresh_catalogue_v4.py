@@ -24,12 +24,12 @@ def embedded(text,attr="datajson"):
  m=re.search(attr+'="([^"]*)"',text)
  if not m:raise ValueError("Source JSON absent: "+attr)
  return json.loads(html.unescape(m.group(1)))
-def payload(cid,step=None,api=False):
- key=str(cid)+("-api" if api else "")+("-z"+str(step) if step else "")
+def payload(cid,step=None,api=False,japan=False):
+ key=str(cid)+("-jp" if japan else "")+("-api" if api else "")+("-z"+str(step) if step else "")
  path=CACHE/(key+".json.gz")
  if path.exists():
   with gzip.open(path,"rt",encoding="utf-8") as f:return json.load(f)
- url=BASE+("/api/cards/"+str(cid)+"/transformation" if api else "/cards/"+str(cid))
+ url=("https://jpn.dokkaninfo.com" if japan else BASE)+("/api/cards/"+str(cid)+"/transformation" if api else "/cards/"+str(cid))
  if step:url+="?eza=true&step="+str(step)
  raw=request(url).decode("utf-8")
  d=json.loads(raw) if api else embedded(raw)
@@ -45,8 +45,8 @@ def kit(d,z=False):
  supers=[];seen=set()
  for x in d.get("super_attacks") or []:
   a=x.get("attack") or {};name=a.get("name")
-  if not name:continue
-  item={"name":name,"description":clean(a.get("description")),"ki":x.get("eball_num_start") or 0,"condition":clean(a.get("causality_description"))}
+  if not name or int(x.get("lv_start") or 0)>=int(c.get("skill_lv_max") or 1):continue
+  item={"name":name,"description":clean(a.get("description")),"ki":x.get("eball_num_start") or 0,"minSALevel":int(x.get("lv_start") or 0)+1,"condition":clean(a.get("causality_description"))}
   sig=json.dumps(item,ensure_ascii=False,sort_keys=True)
   if sig not in seen:supers.append(item);seen.add(sig)
  element=int(c.get("element",0))
@@ -103,7 +103,7 @@ def one(item):
   if parsed.get("rarity") not in RAR.values():return cid,{"excluded":True},None
   if not row.get("_legacy") and parsed.get("rarity")!=RAR[int(row["rarity"])]:raise ValueError("Rareté contradictoire pour l'ID exact")
   rid=str(c.get("asset_id") or c.get("icon_id") or c.get("resource_id") or row.get("icon_id") or cid)
-  parsed.update({"id":cid,"resourceId":rid,"categoriesComplete":True,"source":{"provider":"DokkanInfo GLOBAL FR","url":url,"verified":CHECKED,"exactId":cid},"zAwakenings":[],"eza":False,"seza":False,"ezaStep":None,"ezaAvailable":False,"openAt":row.get("open_at"),"dataStatus":{"identity":"verified","kit":"verified" if all(parsed.get(k) for k in ["leader","passive","superAttack","links"]) else "partial","checkedAt":CHECKED}})
+  parsed.update({"id":cid,"resourceId":rid,"categoriesComplete":True,"source":{"provider":"DokkanInfo GLOBAL FR","url":url,"verified":CHECKED,"exactId":cid},"zAwakenings":[],"eza":False,"seza":False,"ezaStep":None,"ezaAvailable":False,"openAt":row.get("open_at"),"dataStatus":{"identity":"verified","kit":"verified" if parsed.get("leader") and (parsed.get("passive") or c.get("passive_skill_set_id") is None) and parsed.get("superAttack") and (parsed.get("links") or not any(c.get("link_skill"+str(i)+"_id") for i in range(1,8))) else "partial","checkedAt":CHECKED}})
   if redirected:
    parsed["source"]["apiUrl"]=BASE+"/api/cards/"+cid+"/transformation"
    # This is a genuine pre-Z-awakening stage, not an alias to upgrade silently.
@@ -119,7 +119,18 @@ def one(item):
     try:
      z=payload(cid,step=step)
      if str(z.get("card",{}).get("id"))!=cid:raise ValueError("ID incorrect sur le kit Z")
+     if not z.get("super_attacks"):
+      jp=payload(cid,step=step,japan=True)
+      if str(jp.get("card",{}).get("id"))!=cid or jp.get("card",{}).get("skill_lv_max")!=z.get("card",{}).get("skill_lv_max"):raise ValueError("Référence SP alternative contradictoire")
+      translated={x.get("special_set_id"):x.get("attack") for x in d.get("super_attacks",[]) if x.get("attack")}
+      fixed=[]
+      for attack in jp.get("super_attacks",[]):
+       if str(attack.get("card_id"))!=cid:raise ValueError("SP alternative pour un autre ID")
+       fixed.append({**attack,"attack":translated.get(attack.get("special_set_id")) or attack.get("attack")})
+      z={**z,"super_attacks":fixed}
+      z["specialAttackSource"]="https://jpn.dokkaninfo.com/cards/"+cid+"?eza=true&step="+str(step)
      zkit=kit(z,z=True)
+     if z.get("specialAttackSource"):zkit["specialAttackSource"]=z["specialAttackSource"]
      if not zkit.get("passive") or not zkit.get("superAttack"):raise ValueError("Kit Z incomplet")
      parsed["zAwakenings"].append({"kind":kind,"step":step,"available":True,"verified":True,"kit":zkit,"medals":medals(d.get("eza_medals"),is_super),"source":{"provider":"DokkanInfo GLOBAL FR","url":url+"?eza=true&step="+str(step),"verified":CHECKED}})
     except Exception as e:parsed.setdefault("zErrors",[]).append({"kind":kind,"reason":str(e)[:160]})
@@ -171,7 +182,8 @@ def main():
  jobs={**rows}
  for cid,c in legacy.items():
   jobs[cid]={"_legacy":True,"id":int(cid),"name":c.get("name",""),"rarity":{v:k for k,v in RAR.items()}[c["rarity"]],"element":en_by.get(cid,{}).get("element",{"Super":10,"Extrême":20}.get(c.get("class"),0)+{v:k for k,v in TYPES.items()}[c["type"]]),"icon_id":c.get("resourceId") or cid,"open_at":en_by.get(cid,{}).get("open_at",0)}
- report={"checkedAt":CHECKED,"status":"running","reference":{"provider":"DokkanInfo GLOBAL FR + GLOBAL","totalRows":len(fr),"releasedPlayableSourceIds":len(rows),"verifiedIds":sorted(rows)},"before":{"cards":len(old),"srRemoved":sum(c.get("rarity")=="SR" for c in old.values())},"errors":[],"zErrors":[],"excluded":[]}
+ previous_report=json.loads((ROOT/"docs"/"CATALOG-AUDIT-v4.json").read_text()) if (ROOT/"docs"/"CATALOG-AUDIT-v4.json").exists() else {}
+ report={"checkedAt":CHECKED,"status":"running","reference":{"provider":"DokkanInfo GLOBAL FR + GLOBAL","totalRows":len(fr),"releasedPlayableSourceIds":len(rows),"verifiedIds":sorted(rows)},"before":previous_report.get("before") if previous_report.get("before",{}).get("srRemoved") else {"cards":2045,"srRemoved":159},"errors":[],"zErrors":[],"excluded":[]}
  results={};processed=0
  def checkpoint(publish=False):
   report["processed"]=processed;report["requested"]=len(jobs);write(ROOT/"docs"/"CATALOG-AUDIT-v4.json",report)

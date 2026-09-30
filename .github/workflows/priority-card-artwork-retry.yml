@@ -44,7 +44,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: priority-retry-queue
-          path: .
+          path: docs
       - name: Retry priority artwork
         env:
           SHARD: ${{ matrix.shard }}

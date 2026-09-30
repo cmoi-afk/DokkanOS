@@ -3,13 +3,13 @@
   "counts": {
     "SR": 144,
     "SSR": 251,
-    "ZTUR": 219,
-    "TUR": 1008,
+    "ZTUR": 220,
+    "TUR": 1007,
     "LR": 236,
     "ZLR": 46
   },
-  "explicitOrStructured": 660,
-  "needsEzaVerification": 1244,
+  "explicitOrStructured": 661,
+  "needsEzaVerification": 1243,
   "items": [
     {
       "id": "1003211",
@@ -1316,12 +1316,6 @@
     {
       "id": "1012741",
       "name": "Vegetto Super Saiyan divin SS",
-      "status": "TUR",
-      "reason": "EZA/Super EZA non prouve"
-    },
-    {
-      "id": "1012761",
-      "name": "Goku Black (Super Saiyan Rosé)",
       "status": "TUR",
       "reason": "EZA/Super EZA non prouve"
     },

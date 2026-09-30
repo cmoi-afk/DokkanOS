@@ -11294,8 +11294,8 @@
       "nameLocale": "source",
       "titleLocale": "source",
       "resourceId": "1012760",
-      "awakeningStatus": "TUR",
-      "awakeningStatusProof": "rarity"
+      "awakeningStatus": "ZTUR",
+      "awakeningStatusProof": "external-exact-id"
     },
     {
       "id": "1012770",

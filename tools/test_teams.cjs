@@ -19,3 +19,8 @@ assert.equal(E.build([leader,a],leader).team.length,2);assert(E.build([leader,a]
 const rots=E.rotations(pool.slice(0,6));assert.equal(rots.length,2);assert.equal(new Set(rots.flatMap(r=>[r.a.id,r.b.id])).size,4);
 const events=JSON.parse(fs.readFileSync('events.json'));const ids=new Set();for(const e of events.events){assert(e.id&&e.name&&e.source.startsWith('https://'));for(const m of e.missions){assert(!ids.has(m.id));ids.add(m.id);assert(Array.isArray(m.requirements));}}assert.equal(events.coverage.complete,false);
 console.log('Team engine: leader base/bonus, type/class intersection, missing data, ally passives, dodge restriction, quotas excluding friend, five types, ownership, locks, rotations and event schema: OK');
+const frenchBonus={leader:'Ki +3, PV, ATT et DÉF +170 % pour catégorie "A" ou "C", et PV, ATT et DÉF +30 % en plus si perso aussi catégorie "B"'};
+assert.equal(E.coverage(frenchBonus,a).atk,170);assert.equal(E.coverage(frenchBonus,ab).atk,200);assert.equal(E.coverage(frenchBonus,b).covered,false);
+const mixedStats={leader:'Ki +3, PV +200 %, ATT et DÉF +170 % pour catégorie "A", et PV, ATT et DÉF +50 % en plus si perso aussi catégorie "B"'};
+assert.equal(E.coverage(mixedStats,ab).hp,250);assert.equal(E.coverage(mixedStats,ab).atk,220);
+console.log('French en plus bonus and distinct HP/ATK/DEF values: OK');

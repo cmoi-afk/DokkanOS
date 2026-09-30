@@ -1851,6 +1851,9 @@
         "//cdn.intergient.com/ramp_core.js",
         "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
       ],
+      "statFormulaSnippets": [
+        "ak;case\"open_at_eza\":E.sort((P,k)=>{const I=P.eza_open_at||P.open_at,L=k.eza_open_at||k.open_at;return L!==I?L-I:k.id-P.id});break;case\"open_at_seza\":E.sort((P,k)=>{const I=P.seza_open_at||P.eza_open_at||P.open_at,L=k.seza_open_at||k.eza_open_at||k.open_at;return L!==I?L-I:k.id-P.id});break;case\"avg\":E.sort((P,k)=>k.avg_max!==P.avg_max?k.avg_max-P.avg_max:k.id-P.id);break;case\"hp\":E.sort((P,k)=>k.hp_max!==P.hp_max?k.hp_max-P.hp_max:k.id-P.id);break;case\"atk\":E.sort((P,k)=>{if(!t||t===\"base_max\"||t===\"awoken_max\"){if(k.atk_max!==P.atk_max)return k.atk_max-P.atk_max}else if(t===\"base_min\"){if(k.atk_init!==P.atk_init)return k.atk_init-P.atk_init}else if(t===\"potential_max\"&&k.atk_hipo!==P.atk_hipo)return k.atk_hipo-P.atk_hipo;return k.id-P.id});break;case\"def\":E.sort((P,k)=>k.def_max!==P.def_max?k.def_max-P.def_max:k.id-P.id);break;case\"id\":E.sort((P,k)=>k.id-P.id);break;case\"rarity\":default:E.sort((P,k)=>k.rarity!==P.rarity?k.rarity-P.rarity:k.id-P.id);break}this.cards=E.slice((x-1)*54,x*54),this.maxPage=Math.ceil(E.length/54);let F=\"\";F=this.updatePropertyAndUrl(\"sort\",e,F),F=this.updatePropertyAndUrl(\"sortPotential\",t,F),F=this.updatePropertyAndUrl(\"display\",n,F),F=this.updatePropertyAndUrl(\"sortCardsRarity\",i,F),F=this.updatePropertyAndUrl(\"sortCardsType\",s,F),F=this.updatePropertyAndUrl(\"sortCardsClass\",l,F),F=this.updatePropertyAndUrl(\"awakenedOnly\",a,F),F=this.updatePropertyAndUrl(\"sortCardsSaType\",c,F),F=this.updatePropertyAndUrl(\"sortCardsCharacter\",h,F),F=this.updatePropertyAndUrl(\"allCards\",p,F),F=this.updatePropertyAndUrl(\"searchInput\",y,F),F=this.updatePropertyAnd"
+      ],
       "alt": {
         "card": {
           "id": 1003211,

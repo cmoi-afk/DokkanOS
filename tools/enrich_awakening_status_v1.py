@@ -11,7 +11,10 @@ P=R/"catalog-v1.draft.json"
 M=R/"card-meta.json"
 data=json.loads(P.read_text(encoding="utf-8"))
 meta=json.loads(M.read_text(encoding="utf-8")).get("cards",{}) if M.exists() else {}
-allowed={"SSR","TUR","ZTUR","Super ZTUR","LR","ZLR","Super ZLR"}
+allowed={"SR","SSR","TUR","ZTUR","Super ZTUR","LR","ZLR","Super ZLR"}
+# External-source confirmations can be added here only after exact card-ID verification.
+# Never infer EZA/SEZA from name alone because Dokkan has many same-name cards.
+V={}
 counts={}; unresolved=[]
 def status(c,m):
     explicit=str(c.get("awakeningStatus") or m.get("awakeningStatus") or m.get("awakening_status") or "").strip()
@@ -35,6 +38,6 @@ for c in data.get("cards",[]):
     if s in {"TUR","LR"} and proof=="rarity":
         unresolved.append({"id":cid,"name":c.get("name",""),"status":s,"reason":"EZA/Super EZA non prouve"})
 P.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-report={"cards":len(data.get("cards",[])),"counts":counts,"explicitOrStructured":sum(1 for c in data.get("cards",[]) if c.get("awakeningStatusProof") in {"explicit","structured"}),"needsEzaVerification":len(unresolved),"items":unresolved}
+report={"cards":len(data.get("cards",[])),"counts":counts,"explicitOrStructured":sum(1 for c in data.get("cards",[]) if c.get("awakeningStatusProof") in {"explicit","structured","external-exact-id"}),"needsEzaVerification":len(unresolved),"items":unresolved}
 (R/"docs/AWAKENING-STATUS-AUDIT-v1.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print(json.dumps({k:v for k,v in report.items() if k!="items"},ensure_ascii=False))

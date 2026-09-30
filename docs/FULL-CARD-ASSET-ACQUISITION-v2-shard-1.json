@@ -1,0 +1,4558 @@
+{
+  "shard": 1,
+  "shards": 8,
+  "cards": 238,
+  "completeSourceSets": 203,
+  "items": [
+    {
+      "id": "1000040",
+      "resourceId": "1000040",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1000040/card_1000040_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1000040/card_1000040_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1000040/card_1000040_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1000040/card_1000040_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1000040/card_1000040_circle.png"
+      }
+    },
+    {
+      "id": "1000150",
+      "resourceId": "1000150",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1000150/card_1000150_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1000150/card_1000150_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1000150/card_1000150_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1000150/card_1000150_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1000150/card_1000150_circle.png"
+      }
+    },
+    {
+      "id": "1000230",
+      "resourceId": "1000230",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1000230/card_1000230_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1000230/card_1000230_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1000230/card_1000230_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1000230/card_1000230_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1000230/card_1000230_circle.png"
+      }
+    },
+    {
+      "id": "1000880",
+      "resourceId": "1000880",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1000880/card_1000880_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1000880/card_1000880_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1000880/card_1000880_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1000880/card_1000880_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1000880/card_1000880_circle.png"
+      }
+    },
+    {
+      "id": "1000960",
+      "resourceId": "1000960",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1000960/card_1000960_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1000960/card_1000960_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1000960/card_1000960_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1000960/card_1000960_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1000960/card_1000960_circle.png"
+      }
+    },
+    {
+      "id": "1001080",
+      "resourceId": "1001080",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1001080/card_1001080_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1001080/card_1001080_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1001080/card_1001080_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1001080/card_1001080_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1001080/card_1001080_circle.png"
+      }
+    },
+    {
+      "id": "1001430",
+      "resourceId": "1001430",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1001430/card_1001430_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1001430/card_1001430_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1001430/card_1001430_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1001430/card_1001430_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1001430/card_1001430_circle.png"
+      }
+    },
+    {
+      "id": "1001690",
+      "resourceId": "1001690",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1001690/card_1001690_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1001690/card_1001690_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1001690/card_1001690_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1001690/card_1001690_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1001690/card_1001690_circle.png"
+      }
+    },
+    {
+      "id": "1001790",
+      "resourceId": "1001790",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1001790/card_1001790_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1001790/card_1001790_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1001790/card_1001790_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1001790/card_1001790_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1001790/card_1001790_circle.png"
+      }
+    },
+    {
+      "id": "1002080",
+      "resourceId": "1002080",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1002080/card_1002080_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1002080/card_1002080_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1002080/card_1002080_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1002080/card_1002080_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1002080/card_1002080_circle.png"
+      }
+    },
+    {
+      "id": "1002260",
+      "resourceId": "1002260",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1002260/card_1002260_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1002260/card_1002260_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1002260/card_1002260_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1002260/card_1002260_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1002260/card_1002260_circle.png"
+      }
+    },
+    {
+      "id": "1002400",
+      "resourceId": "1002400",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1002400/card_1002400_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1002400/card_1002400_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1002400/card_1002400_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1002400/card_1002400_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1002400/card_1002400_circle.png"
+      }
+    },
+    {
+      "id": "1002580",
+      "resourceId": "1002580",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1002580/card_1002580_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1002580/card_1002580_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1002580/card_1002580_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1002580/card_1002580_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1002580/card_1002580_circle.png"
+      }
+    },
+    {
+      "id": "1002920",
+      "resourceId": "1002920",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1002920/card_1002920_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1002920/card_1002920_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1002920/card_1002920_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1002920/card_1002920_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1002920/card_1002920_circle.png"
+      }
+    },
+    {
+      "id": "1003130",
+      "resourceId": "1003130",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1003130/card_1003130_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1003130/card_1003130_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1003130/card_1003130_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1003130/card_1003130_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1003130/card_1003130_circle.png"
+      }
+    },
+    {
+      "id": "1003240",
+      "resourceId": "1003240",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1003240/card_1003240_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1003240/card_1003240_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1003240/card_1003240_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1003240/card_1003240_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1003240/card_1003240_circle.png"
+      }
+    },
+    {
+      "id": "1003370",
+      "resourceId": "1003370",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1003370/card_1003370_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1003370/card_1003370_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1003370/card_1003370_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1003370/card_1003370_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1003370/card_1003370_circle.png"
+      }
+    },
+    {
+      "id": "1003540",
+      "resourceId": "1003540",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1003540/card_1003540_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1003540/card_1003540_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1003540/card_1003540_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1003540/card_1003540_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1003540/card_1003540_circle.png"
+      }
+    },
+    {
+      "id": "1003800",
+      "resourceId": "1003800",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1003800/card_1003800_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1003800/card_1003800_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1003800/card_1003800_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1003800/card_1003800_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1003800/card_1003800_circle.png"
+      }
+    },
+    {
+      "id": "1003991",
+      "resourceId": "1003991",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1004380",
+      "resourceId": "1004380",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1004380/card_1004380_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1004380/card_1004380_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1004380/card_1004380_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1004380/card_1004380_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1004380/card_1004380_circle.png"
+      }
+    },
+    {
+      "id": "1004651",
+      "resourceId": "1004650",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1004650/card_1004650_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1004650/card_1004650_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1004650/card_1004650_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1004650/card_1004650_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1004650/card_1004650_circle.png"
+      }
+    },
+    {
+      "id": "1004910",
+      "resourceId": "1004910",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1004910/card_1004910_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1004910/card_1004910_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1004910/card_1004910_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1004910/card_1004910_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1004910/card_1004910_circle.png"
+      }
+    },
+    {
+      "id": "1005130",
+      "resourceId": "1005130",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1005130/card_1005130_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1005130/card_1005130_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1005130/card_1005130_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1005130/card_1005130_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1005130/card_1005130_circle.png"
+      }
+    },
+    {
+      "id": "1005310",
+      "resourceId": "1005310",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1005310/card_1005310_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1005310/card_1005310_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1005310/card_1005310_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1005310/card_1005310_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1005310/card_1005310_circle.png"
+      }
+    },
+    {
+      "id": "1005531",
+      "resourceId": "1005530",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1005530/card_1005530_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1005530/card_1005530_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1005530/card_1005530_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1005530/card_1005530_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1005530/card_1005530_circle.png"
+      }
+    },
+    {
+      "id": "1005720",
+      "resourceId": "1005720",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1005720/card_1005720_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1005720/card_1005720_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1005720/card_1005720_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1005720/card_1005720_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1005720/card_1005720_circle.png"
+      }
+    },
+    {
+      "id": "1005870",
+      "resourceId": "1005870",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1005870/card_1005870_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1005870/card_1005870_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1005870/card_1005870_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1005870/card_1005870_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1005870/card_1005870_circle.png"
+      }
+    },
+    {
+      "id": "1006330",
+      "resourceId": "1006330",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1006330/card_1006330_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1006330/card_1006330_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1006330/card_1006330_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1006330/card_1006330_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1006330/card_1006330_circle.png"
+      }
+    },
+    {
+      "id": "1006560",
+      "resourceId": "1006560",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1006560/card_1006560_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1006560/card_1006560_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1006560/card_1006560_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1006560/card_1006560_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1006560/card_1006560_circle.png"
+      }
+    },
+    {
+      "id": "1006770",
+      "resourceId": "1006770",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1006770/card_1006770_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1006770/card_1006770_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1006770/card_1006770_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1006770/card_1006770_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1006770/card_1006770_circle.png"
+      }
+    },
+    {
+      "id": "1007101",
+      "resourceId": "1007100",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1007100/card_1007100_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1007100/card_1007100_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1007100/card_1007100_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1007100/card_1007100_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1007100/card_1007100_circle.png"
+      }
+    },
+    {
+      "id": "1007210",
+      "resourceId": "1007210",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1007210/card_1007210_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1007210/card_1007210_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1007210/card_1007210_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1007210/card_1007210_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1007210/card_1007210_circle.png"
+      }
+    },
+    {
+      "id": "1007460",
+      "resourceId": "1007460",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1007460/card_1007460_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1007460/card_1007460_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1007460/card_1007460_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1007460/card_1007460_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1007460/card_1007460_circle.png"
+      }
+    },
+    {
+      "id": "1007741",
+      "resourceId": "1007740",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1007740/card_1007740_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1007740/card_1007740_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1007740/card_1007740_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1007740/card_1007740_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1007740/card_1007740_circle.png"
+      }
+    },
+    {
+      "id": "1007970",
+      "resourceId": "1007970",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1007970/card_1007970_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1007970/card_1007970_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1007970/card_1007970_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1007970/card_1007970_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1007970/card_1007970_circle.png"
+      }
+    },
+    {
+      "id": "1008110",
+      "resourceId": "1008110",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1008110/card_1008110_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1008110/card_1008110_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1008110/card_1008110_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1008110/card_1008110_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1008110/card_1008110_circle.png"
+      }
+    },
+    {
+      "id": "1008340",
+      "resourceId": "1008340",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1008340/card_1008340_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1008340/card_1008340_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1008340/card_1008340_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1008340/card_1008340_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1008340/card_1008340_circle.png"
+      }
+    },
+    {
+      "id": "1008490",
+      "resourceId": "1008490",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1008490/card_1008490_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1008490/card_1008490_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1008490/card_1008490_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1008490/card_1008490_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1008490/card_1008490_circle.png"
+      }
+    },
+    {
+      "id": "1008580",
+      "resourceId": "1008580",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1008580/card_1008580_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1008580/card_1008580_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1008580/card_1008580_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1008580/card_1008580_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1008580/card_1008580_circle.png"
+      }
+    },
+    {
+      "id": "1008680",
+      "resourceId": "1008680",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1008680/card_1008680_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1008680/card_1008680_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1008680/card_1008680_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1008680/card_1008680_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1008680/card_1008680_circle.png"
+      }
+    },
+    {
+      "id": "1008800",
+      "resourceId": "1008800",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1008800/card_1008800_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1008800/card_1008800_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1008800/card_1008800_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1008800/card_1008800_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1008800/card_1008800_circle.png"
+      }
+    },
+    {
+      "id": "1008871",
+      "resourceId": "1008870",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1008870/card_1008870_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1008870/card_1008870_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1008870/card_1008870_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1008870/card_1008870_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1008870/card_1008870_circle.png"
+      }
+    },
+    {
+      "id": "1008980",
+      "resourceId": "1008980",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1008980/card_1008980_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1008980/card_1008980_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1008980/card_1008980_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1008980/card_1008980_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1008980/card_1008980_circle.png"
+      }
+    },
+    {
+      "id": "1009090",
+      "resourceId": "1009090",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1009090/card_1009090_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1009090/card_1009090_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1009090/card_1009090_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1009090/card_1009090_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1009090/card_1009090_circle.png"
+      }
+    },
+    {
+      "id": "1009241",
+      "resourceId": "1009240",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1009240/card_1009240_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1009240/card_1009240_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1009240/card_1009240_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1009240/card_1009240_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1009240/card_1009240_circle.png"
+      }
+    },
+    {
+      "id": "1009370",
+      "resourceId": "1009370",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1009370/card_1009370_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1009370/card_1009370_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1009370/card_1009370_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1009370/card_1009370_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1009370/card_1009370_circle.png"
+      }
+    },
+    {
+      "id": "1009511",
+      "resourceId": "1009510",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1009510/card_1009510_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1009510/card_1009510_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1009510/card_1009510_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1009510/card_1009510_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1009510/card_1009510_circle.png"
+      }
+    },
+    {
+      "id": "1009600",
+      "resourceId": "1009600",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1009600/card_1009600_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1009600/card_1009600_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1009600/card_1009600_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1009600/card_1009600_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1009600/card_1009600_circle.png"
+      }
+    },
+    {
+      "id": "1009700",
+      "resourceId": "1009700",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1009700/card_1009700_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1009700/card_1009700_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1009700/card_1009700_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1009700/card_1009700_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1009700/card_1009700_circle.png"
+      }
+    },
+    {
+      "id": "1009780",
+      "resourceId": "1009780",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1009780/card_1009780_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1009780/card_1009780_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1009780/card_1009780_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1009780/card_1009780_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1009780/card_1009780_circle.png"
+      }
+    },
+    {
+      "id": "1009880",
+      "resourceId": "1009880",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1009880/card_1009880_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1009880/card_1009880_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1009880/card_1009880_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1009880/card_1009880_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1009880/card_1009880_circle.png"
+      }
+    },
+    {
+      "id": "1009950",
+      "resourceId": "1009950",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1009950/card_1009950_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1009950/card_1009950_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1009950/card_1009950_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1009950/card_1009950_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1009950/card_1009950_circle.png"
+      }
+    },
+    {
+      "id": "1010030",
+      "resourceId": "1010030",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1010030/card_1010030_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1010030/card_1010030_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1010030/card_1010030_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1010030/card_1010030_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1010030/card_1010030_circle.png"
+      }
+    },
+    {
+      "id": "1010250",
+      "resourceId": "1010250",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1010250/card_1010250_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1010250/card_1010250_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1010250/card_1010250_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1010250/card_1010250_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1010250/card_1010250_circle.png"
+      }
+    },
+    {
+      "id": "1010310",
+      "resourceId": "1010310",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1010310/card_1010310_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1010310/card_1010310_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1010310/card_1010310_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1010310/card_1010310_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1010310/card_1010310_circle.png"
+      }
+    },
+    {
+      "id": "1010440",
+      "resourceId": "1010440",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1010440/card_1010440_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1010440/card_1010440_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1010440/card_1010440_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1010440/card_1010440_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1010440/card_1010440_circle.png"
+      }
+    },
+    {
+      "id": "1010510",
+      "resourceId": "1010510",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1010510/card_1010510_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1010510/card_1010510_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1010510/card_1010510_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1010510/card_1010510_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1010510/card_1010510_circle.png"
+      }
+    },
+    {
+      "id": "1010620",
+      "resourceId": "1010620",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1010620/card_1010620_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1010620/card_1010620_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1010620/card_1010620_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1010620/card_1010620_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1010620/card_1010620_circle.png"
+      }
+    },
+    {
+      "id": "1010720",
+      "resourceId": "1010720",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1010720/card_1010720_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1010720/card_1010720_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1010720/card_1010720_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1010720/card_1010720_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1010720/card_1010720_circle.png"
+      }
+    },
+    {
+      "id": "1010801",
+      "resourceId": "1010800",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1010800/card_1010800_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1010800/card_1010800_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1010800/card_1010800_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1010800/card_1010800_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1010800/card_1010800_circle.png"
+      }
+    },
+    {
+      "id": "1010940",
+      "resourceId": "1010940",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1010940/card_1010940_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1010940/card_1010940_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1010940/card_1010940_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1010940/card_1010940_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1010940/card_1010940_circle.png"
+      }
+    },
+    {
+      "id": "1011061",
+      "resourceId": "1011060",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1011060/card_1011060_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1011060/card_1011060_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1011060/card_1011060_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1011060/card_1011060_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1011060/card_1011060_circle.png"
+      }
+    },
+    {
+      "id": "1011160",
+      "resourceId": "1011160",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1011160/card_1011160_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1011160/card_1011160_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1011160/card_1011160_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1011160/card_1011160_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1011160/card_1011160_circle.png"
+      }
+    },
+    {
+      "id": "1011260",
+      "resourceId": "1011260",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1011260/card_1011260_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1011260/card_1011260_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1011260/card_1011260_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1011260/card_1011260_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1011260/card_1011260_circle.png"
+      }
+    },
+    {
+      "id": "1011360",
+      "resourceId": "1011360",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1011360/card_1011360_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1011360/card_1011360_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1011360/card_1011360_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1011360/card_1011360_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1011360/card_1011360_circle.png"
+      }
+    },
+    {
+      "id": "1011440",
+      "resourceId": "1011440",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1011440/card_1011440_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1011440/card_1011440_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1011440/card_1011440_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1011440/card_1011440_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1011440/card_1011440_circle.png"
+      }
+    },
+    {
+      "id": "1011630",
+      "resourceId": "1011630",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1011630/card_1011630_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1011630/card_1011630_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1011630/card_1011630_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1011630/card_1011630_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1011630/card_1011630_circle.png"
+      }
+    },
+    {
+      "id": "1011740",
+      "resourceId": "1011740",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1011740/card_1011740_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1011740/card_1011740_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1011740/card_1011740_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1011740/card_1011740_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1011740/card_1011740_circle.png"
+      }
+    },
+    {
+      "id": "1011850",
+      "resourceId": "1011850",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1011850/card_1011850_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1011850/card_1011850_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1011850/card_1011850_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1011850/card_1011850_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1011850/card_1011850_circle.png"
+      }
+    },
+    {
+      "id": "1012011",
+      "resourceId": "1012010",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1012010/card_1012010_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1012010/card_1012010_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1012010/card_1012010_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1012010/card_1012010_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1012010/card_1012010_circle.png"
+      }
+    },
+    {
+      "id": "1012160",
+      "resourceId": "1012160",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1012160/card_1012160_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1012160/card_1012160_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1012160/card_1012160_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1012160/card_1012160_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1012160/card_1012160_circle.png"
+      }
+    },
+    {
+      "id": "1012381",
+      "resourceId": "1012380",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1012380/card_1012380_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1012380/card_1012380_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1012380/card_1012380_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1012380/card_1012380_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1012380/card_1012380_circle.png"
+      }
+    },
+    {
+      "id": "1012490",
+      "resourceId": "1012490",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1012490/card_1012490_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1012490/card_1012490_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1012490/card_1012490_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1012490/card_1012490_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1012490/card_1012490_circle.png"
+      }
+    },
+    {
+      "id": "1012681",
+      "resourceId": "1012680",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1012680/card_1012680_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1012680/card_1012680_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1012680/card_1012680_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1012680/card_1012680_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1012680/card_1012680_circle.png"
+      }
+    },
+    {
+      "id": "1012761",
+      "resourceId": "1012760",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1012760/card_1012760_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1012760/card_1012760_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1012760/card_1012760_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1012760/card_1012760_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1012760/card_1012760_circle.png"
+      }
+    },
+    {
+      "id": "1012901",
+      "resourceId": "1012900",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1012900/card_1012900_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1012900/card_1012900_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1012900/card_1012900_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1012900/card_1012900_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1012900/card_1012900_circle.png"
+      }
+    },
+    {
+      "id": "1012991",
+      "resourceId": "1012990",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1012990/card_1012990_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1012990/card_1012990_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1012990/card_1012990_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1012990/card_1012990_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1012990/card_1012990_circle.png"
+      }
+    },
+    {
+      "id": "1013051",
+      "resourceId": "1013050",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1013050/card_1013050_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1013050/card_1013050_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1013050/card_1013050_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1013050/card_1013050_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1013050/card_1013050_circle.png"
+      }
+    },
+    {
+      "id": "1013110",
+      "resourceId": "1013110",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1013110/card_1013110_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1013110/card_1013110_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1013110/card_1013110_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1013110/card_1013110_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1013110/card_1013110_circle.png"
+      }
+    },
+    {
+      "id": "1013260",
+      "resourceId": "1013260",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1013260/card_1013260_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1013260/card_1013260_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1013260/card_1013260_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1013260/card_1013260_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1013260/card_1013260_circle.png"
+      }
+    },
+    {
+      "id": "1013410",
+      "resourceId": "1013410",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1013410/card_1013410_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1013410/card_1013410_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1013410/card_1013410_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1013410/card_1013410_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1013410/card_1013410_circle.png"
+      }
+    },
+    {
+      "id": "1013540",
+      "resourceId": "1013540",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1013540/card_1013540_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1013540/card_1013540_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1013540/card_1013540_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1013540/card_1013540_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1013540/card_1013540_circle.png"
+      }
+    },
+    {
+      "id": "1013700",
+      "resourceId": "1013700",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1013700/card_1013700_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1013700/card_1013700_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1013700/card_1013700_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1013700/card_1013700_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1013700/card_1013700_circle.png"
+      }
+    },
+    {
+      "id": "1013800",
+      "resourceId": "1013800",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1013800/card_1013800_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1013800/card_1013800_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1013800/card_1013800_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1013800/card_1013800_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1013800/card_1013800_circle.png"
+      }
+    },
+    {
+      "id": "1013871",
+      "resourceId": "1013870",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1013870/card_1013870_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1013870/card_1013870_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1013870/card_1013870_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1013870/card_1013870_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1013870/card_1013870_circle.png"
+      }
+    },
+    {
+      "id": "1013951",
+      "resourceId": "1013950",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1013950/card_1013950_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1013950/card_1013950_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1013950/card_1013950_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1013950/card_1013950_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1013950/card_1013950_circle.png"
+      }
+    },
+    {
+      "id": "1014080",
+      "resourceId": "1014080",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1014080/card_1014080_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1014080/card_1014080_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1014080/card_1014080_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1014080/card_1014080_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1014080/card_1014080_circle.png"
+      }
+    },
+    {
+      "id": "1014160",
+      "resourceId": "1014160",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1014160/card_1014160_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1014160/card_1014160_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1014160/card_1014160_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1014160/card_1014160_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1014160/card_1014160_circle.png"
+      }
+    },
+    {
+      "id": "1014211",
+      "resourceId": "1014210",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1014210/card_1014210_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1014210/card_1014210_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1014210/card_1014210_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1014210/card_1014210_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1014210/card_1014210_circle.png"
+      }
+    },
+    {
+      "id": "1014350",
+      "resourceId": "1014350",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1014350/card_1014350_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1014350/card_1014350_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1014350/card_1014350_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1014350/card_1014350_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1014350/card_1014350_circle.png"
+      }
+    },
+    {
+      "id": "1014430",
+      "resourceId": "1014430",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1014430/card_1014430_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1014430/card_1014430_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1014430/card_1014430_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1014430/card_1014430_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1014430/card_1014430_circle.png"
+      }
+    },
+    {
+      "id": "1014510",
+      "resourceId": "1014510",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1014510/card_1014510_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1014510/card_1014510_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1014510/card_1014510_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1014510/card_1014510_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1014510/card_1014510_circle.png"
+      }
+    },
+    {
+      "id": "1014720",
+      "resourceId": "1014720",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1014720/card_1014720_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1014720/card_1014720_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1014720/card_1014720_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1014720/card_1014720_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1014720/card_1014720_circle.png"
+      }
+    },
+    {
+      "id": "1014930",
+      "resourceId": "1014930",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1014930/card_1014930_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1014930/card_1014930_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1014930/card_1014930_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1014930/card_1014930_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1014930/card_1014930_circle.png"
+      }
+    },
+    {
+      "id": "1014991",
+      "resourceId": "1014990",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1014990/card_1014990_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1014990/card_1014990_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1014990/card_1014990_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1014990/card_1014990_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1014990/card_1014990_circle.png"
+      }
+    },
+    {
+      "id": "1015090",
+      "resourceId": "1015090",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1015090/card_1015090_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1015090/card_1015090_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1015090/card_1015090_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1015090/card_1015090_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1015090/card_1015090_circle.png"
+      }
+    },
+    {
+      "id": "1015141",
+      "resourceId": "1015140",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1015140/card_1015140_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1015140/card_1015140_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1015140/card_1015140_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1015140/card_1015140_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1015140/card_1015140_circle.png"
+      }
+    },
+    {
+      "id": "1015221",
+      "resourceId": "1015220",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1015220/card_1015220_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1015220/card_1015220_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1015220/card_1015220_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1015220/card_1015220_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1015220/card_1015220_circle.png"
+      }
+    },
+    {
+      "id": "1015280",
+      "resourceId": "1015280",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1015280/card_1015280_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1015280/card_1015280_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1015280/card_1015280_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1015280/card_1015280_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1015280/card_1015280_circle.png"
+      }
+    },
+    {
+      "id": "1015371",
+      "resourceId": "1015370",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1015370/card_1015370_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1015370/card_1015370_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1015370/card_1015370_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1015370/card_1015370_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1015370/card_1015370_circle.png"
+      }
+    },
+    {
+      "id": "1015571",
+      "resourceId": "1015570",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1015570/card_1015570_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1015570/card_1015570_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1015570/card_1015570_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1015570/card_1015570_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1015570/card_1015570_circle.png"
+      }
+    },
+    {
+      "id": "1015711",
+      "resourceId": "1015711",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1015841",
+      "resourceId": "1015840",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1015840/card_1015840_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1015840/card_1015840_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1015840/card_1015840_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1015840/card_1015840_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1015840/card_1015840_circle.png"
+      }
+    },
+    {
+      "id": "1015910",
+      "resourceId": "1015910",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1015910/card_1015910_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1015910/card_1015910_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1015910/card_1015910_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1015910/card_1015910_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1015910/card_1015910_circle.png"
+      }
+    },
+    {
+      "id": "1016031",
+      "resourceId": "1016030",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1016030/card_1016030_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1016030/card_1016030_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1016030/card_1016030_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1016030/card_1016030_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1016030/card_1016030_circle.png"
+      }
+    },
+    {
+      "id": "1016150",
+      "resourceId": "1016150",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1016150/card_1016150_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1016150/card_1016150_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1016150/card_1016150_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1016150/card_1016150_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1016150/card_1016150_circle.png"
+      }
+    },
+    {
+      "id": "1016300",
+      "resourceId": "1016300",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1016300/card_1016300_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1016300/card_1016300_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1016300/card_1016300_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1016300/card_1016300_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1016300/card_1016300_circle.png"
+      }
+    },
+    {
+      "id": "1016400",
+      "resourceId": "1016400",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1016400/card_1016400_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1016400/card_1016400_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1016400/card_1016400_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1016400/card_1016400_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1016400/card_1016400_circle.png"
+      }
+    },
+    {
+      "id": "1016510",
+      "resourceId": "1016510",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1016510/card_1016510_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1016510/card_1016510_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1016510/card_1016510_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1016510/card_1016510_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1016510/card_1016510_circle.png"
+      }
+    },
+    {
+      "id": "1016650",
+      "resourceId": "1016650",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1016650/card_1016650_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1016650/card_1016650_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1016650/card_1016650_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1016650/card_1016650_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1016650/card_1016650_circle.png"
+      }
+    },
+    {
+      "id": "1016761",
+      "resourceId": "1016760",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1016760/card_1016760_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1016760/card_1016760_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1016760/card_1016760_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1016760/card_1016760_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1016760/card_1016760_circle.png"
+      }
+    },
+    {
+      "id": "1016830",
+      "resourceId": "1016830",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1016830/card_1016830_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1016830/card_1016830_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1016830/card_1016830_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1016830/card_1016830_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1016830/card_1016830_circle.png"
+      }
+    },
+    {
+      "id": "1016950",
+      "resourceId": "1016950",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1016950/card_1016950_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1016950/card_1016950_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1016950/card_1016950_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1016950/card_1016950_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1016950/card_1016950_circle.png"
+      }
+    },
+    {
+      "id": "1017160",
+      "resourceId": "1017160",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1017160/card_1017160_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1017160/card_1017160_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1017160/card_1017160_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1017160/card_1017160_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1017160/card_1017160_circle.png"
+      }
+    },
+    {
+      "id": "1017281",
+      "resourceId": "1017280",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1017280/card_1017280_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1017280/card_1017280_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1017280/card_1017280_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1017280/card_1017280_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1017280/card_1017280_circle.png"
+      }
+    },
+    {
+      "id": "1017370",
+      "resourceId": "1017370",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1017370/card_1017370_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1017370/card_1017370_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1017370/card_1017370_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1017370/card_1017370_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1017370/card_1017370_circle.png"
+      }
+    },
+    {
+      "id": "1017440",
+      "resourceId": "1017440",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1017440/card_1017440_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1017440/card_1017440_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1017440/card_1017440_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1017440/card_1017440_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1017440/card_1017440_circle.png"
+      }
+    },
+    {
+      "id": "1017551",
+      "resourceId": "1017550",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1017550/card_1017550_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1017550/card_1017550_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1017550/card_1017550_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1017550/card_1017550_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1017550/card_1017550_circle.png"
+      }
+    },
+    {
+      "id": "1017661",
+      "resourceId": "1017660",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1017660/card_1017660_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1017660/card_1017660_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1017660/card_1017660_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1017660/card_1017660_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1017660/card_1017660_circle.png"
+      }
+    },
+    {
+      "id": "1017741",
+      "resourceId": "1017740",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1017740/card_1017740_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1017740/card_1017740_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1017740/card_1017740_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1017740/card_1017740_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1017740/card_1017740_circle.png"
+      }
+    },
+    {
+      "id": "1017860",
+      "resourceId": "1017860",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1017860/card_1017860_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1017860/card_1017860_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1017860/card_1017860_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1017860/card_1017860_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1017860/card_1017860_circle.png"
+      }
+    },
+    {
+      "id": "1017950",
+      "resourceId": "1017950",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1017950/card_1017950_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1017950/card_1017950_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1017950/card_1017950_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1017950/card_1017950_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1017950/card_1017950_circle.png"
+      }
+    },
+    {
+      "id": "1018100",
+      "resourceId": "1018100",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1018100/card_1018100_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1018100/card_1018100_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1018100/card_1018100_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1018100/card_1018100_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1018100/card_1018100_circle.png"
+      }
+    },
+    {
+      "id": "1018191",
+      "resourceId": "1018190",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1018190/card_1018190_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1018190/card_1018190_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1018190/card_1018190_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1018190/card_1018190_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1018190/card_1018190_circle.png"
+      }
+    },
+    {
+      "id": "1018301",
+      "resourceId": "1018300",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1018300/card_1018300_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1018300/card_1018300_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1018300/card_1018300_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1018300/card_1018300_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1018300/card_1018300_circle.png"
+      }
+    },
+    {
+      "id": "1018411",
+      "resourceId": "1018410",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1018410/card_1018410_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1018410/card_1018410_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1018410/card_1018410_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1018410/card_1018410_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1018410/card_1018410_circle.png"
+      }
+    },
+    {
+      "id": "1018520",
+      "resourceId": "1018520",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1018520/card_1018520_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1018520/card_1018520_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1018520/card_1018520_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1018520/card_1018520_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1018520/card_1018520_circle.png"
+      }
+    },
+    {
+      "id": "1018590",
+      "resourceId": "1018590",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1018590/card_1018590_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1018590/card_1018590_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1018590/card_1018590_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1018590/card_1018590_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1018590/card_1018590_circle.png"
+      }
+    },
+    {
+      "id": "1018680",
+      "resourceId": "1018680",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1018680/card_1018680_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1018680/card_1018680_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1018680/card_1018680_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1018680/card_1018680_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1018680/card_1018680_circle.png"
+      }
+    },
+    {
+      "id": "1018750",
+      "resourceId": "1018750",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1018750/card_1018750_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1018750/card_1018750_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1018750/card_1018750_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1018750/card_1018750_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1018750/card_1018750_circle.png"
+      }
+    },
+    {
+      "id": "1018930",
+      "resourceId": "1018930",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1018930/card_1018930_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1018930/card_1018930_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1018930/card_1018930_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1018930/card_1018930_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1018930/card_1018930_circle.png"
+      }
+    },
+    {
+      "id": "1019060",
+      "resourceId": "1019060",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1019060/card_1019060_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1019060/card_1019060_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1019060/card_1019060_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1019060/card_1019060_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1019060/card_1019060_circle.png"
+      }
+    },
+    {
+      "id": "1019171",
+      "resourceId": "1019170",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1019170/card_1019170_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1019170/card_1019170_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1019170/card_1019170_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1019170/card_1019170_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1019170/card_1019170_circle.png"
+      }
+    },
+    {
+      "id": "1019260",
+      "resourceId": "1019260",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1019260/card_1019260_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1019260/card_1019260_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1019260/card_1019260_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1019260/card_1019260_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1019260/card_1019260_circle.png"
+      }
+    },
+    {
+      "id": "1019401",
+      "resourceId": "1019400",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1019400/card_1019400_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1019400/card_1019400_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1019400/card_1019400_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1019400/card_1019400_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1019400/card_1019400_circle.png"
+      }
+    },
+    {
+      "id": "1019580",
+      "resourceId": "1019580",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1019580/card_1019580_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1019580/card_1019580_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1019580/card_1019580_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1019580/card_1019580_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1019580/card_1019580_circle.png"
+      }
+    },
+    {
+      "id": "1019700",
+      "resourceId": "1019700",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1019700/card_1019700_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1019700/card_1019700_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1019700/card_1019700_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1019700/card_1019700_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1019700/card_1019700_circle.png"
+      }
+    },
+    {
+      "id": "1019841",
+      "resourceId": "1019840",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1019840/card_1019840_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1019840/card_1019840_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1019840/card_1019840_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1019840/card_1019840_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1019840/card_1019840_circle.png"
+      }
+    },
+    {
+      "id": "1019891",
+      "resourceId": "1019890",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1019890/card_1019890_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1019890/card_1019890_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1019890/card_1019890_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1019890/card_1019890_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1019890/card_1019890_circle.png"
+      }
+    },
+    {
+      "id": "1019990",
+      "resourceId": "1019990",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1019990/card_1019990_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1019990/card_1019990_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1019990/card_1019990_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1019990/card_1019990_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1019990/card_1019990_circle.png"
+      }
+    },
+    {
+      "id": "1020090",
+      "resourceId": "1020090",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1020090/card_1020090_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1020090/card_1020090_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1020090/card_1020090_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1020090/card_1020090_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1020090/card_1020090_circle.png"
+      }
+    },
+    {
+      "id": "1020171",
+      "resourceId": "1020170",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1020170/card_1020170_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1020170/card_1020170_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1020170/card_1020170_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1020170/card_1020170_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1020170/card_1020170_circle.png"
+      }
+    },
+    {
+      "id": "1020250",
+      "resourceId": "1020250",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1020250/card_1020250_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1020250/card_1020250_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1020250/card_1020250_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1020250/card_1020250_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1020250/card_1020250_circle.png"
+      }
+    },
+    {
+      "id": "1020340",
+      "resourceId": "1020340",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1020340/card_1020340_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1020340/card_1020340_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1020340/card_1020340_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1020340/card_1020340_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1020340/card_1020340_circle.png"
+      }
+    },
+    {
+      "id": "1020430",
+      "resourceId": "1020430",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1020430/card_1020430_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1020430/card_1020430_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1020430/card_1020430_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1020430/card_1020430_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1020430/card_1020430_circle.png"
+      }
+    },
+    {
+      "id": "1020531",
+      "resourceId": "1020530",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1020530/card_1020530_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1020530/card_1020530_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1020530/card_1020530_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1020530/card_1020530_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1020530/card_1020530_circle.png"
+      }
+    },
+    {
+      "id": "1020621",
+      "resourceId": "1020620",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1020620/card_1020620_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1020620/card_1020620_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1020620/card_1020620_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1020620/card_1020620_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1020620/card_1020620_circle.png"
+      }
+    },
+    {
+      "id": "1020770",
+      "resourceId": "1020770",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1020770/card_1020770_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1020770/card_1020770_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1020770/card_1020770_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1020770/card_1020770_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1020770/card_1020770_circle.png"
+      }
+    },
+    {
+      "id": "1020860",
+      "resourceId": "1020860",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1020860/card_1020860_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1020860/card_1020860_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1020860/card_1020860_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1020860/card_1020860_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1020860/card_1020860_circle.png"
+      }
+    },
+    {
+      "id": "1020940",
+      "resourceId": "1020940",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1020940/card_1020940_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1020940/card_1020940_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1020940/card_1020940_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1020940/card_1020940_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1020940/card_1020940_circle.png"
+      }
+    },
+    {
+      "id": "1021031",
+      "resourceId": "1021030",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1021030/card_1021030_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1021030/card_1021030_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1021030/card_1021030_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1021030/card_1021030_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1021030/card_1021030_circle.png"
+      }
+    },
+    {
+      "id": "1021130",
+      "resourceId": "1021130",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1021130/card_1021130_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1021130/card_1021130_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1021130/card_1021130_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1021130/card_1021130_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1021130/card_1021130_circle.png"
+      }
+    },
+    {
+      "id": "1021351",
+      "resourceId": "1021350",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1021350/card_1021350_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1021350/card_1021350_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1021350/card_1021350_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1021350/card_1021350_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1021350/card_1021350_circle.png"
+      }
+    },
+    {
+      "id": "1021451",
+      "resourceId": "1021450",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1021450/card_1021450_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1021450/card_1021450_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1021450/card_1021450_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1021450/card_1021450_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1021450/card_1021450_circle.png"
+      }
+    },
+    {
+      "id": "1021541",
+      "resourceId": "1021540",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1021540/card_1021540_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1021540/card_1021540_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1021540/card_1021540_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1021540/card_1021540_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1021540/card_1021540_circle.png"
+      }
+    },
+    {
+      "id": "1021670",
+      "resourceId": "1021670",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1021670/card_1021670_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1021670/card_1021670_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1021670/card_1021670_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1021670/card_1021670_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1021670/card_1021670_circle.png"
+      }
+    },
+    {
+      "id": "1021780",
+      "resourceId": "1021780",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1021780/card_1021780_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1021780/card_1021780_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1021780/card_1021780_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1021780/card_1021780_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1021780/card_1021780_circle.png"
+      }
+    },
+    {
+      "id": "1021920",
+      "resourceId": "1021920",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1021920/card_1021920_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1021920/card_1021920_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1021920/card_1021920_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1021920/card_1021920_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1021920/card_1021920_circle.png"
+      }
+    },
+    {
+      "id": "1021981",
+      "resourceId": "1021980",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1021980/card_1021980_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1021980/card_1021980_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1021980/card_1021980_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1021980/card_1021980_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1021980/card_1021980_circle.png"
+      }
+    },
+    {
+      "id": "1022041",
+      "resourceId": "1022040",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1022040/card_1022040_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1022040/card_1022040_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1022040/card_1022040_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1022040/card_1022040_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1022040/card_1022040_circle.png"
+      }
+    },
+    {
+      "id": "1022121",
+      "resourceId": "1022120",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1022120/card_1022120_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1022120/card_1022120_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1022120/card_1022120_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1022120/card_1022120_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1022120/card_1022120_circle.png"
+      }
+    },
+    {
+      "id": "1022270",
+      "resourceId": "1022270",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1022270/card_1022270_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1022270/card_1022270_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1022270/card_1022270_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1022270/card_1022270_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1022270/card_1022270_circle.png"
+      }
+    },
+    {
+      "id": "1022380",
+      "resourceId": "1022380",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1022380/card_1022380_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1022380/card_1022380_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1022380/card_1022380_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1022380/card_1022380_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1022380/card_1022380_circle.png"
+      }
+    },
+    {
+      "id": "1022580",
+      "resourceId": "1022580",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1022580/card_1022580_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1022580/card_1022580_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1022580/card_1022580_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1022580/card_1022580_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1022580/card_1022580_circle.png"
+      }
+    },
+    {
+      "id": "1022701",
+      "resourceId": "1022700",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1022700/card_1022700_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1022700/card_1022700_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1022700/card_1022700_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1022700/card_1022700_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1022700/card_1022700_circle.png"
+      }
+    },
+    {
+      "id": "1022780",
+      "resourceId": "1022780",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1022780/card_1022780_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1022780/card_1022780_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1022780/card_1022780_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1022780/card_1022780_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1022780/card_1022780_circle.png"
+      }
+    },
+    {
+      "id": "1022881",
+      "resourceId": "1022880",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1022880/card_1022880_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1022880/card_1022880_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1022880/card_1022880_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1022880/card_1022880_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1022880/card_1022880_circle.png"
+      }
+    },
+    {
+      "id": "1023030",
+      "resourceId": "1023030",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1023030/card_1023030_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1023030/card_1023030_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1023030/card_1023030_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1023030/card_1023030_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1023030/card_1023030_circle.png"
+      }
+    },
+    {
+      "id": "1023091",
+      "resourceId": "1023090",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1023090/card_1023090_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1023090/card_1023090_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1023090/card_1023090_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1023090/card_1023090_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1023090/card_1023090_circle.png"
+      }
+    },
+    {
+      "id": "1023191",
+      "resourceId": "1023190",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1023190/card_1023190_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1023190/card_1023190_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1023190/card_1023190_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1023190/card_1023190_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1023190/card_1023190_circle.png"
+      }
+    },
+    {
+      "id": "1023290",
+      "resourceId": "1023290",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1023290/card_1023290_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1023290/card_1023290_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1023290/card_1023290_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1023290/card_1023290_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1023290/card_1023290_circle.png"
+      }
+    },
+    {
+      "id": "1023360",
+      "resourceId": "1023360",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1023360/card_1023360_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1023360/card_1023360_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1023360/card_1023360_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1023360/card_1023360_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1023360/card_1023360_circle.png"
+      }
+    },
+    {
+      "id": "1023460",
+      "resourceId": "1023460",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1023460/card_1023460_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1023460/card_1023460_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1023460/card_1023460_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1023460/card_1023460_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1023460/card_1023460_circle.png"
+      }
+    },
+    {
+      "id": "1023590",
+      "resourceId": "1023590",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1023590/card_1023590_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1023590/card_1023590_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1023590/card_1023590_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1023590/card_1023590_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1023590/card_1023590_circle.png"
+      }
+    },
+    {
+      "id": "1023651",
+      "resourceId": "1023650",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1023650/card_1023650_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1023650/card_1023650_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1023650/card_1023650_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1023650/card_1023650_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1023650/card_1023650_circle.png"
+      }
+    },
+    {
+      "id": "1023701",
+      "resourceId": "1023700",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1023700/card_1023700_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1023700/card_1023700_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1023700/card_1023700_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1023700/card_1023700_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1023700/card_1023700_circle.png"
+      }
+    },
+    {
+      "id": "1023771",
+      "resourceId": "1023770",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1023770/card_1023770_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1023770/card_1023770_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1023770/card_1023770_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1023770/card_1023770_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1023770/card_1023770_circle.png"
+      }
+    },
+    {
+      "id": "1023861",
+      "resourceId": "1023860",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1023860/card_1023860_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1023860/card_1023860_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1023860/card_1023860_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1023860/card_1023860_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1023860/card_1023860_circle.png"
+      }
+    },
+    {
+      "id": "1023951",
+      "resourceId": "1023950",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1023950/card_1023950_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1023950/card_1023950_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1023950/card_1023950_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1023950/card_1023950_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1023950/card_1023950_circle.png"
+      }
+    },
+    {
+      "id": "1024081",
+      "resourceId": "1024080",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1024080/card_1024080_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1024080/card_1024080_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1024080/card_1024080_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1024080/card_1024080_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1024080/card_1024080_circle.png"
+      }
+    },
+    {
+      "id": "1024160",
+      "resourceId": "1024160",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1024160/card_1024160_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1024160/card_1024160_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1024160/card_1024160_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1024160/card_1024160_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1024160/card_1024160_circle.png"
+      }
+    },
+    {
+      "id": "1024290",
+      "resourceId": "1024290",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1024290/card_1024290_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1024290/card_1024290_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1024290/card_1024290_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1024290/card_1024290_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1024290/card_1024290_circle.png"
+      }
+    },
+    {
+      "id": "1024381",
+      "resourceId": "1024380",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1024380/card_1024380_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1024380/card_1024380_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1024380/card_1024380_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1024380/card_1024380_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1024380/card_1024380_circle.png"
+      }
+    },
+    {
+      "id": "1024551",
+      "resourceId": "1024550",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1024550/card_1024550_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1024550/card_1024550_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1024550/card_1024550_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1024550/card_1024550_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1024550/card_1024550_circle.png"
+      }
+    },
+    {
+      "id": "1024730",
+      "resourceId": "1024730",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1024730/card_1024730_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1024730/card_1024730_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1024730/card_1024730_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1024730/card_1024730_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1024730/card_1024730_circle.png"
+      }
+    },
+    {
+      "id": "1024830",
+      "resourceId": "1024830",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1024830/card_1024830_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1024830/card_1024830_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1024830/card_1024830_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1024830/card_1024830_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1024830/card_1024830_circle.png"
+      }
+    },
+    {
+      "id": "1024891",
+      "resourceId": "1024890",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1024890/card_1024890_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1024890/card_1024890_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1024890/card_1024890_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1024890/card_1024890_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1024890/card_1024890_circle.png"
+      }
+    },
+    {
+      "id": "1024980",
+      "resourceId": "1024980",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1024980/card_1024980_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1024980/card_1024980_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1024980/card_1024980_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1024980/card_1024980_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1024980/card_1024980_circle.png"
+      }
+    },
+    {
+      "id": "1025091",
+      "resourceId": "1025090",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1025090/card_1025090_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1025090/card_1025090_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1025090/card_1025090_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1025090/card_1025090_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1025090/card_1025090_circle.png"
+      }
+    },
+    {
+      "id": "1025180",
+      "resourceId": "1025180",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1025180/card_1025180_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1025180/card_1025180_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1025180/card_1025180_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1025180/card_1025180_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1025180/card_1025180_circle.png"
+      }
+    },
+    {
+      "id": "1025311",
+      "resourceId": "1025310",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1025310/card_1025310_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1025310/card_1025310_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1025310/card_1025310_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1025310/card_1025310_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1025310/card_1025310_circle.png"
+      }
+    },
+    {
+      "id": "1025361",
+      "resourceId": "1025360",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1025360/card_1025360_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1025360/card_1025360_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1025360/card_1025360_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1025360/card_1025360_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1025360/card_1025360_circle.png"
+      }
+    },
+    {
+      "id": "1025511",
+      "resourceId": "1025510",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1025510/card_1025510_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1025510/card_1025510_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1025510/card_1025510_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1025510/card_1025510_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1025510/card_1025510_circle.png"
+      }
+    },
+    {
+      "id": "1025600",
+      "resourceId": "1025600",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1025600/card_1025600_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1025600/card_1025600_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1025600/card_1025600_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1025600/card_1025600_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1025600/card_1025600_circle.png"
+      }
+    },
+    {
+      "id": "1025671",
+      "resourceId": "1025670",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1025670/card_1025670_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1025670/card_1025670_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1025670/card_1025670_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1025670/card_1025670_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1025670/card_1025670_circle.png"
+      }
+    },
+    {
+      "id": "1025870",
+      "resourceId": "1025870",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1025870/card_1025870_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1025870/card_1025870_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1025870/card_1025870_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1025870/card_1025870_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1025870/card_1025870_circle.png"
+      }
+    },
+    {
+      "id": "1026071",
+      "resourceId": "1026070",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1026070/card_1026070_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1026070/card_1026070_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1026070/card_1026070_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1026070/card_1026070_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1026070/card_1026070_circle.png"
+      }
+    },
+    {
+      "id": "1026231",
+      "resourceId": "1026231",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1026370",
+      "resourceId": "1026370",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1026370/card_1026370_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1026370/card_1026370_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1026370/card_1026370_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1026370/card_1026370_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1026370/card_1026370_circle.png"
+      }
+    },
+    {
+      "id": "1026531",
+      "resourceId": "1026530",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1026530/card_1026530_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1026530/card_1026530_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1026530/card_1026530_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1026530/card_1026530_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1026530/card_1026530_circle.png"
+      }
+    },
+    {
+      "id": "1026751",
+      "resourceId": "1026751",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1026901",
+      "resourceId": "1026901",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1027160",
+      "resourceId": "1027160",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1027160/card_1027160_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1027160/card_1027160_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1027160/card_1027160_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1027160/card_1027160_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1027160/card_1027160_circle.png"
+      }
+    },
+    {
+      "id": "1027331",
+      "resourceId": "1027330",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1027330/card_1027330_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1027330/card_1027330_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1027330/card_1027330_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1027330/card_1027330_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1027330/card_1027330_circle.png"
+      }
+    },
+    {
+      "id": "1027511",
+      "resourceId": "1027511",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1027681",
+      "resourceId": "1027681",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1027851",
+      "resourceId": "1027851",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1028021",
+      "resourceId": "1028021",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1028201",
+      "resourceId": "1028201",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1028491",
+      "resourceId": "1028491",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1028681",
+      "resourceId": "1028681",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1028851",
+      "resourceId": "1028851",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1029091",
+      "resourceId": "1029091",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1029291",
+      "resourceId": "1029291",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1029571",
+      "resourceId": "1029571",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1029771",
+      "resourceId": "1029771",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1029981",
+      "resourceId": "1029981",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1030160",
+      "resourceId": "1030160",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "missing": [],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1030160/card_1030160_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1030160/card_1030160_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1030160/card_1030160_effect.png",
+        "piece": "https://www.dbz-dokkanbattle.com/img/character/card/1030160/card_1030160_piece.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1030160/card_1030160_circle.png"
+      }
+    },
+    {
+      "id": "1030481",
+      "resourceId": "1030481",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1030731",
+      "resourceId": "1030731",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1031041",
+      "resourceId": "1031041",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1031301",
+      "resourceId": "1031301",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1031541",
+      "resourceId": "1031541",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1031771",
+      "resourceId": "1031771",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1032011",
+      "resourceId": "1032011",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1032181",
+      "resourceId": "1032181",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1032361",
+      "resourceId": "1032361",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1032490",
+      "resourceId": "1032490",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "circle"
+      ],
+      "missing": [
+        "piece"
+      ],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1032490/card_1032490_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1032490/card_1032490_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1032490/card_1032490_effect.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1032490/card_1032490_circle.png"
+      }
+    },
+    {
+      "id": "1032651",
+      "resourceId": "1032651",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1032811",
+      "resourceId": "1032811",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1033031",
+      "resourceId": "1033031",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1033721",
+      "resourceId": "1033721",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1034001",
+      "resourceId": "1034001",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1034301",
+      "resourceId": "1034301",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "1034550",
+      "resourceId": "1034550",
+      "state": "complete-source-set",
+      "downloaded": [
+        "background",
+        "character",
+        "effect",
+        "circle"
+      ],
+      "missing": [
+        "piece"
+      ],
+      "urls": {
+        "background": "https://www.dbz-dokkanbattle.com/img/character/card/1034550/card_1034550_bg.png",
+        "character": "https://www.dbz-dokkanbattle.com/img/character/card/1034550/card_1034550_character.png",
+        "effect": "https://www.dbz-dokkanbattle.com/img/character/card/1034550/card_1034550_effect.png",
+        "circle": "https://www.dbz-dokkanbattle.com/img/character/card/1034550/card_1034550_circle.png"
+      }
+    },
+    {
+      "id": "1034691",
+      "resourceId": "1034691",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    },
+    {
+      "id": "2000790",
+      "resourceId": "2000790",
+      "state": "missing",
+      "downloaded": [],
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {}
+    }
+  ]
+}

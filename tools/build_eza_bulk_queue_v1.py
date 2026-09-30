@@ -14,7 +14,8 @@ for c in cat.get("cards",[]):
           "id":str(c.get("id","")),"name":c.get("name",""),"rarity":c.get("rarity",""),
           "type":c.get("type",""),"class":c.get("class",""),"currentStatus":c.get("awakeningStatus",""),
           "dokkanStatsUrl":"https://dokkanstats.com/en/cards/"+str(c.get("id",""))+"/",
-          "dokkanWikiUrl":"https://dokkan.wiki/cards/"+str(c.get("id","")),\n          "verificationState":"pending-external-exact-id"
+          "dokkanWikiUrl":"https://dokkan.wiki/cards/"+str(c.get("id","")),
+          "verificationState":"pending-external-exact-id"
         })
 out={"count":len(rows),"policy":"exact-ID only; no name-based inference","items":rows}
 (R/"docs/EZA-BULK-VERIFICATION-QUEUE-v1.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

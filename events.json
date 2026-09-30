@@ -6,8 +6,8 @@
   "coverage": {
     "complete": false,
     "reason": "Sources de catalogue bloquées ; seules les missions de campagne vérifiées sont incluses.",
-    "events": 7,
-    "missions": 9
+    "events": 8,
+    "missions": 20
   },
   "events": [
     {
@@ -155,6 +155,101 @@
           "manualCheck": true,
           "notes": "Or, argent et bronze : contrôle manuel nécessaire ; ami exclu.",
           "end": "2026-10-20T09:59:00+02:00"
+        }
+      ]
+    },
+    {
+      "id": "epic-battles-boo-4",
+      "name": "Recueil des combats épiques — niveau 4 : Saga de Boo",
+      "kind": "Défi",
+      "source": "https://www.dbz-dokkanbattle.com/quest/1769",
+      "bossSource": "https://www.dbz-dokkanbattle.com/quest/1769/17690045",
+      "verifiedAt": "2026-09-30",
+      "missions": [
+        {
+          "id": "epic-boo-clear",
+          "title": "Terminer le niveau 4",
+          "stage": 4,
+          "requirements": [],
+          "manualCheck": true
+        },
+        {
+          "id": "epic-boo-four-bosses",
+          "title": "Battre au moins quatre boss dans un essai puis terminer le niveau",
+          "stage": 4,
+          "requirements": [],
+          "manualCheck": true,
+          "notes": "Le nombre de boss battus doit être confirmé en jeu ; la composition seule ne valide pas cette mission."
+        },
+        {
+          "id": "epic-boo-six-category",
+          "title": "Terminer avec six cartes Saga de Boo, ami exclu",
+          "stage": 4,
+          "requirements": [
+            {
+              "kind": "category",
+              "value": "Saga de Boo",
+              "count": 6,
+              "includeFriend": false
+            }
+          ],
+          "manualCheck": true
+        },
+        {
+          "id": "epic-boo-boss-vegetto",
+          "title": "Battre Super Vegetto puis terminer le niveau 4",
+          "stage": 4,
+          "requirements": [],
+          "manualCheck": true
+        },
+        {
+          "id": "epic-boo-boss-kid-buu",
+          "title": "Battre Boo (petit) puis terminer le niveau 4",
+          "stage": 4,
+          "requirements": [],
+          "manualCheck": true
+        },
+        {
+          "id": "epic-boo-boss-satan",
+          "title": "Battre M. Satan puis terminer le niveau 4",
+          "stage": 4,
+          "requirements": [],
+          "manualCheck": true
+        },
+        {
+          "id": "epic-boo-boss-evil-buu",
+          "title": "Battre Boo (mal incarné) puis terminer le niveau 4",
+          "stage": 4,
+          "requirements": [],
+          "manualCheck": true
+        },
+        {
+          "id": "epic-boo-boss-gotenks",
+          "title": "Battre Gotenks Super Saiyan puis terminer le niveau 4",
+          "stage": 4,
+          "requirements": [],
+          "manualCheck": true
+        },
+        {
+          "id": "epic-boo-boss-majin-vegeta",
+          "title": "Battre Majin Vegeta puis terminer le niveau 4",
+          "stage": 4,
+          "requirements": [],
+          "manualCheck": true
+        },
+        {
+          "id": "epic-boo-boss-babidi",
+          "title": "Battre Babidi puis terminer le niveau 4",
+          "stage": 4,
+          "requirements": [],
+          "manualCheck": true
+        },
+        {
+          "id": "epic-boo-boss-goku-angel",
+          "title": "Battre Son Goku Super Saiyan 3 (ange) puis terminer le niveau 4",
+          "stage": 4,
+          "requirements": [],
+          "manualCheck": true
         }
       ]
     }

@@ -1,0 +1,94 @@
+name: Priority card artwork retry
+on:
+  workflow_dispatch:
+  push:
+    branches: [audit-fr-images-v1]
+    paths:
+      - 'tools/prioritize_full_card_retry_v1.py'
+      - 'tools/retry_full_card_assets_v1.py'
+      - '.github/workflows/priority-card-artwork-retry.yml'
+permissions:
+  contents: write
+concurrency:
+  group: priority-card-artwork-retry-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Prioritize retry queue
+        run: python tools/prioritize_full_card_retry_v1.py
+      - name: Upload priority queue
+        uses: actions/upload-artifact@v4
+        with:
+          name: priority-retry-queue
+          path: |
+            docs/FULL-CARD-ASSET-RETRY-PRIORITY-v1.json
+            docs/FULL-CARD-ASSET-DEFERRED-v1.json
+          retention-days: 1
+  retry:
+    needs: prepare
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0,1,2,3,4,5,6,7]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/download-artifact@v4
+        with:
+          name: priority-retry-queue
+          path: .
+      - name: Retry priority artwork
+        env:
+          SHARD: ${{ matrix.shard }}
+          SHARDS: 8
+        run: python tools/retry_full_card_assets_v1.py
+      - name: Stage retry result
+        run: |
+          mkdir -p retry-output/docs retry-output/assets
+          cp docs/FULL-CARD-ASSET-RETRY-RESULT-v1-shard-${{ matrix.shard }}.json retry-output/docs/
+          [ ! -d assets/card-source ] || { mkdir -p retry-output/assets/card-source; cp -a assets/card-source/. retry-output/assets/card-source/; }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: priority-retry-shard-${{ matrix.shard }}
+          path: retry-output/
+          retention-days: 1
+  consolidate:
+    needs: retry
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: priority-retry-shard-*
+          path: retry-results
+      - uses: actions/download-artifact@v4
+        with:
+          name: priority-retry-queue
+          path: .
+      - name: Consolidate retry assets and reports
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          reports=(retry-results/priority-retry-shard-*/docs/FULL-CARD-ASSET-RETRY-RESULT-v1-shard-*.json)
+          [ "${#reports[@]}" -eq 8 ] || { echo "Expected 8 retry reports, found ${#reports[@]}"; exit 1; }
+          mkdir -p docs assets/card-source
+          for r in "${reports[@]}"; do cp "$r" docs/; done
+          for d in retry-results/priority-retry-shard-*/assets/card-source; do [ ! -d "$d" ] || cp -a "$d"/. assets/card-source/; done
+      - name: Commit priority recovery
+        run: |
+          git config user.name "dokkanos-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/FULL-CARD-ASSET-RETRY-PRIORITY-v1.json docs/FULL-CARD-ASSET-DEFERRED-v1.json docs/FULL-CARD-ASSET-RETRY-RESULT-v1-shard-*.json assets/card-source || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Recover priority missing card artwork"
+          git pull --rebase origin audit-fr-images-v1
+          git push origin HEAD:audit-fr-images-v1

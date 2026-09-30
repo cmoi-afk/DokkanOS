@@ -34911,6 +34911,44 @@
       "awakeningStatusProof": "rarity"
     },
     {
+      "id": "1034150",
+      "name": "Boo (petit)",
+      "title": "Présence hors norme",
+      "rarity": "LR",
+      "type": "",
+      "class": "Extrême",
+      "image": "assets/cards/1034150.png",
+      "legacySource": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1034150",
+        "match": "exact final LR ID"
+      },
+      "nameLocale": "fr-official",
+      "titleLocale": "fr-official",
+      "imageSource": "DBZ Dokkan Battle France exact card ID",
+      "awakeningStatus": "LR",
+      "awakeningStatusProof": "explicit"
+    },
+    {
+      "id": "1034200",
+      "name": "Son Goku Super Saiyan 3",
+      "title": "Summum du combat",
+      "rarity": "LR",
+      "type": "",
+      "class": "Super",
+      "image": "assets/cards/1034200.png",
+      "legacySource": {
+        "provider": "DBZ Dokkan Battle France",
+        "url": "https://www.dbz-dokkanbattle.com/card/1034200",
+        "match": "exact final LR ID"
+      },
+      "nameLocale": "fr-official",
+      "titleLocale": "fr-official",
+      "imageSource": "DBZ Dokkan Battle France exact card ID",
+      "awakeningStatus": "LR",
+      "awakeningStatusProof": "explicit"
+    },
+    {
       "id": "1034221",
       "name": "Beerus",
       "title": "Une force destructrice colossale",

@@ -14,8 +14,12 @@ concurrency:
   cancel-in-progress: false
 jobs:
   migrate:
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0,1,2,3,4,5,6,7]
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
@@ -24,12 +28,15 @@ jobs:
       - name: Build manifest
         run: python tools/build_full_card_render_manifest_v1.py
       - name: Acquire source assets
+        env:
+          SHARD: ${{ matrix.shard }}
+          SHARDS: 8
         run: python tools/acquire_full_card_assets_v1.py
       - name: Commit acquisition report and assets
         run: |
           git config user.name "dokkanos-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/FULL-CARD-RENDER-MANIFEST-v1.json docs/FULL-CARD-ASSET-ACQUISITION-v1.json assets/card-source || true
+          git add docs/FULL-CARD-RENDER-MANIFEST-v1.json docs/FULL-CARD-ASSET-ACQUISITION-v1-shard-${{ matrix.shard }}.json assets/card-source || true
           git diff --cached --quiet && exit 0
           git commit -m "Acquire full-card source assets"
           git pull --rebase origin audit-fr-images-v1

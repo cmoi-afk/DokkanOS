@@ -54,5 +54,13 @@ for cid in ["1003210","1003211","1010070","1034201","1010900","1023631","1028551
   if step:
    alt=embedded(fetch(url+"?eza=true&step="+str(step)),"datajson");report["cards"][cid]["alt"]={"card":alt.get("card"),"passive":alt.get("passive_skill"),"growth":{k:v for k,v in alt.items() if "growth" in k or "hipo" in k},"keys":list(alt),"raw":alt}
  except Exception as e:report["cards"][cid]={"error":str(e)}
+for cid in ["1023631","1028551","1010900"]:
+ report["cards"].setdefault(cid,{})["fallbacks"]={}
+ for host in ["https://dokkaninfo.com","https://jpn.dokkaninfo.com"]:
+  for suffix in ["/cards/"+cid+"?eza=true&step=7","/api/cards/"+cid+"/transformation","/cards/"+cid+"?eza=true&step=6"]:
+   try:
+    raw=fetch(host+suffix);dd=json.loads(raw) if "/api/" in suffix else embedded(raw,"datajson")
+    report["cards"][cid]["fallbacks"][host+suffix]={"card":dd.get("card"),"passive":dd.get("passive_skill"),"supers":dd.get("super_attacks"),"keys":list(dd)}
+   except Exception as e:report["cards"][cid]["fallbacks"][host+suffix]={"error":str(e)}
 Path("docs/CATALOG-SOURCES-PROBE-v4.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n")
 print(json.dumps(report,ensure_ascii=False,indent=2))

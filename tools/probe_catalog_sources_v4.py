@@ -62,5 +62,10 @@ for cid in ["1023631","1028551","1010900"]:
     raw=fetch(host+suffix);dd=json.loads(raw) if "/api/" in suffix else embedded(raw,"datajson")
     report["cards"][cid]["fallbacks"][host+suffix]={"card":dd.get("card"),"passive":dd.get("passive_skill"),"supers":dd.get("super_attacks"),"keys":list(dd)}
    except Exception as e:report["cards"][cid]["fallbacks"][host+suffix]={"error":str(e)}
+report["herculeAlternative"]={}
+for url in ["https://gacha-data.com/dokkan-battle/characters/1010900/","https://www.dbz-dokkanbattle.com/card/1010900"]:
+ try:
+  raw=fetch(url);report["herculeAlternative"][url]={"html":raw[:100000],"jsonScripts":re.findall(r'<script[^>]*type="application/(?:ld\\+)?json"[^>]*>(.*?)</script>',raw,re.S)}
+ except Exception as e:report["herculeAlternative"][url]={"error":str(e)}
 Path("docs/CATALOG-SOURCES-PROBE-v4.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n")
 print(json.dumps(report,ensure_ascii=False,indent=2))

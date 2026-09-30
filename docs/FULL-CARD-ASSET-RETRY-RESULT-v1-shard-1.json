@@ -1,0 +1,671 @@
+{
+  "shard": 1,
+  "shards": 8,
+  "cards": 32,
+  "cardsImproved": 0,
+  "items": [
+    {
+      "id": "1014331",
+      "resourceId": "1014331",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1027841",
+      "resourceId": "1027841",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1029751",
+      "resourceId": "1029751",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1031961",
+      "resourceId": "1031961",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1034661",
+      "resourceId": "1034661",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1027681",
+      "resourceId": "1027681",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1029291",
+      "resourceId": "1029291",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1031541",
+      "resourceId": "1031541",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1033721",
+      "resourceId": "1033721",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1026251",
+      "resourceId": "1026251",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1029331",
+      "resourceId": "1029331",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1031341",
+      "resourceId": "1031341",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1034031",
+      "resourceId": "1034031",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1027371",
+      "resourceId": "1027371",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1029851",
+      "resourceId": "1029851",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1031791",
+      "resourceId": "1031791",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1034381",
+      "resourceId": "1034381",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": "TimeoutError",
+      "name": "Cell Max",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Extrême",
+      "retryState": "page-error"
+    },
+    {
+      "id": "1027191",
+      "resourceId": "1027191",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1029641",
+      "resourceId": "1029641",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1031801",
+      "resourceId": "1031801",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1033821",
+      "resourceId": "1033821",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1026161",
+      "resourceId": "1026161",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1029671",
+      "resourceId": "1029671",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1031691",
+      "resourceId": "1031691",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1033841",
+      "resourceId": "1033841",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1027781",
+      "resourceId": "1027781",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1030101",
+      "resourceId": "1030101",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": "TimeoutError",
+      "name": "Tenshinhan",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super",
+      "retryState": "page-error"
+    },
+    {
+      "id": "1032121",
+      "resourceId": "1032121",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1034221",
+      "resourceId": "1034221",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1027621",
+      "resourceId": "1027621",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1030391",
+      "resourceId": "1030391",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": "TimeoutError",
+      "name": "Son Gohan Super Saiyan 2 (enfant)",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Super",
+      "retryState": "page-error"
+    },
+    {
+      "id": "1032981",
+      "resourceId": "1032981",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    }
+  ]
+}

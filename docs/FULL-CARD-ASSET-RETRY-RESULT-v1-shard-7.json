@@ -1,0 +1,677 @@
+{
+  "shard": 7,
+  "shards": 8,
+  "cards": 32,
+  "cardsImproved": 0,
+  "items": [
+    {
+      "id": "1027291",
+      "resourceId": "1027291",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1029281",
+      "resourceId": "1029281",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1031521",
+      "resourceId": "1031521",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1033971",
+      "resourceId": "1033971",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1026901",
+      "resourceId": "1026901",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1028851",
+      "resourceId": "1028851",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1031041",
+      "resourceId": "1031041",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1032811",
+      "resourceId": "1032811",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1010041",
+      "resourceId": "1010041",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1028891",
+      "resourceId": "1028891",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1030791",
+      "resourceId": "1030791",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1033061",
+      "resourceId": "1033061",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1026281",
+      "resourceId": "1026281",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1029361",
+      "resourceId": "1029361",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1031361",
+      "resourceId": "1031361",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1033551",
+      "resourceId": "1033551",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1026311",
+      "resourceId": "1026311",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1029161",
+      "resourceId": "1029161",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1031391",
+      "resourceId": "1031391",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1032881",
+      "resourceId": "1032881",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1016581",
+      "resourceId": "1016581",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1029181",
+      "resourceId": "1029181",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1031121",
+      "resourceId": "1031121",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1032921",
+      "resourceId": "1032921",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1026611",
+      "resourceId": "1026611",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": "TimeoutError",
+      "name": "Bulma (enfant)",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super",
+      "retryState": "page-error"
+    },
+    {
+      "id": "1029701",
+      "resourceId": "1029701",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1031721",
+      "resourceId": "1031721",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1033641",
+      "resourceId": "1033641",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1026511",
+      "resourceId": "1026511",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1029931",
+      "resourceId": "1029931",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "1032311",
+      "resourceId": "1032311",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    },
+    {
+      "id": "2000850",
+      "resourceId": "2000850",
+      "previousMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "recovered": [],
+      "stillMissing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "urls": {},
+      "retryState": "unresolved"
+    }
+  ]
+}

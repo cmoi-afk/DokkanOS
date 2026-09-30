@@ -1,0 +1,42 @@
+{
+  "policy": "not deleted; excluded from active artwork retry",
+  "cards": 2,
+  "items": [
+    {
+      "id": "1000870",
+      "resourceId": "1000870",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Gohan (Enfant)",
+      "rarity": "SR",
+      "type": "END",
+      "class": "Super",
+      "deferReason": "low-or-unknown-rarity"
+    },
+    {
+      "id": "1001010",
+      "resourceId": "1001010",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "C-16",
+      "rarity": "SR",
+      "type": "PUI",
+      "class": "Extrême",
+      "deferReason": "low-or-unknown-rarity"
+    }
+  ]
+}

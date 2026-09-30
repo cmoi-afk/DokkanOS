@@ -1,0 +1,4358 @@
+{
+  "policy": "priority artwork recovery: LR/UR/TUR/SSR only; lower/unknown rarity deferred",
+  "cards": 256,
+  "items": [
+    {
+      "id": "1002241",
+      "resourceId": "1002241",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku (enfant)",
+      "rarity": "SSR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1014331",
+      "resourceId": "1014331",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Freezer (forme finale) (GT)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1015701",
+      "resourceId": "1015701",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Métal Cooler (INT)",
+      "rarity": "SSR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1015830",
+      "resourceId": "1015830",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Bota-Magetta",
+      "rarity": "SSR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1026201",
+      "resourceId": "1026201",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "C-17 & C-17 (Hell Fighter)",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1026871",
+      "resourceId": "1026871",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Baby",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1027121",
+      "resourceId": "1027121",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan divin SS \n& Vegeta Super Saiyan divin SS",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1027291",
+      "resourceId": "1027291",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Trunks Super Saiyan (futur)",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1027501",
+      "resourceId": "1027501",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Zirloin & Rabanra & Zabuto",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1027841",
+      "resourceId": "1027841",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "C-17",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1027981",
+      "resourceId": "1027981",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Gogeta Super Saiyan",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1028161",
+      "resourceId": "1028161",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Hildegarn",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1028471",
+      "resourceId": "1028471",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Krillin & C-18",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1028831",
+      "resourceId": "1028831",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Gotenks",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1029051",
+      "resourceId": "1029051",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku (Signes de l'Ultra Instinct)",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1029281",
+      "resourceId": "1029281",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Saonel & Pilina",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1029551",
+      "resourceId": "1029551",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Anilaza",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029751",
+      "resourceId": "1029751",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Anguila & Medamatcha",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029951",
+      "resourceId": "1029951",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan divin SS (Énergie de l'arbre universel)",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1030141",
+      "resourceId": "1030141",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Combattant vêtu de noir (Super Saiyan) \n(renforcé par les boules de cristal sombres)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1030431",
+      "resourceId": "1030431",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan + Vegeta Super Saiyan (ange)",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1031021",
+      "resourceId": "1031021",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Piccolo",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1031281",
+      "resourceId": "1031281",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Tenshinhan",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031521",
+      "resourceId": "1031521",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Champa",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031761",
+      "resourceId": "1031761",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [AGI]",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031961",
+      "resourceId": "1031961",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Super Baby 1",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032171",
+      "resourceId": "1032171",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [INT]",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032331",
+      "resourceId": "1032331",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Gamma 2 + Piccolo (éveil de puissance)",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1032641",
+      "resourceId": "1032641",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Freezer (forme finale)",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1033011",
+      "resourceId": "1033011",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Dabra",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1033701",
+      "resourceId": "1033701",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Saibaiman",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1033971",
+      "resourceId": "1033971",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Freezer (forme finale)",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1034481",
+      "resourceId": "1034481",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan 3 (ange)",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1034661",
+      "resourceId": "1034661",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Jeese + Butta",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "2000780",
+      "resourceId": "2000780",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Golden Freezer",
+      "rarity": "SSR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1003991",
+      "resourceId": "1003991",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1015711",
+      "resourceId": "1015711",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Métal Cooler (PUI)",
+      "rarity": "SSR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1026231",
+      "resourceId": "1026231",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Docteur Myuu & Dr. Gero",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1026751",
+      "resourceId": "1026751",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Thalès",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1026901",
+      "resourceId": "1026901",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan 4",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1027511",
+      "resourceId": "1027511",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "C-18 (GT)",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1027681",
+      "resourceId": "1027681",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "C-21 (transformée, mauvaise)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1027851",
+      "resourceId": "1027851",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "C-18",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1028021",
+      "resourceId": "1028021",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Broly Super Saiyan",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1028201",
+      "resourceId": "1028201",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Yamcha",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1028491",
+      "resourceId": "1028491",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1028681",
+      "resourceId": "1028681",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Toppo",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1028851",
+      "resourceId": "1028851",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Boo (mal incarné)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029091",
+      "resourceId": "1029091",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Jiren",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1029291",
+      "resourceId": "1029291",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Champa",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029571",
+      "resourceId": "1029571",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029771",
+      "resourceId": "1029771",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Piccolo/Vegeta Super Saiyan",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1029981",
+      "resourceId": "1029981",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Boo (Son Gohan ultime)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1030481",
+      "resourceId": "1030481",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta Super Saiyan (ange) + Son Goku Super Saiyan (ange)",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1030731",
+      "resourceId": "1030731",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "M. Satan",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1031041",
+      "resourceId": "1031041",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Magetta",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1031301",
+      "resourceId": "1031301",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Tao Pai Pai",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031541",
+      "resourceId": "1031541",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Pan (GT)",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1031771",
+      "resourceId": "1031771",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [AGI]",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032011",
+      "resourceId": "1032011",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan SS possédé (GT) & Son Goten SS possédé (GT)",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032181",
+      "resourceId": "1032181",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [PUI]",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032361",
+      "resourceId": "1032361",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan ultime + Gamma 1",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1032651",
+      "resourceId": "1032651",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan Super Saiyan 2 (enfant)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1032811",
+      "resourceId": "1032811",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Tamagami Numéro Un",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1033031",
+      "resourceId": "1033031",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Puipui",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1033721",
+      "resourceId": "1033721",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Chaozu",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1034001",
+      "resourceId": "1034001",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Freezer (2e forme)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1034301",
+      "resourceId": "1034301",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan 3 (Mini) (DAIMA)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1034691",
+      "resourceId": "1034691",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Ginyu (Son Goku)",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "2000790",
+      "resourceId": "2000790",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Golden Freezer",
+      "rarity": "SSR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1008601",
+      "resourceId": "1008601",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku Black",
+      "rarity": "SSR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1010041",
+      "resourceId": "1010041",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Freezer (1re forme)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1013711",
+      "resourceId": "1013711",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Slug (forme géante)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1026251",
+      "resourceId": "1026251",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan divin",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1026771",
+      "resourceId": "1026771",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Amondo & Rezun",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1028061",
+      "resourceId": "1028061",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan & Vegeta Super Saiyan & \nTrunks Super Saiyan (jeune)",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1028231",
+      "resourceId": "1028231",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Golden Freezer",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1028521",
+      "resourceId": "1028521",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Roi Vegeta",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1028721",
+      "resourceId": "1028721",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Ginyu (commando)",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1028891",
+      "resourceId": "1028891",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan ultime",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1029121",
+      "resourceId": "1029121",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Hit",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029331",
+      "resourceId": "1029331",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Devilman",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029591",
+      "resourceId": "1029591",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Kiwi",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029831",
+      "resourceId": "1029831",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Bardock Super Saiyan",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1030021",
+      "resourceId": "1030021",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Gotenks Super Saiyan 3",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1030181",
+      "resourceId": "1030181",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Grand Kaïo Shin",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1030531",
+      "resourceId": "1030531",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Freezer (forme finale) (ange) + Son Goku",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1030791",
+      "resourceId": "1030791",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Piccolo Daimaô (vieux)",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031061",
+      "resourceId": "1031061",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta Super Saiyan 3 (Mini) (DAIMA)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1031341",
+      "resourceId": "1031341",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Commandant Blue",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031591",
+      "resourceId": "1031591",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan Super Saiyan (jeune) + Trunks Super \nSaiyan (petit) & Son Goten Super Saiyan (petit)",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1031781",
+      "resourceId": "1031781",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [TEC]",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032191",
+      "resourceId": "1032191",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [END]",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032391",
+      "resourceId": "1032391",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Majin masqué (Panzy)",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1032661",
+      "resourceId": "1032661",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Boo",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1033061",
+      "resourceId": "1033061",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Majin Vegeta + Son Goku Super Saiyan 2 (ange)",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1033761",
+      "resourceId": "1033761",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Piccolo",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1034031",
+      "resourceId": "1034031",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1034341",
+      "resourceId": "1034341",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan (Beast)",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1034701",
+      "resourceId": "1034701",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Reacum + Guldo",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "2000800",
+      "resourceId": "2000800",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Golden Freezer",
+      "rarity": "SSR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1019201",
+      "resourceId": "1019201",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Toma",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1024921",
+      "resourceId": "1024921",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Métal Cooler",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1026281",
+      "resourceId": "1026281",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta Super Saiyan",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1027181",
+      "resourceId": "1027181",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Mamba",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1027371",
+      "resourceId": "1027371",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Mai (futur)",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1027711",
+      "resourceId": "1027711",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegetto Super Saiyan 4 ultra puissance max - Limites brisées (Xeno)",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1027901",
+      "resourceId": "1027901",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Fû roi sombre",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1028551",
+      "resourceId": "1028551",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Beerus (chemise de nuit)",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1028921",
+      "resourceId": "1028921",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku (enfant) & Krillin (enfant) \n& Bulma (enfant)",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1029141",
+      "resourceId": "1029141",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Kamesennin",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1029361",
+      "resourceId": "1029361",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan & Son Gohan Super Saiyan (enfant) & \nTrunks Super Saiyan (jeune)",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1029621",
+      "resourceId": "1029621",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Videl",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1029851",
+      "resourceId": "1029851",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Freezer (forme finale)/Cooler (forme finale)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1030041",
+      "resourceId": "1030041",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Piccolo & Son Gohan (petit)",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1030211",
+      "resourceId": "1030211",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goten (petit) & Hire Dragon Jr",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1030571",
+      "resourceId": "1030571",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta Super Saiyan divin SS évolué",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1030831",
+      "resourceId": "1030831",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Beerus",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1031081",
+      "resourceId": "1031081",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku (enfant)",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1031361",
+      "resourceId": "1031361",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Chaozu",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031621",
+      "resourceId": "1031621",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Spopovitch",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031791",
+      "resourceId": "1031791",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [INT]",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032051",
+      "resourceId": "1032051",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Trunks possédé (GT)",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032411",
+      "resourceId": "1032411",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Kaïo Shin (Mini) (DAIMA)",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1032551",
+      "resourceId": "1032551",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan 4 (DAIMA)",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1032691",
+      "resourceId": "1032691",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Majin Duu",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032851",
+      "resourceId": "1032851",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Majin Kuu",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1033551",
+      "resourceId": "1033551",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta + Nappa",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1034071",
+      "resourceId": "1034071",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan Super Saiyan (enfant)",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1034381",
+      "resourceId": "1034381",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Cell Max",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1034611",
+      "resourceId": "1034611",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Cell Junior (AGI)",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "2000810",
+      "resourceId": "2000810",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Golden Freezer",
+      "rarity": "SSR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1020891",
+      "resourceId": "1020891",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Majin Salsa",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1025771",
+      "resourceId": "1025771",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku (GT) & Vegeta Super Saiyan 4",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1026131",
+      "resourceId": "1026131",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan (petit)",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1026311",
+      "resourceId": "1026311",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Bulma (enfant)",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1026791",
+      "resourceId": "1026791",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Daïzu & Cacao",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1027191",
+      "resourceId": "1027191",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Piccolo Junior",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1027731",
+      "resourceId": "1027731",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Broly Super Saiyan 4 ultra puissance max - Limites brisées",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1028321",
+      "resourceId": "1028321",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan (Beast)",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1028571",
+      "resourceId": "1028571",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Freezer (1re forme)",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1028761",
+      "resourceId": "1028761",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Catopesra",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1028961",
+      "resourceId": "1028961",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Cell Max",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029161",
+      "resourceId": "1029161",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Bulma (lapin)",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1029401",
+      "resourceId": "1029401",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Broly",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029641",
+      "resourceId": "1029641",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Paragus",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1030061",
+      "resourceId": "1030061",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Krillin",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1030221",
+      "resourceId": "1030221",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan (petit)",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1030611",
+      "resourceId": "1030611",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Trunks (petit) + Son Goten (petit)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1030921",
+      "resourceId": "1030921",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "C-18",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1031101",
+      "resourceId": "1031101",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Chichi (enfant)",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1031391",
+      "resourceId": "1031391",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan divin SS + Vegeta Super Saiyan divin SS",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1031641",
+      "resourceId": "1031641",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Lanfan",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1031801",
+      "resourceId": "1031801",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [PUI]",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032071",
+      "resourceId": "1032071",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "C-16",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032241",
+      "resourceId": "1032241",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Yamcha (ange) & Princesse Hébi",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1032431",
+      "resourceId": "1032431",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Glorio",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1032581",
+      "resourceId": "1032581",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta Super Saiyan 3 (DAIMA)",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1032711",
+      "resourceId": "1032711",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Lude",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032881",
+      "resourceId": "1032881",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta Super Saiyan 4 + Son Goku Super Saiyan 4",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1033591",
+      "resourceId": "1033591",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta Super Saiyan divin (Ultra Super méchant)",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1033821",
+      "resourceId": "1033821",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan divin",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1034091",
+      "resourceId": "1034091",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Trunks Super Saiyan (futur)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1034391",
+      "resourceId": "1034391",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Saibaiman",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1034621",
+      "resourceId": "1034621",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Cell Junior (TEC)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "2000820",
+      "resourceId": "2000820",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Golden Freezer",
+      "rarity": "SSR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1015451",
+      "resourceId": "1015451",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Métal Cooler",
+      "rarity": "SSR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1016581",
+      "resourceId": "1016581",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku (GT)",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1021311",
+      "resourceId": "1021311",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Tenshinhan",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1026161",
+      "resourceId": "1026161",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1026581",
+      "resourceId": "1026581",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Krillin",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1027041",
+      "resourceId": "1027041",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Oméga Shenron",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1027431",
+      "resourceId": "1027431",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "C-17 et C-18",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1027921",
+      "resourceId": "1027921",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Janemba (modifié)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1028591",
+      "resourceId": "1028591",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Dodoria",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029181",
+      "resourceId": "1029181",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Cocotte",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1029441",
+      "resourceId": "1029441",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Broly Super Saiyan Légendaire",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029671",
+      "resourceId": "1029671",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Trunks Super Saiyan (petit)",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1029891",
+      "resourceId": "1029891",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Fû (enfant) (Dogidogi absorbé)",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1030081",
+      "resourceId": "1030081",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Yamcha",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1030311",
+      "resourceId": "1030311",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Krillin (enfant)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1030641",
+      "resourceId": "1030641",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Glorio",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1030941",
+      "resourceId": "1030941",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Cell (forme parfaite)",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031121",
+      "resourceId": "1031121",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Hit",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031431",
+      "resourceId": "1031431",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku Black (Super Saiyan Rosé) + Zamasu",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031691",
+      "resourceId": "1031691",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Videl",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1031811",
+      "resourceId": "1031811",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [END]",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032091",
+      "resourceId": "1032091",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "C-17",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1032261",
+      "resourceId": "1032261",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan 4 (Mini) (DAIMA)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1032611",
+      "resourceId": "1032611",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1032731",
+      "resourceId": "1032731",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Tamagami Numéro Deux",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1032921",
+      "resourceId": "1032921",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku (Signes de l'Ultra Instinct) + Vegeta Super Saiyan divin SS évolué",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1033621",
+      "resourceId": "1033621",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Trunks (Xeno)",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1033841",
+      "resourceId": "1033841",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Armée de Métal Cooler",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1034121",
+      "resourceId": "1034121",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Cell Parfait",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1034411",
+      "resourceId": "1034411",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Panzy",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1034631",
+      "resourceId": "1034631",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Cell Junior (INT)",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "2000830",
+      "resourceId": "2000830",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Golden Freezer",
+      "rarity": "SSR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1021101",
+      "resourceId": "1021101",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan (grand-père) & Pan (GT)",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1026611",
+      "resourceId": "1026611",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Bulma (enfant)",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1027461",
+      "resourceId": "1027461",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Ribrianne & Kakunsa & Rosie",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1027781",
+      "resourceId": "1027781",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta Super Saiyan divin SS (Berserker contrôlé)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1027941",
+      "resourceId": "1027941",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Oolong & Lunch",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1028371",
+      "resourceId": "1028371",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Gamma 1 & Gamma 2/Gamma 1",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1028601",
+      "resourceId": "1028601",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Freezer (1re forme)",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029201",
+      "resourceId": "1029201",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Mai",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029471",
+      "resourceId": "1029471",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan Super Saiyan (jeune)",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1029701",
+      "resourceId": "1029701",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan (petit)/Piccolo",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1029911",
+      "resourceId": "1029911",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Aeos",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1030101",
+      "resourceId": "1030101",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Tenshinhan",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1030341",
+      "resourceId": "1030341",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan 3 (GT) (gorille doré)",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1030661",
+      "resourceId": "1030661",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan (Mini) (DAIMA)",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1030971",
+      "resourceId": "1030971",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Paikuhan",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1031181",
+      "resourceId": "1031181",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan divin SS (Kaioken)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Super"
+    },
+    {
+      "id": "1031471",
+      "resourceId": "1031471",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Gogeta Super Saiyan 4",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1031721",
+      "resourceId": "1031721",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Golden Freezer + Gogeta",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031821",
+      "resourceId": "1031821",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Suu Shenron",
+      "rarity": "LR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032121",
+      "resourceId": "1032121",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan Super Saiyan (futur)/\nTrunks Super Saiyan (enfant) (futur)",
+      "rarity": "LR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1032281",
+      "resourceId": "1032281",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Piccolo (Mini) (DAIMA)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1032461",
+      "resourceId": "1032461",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Super Garlic Jr.",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032621",
+      "resourceId": "1032621",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032741",
+      "resourceId": "1032741",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Tamagami Numéro Trois",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1032961",
+      "resourceId": "1032961",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Lezick",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1033641",
+      "resourceId": "1033641",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Towa & Mira",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1033871",
+      "resourceId": "1033871",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Roi Cold",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1034221",
+      "resourceId": "1034221",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Beerus",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1034431",
+      "resourceId": "1034431",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Dr Arinsu",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1034641",
+      "resourceId": "1034641",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Cell Junior (PUI)",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "2000840",
+      "resourceId": "2000840",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Golden Freezer",
+      "rarity": "SSR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1015691",
+      "resourceId": "1015691",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Métal Cooler (TEC)",
+      "rarity": "SSR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1019371",
+      "resourceId": "1019371",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Boo (athlétique)",
+      "rarity": "UR",
+      "type": "AGI",
+      "class": "Super"
+    },
+    {
+      "id": "1026511",
+      "resourceId": "1026511",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Frost (forme finale)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1027471",
+      "resourceId": "1027471",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Cell (forme parfaite) (GT) & \nFreezer (forme finale) (GT)",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1027621",
+      "resourceId": "1027621",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan 3",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1027801",
+      "resourceId": "1027801",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Towa",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1028811",
+      "resourceId": "1028811",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Boo",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029021",
+      "resourceId": "1029021",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Dyspo",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Super"
+    },
+    {
+      "id": "1029271",
+      "resourceId": "1029271",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Bio Broly",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029731",
+      "resourceId": "1029731",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Slug",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1029931",
+      "resourceId": "1029931",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Demigra roi sombre (pouvoir temporel libéré)",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1030121",
+      "resourceId": "1030121",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Chaozu",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1030391",
+      "resourceId": "1030391",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Gohan Super Saiyan 2 (enfant)",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1031221",
+      "resourceId": "1031221",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Caulifla Super Saiyan 2 + Kale Super Saiyan 2",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1031501",
+      "resourceId": "1031501",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Oméga Shenron",
+      "rarity": "LR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1031751",
+      "resourceId": "1031751",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Vegeta",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1031921",
+      "resourceId": "1031921",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Broly (furieux) ",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032161",
+      "resourceId": "1032161",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [TEC]",
+      "rarity": "UR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032311",
+      "resourceId": "1032311",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Gomah - Troisième Œil",
+      "rarity": "LR",
+      "type": "AGI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032631",
+      "resourceId": "1032631",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Piccolo Junior (forme géante)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1032981",
+      "resourceId": "1032981",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Yakon",
+      "rarity": "UR",
+      "type": "PUI",
+      "class": "Extrême"
+    },
+    {
+      "id": "1033661",
+      "resourceId": "1033661",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Jiren (pleine puissance) (Ultra Super méchant)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "1033941",
+      "resourceId": "1033941",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Thalès",
+      "rarity": "LR",
+      "type": "TEC",
+      "class": "Extrême"
+    },
+    {
+      "id": "1034241",
+      "resourceId": "1034241",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Piccolo (Armée du Ruban Rouge)",
+      "rarity": "UR",
+      "type": "INT",
+      "class": "Super"
+    },
+    {
+      "id": "1034461",
+      "resourceId": "1034461",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Son Goku Super Saiyan divin",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Super"
+    },
+    {
+      "id": "1034651",
+      "resourceId": "1034651",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Cell Junior (END)",
+      "rarity": "UR",
+      "type": "END",
+      "class": "Extrême"
+    },
+    {
+      "id": "2000850",
+      "resourceId": "2000850",
+      "state": "missing",
+      "missing": [
+        "background",
+        "character",
+        "effect",
+        "piece",
+        "circle"
+      ],
+      "error": null,
+      "name": "Golden Freezer",
+      "rarity": "SSR",
+      "type": "AGI",
+      "class": "Extrême"
+    }
+  ]
+}

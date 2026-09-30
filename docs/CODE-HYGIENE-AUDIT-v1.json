@@ -1,8 +1,6 @@
 {
-  "functions": 107,
+  "functions": 105,
   "singleReferenceCandidates": [
-    "awakeningChainFor",
-    "imageAuditSummary",
     "restoreDeletedCards"
   ],
   "obsoletePatternHits": {

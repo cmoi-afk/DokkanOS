@@ -73,7 +73,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: priority-retry-queue
-          path: .
+          path: docs
       - name: Consolidate retry assets and reports
         run: |
           set -euo pipefail
@@ -87,7 +87,10 @@ jobs:
         run: |
           git config user.name "dokkanos-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/FULL-CARD-ASSET-RETRY-PRIORITY-v1.json docs/FULL-CARD-ASSET-DEFERRED-v1.json docs/FULL-CARD-ASSET-RETRY-RESULT-v1-shard-*.json assets/card-source || true
+          test -f docs/FULL-CARD-ASSET-RETRY-PRIORITY-v1.json
+          test -f docs/FULL-CARD-ASSET-DEFERRED-v1.json
+          test "$(find docs -maxdepth 1 -name 'FULL-CARD-ASSET-RETRY-RESULT-v1-shard-*.json' | wc -l)" -eq 8
+          git add docs/FULL-CARD-ASSET-RETRY-PRIORITY-v1.json docs/FULL-CARD-ASSET-DEFERRED-v1.json docs/FULL-CARD-ASSET-RETRY-RESULT-v1-shard-*.json assets/card-source
           git diff --cached --quiet && exit 0
           git commit -m "Recover priority missing card artwork"
           git pull --rebase origin audit-fr-images-v1

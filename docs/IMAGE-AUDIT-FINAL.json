@@ -1,7 +1,7 @@
 {
   "catalogSource": "catalog-v1.draft.json",
-  "catalogCards": 1904,
-  "imagesChecked": 1904,
+  "catalogCards": 1906,
+  "imagesChecked": 1906,
   "emptyBeforeAudit": [],
   "stillMissing": [],
   "brokenImages": [
@@ -59,11 +59,6 @@
       "id": "1021311",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1021311_thumb/card_1021311_thumb.png",
       "reason": "HTTP Error 404: Not Found"
-    },
-    {
-      "id": "1024921",
-      "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1024920_thumb/card_1024920_thumb.png",
-      "reason": "The read operation timed out"
     },
     {
       "id": "1025771",
@@ -203,7 +198,7 @@
     {
       "id": "1027621",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1027621_thumb/card_1027621_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1027681",
@@ -278,7 +273,7 @@
     {
       "id": "1028231",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1028231_thumb/card_1028231_thumb.png",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 404: Not Found"
     },
     {
       "id": "1028321",
@@ -753,7 +748,7 @@
     {
       "id": "1031541",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1031541_thumb/card_1031541_thumb.png",
-      "reason": "HTTP Error 404: Not Found"
+      "reason": "<urlopen error [Errno 104] Connection reset by peer>"
     },
     {
       "id": "1031591",
@@ -1119,6 +1114,16 @@
       "id": "1034121",
       "url": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1034121_thumb/card_1034121_thumb.png",
       "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "1034150",
+      "url": "assets/cards/1034150.png",
+      "reason": "fichier local absent"
+    },
+    {
+      "id": "1034200",
+      "url": "assets/cards/1034200.png",
+      "reason": "fichier local absent"
     },
     {
       "id": "1034221",

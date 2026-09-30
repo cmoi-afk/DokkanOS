@@ -1,10 +1,10 @@
 {
   "catalogSource": "catalog-v1.draft.json",
-  "catalogCards": 1904,
-  "uniqueCardIds": 1904,
+  "catalogCards": 1906,
+  "uniqueCardIds": 1906,
   "numericAssetIds": 1851,
   "directAssetMatches": 1664,
-  "missingDirectAssets": 240,
+  "missingDirectAssets": 242,
   "duplicateBinaryGroups": 9,
   "missing": [
     {
@@ -2004,6 +2004,24 @@
       "hasDirectLocalAsset": false,
       "resourceId": null,
       "image": "https://www.dbz-dokkanbattle.com/img/character/thumb/card_1034121_thumb/card_1034121_thumb.png"
+    },
+    {
+      "id": "1034150",
+      "name": "Boo (petit)",
+      "rarity": "LR",
+      "localAssets": [],
+      "hasDirectLocalAsset": false,
+      "resourceId": null,
+      "image": "assets/cards/1034150.png"
+    },
+    {
+      "id": "1034200",
+      "name": "Son Goku Super Saiyan 3",
+      "rarity": "LR",
+      "localAssets": [],
+      "hasDirectLocalAsset": false,
+      "resourceId": null,
+      "image": "assets/cards/1034200.png"
     },
     {
       "id": "1034221",

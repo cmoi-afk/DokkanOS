@@ -32,11 +32,57 @@ jobs:
           SHARD: ${{ matrix.shard }}
           SHARDS: 8
         run: python tools/acquire_full_card_assets_v1.py
-      - name: Commit acquisition report and assets
+      - name: Stage shard result
         run: |
+          mkdir -p shard-output/docs shard-output/assets
+          cp docs/FULL-CARD-RENDER-MANIFEST-v1.json shard-output/docs/
+          cp docs/FULL-CARD-ASSET-ACQUISITION-v2-shard-${{ matrix.shard }}.json shard-output/docs/
+          if [ -d assets/card-source ]; then
+            mkdir -p shard-output/assets/card-source
+            cp -a assets/card-source/. shard-output/assets/card-source/
+          fi
+      - name: Upload shard result
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-card-shard-${{ matrix.shard }}
+          path: shard-output/
+          if-no-files-found: error
+          retention-days: 1
+
+  consolidate:
+    needs: migrate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Download all shard results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: full-card-shard-*
+          path: shard-results
+      - name: Consolidate shard results
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          reports=(shard-results/full-card-shard-*/docs/FULL-CARD-ASSET-ACQUISITION-v2-shard-*.json)
+          if [ "${#reports[@]}" -ne 8 ]; then
+            echo "Expected 8 shard reports, found ${#reports[@]}"
+            exit 1
+          fi
+          mkdir -p docs assets/card-source
+          manifest=(shard-results/full-card-shard-*/docs/FULL-CARD-RENDER-MANIFEST-v1.json)
+          cp "${manifest[0]}" docs/FULL-CARD-RENDER-MANIFEST-v1.json
+          for report in "${reports[@]}"; do cp "$report" docs/; done
+          for dir in shard-results/full-card-shard-*/assets/card-source; do
+            [ -d "$dir" ] && cp -a "$dir"/. assets/card-source/
+          done
+      - name: Commit consolidated reports and assets
+        run: |
+          set -euo pipefail
           git config user.name "dokkanos-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/FULL-CARD-RENDER-MANIFEST-v1.json docs/FULL-CARD-ASSET-ACQUISITION-v2-shard-${{ matrix.shard }}.json assets/card-source || true
+          git add docs/FULL-CARD-RENDER-MANIFEST-v1.json docs/FULL-CARD-ASSET-ACQUISITION-v2-shard-*.json assets/card-source || true
           git diff --cached --quiet && exit 0
           git commit -m "Acquire full-card source assets"
           git pull --rebase origin audit-fr-images-v1

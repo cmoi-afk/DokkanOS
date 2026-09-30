@@ -3275,8 +3275,8 @@
       "nameLocale": "source",
       "titleLocale": "source",
       "resourceId": "1004650",
-      "awakeningStatus": "TUR",
-      "awakeningStatusProof": "rarity"
+      "awakeningStatus": "Super ZTUR",
+      "awakeningStatusProof": "external-exact-id"
     },
     {
       "id": "1004690",
@@ -20357,8 +20357,8 @@
       "nameLocale": "source",
       "titleLocale": "source",
       "resourceId": "1019490",
-      "awakeningStatus": "TUR",
-      "awakeningStatusProof": "rarity"
+      "awakeningStatus": "ZTUR",
+      "awakeningStatusProof": "external-exact-id"
     },
     {
       "id": "1019520",
@@ -21047,8 +21047,8 @@
       "nameLocale": "source",
       "titleLocale": "source",
       "resourceId": "1019990",
-      "awakeningStatus": "LR",
-      "awakeningStatusProof": "rarity"
+      "awakeningStatus": "ZLR",
+      "awakeningStatusProof": "external-exact-id"
     },
     {
       "id": "1020011",
@@ -23623,8 +23623,8 @@
       "nameLocale": "source",
       "titleLocale": "source",
       "resourceId": "1021850",
-      "awakeningStatus": "TUR",
-      "awakeningStatusProof": "rarity"
+      "awakeningStatus": "ZTUR",
+      "awakeningStatusProof": "external-exact-id"
     },
     {
       "id": "1021871",
@@ -25586,8 +25586,8 @@
       "nameLocale": "source",
       "titleLocale": "source",
       "resourceId": "1023240",
-      "awakeningStatus": "TUR",
-      "awakeningStatusProof": "rarity"
+      "awakeningStatus": "ZTUR",
+      "awakeningStatusProof": "external-exact-id"
     },
     {
       "id": "1023261",
@@ -29369,8 +29369,8 @@
       },
       "nameLocale": "source",
       "titleLocale": "source",
-      "awakeningStatus": "LR",
-      "awakeningStatusProof": "rarity"
+      "awakeningStatus": "ZLR",
+      "awakeningStatusProof": "external-exact-id"
     },
     {
       "id": "1025801",

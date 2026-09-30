@@ -3,13 +3,14 @@
   "counts": {
     "SR": 144,
     "SSR": 251,
-    "ZTUR": 220,
-    "TUR": 1007,
-    "LR": 236,
-    "ZLR": 46
+    "ZTUR": 223,
+    "TUR": 1003,
+    "Super ZTUR": 1,
+    "LR": 234,
+    "ZLR": 48
   },
-  "explicitOrStructured": 661,
-  "needsEzaVerification": 1243,
+  "explicitOrStructured": 667,
+  "needsEzaVerification": 1237,
   "items": [
     {
       "id": "1003211",
@@ -74,12 +75,6 @@
     {
       "id": "1004650",
       "name": "Perfect Cell",
-      "status": "TUR",
-      "reason": "EZA/Super EZA non prouve"
-    },
-    {
-      "id": "1004651",
-      "name": "Cell Parfait",
       "status": "TUR",
       "reason": "EZA/Super EZA non prouve"
     },
@@ -3384,12 +3379,6 @@
       "reason": "EZA/Super EZA non prouve"
     },
     {
-      "id": "1019491",
-      "name": "Great Saiyaman 2 / 1",
-      "status": "TUR",
-      "reason": "EZA/Super EZA non prouve"
-    },
-    {
       "id": "1019520",
       "name": "Krilin",
       "status": "TUR",
@@ -3566,12 +3555,6 @@
     {
       "id": "1019990",
       "name": "Super Saiyan God SS Goku (Kaioken) & Super Saiyan God SS Evolved Vegeta",
-      "status": "LR",
-      "reason": "EZA/Super EZA non prouve"
-    },
-    {
-      "id": "1019991",
-      "name": "Son Goku Super Saiyan divin SS (Kaioken) \n& Vegeta Super Saiyan divin SS évolué",
       "status": "LR",
       "reason": "EZA/Super EZA non prouve"
     },
@@ -4212,12 +4195,6 @@
       "reason": "EZA/Super EZA non prouve"
     },
     {
-      "id": "1021851",
-      "name": "Great Saiyaman & Videl",
-      "status": "TUR",
-      "reason": "EZA/Super EZA non prouve"
-    },
-    {
       "id": "1021871",
       "name": "Krillin",
       "status": "TUR",
@@ -4712,12 +4689,6 @@
     {
       "id": "1023240",
       "name": "Super Saiyan God Trunks (Xeno)",
-      "status": "TUR",
-      "reason": "EZA/Super EZA non prouve"
-    },
-    {
-      "id": "1023241",
-      "name": "Trunks Super Saiyan divin (Xeno)",
       "status": "TUR",
       "reason": "EZA/Super EZA non prouve"
     },
@@ -5624,12 +5595,6 @@
     {
       "id": "1025731",
       "name": "Son Goku Super Saiyan 3 & Vegeta Super Saiyan 2",
-      "status": "LR",
-      "reason": "EZA/Super EZA non prouve"
-    },
-    {
-      "id": "1025771",
-      "name": "Son Goku (GT) & Vegeta Super Saiyan 4",
       "status": "LR",
       "reason": "EZA/Super EZA non prouve"
     },

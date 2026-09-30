@@ -28,10 +28,25 @@ for cid in ["1003210","1003211","1010070","1034201"]:
      try:
       bundle=fetch(script if script.startswith("http") else "https://glbfr.dokkaninfo.com"+script)
       snippets=[]
-      for pattern in ["card_growth_coef","card_growth_lv","hp_max"]:
+      for pattern in ["card_growth_coef","card_growth_lv","hp_max","growthCoef","0.4839"]:
        i=bundle.find(pattern)
        if i>=0:snippets.append(bundle[max(0,i-400):i+1200])
       report["cards"][cid]["statFormulaSnippets"]=snippets
+      chunks=re.findall(r'"\\./([^"]+\\.js)"',bundle)
+      chosen=[x for x in chunks if "card" in x.lower() or "stat" in x.lower()]
+      report["cards"][cid]["statChunks"]=chosen
+      child_snippets=[]
+      for chunk in list(dict.fromkeys(chosen))[:10]:
+       try:
+        child=fetch("https://glbfr.dokkaninfo.com/build/assets/"+chunk)
+        for pattern in ["hp_max","Math.pow","cardGrowth","growth","0.4839"]:
+         start=0
+         for unused in range(3):
+          i=child.find(pattern,start)
+          if i<0:break
+          child_snippets.append({"chunk":chunk,"pattern":pattern,"code":child[max(0,i-300):i+1100]});start=i+len(pattern)
+       except Exception:pass
+      report["cards"][cid]["childStatSnippets"]=child_snippets
      except Exception as e:report["cards"][cid]["scriptError"]=str(e)
   step=d.get("max_eza_step")
   if step:

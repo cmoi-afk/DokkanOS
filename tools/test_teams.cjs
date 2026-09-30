@@ -8,6 +8,7 @@ assert.equal(E.coverage({leader:''},a).unknown,true);
 assert.equal(E.links({name:'Goku',links:['Ki']},{name:'Goku',links:['Ki']}).length,0);
 const support={id:'s',passive:'*Effets de base*\n- ATT et DÉF +150 %\n*Si au moins 2 alliés de catégorie "A" sont présents*\n- Taux de réduction des dégâts +50 %'};
 assert.equal(E.passive(support,[support,a,b]).effects[1].state,'missing');assert.equal(E.passive(support,[support,a,{...a,id:'a2'}]).effects[1].state,'active');assert.equal(E.passive(support,[support,a,b]).reduction,0);assert.equal(E.passive(support,[support,a,{...a,id:'a2'}]).reduction,50);
+assert.equal(E.passive({id:'s',passive:'*Si un allié de catégorie \"A\" est dans le même tour*\n- Taux de réduction des dégâts +50 %'},[a]).effects[0].state,'conditional');
 const dodge={passive:'*Effets de base*\n- Grandes chances d’esquive'};assert(!E.passive(dodge,[],{disableDodge:true}).roles.includes('Esquive'));
 const mission={requirements:[{kind:'category',value:'A',count:2,includeFriend:false}]};assert.equal(E.constraints([a,b],mission,a).rows[0].count,1);
 const pool=Array.from({length:9},(_,i)=>({id:String(i),candidateId:String(i),boxId:String(i),name:'Card '+i,rarity:'UR',type:['AGI','TEC','INT','PUI','END'][i%5],categories:['A'],links:['Link '+i%2],passive:'*Effets de base*\n- Garde activée contre toutes les attaques\n- ATT et DÉF +150 %'}));

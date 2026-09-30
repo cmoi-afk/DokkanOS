@@ -1,0 +1,20 @@
+{
+  "shards": 8,
+  "reportedRows": 1904,
+  "uniqueCards": 1904,
+  "completeSourceSets": 1646,
+  "needsRetry": 258,
+  "states": {
+    "complete-source-set": 1646,
+    "missing": 258
+  },
+  "missingAssetKinds": {
+    "background": 258,
+    "character": 258,
+    "circle": 258,
+    "effect": 258,
+    "piece": 258
+  },
+  "duplicateIds": [],
+  "completionPercent": 86.45
+}

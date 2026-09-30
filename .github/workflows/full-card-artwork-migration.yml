@@ -77,12 +77,16 @@ jobs:
           for dir in shard-results/full-card-shard-*/assets/card-source; do
             [ -d "$dir" ] && cp -a "$dir"/. assets/card-source/
           done
+      - name: Build migration summary and retry queue
+        run: python tools/consolidate_full_card_assets_v1.py
+      - name: Print migration summary
+        run: cat docs/FULL-CARD-ASSET-SUMMARY-v1.json
       - name: Commit consolidated reports and assets
         run: |
           set -euo pipefail
           git config user.name "dokkanos-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/FULL-CARD-RENDER-MANIFEST-v1.json docs/FULL-CARD-ASSET-ACQUISITION-v2-shard-*.json assets/card-source || true
+          git add docs/FULL-CARD-RENDER-MANIFEST-v1.json docs/FULL-CARD-ASSET-ACQUISITION-v2-shard-*.json docs/FULL-CARD-ASSET-SUMMARY-v1.json docs/FULL-CARD-ASSET-RETRY-v1.json assets/card-source || true
           git diff --cached --quiet && exit 0
           git commit -m "Acquire full-card source assets"
           git pull --rebase origin audit-fr-images-v1

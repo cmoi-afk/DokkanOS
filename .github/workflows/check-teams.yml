@@ -1,9 +1,9 @@
 name: Check teams and missions
 on:
   push:
-    paths: [team-engine.js, teams.js, events.json, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
+    paths: [index.html, sw.js, app.js, tools/test_app_dom.cjs, tools/test_sw.cjs, team-engine.js, teams.js, events.json, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
   pull_request:
-    paths: [team-engine.js, teams.js, events.json, index.html, sw.js, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
+    paths: [app.js, tools/test_app_dom.cjs, tools/test_sw.cjs, team-engine.js, teams.js, events.json, index.html, sw.js, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
 permissions:
   contents: read
 jobs:
@@ -17,4 +17,7 @@ jobs:
       - run: node --check team-engine.js && node --check teams.js && node --check app.js
       - run: node tools/test_teams.cjs
       - run: node tools/test_v071.cjs
+      - run: node tools/test_sw.cjs
+      - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom@0.18.12
+      - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_app_dom.cjs
       - run: python -c "import json; from tools.import_events import validate; print(validate(json.load(open('events.json'))))"

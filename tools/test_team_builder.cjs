@@ -1,0 +1,40 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),E=require('../team-engine');
+const cards=JSON.parse(fs.readFileSync('recent-cards.json')).cards,[goku,kid,south]=cards;
+for(const c of cards){assert(/^\d{7}$/.test(c.id));assert(c.image.includes('card_'+c.resourceId+'_thumb'));assert(c.source.url.endsWith(c.id));assert.equal(c.categoriesComplete,false);assert.equal(c.links.length,7);assert(c.teamRules.interactions.length);}
+assert.equal(E.coverage(goku,{categories:['Dernier recours']}).atk,220);
+assert.equal(E.coverage(kid,{categories:['Majin Power','Demonic Power']}).hp,250);
+assert.equal(E.coverage(kid,{categories:['Saga de Boo']}).atk,170);
+assert.equal(E.coverage(south,{categories:['Saga de Boo'],class:'Extrême'}).atk,170);
+assert.equal(E.coverage(south,{categories:['Saga de Boo'],class:'Super'}).atk,140);
+assert.deepEqual(E.links({name:'A',links:['Race Saiyan']},{name:'B',links:['Race guerrière Saiyan']}),['Race Saiyan']);
+const unit=(id,categories=['Saga de Boo'],other={})=>({id,boxId:id,name:id,categories,class:'Super',type:'INT',rarity:'UR',links:['Combat acharné'],passive:'*Effets de base*\nATT et DÉF +150 %',...other});
+const ownGoku={...goku,boxId:goku.id},vegeta=unit('v',undefined,{name:'Vegeta Super Saiyan'}),baby=unit('b',undefined,{name:'Baby Vegeta'}),boo=unit('boo',undefined,{name:'Boo (super)'});
+const interactions=(team,rotation)=>E.interactionRows(ownGoku,team,rotation);
+assert.equal(interactions([ownGoku,baby,boo],[ownGoku,baby,boo]).find(x=>x.rule.id==='joint-vegeta').state,'missing');
+assert.equal(interactions([ownGoku,vegeta,boo],[ownGoku,vegeta,boo]).find(x=>x.rule.id==='joint-vegeta').state,'available');
+assert.equal(interactions([ownGoku,vegeta,boo]).find(x=>x.rule.id==='joint-vegeta').state,'possible');
+const mixed=[ownGoku,unit('last',['Dernier atout']),unit('gold',['Combattant doré'])];
+assert.equal(interactions(mixed,mixed)[0].state,'missing');
+assert.equal(interactions([ownGoku,vegeta,boo],[ownGoku,vegeta,boo])[0].state,'available');
+const sworn=Array.from({length:5},(_,i)=>unit('s'+i,['Ennemis jurés'],{class:'Extrême'})),ownKid={...kid,boxId:kid.id},friend={...kid,boxId:'friend'};
+assert.equal(E.interactionRows(ownKid,[ownKid,...sworn]).find(x=>x.rule.id==='all-sworn').state,'unknown');
+assert.equal(E.interactionRows(ownKid,[ownKid,...sworn,friend]).find(x=>x.rule.id==='all-sworn').state,'available');
+assert.equal(E.interactionRows(ownKid,[ownKid,...sworn,unit('wrong')]).find(x=>x.rule.id==='all-sworn').state,'missing');
+assert.equal(E.supports(ownKid,[ownKid,...sworn,friend]).length,6);assert.equal(E.supports(ownKid,[ownKid,...sworn,unit('wrong')]).length,0);
+assert(E.passive(kid,[]).roles.includes('Soin'));assert.equal(E.passive(kid,[]).healing,20);
+const targets=[{...south,boxId:south.id},unit('ext',['Pouvoir de Majin'],{class:'Extrême'}),unit('super',['Pouvoir de Majin'])];
+const supports=E.supports(targets[0],targets);assert.equal(supports.length,2);assert(supports.every(x=>x.target.id==='ext'));assert.equal(supports.find(x=>x.rule.crit).rule.crit,10);
+const equal=[goku,...Array.from({length:10},(_,i)=>unit('c'+i,undefined,{links:i<5?goku.links:['Isolé '+i]}))];
+const linked=E.build(equal,goku,{context:{combat:'links'},excluded:['c0']});assert.equal(linked.team.length,6);assert(!linked.team.some(c=>c.id==='c0'));assert.equal(linked.team.filter(c=>/^c[1-4]$/.test(c.id)).length,4);
+assert(linked.alternatives.every(t=>t[0].id===goku.id));
+const locked=equal.at(-1),lockedResult=E.build(equal,goku,{locked:[locked],context:{combat:'links'}});assert(lockedResult.alternatives.every(t=>t.some(c=>c.id===locked.id)));
+const rotations=E.rotations([ownGoku,vegeta,boo,...Array.from({length:3},(_,i)=>unit('r'+i))],{...goku,boxId:'friend'});
+const fixed=new Set(rotations.flatMap(r=>[r.a.boxId,r.b.boxId]));assert.equal(fixed.size,4);assert(rotations.every(r=>r.third&&!fixed.has(r.third.boxId)));
+// A duplicate friend is another instance for ally requirements, and still cannot link to its own name.
+const allyRule={...unit('same',['A']),passive:'*Si au moins 1 allié de catégorie "A" est présent*\nATT et DÉF +50 %'};
+assert.equal(E.passive(allyRule,[allyRule,{...allyRule,boxId:'friend'}]).effects[0].state,'active');assert.equal(E.links(allyRule,{...allyRule,boxId:'friend'}).length,0);
+// Execute the real worker protocol, including the mirror friend during leader comparison.
+const worker={};worker.self=worker;worker.importScripts=()=>vm.runInContext(fs.readFileSync('team-engine.js','utf8'),worker);vm.createContext(worker);let message;worker.postMessage=m=>message=m;vm.runInContext(fs.readFileSync('team-worker.js','utf8'),worker);
+const request={pool:equal.slice(0,7),leader:goku,options:{context:{combat:'synergy',friend:'mirror'},known:[],friend:{...goku,boxId:'friend'}}};worker.onmessage({data:request});assert.equal(message.result.team.length,6);assert(!message.error);
+worker.onmessage({data:{...request,compare:true}});assert.equal(message.result.leader.id,goku.id);assert.equal(message.result.friendCover.filter(c=>c.covered).length,6);
+console.log('New card identities, leader bonuses, translated categories/links, actual rotation conditions, joint exclusions, all-seven friend requirement, support targets, excluded cards, link priority, locks, floaters and worker protocol: OK');

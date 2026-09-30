@@ -350,9 +350,11 @@ async function boot(){
   try{META=await fetch('card-meta.json').then(r=>r.ok?r.json():({cards:{}}))}catch(e){META={cards:{}}}
   try{CATALOG=await fetch('catalog.json').then(r=>r.ok?r.json():({cards:[]}))}catch(e){CATALOG={cards:[]}}
   try{OVERLAP=await fetch('overlap-conflicts.json').then(r=>r.ok?r.json():({conflicts:[]}))}catch(e){OVERLAP={conflicts:[]}}
+  try{const extra=await fetch('recent-cards.json').then(r=>r.ok?r.json():null);mergeRecentCards(extra)}catch(e){console.warn('Cartes récentes indisponibles',e)}
   applyMetadata(); restoreEdits(); initAdvancedFilters();
   render(); stats(); renderDuplicates(); renderMissing(); renderInventory(); renderManualOwned(); renderTeam(); renderAnalysis();
 }
+function mergeRecentCards(data){if(!Array.isArray(data?.cards))return;META.cards=META.cards||{};CATALOG.cards=CATALOG.cards||[];for(const c of data.cards){if(!/^\d+$/.test(String(c.id))||!c.name||!['SSR','UR','LR'].includes(c.rarity))continue;const id=String(c.id),old=META.cards[id]||{};META.cards[id]={...c,...old,teamRules:{...c.teamRules,...old.teamRules}};if(!CATALOG.cards.some(x=>String(x.id)===id))CATALOG.cards.unshift({...c,id});}CACHED_FAMILIES=CACHED_FAMILY_BY_ID=null;}
 function localized(m){if(!m)return null;let fr=m.fr||{},off=!!fr._official;return {...m,name:frCardName(fr.name||m.name),title:frTerm(fr.title||m.title),type:fr.type||m.type,class:fr.class||m.class,categories:frList(fr.categories||m.categories),links:frList(fr.links||m.links),leader:fr.leader||m.leader,passiveName:fr.passiveName||m.passiveName,passive:fr.passive||m.passive,superAttack:fr.superAttack||m.superAttack,ultraSuperAttack:fr.ultraSuperAttack||m.ultraSuperAttack,activeName:fr.activeName||m.activeName,active:fr.active||m.active,transformations:fr.transformations||m.transformations,_officialFR:off}}
 function applyMetadata(){DB.cards.forEach(c=>{let m=localized(META.cards?.[String(c.candidateId)]);if(m)Object.assign(c,m);c.name=frCardName(c.name||'');c.title=frTerm(c.title||'');c.categories=frList(c.categories);c.links=frList(c.links)})}
 function confClass(c){return c==='Très forte'?'tf':c==='Forte'?'f':c==='Moyenne'?'m':c==='Validée manuellement'?'manual':'v'}

@@ -411,7 +411,6 @@ function cardImageCandidates(id,preferred){
   ].filter(Boolean))];
 }
 function imageFallback(el,id,preferred){let a=cardImageCandidates(id,preferred),n=Number(el.dataset.fallback||0)+1;el.dataset.fallback=String(n);if(n<a.length){el.src=a[n]}else{el.classList.add('imgfail');reportBrokenImage(id)}}
-function imageAuditSummary(){try{return JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]')}catch(e){return []}}
 function reportBrokenImage(id){if(!id)return;try{let a=JSON.parse(localStorage.getItem('dokkanos-broken-images')||'[]');if(!a.includes(String(id))){a.push(String(id));localStorage.setItem('dokkanos-broken-images',JSON.stringify(a))}}catch(e){}}
 function isPlayableCard(card){
   if(!card)return false;
@@ -474,16 +473,6 @@ function verifyResults(){
     if(String(card.id)===raw)score+=200;if(norm(card.name||'').startsWith(q))score+=40;if(hay.includes(q))score+=20;
     return {card,score};
   }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||String(a.card.name||'').localeCompare(String(b.card.name||''),'fr')).slice(0,80).map(x=>x.card);
-}
-function awakeningChainFor(id){
-  id=String(id||'');if(!id)return [];
-  const byId=new Map((CATALOG.cards||[]).map(x=>[String(x.id||''),x]));
-  let cur=byId.get(id)||META.cards?.[id];if(!cur)return [];
-  let root=cur,guard=new Set([id]);
-  while(root?.awakensFrom&&byId.has(String(root.awakensFrom))&&!guard.has(String(root.awakensFrom))){root=byId.get(String(root.awakensFrom));guard.add(String(root.id||''))}
-  const out=[],seen=new Set();cur=root;
-  while(cur&&!seen.has(String(cur.id||''))){out.push(cur);seen.add(String(cur.id||''));let next=cur.awakensTo?byId.get(String(cur.awakensTo)):null;cur=next}
-  return out;
 }
 function awakeningLabel(card){
   // Ne jamais numéroter des cartes différentes comme une chaîne d'éveil.

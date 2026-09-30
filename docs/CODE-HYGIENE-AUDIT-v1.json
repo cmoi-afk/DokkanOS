@@ -1,0 +1,14 @@
+{
+  "functions": 107,
+  "singleReferenceCandidates": [
+    "awakeningChainFor",
+    "imageAuditSummary",
+    "restoreDeletedCards"
+  ],
+  "obsoletePatternHits": {
+    "numberedAwakeningLabels": false,
+    "implicitSiblingAssetAlias": false,
+    "oldCacheVersion": false
+  },
+  "note": "single-reference functions are candidates only; HTML inline handlers can reference them externally"
+}

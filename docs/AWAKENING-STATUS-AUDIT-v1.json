@@ -1,0 +1,7479 @@
+{
+  "cards": 1904,
+  "counts": {
+    "SR": 144,
+    "SSR": 251,
+    "ZTUR": 219,
+    "TUR": 1008,
+    "LR": 236,
+    "ZLR": 46
+  },
+  "explicitOrStructured": 265,
+  "needsEzaVerification": 1244,
+  "items": [
+    {
+      "id": "1003211",
+      "name": "Son Goku Super Saiyan 3",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1003310",
+      "name": "Buu (Kid)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1003311",
+      "name": "Boo (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1003640",
+      "name": "Métal Cooler (AGI)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1003760",
+      "name": "Perfect Cell",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1003800",
+      "name": "Legendary Super Saiyan Broly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1003801",
+      "name": "Broly Super Saiyan Légendaire ",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1003991",
+      "name": "Son Goku Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1004250",
+      "name": "Frieza (Full Power)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1004251",
+      "name": "Freezer (pleine puissance)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1004650",
+      "name": "Perfect Cell",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1004651",
+      "name": "Cell Parfait",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1004880",
+      "name": "Beerus",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005000",
+      "name": "Buu (Kid)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005030",
+      "name": "Super Saiyan 3 Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005051",
+      "name": "Super Janemba",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005281",
+      "name": "Super Gogeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005301",
+      "name": "Beerus",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005390",
+      "name": "Super Saiyan Gohan (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005441",
+      "name": "Bio Broly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005531",
+      "name": "Son Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005550",
+      "name": "Super Saiyan Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005660",
+      "name": "Super Saiyan Goten (Kid)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005730",
+      "name": "Super Saiyan 3 Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005731",
+      "name": "Vegeta Super Saiyan 3",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005740",
+      "name": "Super Saiyan 3 Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1005801",
+      "name": "C-17 (Hell Fighter)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1006020",
+      "name": "Super Baby 1",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1006211",
+      "name": "Gotenks Super Saiyan 3",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1006330",
+      "name": "Syn Shenron",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1006331",
+      "name": "Li Shenron",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1006520",
+      "name": "Super Baby 2 (Giant Ape)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1006700",
+      "name": "Ultimate Gohan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1006701",
+      "name": "Son Gohan ultime",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1006770",
+      "name": "Super Saiyan Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1006791",
+      "name": "Super Vegetto",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007101",
+      "name": "Hit",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007120",
+      "name": "Majin Buu (Good)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007181",
+      "name": "Super C-17",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007320",
+      "name": "Yamcha",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007340",
+      "name": "Yamcha",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007391",
+      "name": "Golden Freezer",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007461",
+      "name": "Broly Super Saiyan Légendaire",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007470",
+      "name": "Super Saiyan Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007471",
+      "name": "Son Goku Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007610",
+      "name": "Super Saiyan 2 Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007741",
+      "name": "Gotenks Super Saiyan 3 (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007810",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007840",
+      "name": "Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007970",
+      "name": "Demon King Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1007980",
+      "name": "Demon King Piccolo (Elder)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008070",
+      "name": "Android #18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008071",
+      "name": "C-18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008091",
+      "name": "Boo (Son Gohan ultime)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008131",
+      "name": "Boo (Kaïo Shin du Sud)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008290",
+      "name": "Super Saiyan 3 Goku (GT) (Golden Giant Ape)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008420",
+      "name": "Vegito",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008430",
+      "name": "Vegito",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008530",
+      "name": "Super Saiyan Gohan (Future)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008540",
+      "name": "Super Saiyan Gohan (Teen)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008550",
+      "name": "Super Saiyan 2 Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008560",
+      "name": "Super Saiyan 2 Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008571",
+      "name": "Son Goku Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008631",
+      "name": "Son Goku Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008640",
+      "name": "Turles",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008711",
+      "name": "Oméga Shenron",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008740",
+      "name": "Golden Frieza",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008750",
+      "name": "Golden Frieza",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008790",
+      "name": "Androids #17 & #18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008821",
+      "name": "Cell Parfait",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008851",
+      "name": "Goku Black",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008871",
+      "name": "Trunks Super Saiyan (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008890",
+      "name": "Super Saiyan 3 Goku (Angel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008940",
+      "name": "Super Saiyan Goten (Kid)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008960",
+      "name": "Arale Norimaki",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008961",
+      "name": "Aralé Norimaki",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008980",
+      "name": "Arale Norimaki",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1008981",
+      "name": "Aralé Norimaki",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009000",
+      "name": "Arale Norimaki",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009001",
+      "name": "Aralé Norimaki",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009091",
+      "name": "Cooler (forme finale)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009100",
+      "name": "Cooler (Final Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009111",
+      "name": "Cooler",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009131",
+      "name": "Jaco",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009220",
+      "name": "Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009230",
+      "name": "Piccolo",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009241",
+      "name": "Goly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009251",
+      "name": "Pandel",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009260",
+      "name": "Bulpan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009261",
+      "name": "Brapan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009331",
+      "name": "Vegetto Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009351",
+      "name": "Goku Black (Super Saiyan Rosé)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009370",
+      "name": "Frieza (1st Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009380",
+      "name": "Frieza (1st Form)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009381",
+      "name": "Freezer (1re forme)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009431",
+      "name": "Son Goku Super Saiyan 4",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009480",
+      "name": "Great Saiyaman (SS2)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009511",
+      "name": "Zamasu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009520",
+      "name": "Arale Norimaki",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009580",
+      "name": "Super Saiyan Trunks (Future)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009581",
+      "name": "Trunks Super Saiyan (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009590",
+      "name": "Super Saiyan God SS Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009591",
+      "name": "Vegeta Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009620",
+      "name": "Captain Ginyu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009631",
+      "name": "Ginyu (commando)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009641",
+      "name": "Boo (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009660",
+      "name": "Majin Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009701",
+      "name": "Trunks Super Saiyan (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009711",
+      "name": "Vegeta Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009720",
+      "name": "Super Saiyan God SS Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009730",
+      "name": "Super Saiyan God SS Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009740",
+      "name": "Vegeta Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009791",
+      "name": "Zamasu : Fusion",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009830",
+      "name": "Super Saiyan 4 Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009831",
+      "name": "Vegeta Super Saiyan 4",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009860",
+      "name": "Super Saiyan Gotenks",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009880",
+      "name": "Super Saiyan 2 Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009890",
+      "name": "Vegeta Super Saiyan 2",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009900",
+      "name": "Majin Buu (Pure Evil)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009911",
+      "name": "Suu Shenron",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009920",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009950",
+      "name": "Super Saiyan Goku (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009970",
+      "name": "Beerus",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1009980",
+      "name": "Turles",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010001",
+      "name": "Pan (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010021",
+      "name": "Trunks Super Saiyan (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010041",
+      "name": "Freezer (1re forme)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010060",
+      "name": "Super Saiyan 2 Gohan (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010071",
+      "name": "Son Gohan Super Saiyan 2 (enfant)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010160",
+      "name": "Majin Vegeta",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010251",
+      "name": "Son Goku Super Saiyan 3 (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010261",
+      "name": "Son Goku Super Saiyan 3 (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010291",
+      "name": "Le Saiyan masqué",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010300",
+      "name": "Super Saiyan Bardock",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010320",
+      "name": "Super Saiyan 2 Bardock",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010330",
+      "name": "Bulma (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010331",
+      "name": "Bulma (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010360",
+      "name": "Super Saiyan Goku Jr.",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010361",
+      "name": "Son Goku Jr Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010410",
+      "name": "Super Saiyan 2 Gohan (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010430",
+      "name": "Super Saiyan Broly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010440",
+      "name": "Legendary Super Saiyan Broly",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010441",
+      "name": "Broly Super Saiyan Légendaire",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010450",
+      "name": "Pleine puissance Boujack",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010460",
+      "name": "Full Power Boujack",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010490",
+      "name": "Android #18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010501",
+      "name": "Yamcha",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010561",
+      "name": "C-17",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010570",
+      "name": "Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010580",
+      "name": "Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010610",
+      "name": "Goku (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010620",
+      "name": "Arale Norimaki",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010661",
+      "name": "Son Goku Super Saiyan (ange) (Super Kaioken)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010720",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010740",
+      "name": "Super Saiyan God Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010770",
+      "name": "Super Saiyan Trunks (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010801",
+      "name": "Fusion C-13",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010830",
+      "name": "Buu (Super)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010851",
+      "name": "Super Gogeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010871",
+      "name": "Super Janemba",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010890",
+      "name": "Hercule",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010900",
+      "name": "Hercule",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010940",
+      "name": "Paikuhan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010950",
+      "name": "Master Roshi (Max Power)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010970",
+      "name": "Krillin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1010980",
+      "name": "Dabura",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011041",
+      "name": "Paikuhan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011061",
+      "name": "Gotenks Super Saiyan 3",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011130",
+      "name": "Goku Black & Zamasu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011141",
+      "name": "Goku Black (Super Saiyan Rosé) & Zamasu",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011150",
+      "name": "Bardock",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011171",
+      "name": "Broly Super Saiyan 3",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011180",
+      "name": "Super Saiyan 3 Broly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011190",
+      "name": "Trunks Super Saiyan (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011211",
+      "name": "Jackie Chun",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011301",
+      "name": "Gogeta Super Saiyan 4",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011321",
+      "name": "Oméga Shenron",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011340",
+      "name": "Super Saiyan Vegeta Jr.",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011341",
+      "name": "Vegeta Jr Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011350",
+      "name": "Bardock (Giant Ape)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011360",
+      "name": "Fasha (Giant Ape)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011380",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011390",
+      "name": "Super Saiyan 2 Gohan (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011430",
+      "name": "Bulma (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011431",
+      "name": "Bulma (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011440",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011441",
+      "name": "Son Goku Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011460",
+      "name": "Android #18 (Future)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011630",
+      "name": "Mighty Mask",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011641",
+      "name": "Trunks et Son Goten (petits)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011680",
+      "name": "Super Saiyan God SS Vegito",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011681",
+      "name": "Vegetto Super Saiyan divin SS",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011710",
+      "name": "Super Saiyan Trunks (Adolescent)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011721",
+      "name": "Trunks Super Saiyan (jeune)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011781",
+      "name": "Bardock Super Saiyan 3",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011800",
+      "name": "Ultimate Gohan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011801",
+      "name": "Son Gohan ultime",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011850",
+      "name": "Barlot",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011851",
+      "name": "Godock",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1011901",
+      "name": "Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012000",
+      "name": "Majin Buu (Gotenks)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012001",
+      "name": "Boo (Gotenks)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012030",
+      "name": "Golden Frieza (Angel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012031",
+      "name": "Golden Freezer (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012100",
+      "name": "Pan (GT) (Honey)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012120",
+      "name": "Tien & Chiaotzu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012150",
+      "name": "Full Power Boujack",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012161",
+      "name": "Bojack puissance max (guerrier galactique)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012330",
+      "name": "Super Saiyan God SS Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012331",
+      "name": "Son Goku Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012381",
+      "name": "Super Vegetto",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012421",
+      "name": "Tapion (Hildegarn)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012461",
+      "name": "Tapion",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012651",
+      "name": "Vegeta Super Saiyan 2 & Bulma",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012681",
+      "name": "Beerus",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012701",
+      "name": "Raditz",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012721",
+      "name": "Son Goku Super Saiyan 3",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012741",
+      "name": "Vegetto Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012761",
+      "name": "Goku Black (Super Saiyan Rosé)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012771",
+      "name": "Son Goku Super Saiyan 3 (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012780",
+      "name": "Super Saiyan 3 Vegeta (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012781",
+      "name": "Vegeta Super Saiyan 3 (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012890",
+      "name": "Super Saiyan Goku & Super Saiyan Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012900",
+      "name": "Super Saiyan Goku & Super Saiyan Vegeta",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012901",
+      "name": "Son Goku Super Saiyan & Vegeta Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012920",
+      "name": "Super Saiyan Goku (Angel) & \nSuper Saiyan Vegeta (Angel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012930",
+      "name": "Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012931",
+      "name": "Son Goku Super Saiyan (ange) & \nVegeta Super Saiyan (ange)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012961",
+      "name": "Trunks Super Saiyan (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1012991",
+      "name": "Zamasu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013010",
+      "name": "Recoome",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013011",
+      "name": "Reacum",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013031",
+      "name": "Jeese",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013050",
+      "name": "Burter",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013051",
+      "name": "Butta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013071",
+      "name": "Guldo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013090",
+      "name": "Captain Ginyu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013091",
+      "name": "Ginyu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013101",
+      "name": "Ginyu (Son Goku) (commando)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013160",
+      "name": "Gohan (Kid)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013161",
+      "name": "Son Gohan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013211",
+      "name": "Son Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013240",
+      "name": "Tora (Giant Ape)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013250",
+      "name": "Shugesh (Giant Ape)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013260",
+      "name": "Borgos (Giant Ape)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013300",
+      "name": "Boo (super)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013380",
+      "name": "Great Saiyaman 1 & 2",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013410",
+      "name": "Super Saiyan 2 Caulifla",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013411",
+      "name": "Caulifla Super Saiyan 2",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013421",
+      "name": "Kale (Berserker)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013430",
+      "name": "Super Saiyan 2 Kefla",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013431",
+      "name": "Kefla Super Saiyan 2",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013530",
+      "name": "Super Saiyan 2 Cabba",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013540",
+      "name": "Goku (Ultra Instinct -Sign-)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013541",
+      "name": "Son Goku (Signes de l'Ultra Instinct)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013571",
+      "name": "Thalès",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013590",
+      "name": "Super Saiyan God Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013681",
+      "name": "Thalès (gorille)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013711",
+      "name": "Slug (forme géante)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013731",
+      "name": "Son Goku (Kaioken)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013760",
+      "name": "Beerus",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013771",
+      "name": "Beerus & Whis",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013780",
+      "name": "Dragon Ball Heroines",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013811",
+      "name": "C-17",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013831",
+      "name": "Vegeta Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013861",
+      "name": "Son Gohan Super Saiyan (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013870",
+      "name": "Android #18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013871",
+      "name": "C-18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013881",
+      "name": "Toppo (dieu de la destruction)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013911",
+      "name": "Dyspo (mode ultra-vitesse)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013941",
+      "name": "Jiren",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013951",
+      "name": "Ribrianne (forme géante)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1013960",
+      "name": "Jiren (Pleine puissance)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014010",
+      "name": "Bardock",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014021",
+      "name": "Bardock",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014040",
+      "name": "Super Saiyan Trunks (Future)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014051",
+      "name": "Trunks Super Saiyan (futur)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014061",
+      "name": "Brianne de Chateau",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014080",
+      "name": "Trunks (Teen) (Future) & Mai (Future)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014081",
+      "name": "Trunks (jeune) (futur) & Mai (futur)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014110",
+      "name": "Trunks (Kid) & Goten (Kid) & Marron",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014111",
+      "name": "Trunks (petit) & Son Goten (petit) & Maron",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014131",
+      "name": "Son Goku Super Saiyan 4 ultra puissance max",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014141",
+      "name": "Videl",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014151",
+      "name": "Pan (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014160",
+      "name": "Mai (Future)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014161",
+      "name": "Mai (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014170",
+      "name": "Android #18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014171",
+      "name": "C-18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014181",
+      "name": "Chichi",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014190",
+      "name": "Chi-Chi (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014191",
+      "name": "Chichi (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014210",
+      "name": "Super Saiyan 4 Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014211",
+      "name": "Son Goku Super Saiyan 4",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014221",
+      "name": "Vegeta Super Saiyan 4",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014331",
+      "name": "Freezer (forme finale) (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014350",
+      "name": "Cell (Perfect Form) (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014351",
+      "name": "Cell (forme parfaite) (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014370",
+      "name": "Goku (Kaioken)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014371",
+      "name": "Son Goku (Kaioken)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014390",
+      "name": "Frieza (Final Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014391",
+      "name": "Freezer (forme finale)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014460",
+      "name": "Bulla",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014461",
+      "name": "Bra",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014470",
+      "name": "Métal Cooler Army",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014471",
+      "name": "Armée de Métal Cooler",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014491",
+      "name": "Son Goku (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014511",
+      "name": "Broly (furieux)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014641",
+      "name": "C-21 (transformée, gentille)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014660",
+      "name": "Android #21 (Transformed)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014661",
+      "name": "C-21 (transformée)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014681",
+      "name": "Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014710",
+      "name": "Super Trunks",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014741",
+      "name": "C-16",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014760",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014761",
+      "name": "Son Goku Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014821",
+      "name": "Freezer (1re forme)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014911",
+      "name": "C-17",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014930",
+      "name": "Cell (Perfect Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014940",
+      "name": "Cell (Perfect Form) & Cell Jr.",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014941",
+      "name": "Cell (forme parfaite) & Cell Junior",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014960",
+      "name": "Goku & Frieza (Final Form) (Angel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014971",
+      "name": "Son Goku & Freezer (forme finale) (ange)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014980",
+      "name": "Super Saiyan Broly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014981",
+      "name": "Broly Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1014991",
+      "name": "Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015001",
+      "name": "Son Gohan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015020",
+      "name": "Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015031",
+      "name": "Vegeta Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015050",
+      "name": "Buu (Super)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015051",
+      "name": "Boo (super)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015101",
+      "name": "M. Satan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015111",
+      "name": "Boo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015130",
+      "name": "Cell (2nd Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015131",
+      "name": "Cell (2e forme)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015140",
+      "name": "Tien",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015141",
+      "name": "Tenshinhan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015170",
+      "name": "Yamcha & Puar",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015200",
+      "name": "Supreme Kai",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015201",
+      "name": "Kaïo Shin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015211",
+      "name": "Hit",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015220",
+      "name": "Super Saiyan Cabba",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015221",
+      "name": "Cabbe Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015231",
+      "name": "Pan (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015240",
+      "name": "Hyper Meta-Rilldo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015241",
+      "name": "Hyper Méga Rild",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015250",
+      "name": "Buu (Super)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015251",
+      "name": "Boo (super)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015260",
+      "name": "Gohan (Teen)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015261",
+      "name": "Son Gohan (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015291",
+      "name": "Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015311",
+      "name": "Vegeta Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015371",
+      "name": "Métal Cooler",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015410",
+      "name": "Beerus (Monaka Costume)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015411",
+      "name": "Beerus (Déguisement Monaka)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015421",
+      "name": "Super Ribrianne",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015471",
+      "name": "Goku Black",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015560",
+      "name": "Frieza (Full Power)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015570",
+      "name": "Frieza (Full Power)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015571",
+      "name": "Freezer (pleine puissance)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015591",
+      "name": "Son Gohan (jeune) et Videl",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015610",
+      "name": "Trunks (Teen) (Future)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015671",
+      "name": "Hit",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015750",
+      "name": "Super Saiyan 4 Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015770",
+      "name": "Super Saiyan 4 Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015791",
+      "name": "Frost (pleine puissance)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015811",
+      "name": "Bota-Magetta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015841",
+      "name": "Champa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015870",
+      "name": "Super Saiyan 2 Goku (Angel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015871",
+      "name": "Son Goku Super Saiyan 2 (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015881",
+      "name": "Majin Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015891",
+      "name": "Son Goku Super Saiyan 2 (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015901",
+      "name": "Majin Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015911",
+      "name": "Pan (GT) (abeille)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015950",
+      "name": "Goku (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1015971",
+      "name": "Gogeta Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016000",
+      "name": "Super Saiyan Broly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016001",
+      "name": "Broly Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016031",
+      "name": "Son Goku Super Saiyan divin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016050",
+      "name": "Super Saiyan God Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016051",
+      "name": "Vegeta Super Saiyan divin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016081",
+      "name": "Paragus & Broly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016101",
+      "name": "Son Goku Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016120",
+      "name": "Super Saiyan God SS Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016121",
+      "name": "Vegeta Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016150",
+      "name": "Golden Frieza",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016151",
+      "name": "Golden Freezer",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016200",
+      "name": "Duplicate Vegeta (Super Saiyan God SS)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016201",
+      "name": "Copie de Vegeta (Super Saiyan divin SS)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016230",
+      "name": "Goku (Youth) & Arale Norimaki",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016250",
+      "name": "Launch",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016251",
+      "name": "Lunch",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016301",
+      "name": "Gill",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016311",
+      "name": "Oub (jeune)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016371",
+      "name": "Son Goku (GT) & Pan (GT) & Trunks (GT)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016390",
+      "name": "Super Baby 1",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016401",
+      "name": "Super Baby 2 (Baby gorille)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016440",
+      "name": "Super Saiyan Trunks (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016450",
+      "name": "Super Saiyan 2 Goku (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016461",
+      "name": "Son Goku (Kaioken)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016491",
+      "name": "Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016510",
+      "name": "Super Saiyan Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016511",
+      "name": "Vegeta Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016571",
+      "name": "Son Goku (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016581",
+      "name": "Goku (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016611",
+      "name": "Super Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016630",
+      "name": "Demon King Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016631",
+      "name": "Piccolo Daimaô",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016650",
+      "name": "Tortue Géniale",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016651",
+      "name": "Kamesennin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016731",
+      "name": "Baby Janemba",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016741",
+      "name": "Trunks Super Saiyan 3 (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016751",
+      "name": "Super Paikuhan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016760",
+      "name": "Darkness Towa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016761",
+      "name": "Sombre Towa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016770",
+      "name": "Super Saiyan 3 Gohan (Teen)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016771",
+      "name": "Son Gohan Super Saiyan 3 (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016781",
+      "name": "Boo (petit) (Babidi)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016800",
+      "name": "Super Saiyan Gohan (Teen) & Super Saiyan Goten (Kid)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016810",
+      "name": "Super Saiyan Gohan (Teen) & Super Saiyan Goten (Kid)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016811",
+      "name": "Son Gohan Super Saiyan (jeune) & \nSon Goten Super Saiyan (petit)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016830",
+      "name": "Super Saiyan Caulifla & Super Saiyan Kale",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016840",
+      "name": "Super Saiyan 2 Caulifla & Super Saiyan 2 Kale",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016841",
+      "name": "Caulifla Super Saiyan 2 & \nKale Super Saiyan 2",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016860",
+      "name": "Super Saiyan Broly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016870",
+      "name": "Super Saiyan Broly",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016871",
+      "name": "Broly Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016900",
+      "name": "Super Saiyan Gohan (Teen)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1016901",
+      "name": "Son Gohan Super Saiyan (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017021",
+      "name": "Gowasu & Zamasu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017041",
+      "name": "Vados",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017061",
+      "name": "Mai (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017081",
+      "name": "Trunks (jeune) (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017121",
+      "name": "Zamasu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017160",
+      "name": "Frieza (2nd Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017161",
+      "name": "Freezer (2e forme)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017181",
+      "name": "Son Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017220",
+      "name": "Frieza (Final Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017221",
+      "name": "Freezer (forme finale)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017241",
+      "name": "Gogeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017261",
+      "name": "Great Saiyaman 4",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017281",
+      "name": "Great Saiyaman 3",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017301",
+      "name": "Sealas",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017320",
+      "name": "Mecha Frieza & King Cold",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017321",
+      "name": "Mecha Freezer & Roi Cold",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017340",
+      "name": "Cell (1st Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017351",
+      "name": "Cell (1re forme)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017371",
+      "name": "Ahms (3e forme)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017411",
+      "name": "Son Goku Super Saiyan 2 (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017421",
+      "name": "Vegeta Super Saiyan 2",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017430",
+      "name": "Super Saiyan Gohan (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017440",
+      "name": "Tien",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017441",
+      "name": "Tenshinhan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017471",
+      "name": "Nail",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017491",
+      "name": "Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017510",
+      "name": "Gohan (Kid)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017511",
+      "name": "Son Gohan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017551",
+      "name": "Videl",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017571",
+      "name": "Cell Junior",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017591",
+      "name": "C-16",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017620",
+      "name": "Super Saiyan Gohan (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017630",
+      "name": "Super Saiyan Gohan (Youth)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017631",
+      "name": "Son Gohan Super Saiyan (enfant)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017661",
+      "name": "Super Vegeta/Super Trunks",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017681",
+      "name": "C-18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017700",
+      "name": "Oceanus Shenron (Princess Oto)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017701",
+      "name": "Ryu Shenron (princesse Oto)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017720",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017721",
+      "name": "Son Goku Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017740",
+      "name": "Super Saiyan Goku/Super Saiyan Gohan (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017741",
+      "name": "Son Goku Super Saiyan/ \nSon Gohan Super Saiyan (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017770",
+      "name": "Demon King Piccolo (Elder)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017780",
+      "name": "Demon King Piccolo (Elder)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017800",
+      "name": "Cyborg Tao",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017801",
+      "name": "Cyborg Tao Pai Pai",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017821",
+      "name": "Krillin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017840",
+      "name": "Cyborg #18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017841",
+      "name": "C-18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017890",
+      "name": "Cell (Perfect Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017900",
+      "name": "Cell (Perfect Form)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017901",
+      "name": "Cell (forme parfaite)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017931",
+      "name": "C-17 (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017951",
+      "name": "C-18 (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1017960",
+      "name": "Super Saiyan Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018020",
+      "name": "Androids #17 & #18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018030",
+      "name": "Androids #17 & #18/Android #16",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018031",
+      "name": "C-17 et C-18/C-16",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018061",
+      "name": "Sauzer (guerrier de Cooler)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018100",
+      "name": "Trunks (Teen)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018101",
+      "name": "Trunks (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018121",
+      "name": "Son Gohan (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018151",
+      "name": "Trunks Super Saiyan (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018191",
+      "name": "Cooler",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018220",
+      "name": "Trunks (Kid) (Great Saiyaman)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018221",
+      "name": "Trunks (petit) (Great Saiyaman)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018240",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018250",
+      "name": "Super Saiyan God Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018251",
+      "name": "Son Goku Super Saiyan divin",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018271",
+      "name": "C-13",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018301",
+      "name": "Golden Cooler",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018320",
+      "name": "Super Fu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018321",
+      "name": "Super Fû",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018401",
+      "name": "Cumber",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018411",
+      "name": "Gotenks Super Saiyan & Ghost Kamikazé",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018461",
+      "name": "Cumber Super Saiyan (Cumber gorille)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018480",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018490",
+      "name": "Super Saiyan Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018491",
+      "name": "Son Goku Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018500",
+      "name": "Vegito (Candy)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018501",
+      "name": "Bonbon Vegetto",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018520",
+      "name": "Androids #14 & #15",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018521",
+      "name": "C-14 et C-15",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018541",
+      "name": "Son Goku Super Saiyan divin SS (Kaioken)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018560",
+      "name": "Android #13",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018561",
+      "name": "C-13",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018580",
+      "name": "Great Saiyaman (SS)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018581",
+      "name": "Great Saiyaman (SS)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018591",
+      "name": "Babidi & Dabra",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018610",
+      "name": "Gogeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018621",
+      "name": "Gogeta",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018640",
+      "name": "Vegito",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018650",
+      "name": "Vegito",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018651",
+      "name": "Vegetto",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018680",
+      "name": "Dabura",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018681",
+      "name": "Dabra",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018700",
+      "name": "Yamu & Spopovich",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018701",
+      "name": "Yamu et Spopovitch",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018720",
+      "name": "Gohan (Teen)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018721",
+      "name": "Son Gohan (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018740",
+      "name": "Super Saiyan God SS Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018741",
+      "name": "Son Goku Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018790",
+      "name": "Super Saiyan God SS Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018791",
+      "name": "Vegeta Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018800",
+      "name": "Bergamo (Giant Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018801",
+      "name": "Bergamo (forme géante)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018870",
+      "name": "Goku Black (Super Saiyan Rosé)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018881",
+      "name": "Goku Black (Super Saiyan Rosé)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018931",
+      "name": "Broly (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018951",
+      "name": "Vegeta (petit) & Raditz (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1018990",
+      "name": "Broly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019001",
+      "name": "Broly, Cheelai & Lemo",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019041",
+      "name": "Bardock & Gine",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019060",
+      "name": "Zamasu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019071",
+      "name": "Zamasu (Son Goku)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019091",
+      "name": "Sélipa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019100",
+      "name": "Team Bardock",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019141",
+      "name": "Bardock",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019170",
+      "name": "Borgos",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019171",
+      "name": "Toteppo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019201",
+      "name": "Toma",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019221",
+      "name": "Pumbukim",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019241",
+      "name": "Bardock",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019260",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019281",
+      "name": "Trunks Super Saiyan (futur) & Mai (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019301",
+      "name": "Raditz",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019341",
+      "name": "Beerus",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019361",
+      "name": "Whis",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019371",
+      "name": "Boo (athlétique)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019390",
+      "name": "Nappa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019401",
+      "name": "Nappa/Vegeta",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019461",
+      "name": "Son Goten Super Saiyan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019470",
+      "name": "Super Saiyan Trunks (Kid)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019471",
+      "name": "Trunks Super Saiyan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019491",
+      "name": "Great Saiyaman 2 / 1",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019520",
+      "name": "Krilin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019531",
+      "name": "Krillin",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019591",
+      "name": "Boo/Boo (mal incarné)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019631",
+      "name": "Gotenks",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019661",
+      "name": "Whis",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019681",
+      "name": "Céhui",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019690",
+      "name": "Vegito",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019700",
+      "name": "Goku & Gohan (Kid)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019711",
+      "name": "Caulifla",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019721",
+      "name": "Kale",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019741",
+      "name": "Kefla",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019810",
+      "name": "Super Saiyan God SS Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019820",
+      "name": "Goku (Ultra Instinct -Sign-)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019821",
+      "name": "Son Goku (Signes de l'Ultra Instinct)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019841",
+      "name": "Vados",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019850",
+      "name": "Tarble",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019861",
+      "name": "Son Goku (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019871",
+      "name": "Slug",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019880",
+      "name": "Ultimate Gohan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019881",
+      "name": "Son Gohan ultime",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019890",
+      "name": "Goten (Kid)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019891",
+      "name": "Son Goten (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019901",
+      "name": "Gotenks",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019910",
+      "name": "Jiren (Full Power)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019911",
+      "name": "Jiren (pleine puissance)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019920",
+      "name": "Grandpa Gohan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019930",
+      "name": "Chi-Chi",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019950",
+      "name": "Cell (Perfect Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019980",
+      "name": "Super Saiyan God SS Goku & Super Saiyan God SS Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019990",
+      "name": "Super Saiyan God SS Goku (Kaioken) & Super Saiyan God SS Evolved Vegeta",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1019991",
+      "name": "Son Goku Super Saiyan divin SS (Kaioken) \n& Vegeta Super Saiyan divin SS évolué",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020011",
+      "name": "Toppo (Pride Troopers)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020031",
+      "name": "Krillin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020040",
+      "name": "Jackie Chun (Max Power)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020041",
+      "name": "Jackie Chun (puissance max)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020070",
+      "name": "Mighty Mask",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020091",
+      "name": "Son Gohan (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020110",
+      "name": "West Supreme Kai",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020111",
+      "name": "Kaïo Shin de l'ouest",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020130",
+      "name": "Supreme Kai & Kibito",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020131",
+      "name": "Kaïo Shin & Kibito",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020150",
+      "name": "Frieza (Final Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020170",
+      "name": "Kahseral (Pride Troopers)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020171",
+      "name": "Casseral (Pride Troopers)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020181",
+      "name": "Kakunsa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020190",
+      "name": "Rozie",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020191",
+      "name": "Rosie",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020210",
+      "name": "Super Saiyan 2 Vegeta (Angel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020221",
+      "name": "Vegeta Super Saiyan 2 (ange)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020280",
+      "name": "Tien",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020281",
+      "name": "Tenshinhan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020300",
+      "name": "Goku (Ultra Instinct)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020310",
+      "name": "Goku (Ultra Instinct)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020311",
+      "name": "Son Goku (Ultra Instinct)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020330",
+      "name": "Super Saiyan God SS Evolved Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020340",
+      "name": "Super Saiyan God SS Evolved Vegeta",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020341",
+      "name": "Vegeta Super Saiyan divin SS évolué",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020360",
+      "name": "Boo (Gotenks)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020370",
+      "name": "Majin Buu (Gotenks)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020371",
+      "name": "Boo (Gotenks)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020400",
+      "name": "Super Saiyan 2 Kale",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020410",
+      "name": "Son Gohan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020430",
+      "name": "Super Hatchiyack",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020431",
+      "name": "Super Hatchiyack",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020450",
+      "name": "Goku & Vegeta (Angel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020460",
+      "name": "Goku & Vegeta (Angel)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020461",
+      "name": "Son Goku & Vegeta (ange)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020500",
+      "name": "Frieza (Final Form) (Angel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020501",
+      "name": "Freezer (forme finale) (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020530",
+      "name": "Majin Buu (Piccolo)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020531",
+      "name": "Boo (Piccolo)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020551",
+      "name": "Majin Towa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020590",
+      "name": "Frieza (Final Form) (Angel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020591",
+      "name": "Freezer (forme finale) (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020600",
+      "name": "Perfect Cell (Angel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020601",
+      "name": "Cell Parfait (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020621",
+      "name": "Son Goku Super Saiyan 3",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020650",
+      "name": "Super Saiyan 4 Vegito (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020651",
+      "name": "Vegetto Super Saiyan 4 (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020670",
+      "name": "Super Saiyan 4 Broly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020671",
+      "name": "Broly Super Saiyan 4",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020740",
+      "name": "Turles",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020750",
+      "name": "Team Turles",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020751",
+      "name": "Équipe Thalès",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020770",
+      "name": "Hercule/Majin Buu (Good)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020771",
+      "name": "M. Satan/Boo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020810",
+      "name": "Uub (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020811",
+      "name": "Oub (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020820",
+      "name": "Demigra (Makyouka Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020830",
+      "name": "Black Masked Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020840",
+      "name": "Dark Masked King",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020891",
+      "name": "Majin Salsa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020911",
+      "name": "Majin Dabra (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020970",
+      "name": "Nuova Shenron",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020971",
+      "name": "Suu Shenron",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1020991",
+      "name": "Gogeta Super Saiyan 4",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021000",
+      "name": "Babidi & Boo (Good)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021011",
+      "name": "Babidi & Boo",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021031",
+      "name": "Zangya",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021051",
+      "name": "Bojack",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021080",
+      "name": "Golden Frieza & Sorbet",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021081",
+      "name": "Golden Freezer & Sorbet",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021101",
+      "name": "Son Gohan (grand-père) & Pan (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021110",
+      "name": "Tien",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021111",
+      "name": "Tenshinhan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021130",
+      "name": "Super Saiyan 2 Gohan (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021141",
+      "name": "Son Gohan Super Saiyan 2 (enfant)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021291",
+      "name": "Janemba",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021311",
+      "name": "Tenshinhan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021331",
+      "name": "Paikuhan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021350",
+      "name": "Ultimate Gohan & Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021351",
+      "name": "Son Gohan ultime & Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021370",
+      "name": "Golden Frieza (Angel) & Ultimate Gohan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021391",
+      "name": "Vegeta (GT) (gorille)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021420",
+      "name": "Golden Frieza (Angel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021430",
+      "name": "Golden Frieza (Angel) & Android #17",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021431",
+      "name": "Golden Freezer (ange) & C-17",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021451",
+      "name": "Krillin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021470",
+      "name": "Android #17",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021481",
+      "name": "C-17 (équipe Univers 7)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021491",
+      "name": "Son Goku (Dokkan Butoden)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021501",
+      "name": "Vegeta (Dokkan Butoden)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021540",
+      "name": "Master Roshi & Tien",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021541",
+      "name": "Kamesennin & Tenshinhan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021561",
+      "name": "Veku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021610",
+      "name": "Master Roshi",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021620",
+      "name": "Master Roshi",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021621",
+      "name": "Kamesennin",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021641",
+      "name": "Krillin & C-18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021650",
+      "name": "Trunks (Teen)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021670",
+      "name": "Legendary Super Saiyan Broly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021671",
+      "name": "Broly Super Saiyan Légendaire",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021691",
+      "name": "Trunks Super Saiyan (petit) & \nSon Goten Super Saiyan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021700",
+      "name": "Son Goku (Signes de l'Ultra Instinct)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021720",
+      "name": "Super Saiyan Trunks (Adolescent)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021721",
+      "name": "Trunks Super Saiyan (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021811",
+      "name": "Videl",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021851",
+      "name": "Great Saiyaman & Videl",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021871",
+      "name": "Krillin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021880",
+      "name": "Legion of Shadow Dragons",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021881",
+      "name": "Équipe des dragons maléfiques",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021900",
+      "name": "Frieza (Final Form) & Army of the Dead",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021901",
+      "name": "Freezer (forme finale) & l'armée des morts",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021920",
+      "name": "Super Saiyan Goku (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021921",
+      "name": "Son Goku Super Saiyan (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021940",
+      "name": "Super Saiyan Vegeta (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021941",
+      "name": "Vegeta Super Saiyan (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021960",
+      "name": "Tapion & Minotia",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021970",
+      "name": "Tapion & Minotia",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021971",
+      "name": "Tapion & Minoshia",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021980",
+      "name": "Super Saiyan 3 Vegeta (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021981",
+      "name": "Vegeta Super Saiyan 3 (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021990",
+      "name": "Super Saiyan 3 Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1021991",
+      "name": "Vegeta Super Saiyan 3",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022000",
+      "name": "Meta-Rilldo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022010",
+      "name": "Trunks (Kid)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022020",
+      "name": "Trunks (GT) & Goten (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022021",
+      "name": "Trunks (GT) & Son Goten (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022040",
+      "name": "Gohan (GT) & Goten (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022041",
+      "name": "Son Gohan (GT) & Son Goten (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022060",
+      "name": "Super Garlic Jr.",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022080",
+      "name": "Super #17",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022091",
+      "name": "Super C-17",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022110",
+      "name": "Goku & Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022120",
+      "name": "Goku & Piccolo",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022121",
+      "name": "Son Goku & Piccolo",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022160",
+      "name": "Super Saiyan Gotenks",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022161",
+      "name": "Gotenks Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022180",
+      "name": "Goku (Angel) & Vegeta (Angel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022191",
+      "name": "Son Goku (ange) & Vegeta (ange)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022221",
+      "name": "Son Gohan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022270",
+      "name": "Son Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022310",
+      "name": "Piccolo & Krillin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022311",
+      "name": "Piccolo & Krillin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022330",
+      "name": "Mercenary Tao",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022340",
+      "name": "Mercenary Tao",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022370",
+      "name": "Super Saiyan God Goku & Super Saiyan God Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022380",
+      "name": "Super Saiyan God Goku & Super Saiyan God Vegeta",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022381",
+      "name": "Son Goku Super Saiyan divin \n& Vegeta Super Saiyan divin",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022410",
+      "name": "Super Saiyan 4 Goku & Super Saiyan 4 Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022420",
+      "name": "Super Saiyan 4 Goku & Super Saiyan 4 Vegeta",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022421",
+      "name": "Son Goku Super Saiyan 4 & Vegeta Super Saiyan 4",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022580",
+      "name": "Super Janemba",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022591",
+      "name": "Super Janemba",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022620",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022631",
+      "name": "Son Goku Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022651",
+      "name": "Super Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022681",
+      "name": "Marcarita",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022701",
+      "name": "Cell (2e forme)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022720",
+      "name": "Kyawei",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022721",
+      "name": "Caway",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022740",
+      "name": "Frieza (Full Power)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022750",
+      "name": "Frieza (Full Power)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022751",
+      "name": "Freezer (pleine puissance)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022770",
+      "name": "Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022771",
+      "name": "Son Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022781",
+      "name": "Son Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022800",
+      "name": "Gohan (Enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022811",
+      "name": "Son Gohan (petit)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022831",
+      "name": "Caulifla & Kale",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022860",
+      "name": "Super Saiyan Cabba",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022861",
+      "name": "Cabbe Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022881",
+      "name": "Krillin/Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022930",
+      "name": "Krilin & Gohan (Enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022941",
+      "name": "Krillin & Son Gohan (petit)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1022960",
+      "name": "Son Goku Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023001",
+      "name": "Zarbon & Dodoria",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023030",
+      "name": "Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023041",
+      "name": "Vegeta/Son Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023060",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023061",
+      "name": "Son Goku Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023080",
+      "name": "Hit & Super Saiyan God Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023090",
+      "name": "Hit & Super Saiyan God Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023091",
+      "name": "Hit & Son Goku Super Saiyan divin",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023110",
+      "name": "Trunks (Teen)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023111",
+      "name": "Trunks (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023160",
+      "name": "Hacchan & Android #17",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023161",
+      "name": "Céhui & C-17",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023170",
+      "name": "Hit",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023191",
+      "name": "Mechikabra roi sombre (pouvoir temporel libéré)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023240",
+      "name": "Super Saiyan God Trunks (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023241",
+      "name": "Trunks Super Saiyan divin (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023261",
+      "name": "Pan (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023271",
+      "name": "Vegetrunks Super Saiyan (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023281",
+      "name": "Gotenks Super Saiyan 3 (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023291",
+      "name": "Gohanks Super Saiyan 3 (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023301",
+      "name": "Son Goku Super Saiyan (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023310",
+      "name": "Super Saiyan Vegeta (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023311",
+      "name": "Vegeta Super Saiyan (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023330",
+      "name": "Demon Goddess Putine",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023331",
+      "name": "Majin Poutine",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023361",
+      "name": "C-17 (futur) & C-18 (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023380",
+      "name": "Dr. Gero & Android #19",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023381",
+      "name": "Dr. Gero & C-19",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023390",
+      "name": "Super Saiyan 2 Trunks (Teen)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023410",
+      "name": "Super Saiyan Gohan (Future) & Trunks (Youth) (Future)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023420",
+      "name": "Super Saiyan Gohan (Future) & Trunks (Youth) (Future)/Super Saiyan Gohan (Future)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023421",
+      "name": "Son Gohan Super Saiyan (futur) & Trunks (enfant) (futur)/\nSon Gohan Super Saiyan (futur)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023461",
+      "name": "Son Goku Super Saiyan 2",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023491",
+      "name": "Boo (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023510",
+      "name": "Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023521",
+      "name": "Vegeta (gorille)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023571",
+      "name": "Broly",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023590",
+      "name": "Syn Shenron",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023591",
+      "name": "Li Shenron",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023610",
+      "name": "Goku (Kaioken)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023621",
+      "name": "Son Goku (Kaioken)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023630",
+      "name": "Trunks (Teen)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023641",
+      "name": "Yamhan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023650",
+      "name": "Cellza",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023651",
+      "name": "Cellzer",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023660",
+      "name": "Whirus",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023661",
+      "name": "Beerusis",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023671",
+      "name": "Janemboo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023680",
+      "name": "Chiaoman",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023681",
+      "name": "Chaoman",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023691",
+      "name": "Tekka",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023701",
+      "name": "Pinich",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023710",
+      "name": "Coolieza",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023711",
+      "name": "Cooleezer",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023731",
+      "name": "Jeese & Butta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023750",
+      "name": "Recoome & Guldo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023751",
+      "name": "Reacum & Guldo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023770",
+      "name": "Captain Ginyu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023771",
+      "name": "Ginyu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023800",
+      "name": "Super Saiyan Trunks (Enfant) & Super Saiyan Goten (Enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023801",
+      "name": "Trunks Super Saiyan (petit) & Son Goten Super Saiyan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023850",
+      "name": "Goku Jr. & Vegeta Jr.",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023861",
+      "name": "Son Goku Jr Super Saiyan \n& Vegeta Jr Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023880",
+      "name": "Gohan (Adolescent) & Goten (Enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023891",
+      "name": "Son Gohan (jeune) & Son Goten (petit) & Trunks (petit) ",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023910",
+      "name": "Mighty Mask",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023930",
+      "name": "Goku & Chi-Chi",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023931",
+      "name": "Son Goku & Chichi",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023951",
+      "name": "Vegeta & Bulma",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1023981",
+      "name": "Majin Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024030",
+      "name": "King Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024040",
+      "name": "King Cold",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024061",
+      "name": "Raditz",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024081",
+      "name": "Nappa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024110",
+      "name": "Para Para Brothers",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024111",
+      "name": "Frères Para Para",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024130",
+      "name": "Goku & Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024140",
+      "name": "Goku & Piccolo/Piccolo",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024141",
+      "name": "Son Goku & Piccolo/Piccolo",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024170",
+      "name": "Annin (Giant Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024250",
+      "name": "Androids #16 & #18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024251",
+      "name": "C-16 & C-18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024270",
+      "name": "Mecha Frieza",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024290",
+      "name": "Super Saiyan Goku/Super Saiyan Gohan (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024291",
+      "name": "Son Goku Super Saiyan/Son Gohan Super Saiyan (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024320",
+      "name": "Super Saiyan Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024321",
+      "name": "Vegeta Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024340",
+      "name": "Super Saiyan Goku & Super Saiyan Gohan (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024350",
+      "name": "Super Saiyan Goku & Super Saiyan Gohan (Youth)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024351",
+      "name": "Son Goku Super Saiyan & Son Gohan Super Saiyan (enfant)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024381",
+      "name": "Cell (1re forme)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024441",
+      "name": "Son Goku Super Saiyan divin SS \n/Vegeta Super Saiyan divin SS",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024500",
+      "name": "Golden Frieza",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024510",
+      "name": "Golden Frieza",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024511",
+      "name": "Golden Freezer",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024540",
+      "name": "Super Saiyan God SS Vegeta & Super Saiyan Trunks (Future)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024550",
+      "name": "Super Saiyan God SS Vegeta & Super Saiyan Trunks (Future)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024551",
+      "name": "Vegeta Super Saiyan divin SS \n& Trunks Super Saiyan (futur)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024601",
+      "name": "Goku Black",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024650",
+      "name": "Fusion Zamasu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024661",
+      "name": "Zamasu : Fusion",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024691",
+      "name": "Shen",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024720",
+      "name": "Tien",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024730",
+      "name": "Tien",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024731",
+      "name": "Tenshinhan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024751",
+      "name": "Cheelai",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024780",
+      "name": "Trunks (GT) & Giru",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024781",
+      "name": "Trunks (GT) & Gill",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024800",
+      "name": "Fasha",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024801",
+      "name": "Sélipa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024820",
+      "name": "Cooler (Final Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024831",
+      "name": "Cooler (forme finale)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024850",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024860",
+      "name": "Super Saiyan Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024861",
+      "name": "Son Goku Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024880",
+      "name": "Super Saiyan Goku & Super Saiyan Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024890",
+      "name": "Super Saiyan Goku & Super Saiyan Vegeta",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024891",
+      "name": "Son Goku Super Saiyan & Vegeta Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024921",
+      "name": "Métal Cooler",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024931",
+      "name": "Métal Cooler",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024951",
+      "name": "Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024970",
+      "name": "Krilin & Gohan (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024971",
+      "name": "Krillin & Son Gohan (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1024991",
+      "name": "Pan (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025040",
+      "name": "Hacchan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025041",
+      "name": "Céhui",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025070",
+      "name": "Goku (Youth)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025071",
+      "name": "Son Goku (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025091",
+      "name": "Bardock",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025110",
+      "name": "Gohan (Kid)/Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025111",
+      "name": "Son Gohan (petit)/Son Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025130",
+      "name": "Super Saiyan Goku (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025140",
+      "name": "Hyper Meta-Rilldo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025151",
+      "name": "Métal Cooler",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025211",
+      "name": "Cooler",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025231",
+      "name": "Dabra (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025251",
+      "name": "Yamcha",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025310",
+      "name": "Super Full Power Saiyan 4 Limit Breaker Goku (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025311",
+      "name": "Son Goku Super Saiyan 4 ultra puissance max - Limites brisées (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025330",
+      "name": "Super Full Power Saiyan 4 Limit Breaker Vegeta (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025331",
+      "name": "Vegeta Super Saiyan 4 ultra puissance max - Limites brisées (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025340",
+      "name": "Super Saiyan 4 Bardock",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025341",
+      "name": "Bardock Super Saiyan 4",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025350",
+      "name": "Super Saiyan 4 Gohan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025351",
+      "name": "Son Gohan Super Saiyan 4",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025360",
+      "name": "Robelu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025361",
+      "name": "Roberu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025370",
+      "name": "Supreme Kai of Time (Brainwashed)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025371",
+      "name": "Kaïo Shin du temps (lavage de cerveau)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025411",
+      "name": "Super Hearts",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025461",
+      "name": "Lagss",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025511",
+      "name": "Gamma 1",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025531",
+      "name": "Gamma 2",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025550",
+      "name": "Ultimate Gohan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025560",
+      "name": "Ultimate Gohan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025561",
+      "name": "Son Gohan ultime",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025580",
+      "name": "Piccolo (Power Awakening)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025591",
+      "name": "Piccolo (éveil de puissance)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025600",
+      "name": "Super Saiyan Gohan (Teen)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025601",
+      "name": "Son Gohan Super Saiyan (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025620",
+      "name": "Jackie Chun",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025640",
+      "name": "Gotenks",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025650",
+      "name": "Hatchiyack (Giant Form)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025651",
+      "name": "Hatchiyack (forme géante)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025670",
+      "name": "Tora",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025671",
+      "name": "Toma",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025731",
+      "name": "Son Goku Super Saiyan 3 & Vegeta Super Saiyan 2",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025771",
+      "name": "Son Goku (GT) & Vegeta Super Saiyan 4",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025801",
+      "name": "Yamcha",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025821",
+      "name": "Gotenks Super Saiyan 3 & Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025841",
+      "name": "San Shenron & Suu Shenron",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025860",
+      "name": "Super Saiyan Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025870",
+      "name": "Super Saiyan Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025871",
+      "name": "Son Goku Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1025900",
+      "name": "Super Saiyan Trunks (Enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026000",
+      "name": "Super Saiyan Goten (Enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026030",
+      "name": "Yajirobe",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026031",
+      "name": "Yajirobé",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026070",
+      "name": "Trunks (Teen) & Goten (Teen)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026071",
+      "name": "Trunks (jeune) & Son Goten (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026090",
+      "name": "Pan (Kid)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026091",
+      "name": "Pan (petite)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026131",
+      "name": "Son Gohan (petit)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026161",
+      "name": "Son Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026201",
+      "name": "C-17 & C-17 (Hell Fighter)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026231",
+      "name": "Docteur Myuu & Dr. Gero",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026251",
+      "name": "Son Goku Super Saiyan divin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026281",
+      "name": "Vegeta Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026311",
+      "name": "Bulma (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026331",
+      "name": "M. Satan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026350",
+      "name": "Gotenks (échec) B",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026391",
+      "name": "Babidi",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026430",
+      "name": "Boo (Super)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026431",
+      "name": "Boo (super)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026481",
+      "name": "Kale (Berserker)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026511",
+      "name": "Frost (forme finale)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026530",
+      "name": "Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026531",
+      "name": "Son Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026560",
+      "name": "Piccolo Jr. (Giant Form)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026561",
+      "name": "Piccolo Junior (forme géante)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026581",
+      "name": "Krillin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026611",
+      "name": "Bulma (enfant)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026630",
+      "name": "Cyborg Tao Pai Pai",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026731",
+      "name": "Dr. Willow",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026751",
+      "name": "Thalès",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026771",
+      "name": "Amondo & Rezun",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026791",
+      "name": "Daïzu & Cacao",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026821",
+      "name": "Son Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026850",
+      "name": "Jackie Chun",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026871",
+      "name": "Baby",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026901",
+      "name": "Son Goku Super Saiyan 4",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1026940",
+      "name": "Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027001",
+      "name": "Trunks Super Saiyan (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027041",
+      "name": "Oméga Shenron",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027061",
+      "name": "Son Gohan Super Saiyan (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027080",
+      "name": "Turles",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027121",
+      "name": "Son Goku Super Saiyan divin SS \n& Vegeta Super Saiyan divin SS",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027161",
+      "name": "C-18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027181",
+      "name": "Mamba",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027191",
+      "name": "Piccolo Junior",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027220",
+      "name": "Fusion Zamasu",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027221",
+      "name": "Zamasu : Fusion",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027251",
+      "name": "Trunks (jeune) (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027291",
+      "name": "Trunks Super Saiyan (futur)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027331",
+      "name": "Son Gohan Super Saiyan (futur)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027350",
+      "name": "Trunks Super Saiyan (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027371",
+      "name": "Mai (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027391",
+      "name": "Zamasu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027431",
+      "name": "C-17 et C-18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027461",
+      "name": "Ribrianne & Kakunsa & Rosie",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027471",
+      "name": "Cell (forme parfaite) (GT) & \nFreezer (forme finale) (GT)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027501",
+      "name": "Zirloin & Rabanra & Zabuto",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027511",
+      "name": "C-18 (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027521",
+      "name": "C-17 (Hell Fighter)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027541",
+      "name": "Krillin (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027580",
+      "name": "Pilaf & Shu & Mai",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027601",
+      "name": "Trunks Super Saiyan (jeune) & Broly Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027621",
+      "name": "Son Goku Super Saiyan 3",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027651",
+      "name": "C-21 (normale)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027681",
+      "name": "C-21 (transformée, mauvaise)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027690",
+      "name": "Bojack",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027711",
+      "name": "Vegetto Super Saiyan 4 ultra puissance max - Limites brisées (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027731",
+      "name": "Broly Super Saiyan 4 ultra puissance max - Limites brisées",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027751",
+      "name": "Saiyan au masque écarlate (Super Saiyan Rosé 3)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027781",
+      "name": "Vegeta Super Saiyan divin SS (Berserker contrôlé)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027801",
+      "name": "Towa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027841",
+      "name": "C-17",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027851",
+      "name": "C-18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027901",
+      "name": "Fû roi sombre",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027911",
+      "name": "Golden Métal Cooler",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027921",
+      "name": "Janemba (modifié)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027941",
+      "name": "Oolong & Lunch",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1027981",
+      "name": "Gogeta Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028021",
+      "name": "Broly Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028061",
+      "name": "Son Goku Super Saiyan & Vegeta Super Saiyan & \nTrunks Super Saiyan (jeune)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028080",
+      "name": "Caulifla",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028090",
+      "name": "Kale",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028111",
+      "name": "Vegeta & Nappa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028131",
+      "name": "Piccolo & Son Gohan (petit)/Son Gohan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028161",
+      "name": "Hildegarn",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028201",
+      "name": "Yamcha",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028231",
+      "name": "Golden Freezer",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028281",
+      "name": "Goku Black (Super Saiyan Rosé)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028321",
+      "name": "Son Gohan (Beast)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028330",
+      "name": "Gogeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028371",
+      "name": "Gamma 1 & Gamma 2/Gamma 1",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028420",
+      "name": "Cyborg #18 (Linked State)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028471",
+      "name": "Krillin & C-18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028491",
+      "name": "Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028521",
+      "name": "Roi Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028551",
+      "name": "Beerus (chemise de nuit)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028571",
+      "name": "Freezer (1re forme)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028591",
+      "name": "Dodoria",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028601",
+      "name": "Freezer (1re forme)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028631",
+      "name": "Boing",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028681",
+      "name": "Toppo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028721",
+      "name": "Ginyu (commando)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028731",
+      "name": "Son Goku Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028761",
+      "name": "Catopesra",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028770",
+      "name": "Chilled",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028791",
+      "name": "Son Goku Super Saiyan 3 (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028811",
+      "name": "Boo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028831",
+      "name": "Gotenks",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028851",
+      "name": "Boo (mal incarné)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028891",
+      "name": "Son Gohan ultime",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028921",
+      "name": "Son Goku (enfant) & Krillin (enfant) \n& Bulma (enfant)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028961",
+      "name": "Cell Max",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1028981",
+      "name": "Trunks Super Saiyan 2 (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029001",
+      "name": "Krillin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029021",
+      "name": "Dyspo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029051",
+      "name": "Son Goku (Signes de l'Ultra Instinct)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029091",
+      "name": "Jiren",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029121",
+      "name": "Hit",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029141",
+      "name": "Kamesennin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029161",
+      "name": "Bulma (lapin)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029181",
+      "name": "Cocotte",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029201",
+      "name": "Mai",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029271",
+      "name": "Bio Broly",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029281",
+      "name": "Saonel & Pilina",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029291",
+      "name": "Champa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029331",
+      "name": "Devilman",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029361",
+      "name": "Son Goku Super Saiyan & Son Gohan Super Saiyan (enfant) & \nTrunks Super Saiyan (jeune)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029401",
+      "name": "Broly",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029441",
+      "name": "Broly Super Saiyan Légendaire",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029471",
+      "name": "Son Gohan Super Saiyan (jeune)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029510",
+      "name": "Son Gohan (grand-père)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029551",
+      "name": "Anilaza",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029571",
+      "name": "Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029591",
+      "name": "Kiwi",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029621",
+      "name": "Videl",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029641",
+      "name": "Paragus",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029671",
+      "name": "Trunks Super Saiyan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029701",
+      "name": "Son Gohan (petit)/Piccolo",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029731",
+      "name": "Slug",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029751",
+      "name": "Anguila & Medamatcha",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029771",
+      "name": "Piccolo/Vegeta Super Saiyan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029831",
+      "name": "Bardock Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029851",
+      "name": "Freezer (forme finale)/Cooler (forme finale)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029870",
+      "name": "C-17 (Hell Fighter)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029891",
+      "name": "Fû (enfant) (Dogidogi absorbé)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029911",
+      "name": "Aeos",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029931",
+      "name": "Demigra roi sombre (pouvoir temporel libéré)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029951",
+      "name": "Son Goku Super Saiyan divin SS (Énergie de l'arbre universel)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1029981",
+      "name": "Boo (Son Gohan ultime)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030021",
+      "name": "Gotenks Super Saiyan 3",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030041",
+      "name": "Piccolo & Son Gohan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030061",
+      "name": "Krillin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030081",
+      "name": "Yamcha",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030101",
+      "name": "Tenshinhan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030121",
+      "name": "Chaozu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030141",
+      "name": "Combattant vêtu de noir (Super Saiyan) \n(renforcé par les boules de cristal sombres)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030160",
+      "name": "Combattante vêtue de noir",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030181",
+      "name": "Grand Kaïo Shin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030211",
+      "name": "Son Goten (petit) & Hire Dragon Jr",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030221",
+      "name": "Son Gohan (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030311",
+      "name": "Krillin (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030341",
+      "name": "Son Goku Super Saiyan 3 (GT) (gorille doré)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030391",
+      "name": "Son Gohan Super Saiyan 2 (enfant)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030431",
+      "name": "Son Goku Super Saiyan + Vegeta Super Saiyan (ange)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030481",
+      "name": "Vegeta Super Saiyan (ange) + Son Goku Super Saiyan (ange)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030531",
+      "name": "Freezer (forme finale) (ange) + Son Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030571",
+      "name": "Vegeta Super Saiyan divin SS évolué",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030611",
+      "name": "Trunks (petit) + Son Goten (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030641",
+      "name": "Glorio",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030661",
+      "name": "Son Goku Super Saiyan (Mini) (DAIMA)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030670",
+      "name": "Son Goku (Mini) (DAIMA)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030680",
+      "name": "Vegeta (Mini) (DAIMA)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030731",
+      "name": "M. Satan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030791",
+      "name": "Piccolo Daimaô (vieux)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030831",
+      "name": "Beerus",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030921",
+      "name": "C-18",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030941",
+      "name": "Cell (forme parfaite)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030971",
+      "name": "Paikuhan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1030990",
+      "name": "Mecha Freezer",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031021",
+      "name": "Piccolo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031041",
+      "name": "Magetta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031061",
+      "name": "Vegeta Super Saiyan 3 (Mini) (DAIMA)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031081",
+      "name": "Son Goku (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031101",
+      "name": "Chichi (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031121",
+      "name": "Hit",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031181",
+      "name": "Son Goku Super Saiyan divin SS (Kaioken)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031221",
+      "name": "Caulifla Super Saiyan 2 + Kale Super Saiyan 2",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031281",
+      "name": "Tenshinhan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031301",
+      "name": "Tao Pai Pai",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031341",
+      "name": "Commandant Blue",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031361",
+      "name": "Chaozu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031391",
+      "name": "Son Goku Super Saiyan divin SS + Vegeta Super Saiyan divin SS",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031431",
+      "name": "Goku Black (Super Saiyan Rosé) + Zamasu",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031471",
+      "name": "Gogeta Super Saiyan 4",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031501",
+      "name": "Oméga Shenron",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031521",
+      "name": "Champa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031541",
+      "name": "Pan (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031591",
+      "name": "Son Gohan Super Saiyan (jeune) + Trunks Super \nSaiyan (petit) & Son Goten Super Saiyan (petit)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031621",
+      "name": "Spopovitch",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031641",
+      "name": "Lanfan",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031691",
+      "name": "Videl",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031721",
+      "name": "Golden Freezer + Gogeta",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031751",
+      "name": "Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031761",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [AGI]",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031771",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [AGI]",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031781",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [TEC]",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031791",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [INT]",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031801",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [PUI]",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031811",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [END]",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031821",
+      "name": "Suu Shenron",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031921",
+      "name": "Broly (furieux) ",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1031961",
+      "name": "Super Baby 1",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032011",
+      "name": "Son Gohan SS possédé (GT) & Son Goten SS possédé (GT)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032030",
+      "name": "Vegeta (petit)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032051",
+      "name": "Trunks possédé (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032071",
+      "name": "C-16",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032091",
+      "name": "C-17",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032121",
+      "name": "Son Gohan Super Saiyan (futur)/\nTrunks Super Saiyan (enfant) (futur)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032161",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [TEC]",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032171",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [INT]",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032181",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [PUI]",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032191",
+      "name": "Goku Black (Super Saiyan Rosé) (clonage) [END]",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032220",
+      "name": "Chichi",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032241",
+      "name": "Yamcha (ange) & Princesse Hébi",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032261",
+      "name": "Son Goku Super Saiyan 4 (Mini) (DAIMA)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032281",
+      "name": "Piccolo (Mini) (DAIMA)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032311",
+      "name": "Gomah - Troisième Œil",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032331",
+      "name": "Gamma 2 + Piccolo (éveil de puissance)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032361",
+      "name": "Son Gohan ultime + Gamma 1",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032391",
+      "name": "Majin masqué (Panzy)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032411",
+      "name": "Kaïo Shin (Mini) (DAIMA)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032431",
+      "name": "Glorio",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032450",
+      "name": "Trunks (jeune)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032461",
+      "name": "Super Garlic Jr.",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032470",
+      "name": "Son Gohan SS possédé (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032480",
+      "name": "Son Goten SS possédé (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032490",
+      "name": "Trunks SS possédé (GT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032520",
+      "name": "Son Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032551",
+      "name": "Son Goku Super Saiyan 4 (DAIMA)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032581",
+      "name": "Vegeta Super Saiyan 3 (DAIMA)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032611",
+      "name": "Son Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032621",
+      "name": "Vegeta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032631",
+      "name": "Piccolo Junior (forme géante)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032641",
+      "name": "Freezer (forme finale)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032651",
+      "name": "Son Gohan Super Saiyan 2 (enfant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032661",
+      "name": "Boo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032691",
+      "name": "Majin Duu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032711",
+      "name": "Lude",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032731",
+      "name": "Tamagami Numéro Deux",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032741",
+      "name": "Tamagami Numéro Trois",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032770",
+      "name": "Son Goku",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032790",
+      "name": "Son Goku",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032811",
+      "name": "Tamagami Numéro Un",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032830",
+      "name": "Krillin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032851",
+      "name": "Majin Kuu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032881",
+      "name": "Vegeta Super Saiyan 4 + Son Goku Super Saiyan 4",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032921",
+      "name": "Son Goku (Signes de l'Ultra Instinct) + Vegeta Super Saiyan divin SS évolué",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032961",
+      "name": "Lezick",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1032981",
+      "name": "Yakon",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033011",
+      "name": "Dabra",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033031",
+      "name": "Puipui",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033061",
+      "name": "Majin Vegeta + Son Goku Super Saiyan 2 (ange)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033551",
+      "name": "Vegeta + Nappa",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033591",
+      "name": "Vegeta Super Saiyan divin (Ultra Super méchant)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033621",
+      "name": "Trunks (Xeno)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033641",
+      "name": "Towa & Mira",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033661",
+      "name": "Jiren (pleine puissance) (Ultra Super méchant)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033701",
+      "name": "Saibaiman",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033721",
+      "name": "Chaozu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033761",
+      "name": "Piccolo",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033821",
+      "name": "Son Goku Super Saiyan divin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033841",
+      "name": "Armée de Métal Cooler",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033871",
+      "name": "Roi Cold",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033941",
+      "name": "Thalès",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1033971",
+      "name": "Freezer (forme finale)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034001",
+      "name": "Freezer (2e forme)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034031",
+      "name": "Son Goku Super Saiyan",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034071",
+      "name": "Son Gohan Super Saiyan (enfant)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034091",
+      "name": "Trunks Super Saiyan (futur)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034121",
+      "name": "Cell Parfait",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034221",
+      "name": "Beerus",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034241",
+      "name": "Piccolo (Armée du Ruban Rouge)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034301",
+      "name": "Son Goku Super Saiyan 3 (Mini) (DAIMA)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034341",
+      "name": "Son Gohan (Beast)",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034381",
+      "name": "Cell Max",
+      "status": "LR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034391",
+      "name": "Saibaiman",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034411",
+      "name": "Panzy",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034431",
+      "name": "Dr Arinsu",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034461",
+      "name": "Son Goku Super Saiyan divin",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034481",
+      "name": "Son Goku Super Saiyan 3 (ange)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034550",
+      "name": "Dr. Gero",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034611",
+      "name": "Cell Junior (AGI)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034621",
+      "name": "Cell Junior (TEC)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034631",
+      "name": "Cell Junior (INT)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034641",
+      "name": "Cell Junior (PUI)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034651",
+      "name": "Cell Junior (END)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034661",
+      "name": "Jeese + Butta",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034691",
+      "name": "Ginyu (Son Goku)",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    },
+    {
+      "id": "1034701",
+      "name": "Reacum + Guldo",
+      "status": "TUR",
+      "reason": "EZA/Super EZA non prouve"
+    }
+  ]
+}

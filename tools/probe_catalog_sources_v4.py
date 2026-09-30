@@ -16,13 +16,26 @@ for host in ["https://glbfr.dokkaninfo.com","https://dokkaninfo.com"]:
 for cid in ["1003210","1003211","1010070","1034201"]:
  try:
   url="https://glbfr.dokkaninfo.com/cards/"+cid;text=fetch(url);d=embedded(text,"datajson")
-  report["cards"][cid]={"keys":list(d),"card":d.get("card"),"max_eza_step":d.get("max_eza_step"),"eza_medals":d.get("eza_medals"),"eza":d.get("eza"),"awake":{k:v for k,v in d.items() if any(t in k for t in ["awak","resource","image","stat","open","asset"])},"images":re.findall(r'https?[^"<>\\s]+(?:thumb|card_)[^"<>\\s]+',html.unescape(text))[:12],"passive":d.get("passive_skill"),"leader":d.get("leader_skill")}
+  report["cards"][cid]={"keys":list(d),"card":d.get("card"),"max_eza_step":d.get("max_eza_step"),"eza_medals":d.get("eza_medals"),"eza":d.get("eza"),"awake":{k:v for k,v in d.items() if any(t in k for t in ["awak","resource","image","stat","open","asset","growth","hipo"])},"images":re.findall(r'https?[^"<>\\s]+(?:thumb|card_)[^"<>\\s]+',html.unescape(text))[:12],"passive":d.get("passive_skill"),"leader":d.get("leader_skill")}
   try:
    api=json.loads(fetch("https://glbfr.dokkaninfo.com/api/cards/"+cid+"/transformation"));report["cards"][cid]["api"]={"keys":list(api),"card":api.get("card"),"passive":api.get("passive_skill")}
   except Exception as e:report["cards"][cid]["api"]={"error":str(e)}
+  scripts=re.findall(r'<script[^>]+src="([^"]+)"',text)
+  report["cards"][cid]["scripts"]=scripts
+  if cid=="1003211":
+   for script in scripts:
+    if "app.js" in script:
+     try:
+      bundle=fetch(script if script.startswith("http") else "https://glbfr.dokkaninfo.com"+script)
+      snippets=[]
+      for pattern in ["card_growth_coef","card_growth_lv","hp_max"]:
+       i=bundle.find(pattern)
+       if i>=0:snippets.append(bundle[max(0,i-400):i+1200])
+      report["cards"][cid]["statFormulaSnippets"]=snippets
+     except Exception as e:report["cards"][cid]["scriptError"]=str(e)
   step=d.get("max_eza_step")
   if step:
-   alt=embedded(fetch(url+"?eza=true&step="+str(step)),"datajson");report["cards"][cid]["alt"]={"card":alt.get("card"),"passive":alt.get("passive_skill"),"keys":list(alt)}
+   alt=embedded(fetch(url+"?eza=true&step="+str(step)),"datajson");report["cards"][cid]["alt"]={"card":alt.get("card"),"passive":alt.get("passive_skill"),"growth":{k:v for k,v in alt.items() if "growth" in k or "hipo" in k},"keys":list(alt)}
  except Exception as e:report["cards"][cid]={"error":str(e)}
 Path("docs/CATALOG-SOURCES-PROBE-v4.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n")
 print(json.dumps(report,ensure_ascii=False,indent=2))

@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name "dokkanos-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/FULL-CARD-RENDER-MANIFEST-v1.json docs/FULL-CARD-ASSET-ACQUISITION-v1-shard-${{ matrix.shard }}.json assets/card-source || true
+          git add docs/FULL-CARD-RENDER-MANIFEST-v1.json docs/FULL-CARD-ASSET-ACQUISITION-v2-shard-${{ matrix.shard }}.json assets/card-source || true
           git diff --cached --quiet && exit 0
           git commit -m "Acquire full-card source assets"
           git pull --rebase origin audit-fr-images-v1

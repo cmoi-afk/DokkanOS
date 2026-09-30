@@ -32,9 +32,10 @@ for cid in ["1003210","1003211","1010070","1034201"]:
        i=bundle.find(pattern)
        if i>=0:snippets.append(bundle[max(0,i-400):i+1200])
       report["cards"][cid]["statFormulaSnippets"]=snippets
-      chunks=re.findall(r'"\\./([^"]+\\.js)"',bundle)
+      chunks=re.findall(r'["\x27]\./([^"\x27]+\.js)["\x27]',bundle)
       chosen=[x for x in chunks if "card" in x.lower() or "stat" in x.lower()]
       report["cards"][cid]["statChunks"]=chosen
+      report["cards"][cid]["bundleImports"]=bundle[:12000]
       child_snippets=[]
       for chunk in list(dict.fromkeys(chosen))[:10]:
        try:

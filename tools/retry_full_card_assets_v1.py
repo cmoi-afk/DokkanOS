@@ -3,7 +3,7 @@
 import json,os,re,urllib.request,urllib.parse
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
-Q=R/"docs/FULL-CARD-ASSET-RETRY-v1.json"; D=R/"assets/card-source"; D.mkdir(parents=True,exist_ok=True)
+Q=R/"docs/FULL-CARD-ASSET-RETRY-PRIORITY-v1.json"; D=R/"assets/card-source"; D.mkdir(parents=True,exist_ok=True)
 if not Q.exists(): raise SystemExit("retry queue missing")
 q=json.loads(Q.read_text(encoding="utf-8")); shard=int(os.environ.get("SHARD","0")); total=int(os.environ.get("SHARDS","1"))
 selected=[r for i,r in enumerate(q.get("items",[])) if i%total==shard]

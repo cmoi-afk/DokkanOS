@@ -28,6 +28,8 @@ for(const width of [390,1280]){
   await pick.check();await page.locator('#eventDetail [data-event-team]').click();await page.locator('#teams.on').waitFor();
   assert((await page.locator('#teamObjective').innerText()).includes('Recueil'));result.eventToTeam=true;
  }
+ await page.locator('nav [data-v="events"]').click();await page.locator('#eventSearch').fill('quotidiennes');await page.locator('#events .event-grid [data-event-open]').first().click();
+ await page.locator('#eventDetail [data-event-done]').first().check();await page.locator('#eventDetail [data-event-reset-daily]').click();assert.equal(await page.locator('#eventDetail [data-event-done]:checked').count(),0);await page.locator('#eventDetail [data-event-undo-daily]').click();assert.equal(await page.locator('#eventDetail [data-event-done]:checked').count(),1);result.dailyResetAndUndo=true;
  await context.setOffline(true);await page.reload();await page.waitForFunction(()=>document.querySelector('#grid .unit'),{timeout:60000});await page.locator('nav [data-v="events"]').click();await page.waitForFunction(()=>document.querySelector('#events .event-grid .event-card'),{timeout:60000});result.offline=true;
  assert.equal(errors.length,0,JSON.stringify(errors));result.runtimeErrors=errors;result.httpFailures=[...failed].slice(0,20);await context.close();
 }

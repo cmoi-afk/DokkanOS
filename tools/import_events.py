@@ -16,7 +16,7 @@ def validate(data):
  seen=set();missions=set()
  for event in events:
   for key in ['id','name','source','missions']:
-   if not event.get(key):raise ValueError(f'Champ événement absent : {key}')
+   if key not in event or (key!='missions' and not event.get(key)):raise ValueError(f'Champ événement absent : {key}')
   if event['id'] in seen:raise ValueError('ID événement dupliqué')
   seen.add(event['id'])
   if urlparse(event['source']).scheme!='https':raise ValueError('Source HTTPS requise')

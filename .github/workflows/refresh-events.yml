@@ -1,0 +1,36 @@
+name: Collect GLOBAL French events
+on:
+  push:
+    branches: [feat/events-v16]
+    paths: [tools/refresh_events.py, .github/workflows/refresh-events.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install beautifulsoup4==4.14.3
+      - run: python tools/refresh_events.py
+      - run: python tools/publish_event_snapshot.py event-source/events.json
+      - name: Commit reviewed feature snapshot
+        if: github.ref == 'refs/heads/feat/events-v16'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add events.json docs/events-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh verified GLOBAL FR events and missions'
+            git push origin HEAD:feat/events-v16
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: event-source
+          path: event-source
+          retention-days: 7

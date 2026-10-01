@@ -1,0 +1,9 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),M=require('../event-model.js'),E=require('../team-engine.js');
+const e={id:'test',name:'Combat testé',kind:'Défi',permanent:true,stages:[{id:'4',name:'Niveau 4',disableDodge:true,requirements:[{kind:'category',value:'Saga de Boo',count:3,includeFriend:false}]}],missions:[{id:'one',title:'Mission Boo',requirements:[{kind:'category',value:'Saga de Boo',count:6,includeFriend:false}],manualCheck:true,rewards:[{name:'Pierre Dragon',kind:'stones',amount:5}]},{id:'two',title:'Autre catégorie',requirements:[{kind:'category',value:'Dernier atout',count:3,includeFriend:false}],rewards:[]}]};
+assert.equal(M.status(e), 'permanent');assert.equal(M.status({...e,end:'2020-01-01'}),'closed');assert.equal(M.status({...e,start:'2030-01-01'}),'upcoming');
+const merged=M.combine(e,'4',['one','two']);assert.equal(merged.requirements.length,2);assert.equal(merged.requirements[0].count,6);assert(merged.disableDodge);assert(merged.manualCheck);
+assert.equal(M.stones(e,{one:{done:true,claimed:false}}),5);assert.equal(M.stones(e,{one:{done:true,claimed:true}}),0);assert.deepEqual(M.progress(e,{one:{done:true,claimed:true}}),{total:2,completed:1,claimed:1,percent:50});
+assert.equal(M.filter([e,{...e,id:'hidden',hidden:true}],{query:'boo',status:'available',favorites:[]},{},Date.now()).length,1);
+const cards=Array.from({length:6},(_,i)=>({id:String(i),categories:['Saga de Boo',...(i<3?['Dernier atout']:[])]}));assert(E.constraints(cards,merged).ok);assert(!E.constraints(cards.slice(0,5),merged).ok);
+const data=JSON.parse(fs.readFileSync('events.json'));for(const event of data.events){assert(Array.isArray(event.missions));for(const stage of event.stages||[]){assert(stage.id);assert(Array.isArray(stage.requirements));for(const r of stage.rewards||[])assert(r.amount>0);}}
+console.log('Event status, multi-mission constraints, stage dodge rule, unclaimed rewards, explicit progress, search and schema: OK');

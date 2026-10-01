@@ -1,0 +1,23 @@
+name: Audit event source markup
+on:
+  push:
+    branches: [feat/events-v16]
+    paths: [tools/inspect_event_sources.py, .github/workflows/inspect-events.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install beautifulsoup4==4.14.3
+      - run: python tools/inspect_event_sources.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: event-markup
+          path: event-source
+          retention-days: 7

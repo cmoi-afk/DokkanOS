@@ -1,7 +1,7 @@
 name: Full application audit
 on:
   push:
-    branches: [fix/full-app-audit-v161]
+    branches: [fix/full-app-audit-v161, design/interface-v17]
   workflow_dispatch:
 permissions:
   contents: read

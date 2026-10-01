@@ -27,6 +27,10 @@ for(const width of [390,1280]){
  const pick=page.locator('#eventDetail [data-event-pick]').first();if(await pick.count()){
   await pick.check();await page.locator('#eventDetail [data-event-team]').click();await page.locator('#teams.on').waitFor();
   assert((await page.locator('#teamObjective').innerText()).includes('Recueil'));result.eventToTeam=true;
+  await page.locator('#teamLeaderSearch').fill('1034201');await page.locator('[data-team-leader="1034201"]').click();
+  const own=page.locator('[data-team-own-leader="1034201"]');if(await own.count())await own.click();
+  await page.locator('#autoTeam').click();await page.waitForFunction(()=>document.querySelector('#teamCount')?.textContent==='6/6'&&!document.querySelector('#autoTeam')?.disabled,null,{timeout:60000});result.workerBuildSixCards=true;await page.screenshot({path:'audit-artifacts/team-built-'+width+'.png'});
+
  }
  await page.locator('nav [data-v="events"]').click();await page.locator('#eventSearch').fill('quotidiennes');await page.locator('#events .event-grid [data-event-open]').first().click();
  await page.locator('#eventDetail [data-event-done]').first().check();await page.locator('#eventDetail [data-event-reset-daily]').click();assert.equal(await page.locator('#eventDetail [data-event-done]:checked').count(),0);await page.locator('#eventDetail [data-event-undo-daily]').click();assert.equal(await page.locator('#eventDetail [data-event-done]:checked').count(),1);result.dailyResetAndUndo=true;

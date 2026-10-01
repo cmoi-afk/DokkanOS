@@ -27,3 +27,5 @@ main{max-width:1120px;margin:auto;padding:0 20px 32px}h1,h2,h3,h4{letter-spacing
 @media(min-width:900px){.dashboard-copy{padding:30px 36px}.dashboard-copy h1{font-size:46px}.dashboard-copy p{margin-bottom:20px}.stat{padding:14px 18px}.stat b{font-size:28px}.stat span{font-size:10px}}
 @media(max-width:550px){.dashboard-hero{min-height:0}.dashboard-copy{padding:22px}.dashboard-copy h1{font-size:36px;margin:16px 0 12px}.dashboard-copy p{font-size:11px;margin-bottom:14px;max-width:210px}.hero-actions{margin-top:18px}.hero-actions button{min-height:44px}.hero-art{top:36px;width:145px;height:145px;opacity:.38}.hero-card{width:100px}.card-left,.card-right{width:85px}.stat{padding:10px 8px}.event-filter-fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.event-filters{padding:16px}.duplicate-help{padding:16px 18px}}
 @media(max-width:360px){.dashboard-copy h1{font-size:32px}.dashboard-copy p{font-size:10px}.hero-art{right:-24px;opacity:.3}.hero-actions button{font-size:10px}}
+/* The parent destination stays visible when a tool from Plus is selected. */
+.app-nav #moreNav.on{background:#ff985511;color:#ffac74;font-weight:750}

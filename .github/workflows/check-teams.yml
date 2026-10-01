@@ -17,6 +17,7 @@ jobs:
       - run: node --check team-engine.js && node --check teams.js && node --check app.js && node --check team-worker.js && node --check catalog-model.js && node --check catalogue.js
       - run: node tools/test_teams.cjs
       - run: node tools/test_team_builder.cjs
+      - run: node tools/test_team_quality.cjs
       - run: node tools/test_catalogue.cjs
       - run: node tools/test_catalogue_data.cjs
       - run: node tools/test_v071.cjs

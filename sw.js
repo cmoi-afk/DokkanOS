@@ -1,6 +1,6 @@
-const VERSION='1.8-companion';
+const VERSION='1.9-copilot';
 const CACHE='dokkanos-v'+VERSION;
-const CORE=['./','./index.html','./style.css','./interface.css','./interface.js','./companion-model.js','./companion.js','./app.js','./team-engine.js','./teams.js','./event-model.js','./events.js','./team-worker.js','./recent-cards.json','./catalog-model.js','./catalogue.js','./catalogue-report.json','./events.json','./data.json','./collection.json','./overlap-map.json','./overlap-conflicts.json','./card-meta.json','./catalog.json','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png'];
+const CORE=['./','./index.html','./style.css','./interface.css','./interface.js','./companion-model.js','./companion.js','./copilot-model.js','./copilot.js','./copilot-worker.js','./visual-index.json','./events-preview.json','./app.js','./team-engine.js','./teams.js','./event-model.js','./events.js','./team-worker.js','./recent-cards.json','./catalog-model.js','./catalogue.js','./catalogue-report.json','./events.json','./data.json','./collection.json','./overlap-map.json','./overlap-conflicts.json','./card-meta.json','./catalog.json','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('dokkanos-v')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{
@@ -9,6 +9,7 @@ self.addEventListener('fetch',e=>{
  if(url.origin!==scope.origin||!url.pathname.startsWith(scope.pathname))return;
  e.respondWith((async()=>{
   const cache=await caches.open(CACHE);
+  const bulk=/\.(?:json|webp|png|jpg|jpeg)$/.test(url.pathname)&&!url.pathname.includes('/assets/icon-');if(bulk){const hit=await cache.match(e.request)||await cache.match(e.request,{ignoreSearch:true});if(hit)return hit;}
   try{const res=await fetch(e.request);if(res.ok)try{await cache.put(e.request,res.clone())}catch(cacheError){}return res}
   catch(error){
    const hit=await cache.match(e.request)||await cache.match(e.request,{ignoreSearch:true});

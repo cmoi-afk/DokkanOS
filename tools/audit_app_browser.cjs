@@ -19,11 +19,11 @@ for(const width of [360,390,1280]){
  await goView(page,'box');await page.locator('.hero-actions [data-open-view="teams"]').click();await page.locator('#teams.on').waitFor();await goView(page,'box');
  await page.locator('.box-filter-panel summary').click();assert(await page.locator('#rarityFilter').isVisible());await page.locator('.box-filter-panel summary').click();assert(!await page.locator('#rarityFilter').isVisible());result.shortcutsAndFilters=true;
 
- for(const id of ['home','box','duplicates','catalog','inventory','teams','events','analysis','verify','tools']){
+ for(const id of ['home','box','duplicates','catalog','inventory','teams','events','analysis','verify','tools','copilot']){
   await goView(page,id);await page.locator('#'+id+'.on').waitFor();await page.waitForTimeout(250);
   const geometry=await page.evaluate(()=>({viewport:innerWidth,document:document.documentElement.scrollWidth,active:document.querySelector('nav [aria-current="page"]')?.dataset.v,boxControlsVisible:document.querySelector('#search').getClientRects().length>0}));
   result.tabs.push({id,geometry});assert.equal(geometry.active,id);assert(geometry.document<=geometry.viewport+2,'page overflows at '+width+' '+id+' '+JSON.stringify(geometry));assert.equal(geometry.boxControlsVisible,id==='box');
-  if(['home','events','teams','box','catalog','analysis','inventory','duplicates','verify','tools'].includes(id))await page.screenshot({path:'audit-artifacts/'+id+'-'+width+'.png'});
+  if(['home','events','teams','box','catalog','analysis','inventory','duplicates','verify','tools','copilot'].includes(id))await page.screenshot({path:'audit-artifacts/'+id+'-'+width+'.png'});
  }
  await goView(page,'events');await page.locator('#eventSearch').fill('Recueil');
  await page.waitForFunction(()=>document.querySelector('#events').textContent.includes('Recueil'));

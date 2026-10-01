@@ -1,7 +1,7 @@
 /* Event progress is local and explicitly confirmed; composition never completes a mission. */
 (function(root){'use strict';
 const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim();
-function status(e,now=Date.now()){const start=Date.parse(e.start),end=Date.parse(e.end);if(Number.isFinite(start)&&now<start)return'upcoming';if(Number.isFinite(end)&&now>=end)return'closed';if(e.permanent)return'permanent';return ['active','closed','upcoming'].includes(e.status)?e.status:'unknown';}
+function status(e,now=Date.now()){const start=Date.parse(e.start),end=Date.parse(e.end);if(e.datePrecision==='day'&&e.end&&new Date(now).toLocaleDateString('sv-SE',{timeZone:'Europe/Paris'})===e.end.slice(0,10))return'unknown';if(Number.isFinite(start)&&now<start)return'upcoming';if(Number.isFinite(end)&&now>=end)return'closed';if(e.permanent)return'permanent';return ['active','closed','upcoming'].includes(e.status)?e.status:'unknown';}
 function done(m,progress){return progress[m.id]?.done===true;}
 function rewards(m){return(m.rewards||[]).filter(r=>r&&typeof r.name==='string'&&Number.isFinite(r.amount)&&r.amount>0);}
 function progress(e,state){const missions=e.missions||[],completed=missions.filter(m=>done(m,state)).length,claimed=missions.filter(m=>state[m.id]?.claimed===true).length;return {total:missions.length,completed,claimed,percent:missions.length?Math.round(100*completed/missions.length):0};}

@@ -1,4 +1,4 @@
-const VERSION='1.5-teams';
+const VERSION='1.5.1-rotation-explanations';
 const CACHE='dokkanos-v'+VERSION;
 const CORE=['./','./index.html','./style.css','./app.js','./team-engine.js','./teams.js','./team-worker.js','./recent-cards.json','./catalog-model.js','./catalogue.js','./catalogue-report.json','./events.json','./data.json','./collection.json','./overlap-map.json','./overlap-conflicts.json','./card-meta.json','./catalog.json','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));

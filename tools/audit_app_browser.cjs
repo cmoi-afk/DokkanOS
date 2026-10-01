@@ -27,7 +27,7 @@ for(const width of [360,390,1280]){
  }
  await goView(page,'events');await page.locator('#eventSearch').fill('Recueil');
  await page.waitForFunction(()=>document.querySelector('#events').textContent.includes('Recueil'));
- await page.locator('#events [data-event-setting="status"]').selectOption('all');
+ await page.locator('#eventFilterOptions summary').click();await page.locator('#events [data-event-setting="status"]').selectOption('all');
  const open=page.locator('#events [data-event-open]').first();await open.click();await page.locator('#eventDetail').waitFor();
  const pick=page.locator('#eventDetail [data-event-pick]').first();if(await pick.count()){
   await pick.check();await page.locator('#eventDetail [data-event-team]').click();await page.locator('#teams.on').waitFor();

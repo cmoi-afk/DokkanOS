@@ -6,6 +6,7 @@ const mobile=window.matchMedia('(max-width: 899px)');
 const labels={box:'Ma Box',teams:'Équipes',events:'Événements',catalog:'Catalogue',duplicates:'Potentiel',inventory:'Inventaire',analysis:'Analyse',verify:'À vérifier'};
 function setMenu(open,restoreFocus=false){
  open=!!open&&mobile.matches;
+ more.classList.toggle('on',open||['duplicates','inventory','analysis','verify'].includes(document.body.dataset.view));
  drawer.classList.toggle('is-open',open);more.setAttribute('aria-expanded',String(open));backdrop.hidden=!open;document.body.classList.toggle('menu-open',open);
  drawer.inert=mobile.matches&&!open;
  if(mobile.matches){drawer.setAttribute('role','dialog');drawer.setAttribute('aria-label','Explorer DokkanOS');drawer.setAttribute('aria-modal','true');}else{drawer.removeAttribute('role');drawer.removeAttribute('aria-label');drawer.removeAttribute('aria-modal');}

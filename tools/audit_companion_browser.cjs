@@ -1,7 +1,7 @@
 const fs=require('fs'),assert=require('assert'),{chromium}=require('playwright');
 fs.mkdirSync('audit-artifacts',{recursive:true});
 async function go(page,id){const b=page.locator('nav [data-v="'+id+'"]');if(!await b.isVisible())await page.locator('#moreNav').click();await b.click();await page.locator('#'+id+'.on').waitFor();}
-async function tab(page,id){await page.locator('[data-c-tool="'+id+'"]').first().click();await page.locator('#toolTab-'+id+'[aria-selected="true"]').waitFor();}
+async function tab(page,id){await page.locator('#toolTab-'+id).click();await page.locator('#toolTab-'+id+'[aria-selected="true"]').waitFor();}
 const report={checks:[],errors:[]};
 (async()=>{const browser=await chromium.launch({headless:true});try{for(const width of [390,1280]){
  const context=await browser.newContext({viewport:{width,height:900},acceptDownloads:true,serviceWorkers:'allow'}),page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));let navigations=0;page.on('framenavigated',f=>{if(f===page.mainFrame())navigations++});await page.goto('http://127.0.0.1:8765/');await page.waitForFunction(()=>document.querySelector('#grid .unit'),null,{timeout:60000});if(navigations<2)await page.waitForEvent('framenavigated',{predicate:f=>f===page.mainFrame(),timeout:60000});await page.waitForFunction(()=>navigator.serviceWorker.controller&&document.querySelector('#home .companion-welcome'),null,{timeout:60000});

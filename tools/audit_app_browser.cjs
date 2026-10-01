@@ -10,9 +10,9 @@ report.data.missingLocalResources=cat.cards.filter(c=>{const id=c.resourceId||c.
 (async()=>{const browser=await chromium.launch({headless:true});try{
 for(const width of [390,1280]){
  const context=await browser.newContext({viewport:{width,height:900},serviceWorkers:'allow'});
- const page=await context.newPage();const errors=[],failed=new Set();page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.add(r.url()+' '+r.status())});
+ const page=await context.newPage();let navigations=0;page.on('framenavigated',frame=>{if(frame===page.mainFrame())navigations++});const errors=[],failed=new Set();page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.add(r.url()+' '+r.status())});
  const started=Date.now();await page.goto('http://127.0.0.1:8765/');await page.waitForFunction(()=>document.querySelector('#grid .unit')&&Number(document.querySelector('#nAll').textContent)>0,{timeout:60000});
- await page.evaluate(()=>navigator.serviceWorker.ready);await page.waitForFunction(()=>navigator.serviceWorker.controller&&document.querySelector('#grid .unit'),{timeout:60000});
+ if(navigations<2)await page.waitForEvent('framenavigated',{predicate:frame=>frame===page.mainFrame(),timeout:60000});await page.waitForFunction(()=>navigator.serviceWorker.controller&&document.querySelector('#grid .unit'),null,{timeout:60000});
  const result={width,bootMs:Date.now()-started,tabs:[],offline:false};report.viewports.push(result);
  for(const id of ['box','duplicates','catalog','inventory','teams','events','analysis','verify']){
   await page.locator('nav [data-v="'+id+'"]').click();await page.locator('#'+id+'.on').waitFor();await page.waitForTimeout(100);

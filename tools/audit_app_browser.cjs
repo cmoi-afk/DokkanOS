@@ -16,14 +16,14 @@ for(const width of [360,390,1280]){
  if(navigations<2)await page.waitForEvent('framenavigated',{predicate:frame=>frame===page.mainFrame(),timeout:60000});await page.waitForFunction(()=>navigator.serviceWorker.controller&&document.querySelector('#grid .unit'),null,{timeout:60000});
  const result={width,bootMs:Date.now()-started,tabs:[],offline:false};report.viewports.push(result);
  if(width<900){await page.locator('#moreNav').click();assert.equal(await page.locator('#moreNav').getAttribute('aria-expanded'),'true');await page.waitForTimeout(250);await page.screenshot({path:'audit-artifacts/menu-'+width+'.png'});await page.keyboard.press('Escape');assert.equal(await page.locator('#moreNav').getAttribute('aria-expanded'),'false');assert.equal(await page.evaluate(()=>document.activeElement.id),'moreNav');result.menuKeyboardWorks=true;}
- await page.locator('.hero-actions [data-open-view="teams"]').click();await page.locator('#teams.on').waitFor();await goView(page,'box');
+ await goView(page,'box');await page.locator('.hero-actions [data-open-view="teams"]').click();await page.locator('#teams.on').waitFor();await goView(page,'box');
  await page.locator('.box-filter-panel summary').click();assert(await page.locator('#rarityFilter').isVisible());await page.locator('.box-filter-panel summary').click();assert(!await page.locator('#rarityFilter').isVisible());result.shortcutsAndFilters=true;
 
- for(const id of ['box','duplicates','catalog','inventory','teams','events','analysis','verify']){
-  await goView(page,id);await page.locator('#'+id+'.on').waitFor();await page.waitForTimeout(100);
+ for(const id of ['home','box','duplicates','catalog','inventory','teams','events','analysis','verify','tools']){
+  await goView(page,id);await page.locator('#'+id+'.on').waitFor();await page.waitForTimeout(250);
   const geometry=await page.evaluate(()=>({viewport:innerWidth,document:document.documentElement.scrollWidth,active:document.querySelector('nav [aria-current="page"]')?.dataset.v,boxControlsVisible:document.querySelector('#search').getClientRects().length>0}));
   result.tabs.push({id,geometry});assert.equal(geometry.active,id);assert(geometry.document<=geometry.viewport+2,'page overflows at '+width+' '+id+' '+JSON.stringify(geometry));assert.equal(geometry.boxControlsVisible,id==='box');
-  if(['events','teams','box','catalog','analysis','inventory','duplicates','verify'].includes(id))await page.screenshot({path:'audit-artifacts/'+id+'-'+width+'.png'});
+  if(['home','events','teams','box','catalog','analysis','inventory','duplicates','verify','tools'].includes(id))await page.screenshot({path:'audit-artifacts/'+id+'-'+width+'.png'});
  }
  await goView(page,'events');await page.locator('#eventSearch').fill('Recueil');
  await page.waitForFunction(()=>document.querySelector('#events').textContent.includes('Recueil'));

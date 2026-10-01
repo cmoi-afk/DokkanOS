@@ -3,16 +3,16 @@
 'use strict';
 const more=document.getElementById('moreNav'),drawer=document.getElementById('moreViews'),backdrop=document.getElementById('navBackdrop');
 const mobile=window.matchMedia('(max-width: 899px)');
-const labels={box:'Ma Box',teams:'Équipes',events:'Événements',catalog:'Catalogue',duplicates:'Potentiel',inventory:'Inventaire',analysis:'Analyse',verify:'À vérifier'};
+const labels={home:'Aujourd’hui',tools:'Mes outils',box:'Ma Box',teams:'Équipes',events:'Événements',catalog:'Catalogue',duplicates:'Potentiel',inventory:'Inventaire',analysis:'Analyse',verify:'À vérifier'};
 function setMenu(open,restoreFocus=false){
  open=!!open&&mobile.matches;
- more.classList.toggle('on',open||['duplicates','inventory','analysis','verify'].includes(document.body.dataset.view));
+ more.classList.toggle('on',open||['catalog','duplicates','inventory','analysis','verify','tools'].includes(document.body.dataset.view));
  drawer.classList.toggle('is-open',open);more.setAttribute('aria-expanded',String(open));backdrop.hidden=!open;document.body.classList.toggle('menu-open',open);
  drawer.inert=mobile.matches&&!open;
  if(mobile.matches){drawer.setAttribute('role','dialog');drawer.setAttribute('aria-label','Explorer DokkanOS');drawer.setAttribute('aria-modal','true');}else{drawer.removeAttribute('role');drawer.removeAttribute('aria-label');drawer.removeAttribute('aria-modal');}
  if(open)document.getElementById('closeMore').focus();else if(restoreFocus)more.focus();
 }
-function sync(){const view=document.body.dataset.view||'box';document.getElementById('currentViewLabel').textContent=labels[view]||'DokkanOS';more.classList.toggle('on',['duplicates','inventory','analysis','verify'].includes(view));setMenu(false);}
+function sync(){const view=document.body.dataset.view||'home';document.getElementById('currentViewLabel').textContent=labels[view]||'DokkanOS';more.classList.toggle('on',['catalog','duplicates','inventory','analysis','verify','tools'].includes(view));setMenu(false);}
 more.addEventListener('click',()=>setMenu(more.getAttribute('aria-expanded')!=='true',true));
 document.getElementById('closeMore').addEventListener('click',()=>setMenu(false,true));backdrop.addEventListener('click',()=>setMenu(false,true));
 document.addEventListener('click',e=>{const shortcut=e.target.closest?.('[data-open-view]');if(shortcut)switchView(shortcut.dataset.openView);});

@@ -1,6 +1,6 @@
-const VERSION='1.7-interface';
+const VERSION='1.8-companion';
 const CACHE='dokkanos-v'+VERSION;
-const CORE=['./','./index.html','./style.css','./interface.css','./interface.js','./app.js','./team-engine.js','./teams.js','./event-model.js','./events.js','./team-worker.js','./recent-cards.json','./catalog-model.js','./catalogue.js','./catalogue-report.json','./events.json','./data.json','./collection.json','./overlap-map.json','./overlap-conflicts.json','./card-meta.json','./catalog.json','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png'];
+const CORE=['./','./index.html','./style.css','./interface.css','./interface.js','./companion-model.js','./companion.js','./app.js','./team-engine.js','./teams.js','./event-model.js','./events.js','./team-worker.js','./recent-cards.json','./catalog-model.js','./catalogue.js','./catalogue-report.json','./events.json','./data.json','./collection.json','./overlap-map.json','./overlap-conflicts.json','./card-meta.json','./catalog.json','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('dokkanos-v')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{

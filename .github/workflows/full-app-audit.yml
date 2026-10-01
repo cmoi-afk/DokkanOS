@@ -1,0 +1,35 @@
+name: Full application audit
+on:
+  push:
+    branches: [fix/full-app-audit-v161]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Regression checks
+        run: |
+          for script in tools/test_teams.cjs tools/test_team_builder.cjs tools/test_team_quality.cjs tools/test_catalogue.cjs tools/test_catalogue_data.cjs tools/test_v071.cjs tools/test_sw.cjs tools/test_events.cjs tools/test_audit_regressions.cjs; do node "$script"; done
+      - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom@0.18.12 playwright@1.58.2
+      - name: App and events DOM
+        run: |
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_event_dom.cjs
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_app_dom.cjs
+      - run: /tmp/dokkan-tests/node_modules/.bin/playwright install --with-deps chromium
+      - name: Browser audit, mobile, desktop and offline
+        run: |
+          python -m http.server 8765 > /tmp/dokkan-server.log 2>&1 &
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_app_browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: full-app-audit
+          path: audit-artifacts
+          retention-days: 14

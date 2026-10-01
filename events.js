@@ -7,7 +7,7 @@ try{const x=JSON.parse(storageRead('dokkanos-events-progress-v1')||'{}');if(reco
 for(const k of ['query','kind','status','sort','selected','stage'])if(typeof eventSettings[k]!=='string')eventSettings[k]='';
 for(const k of ['favorites','missions'])eventSettings[k]=Array.isArray(eventSettings[k])?eventSettings[k].filter(x=>typeof x==='string'):[];
 if(!['available','all','active','permanent','closed','upcoming','unknown'].includes(eventSettings.status))eventSettings.status='available';
-eventSettings.page=0;eventSettings.missionPage=0;
+eventSettings.page=0;eventSettings.missionPage=0;eventSettings.todo=eventSettings.todo===true;eventSettings.favorite=eventSettings.favorite===true;
 const eventSave=()=>storageWrite('dokkanos-events-settings-v1',JSON.stringify(eventSettings));
 const eventState=m=>eventProgress[m.id]||{done:storageRead('dokkanos-mission-done-'+m.id)==='yes',claimed:false};
 function eventAllProgress(){const state={...eventProgress};for(const e of teamEvents.events)for(const m of e.missions||[])if(!state[m.id])state[m.id]=eventState(m);return state;}

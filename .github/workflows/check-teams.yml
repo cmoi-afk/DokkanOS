@@ -1,9 +1,9 @@
 name: Check teams and missions
 on:
   push:
-    paths: [index.html, sw.js, app.js, tools/test_app_dom.cjs, tools/test_sw.cjs, team-engine.js, teams.js, team-worker.js, recent-cards.json, style.css, tools/test_team_builder.cjs, catalog-model.js, catalogue.js, catalogue-report.json, catalog.json, card-meta.json, tools/test_catalogue_data.cjs, tools/test_catalogue.cjs, events.json, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
+    paths: [events.js, event-model.js, tools/test_events.cjs, tools/test_event_dom.cjs, index.html, sw.js, app.js, tools/test_app_dom.cjs, tools/test_sw.cjs, team-engine.js, teams.js, team-worker.js, recent-cards.json, style.css, tools/test_team_builder.cjs, catalog-model.js, catalogue.js, catalogue-report.json, catalog.json, card-meta.json, tools/test_catalogue_data.cjs, tools/test_catalogue.cjs, events.json, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
   pull_request:
-    paths: [app.js, tools/test_app_dom.cjs, tools/test_sw.cjs, team-engine.js, teams.js, team-worker.js, recent-cards.json, style.css, tools/test_team_builder.cjs, catalog-model.js, catalogue.js, catalogue-report.json, catalog.json, card-meta.json, tools/test_catalogue_data.cjs, tools/test_catalogue.cjs, events.json, index.html, sw.js, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
+    paths: [events.js, event-model.js, tools/test_events.cjs, tools/test_event_dom.cjs, app.js, tools/test_app_dom.cjs, tools/test_sw.cjs, team-engine.js, teams.js, team-worker.js, recent-cards.json, style.css, tools/test_team_builder.cjs, catalog-model.js, catalogue.js, catalogue-report.json, catalog.json, card-meta.json, tools/test_catalogue_data.cjs, tools/test_catalogue.cjs, events.json, index.html, sw.js, tools/test_teams.cjs, tools/import_events.py, .github/workflows/check-teams.yml]
 permissions:
   contents: read
 jobs:
@@ -15,6 +15,8 @@ jobs:
         with:
           node-version: '22'
       - run: node --check team-engine.js && node --check teams.js && node --check app.js && node --check team-worker.js && node --check catalog-model.js && node --check catalogue.js
+      - run: node --check events.js && node --check event-model.js
+      - run: node tools/test_events.cjs
       - run: node tools/test_teams.cjs
       - run: node tools/test_team_builder.cjs
       - run: node tools/test_team_quality.cjs
@@ -23,5 +25,6 @@ jobs:
       - run: node tools/test_v071.cjs
       - run: node tools/test_sw.cjs
       - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom@0.18.12
+      - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_event_dom.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_app_dom.cjs
       - run: python -c "import json; from tools.import_events import validate; print(validate(json.load(open('events.json'))))"

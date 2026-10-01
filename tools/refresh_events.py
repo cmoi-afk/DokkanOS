@@ -3,6 +3,7 @@
 Run in CI (public source access); output events.json and audit.json in event-source.
 """
 import concurrent.futures,hashlib,json,re,time,urllib.request,os
+from urllib.parse import urljoin
 from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -11,7 +12,7 @@ BASE='https://www.dbz-dokkanbattle.com';OUT=Path('event-source');OUT.mkdir(exist
 CACHE=Path(os.environ.get('EVENT_CACHE','event-cache'));CACHE.mkdir(exist_ok=True)
 TZ=ZoneInfo('Europe/Paris');errors={};pages={};names={}
 INDEX={'/event/challenge':'Défi','/event/story':'Histoire','/event/growth':'Préparation','/event/limited':'Limité','/zbattles':'Combat Z suprême','/db-stories':'DB Stories','/quests':'Quête','/origin/series':'Dokkan Frontier','/burst-modes':'Burst Mode','/tenkaichi-budokais':'Tenkaichi Budokai','/event/rmbattles':'Bataille Royale','/sd-characters':'Pettan Battle','/limited-missions-categories':'Missions limitées','/board-missions':'Missions de panneaux','/dokkan-frontier-missions':'Missions Dokkan Frontier','/burst-mode-missions':'Missions Burst Mode','/mission/1':'Missions régulières','/mission/6':'Missions Kaio Shin','/mission/1000':'Missions quotidiennes'}
-def txt(n):return re.sub(r'\s+',' ',n.get_text(' ',strip=True)).strip() if n else ''
+def txt(n):return re.sub(r'\s+',' ',re.sub(r'\{[^{}]+\}','',n.get_text(' ',strip=True))).strip() if n else ''
 def fetch(path):
  f=CACHE/((path.strip('/').replace('/','_') or 'home')+'.html')
  if f.exists():return path,f.read_text()
@@ -48,7 +49,7 @@ def reward(node):
   if not name:
    label=next((v for k,v in [('support_memory_enhancement','Médaille de mémoire de soutien'),('/awaken/','Médaille d’éveil'),('/potential/','Orbe de potentiel'),('/training/','Objet d’entraînement'),('/equipment/','Équipement'),('/other/','Trésor / ticket'),('/support/','Objet de soutien'),('/character/','Personnage')] if k in src),'Objet')
    identifier=re.findall(r'\d+',asset);name=label+(' · réf. '+identifier[-1] if identifier else '')
-  result.append({'name':'Pierre Dragon' if stone else name,'kind':'stones' if stone else 'item','amount':amount,'image':BASE+'/'+src.lstrip('./'),'identified':stone or bool(img.get('title') or img.get('alt') or names.get(asset))})
+  result.append({'name':'Pierre Dragon' if stone else name,'kind':'stones' if stone else 'item','amount':amount,'image':urljoin(BASE+'/',src),'identified':stone or bool(img.get('title') or img.get('alt') or names.get(asset))})
  return result
 def requirements(text):
  out=[]
@@ -57,13 +58,14 @@ def requirements(text):
   if 'sauf amis' in text or 'sans ami' in text or 'hors ami' in text:out.append({'kind':'category','value':m[2],'count':int(m[1]),'includeFriend':False})
  return out
 def missions(s,path):
- out=[];seen=set()
- for c in s.select('.quest-mission-card, .news-card--mission'):
-  title=txt(c.select_one('.news-card__title'));description=txt(c.select_one('.basic-paragraph.center'))
+ out=[];seen={}
+ for c in s.select('.quest-mission-card, .news-card--mission, .tb-mission-card'):
+  title=txt(c.select_one('.news-card__title,.tb-mission-card__title'));description=txt(c.select_one('.basic-paragraph.center'))
   if not title:continue
   key=title+'|'+description
-  if key in seen:continue
-  seen.add(key);m={'id':'m-'+hashlib.sha1((path+'|'+key).encode()).hexdigest()[:16],'title':title,'description':description,'requirements':requirements(description),'manualCheck':True,'rewards':reward(c)}
+  occurrence=seen.get(key,0);seen[key]=occurrence+1
+  if occurrence:key+='|'+str(occurrence)
+  m={'id':'m-'+hashlib.sha1((path+'|'+key).encode()).hexdigest()[:16],'title':title,'description':description,'requirements':requirements(description),'manualCheck':True,'rewards':reward(c)}
   n=re.search(r'\bniveau\s+(\d+)\b',description,re.I)
   if n:m['stageNumber']=int(n[1])
   dates=c.select('.primaryMain')
@@ -91,82 +93,129 @@ def stages(s,path):
    st['disableDodge']=any(re.search(r'(?:annule|empêche|désactive).*esquive',x,re.I) for x in st['notes'])
    out.append(st)
  return out
-batch(INDEX)
-# Crawl catalogue pagination and chapter/area/Frontier navigation only, never community teams.
-for _ in range(4):
- paths=[]
+def main():
+ batch(INDEX)
+ # Crawl catalogue pagination and chapter/area/Frontier navigation only, never community teams.
+ for _ in range(4):
+  paths=[]
+  for path,s in list(pages.items()):
+   for a in s.select('a[href]'):
+    h=a.get('href','')
+    if re.fullmatch(r'/(?:limited-missions-categories/current/\d+|chapter-quests/\d+|area-quests/\d+|origin/(?:series|episode)/\d+)',h):paths.append(h)
+  if not set(paths)-pages.keys():break
+  batch(paths)
+ # Learn available reward labels without fabricating missing names.
+ itempaths=['/items/'+x for x in ['ActItem','TreasureItem','SpecialItem','AwakeningItem','WallpaperItem','EventkagiItem','PotentialItem','SupportItem','TrainingItem','TrainingField']]
+ batch(itempaths)
+ for path in itempaths:
+  for img in pages[path].select('img'):
+   name=img.get('title') or img.get('alt')
+   if name and not name.startswith(('/','..')):names[img.get('src','').split('/')[-1]]=name
+ inventory={}
+ DETAIL=re.compile(r'/(?:quest/\d+|zbattle/\d+|mission/\d+|board-missions/\d+|tenkaichi-budokai/\d+|event/rmbattle/\d+|sd-character/\d+|origin/(?:series|episode)/\d+)$')
  for path,s in list(pages.items()):
+  if path in itempaths:continue
+  family=INDEX.get(path)
+  if not family:
+   family='Quête' if 'quests' in path else 'Dokkan Frontier' if path.startswith('/origin') else 'Missions limitées'
   for a in s.select('a[href]'):
    h=a.get('href','')
-   if re.fullmatch(r'/(?:limited-missions-categories/current/\d+|chapter-quests/\d+|area-quests/\d+|origin/series/\d+)',h):paths.append(h)
- if not set(paths)-pages.keys():break
- batch(paths)
-# Learn available reward labels without fabricating missing names.
-itempaths=['/items/'+x for x in ['ActItem','TreasureItem','SpecialItem','AwakeningItem','WallpaperItem','EventkagiItem','PotentialItem','SupportItem','TrainingItem','TrainingField']]
-batch(itempaths)
-for path in itempaths:
- for img in pages[path].select('img'):
-  name=img.get('title') or img.get('alt')
-  if name and not name.startswith(('/','..')):names[img.get('src','').split('/')[-1]]=name
-inventory={}
-DETAIL=re.compile(r'/(?:quest/\d+|zbattle/\d+|mission/\d+|board-missions/\d+|tenkaichi-budokai/\d+|event/rmbattle/\d+|sd-character/\d+|origin/series/\d+)$')
-for path,s in list(pages.items()):
- if path in itempaths:continue
- family=INDEX.get(path)
- if not family:
-  family='Quête' if 'quests' in path else 'Dokkan Frontier' if path.startswith('/origin') else 'Missions limitées'
- for a in s.select('a[href]'):
+   if not DETAIL.fullmatch(h):continue
+   # Navigation links to these pages belong to their own inventory, not every family.
+   if h in ['/mission/1','/mission/6','/mission/1000']:continue
+   title=txt(a.select_one('.event-card-name,.tb-budokai-card__edition,.missions-block__title')) or a.get('data-event-name') or a.get('data-zbattle-name') or (a.select_one('img').get('alt') if a.select_one('img') else '') or txt(a)
+   if not title and h in inventory:continue
+   if h not in inventory:inventory[h]={'id':h.strip('/').replace('/','-'),'name':title or family+' '+h.split('/')[-1],'kind':family,'source':BASE+h,'status':'unknown','missions':[],'stages':[]}
+   e=inventory[h]
+   block=a.find_parent(class_='missions-block')
+   if block:
+    datesblock=txt(block.select_one('.board-missions-dates'));dateslist=re.findall(r'\d{2}[/-]\d{2}[/-]\d{4}(?:\s+(?:à\s+)?\d{2}:\d{2})?',datesblock)
+    if len(dateslist)>=2:
+     for k,v in [('start',date(dateslist[0])),('end',date(dateslist[1]))]:
+      if v:e[k]=v
+     if '2038' in dateslist[1]:e['permanent']=True
+     else:e['status']='active'
+    e['rewards']=reward(block.select_one('.missions-rewards') or BeautifulSoup('','html.parser'))
+   cat=a.get('data-event-category')
+   if cat and path=='/event/challenge':e['kind']={'10':'Dokkan Event','11':'Combat éminent','12':'Zone Z suprême','20':'Défi'}.get(cat,'Défi')
+   if a.select_one('.is-permanent'):e['permanent']=True
+   status=a.get('data-event-status')
+   if status:e['status']='closed' if status=='inactive' else status
+   end=date(txt(a.select_one('.event-card-end')))
+   if end:e['end']=end;e['datePrecision']='day'
+   ds=txt(a.select_one('.event-card-ds'))
+   if ds.isdigit():e['stonesTotal']=int(ds)
+   dates=re.findall(r'\d{2}[/-]\d{2}[/-]\d{4}(?:\s+(?:à\s+)?\d{2}:\d{2})?',txt(a))
+   if len(dates)>=2:
+    for k,v in [('start',date(dates[0])),('end',date(dates[1]))]:
+     if v:e[k]=v
+ for p,k in INDEX.items():
+  if p.startswith('/mission/') or p in ['/dokkan-frontier-missions','/burst-mode-missions']:
+   inventory[p]={'id':p.strip('/').replace('/','-'),'name':k,'kind':k,'source':BASE+p,'permanent':True,'missions':[],'stages':[]}
+ batch(inventory)
+ for path,e in inventory.items():
+  s=pages[path];e['missions']=missions(s,path);e['stages']=stages(s,path)
+  heads=[txt(h) for h in s.select('h1') if txt(h)]
+  if heads and heads[-1]!='Missions' and path.startswith(('/quest/','/zbattle/','/mission/','/board-missions/')):e['name']=heads[-1]
+  e['detailsLoaded']=path not in errors;e['notes']=[]
+  if e['name']=='Missions' or re.search(r'[\u3040-\u30ff\u4e00-\u9fff]',e['name']):
+   targets=[]
+   for m in e['missions']:targets.extend(re.findall(r'événement[^\"]{0,80}\"([^\"]+)\"',m['description'],re.I))
+   target=max(set(targets),key=targets.count) if targets else path.split('/')[-1]
+   e['name']=e['kind']+' · '+target
+  if path.startswith('/event/rmbattle/'):
+   e['name']=next((txt(h) for h in s.select('h1') if 'Battlefield' in txt(h)),e['name'])
+   for h in s.select('h3.center'):
+    rr=reward(h.parent)
+    if rr:
+     title=txt(h);e['missions'].append({'id':'m-'+hashlib.sha1((path+'|'+title).encode()).hexdigest()[:16],'title':title,'requirements':[],'manualCheck':True,'rewards':rr})
+  if not e['missions']:e['notes'].append('Aucune mission extraite de cette fiche ; vérifie les missions liées ou la source en jeu.')
+  if e['kind'] in ['Pettan Battle','Dokkan Frontier','Bataille Royale','Burst Mode']:
+   e['teamMode']='special';e['notes'].append('Ce mode possède ses propres règles. Le constructeur standard aide à choisir des cartes ; vérifie les effectifs et restrictions propres au mode dans la source.')
+ # Enemy abilities: only explicitly parsed source skills on open challenge stage pages.
+ bosspaths=[]
+ for e in inventory.values():
+  if e['kind'] in ['Défi','Zone Z suprême'] and (e.get('permanent') or e.get('status')=='active'):
+   bosspaths.extend(st['source'].replace(BASE,'') for st in e['stages'] if st.get('source'))
+ batch(bosspaths)
+ for e in inventory.values():
+  for st in e['stages']:
+   p=st.get('source','').replace(BASE,'')
+   if p in pages:
+    skills=[x.get('data-tip') for x in pages[p].select('[data-tip]') if x.get('data-tip')]
+    for boss in pages[p].select('.boss-card'):
+     label=txt(boss.select_one('.boss-card-name'))
+     skills.extend(label+' : '+txt(x) for x in boss.select('.boss-skill-text'))
+    skills=list(dict.fromkeys(skills));st['notes']=list(dict.fromkeys(st['notes']+skills));st['disableDodge']=any(re.search(r'(?:annule|empêche|désactive).*esquive',x,re.I) for x in skills)
+    st['rulesVerified']=p not in errors
+  e['rulesCoverage']='Les quotas explicites de catégorie sont vérifiés automatiquement ; les autres conditions et restrictions restent à vérifier dans la fiche source.'
+ for a in pages['/burst-modes'].select('a[href]'):
   h=a.get('href','')
-  if not DETAIL.fullmatch(h):continue
-  # Navigation links to these pages belong to their own inventory, not every family.
-  if h in ['/mission/1','/mission/6','/mission/1000']:continue
-  title=txt(a.select_one('.event-card-name,.tb-budokai-card__edition,.missions-block__title')) or a.get('data-event-name') or a.get('data-zbattle-name') or txt(a)
-  if not title and h in inventory:continue
-  if h not in inventory:inventory[h]={'id':h.strip('/').replace('/','-'),'name':title or family+' '+h.split('/')[-1],'kind':family,'source':BASE+h,'status':'unknown','missions':[],'stages':[]}
-  e=inventory[h]
-  cat=a.get('data-event-category')
-  if cat and path=='/event/challenge':e['kind']={'10':'Dokkan Event','11':'Combat éminent','12':'Zone Z suprême','20':'Défi'}.get(cat,'Défi')
-  if a.select_one('.is-permanent'):e['permanent']=True
-  status=a.get('data-event-status')
-  if status:e['status']='closed' if status=='inactive' else status
-  end=date(txt(a.select_one('.event-card-end')))
-  if end:e['end']=end;e['datePrecision']='day'
-  ds=txt(a.select_one('.event-card-ds'))
-  if ds.isdigit():e['stonesTotal']=int(ds)
-  dates=re.findall(r'\d{2}[/-]\d{2}[/-]\d{4}(?:\s+(?:à\s+)?\d{2}:\d{2})?',txt(a))
-  if len(dates)>=2:
-   for k,v in [('start',date(dates[0])),('end',date(dates[1]))]:
-    if v:e[k]=v
-for p,k in INDEX.items():
- if p.startswith('/mission/') or p in ['/dokkan-frontier-missions','/burst-mode-missions']:
-  inventory[p]={'id':p.strip('/').replace('/','-'),'name':k,'kind':k,'source':BASE+p,'permanent':True,'missions':[],'stages':[]}
-batch(inventory)
-for path,e in inventory.items():
- s=pages[path];e['missions']=missions(s,path);e['stages']=stages(s,path)
- heads=[txt(h) for h in s.select('h1') if txt(h)]
- if heads and path.startswith(('/quest/','/zbattle/','/mission/','/board-missions/')):e['name']=heads[-1]
- e['detailsLoaded']=path not in errors;e['notes']=[]
- if not e['missions']:e['notes'].append('Aucune mission extraite de cette fiche ; vérifie les missions liées ou la source en jeu.')
- if e['kind'] in ['Pettan Battle','Dokkan Frontier','Bataille Royale','Burst Mode']:
-  e['teamMode']='special';e['notes'].append('Ce mode possède ses propres règles. Le constructeur standard aide à choisir des cartes ; vérifie les effectifs et restrictions propres au mode dans la source.')
-# Enemy abilities: only explicitly parsed source skills on open challenge stage pages.
-bosspaths=[]
-for e in inventory.values():
- if e['kind'] in ['Défi','Zone Z suprême'] and (e.get('permanent') or e.get('status')=='active'):
-  bosspaths.extend(st['source'].replace(BASE,'') for st in e['stages'] if st.get('source'))
-batch(bosspaths)
-for e in inventory.values():
- for st in e['stages']:
-  p=st.get('source','').replace(BASE,'')
-  if p in pages:
-   skills=[x.get('data-tip') for x in pages[p].select('[data-tip]') if x.get('data-tip')]
-   skills=list(dict.fromkeys(skills));st['notes']=list(dict.fromkeys(st['notes']+skills));st['disableDodge']=any(re.search(r'(?:annule|empêche|désactive).*esquive',x,re.I) for x in skills)
-   st['rulesVerified']=p not in errors
- e['rulesCoverage']='Les quotas explicites de catégorie sont vérifiés automatiquement ; les autres conditions et restrictions restent à vérifier dans la fiche source.'
-data={'schema':'dokkanos-events-v2','region':'GLOBAL','locale':'fr','verifiedAt':datetime.now(TZ).strftime('%d/%m/%Y à %H:%M'),'coverage':{'complete':False,'inventoryComplete':not any(p in errors for p in INDEX),'reason':'Catalogue public GLOBAL FR ; certaines règles de modes spéciaux et récompenses sans nom restent à vérifier en jeu.','events':len(inventory),'missions':sum(len(e['missions']) for e in inventory.values()),'failedPages':len(errors)},'sourceInventory':[e['id'] for e in inventory.values()],'events':list(inventory.values())}
-(OUT/'events.json').write_text(json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n')
-(OUT/'audit.json').write_text(json.dumps({'pages':len(pages),'errors':errors,'families':{k:sum(e['kind']==k for e in inventory.values()) for k in sorted(set(e['kind'] for e in inventory.values()))},'coverage':data['coverage']},ensure_ascii=False,indent=2))
-# Representative raw pages keep parser changes reviewable without a massive HTML artifact.
-for p in ['/quest/1769','/quest/1776','/quest/711','/quest/1354','/zbattle/728','/items/TreasureItem']:
- if p in pages:(OUT/(p.strip('/').replace('/','_')+'.html')).write_text(str(pages[p]))
-print(json.dumps(data['coverage'],ensure_ascii=False))
+  if not re.fullmatch(r'/quest/\d+',h):continue
+  dateslist=re.findall(r'\d{2}[/-]\d{2}[/-]\d{4}(?:\s+(?:à\s+)?\d{2}:\d{2})?',txt(a));start=date(dateslist[0]) if dateslist else None;end=date(dateslist[1]) if len(dateslist)>1 else None
+  ident='burst-'+h.split('/')[-1]+'-'+(start or 'unknown')[:10];base=inventory.get(h,{});img=a.select_one('img');name=img.get('alt') if img else base.get('name','Burst Mode')
+  inventory['/burst-entry/'+ident]={'id':ident,'name':name,'kind':'Burst Mode','source':BASE+h,'start':start,'end':end,'status':'unknown','relatedEventId':base.get('id'),'missions':[],'stages':[],'teamMode':'special','notes':['Les règles et récompenses de score du Burst Mode doivent être vérifiées en jeu. La fiche liée décrit le combat de base ; ses récompenses ne sont pas ajoutées au Burst Mode.']}
+ # Resolve campaign names and associate explicitly named combats, without assuming fuzzy matches.
+ normal=lambda value:re.sub(r'[^a-z0-9]','',__import__('unicodedata').normalize('NFD',value.lower()).encode('ascii','ignore').decode())
+ byname={}
+ for e in inventory.values():
+  if e['kind'] not in ['Missions limitées','Missions de panneaux','Burst Mode'] and e['source'].split('/')[-2] in ['quest','zbattle']:
+   byname.setdefault(normal(e['name']),[]).append(e)
+ for e in inventory.values():
+  for m in e['missions']:
+   for target in re.findall(r'événement[^\"]{0,80}\"([^\"]+)\"',m.get('description',''),re.I):
+    matches=byname.get(normal(target),[])
+    if len(matches)==1:m['combatEventId']=matches[0]['id'];break
+  ends=[x.get('end') for x in e['missions'] if x.get('end')];starts=[x.get('start') for x in e['missions'] if x.get('start')]
+  if e['kind'].startswith('Missions') and e.get('status')=='unknown' and starts:
+   e['start']=min(starts)
+   if ends:e['end']=max(ends);e['status']='active'
+ data={'schema':'dokkanos-events-v2','region':'GLOBAL','locale':'fr','verifiedAt':datetime.now(TZ).strftime('%d/%m/%Y à %H:%M'),'coverage':{'complete':False,'inventoryComplete':not any(p in errors for p in INDEX),'reason':'Catalogue public GLOBAL FR ; certaines règles de modes spéciaux et récompenses sans nom restent à vérifier en jeu.','events':len(inventory),'missions':sum(len(e['missions']) for e in inventory.values()),'failedPages':len(errors)},'sourceInventory':[e['id'] for e in inventory.values()],'events':list(inventory.values())}
+ (OUT/'events.json').write_text(json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n')
+ (OUT/'audit.json').write_text(json.dumps({'pages':len(pages),'errors':errors,'families':{k:sum(e['kind']==k for e in inventory.values()) for k in sorted(set(e['kind'] for e in inventory.values()))},'coverage':data['coverage']},ensure_ascii=False,indent=2))
+ # Representative raw pages keep parser changes reviewable without a massive HTML artifact.
+ for p in ['/quest/1769','/quest/1776','/quest/711','/quest/1354','/zbattle/728','/items/TreasureItem','/origin/episode/99003','/tenkaichi-budokai/63','/event/rmbattle/106','/quest/1769/17690045']:
+  if p in pages:(OUT/(p.strip('/').replace('/','_')+'.html')).write_text(str(pages[p]))
+ print(json.dumps(data['coverage'],ensure_ascii=False))
+
+if __name__=='__main__':main()

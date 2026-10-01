@@ -2,15 +2,15 @@
 (function(){
 'use strict';
 const CM=window.DokkanCatalogModel,esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let indexArray,indexLength=-1,index=new Map(),report={status:'pending'},page=0,sheetId='',sheetTab='info',sheetVersion='base';
+let candidateCache=new Map(),candidateMeta=null,indexArray,indexLength=-1,index=new Map(),report={status:'pending'},page=0,sheetId='',sheetTab='info',sheetVersion='base';
 let settings={scope:'all',forms:'final',rarity:'',type:'',class:'',z:'',kit:'',sort:'recent'};
 try{const s=JSON.parse(storageRead('dokkanos-catalogue-v4')||'{}');for(const k of Object.keys(settings))if(typeof s?.[k]==='string')settings[k]=s[k]}catch(e){}
 for(const [k,values] of Object.entries({scope:['all','owned','missing','review'],forms:['final','all'],rarity:['','SSR','UR','LR'],type:['','AGI','TEC','INT','PUI','END'],class:['','Super','Extrême'],z:['','any','none',...Object.keys(CM.labels)],kit:['','complete','partial'],sort:['recent','name','id']}))if(!values.includes(settings[k]))settings[k]=values[0];
 let selectedKits={};try{const s=JSON.parse(storageRead('dokkanos-kit-versions-v4')||'{}');if(record(s))selectedKits=s}catch(e){}
-function lookup(id){const cards=CATALOG.cards||[];if(indexArray!==cards||indexLength!==cards.length){indexArray=cards;indexLength=cards.length;index=new Map(cards.map(c=>[String(c.id),c]));}return index.get(String(id))||{}}
+function lookup(id){const cards=CATALOG.cards||[];if(indexArray!==cards||indexLength!==cards.length){indexArray=cards;indexLength=cards.length;index=new Map(cards.map(c=>[String(c.id),c]));candidateCache.clear();}return index.get(String(id))||{}}
 localAssetIdFor=function(cardId){cardId=String(cardId||'');const c=lookup(cardId),m=META.cards?.[cardId]||{};return String(c.resourceId||c.resource_id||m.resourceId||m.resource_id||c.imageId||m.imageId||cardId)};
 localCardImage=function(id,preferred){const c=lookup(id);return c.image||preferred||'assets/cards/'+localAssetIdFor(id)+'.webp'};
-verifyCandidate=function(id){id=String(id||'');const raw=META.cards?.[id],cat=lookup(id);if(!raw&&!cat.id)return null;const m=localized(raw)||{};return {id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:bestFrenchName({...m,id},cat),title:frTerm(cat.titleFr||cat.fr?.title||m.title||cat.title),categories:frList(cat.fr?.categories||m.categories||cat.categories),links:frList(cat.fr?.links||m.links||cat.links),image:localCardImage(id,cat.image||m.image),zAwakenings:m.zAwakenings||cat.zAwakenings||[]}};
+verifyCandidate=function(id){id=String(id||'');const cat=lookup(id);if(candidateMeta!==META.cards){candidateMeta=META.cards;candidateCache.clear();}if(candidateCache.has(id))return candidateCache.get(id);const raw=META.cards?.[id];if(!raw&&!cat.id)return null;const m=localized(raw)||{},value={id,...m,...cat,rarity:cat.rarity||m.rarity,type:cat.type||m.type,class:cat.class||m.class,name:bestFrenchName({...m,id},cat),title:frTerm(cat.titleFr||cat.fr?.title||m.title||cat.title),categories:frList(cat.fr?.categories||m.categories||cat.categories),links:frList(cat.fr?.links||m.links||cat.links),image:localCardImage(id,cat.image||m.image),zAwakenings:m.zAwakenings||cat.zAwakenings||[]};candidateCache.set(id,value);return value;};
 verifyCatalogue=function(){return(CATALOG.cards||[]).filter(CM.allowed).map(c=>verifyCandidate(c.id)).filter(isPlayableCard)};
 teamCatalog=function(){return verifyCatalogue()};
 const resolveOriginal=resolveCard,ownedOriginal=ownedTeamCards;

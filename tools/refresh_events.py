@@ -3,7 +3,7 @@
 import concurrent.futures,json,time,urllib.request
 from pathlib import Path
 BASE='https://www.dbz-dokkanbattle.com'
-PATHS=['/','/event/challenge','/event/story','/event/growth','/event/limited','/zbattles','/mission/1','/announcement/107279']
+PATHS=['/','/event/challenge','/event/story','/event/growth','/event/limited','/zbattles','/mission/1','/announcement/107279','/quest/1769','/quest/1776','/zbattle/728','/quests','/db-stories','/origin/series','/burst-modes','/tenkaichi-budokais','/event/rmbattles','/sd-characters','/limited-missions-categories','/board-missions','/dokkan-frontier-missions','/burst-mode-missions','/mission/6','/mission/1000']
 OUT=Path('event-source');OUT.mkdir(exist_ok=True)
 def fetch(path):
  url=BASE+path

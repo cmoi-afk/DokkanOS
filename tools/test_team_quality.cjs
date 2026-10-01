@@ -26,6 +26,10 @@ assert(E.rotations([tank,attacker,unit('x','',[]),unit('y','',[])]).some(r=>r.a.
 const inferred=unit('inferred','*S\'il y a 3 persos de catégorie "Saga de Boo" parmi les alliés attaquants du tour*\nDÉF +100 %');
 assert.equal(E.interactionRows(inferred,[inferred,tank,attacker],[inferred,tank,attacker])[0].state,'available');
 assert.equal(E.interactionRows(inferred,[inferred,tank,weak],[inferred,tank,{...weak,categories:['A']}])[0].state,'missing');
+const extremeRule={...inferred,passive:inferred.passive.replace('du tour','du tour de classe Extrême')};
+assert.equal(E.interactionRows(extremeRule,[extremeRule,tank,attacker],[extremeRule,tank,attacker])[0].state,'missing');
+const nameRule={...inferred,passive:'*Un allié dont le nom comprend "Son Goku" est dans le même tour*\nATT +100 %'};
+assert.equal(E.interactionRows(nameRule,[nameRule,tank], [nameRule,tank]).length,0);
 // Friend coverage is mandatory, and a projection never mutates catalogue or ownership data.
 const otherFriend={...friend,leader:'Ki +3, PV, ATT et DÉF +200 % pour la catégorie "A"',teamRules:undefined};
 assert(E.build([leader,...strong],leader,{friend:otherFriend}).error);

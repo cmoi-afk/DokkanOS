@@ -71,3 +71,8 @@ main{max-width:1120px;margin:auto;padding:0 20px 32px}h1,h2,h3,h4{letter-spacing
 .ux-team-cta button{padding:10px 12px}.ux-team-cta button.primary{background:var(--accent);color:#231b15;border-color:var(--accent)}
 h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus{outline:none}
 #home .companion-welcome{padding:18px 20px}#home .companion-welcome h1{font-size:24px;margin:8px 0}#home .companion-welcome h1 br{display:none}#home .companion-welcome p{margin:8px 0 12px}
+
+.ux-segments button,.catalog-display button,.ux-search-dock button,.ux-team-steps button,.ux-mini-roster button,.ux-team-roster button,.ux-filter-chips button,#activeFilters button{background:#253044;color:var(--text);border:1px solid #ffffff25;border-radius:10px;padding:10px 12px;min-height:44px}
+.ux-segments button[aria-pressed=true],.catalog-display button[aria-pressed=true]{background:#ff984026;border-color:var(--accent);color:#ffbd85}
+.ux-potential-filters label{display:block}.ux-potential-filters input{display:block;width:100%;margin-top:8px;background:#171f2d;color:var(--text);border:1px solid #ffffff25;border-radius:12px;padding:12px;min-height:46px;box-sizing:border-box}
+.ux-mini-roster button,.ux-team-roster button[data-team-open]{background:transparent;border-color:transparent;padding:2px}

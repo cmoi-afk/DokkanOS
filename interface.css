@@ -76,3 +76,5 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus{outline:none}
 .ux-segments button[aria-pressed=true],.catalog-display button[aria-pressed=true]{background:#ff984026;border-color:var(--accent);color:#ffbd85}
 .ux-potential-filters label{display:block}.ux-potential-filters input{display:block;width:100%;margin-top:8px;background:#171f2d;color:var(--text);border:1px solid #ffffff25;border-radius:12px;padding:12px;min-height:46px;box-sizing:border-box}
 .ux-mini-roster button,.ux-team-roster button[data-team-open]{background:transparent;border-color:transparent;padding:2px}
+
+.ux-team-steps button,.ux-event-tabs button{flex:0 0 auto}

@@ -82,3 +82,5 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus{outline:none}
 .menu-open .ux-toast{display:none}body[data-view="teams"] .ux-toast{bottom:190px}@media(min-width:900px){body[data-view="teams"] .ux-toast{bottom:110px}}
 
 .menu-open .ux-team-cta{display:none}.menu-open .app-nav{z-index:70}.menu-open .nav-backdrop{z-index:69}
+
+#home .companion-welcome h1 span{margin-left:.22em}

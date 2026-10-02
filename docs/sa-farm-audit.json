@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-10-02T15:28:17.409524+00:00",
+  "coverage": {
+    "cards": 4494,
+    "characters": 654,
+    "reviewed": 653,
+    "unknown": 1,
+    "f2pAcquisitionCards": 439
+  },
+  "errors": {
+    "Hercule": "Nom source différent : M. Satan"
+  },
+  "availableCharacters": 303,
+  "noneListedCharacters": 350
+}

@@ -49,3 +49,6 @@ main{max-width:1120px;margin:auto;padding:0 20px 32px}h1,h2,h3,h4{letter-spacing
 .pilot-group-title{grid-column:1/-1;margin:12px 0 2px;font-size:.86rem;color:#a8b9d1;letter-spacing:.08em;text-transform:uppercase}
 
 #copilot:has(.progress-combat.compact) .section-title{display:none}.progress-combat.compact .progress-rotations article p{font-size:.8rem;line-height:1.4}.progress-combat.compact>p.muted{font-size:.8rem}
+
+/* SP farming in every card sheet */
+.sa-farming{background:var(--surface,#1a202c);border:1px solid var(--border,#303949);border-radius:16px;padding:18px;margin:18px 0}.sa-farming summary{cursor:pointer;font-weight:700}.sa-farm-method{border-top:1px solid #303949;padding:16px 0}.sa-farm-method h4{margin:0 0 8px}.sa-farm-origin{border-left:2px solid #ff934b;padding-left:12px;margin:12px 0}.sa-farming a{display:inline-block;margin:4px 10px 4px 0}.sa-farming button{margin:4px 10px 4px 0}

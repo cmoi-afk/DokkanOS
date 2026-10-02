@@ -22,6 +22,7 @@ jobs:
       - name: Browser audit, mobile, desktop and offline
         run: |
           python -m http.server 8765 > /tmp/dokkan-server.log 2>&1 &
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_experience_dom.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_experience_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_team_category_dom.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_team_battles_dom.cjs

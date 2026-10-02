@@ -52,3 +52,7 @@ main{max-width:1120px;margin:auto;padding:0 20px 32px}h1,h2,h3,h4{letter-spacing
 
 /* SP farming in every card sheet */
 .sa-farming{background:var(--surface,#1a202c);border:1px solid var(--border,#303949);border-radius:16px;padding:18px;margin:18px 0}.sa-farming summary{cursor:pointer;font-weight:700}.sa-farm-method{border-top:1px solid #303949;padding:16px 0}.sa-farm-method h4{margin:0 0 8px}.sa-farm-origin{border-left:2px solid #ff934b;padding-left:12px;margin:12px 0}.sa-farming a{display:inline-block;margin:4px 10px 4px 0}.sa-farming button{margin:4px 10px 4px 0}
+
+.team-category-choice{margin:18px 0;padding:16px;border:1px solid var(--line,#343c4b);border-radius:14px;background:rgba(255,143,65,.05)}
+.team-category-choice select{width:100%;margin-top:8px}
+.team-category-choice p{margin-bottom:0}

@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict'),fs=require('fs'),E=require('../team-engine');
+const meta=JSON.parse(fs.readFileSync('card-meta.json')).cards,leader={...meta['1032581'],id:'1032581',boxId:'leader'};
+const known=[...new Set(Object.values(meta).flatMap(c=>c.categories||[]))];
+assert.deepEqual(E.leaderCategories(leader,known),['DAIMA','Famille de Vegeta']);
+const unit=(id,category,strong=false)=>({id,boxId:id,name:id,categories:[category],rarity:'UR',type:'TEC',class:'Super',links:['Combat acharné'],passive:'*Effets de base*\nATT et DÉF +'+(strong?999:50)+' %'});
+const daima=Array.from({length:5},(_,i)=>unit('d'+i,'DAIMA')),family=Array.from({length:6},(_,i)=>unit('v'+i,'Famille de Vegeta',true)),pool=[leader,...daima,...family];
+const options={known,context:{leadCategory:'DAIMA'},friend:leader};
+const result=E.build(pool,leader,options);assert.equal(result.team.length,6);assert(result.team.every(c=>E.inCategory(c,'DAIMA')));assert(result.alternatives.every(t=>t.every(c=>E.inCategory(c,'DAIMA'))));
+const partial=E.build([leader,...daima.slice(0,2),...family],leader,options);assert.equal(partial.team.length,3);assert(partial.team.every(c=>E.inCategory(c,'DAIMA')));
+assert(E.build(pool,leader,{...options,locked:[family[0]]}).error.includes('carte gardée'));
+assert(E.build(pool,leader,{...options,context:{leadCategory:'Saga de Boo'}}).error.includes('pas dirigée'));
+assert(E.build(pool,leader,{known}).team.some(c=>E.inCategory(c,'Famille de Vegeta')&&!E.inCategory(c,'DAIMA')));
+const bonus={teamRules:{leader:[{kind:'base',known:true,categories:['DAIMA'],hp:170,atk:170,def:170},{kind:'bonus',known:true,categories:['Famille de Vegeta'],hp:30,atk:30,def:30}]}};assert.deepEqual(E.leaderCategories(bonus),['DAIMA']);
+console.log('Real Vegeta SSJ3 DAIMA leader: strict category, strong outside partners excluded, incomplete Box, locks, invalid category, automatic mode and bonus exclusions: OK');

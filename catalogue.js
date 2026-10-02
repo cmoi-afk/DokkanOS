@@ -70,5 +70,5 @@ document.addEventListener('click',e=>{const b=e.target.closest?.('button');if(!b
  if(d.cardUseKit){const id=String(resolveCard(sheetId)?.candidateId);selectedKits[id]=d.cardUseKit;storageWrite('dokkanos-kit-versions-v4',JSON.stringify(selectedKits));renderTeam();renderSheet();}
 });
 fetch('catalogue-report.json').then(r=>r.ok?r.json():null).then(r=>{if(r&&typeof r.status==='string')report=r;if(document.querySelector('#catalog')?.classList.contains('on'))renderMissing();}).catch(()=>{});
-window.DokkanCatalogUI={currentCards,settings,get page(){return page},renderSheet};
+window.DokkanCatalogUI={setKit(id,kind){const c=verifyCandidate(String(id));if(!c||kind!=='base'&&!CM.variants(c).some(v=>v.kind===kind))return false;selectedKits[String(id)]=kind;storageWrite('dokkanos-kit-versions-v4',JSON.stringify(selectedKits));return true;},currentCards,settings,get page(){return page},renderSheet};
 })();

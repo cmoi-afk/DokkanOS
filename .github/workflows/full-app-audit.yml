@@ -1,7 +1,7 @@
 name: Full application audit
 on:
   push:
-    branches: [fix/full-app-audit-v161, design/interface-v17, feat/companion-v18, feat/copilot-v19]
+    branches: [fix/full-app-audit-v161, design/interface-v17, feat/companion-v18, feat/copilot-v19, feat/progression-v20]
   workflow_dispatch:
 permissions:
   contents: read
@@ -16,12 +16,13 @@ jobs:
           node-version: '22'
       - name: Regression checks
         run: |
-          for script in tools/test_teams.cjs tools/test_team_builder.cjs tools/test_team_quality.cjs tools/test_catalogue.cjs tools/test_catalogue_data.cjs tools/test_v071.cjs tools/test_sw.cjs tools/test_events.cjs tools/test_audit_regressions.cjs tools/test_companion.cjs tools/test_copilot.cjs; do node "$script"; done
+          for script in tools/test_teams.cjs tools/test_team_builder.cjs tools/test_team_quality.cjs tools/test_catalogue.cjs tools/test_catalogue_data.cjs tools/test_v071.cjs tools/test_sw.cjs tools/test_events.cjs tools/test_audit_regressions.cjs tools/test_companion.cjs tools/test_copilot.cjs tools/test_progression.cjs; do node "$script"; done
       - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom@0.18.12 playwright@1.58.2
       - run: /tmp/dokkan-tests/node_modules/.bin/playwright install --with-deps chromium
       - name: Browser audit, mobile, desktop and offline
         run: |
           python -m http.server 8765 > /tmp/dokkan-server.log 2>&1 &
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_progression_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_app_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_companion_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_copilot_browser.cjs

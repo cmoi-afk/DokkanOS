@@ -23,7 +23,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add events.json docs/events-audit.json
+          git add events.json events-preview.json progress-data.json docs/events-audit.json
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh verified GLOBAL FR events and missions'
             git push origin HEAD:feat/events-v16

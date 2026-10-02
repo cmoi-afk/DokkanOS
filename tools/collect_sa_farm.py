@@ -25,10 +25,10 @@ def parse_grid(raw,expected):
  m=re.search(r'<div\b[^>]*class="item-container[^>]*data-character="([^"]+)"[^>]*>',raw)
  if not m:raise ValueError('Identité source absente')
  actual=norm(m[1])
- if actual!=norm(expected):raise ValueError('Nom source différent : '+actual)
+ if actual!=({'Hercule':'M. Satan'}.get(norm(expected),norm(expected))):raise ValueError('Nom source différent : '+actual)
  card=BeautifulSoup(m[0]+'</div>','html.parser').div
  m=re.search(r'<div\b[^>]*\bid="card_farmable_sa"[^>]*>',raw)
- if not m:return {'status':'none-listed','methods':[],'sourceCardId':card.get('data-id'),'sourceRarity':card.get('data-rarity')}
+ if not m:return {'status':'none-listed','methods':[],'sourceCardId':card.get('data-id'),'sourceRarity':card.get('data-rarity'),'sourceName':actual}
  end=raw.find('<h3',m.end());fragment=raw[m.start():end if end>=0 else len(raw)]
  s=BeautifulSoup(fragment,'html.parser');methods=[]
  for wrap in s.select('.f2p-card-wrap'):
@@ -36,7 +36,7 @@ def parse_grid(raw,expected):
   if not a or not unit or not re.fullmatch(r'/card/\d+',a.get('href','')):continue
   cid=a['href'].split('/')[-1];rate=re.search(r'(\d+)\s*%',badge.get_text() if badge else '')
   methods.append({'donor':cid,'name':norm(a.get('data-name') or a.get('title') or unit.get('data-character','')),'rarity':{'0':'N','1':'R','2':'SR','3':'SSR','4':'UR','5':'LR'}.get(unit.get('data-rarity'),'Inconnue'),'type':{'0':'AGI','1':'TEC','2':'INT','3':'PUI','4':'END'}.get(str(int(unit.get('data-element') or 0)%10)),'evolve':bool(wrap.select_one('.f2p-evolved-badge')),'sourceRate':int(rate[1]) if rate else None,'donorSource':BASE+a['href']})
- return {'status':'available' if methods else 'none-listed','methods':methods,'sourceCardId':card.get('data-id'),'sourceRarity':card.get('data-rarity')}
+ return {'status':'available' if methods else 'none-listed','methods':methods,'sourceCardId':card.get('data-id'),'sourceRarity':card.get('data-rarity'),'sourceName':actual}
 def free_page(page):
  path='/card-drops/data?type=all&page='+str(page);d=json.loads(fetch(path));out=[]
  for wrap in BeautifulSoup(d['html'],'html.parser').select('.f2p-card-wrap'):
@@ -74,17 +74,34 @@ def main():
    bank[name]=row
    if row['status']=='unknown':errors[name]=row['error']
    if i%40==0:print('Named SP methods:',i,'/',len(groups),'unknown',len(errors),flush=True)
+ # Donor pages expose SR starting forms missing from the SSR/UR/LR metadata.
+ missing={method['donor'] for row in bank.values() for method in row['methods']
+          if not any(k in free for k in [method['donor']]+[str(x.get('id')) for x in META.get(method['donor'],{}).get('awakeningOrigins',[])])}
+ paths={};path_errors={}
+ def donor_path(cid):
+  try:
+   raw=fetch('/card/'+cid);m=re.search(r'<div[^>]*class="awakening-flow"[^>]*>',raw)
+   if not m:return cid,[]
+   end=raw.find('<h3',m.end());s=BeautifulSoup(raw[m.start():end if end>=0 else len(raw)],'html.parser')
+   ids=list(dict.fromkeys(x.get('data-id') for x in s.select('.awakening-step-result .item-container[data-id]')))
+   return cid,ids
+  except Exception as ex:path_errors[cid]=str(ex);return cid,[]
+ with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+  for i,(cid,ids) in enumerate(pool.map(donor_path,missing),1):
+   paths[cid]=ids
+   if i%80==0:print('Donor awakening paths:',i,'/',len(missing),flush=True)
  # Explicit awakening origins connect an evolved donor to its farmable starting card.
  for name,row in bank.items():
   for method in row['methods']:
    cid=method['donor'];m=META.get(cid,{})
-   ids=[cid]+[str(x.get('id')) for x in m.get('awakeningOrigins',[])]+([str(m['awakensFrom'])] if m.get('awakensFrom') else [])
+   ids=[cid]+paths.get(cid,[])+[str(x.get('id')) for x in m.get('awakeningOrigins',[])]+([str(m['awakensFrom'])] if m.get('awakensFrom') else [])
    origins=[free[k] for k in dict.fromkeys(ids) if k in free]
    method['origins']=origins
+   if paths.get(cid):method['awakeningSource']=BASE+'/card/'+cid
    method['acquisition']='event' if any(o['acquisition']=='event' for o in origins) else 'exchange' if origins else 'f2p-source'
  D={'version':1,'region':'GLOBAL','verifiedAt':NOW,'source':BASE+'/card-drops','cards':{str(c['id']):norm(META.get(str(c['id']),{}).get('name') or c.get('fr',{}).get('name') or c['name']) for c in CAT},'characters':bank,'coverage':{'cards':len(CAT),'characters':len(groups),'reviewed':len(groups)-len(errors),'unknown':len(errors),'f2pAcquisitionCards':len(free)}}
  (ROOT/'sa-farm.json').write_text(json.dumps(D,ensure_ascii=False,separators=(',',':'))+'\n')
- (ROOT/'docs/sa-farm-audit.json').write_text(json.dumps({'verifiedAt':NOW,'coverage':D['coverage'],'errors':errors,'availableCharacters':sum(r['status']=='available' for r in bank.values()),'noneListedCharacters':sum(r['status']=='none-listed' for r in bank.values())},ensure_ascii=False,indent=2)+'\n')
+ (ROOT/'docs/sa-farm-audit.json').write_text(json.dumps({'verifiedAt':NOW,'coverage':D['coverage'],'errors':errors,'donorPathErrors':path_errors,'unresolvedDonorOrigins':len({m['donor'] for r in bank.values() for m in r['methods'] if not m['origins']}),'availableCharacters':sum(r['status']=='available' for r in bank.values()),'noneListedCharacters':sum(r['status']=='none-listed' for r in bank.values())},ensure_ascii=False,indent=2)+'\n')
  assert len(D['cards'])==len(CAT);print('SP farming coverage',D['coverage'],flush=True)
 
 if __name__=='__main__':main()

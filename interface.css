@@ -80,3 +80,5 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus{outline:none}
 .ux-team-steps button,.ux-event-tabs button{flex:0 0 auto}
 
 .menu-open .ux-toast{display:none}body[data-view="teams"] .ux-toast{bottom:190px}@media(min-width:900px){body[data-view="teams"] .ux-toast{bottom:110px}}
+
+.menu-open .ux-team-cta{display:none}.menu-open .app-nav{z-index:70}.menu-open .nav-backdrop{z-index:69}

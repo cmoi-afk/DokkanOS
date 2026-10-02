@@ -25,3 +25,19 @@ python tools/build_visual_index.py
 ```
 
 Tests de modèle : `node tools/test_copilot.cjs`. L’audit navigateur vérifie les dix outils sur mobile et ordinateur, les imports invalides, l’identification d’une image de référence, la confirmation explicite de possession, la conservation des saisies et le hors ligne.
+
+## v2.0 — Préparation et progression
+
+Copilote propose dix outils supplémentaires : profil réel (ATT SP, potentiel, éveil, liens), compteurs manuels, combat compact, construction autour de deux cartes, boss, historique des compositions, objectifs personnels, suivi des collectes, sources exactes des médailles et connexion de synchronisation.
+
+Le profil utilise le kit vérifié de l'éveil déclaré ; potentiel et niveaux de liens alimentent la liste de préparation, sans calcul de dégâts. Les compteurs sont remis à zéro quand l'identité de l'équipe/objectif change. Les seuils reconnus sont des rappels à vérifier en jeu, jamais des preuves d'activation. Les conditions qui ne sont pas reconnues restent dans le texte intégral.
+
+L'historique conserve 100 versions distinctes après stabilisation des modifications, avec composition, kits, leader et objectif. Restaurer une version reprend les cartes actuellement possédées et les kits actuellement sélectionnés ; les profils réels ne sont pas écrasés.
+
+Les profils de boss détaillés conservent les séquences et phases dans l'ordre de la source, y compris les remises à Phase 1 entre rencontres. 80 pages ont été collectées dans ce lot (157 séquences). Les autres niveaux affichent leurs effets connus et signalent les phases manquantes. Les statistiques sont des valeurs de fiche, pas des dégâts reçus calculés.
+
+Les sources de médailles sont issues de récompenses identifiées avec image de médaille, et d'une correspondance complète du nom incluant son grade ; 485 fiches disposent d'au moins une association. Les drops, probabilités et premières victoires ne sont pas inférés. Rebuild : `python tools/build_progress_data.py`. Boss : `python tools/collect_boss_profiles.py 80` (sans limite pour toutes les pages).
+
+La synchronisation dispose d'un client Supabase, d'une connexion par code, d'une sauvegarde privée et de conflits de révision. Elle n'est pas activée en production sans service configuré. Voir `docs/synchronisation.md` et `backend/supabase.sql`. Les tests de connexion utilisent un service simulé ; un service de production reste à tester après raccordement.
+
+Toutes les données personnelles ajoutées sont incluses dans la sauvegarde complète ; la configuration de synchronisation, les sessions et la copie de secours sont exclues. Tests : `node tools/test_progression.cjs`, `node tools/audit_progression_browser.cjs` avec Playwright et serveur HTTP local.

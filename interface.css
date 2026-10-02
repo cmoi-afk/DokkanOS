@@ -56,3 +56,6 @@ main{max-width:1120px;margin:auto;padding:0 20px 32px}h1,h2,h3,h4{letter-spacing
 .team-category-choice{margin:18px 0;padding:16px;border:1px solid var(--line,#343c4b);border-radius:14px;background:rgba(255,143,65,.05)}
 .team-category-choice select{width:100%;margin-top:8px}
 .team-category-choice p{margin-bottom:0}
+
+.battle-saved{border:1px solid #ffffff20;border-radius:14px;padding:16px;margin:16px 0;min-width:0}.battle-saved .team-saved-row{border-top:0;flex-wrap:wrap}.battle-saved small{display:block;color:#a8b0c0;margin-top:6px}.battle-saved p,.battle-event-teams p{overflow-wrap:anywhere;line-height:1.6}.battle-saved textarea{width:100%;min-width:0;padding:12px;border-radius:10px;background:#151b28;color:#eee;border:1px solid #ffffff25}.battle-saved form>button{margin-top:12px}.battle-history>div,.battle-event-teams>div{padding:14px 0;border-top:1px solid #ffffff20}.battle-history button{margin:4px}.battle-mission{font-size:12px}.battle-saved .badge.good{color:#7ed8ac}.battle-saved .badge.warn{color:#ffbd83}
+.battle-saved .badge.good{background:#183b30;color:#9aebc3}.battle-saved .badge.warn{background:#493021;color:#ffc99f}@media(max-width:600px){.battle-saved .team-saved-row>span{flex:1 0 100%;width:100%}.battle-saved .team-saved-row>button{flex:1 1 auto}.battle-saved .team-saved-row small{line-height:1.6}}

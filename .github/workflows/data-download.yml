@@ -1,0 +1,32 @@
+name: Apply reviewed data download
+on:
+  push:
+    branches: [data/global-20261002]
+    paths: ['docs/data-download-2026-10-02.json', 'tools/apply_data_download.py', '.github/workflows/data-download.yml']
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data/global-20261002
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/apply_data_download.py
+      - name: Validate data and release gating
+        run: |
+          node tools/test_data_download.cjs
+          node tools/test_catalogue_data.cjs
+          node tools/test_events.cjs
+      - name: Save generated snapshot
+        run: |
+          git config user.name 'DokkanOS data update'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add events.json events-preview.json card-meta.json boss-profiles.json progress-data.json data-download.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Apply reviewed GLOBAL data download of 2 October 2026'
+            git push origin HEAD:data/global-20261002
+          fi

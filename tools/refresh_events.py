@@ -52,6 +52,8 @@ def reward(node):
   result.append({'name':'Pierre Dragon' if stone else name,'kind':'stones' if stone else 'item','amount':amount,'image':urljoin(BASE+'/',src),'identified':stone or bool(img.get('title') or img.get('alt') or names.get(asset))})
  return result
 def requirements(text):
+ # Some GLOBAL mission strings omit the space in "personnagesde".
+ text=re.sub(r"(personnages?)(de)\b",r"\1 \2",text,flags=re.I)
  out=[]
  # Only an explicit number and category with unambiguous friend scope is automated.
  for m in re.finditer(r'(?:au moins\s+)?([1-7])\s+(?:persos?|personnages?|combattants?)(?:\s+de)?\s+(?:la\s+)?catégorie\s*["«]([^"»]+)["»]',text,re.I):

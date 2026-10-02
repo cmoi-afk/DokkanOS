@@ -1,7 +1,7 @@
 name: Full application audit
 on:
   push:
-    branches: [fix/full-app-audit-v161, design/interface-v17, feat/companion-v18, feat/copilot-v19, feat/progression-v20, data/global-20261002, feat/sp-farming-v202, feat/team-category-v203, feat/battle-results-v204]
+    branches: [fix/full-app-audit-v161, design/interface-v17, feat/companion-v18, feat/copilot-v19, feat/progression-v20, data/global-20261002, feat/sp-farming-v202, feat/team-category-v203, feat/battle-results-v204, design/global-interface-v210]
   workflow_dispatch:
 permissions:
   contents: read
@@ -22,6 +22,9 @@ jobs:
       - name: Browser audit, mobile, desktop and offline
         run: |
           python -m http.server 8765 > /tmp/dokkan-server.log 2>&1 &
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_experience_dom.cjs
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_companion_browser.cjs
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_experience_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_team_category_dom.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_team_battles_dom.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_team_battles_browser.cjs
@@ -30,7 +33,6 @@ jobs:
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_data_download_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_progression_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_app_browser.cjs
-          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_companion_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_copilot_browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()

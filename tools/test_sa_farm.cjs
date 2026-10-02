@@ -1,0 +1,6 @@
+const assert=require('assert'),fs=require('fs');
+const d=JSON.parse(fs.readFileSync('sa-farm.json')),cat=JSON.parse(fs.readFileSync('catalog.json')).cards;
+assert.equal(d.region,'GLOBAL');assert.equal(Object.keys(d.cards).length,cat.length);assert(d.coverage.reviewed>500,'insufficient source coverage');
+for(const c of cat){const r=d.characters[d.cards[c.id]];assert(r);assert(['available','none-listed','unknown'].includes(r.status));if(r.status!=='unknown'){assert(r.source.startsWith('https://www.dbz-dokkanbattle.com/card/'));assert(r.sourceCardId);assert(r.verifiedAt);}if(r.status==='available')assert(r.methods.length);if(r.status==='none-listed')assert.equal(r.methods.length,0);for(const m of r.methods){assert(/^\d+$/.test(m.donor));assert(['N','R','SR','SSR','UR','LR'].includes(m.rarity));assert(m.donorSource.endsWith('/'+m.donor));assert(Array.isArray(m.origins));for(const o of m.origins){assert(['event','exchange'].includes(o.acquisition));assert(o.source.endsWith('/card-drops'));}}}
+assert(d.characters[d.cards['1026431']].methods.length>0,'Boo LR methods');assert(d.characters[d.cards['1034201']].methods.length>0,'SSJ3 LR methods');
+console.log('Every catalogue form has an explicit F2P SP status, sourced donors, acquisition provenance and separate unknown cases:',d.coverage);

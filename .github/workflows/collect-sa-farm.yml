@@ -1,0 +1,38 @@
+name: Collect GLOBAL F2P SP methods
+on:
+  push:
+    branches: [feat/sp-farming-v202]
+    paths: ['tools/collect_sa_farm.py', '.github/workflows/collect-sa-farm.yml']
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/sp-farming-v202
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install beautifulsoup4
+      - run: python tools/collect_sa_farm.py
+      - name: Validate source coverage
+        run: node tools/test_sa_farm.cjs
+      - name: Save verified F2P methods
+        run: |
+          git config user.name 'DokkanOS source collection'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add sa-farm.json docs/sa-farm-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Collect GLOBAL F2P special attack methods for every catalogue form'
+            git push origin HEAD:feat/sp-farming-v202
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sa-farming-source-review
+          path: |
+            sa-farm.json
+            docs/sa-farm-audit.json

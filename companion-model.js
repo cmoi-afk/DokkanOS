@@ -1,6 +1,6 @@
 /* Portable personal state and transparent recommendations. */
 (function(root){'use strict';
-const keys=['edits','inventory','team','team-leader','favorites','rainbow100','potential-manual','team-settings-v2','saved-teams-v2','events-settings-v1','events-progress-v1','catalogue-v4','kit-versions-v4','companion-v1','journal-v1','team-battles-v1','box-filters-v1','broken-images','copilot-v1','performance-v1','progression-v1'].map(k=>'dokkanos-'+k);
+const keys=['edits','inventory','team','team-leader','favorites','rainbow100','potential-manual','team-settings-v2','saved-teams-v2','events-settings-v1','events-progress-v1','catalogue-v4','kit-versions-v4','companion-v1','journal-v1','team-battles-v1','ui-v1','box-filters-v1','broken-images','copilot-v1','performance-v1','progression-v1'].map(k=>'dokkanos-'+k);
 const allowed=k=>keys.includes(k)||/^dokkanos-mission-done-[\w-]{1,180}$/.test(k);
 const record=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
 const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();

@@ -22,10 +22,10 @@ jobs:
       - name: Browser audit, mobile, desktop and offline
         run: |
           python -m http.server 8765 > /tmp/dokkan-server.log 2>&1 &
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_progression_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_app_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_companion_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_copilot_browser.cjs
-          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_progression_browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

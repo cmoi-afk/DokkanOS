@@ -17,8 +17,8 @@ returns jsonb language plpgsql security invoker set search_path = public as $$
 declare next_revision bigint;
 begin
  if auth.uid() is null then raise exception 'Authentication required'; end if;
- if payload_data->>'format' <> 'DokkanOS' or payload_data->>'version' <> '1'
- or jsonb_typeof(payload_data->'entries') <> 'object' then raise exception 'Invalid snapshot'; end if;
+ if payload_data->>'format' is distinct from 'DokkanOS' or payload_data->>'version' is distinct from '1'
+ or jsonb_typeof(payload_data->'entries') is distinct from 'object' then raise exception 'Invalid snapshot'; end if;
  if expected_revision = 0 then
   insert into public.dokkanos_snapshots(user_id,payload,revision)
   values(auth.uid(),payload_data,1) on conflict(user_id) do nothing returning revision into next_revision;

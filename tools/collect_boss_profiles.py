@@ -22,7 +22,7 @@ def collect(url):
    for boss in phase.select('.boss-card'):
     stats={text(t.select_one('.boss-stat-label')):text(t.select_one('.boss-stat-value')) for t in boss.select('.boss-stat-tile')}
     effects=[text(x) for x in boss.select('.boss-skill-text')];effects=list(dict.fromkeys(effects))
-    supers=[text(x) for x in boss.select('.boss-sa-block')]
+    supers=[{'name':text(x.select_one('.boss-special-title')),'description':text(x.select_one('.boss-special-desc')),'damage':text(x.select_one('.boss-special-damage')),'multiplier':text(x.select_one('.boss-special-dmg')),'conditions':[text(t) for t in x.select('.boss-condition-tag')]} for x in boss.select('.boss-special-card')]
     bosses.append({'name':text(boss.select_one('.boss-card-name')),'stats':stats,'effects':effects,'supers':supers})
    if bosses:phases.append({'name':text(phase.select_one('.boss-round-badge')),'bosses':bosses})
   return url,{'source':url,'verifiedAt':datetime.now(timezone.utc).isoformat(),'phases':phases,'status':'verified' if phases else 'not-extracted'}

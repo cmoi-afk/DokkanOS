@@ -9,7 +9,7 @@ self.addEventListener('fetch',e=>{
  if(url.origin!==scope.origin||!url.pathname.startsWith(scope.pathname))return;
  e.respondWith((async()=>{
   const cache=await caches.open(CACHE);
-  const bulk=/\.(?:json|webp|png|jpg|jpeg)$/.test(url.pathname)&&!url.pathname.includes('/assets/icon-');if(bulk){const hit=await cache.match(e.request)||await cache.match(e.request,{ignoreSearch:true});if(hit)return hit;}
+  const bulk=/\.(?:json|webp|png|jpg|jpeg)$/.test(url.pathname)&&!url.pathname.includes('/assets/icon-');if(bulk&&!['reload','no-store'].includes(e.request.cache)){const hit=await cache.match(e.request)||await cache.match(e.request,{ignoreSearch:true});if(hit)return hit;}
   try{const res=await fetch(e.request);if(res.ok)try{await cache.put(e.request,res.clone())}catch(cacheError){}return res}
   catch(error){
    const hit=await cache.match(e.request)||await cache.match(e.request,{ignoreSearch:true});

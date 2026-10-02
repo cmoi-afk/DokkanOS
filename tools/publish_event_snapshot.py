@@ -12,3 +12,8 @@ validate(incoming)
 target.write_text(json.dumps(incoming,ensure_ascii=False,separators=(',',':'))+'\n')
 Path('docs/events-audit.json').write_text(Path(sys.argv[1]).with_name('audit.json').read_text())
 print('Snapshot validated:',incoming['coverage'])
+
+# Keep lightweight startup and exact medal indexes consistent with the full snapshot.
+import subprocess
+subprocess.run([sys.executable,'tools/build_event_preview.py'],check=True)
+subprocess.run([sys.executable,'tools/build_progress_data.py'],check=True)

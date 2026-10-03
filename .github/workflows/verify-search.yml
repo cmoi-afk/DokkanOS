@@ -1,9 +1,9 @@
 name: Responsive verification search
 on:
   push:
-    branches: [perf/verify-search-v213]
+    branches: [perf/verify-search-v213, feat/verify-filters-v214]
   pull_request:
-    paths: [verify-search.js, tools/test_verify_search.cjs, tools/audit_verify_search_browser.cjs, .github/workflows/verify-search.yml]
+    paths: [verify-search.js, verify-search.css, tools/test_verify_filters.cjs, tools/audit_verify_filters_browser.cjs, tools/test_verify_search.cjs, tools/audit_verify_search_browser.cjs, .github/workflows/verify-search.yml]
 permissions:
   contents: read
 jobs:
@@ -21,6 +21,7 @@ jobs:
       - name: Persistence, undo and migration regressions
         run: |
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_verify_search.cjs
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_verify_filters.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_verify_batches.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_capture_overlaps_dom.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_experience_dom.cjs
@@ -29,6 +30,7 @@ jobs:
         run: |
           python -m http.server 8765 > /tmp/dokkan-server.log 2>&1 &
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_verify_search_browser.cjs
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_verify_filters_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_verify_batches_browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()

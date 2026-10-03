@@ -5,7 +5,7 @@ assert.equal(M.filter([event],{query:'rareté introuvable',status:'all',favorite
 assert.equal(M.combine(event,'a',['m']).notes,event.missions[0].description);
 assert.deepEqual(M.combine(event,'a',['m']).stage.notes,['EFFET BOSS']);
 const source=fs.readFileSync('app.js','utf8'),start=source.indexOf('async function boot(){'),end=source.indexOf('\nfunction mergeRecentCards',start);
-const context={DB:null,META:null,CATALOG:null,OVERLAP:null,record:x=>x&&typeof x==='object'&&!Array.isArray(x),mergeRecentCards:()=>{},render:()=>{},stats:()=>{},renderDuplicates:()=>{},renderMissing:()=>{},renderInventory:()=>{},renderManualOwned:()=>{},renderTeam:()=>{},renderAnalysis:()=>{},applyMetadata:()=>{},restoreEdits:()=>{},initAdvancedFilters:()=>{}};
+const context={DB:null,META:null,CATALOG:null,OVERLAP:null,record:x=>x&&typeof x==='object'&&!Array.isArray(x),mergeRecentCards:()=>{},render:()=>{},stats:()=>{},renderDuplicates:()=>{},renderMissing:()=>{},renderInventory:()=>{},renderManualOwned:()=>{},renderTeam:()=>{},renderAnalysis:()=>{},applyMetadata:()=>{},indexCaptureAliases:()=>{},restoreEdits:()=>{},initAdvancedFilters:()=>{}};
 let inflight=0,max=0,calls=[];
 context.fetch=async path=>{calls.push(path);inflight++;max=Math.max(max,inflight);await new Promise(r=>setTimeout(r,10));inflight--;return{ok:true,json:async()=>path==='collection.json'||path==='data.json'?{cards:[]}:null};};
 vm.createContext(context);vm.runInContext(source.slice(start,end),context);

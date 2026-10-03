@@ -1,0 +1,38 @@
+name: Responsive verification search
+on:
+  push:
+    branches: [perf/verify-search-v213]
+  pull_request:
+    paths: [verify-search.js, tools/test_verify_search.cjs, tools/audit_verify_search_browser.cjs, .github/workflows/verify-search.yml]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check verify-search.js
+      - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom@0.18.12 playwright@1.58.2
+      - run: /tmp/dokkan-tests/node_modules/.bin/playwright install --with-deps chromium
+      - name: Persistence, undo and migration regressions
+        run: |
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_verify_search.cjs
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_verify_batches.cjs
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_capture_overlaps_dom.cjs
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_experience_dom.cjs
+          node tools/test_sw.cjs
+      - name: Mobile, desktop and offline comparison
+        run: |
+          python -m http.server 8765 > /tmp/dokkan-server.log 2>&1 &
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_verify_search_browser.cjs
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_verify_batches_browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: responsive-verification-search
+          path: audit-artifacts
+          retention-days: 14

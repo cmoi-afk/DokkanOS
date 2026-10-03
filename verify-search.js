@@ -1,0 +1,26 @@
+/* Indexed search and small result pages keep typing and image decoding responsive. */
+(()=>{
+'use strict';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const collator=new Intl.Collator('fr');
+let index=null,timer=null,limit=12,lastRows=[],searchCache=new Map(),builds=0,scans=0;
+const sameSource=()=>index&&index.catalog===CATALOG.cards&&index.meta===META.cards&&index.length===(CATALOG.cards||[]).length;
+function start(){
+ if(sameSource())return index;
+ const current=index={catalog:CATALOG.cards,meta:META.cards,length:(CATALOG.cards||[]).length,ids:[...new Set((CATALOG.cards||[]).filter(c=>catalogSelectable(c)&&!c.isSellingOnly&&!c.nonPlayable).map(c=>String(c.id)))],at:0,rows:[],ready:false};searchCache.clear();builds++;
+ schedule(()=>build(current));return current;
+}
+function schedule(fn){if(typeof requestIdleCallback==='function')requestIdleCallback(fn,{timeout:150});else setTimeout(fn,8);}
+function add(current,id){const card=verifyCandidate(id);if(!card||!isPlayableCard(card))return;current.rows.push({card,hay:norm([card.id,card.name,card.title,card.rarity,card.type,card.class,...(card.categories||[])].join(' ')),name:norm(card.name||'')});}
+function build(current){if(index!==current)return;const began=Date.now();let n=0;while(current.at<current.ids.length&&n++<60&&Date.now()-began<8)add(current,current.ids[current.at++]);if(current.at<current.ids.length){schedule(()=>build(current));return;}current.ready=true;if(verifyDraft.query.trim())renderVerifyResults();}
+function readySync(){const current=start();while(current.at<current.ids.length)add(current,current.ids[current.at++]);current.ready=true;return current;}
+verifyResults=function(){const raw=verifyDraft.query.trim(),q=norm(raw);if(!q)return [];const current=readySync(),key=raw; if(searchCache.has(key))return searchCache.get(key);const terms=q.split(/\s+/).filter(Boolean),out=[];scans++;for(const row of current.rows){let score=0;for(const t of terms)if(row.hay.includes(t))score+=2;if(String(row.card.id)===raw)score+=200;if(row.name.startsWith(q))score+=40;if(row.hay.includes(q))score+=20;if(score>0)out.push({card:row.card,score});}out.sort((a,b)=>b.score-a.score||collator.compare(String(a.card.name||''),String(b.card.name||'')));const result=out.slice(0,80).map(x=>x.card);searchCache.set(key,result);if(searchCache.size>24)searchCache.delete(searchCache.keys().next().value);return result;};
+function show(rows,host){const slice=rows.slice(0,limit);host.innerHTML=slice.map(card=>{const stage=awakeningLabel(card,rows),id=esc(card.id);return '<label class="verify-result-row"><input type="radio" name="verify-card" value="'+id+'" '+(verifyDraft.cardId===String(card.id)?'checked':'')+'><img loading="lazy" decoding="async" width="64" height="80" src="'+esc(card.image||'')+'" alt="'+esc(card.name||'Carte '+card.id)+'" onerror="imageFallback(this,\''+id+'\',\'\')"><span><b>'+esc(card.name||'ID '+card.id)+(stage?' · '+stage:'')+'</b><small>'+esc([card.rarity||'',card.type||'','ID '+card.id].filter(Boolean).join(' · '))+'</small></span></label>';}).join('')||'<div class="empty compact">Aucune carte trouvée. Essaie un autre mot ou l’ID Dokkan.</div>';if(rows.length>limit)host.insertAdjacentHTML('beforeend','<button type="button" id="verifySearchMore" class="loadmore">Afficher '+Math.min(12,rows.length-limit)+' résultats de plus · '+Math.min(limit,rows.length)+' / '+rows.length+'</button>');host.setAttribute('aria-busy','false');}
+renderVerifyResults=function(){const host=document.getElementById('verifyResults');if(!host)return;if(!verifyDraft.query.trim()){host.innerHTML='<div class="verify-tip">Saisis un nom ou un ID pour afficher les cartes.</div>';host.setAttribute('aria-busy','false');lastRows=[];return;}const current=start();if(!current.ready){host.innerHTML='<div class="verify-tip" role="status">Préparation de la recherche…</div>';host.setAttribute('aria-busy','true');return;}lastRows=verifyResults();show(lastRows,host);};
+verifySetQuery=function(value){clearTimeout(timer);verifyDraft.query=String(value||'');limit=12;const host=document.getElementById('verifyResults');if(!verifyDraft.query.trim()){renderVerifyResults();return;}if(host){host.innerHTML='<div class="verify-tip" role="status">Recherche…</div>';host.setAttribute('aria-busy','true');}timer=setTimeout(()=>{timer=null;renderVerifyResults();},120);};
+document.addEventListener('click',e=>{if(!e.target.closest?.('#verifySearchMore'))return;const host=document.getElementById('verifyResults');if(host){limit+=12;show(lastRows,host);}});
+document.addEventListener('compositionstart',e=>{if(e.target.id==='verifyFinder')clearTimeout(timer);});
+document.addEventListener('compositionend',e=>{if(e.target.id==='verifyFinder')verifySetQuery(e.target.value);});
+window.addEventListener('dokkanos-data-ready',()=>{index=null;limit=12;start();});
+window.DokkanVerifySearch={ready:()=>start().ready,prepare:readySync,get metrics(){return {builds,scans,rows:index?.rows.length||0,cache:searchCache.size}},invalidate(){index=null;start();}};
+})();

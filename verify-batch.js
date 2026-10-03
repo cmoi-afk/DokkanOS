@@ -6,7 +6,7 @@ const state={active:false,ids:[],choices:new Map(),checked:new Set(),deferred:ne
 const rawCard=id=>DB.cards.find(c=>c.boxId===captureCanonicalId(id));
 function proposals(c){
  const ids=[c.candidateId,c.runnerId,...(c.observations||[]).flatMap(o=>[o.candidateId,o.runnerId])];
- return [...new Set(ids.filter(Boolean).map(String))].map(verifyCandidate).filter(x=>x&&isPlayableCard(x)).slice(0,4);
+ return [...new Set(ids.filter(Boolean).map(String))].map(verifyCandidate).filter(x=>x&&['SSR','UR','LR'].includes(x.rarity)&&isPlayableCard(x)).slice(0,4);
 }
 function ranked(){return verifyPending().filter(c=>!state.deferred.has(c.boxId)).sort((a,b)=>state.sort==='capture'?0:Number(!!a._overlapConflict)-Number(!!b._overlapConflict)||(Number(b.inliers)||0)-(Number(a.inliers)||0));}
 function fill(){state.ids=ranked().slice(0,20).map(c=>c.boxId);state.choices.clear();state.checked.clear();for(const id of state.ids){const p=proposals(rawCard(id))[0];if(p)state.choices.set(id,String(p.id));}}

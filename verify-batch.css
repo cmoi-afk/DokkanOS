@@ -3,3 +3,5 @@
 
 .vb-navigation{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.vb-actions{top:80px;bottom:auto}.verify-v2-editor{scroll-margin-top:90px}@media(max-width:700px){.vb-panel{padding-bottom:150px}.vb-actions{position:fixed;left:12px;right:12px;top:auto;bottom:calc(74px + env(safe-area-inset-bottom));max-width:680px}.vb-actions button{flex:1}.vb-actions .primary{width:auto}.vb-actions button{font-size:13px}}
 .vb-panel button,.vb-start button,.vb-quick button{background:#263247;color:#eef3fb;border:1px solid #45546b;border-radius:10px;padding:10px 12px;cursor:pointer;line-height:1.4}.vb-panel button.primary,.vb-start button.primary{background:#ff994a;color:#111827;border-color:#ff994a;font-weight:700}.vb-panel button:disabled,.vb-start button:disabled{opacity:.5;cursor:default}.vb-panel .vb-proposal.on,.vb-quick .vb-proposal.on{border:2px solid #efaf4d}.vb-quick .vb-proposal{border:2px solid transparent}.vb-navigation button{font-size:13px}
+
+@media(min-width:900px){.vb-actions{top:112px;bottom:auto}}

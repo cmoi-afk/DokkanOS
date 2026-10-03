@@ -361,7 +361,7 @@ async function boot(){
   OVERLAP=record(overlap)&&Array.isArray(overlap.conflicts)?overlap:{conflicts:[]};
   mergeRecentCards(recent);
   CATALOG.cards=CATALOG.cards.filter(c=>c.rarity!=='SR');
-  applyMetadata();restoreEdits();initAdvancedFilters();
+  indexCaptureAliases();applyMetadata();restoreEdits();initAdvancedFilters();
   render();stats();
   if(typeof window!=='undefined')window.dispatchEvent?.(new window.Event('dokkanos-data-ready'));
 }
@@ -369,13 +369,18 @@ function mergeRecentCards(data){if(!Array.isArray(data?.cards))return;META.cards
 function localized(m){if(!m)return null;let fr=m.fr||{},off=!!fr._official;return {...m,name:frCardName(fr.name||m.name),title:frTerm(fr.title||m.title),type:fr.type||m.type,class:fr.class||m.class,categories:frList(fr.categories||m.categories),links:frList(fr.links||m.links),leader:fr.leader||m.leader,passiveName:fr.passiveName||m.passiveName,passive:fr.passive||m.passive,superAttack:fr.superAttack||m.superAttack,ultraSuperAttack:fr.ultraSuperAttack||m.ultraSuperAttack,activeName:fr.activeName||m.activeName,active:fr.active||m.active,transformations:fr.transformations||m.transformations,_officialFR:off}}
 function applyMetadata(){DB.cards.forEach(c=>{let m=localized(META.cards?.[String(c.candidateId)]);if(m)Object.assign(c,m);c.name=frCardName(c.name||'');c.title=frTerm(c.title||'');c.categories=frList(c.categories);c.links=frList(c.links)})}
 function confClass(c){return c==='Très forte'?'tf':c==='Forte'?'f':c==='Moyenne'?'m':c==='Validée manuellement'?'manual':'v'}
+let captureAliases=new Map();
+function indexCaptureAliases(){captureAliases=new Map();for(const c of DB.cards){captureAliases.set(c.boxId,c.boxId);for(const o of c.observations||[])if(o?.boxId)captureAliases.set(o.boxId,c.boxId);}}
+function captureCanonicalId(id){return captureAliases.get(id)||id;}
+function canonicalCaptureTeam(team){const settings={...team.settings};for(const k of ['locked','excluded'])if(Array.isArray(settings[k]))settings[k]=[...new Set(settings[k].map(captureCanonicalId))];if(settings.replace)settings.replace=captureCanonicalId(settings.replace);return {...team,cards:[...new Set((team.cards||[]).map(captureCanonicalId))],leader:captureCanonicalId(team.leader),settings};}
 function restoreEdits(){
   const edits=storedJSON('dokkanos-edits',[]);
-  if(Array.isArray(edits))for(const a of edits){if(!record(a))continue;const c=DB.cards.find(x=>x.boxId===a.boxId);if(!c)continue;if(a.candidateId&&!assignIdentification(c,a.candidateId))continue;c._edited=true;c.validated=a.validated===true;c.confidence=c.validated?'Validée manuellement':'À revoir'}
+  if(Array.isArray(edits)){const groups=new Map();for(const a of edits){if(!record(a)||typeof a.boxId!=='string')continue;const id=captureCanonicalId(a.boxId);if(!groups.has(id))groups.set(id,[]);groups.get(id).push(a);}for(const [id,rows] of groups){const c=DB.cards.find(x=>x.boxId===id);if(!c)continue;const valid=rows.filter(a=>a.validated===true&&a.candidateId&&verifyCandidate(a.candidateId)),ids=new Set(valid.map(a=>String(a.candidateId)));const a=valid.at(-1)||rows.at(-1);if(a.candidateId&&!assignIdentification(c,a.candidateId))continue;c._edited=true;c._overlapConflict=ids.size>1;c.validated=valid.length>0&&ids.size===1;c.confidence=c.validated?'Validée manuellement':'À revoir';}}
   const inv=storedJSON('dokkanos-inventory',{});inventory=record(inv)?Object.fromEntries(Object.entries(inv).filter(([id,state])=>/^\d+$/.test(id)&&['owned','missing'].includes(state))):{};
-  const team=storedJSON('dokkanos-team',[]);selectedTeam=Array.isArray(team)?[...new Set(team.filter(id=>typeof id==='string'&&(DB.cards.some(c=>c.boxId===id)||(id.startsWith('MANUAL-')&&inventory[id.slice(7)]==='owned'))))].slice(0,6):[];
-  try{teamLeader=storageRead('dokkanos-team-leader')||'';if(teamLeader&&!resolveCard(teamLeader))teamLeader=''}catch(e){teamLeader=''}
-  const fav=storedJSON('dokkanos-favorites',[]),rainbow=storedJSON('dokkanos-rainbow100',[]);favorites=new Set(Array.isArray(fav)?fav.filter(x=>typeof x==='string'):[]);rainbow100=new Set(Array.isArray(rainbow)?rainbow.filter(x=>typeof x==='string'||typeof x==='number').map(String):[]);
+  const team=storedJSON('dokkanos-team',[]);selectedTeam=Array.isArray(team)?[...new Set(team.map(captureCanonicalId).filter(id=>typeof id==='string'&&(DB.cards.some(c=>c.boxId===id)||(id.startsWith('MANUAL-')&&inventory[id.slice(7)]==='owned'))))].slice(0,6):[];
+  try{teamLeader=captureCanonicalId(storageRead('dokkanos-team-leader')||'');if(teamLeader&&!resolveCard(teamLeader))teamLeader=''}catch(e){teamLeader=''}
+  const fav=storedJSON('dokkanos-favorites',[]),rainbow=storedJSON('dokkanos-rainbow100',[]);favorites=new Set(Array.isArray(fav)?fav.filter(x=>typeof x==='string').map(captureCanonicalId):[]);rainbow100=new Set(Array.isArray(rainbow)?rainbow.filter(x=>typeof x==='string'||typeof x==='number').map(String):[]);
+  if(typeof teamSettings!=='undefined')Object.assign(teamSettings,canonicalCaptureTeam({cards:[],settings:teamSettings}).settings);
   const potential=storedJSON('dokkanos-potential-manual',{});potentialManual=record(potential)?Object.fromEntries(Object.entries(potential).filter(([id,n])=>/^\d+$/.test(id)&&Number.isInteger(n)&&n>=0&&n<=4)):{};
 }
 function searchText(c){return norm([c.boxId,c.candidateId,c.name,c.title,c.rarity,c.type,c.class,skillText(c.leader),skillText(c.passive),skillText(c.superAttack),skillText(c.active),...(c.categories||[]),...(c.links||[])].join(' '))}
@@ -482,8 +487,8 @@ function verifyCatalogue(){let seen=new Set(),out=[];(CATALOG.cards||[]).forEach
 let verifyDraft={boxId:'',cardId:'',query:''};
 
 function verifyPending(){
-  const priority=new Set((OVERLAP.conflicts||[]).flatMap(x=>x.observations||[]));
-  return DB.cards.filter(c=>!c.validated).sort((a,b)=>(priority.has(b.boxId)?1:0)-(priority.has(a.boxId)?1:0));
+  const priority=new Set((OVERLAP.conflicts||[]).flatMap(x=>x.observations||[]).map(captureCanonicalId));
+  return DB.cards.filter(c=>!c.validated).sort((a,b)=>(priority.has(captureCanonicalId(b.boxId))?1:0)-(priority.has(captureCanonicalId(a.boxId))?1:0));
 }
 function verifySelectPosition(boxId){
   verifyDraft={boxId:String(boxId),cardId:'',query:''};
@@ -522,26 +527,28 @@ function verifyConfirm(){
   if(!c||!cardId){verifyMessage('Choisis d’abord une position et une carte.','error');return}
   const candidate=verifyCandidate(cardId);if(!candidate){verifyMessage('Carte ID '+cardId+' introuvable dans le catalogue.','error');return}
   if(!assignIdentification(c,cardId)){verifyMessage('Cette carte ne peut pas être sélectionnée.','error');return}
-  c._edited=true;c.validated=true;c.confidence='Validée manuellement';
+  c._edited=true;c._overlapConflict=false;c.validated=true;c.confidence='Validée manuellement';
   const saved=saveEdits();
   verifyDraft={boxId:'',cardId:'',query:''};
   render();stats();renderDuplicates();renderMissing();renderInventory();renderManualOwned();renderAnalysis();
   verifyMessage('✓ '+(c.name||'ID '+cardId)+' a été validée.'+(saved?'':' Sauvegarde locale indisponible.'),saved?'ok':'error');
 }
 function verifySkip(){
-  const c=DB.cards.find(x=>String(x.boxId)===String(verifyDraft.boxId));if(c){c._edited=true;c.validated=false;c.confidence='À revoir';saveEdits()}
+  const c=DB.cards.find(x=>String(x.boxId)===String(verifyDraft.boxId));if(c){c._edited=true;c._overlapConflict=false;c.validated=false;c.confidence='À revoir';saveEdits()}
   verifyDraft={boxId:'',cardId:'',query:''};renderVerify();verifyMessage('Position laissée à vérifier.','ok');
 }
 function verifyCancel(){verifyDraft={boxId:'',cardId:'',query:''};renderVerify()}
 function verifyMessage(msg,kind='ok'){const el=document.getElementById('verificationStatus');if(!el)return;el.textContent=msg;el.className='verify-status '+kind;el.hidden=false}
+function verifyCaptureDetails(c){if((c.observations?.length||0)<2)return '';const escape=x=>String(x||'').replace(/[&<>"']/g,a=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[a]));return '<p class="verify-overlap-note">'+c.observations.length+' captures regroupées · une seule validation'+(c._overlapConflict?' · identifications contradictoires à confirmer':'')+'</p><details class="verify-overlap"><summary>Comparer les captures de cette carte</summary><div>'+c.observations.map(o=>'<figure><img loading="lazy" src="'+escape(o.crop)+'" alt="'+escape(o.capture+' '+o.position)+'"><figcaption>'+escape(o.capture)+' · '+escape(o.position)+'</figcaption></figure>').join('')+'</div></details>';}
 function renderVerify(){
   const root=document.getElementById('verifyList');if(!root)return;
+  const repeats=DB.cards.reduce((n,c)=>n+Math.max(0,(c.observations?.length||1)-1),0);
   const pending=verifyPending(),selected=verifyDraft.boxId?DB.cards.find(x=>String(x.boxId)===verifyDraft.boxId):null;
   if(selected){
-    root.innerHTML='<section class="verify-v2-editor"><button type="button" class="verify-back" id="verifyCancel">‹ Retour à la liste</button><div class="verify-v2-source"><img src="'+(selected.crop||selected.image||'')+'" onerror="this.classList.add(\'imgfail\')"><div><small>Position à identifier</small><h3>'+selected.boxId+'</h3><p>'+(selected.capture||'')+' '+(selected.position||'')+'</p></div></div><label class="verify-finder-label" for="verifyFinder">Rechercher la carte correspondante</label><input id="verifyFinder" class="search verify-finder" autocomplete="off" placeholder="Nom du personnage ou ID Dokkan…" value="'+verifyDraft.query.replace(/"/g,'&quot;')+'"><div id="verifyResults" class="verify-v2-results"></div><div class="verify-v2-confirm"><div id="verifySelectionText">'+(verifyDraft.cardId?'Carte sélectionnée : ID '+verifyDraft.cardId:'Sélectionne une carte dans les résultats')+'</div><button type="button" id="verifyConfirm" class="primary" '+(verifyDraft.cardId?'':'disabled')+'>Valider cette carte</button><button type="button" id="verifySkip">Laisser à vérifier</button></div></section>';
+    root.innerHTML='<section class="verify-v2-editor"><button type="button" class="verify-back" id="verifyCancel">‹ Retour à la liste</button><div class="verify-v2-source"><img src="'+(selected.crop||selected.image||'')+'" onerror="this.classList.add(\'imgfail\')"><div><small>Position à identifier</small><h3>'+selected.boxId+'</h3><p>'+(selected.capture||'')+' '+(selected.position||'')+'</p>'+verifyCaptureDetails(selected)+'</div></div><label class="verify-finder-label" for="verifyFinder">Rechercher la carte correspondante</label><input id="verifyFinder" class="search verify-finder" autocomplete="off" placeholder="Nom du personnage ou ID Dokkan…" value="'+verifyDraft.query.replace(/"/g,'&quot;')+'"><div id="verifyResults" class="verify-v2-results"></div><div class="verify-v2-confirm"><div id="verifySelectionText">'+(verifyDraft.cardId?'Carte sélectionnée : ID '+verifyDraft.cardId:'Sélectionne une carte dans les résultats')+'</div><button type="button" id="verifyConfirm" class="primary" '+(verifyDraft.cardId?'':'disabled')+'>Valider cette carte</button><button type="button" id="verifySkip">Laisser à vérifier</button></div></section>';
     renderVerifyResults();return;
   }
-  root.innerHTML='<div class="verify-v2-summary"><b>'+pending.length+'</b><span>positions restent à identifier</span></div><div class="verify-v2-list">'+pending.slice(0,verifyLimit).map(c=>'<button type="button" class="verify-position" data-verify-position="'+String(c.boxId).replace(/"/g,'&quot;')+'"><img src="'+(c.crop||c.image||'')+'" onerror="this.classList.add(\'imgfail\')"><span><b>'+c.boxId+'</b><small>'+(c.capture||'')+' · '+(c.position||'')+'</small><em>Identifier ›</em></span></button>').join('')+'</div>'+(pending.length>verifyLimit?'<button class="loadmore" id="verifyMore">Afficher '+Math.min(30,pending.length-verifyLimit)+' de plus · '+(pending.length-verifyLimit)+' restantes</button>':'')+(pending.length?'':'<div class="empty">Tout est validé 🎉</div>');
+  root.innerHTML='<div class="verify-v2-summary"><b>'+pending.length+'</b><span>positions restent à identifier</span></div>'+(repeats?'<p class="verify-overlap-summary">'+repeats+' répétitions de captures regroupées. Une carte présente sur plusieurs captures ne se valide qu’une fois. Les exemplaires à des positions différentes sont conservés.</p>':'')+'<div class="verify-v2-list">'+pending.slice(0,verifyLimit).map(c=>'<button type="button" class="verify-position" data-verify-position="'+String(c.boxId).replace(/"/g,'&quot;')+'"><img src="'+(c.crop||c.image||'')+'" onerror="this.classList.add(\'imgfail\')"><span><b>'+c.boxId+'</b><small>'+(c.capture||'')+' · '+(c.position||'')+((c.observations?.length||0)>1?' · '+c.observations.length+' captures regroupées':'')+'</small><em>Identifier ›</em></span></button>').join('')+'</div>'+(pending.length>verifyLimit?'<button class="loadmore" id="verifyMore">Afficher '+Math.min(30,pending.length-verifyLimit)+' de plus · '+(pending.length-verifyLimit)+' restantes</button>':'')+(pending.length?'':'<div class="empty">Tout est validé 🎉</div>');
 }
 function loadMoreVerify(){verifyLimit+=30;renderVerify()}
 function bindVerifyV2(){
@@ -558,15 +565,16 @@ function bindVerifyV2(){
 bindVerifyV2();
 function saveEdits(){
   try{
-    return storageWrite('dokkanos-edits',JSON.stringify(DB.cards.filter(x=>x._edited).map(x=>({boxId:x.boxId,candidateId:x.candidateId,validated:x.validated,confidence:x.confidence,_edited:true}))));
+    const prior=storedJSON('dokkanos-edits',[]),edits=new Map((Array.isArray(prior)?prior:[]).filter(x=>record(x)&&typeof x.boxId==='string').map(x=>[x.boxId,x]));for(const x of DB.cards.filter(x=>x._edited&&!x._overlapConflict)){for(const [id] of edits)if(captureCanonicalId(id)===x.boxId)edits.delete(id);edits.set(x.boxId,{boxId:x.boxId,candidateId:x.candidateId,validated:x.validated,confidence:x.confidence,_edited:true});}return storageWrite('dokkanos-edits',JSON.stringify([...edits.values()]));
   }catch(e){console.warn('DokkanOS: sauvegarde locale impossible',e);return false}
 }
 
 function skillText(v){if(!v)return '—';if(typeof v==='string')return v;if(Array.isArray(v))return v.map(skillText).join(' · ');return [v.name,v.description,v.condition].filter(Boolean).join(' — ')||'—'}
 function tagBlock(title,arr){return arr?.length?`<section class="detail-section"><h3>${title}</h3><div class="tags">${arr.map(x=>`<span>${x}</span>`).join('')}</div></section>`:''}
 function statsBlock(c){let vals=[['PV',c.maxHP||c.rainbowHP],['ATQ',c.maxATK||c.rainbowATK],['DEF',c.maxDEF||c.rainbowDEF],['Coût',c.cost],['Niv. max',c.maxLevel],['SP max',c.maxSALevel]].filter(x=>x[1]!==undefined&&x[1]!==null&&x[1]!=='');return vals.length?`<section class="detail-section"><h3>Statistiques</h3><div class="statline">${vals.map(([k,v])=>`<span><small>${k}</small><b>${Number(v).toLocaleString('fr-FR')}</b></span>`).join('')}</div></section>`:''}
-function resolveCard(id){let c=DB.cards.find(x=>x.boxId===id);if(c)return c;if(String(id).startsWith('MANUAL-')){let cid=String(id).slice(7),m=localized(META.cards?.[cid]);if(!m)m=verifyCandidate(cid);if(m)return {boxId:id,candidateId:cid,confidence:'Confirmée manuellement',image:'assets/cards/'+cid+'.webp',validated:true,_manual:true,...m}}return null}
+function resolveCard(id){id=captureCanonicalId(id);let c=DB.cards.find(x=>x.boxId===id);if(c)return c;if(String(id).startsWith('MANUAL-')){let cid=String(id).slice(7),m=localized(META.cards?.[cid]);if(!m)m=verifyCandidate(cid);if(m)return {boxId:id,candidateId:cid,confidence:'Confirmée manuellement',image:'assets/cards/'+cid+'.webp',validated:true,_manual:true,...m}}return null}
 function openCard(id){
+  id=captureCanonicalId(id);
   let c=resolveCard(id);if(!c)return;let inTeam=selectedTeam.includes(id);
   let sa=skillText(c.superAttack),usa=skillText(c.ultraSuperAttack),trans=(c.transformations||[]).map(x=>x.name||x.id||x), active=skillText(c.active);
   $('#sheet').innerHTML=`<button onclick="closeSheet()" class="close">Fermer</button><div class="hero"><img src="${c.image}" onerror="imageFallback(this,'${c.candidateId}','')"><div><h2>${frCardName(c.name||'Carte '+(c.candidateId||'—'))}</h2><div>${c.title||''}</div><div class="card-badges"><span>${c.rarity||'—'}</span><span>${c.type||'—'}</span>${c.class?'<span>'+c.class+'</span>':''}${c.eza?'<span>EZA</span>':''}${rainbow100.has(String(c.candidateId))?'<span>🌈 Potentiel 100 %</span>':''}</div><p class="muted">ID ${c.candidateId||'—'} · ${c.confidence}</p><div class="detail-actions"><button class="primary" onclick="toggleTeam('${id}')">${inTeam?'Retirer de l’équipe':'Ajouter à l’équipe'}</button><button class="favorite-btn ${favorites.has(id)?'on':''}" onclick="toggleFavorite('${id}')">${favorites.has(id)?'★ Favori':'☆ Ajouter aux favoris'}</button><button class="favorite-btn ${rainbow100.has(String(c.candidateId))?'on':''}" onclick="toggleRainbowFromCard('${id}','${c.candidateId}')">${rainbow100.has(String(c.candidateId))?'🌈 Retirer le 100 %':'🌈 Marquer potentiel 100 %'}</button></div></div></div><section class="detail-section"><h3>Aptitude Leader</h3><p>${c.leader||'—'}</p></section><section class="detail-section"><h3>Passif${c.passiveName?' · '+c.passiveName:''}</h3><p>${skillText(c.passive)}</p></section><section class="detail-section"><h3>Attaque spéciale</h3><p>${sa}</p>${usa!=='—'?'<h4>Ultra attaque spéciale</h4><p>'+usa+'</p>':''}</section>${active!=='—'?'<section class="detail-section"><h3>Compétence active</h3><p>'+active+'</p></section>':''}${statsBlock(c)}${profileBlock(c)}${conditionBlock(c)}${tagBlock('Catégories',c.categories)}${tagBlock('Liens',c.links)}${trans.length?tagBlock('Transformations',trans):''}<section class="detail-section provenance"><small>Source des données : ${c.source?.provider||c.sources?.map(x=>x.provider).join(' + ')||'DokkanOS'} · Fiche ${c.fr?'française':'source'}</small></section>`;
@@ -707,7 +715,7 @@ function renderTeam(){
 function countBy(cards,key){let o={};cards.forEach(c=>{let v=c[key];if(v)o[v]=(o[v]||0)+1});return Object.entries(o).sort((a,b)=>b[1]-a[1])}
 function topMulti(cards,key,n=12){let o={};cards.forEach(c=>(c[key]||[]).forEach(v=>o[v]=(o[v]||0)+1));return Object.entries(o).sort((a,b)=>b[1]-a[1]).slice(0,n)}
 function synergyReadiness(cards){let withCats=cards.filter(c=>c.categories?.length).length,withLinks=cards.filter(c=>c.links?.length).length,leaders=cards.filter(c=>c.leader).length;return {withCats,withLinks,leaders,ready:cards.length?Math.round(((withCats+withLinks+leaders)/(cards.length*3))*100):0}}
-function collectionWarnings(valid,manualIds){let out=[],captured=new Set(valid.map(c=>String(c.candidateId)));for(const [id,state] of Object.entries(inventory)){if(state==='missing'&&captured.has(id))out.push('Conflit inventaire sur ID '+id)}let unresolved=(OVERLAP.conflicts||[]).filter(x=>x.status!=='resolved').length;if(unresolved)out.push(unresolved+' conflit(s) de chevauchement encore à vérifier');let noMeta=valid.filter(c=>!c.name&&!c.title).length;if(noMeta)out.push(noMeta+' position(s) validée(s) sans fiche enrichie');return out}
+function collectionWarnings(valid,manualIds){let out=[],captured=new Set(valid.map(c=>String(c.candidateId)));for(const [id,state] of Object.entries(inventory)){if(state==='missing'&&captured.has(id))out.push('Conflit inventaire sur ID '+id)}let unresolved=(OVERLAP.conflicts||[]).filter(x=>!resolveCard(x.physicalPosition)?.validated).length;if(unresolved)out.push(unresolved+' conflit(s) de chevauchement encore à vérifier');let noMeta=valid.filter(c=>!c.name&&!c.title).length;if(noMeta)out.push(noMeta+' position(s) validée(s) sans fiche enrichie');return out}
 function bars(title,rows,total){return `<div class="panel collection-panel"><h3>${title}</h3>${rows.map(([k,n])=>`<div class="metric-row"><div><span>${k}</span><b>${n}</b></div><div class="metric-track"><i style="width:${Math.max(2,Math.round(n/Math.max(1,total)*100))}%"></i></div></div>`).join('')||'<p class="muted">Pas encore de données.</p>'}</div>`}
 function renderAnalysis(){
   let el=$('#analysisContent');if(!el)return;

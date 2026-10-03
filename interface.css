@@ -84,3 +84,7 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus{outline:none}
 .menu-open .ux-team-cta{display:none}.menu-open .app-nav{z-index:70}.menu-open .nav-backdrop{z-index:69}
 
 #home .companion-welcome h1 span{margin-left:.22em}
+
+.verify-overlap-summary,.verify-overlap-note{font-size:12px;color:var(--muted);line-height:1.6}.verify-overlap>summary{min-height:44px;font-size:12px}.verify-overlap>div{display:flex;gap:10px;overflow-x:auto}.verify-overlap figure{margin:10px 0;flex:0 0 110px}.verify-overlap figure img{width:100%;height:134px;object-fit:contain;max-height:none}.verify-overlap figcaption{font-size:10px;color:var(--muted);overflow-wrap:anywhere}
+
+.verify-v2-source:has(.verify-overlap[open]){position:static;top:auto}

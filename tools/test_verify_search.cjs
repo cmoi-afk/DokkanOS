@@ -20,7 +20,7 @@ context.requestAnimationFrame=fn=>setTimeout(fn,0);context.queueMicrotask=queueM
  await new Promise(r=>setTimeout(r,180));assert.equal(window.DokkanVerifySearch.metrics.scans,starting+1);assert.equal(document.querySelectorAll('#verifyResults input').length,12);
  assert.equal(document.querySelectorAll('#verifyResults img[loading="lazy"][decoding="async"]').length,12);document.querySelector('#verifySearchMore').click();assert.equal(document.querySelectorAll('#verifyResults input').length,24);
  const choice=document.querySelector('#verifyResults input');choice.checked=true;choice.dispatchEvent(new window.Event('change',{bubbles:true}));assert.equal(vm.runInContext('verifyDraft.cardId',context),choice.value);
- vm.runInContext("verifySetQuery('goku');verifySetQuery('')",context);await new Promise(r=>setTimeout(r,180));assert.equal(document.querySelectorAll('#verifyResults input').length,0);
+ vm.runInContext("verifySetQuery('goku');verifySetQuery('')",context);assert.equal(vm.runInContext('verifyDraft.cardId',context),'');assert(document.querySelector('#verifyConfirm').disabled);await new Promise(r=>setTimeout(r,180));assert.equal(document.querySelectorAll('#verifyResults input').length,0);
  // The index must refresh after a new data load, retaining no stale candidates.
  await vm.runInContext('boot()',context);window.DokkanVerifySearch.prepare();assert(window.DokkanVerifySearch.metrics.builds>initial.builds);
  console.log('Indexed verification search: exact ranking equivalence, query reuse, rapid-input coalescing, no stale choices, 12/24 results, lazy async images, clear and data refresh: OK');console.log('Query timings ms:',JSON.stringify(times));

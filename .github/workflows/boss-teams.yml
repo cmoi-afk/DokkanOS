@@ -1,9 +1,9 @@
-name: Boss-aware teams and rotations
+name: Boss tips and full catalogue teams
 on:
   push:
-    branches: [feat/boss-teams-v220]
+    branches: [feat/boss-teams-v220, feat/catalog-boss-tips-v221]
   pull_request:
-    paths: [team-engine.js, teams.js, team-worker.js, companion.js, progress-model.js, tools/test_boss_teams.cjs, tools/audit_boss_teams_browser.cjs, .github/workflows/boss-teams.yml]
+    paths: [team-engine.js, teams.js, team-worker.js, companion.js, progress-model.js, tools/test_boss_tips.cjs, tools/test_catalog_teams_dom.cjs, tools/audit_catalog_teams_browser.cjs, tools/test_boss_teams.cjs, tools/audit_boss_teams_browser.cjs, .github/workflows/boss-teams.yml]
 permissions:
   contents: read
 jobs:
@@ -15,16 +15,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node tools/test_boss_teams.cjs
+      - run: node tools/test_boss_teams.cjs && node tools/test_boss_tips.cjs
       - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom@0.18.12 playwright@1.58.2
       - run: /tmp/dokkan-tests/node_modules/.bin/playwright install --with-deps chromium
       - run: |
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_catalog_teams_dom.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_team_category_dom.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_app_dom.cjs
           node tools/test_sw.cjs
       - run: |
           python -m http.server 8765 > /tmp/dokkan-server.log 2>&1 &
-          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_boss_teams_browser.cjs
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_catalog_teams_browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

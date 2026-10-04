@@ -1,0 +1,37 @@
+/* Give the composition space: one compact navigation, no stacked fixed controls. */
+#teams main{max-width:1120px;margin-inline:auto;display:grid;gap:18px}
+#teams .panel{margin:0;padding:20px;min-width:0}
+#teams .team-heading h2{font-size:clamp(23px,4vw,32px)}
+#teams .ux-team-steps{position:static;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;overflow:visible;margin:0;padding:6px}
+#teams .ux-team-steps button{min-width:0;padding:11px 5px;font-size:13px}
+#teams .ux-team-roster{position:static;padding:10px;margin:0;border-radius:14px;gap:8px;flex-wrap:wrap}
+#teams .ux-team-roster img{width:40px;height:40px}
+#teams .team-source{border:0;padding:10px 0;margin:0;background:transparent;box-shadow:none}
+#teams .team-ui-fold>summary,#teams #teamObjective>summary{cursor:pointer;font-weight:700;padding:12px 0;line-height:1.5}
+#teams .team-ui-fold[open]>summary{margin-bottom:12px;border-bottom:1px solid #ffffff18}
+#teams .team-ui-fold>h3{display:none}
+#teams .team-boss,#teams .team-joint{margin-top:14px;padding:10px 14px;background:#ffffff04;border:1px solid #ffffff12;border-radius:12px}
+#teams .team-roster{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+#teams .team-unit{min-width:0;padding:16px;display:flex;flex-direction:column;gap:9px}
+#teams .team-unit-detail{width:100%;min-width:0}
+#teams .team-unit-detail strong{overflow-wrap:anywhere;line-height:1.4}
+#teams .team-unit p{margin:4px 0;font-size:13px;line-height:1.6}
+#teams .team-unit-actions{margin-top:auto;display:flex;flex-wrap:wrap;gap:6px}
+#teams .team-unit-actions button{flex:1 1 auto;min-height:40px;font-size:12px;padding:8px}
+#teams .team-unit-actions [data-team-unavailable]{flex-basis:100%}
+#teams .team-acquisition{align-self:flex-start;font-size:12px;font-weight:700;border:1px solid #ffffff25;padding:5px 9px;border-radius:20px;color:#c4c9d4;background:#ffffff08}
+#teams .team-acquisition.f2p{color:#9ae5b5;background:#143925;border-color:#33764b}
+#teams .team-card-info summary{font-size:13px;cursor:pointer;color:#abb8d6;padding:6px 0}
+#teams .team-card-info a{font-size:12px}
+#teams .team-rotation{margin:14px 0;padding:14px}
+#teams .team-priorities{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+#teams .team-priorities button{min-width:0;padding:12px 6px}
+#teams .team-priorities small{line-height:1.4}
+#teams .team-toolbar{gap:8px;flex-wrap:wrap}
+#teams .team-generate{flex:1 1 100%;min-height:48px}
+#teams .team-form{gap:12px}
+#teams input,#teams select{max-width:100%;min-width:0}
+#teams .team-empty{min-height:150px;justify-content:center}
+#teams .team-analysis-kpis{gap:10px;flex-wrap:wrap}
+#teams #teamObjective,#teams #teamComposition,#teams #teamAnalysis,#teams #teamSaved{scroll-margin-top:90px}
+@media(max-width:650px){#teams main{gap:14px}#teams .panel{padding:15px}#teams .team-roster{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}#teams .team-unit{padding:10px}#teams .team-priorities{grid-template-columns:repeat(2,minmax(0,1fr))}#teams .team-unit-detail strong{font-size:13px}#teams .team-unit-detail small{font-size:10px}#teams .team-heading{margin:0}#teams .rotation-positions{grid-template-columns:1fr}#teams .team-rotation{padding:10px}}

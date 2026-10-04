@@ -88,3 +88,9 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus{outline:none}
 .verify-overlap-summary,.verify-overlap-note{font-size:12px;color:var(--muted);line-height:1.6}.verify-overlap>summary{min-height:44px;font-size:12px}.verify-overlap>div{display:flex;gap:10px;overflow-x:auto}.verify-overlap figure{margin:10px 0;flex:0 0 110px}.verify-overlap figure img{width:100%;height:134px;object-fit:contain;max-height:none}.verify-overlap figcaption{font-size:10px;color:var(--muted);overflow-wrap:anywhere}
 
 .verify-overlap-note,.verify-overlap{grid-column:2;min-width:0}
+
+#teams .team-joint{margin:18px 0;padding:16px;border:1px solid #ffffff18;border-radius:14px;background:#121925}
+#teams .team-joint .pilot-missions label{display:flex;align-items:flex-start;gap:12px;margin:10px 0;padding:12px;border:1px solid #ffffff16;border-radius:10px}
+#teams .team-joint input[type=checkbox]{width:20px;height:20px;min-height:0;flex:0 0 20px;padding:0;margin:3px 0 0}
+#teams .team-joint label span{min-width:0}#teams .team-joint small{display:block;margin-top:6px;color:#abb8cd}
+#teams .team-joint-status p{padding:10px 0;border-bottom:1px solid #ffffff12}#teams .team-joint>button{white-space:normal}

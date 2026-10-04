@@ -1,0 +1,30 @@
+name: Joint category missions
+on:
+  push:
+    branches: [feat/joint-category-missions-v222]
+  pull_request:
+    paths: [tools/test_joint_missions.cjs, tools/test_joint_missions_dom.cjs, tools/audit_joint_missions_browser.cjs, .github/workflows/joint-missions.yml]
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node tools/test_joint_missions.cjs && node tools/test_copilot.cjs
+      - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom@0.18.12 playwright@1.58.2
+      - run: /tmp/dokkan-tests/node_modules/.bin/playwright install --with-deps chromium
+      - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_joint_missions_dom.cjs
+      - run: |
+          python -m http.server 8765 > /tmp/dokkan-server.log 2>&1 &
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_joint_missions_browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: joint-category-missions
+          path: audit-artifacts
+          retention-days: 14

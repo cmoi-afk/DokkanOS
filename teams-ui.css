@@ -35,3 +35,14 @@
 #teams .team-analysis-kpis{gap:10px;flex-wrap:wrap}
 #teams #teamObjective,#teams #teamComposition,#teams #teamAnalysis,#teams #teamSaved{scroll-margin-top:90px}
 @media(max-width:650px){#teams main{gap:14px}#teams .panel{padding:15px}#teams .team-roster{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}#teams .team-unit{padding:10px}#teams .team-priorities{grid-template-columns:repeat(2,minmax(0,1fr))}#teams .team-unit-detail strong{font-size:13px}#teams .team-unit-detail small{font-size:10px}#teams .team-heading{margin:0}#teams .rotation-positions{grid-template-columns:1fr}#teams .team-rotation{padding:10px}}
+
+#teams .team-generation-options{margin:6px 0 14px;background:#ffffff04;border-radius:10px;padding:0 12px}
+#teams .team-variants>details{width:100%}
+#teams .team-variants>details[open]{display:block}
+#teams .team-variants button{margin:4px}
+#teams .team-unit-detail{display:grid;grid-template-columns:60px minmax(0,1fr);gap:6px 9px;text-align:left;padding:0;align-items:center}
+#teams .team-unit-detail img{width:60px;height:60px;grid-row:span 2;margin:0;object-fit:contain}
+#teams .team-unit-detail strong{margin:0;font-size:13px}
+#teams .team-unit-detail small{margin:0;font-size:10px}
+#teams .team-rotation .team-ui-fold>h4{display:none}
+@media(max-width:650px){#teams .team-unit-detail{grid-template-columns:42px minmax(0,1fr);gap:5px}#teams .team-unit-detail img{width:42px;height:42px}#teams .team-unit-detail strong{font-size:12px}}

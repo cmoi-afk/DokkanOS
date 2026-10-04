@@ -14,5 +14,6 @@ const pool=[leader,...others,dodge,tank],original=JSON.stringify(pool),result=E.
 const forced=E.build(pool,leader,{mission:{requirements:[{kind:'card',value:'dodge',count:1}]},context:{boss:b}});assert(forced.check.ok&&forced.team.some(c=>c.id==='dodge'));
 // Worker and direct generation must use exactly the same boss context and result.
 let reply;const worker={importScripts(){worker.self.DokkanTeamEngine=E},self:{postMessage:r=>reply=r}};vm.runInNewContext(fs.readFileSync('team-worker.js','utf8'),worker);worker.self.onmessage({data:{pool,leader,options:{context:{boss:b}}}});assert.deepEqual(reply.result.team.map(c=>c.id),result.team.map(c=>c.id));
+const hazard=E.bossAnalysis({source:'hazard',phases:[{bosses:[{name:'Boss',effects:[`S'il y a un perso de catégorie \"A\", ATT et DÉF +66 %`]}]}]});assert.equal(hazard.categoryHazards[0].category,'A');assert(E.bossFit(tank,E.passive(tank),{boss:hazard}).warnings.some(t=>t.includes('bonus ennemi')));
 const live=JSON.parse(fs.readFileSync('boss-profiles.json')).profiles;for(const p of Object.values(live)){const a=E.bossAnalysis(p);assert(a.bosses.length);assert(Number.isFinite(a.pressure));}
 console.log('Boss mechanics, source isolation, missing profiles, conditional guard, passive counters, mission priority, real dataset and worker parity: OK');

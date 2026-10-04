@@ -1,2 +1,2 @@
-importScripts('team-engine.js?v=2000','copilot-model.js?v=2000');
+importScripts('team-engine.js?v=2220','copilot-model.js?v=2220');
 self.onmessage=e=>{try{const E=self.DokkanTeamEngine,M=self.DokkanCopilotModel,{kind,payload,token}=e.data;const result=kind==='multi'?M.multiPlan(payload,E,progress=>self.postMessage({token,progress})):M.missingCandidates(payload.team,payload.leader,payload.friend,payload.candidates,payload.alternatives,payload.mission,payload.known,payload.context,E);self.postMessage({token,result});}catch(error){self.postMessage({token,error:error.message});}};

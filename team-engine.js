@@ -210,8 +210,8 @@ function placementProfile(c,position=1,team=[],context={},rotation=null){
   if(state==='missing')continue;
   const lines=e.text.replace(/\n(?!\s*[-•])/g,' ').split(/\n|;/).map(s=>s.replace(/^\s*[-•]\s*/,'').trim()).filter(Boolean);
   for(const text of lines){const n=norm(text),headSlots=positionSlots(e.condition),lineSlots=positionSlots(text),slots=lineSlots.length?lineSlots:headSlots;if(headSlots.length&&!headSlots.includes(position)||slots.length&&!slots.includes(position))continue;
-   // Ally-only support is not this card's personal DEF.
-   if(/(?:pour tous les allies|all allies)/.test(n)&&!/pour soi|self/.test(n))continue;
+   // Position-conditional ally support matters, but never becomes personal DEF.
+   const allyOnly=/(?:pour tous les allies|all allies)/.test(n)&&!/pour soi|self/.test(n);
    const trigger=hn+' '+n,attack=/en attaquant|lors de l.attaque|when attacking|when performing|ki a \d+.*attaque|apres.*(?:son attaque|avoir attaque|avoir lance une|att sp lancee)|after attacking/.test(trigger);
    const build=/chaque.*(?:encaissee|esquive|att sp|attaque portee)|apres.*(?:encaisse|esquive)|a partir|ecoule|after receiving|after dodging|\d+.*(?:attaques|att sp).*(?:lance|effectue|encaisse)|after performing \d+/.test(trigger);
    const before=/avant.*(?:perso.*attaque|son attaque|d.attaquer|d.encaisser|de subir)|before.*(?:attack|receiving)/.test(trigger)&&!build;
@@ -222,15 +222,17 @@ function placementProfile(c,position=1,team=[],context={},rotation=null){
    let weight=composed?1:Math.min(.5,effectWeight({...e,state:'conditional'},context));if(random)weight*=.35;if(build)weight=Math.min(weight,.3);
    // A before-dodge bonus is conditional; it is not a permanent dodge rate.
    if(/avant.{0,40}(?:n.esquive|d.esquiver|son esquive)/.test(trigger)){weight=Math.min(weight,.45);warnings.push('Bonus d’esquive limité : vérifier sa condition pendant le tour.');}
-   const f=effectFeatures(text,context),dodge=!context.disableDodge&&/esquiv|dodge/.test(n),defense=Math.min(18,f.stats.def/18)+f.reduction*.5+(f.guard?25:0)+(dodge?12:0),offense=Math.min(18,f.stats.atk/25)+(/supplementaire|additional|critique|critical/.test(n)?8:0);
-   const relevant=defense||offense||/ki\s*\+/.test(n);if(!relevant)continue;
-   rows.push({condition:e.condition,text,timing,position:slots,weight,guaranteed:weight===1&&!random,defense,offense,guard:f.guard,reduction:f.reduction,dodge});
+   const f=effectFeatures(text,context),dodge=!allyOnly&&!context.disableDodge&&/esquiv|dodge/.test(n),defense=allyOnly?0:Math.min(18,f.stats.def/18)+f.reduction*.5+(f.guard?25:0)+(dodge?12:0),offense=allyOnly?0:Math.min(18,f.stats.atk/25)+(/supplementaire|additional|critique|critical/.test(n)?8:0);
+   const targetCategories=quoted(text),targets=rotationCards.filter(x=>instance(x)!==instance(c)&&(!targetCategories.length||targetCategories.some(q=>cats(x).has(canonical(q))))&&(!/classe extreme/.test(n)||className(x.class)==='extreme')&&(!/classe super/.test(n)||className(x.class)==='super'));
+   const support=allyOnly?(f.stats.atk*.06+f.stats.def*.09+Number(n.match(/ki\s*\+\s*(\d+)/)?.[1]||0)*1.8)*targets.length:0;
+   const relevant=defense||offense||support||/ki\s*\+/.test(n);if(!relevant)continue;
+   rows.push({condition:e.condition,text,timing,position:slots,weight,guaranteed:weight===1&&!random,defense,offense,support,guard:!allyOnly&&f.guard,reduction:allyOnly?0:f.reduction,dodge});
   }
  }
  const before=rows.filter(r=>['start','before','hit'].includes(r.timing)),after=rows.filter(r=>r.timing==='attack'),build=rows.filter(r=>r.timing==='build'),kit=temporalKit(c);
  const preDefense=before.reduce((s,r)=>s+r.defense*r.weight,0),postDefense=after.reduce((s,r)=>s+r.defense*r.weight,0)+(kit.stackDef||kit.temporaryDef?10:0),offense=rows.reduce((s,r)=>s+r.offense*r.weight,0);
  const guaranteedProtection=before.some(r=>r.guaranteed&&(r.guard||r.reduction>0));
- const positionBonus=rows.filter(r=>r.position.length).reduce((s,r)=>s+(r.defense*.65+r.offense*.7)*r.weight,0);
+ const positionBonus=rows.filter(r=>r.position.length).reduce((s,r)=>s+(r.defense*.65+r.offense*.7+r.support*.7)*r.weight,0);
  const retention=(kit.stackDef?12:0)+(kit.stackAtk?7:0)+(build.length?8:0),long=context.encounter?.duration==='long';
  const score=position===1?preDefense*(1+(context.boss?.pressure||0)*.4)+offense*.15+positionBonus:preDefense*.3+postDefense*.7+offense*.35+positionBonus+(position===2?retention*(long?1:.5):-retention*(long?1:.4));
  const summarize=r=>(r.weight<1?'À condition de '+r.condition.replace(/\n/g,' ').trim()+' : ':'')+r.text.replace(/\s+/g,' ').trim();

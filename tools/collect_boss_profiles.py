@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 E=json.loads(Path('events.json').read_text());urls=[]
 for e in E['events']:
  if e['kind'] in ['Défi','Zone Z suprême','Dokkan Event','Combat éminent','Combat Z suprême','Burst Mode']:
-  for s in e['stages']:
+  for s in e.get('stages',[]):
    if s.get('source') and s['source'] not in urls:urls.append(s['source'])
 # Prioritize user's Saga Boo stage, then newest event entries; coverage stays explicit.
 priority='https://www.dbz-dokkanbattle.com/quest/1769/17690045'

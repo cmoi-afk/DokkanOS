@@ -197,17 +197,68 @@ function synergy(team,friend=null){const all=friend?[...team,friend]:team;
  let linkTotal=0;const matrix=team.map((a,i)=>team.map((b,j)=>{const common=i===j?[]:links(a,b);if(j>i)linkTotal+=common.length;return common}));
  return {matrix,linkTotal,support,interactions,score:support.reduce((n,x)=>n+x.value*(x.conditional?.4:1),0)+interactions.reduce((n,x)=>n+(x.state==='available'?x.weight:x.state==='possible'?x.weight*.35:x.state==='missing'?-x.weight*.3:0),0)};
 }
-function rotations(team,friend=null,context={}){context=battleContext(context);const cards=friend?[...team,friend]:team;if(cards.length<4)return[];const pairs=[];
+// Placement is a timing estimate, not a damage simulator. Future stacks never protect the first hit.
+function positionSlots(text){const n=norm(text),out=[];if(!/position|slot|attacking.*(?:first|second|third)/.test(n))return out;for(const [p,re]of [[1,/\b1(?:re|er|ere|st)\b|premiere|first/],[2,/\b2(?:e|eme|nd)\b|deuxieme|second/],[3,/\b3(?:e|eme|rd)\b|troisieme|third/]])if(re.test(n))out.push(p);return out;}
+function placementProfile(c,position=1,team=[],context={},rotation=null){
+ context=battleContext(context);const p=passive(c,team,context),rows=[],warnings=[],rotationCards=rotation||team;
+ for(const e of p.effects){let state=e.state;const hn=norm(e.condition),qs=quoted(e.condition);
+  if(qs.length&&/allies attaquants|meme tour|same turn|attacking.*turn/.test(hn)&&!/ennemi|enemy/.test(hn)){
+   const min=Number(hn.match(/(\d+)\s*(?:persos|personnages|allies|characters)/)?.[1]||1),pool=(min>=3?rotationCards:rotationCards.filter(x=>instance(x)!==instance(c))).filter(x=>!/classe extreme|extreme class/.test(hn)||className(x.class)==='extreme').filter(x=>!/classe super|super class/.test(hn)||className(x.class)==='super');
+   const count=pool.filter(x=>qs.some(q=>cats(x).has(canonical(q))||norm(x.name).includes(norm(q)))).length;
+   state=rotation?(count>=min?'active':'missing'):'conditional';
+  }
+  if(state==='missing')continue;
+  const lines=e.text.replace(/\n(?!\s*[-•])/g,' ').split(/\n|;/).map(s=>s.replace(/^\s*[-•]\s*/,'').trim()).filter(Boolean);
+  for(const text of lines){const n=norm(text),headSlots=positionSlots(e.condition),lineSlots=positionSlots(text),slots=lineSlots.length?lineSlots:headSlots;if(headSlots.length&&!headSlots.includes(position)||slots.length&&!slots.includes(position))continue;
+   // Ally-only support is not this card's personal DEF.
+   if(/(?:pour tous les allies|all allies)/.test(n)&&!/pour soi|self/.test(n))continue;
+   const trigger=hn+' '+n,attack=/en attaquant|lors de l.attaque|when attacking|when performing|ki a \d+.*attaque|apres.*(?:son attaque|avoir attaque|avoir lance une|att sp lancee)|after attacking/.test(trigger);
+   const build=/chaque.*(?:encaissee|esquive|att sp|attaque portee)|apres.*(?:encaisse|esquive)|a partir|ecoule|after receiving|after dodging|\d+.*(?:attaques|att sp).*(?:lance|effectue|encaisse)|after performing \d+/.test(trigger);
+   const before=/avant.*(?:perso.*attaque|son attaque|d.attaquer|d.encaisser|de subir)|before.*(?:attack|receiving)/.test(trigger)&&!build;
+   const onHit=/au moment d.encaisser|when receiving/.test(trigger)&&!build;
+   const timing=build?'build':before?'before':onHit?'hit':attack?'attack':'start';
+   const random=/chance|probabilite|sometimes|probability/.test(trigger)&&!/garantie/.test(trigger),restricted=/\bpv\b|\bhp\b|s.il y a.*ennemi|contre.*ennemi|face.*ennemi|enemy.*category|att sp de type|attaque speciale de type|sph|ki a|apparition|\[1 fois\]|par allie|pour chaque|(?:pendant|partir|apres).*tours?/.test(hn)||state==='unknown';
+   const composed=state==='active'&&!restricted&&!build||!restricted&&!build&&!/esquiv/.test(hn)&&(slots.length||before||onHit||attack);
+   let weight=composed?1:Math.min(.5,effectWeight({...e,state:'conditional'},context));if(random)weight*=.35;if(build)weight=Math.min(weight,.3);
+   // A before-dodge bonus is conditional; it is not a permanent dodge rate.
+   if(/avant.{0,40}(?:n.esquive|d.esquiver|son esquive)/.test(trigger)){weight=Math.min(weight,.45);warnings.push('Bonus d’esquive limité : vérifier sa condition pendant le tour.');}
+   const f=effectFeatures(text,context),dodge=!context.disableDodge&&/esquiv|dodge/.test(n),defense=Math.min(18,f.stats.def/18)+f.reduction*.5+(f.guard?25:0)+(dodge?12:0),offense=Math.min(18,f.stats.atk/25)+(/supplementaire|additional|critique|critical/.test(n)?8:0);
+   const relevant=defense||offense||/ki\s*\+/.test(n);if(!relevant)continue;
+   rows.push({condition:e.condition,text,timing,position:slots,weight,guaranteed:weight===1&&!random,defense,offense,guard:f.guard,reduction:f.reduction,dodge});
+  }
+ }
+ const before=rows.filter(r=>['start','before','hit'].includes(r.timing)),after=rows.filter(r=>r.timing==='attack'),build=rows.filter(r=>r.timing==='build'),kit=temporalKit(c);
+ const preDefense=before.reduce((s,r)=>s+r.defense*r.weight,0),postDefense=after.reduce((s,r)=>s+r.defense*r.weight,0)+(kit.stackDef||kit.temporaryDef?10:0),offense=rows.reduce((s,r)=>s+r.offense*r.weight,0);
+ const guaranteedProtection=before.some(r=>r.guaranteed&&(r.guard||r.reduction>0));
+ const positionBonus=rows.filter(r=>r.position.length).reduce((s,r)=>s+(r.defense*.65+r.offense*.7)*r.weight,0);
+ const retention=(kit.stackDef?12:0)+(kit.stackAtk?7:0)+(build.length?8:0),long=context.encounter?.duration==='long';
+ const score=position===1?preDefense*(1+(context.boss?.pressure||0)*.4)+offense*.15+positionBonus:preDefense*.3+postDefense*.7+offense*.35+positionBonus+(position===2?retention*(long?1:.5):-retention*(long?1:.4));
+ const summarize=r=>(r.weight<1?'À condition de '+r.condition.replace(/\n/g,' ').trim()+' : ':'')+r.text.replace(/\s+/g,' ').trim();
+ const details=rows.map(r=>({timing:r.timing,text:summarize(r)}));
+ const brief=r=>r.text.replace(/\s+/g,' ').trim()+(r.weight<1?' (condition à vérifier)':'');
+ const parts=[],pos=rows.find(r=>r.position.length);if(pos)parts.push('Bonus de position : '+brief(pos));
+ const safe=before.filter(r=>r.guard||r.reduction||r.dodge).sort((a,b)=>Number(b.guaranteed)-Number(a.guaranteed)||b.defense*b.weight-a.defense*a.weight)[0],hit=before.find(r=>r.timing==='hit'&&r.defense);if(safe&&safe!==pos)parts.push((safe.timing==='hit'?'Au moment du coup : ':'Avant d’attaquer : ')+brief(safe));else if(!safe&&hit&&hit!==pos)parts.push('Au moment du coup : '+brief(hit));
+ const supers=[['SP',c.superAttack],['Ultra-SP',c.ultraSuperAttack]].filter(([,s])=>/augmente.*def|raises.*def/.test(norm(skill(s)).split(/inflige|causes/)[0]));
+ if(supers.length)parts.push('Après la '+supers.map(([label])=>label).join(' / ')+' : hausse de DÉF'+(kit.stackDef?' accumulable':' temporaire')+'.');
+ if(after.some(r=>r.defense))parts.push('Après avoir attaqué : bonus de DÉF du passif.');
+ if(build.length)parts.push('Montée en puissance : bonus non acquis au départ.');
+ if(context.disableDodge&&/esquiv|dodge/.test(norm(skill(c.passive))))warnings.unshift('Esquive annulée dans ce combat, y compris les bonus qui exigent une esquive.');
+ if(position===1&&!guaranteedProtection)warnings.push('Premiers coups : aucune garde ou réduction garantie détectée à ce moment.');
+ if(position!==1&&postDefense>0)warnings.push('Les bonus après attaque ne protègent pas les coups reçus avant elle, même en position '+position+'.');
+ if(!parts.length)parts.push(position===1?'Meilleur profil avant attaque du duo ; protection à vérifier.':position===3?'Flottant : vérifier les coups placés avant sa propre attaque.':'Partenaire du duo pour ses attaques et ses liens.');
+ return {position,score,preDefense,postDefense,offense,guaranteedProtection,rows,details,summary:parts.slice(0,3),warnings:[...new Set(warnings)]};
+}
+function rotations(team,friend=null,context={}){context=battleContext(context);const cards=friend?[...team,friend]:team;if(cards.length<4)return[];const pairs=[],placementCache=new Map(),placement=(c,pos,rot)=>{const key=instance(c)+':'+pos+':'+rot.map(instance).sort().join('|');if(!placementCache.has(key))placementCache.set(key,placementProfile(c,pos,cards,context,rot));return placementCache.get(key);};
  for(let i=0;i<cards.length;i++)for(let j=i+1;j<cards.length;j++){
   let a=cards[i],b=cards[j],pa=passive(a,cards,context),pb=passive(b,cards,context),common=links(a,b);
-  const first=pa.slot1>=pb.slot1?a:b,second=first===a?b:a;
+  let first=a,second=b;
   let third=null,interactionScore=-Infinity;
-  for(const floater of cards.filter((_,k)=>k!==i&&k!==j)){const rot=[a,b,floater];const score=rot.flatMap(c=>interactionRows(c,cards,rot)).reduce((n,x)=>n+(x.state==='available'?x.weight:x.state==='missing'?-x.weight*.2:0),0);if(score>interactionScore){interactionScore=score;third=floater;}}
+  for(const floater of cards.filter((_,k)=>k!==i&&k!==j))for(const [x,y]of [[a,b],[b,a]]){const rot=[x,y,floater],placements=rot.map((c,k)=>placement(c,k+1,rot));const score=placements[0].score+placements[1].score+placements[2].score*.35+rot.flatMap(c=>interactionRows(c,cards,rot)).reduce((n,x)=>n+(x.state==='available'?x.weight:x.state==='missing'?-x.weight*.2:0),0);if(score>interactionScore){interactionScore=score;third=floater;first=x;second=y;}}
   const rows=[a,b,...(third?[third]:[])].flatMap(c=>interactionRows(c,cards,[a,b,...(third?[third]:[])]));
-  pairs.push({a:first,b:second,third,interactions:rows,indices:[i,j],links:common,score:common.length*(context.boss?.pressure?7:10)+Math.max(pa.slot1,pb.slot1)*(1+(context.boss?.pressure||0)*.5)+Math.min(pa.defense,pb.defense)*.2+Math.max(0,interactionScore),uncertain:!passive(first,cards,context).guard&&!passive(first,cards,context).reduction});
+  pairs.push({a:first,b:second,third,interactions:rows,indices:[i,j],links:common,score:common.length*(context.boss?.pressure?7:10)+Math.min(pa.defense,pb.defense)*.2+interactionScore,uncertain:!placement(first,1,[first,second,third]).guaranteedProtection});
  }
  let best=[],score=-Infinity;for(let i=0;i<pairs.length;i++)for(let j=i+1;j<pairs.length;j++){if(pairs[i].indices.some(x=>pairs[j].indices.includes(x)))continue;const n=pairs[i].score+pairs[j].score;if(n>score){score=n;best=[pairs[i],pairs[j]];}}const fixed=new Set(best.flatMap(r=>[instance(r.a),instance(r.b)]));
- for(const r of best){const floaters=cards.filter(c=>!fixed.has(instance(c)));let winner=null,value=-Infinity;for(const c of floaters){const rotation=[r.a,r.b,c],rows=rotation.flatMap(x=>interactionRows(x,cards,rotation)),n=rows.reduce((n,x)=>n+(x.state==='available'?x.weight:0),0)+supports(c,rotation).reduce((n,x)=>n+x.value,0);if(n>value){winner={third:c,interactions:rows};value=n;}}if(winner)Object.assign(r,winner);else{r.third=null;r.interactions=[];}}
+ for(const r of best){const floaters=cards.filter(c=>!fixed.has(instance(c)));let winner=null,value=-Infinity;for(const c of floaters)for(const [a,b]of [[r.a,r.b],[r.b,r.a]]){const rotation=[a,b,c],rows=rotation.flatMap(x=>interactionRows(x,cards,rotation)),placements=rotation.map((x,i)=>placement(x,i+1,rotation)),n=placements[0].score+placements[1].score+placements[2].score*.35+rows.reduce((n,x)=>n+(x.state==='available'?x.weight:0),0)+supports(c,rotation).reduce((n,x)=>n+x.value,0);if(n>value){winner={a,b,third:c,interactions:rows,placements,uncertain:!placements[0].guaranteedProtection};value=n;}}if(winner)Object.assign(r,winner);else{r.third=null;r.interactions=[];r.placements=[placement(r.a,1,[r.a,r.b]),placement(r.b,2,[r.a,r.b])];}}
  return best;
 }
 function evaluate(team,leader,friend,mission,known,context={}){context=battleContext(context,mission);team=team.map(c=>combatCard(c,context));leader=combatCard(leader,context);friend=combatCard(friend,context);const check=constraints(team,mission,friend),profiles=team.map(c=>passive(c,friend?[...team,friend]:team,context)),cover=team.map(c=>coverage(leader,c,known)),friendCover=friend?team.map(c=>coverage(friend,c,known)):[];const defensiveWeight=context.combat==='survival'?1.7:context.combat==='short'?.7:1,offensiveWeight=context.combat==='short'?1.7:1;let score=cover.reduce((n,x)=>n+(x.covered?100+(x.hp+x.atk+x.def)/30:-300),0);score+=friendCover.reduce((n,x)=>n+(x.covered?20:-120),0);score+=profiles.reduce((n,x)=>n+x.defense*defensiveWeight+x.offense*offensiveWeight+x.utility-(x.complete?0:15),0);const rot=context.quick?[]:rotations(team,friend,context),syn=synergy(team,friend);const linkWeight=context.combat==='links'?7:context.combat==='synergy'?3:1.5;score+=syn.linkTotal*linkWeight+syn.score*(context.combat==='synergy'?1.6:1);score+=rot.reduce((n,p)=>n+p.score*.35,0);
@@ -236,5 +287,5 @@ function build(pool,leader,{friend=null,mission={},known=[],context={},locked=[]
  const alternatives=[];for(const {team:candidate} of finalists){if(candidate.length!==team.length)continue;if(alternatives.length&&alternatives.some(t=>candidate.filter(c=>!t.some(x=>identity(x)===identity(c))).length<2))continue;alternatives.push(candidate);if(alternatives.length===3)break;}
  return {team,...evaluate(team,leader,friend,mission,known,context),alternatives,approximate:true};}
 
-const API={combatProfile,temporalKit,encounterFit,mandatoryMember,leaderCandidates,bossTips,bossAnalysis,bossFit,battleContext,combatCard,norm,canonical,type,identity,interactionRows,supports,synergy,links,leaderRules,leaderCategories,inCategory,coverage,passive,constraints,rotations,evaluate,build};if(typeof module!=='undefined')module.exports=API;root.DokkanTeamEngine=API;
+const API={positionSlots,placementProfile,combatProfile,temporalKit,encounterFit,mandatoryMember,leaderCandidates,bossTips,bossAnalysis,bossFit,battleContext,combatCard,norm,canonical,type,identity,interactionRows,supports,synergy,links,leaderRules,leaderCategories,inCategory,coverage,passive,constraints,rotations,evaluate,build};if(typeof module!=='undefined')module.exports=API;root.DokkanTeamEngine=API;
 })(typeof window!=='undefined'?window:globalThis);

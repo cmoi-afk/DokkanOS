@@ -1,0 +1,22 @@
+name: Collect event combat profiles
+on:
+  push:
+    branches: [feat/event-combat-v240]
+    paths: [.github/workflows/collect-combat-profiles.yml, tools/collect_boss_profiles.py]
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install beautifulsoup4
+      - run: python tools/collect_boss_profiles.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: refreshed-combat-profiles
+          path: boss-profiles.json

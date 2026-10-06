@@ -46,3 +46,5 @@
 #teams .team-unit-detail small{margin:0;font-size:10px}
 #teams .team-rotation .team-ui-fold>h4{display:none}
 @media(max-width:650px){#teams .team-unit-detail{grid-template-columns:42px minmax(0,1fr);gap:5px}#teams .team-unit-detail img{width:42px;height:42px}#teams .team-unit-detail strong{font-size:12px}}
+
+#teams .team-encounter{margin:14px 0;padding:14px;border:1px solid #ffffff20;border-radius:12px;background:#ffffff04}#teams .team-encounter .tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}#teams .team-plan-summary{line-height:1.6}

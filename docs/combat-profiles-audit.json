@@ -1,0 +1,32 @@
+{
+  "verifiedAt": "2026-10-06T13:41:18.702810+00:00",
+  "requested": 1853,
+  "verifiedProfiles": 1831,
+  "unavailableOrNotExtracted": 22,
+  "failures": {
+    "https://www.dbz-dokkanbattle.com/quest/710/7100105": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/710/7100095": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/710/7100085": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/710/7100075": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/710/7100065": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/710/7100055": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/710/7100045": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/710/7100035": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/710/7100025": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/710/7100015": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/720/7200105": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/720/7200095": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/720/7200085": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/720/7200075": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/720/7200065": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/720/7200055": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/720/7200045": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/720/7200035": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/720/7200025": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/720/7200015": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/764/7640014": "not-extracted",
+    "https://www.dbz-dokkanbattle.com/quest/768/7680011": "unavailable"
+  },
+  "scope": "Niveaux du catalogue GLOBAL existant : défis, zones Z, événements Dokkan, combats éminents et Burst Mode. Les autres niveaux utilisent leurs notes extraites et leur format.",
+  "limits": "Les durées et la préparation sont des estimations. Les statistiques et effets viennent des fiches de niveaux ; aucun dégât subi ni nombre exact de tours n’est simulé."
+}

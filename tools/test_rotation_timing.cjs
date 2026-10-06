@@ -19,6 +19,7 @@ assert(E.placementProfile(inline,1,[inline,ally],{},[inline,ally]).guaranteedPro
 assert(!E.placementProfile(inline,2,[inline,ally],{},[inline,ally]).guaranteedProtection);
 const entry=unit('entry',basic+'\n*À son apparition, s’il y a un autre perso de catégorie "A" dans l’équipe*\n- Taux de réduction des dégâts +90 % [1 fois] [permanent]');
 assert(!E.placementProfile(entry,1,[entry,ally],{},[entry,ally]).guaranteedProtection);
+const decay=unit('decay',basic+'\n*À son apparition*\n- Taux de réduction des dégâts +90 %\n- À chaque tour passé, taux de réduction des dégâts -15 % (max. 90 %)');assert(!E.placementProfile(decay,1).rows.some(r=>r.text.includes('-15 %')));assert(E.placementProfile(decay,1).warnings.some(w=>w.includes('décroissante')));
 const ultra=unit('ultra',basic);ultra.ultraSuperAttack={description:'Augmente fortement la DÉF pendant 1 tour ; inflige des dégâts colossaux'};assert(E.placementProfile(ultra,2).summary.some(s=>s.includes('Ultra-SP')));
 const enemyDown=unit('enemyDown',basic,'Augmente l’ATT ; inflige des dégâts immenses et réduit la DÉF');assert(!E.placementProfile(enemyDown,2).summary.some(s=>s.includes('Après la SP')));
 const third=unit('third',basic+'\n*En attaquant en 3e position*\n- ATT +500 %\n- ATT SP supplémentaire garantie');assert(E.placementProfile(third,3).score>E.placementProfile(third,2).score);

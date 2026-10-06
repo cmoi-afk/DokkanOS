@@ -210,6 +210,7 @@ function placementProfile(c,position=1,team=[],context={},rotation=null){
   if(state==='missing')continue;
   const lines=e.text.replace(/\n(?!\s*[-•])/g,' ').split(/\n|;/).map(s=>s.replace(/^\s*[-•]\s*/,'').trim()).filter(Boolean);
   for(const text of lines){const n=norm(text),headSlots=positionSlots(e.condition),lineSlots=positionSlots(text),slots=lineSlots.length?lineSlots:headSlots;if(headSlots.length&&!headSlots.includes(position)||slots.length&&!slots.includes(position))continue;
+   if(/reduction des degats[^%]{0,35}-\s*\d+\s*%/.test(n)){warnings.push('Réduction de dégâts décroissante : vérifier sa valeur au tour actuel.');continue;}
    // Position-conditional ally support matters, but never becomes personal DEF.
    const allyOnly=/(?:pour tous les allies|all allies)/.test(n)&&!/pour soi|self/.test(n);
    const trigger=hn+' '+n,attack=/en attaquant|lors de l.attaque|when attacking|when performing|ki a \d+.*attaque|apres.*(?:son attaque|avoir attaque|avoir lance une|att sp lancee)|after attacking/.test(trigger);

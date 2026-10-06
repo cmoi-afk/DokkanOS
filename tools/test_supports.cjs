@@ -4,6 +4,7 @@ const a=unit('a'),b=unit('b'),wrong=unit('wrong','ATT et DÉF +180 %',{type:'PUI
 const typed=unit('typed','Ki +3 et ATT et DÉF +40 % pour tous les alliés de type INT');assert.deepEqual(E.supports(typed,[typed,a,b,wrong]).map(x=>x.target.id),['a','b']);
 const category=unit('category','ATT et DÉF +50 % pour tous les alliés de catégorie "A"');assert(E.supports(category,[category,a,wrong]).every(x=>x.target.id==='a'));
 const named=unit('named','ATT et DÉF +40 % pour soi et tous les persos dont le nom comprend "a"');assert.equal(E.supports(named,[named,a,b]).length,1);
+const unreadable=unit('unreadable','ATT et DÉF +40 % pour tous les alliés de catégorie Catégorie non identifiée');assert.equal(E.supports(unreadable,[unreadable,a,b]).length,0);
 const slot3=unit('slot3');slot3.passive+='\n*En 3e position*\n- Ki +3 et ATT et DÉF +60 % pour tous les alliés';const rot=[a,b,slot3];assert.equal(E.supports(slot3,rot,{rotation:rot,position:2}).length,0);assert(E.supports(slot3,rot,{rotation:rot,position:3}).every(x=>!x.conditional));assert(E.supports(slot3,rot).every(x=>x.conditional));
 const hp=unit('hp');hp.passive+='\n*Si PV à 50 % ou plus*\n- ATT et DÉF +100 % pour tous les alliés';assert(E.supports(hp,[hp,a,b]).every(x=>x.conditional&&x.rule.weight<1));
 const future=unit('future');future.passive+='\n*À partir du 5e tour*\n- ATT +100 % pour tous les alliés';assert(E.supportScore(E.supports(future,[future,a,b],{context:{encounter:{duration:'short'}}}))<E.supportScore(E.supports(future,[future,a,b],{context:{encounter:{duration:'long'}}})));

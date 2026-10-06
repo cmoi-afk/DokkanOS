@@ -195,6 +195,8 @@ function supports(c,team,options={}){
    const stats=percentages(line).stats,ki=Number(n.match(/ki\s*\+\s*(\d+)/)?.[1]||0),crit=Number(n.match(/(?:coup critique|critical).*?\+\s*(\d+)\s*%/)?.[1]||0),reduction=Number(n.match(/reduction des degats.*?\+\s*(\d+)\s*%/)?.[1]||0),dodge=context.disableDodge?0:Number(n.match(/(?:esquive|dodge).*?\+\s*(\d+)\s*%/)?.[1]||0);
    if(!stats.atk&&!stats.def&&!ki&&!crit&&!reduction&&!dodge)continue;
    const target=line.match(/pour[\s\S]*$/i)?.[0]||line,q=quoted(target),categories=/categorie|category/.test(norm(target))?q:[],names=categories.length?[]:q;
+   // An explicit but unreadable target never becomes an unrestricted team-wide buff.
+   if(/categorie|category|nom comprend|name includes/.test(norm(target))&&!q.length)continue;
    const types=/type /.test(norm(target))?selector(target,[]).types:[],cls=/classe extreme|extreme class/.test(norm(target))?'Extrême':/classe super|super class/.test(norm(target))?'Super':'';
    const slots=positionSlots(e.condition+' '+line);if(position&&slots.length&&!slots.includes(position))continue;
    const attacking=e.special||/lors de l.attaque|en attaquant|when attacking/.test(hn+' '+n),hit=/au moment d.encaisser/.test(hn),future=/chaque.*(?:encaissee|esquive)|apres avoir|a partir|apparition|ecoule|\bpv\b|\bhp\b|sph|ki a|chance/.test(hn)||/rarement|parfois|sometimes/.test(n);

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Refresh every released playable SSR/UR/LR by exact ID, including separate Z kits."""
-import concurrent.futures as futures,gzip,html,io,json,re,subprocess,time,urllib.request
+import concurrent.futures as futures,gzip,html,io,json,re,subprocess,time,urllib.request,os
 from collections import Counter
 from datetime import datetime,timezone
 from pathlib import Path
@@ -198,7 +198,7 @@ def main():
    if error:report["errors"].append({"id":cid,"reason":error})
    elif parsed.get("excluded"):report["excluded"].append(cid)
    else:results[cid]=parsed
-   if processed%100==0:checkpoint(publish=processed%1000==0);print("Fiches",processed,"/",len(jobs),"erreurs",len(report["errors"]),flush=True)
+   if processed%100==0:checkpoint(publish=processed%1000==0 and os.environ.get('CATALOGUE_CHECKPOINT_PUSH','1')=='1');print("Fiches",processed,"/",len(jobs),"erreurs",len(report["errors"]),flush=True)
    if processed==100 and len(report["errors"])>80:raise RuntimeError("Sources indisponibles : arrêt avant collecte massive")
  checkpoint()
  # Build only source-confirmed edges. Do not identify chains from adjacent IDs or identical names.

@@ -1,0 +1,60 @@
+name: Refresh GLOBAL data 7 October 2026
+on:
+  push:
+    branches: [data/global-20261007]
+    paths: [.github/workflows/global-download-refresh.yml]
+permissions:
+  contents: write
+concurrency:
+  group: global-download-20261007
+  cancel-in-progress: false
+jobs:
+  catalogue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow
+      - name: Read fresh GLOBAL identities, French kits and released Z awakenings
+        env:
+          CATALOGUE_CHECKPOINT_PUSH: '0'
+        run: python tools/refresh_catalogue_v4.py
+      - name: Preserve inventory identities and publish collected catalogue to review branch
+        run: |
+          node tools/test_catalogue_data.cjs
+          git config user.name 'DokkanOS Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add catalog.json card-meta.json catalogue-report.json docs/CATALOG-AUDIT-v4.json assets/cards
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Collect fresh GLOBAL catalogue and released Z kits on 7 October'
+          git pull --rebase origin data/global-20261007
+          git push origin HEAD:data/global-20261007
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: global-catalogue-source
+          path: |
+            docs/CATALOG-AUDIT-v4.json
+            data-cache/catalogue-v4
+  events:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install beautifulsoup4
+      - name: Read fresh GLOBAL events, missions, rewards and source item indexes
+        run: python tools/refresh_events.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: global-events-source
+          path: |
+            event-source
+            event-cache
+          retention-days: 7

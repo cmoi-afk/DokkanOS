@@ -27,9 +27,11 @@ def main():
    if e.get('datePrecision')=='day' and not previous.get('datePrecision') and e.get('end','')[:10]==previous.get('end','')[:10] and previous.get('end'):
     e['end']=previous['end'];e.pop('datePrecision',None)
    # Exact matching descriptions retain progress keys even if collector internals change.
-   lookup={(m.get('title'),m.get('description','')):m['id'] for m in previous['missions']}
+   lookup={};oldids={m['id'] for m in previous['missions']}
+   for m in previous['missions']:lookup.setdefault((m.get('title'),m.get('description','')),[]).append(m['id'])
    for m in e['missions']:
-    if (m.get('title'),m.get('description','')) in lookup:m['id']=lookup[m.get('title'),m.get('description','')]
+    matches=lookup.get((m.get('title'),m.get('description','')),[])
+    if m['id'] not in oldids and len(matches)==1:m['id']=matches[0]
   if not previous or semantic(e)!=semantic(previous):changes.append(e['id'])
  # Source lists mission mirrors separately. Hide exact mirrors to avoid counting
  # the same rewards twice, while keeping the combat's historical progress keys.

@@ -24,6 +24,8 @@ def main():
    if not e.get('detailsLoaded',True):e.clear();e.update(previous);continue
    for key in ['start','end','permanent','datePrecision']:
     if key not in e and key in previous:e[key]=previous[key]
+   if e.get('datePrecision')=='day' and not previous.get('datePrecision') and e.get('end','')[:10]==previous.get('end','')[:10] and previous.get('end'):
+    e['end']=previous['end'];e.pop('datePrecision',None)
    # Exact matching descriptions retain progress keys even if collector internals change.
    lookup={(m.get('title'),m.get('description','')):m['id'] for m in previous['missions']}
    for m in e['missions']:
@@ -37,7 +39,7 @@ def main():
   if not e['id'].startswith('mission-') or not e['missions']:continue
   combat=byid.get('quest-'+e['id'].split('-',1)[1])
   signature=lambda x:sorted((m['title'],m.get('description',''),json.dumps(m.get('rewards',[]),sort_keys=True,ensure_ascii=False)) for m in x['missions'])
-  if combat and signature(e)==signature(combat):
+  if combat and e['id'] not in old and signature(e)==signature(combat):
    e['hidden']=True;e['aliasOf']=combat['id'];mirrors.append(e['id'])
   if e['id']=='mission-1782' and combat:
    combat['permanent']=True;combat['start']=e['start']
@@ -69,7 +71,7 @@ def main():
  newz=[{'cardId':c['id'],'kind':z['kind']} for c in cat['cards'] for z in meta['cards'][c['id']].get('zAwakenings',[]) if z['kind'] not in {x['kind'] for x in oldmeta.get(c['id'],{}).get('zAwakenings',[])}]
  for c in meta['cards'].values():
   released={z['kind'] for z in c.get('zAwakenings',[]) if z.get('verified') and z.get('available')}
-  c['upcomingAwakenings']=[a for a in c.get('upcomingAwakenings',[]) if a['kind'] not in released]
+  if 'upcomingAwakenings' in c:c['upcomingAwakenings']=[a for a in c['upcomingAwakenings'] if a['kind'] not in released]
  boo=meta['cards']['1026431'];z=next(z for z in boo['zAwakenings'] if z['kind']=='zlr' and z['verified'] and z['available'])
  write('card-meta.json',meta)
  summary=original('data-download.json');summary.update({'id':'global-2026-10-07','verifiedAt':incoming['targetedVerifiedAt'],'description':'Catalogue, éveils Z disponibles, événements, missions et récompenses actualisés au 7 octobre.','catalogue':{'cards':len(cat['cards']),'addedIds':added,'changedIds':modified,'newAwakenings':newz}})

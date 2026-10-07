@@ -1,0 +1,64 @@
+name: Integrate reviewed GLOBAL sources
+on:
+  push:
+    branches: [data/global-20261007]
+    paths: [.github/workflows/global-download-finalize.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Wait for the independently collected catalogue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in $(seq 1 150); do
+            state=$(gh api repos/cmoi-afk/DokkanOS/actions/runs/37605269701/jobs --jq '.jobs[] | select(.name == "catalogue") | [.status, .conclusion] | join(":")')
+            echo "Catalogue: $state"
+            if [ "$state" = 'completed:success' ]; then
+              git pull --ff-only origin data/global-20261007
+              exit 0
+            fi
+            if [[ "$state" == completed:* ]]; then exit 1; fi
+            sleep 20
+          done
+          exit 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install beautifulsoup4
+      - uses: actions/download-artifact@v4
+        with:
+          name: global-events-source
+          run-id: 37605269701
+          github-token: ${{ github.token }}
+          path: .
+      - run: python tools/finalize_global_download.py event-source/events.json
+      - run: python tools/build_game_items.py event-cache
+      - name: Refresh level mechanics without replacing verified profiles on source errors
+        run: python tools/collect_boss_profiles.py
+      - name: Validate source identities and availability
+        run: node tools/test_data_download.cjs && node tools/test_catalogue_data.cjs && node tools/test_events.cjs && node tools/test_supports.cjs && node tools/test_rotation_timing.cjs
+      - name: Commit reviewable application data
+        run: |
+          git config user.name 'DokkanOS Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add events.json events-preview.json progress-data.json card-meta.json boss-profiles.json data-download.json game-items.json docs/events-audit.json docs/data-download-2026-10-07-audit.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Integrate current GLOBAL download, releases, missions and level mechanics'
+          git pull --rebase origin data/global-20261007
+          git push origin HEAD:data/global-20261007
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: integrated-global-audit
+          path: |
+            docs/data-download-2026-10-07-audit.json
+            docs/events-audit.json
+            data-download.json

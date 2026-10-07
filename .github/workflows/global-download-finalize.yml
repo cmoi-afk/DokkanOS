@@ -43,7 +43,7 @@ jobs:
       - run: python tools/build_game_items.py event-cache
       - name: Refresh level mechanics without replacing verified profiles on source errors
         run: python tools/collect_boss_profiles.py
-      - name: Validate source identities and availability
+      - name: Validate source identities, chronological dates and availability
         run: node tools/test_data_download.cjs && node tools/test_catalogue_data.cjs && node tools/test_events.cjs && node tools/test_supports.cjs && node tools/test_rotation_timing.cjs
       - name: Commit reviewable application data
         run: |

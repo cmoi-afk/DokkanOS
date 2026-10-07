@@ -56,6 +56,11 @@ def main():
  upcoming=byid.get('quest-1767')
  if upcoming:
   upcoming['status']='upcoming';upcoming['notes'].append('Missions publiées pour le 09/10/2026 à 07:00 jusqu’au 29/10/2026 à 08:59 (France). Le combat n’est pas encore ouvert au 7 octobre.')
+ invalid_dates=[]
+ for e in incoming['events']:
+  if e.get('start') and e.get('end') and datetime.fromisoformat(e['end'])<datetime.fromisoformat(e['start']):
+   invalid_dates.append({'eventId':e['id'],'start':e['start'],'end':e['end']});e.pop('end');e['status']='unknown'
+   e.setdefault('notes',[]).append('La date de fin publiée est incohérente avec le début ; vérifie la période dans le jeu.')
  for e in current['events']:
   if e['id'] not in seen:
    incoming['events'].append({**e,'hidden':True});incoming['sourceInventory'].append(e['id'])
@@ -93,7 +98,7 @@ def main():
  summary['events']=[{k:v for k,v in e.items() if k in ['id','name','kind','start','end','stonesTotal','notes']}|{'missionCount':len(e['missions']),'stageCount':len(e.get('stages',[]))} for e in incoming['events'] if e['id'] in focus and not e.get('hidden')]
  summary['coverage']={'catalogue':read('catalogue-report.json')['status'],'events':incoming['coverage'],'changedEventIds':changes}
  write('data-download.json',summary)
- write('docs/data-download-2026-10-07-audit.json',{'region':'GLOBAL','verifiedAt':summary['verifiedAt'],'baseline':BASE,'addedCards':added,'changedCards':modified,'newAwakenings':newz,'changedEvents':changes,'retainedVerifiedZKits':retained,'eventSourceAudit':audit,'catalogueAudit':read('catalogue-report.json'),'sourceHashes':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in Path('event-cache').glob('*.html')}})
+ write('docs/data-download-2026-10-07-audit.json',{'region':'GLOBAL','verifiedAt':summary['verifiedAt'],'baseline':BASE,'addedCards':added,'changedCards':modified,'newAwakenings':newz,'changedEvents':changes,'hiddenNewMissionMirrors':mirrors,'invalidSourceDates':invalid_dates,'retainedVerifiedZKits':retained,'eventSourceAudit':audit,'catalogueAudit':read('catalogue-report.json'),'sourceHashes':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in Path('event-cache').glob('*.html')}})
  for script in ['build_event_preview.py','build_progress_data.py']:subprocess.run([sys.executable,str(ROOT/'tools'/script)],cwd=ROOT,check=True)
  print(json.dumps({'addedCards':len(added),'changedCards':len(modified),'newZ':len(newz),'changedEvents':len(changes),'coverage':summary['coverage']},ensure_ascii=False))
 if __name__=='__main__':main()

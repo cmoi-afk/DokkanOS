@@ -1,0 +1,27 @@
+name: Check current GLOBAL download
+on:
+  pull_request:
+    paths: [catalog.json, card-meta.json, events.json, data-download.json, data-download.js, tools/test_data_download.cjs, tools/audit_data_download_browser.cjs, .github/workflows/check-global-download.yml]
+permissions:
+  contents: read
+jobs:
+  data-and-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node tools/test_data_download.cjs && node tools/test_catalogue_data.cjs && node tools/test_events.cjs && node tools/test_sw.cjs
+      - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts playwright@1.58.2
+      - run: /tmp/dokkan-tests/node_modules/.bin/playwright install --with-deps chromium
+      - run: |
+          mkdir -p audit-artifacts
+          python -m http.server 8765 >/tmp/download-http.log 2>&1 &
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_data_download_browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: global-download-mobile-desktop
+          path: audit-artifacts

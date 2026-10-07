@@ -86,7 +86,7 @@ function buildTeamRequest(pool,leader,compare=false){const options={friend:teamF
 function executeTeamRequest(request){return new Promise((resolve,reject)=>{
  const fallback=()=>setTimeout(()=>{try{resolve(runTeamRequest(request))}catch(e){reject(e)}},0);
  if(typeof Worker!=='function'){fallback();return;}
- let worker;try{worker=new Worker('team-worker.js?v=2420');teamWorker=worker;
+ let worker;try{worker=new Worker('team-worker.js?v=2430');teamWorker=worker;
  worker.onmessage=e=>{worker.terminate();if(teamWorker===worker)teamWorker=null;e.data.error?reject(Error(e.data.error)):resolve(e.data.result)};
  worker.onerror=()=>{worker.terminate();if(teamWorker===worker)teamWorker=null;fallback()};worker.postMessage(request);
  }catch(e){worker?.terminate();if(teamWorker===worker)teamWorker=null;fallback();}

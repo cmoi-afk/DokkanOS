@@ -21,12 +21,21 @@ fs.mkdirSync('audit-artifacts',{recursive:true});
  assert(await p.evaluate(()=>TE.constraints(teamCards(),teamMission(),teamFriend(resolveCard(teamLeader))).ok));assert.equal(await p.evaluate(()=>JSON.stringify(window.inventory||inventory)),inventory);
  await p.locator('[data-team-action="undo"]').click();assert.deepEqual(await p.evaluate(()=>[...selectedTeam]),original);
  console.log(JSON.stringify({profile:scenario.name,replacementMs,singleSlotReplacement:true,replacementUndo:true}));
+ // Real catalogue category team: category is a membership constraint, not a leader-skill name.
+ await p.evaluate(()=>{teamSettings.leadCategory='Saga de Boo';teamSettings.leaderMode='auto';renderTeam();});
+ const categoryStart=Date.now();await p.locator('#autoTeam').click();await p.waitForFunction(()=>!teamBusy&&selectedTeam.length===6,null,{timeout:180000});const categoryMs=Date.now()-categoryStart;
+ assert(await p.evaluate(()=>teamCards().every(c=>TE.inCategory(c,'Saga de Boo'))));assert(await p.evaluate(()=>TE.constraints(teamCards(),teamMission(),teamFriend(resolveCard(teamLeader))).ok));assert.equal(await p.locator('#teamLeaderBonuses').count(),1);
+ await p.evaluate(()=>{document.querySelector('#teamObjective').open=true;});await p.locator('[data-team-action="booPreset"]').click();assert.equal(await p.locator('#teamBossSummary').count(),1);assert((await p.locator('#teamBossSummary').textContent()).includes('Contraintes du niveau'));
+ await p.evaluate(()=>{document.querySelector('#teamBossSummary').scrollIntoView({behavior:'instant',block:'start'});});await p.screenshot({path:`audit-artifacts/team-boss-summary-${scenario.name}.png`});
+ console.log(JSON.stringify({profile:scenario.name,categoryMs,categoryLeaderMembership:true,actualLeaderBonuses:true,bossSummary:true}));
  await p.locator('[data-team-unavailable]').nth(1).click();const recomposeStart=Date.now();await p.locator('#autoTeam').click();await p.waitForFunction(()=>!teamBusy&&selectedTeam.length===6,null,{timeout:120000});const recomposeMs=Date.now()-recomposeStart;assert(await p.evaluate(()=>!teamCards().some(c=>teamSettings.excluded.includes(TE.identity(c)))));
  await p.evaluate(()=>{teamSettings.searchMode='deep';renderTeam();});await p.locator('#autoTeam').click();await p.waitForFunction(()=>teamPreview&&document.querySelector('[data-team-action="keepPreview"]'),null,{timeout:120000});await p.locator('[data-team-action="keepPreview"]').click();assert(await p.evaluate(()=>!teamBusy&&selectedTeam.length===6));assert.equal(await p.evaluate(()=>JSON.stringify(window.inventory||inventory)),inventory);
  await p.locator('#teamName').fill('Fluide');await p.locator('[data-team-action="save"]').click();console.log(JSON.stringify({profile:scenario.name,firstMs,cachedMs,recomposeMs,heartbeat}));
  // Playwright #42775: WebKit's offline flag rejects even literal SW responses.
  // Stop this test's own origin instead; require a successful cached navigation.
  const offlineMethod=originServer?'origin-stopped':'browser-offline';
+ // The final proposal may contain different lazy images; view/cache those cards before testing a cached offline reload.
+ await p.evaluate(async()=>{const urls=[...new Set([...document.querySelectorAll('#teamSlots img,.team-friend img')].map(img=>img.src))];for(const url of urls){const response=await fetch(url);if(!response.ok)throw Error('Team image unavailable before offline test');await response.arrayBuffer();if(!(await caches.match(url)))throw Error('Team image not cached');}});
  if(originServer){assert(await p.evaluate(async()=>!!(await caches.match('./team-search.js'))));await new Promise(resolve=>{originServer.once('exit',resolve);originServer.kill('SIGTERM');});await assert.rejects(()=>fetch(base));}else await ctx.setOffline(true);
  await p.reload();
  await p.waitForFunction(()=>document.querySelector('#grid .unit'),null,{timeout:90000});await p.evaluate(async()=>{await ensureEvents();await teamBossReady;switchView('teams');});assert.equal(await p.locator('.team-acquisition').count(),6);assert.equal(await p.evaluate(()=>teamSettings.searchMode),'deep');assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2));

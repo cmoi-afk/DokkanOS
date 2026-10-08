@@ -29,7 +29,7 @@ async function run(E,request,progress=()=>{},cancelled=()=>false){
   if(!valid(quick)&&seed.length&&!compare)quick={...E.build(pool,c,{...base,context:{...base.context,searchMode:'fast'}}),leader:c};
   best=better(best,quick);if(valid(best))progress({label:deep?'Équipe valide trouvée · optimisation en cours…':'Équipe rapide prête.',result:best});
   if(deep){await pause();if(cancelled())throw Error('Recherche annulée');progress({label:'Recherche approfondie · leader '+(i+1)+'/'+Math.min(leaders.length,8)});const full={...E.build(pool,c,{...base,context:{...base.context,searchMode:'deep'}}),leader:c};best=better(best,full);if(valid(best))progress({label:'Comparaison des variantes · '+(i+1)+'/'+Math.min(leaders.length,8),result:best});}
-  else if(valid(best))break;
+  else if(valid(best)&&!compare)break;
  }
  const result={...(best||{error:'Aucun leader compatible avec les cartes conservées.'}),elapsedMs:Date.now()-start,searchMode:deep?'deep':'fast'};
  if(valid(result)){if(results.size>=8)results.delete(results.keys().next().value);results.set(key,result);}

@@ -14,7 +14,8 @@ const pool=[old,modern,outside,...Array.from({length:8},(_,i)=>unit('c'+i))],kno
  const friend={...outside,categories:['C'],teamRules:{leader:[{kind:'base',known:true,categories:['C'],types:[],classes:[],hp:200,atk:200,def:200}]}};
  assert.equal(E.leaderCandidates(pool,{...options,friend,context:{leadCategory:'A',friend:'fixed'}}).length,0);
  // The leader's own 230% bonus must not be advertised as 230% for everyone.
- const narrow={...lead('narrow','B',170),categories:['A','B','C'],teamRules:{leader:[{kind:'base',known:true,categories:['B'],types:[],classes:[],hp:170,atk:170,def:170},{kind:'additional',known:true,categories:['C'],types:[],classes:[],hp:60,atk:60,def:60}]}};
+ const narrow={...lead('narrow','B',170),categories:['A','B','C'],teamRules:{leader:[{kind:'base',known:true,categories:['B'],types:[],classes:[],hp:170,atk:170,def:170},{kind:'bonus',known:true,categories:['C'],types:[],classes:[],hp:60,atk:60,def:60}]}};
+ assert.equal(E.coverage(narrow,narrow,known).hp,230);assert.equal(E.coverage(narrow,pool[3],known).hp,170);
  assert.equal(E.leaderCandidates([...pool,narrow],options)[0].c.id,'modern');
  assert.equal(JSON.stringify(pool),snapshot);
  console.log('Cross-category leaders: stronger real bonuses, six category members, no literal leader-category requirement, partial bonuses, friend, exclusions, comparison and immutable Box: OK');

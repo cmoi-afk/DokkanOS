@@ -7,6 +7,13 @@ function valid(r){return !r.error&&r.team?.length===6&&!r.check?.deficit;}
 function better(a,b){if(!a)return b;if(valid(a)!==valid(b))return valid(b)?b:a;return b.score>a.score?b:a;}
 async function run(E,request,progress=()=>{},cancelled=()=>false){
  const {pool,leader,options,compare,seed=[]}=request,start=Date.now();
+ if(request.action==='replace'){
+  progress({label:'Recherche de la meilleure alternative · cinq cartes conservées…'});
+  await pause();if(cancelled())throw Error('Recherche annulée');
+  const result=E.replace(pool,request.team,request.target,leader,options);
+  if(cancelled())throw Error('Recherche annulée');
+  return {...result,elapsedMs:Date.now()-start};
+ }
  if(!pools.has(pool))pools.set(pool,++poolSequence);
  const key=JSON.stringify([pools.get(pool),leader,options,compare,seed.map(E.identity)]);
  if(results.has(key)){progress({label:'Composition identique réutilisée.'});return {...results.get(key),elapsedMs:Date.now()-start,cached:true};}

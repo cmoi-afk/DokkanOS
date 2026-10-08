@@ -15,6 +15,7 @@ jobs:
       - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom@0.18.12 playwright@1.58.2
       - run: /tmp/dokkan-tests/node_modules/.bin/playwright install --with-deps chromium webkit
       - run: node tools/test_team_performance.cjs
+      - run: node tools/test_cross_category_leaders.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_team_ui.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_sa_farm.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_catalog_teams_dom.cjs

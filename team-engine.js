@@ -324,5 +324,33 @@ function build(pool,leader,{friend=null,mission={},known=[],context={},locked=[]
  const alternatives=[];for(const {team:candidate} of finalists){if(candidate.length!==team.length)continue;if(alternatives.length&&alternatives.some(t=>candidate.filter(c=>!t.some(x=>identity(x)===identity(c))).length<2))continue;alternatives.push(candidate);if(alternatives.length===3)break;}
  return {team,...evaluate(team,leader,friend,mission,known,context),alternatives,approximate:true};}
 
-const API={supportScore,supportMatches,positionSlots,placementProfile,combatProfile,temporalKit,encounterFit,mandatoryMember,leaderCandidates,bossTips,bossAnalysis,bossFit,battleContext,combatCard,norm,canonical,type,identity,interactionRows,supports,synergy,links,leaderRules,leaderCategories,inCategory,coverage,passive,constraints,rotations,evaluate,build};if(typeof module!=='undefined')module.exports=API;root.DokkanTeamEngine=API;
+// A replacement only changes the selected slot, never the other five cards.
+function replace(pool,team,target,leader,{friend=null,mission={},known=[],context={},locked=[],excluded=[]}={}){
+ context=battleContext(context,mission);
+ const index=team.findIndex(c=>instance(c)===String(target)),fail=error=>({team,error});
+ if(team.length!==6||index<0||new Set(team.map(identity)).size!==6)return fail('Compose une équipe complète de six cartes avant de remplacer une carte.');
+ if(!leader||identity(team[index])===identity(leader))return fail('Le leader ne peut pas être remplacé avec cette action.');
+ if(locked.some(c=>identity(c)===identity(team[index])))return fail('Déverrouille cette carte avant de la remplacer.');
+ team=team.map(c=>combatCard(c,context));leader=combatCard(leader,context);friend=combatCard(friend,context);
+ const original=new Set(team.map(identity)),blocked=new Set(excluded.map(String)),available=new Set(pool.map(identity)),fixed=team.filter((c,i)=>i!==index);
+ if(!fixed.some(c=>identity(c)===identity(leader))||fixed.some(c=>!available.has(identity(c))||blocked.has(identity(c))||blocked.has(instance(c))||!coverage(leader,c,known).covered||(friend&&!coverage(friend,c,known).covered)||!inCategory(c,context.leadCategory)||!mandatoryMember(c,mission)))return fail('Une carte conservée est incompatible avec les contraintes. Aucun remplacement effectué.');
+ const proposals=[],seen=new Set();
+ for(const raw of pool){
+  const c=combatCard(raw,context),id=identity(c);
+  if(seen.has(id)||original.has(id)||blocked.has(id)||blocked.has(instance(c)))continue;
+  seen.add(id);
+  if(!mandatoryMember(c,mission)||!inCategory(c,context.leadCategory)||!coverage(leader,c,known).covered||(friend&&!coverage(friend,c,known).covered))continue;
+  const next=team.map((x,i)=>i===index?c:x);
+  if(!constraints(next,mission,friend).ok)continue;
+  proposals.push({team:next,score:evaluate(next,leader,friend,mission,known,{...context,quick:true}).score});
+ }
+ if(!proposals.length)return fail('Aucune autre carte compatible trouvée avec les cinq cartes conservées et les contraintes actuelles.');
+ let best;
+ for(const p of proposals.sort((a,b)=>b.score-a.score).slice(0,context.searchMode==='deep'?24:12)){
+  const result={team:p.team,...evaluate(p.team,leader,friend,mission,known,{...context,quick:false})};
+  if(result.check.ok&&(!best||result.score>best.score))best=result;
+ }
+ return best?{...best,approximate:true,replacementTarget:String(target),candidatesConsidered:proposals.length}:fail('Aucun remplacement valide trouvé.');
+}
+const API={supportScore,supportMatches,positionSlots,placementProfile,combatProfile,temporalKit,encounterFit,mandatoryMember,leaderCandidates,bossTips,bossAnalysis,bossFit,battleContext,combatCard,norm,canonical,type,identity,interactionRows,supports,synergy,links,leaderRules,leaderCategories,inCategory,coverage,passive,constraints,rotations,evaluate,build,replace};if(typeof module!=='undefined')module.exports=API;root.DokkanTeamEngine=API;
 })(typeof window!=='undefined'?window:globalThis);

@@ -23,6 +23,7 @@ jobs:
       - run: node tools/test_companion.cjs
       - run: node tools/test_events.cjs
       - run: node tools/test_teams.cjs
+      - run: node tools/test_rotation_timing.cjs
       - run: node tools/test_team_builder.cjs
       - run: node tools/test_team_quality.cjs
       - run: node tools/test_catalogue.cjs

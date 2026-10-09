@@ -10,7 +10,7 @@ fs.mkdirSync('audit-artifacts',{recursive:true});
  await p.evaluate(()=>{window.__fluid={ticks:0,busyTicks:0,maxGapMs:0,last:performance.now()};window.__fluidTimer=setInterval(()=>{const f=window.__fluid,now=performance.now();f.ticks++;if(teamBusy){f.busyTicks++;f.maxGapMs=Math.max(f.maxGapMs,now-f.last);}f.last=now;},50);});
  const started=Date.now();await p.locator('#autoTeam').click();await p.waitForFunction(()=>!teamBusy&&selectedTeam.length===6,null,{timeout:120000});const firstMs=Date.now()-started;
  const heartbeat=await p.evaluate(()=>{clearInterval(window.__fluidTimer);return window.__fluid;});assert(heartbeat.busyTicks>2,'The UI heartbeat must keep running during search');
- assert.equal(await p.locator('.team-acquisition').count(),6);assert.equal(await p.locator('#teamCandidates .candidate-row').count(),0);
+ assert.equal(await p.locator('.team-acquisition').count(),6);assert.equal(await p.locator('#teamCandidates .candidate-row').count(),0);assert(await p.evaluate(()=>teamCards().every(teamFinalForm)));
  await p.evaluate(()=>window.__perfWorker=teamWorker);await p.locator('#autoTeam').click();await p.waitForFunction(()=>!teamBusy,null,{timeout:120000});assert(await p.evaluate(()=>teamWorker===window.__perfWorker));
  const cacheStart=Date.now();await p.locator('#autoTeam').click();await p.waitForFunction(()=>!teamBusy,null,{timeout:120000});const cachedMs=Date.now()-cacheStart;assert((await p.locator('#teamBuildStatus').textContent()).includes('Résultat réutilisé'));
  await p.evaluate(()=>{const d=document.querySelector('[data-team-timing]');d.open=true;});await p.waitForFunction(()=>document.querySelector('[data-team-timing][data-ready]'));
@@ -18,7 +18,7 @@ fs.mkdirSync('audit-artifacts',{recursive:true});
  const original=await p.evaluate(()=>[...selectedTeam]),target=await p.locator('[data-team-replace]').first().getAttribute('data-team-replace'),slot=original.indexOf(target);
  const replacementStart=Date.now();await p.locator('[data-team-replace]').first().click();await p.waitForFunction(()=>!teamBusy,null,{timeout:120000});const replacementMs=Date.now()-replacementStart;
  const replaced=await p.evaluate(()=>[...selectedTeam]);assert.notEqual(replaced[slot],target);original.forEach((id,i)=>{if(i!==slot)assert.equal(replaced[i],id)});
- assert(await p.evaluate(()=>TE.constraints(teamCards(),teamMission(),teamFriend(resolveCard(teamLeader))).ok));assert.equal(await p.evaluate(()=>JSON.stringify(window.inventory||inventory)),inventory);
+ assert(await p.evaluate(()=>TE.constraints(teamCards(),teamMission(),teamFriend(resolveCard(teamLeader))).ok));assert(await p.evaluate(()=>teamCards().every(teamFinalForm)));assert.equal(await p.evaluate(()=>JSON.stringify(window.inventory||inventory)),inventory);
  await p.locator('[data-team-action="undo"]').click();assert.deepEqual(await p.evaluate(()=>[...selectedTeam]),original);
  console.log(JSON.stringify({profile:scenario.name,replacementMs,singleSlotReplacement:true,replacementUndo:true}));
  // Real catalogue category team: category is a membership constraint, not a leader-skill name.

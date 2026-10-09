@@ -1,7 +1,7 @@
 name: Check readable teams
 on:
   pull_request:
-    paths: [team-search.js, team-engine.js, team-worker.js, tools/test_team_performance.cjs, tools/audit_team_performance_browser.cjs, teams.js, teams-ui.js, teams-ui.css, experience.js, sa-farm.js, index.html, sw.js, tools/test_team_ui.cjs, tools/audit_team_ui_browser.cjs, .github/workflows/check-team-ui.yml]
+    paths: [team-search.js, team-engine.js, team-worker.js, tools/test_team_performance.cjs, tools/audit_team_performance_browser.cjs, teams.js, teams-ui.js, teams-ui.css, experience.js, sa-farm.js, index.html, sw.js, tools/test_team_ui.cjs, tools/audit_team_ui_browser.cjs, battlefield.js, battlefield-model.js, battlefield-worker.js, battlefield.css, battlefield-data.json, companion-model.js, tools/test_battlefield.cjs, tools/test_battlefield_dom.cjs, tools/audit_battlefield_browser.cjs, .github/workflows/check-team-ui.yml]
 permissions:
   contents: read
 jobs:
@@ -20,10 +20,13 @@ jobs:
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_sa_farm.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_catalog_teams_dom.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_team_final_forms.cjs
+      - run: node tools/test_battlefield.cjs
+      - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_battlefield_dom.cjs
       - run: |
           python -m http.server 8765 >/tmp/team-ui-http.log 2>&1 &
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_team_ui_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_team_performance_browser.cjs
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_battlefield_browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

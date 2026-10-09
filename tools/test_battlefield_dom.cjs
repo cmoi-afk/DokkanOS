@@ -1,12 +1,13 @@
 const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict'),{parseHTML}=require('linkedom');
 const {document,window}=parseHTML(fs.readFileSync('index.html','utf8')),saved=new Map();window.HTMLElement.prototype.scrollIntoView=function(){};
 const context={console,window,document,performance,navigator:{onLine:true},localStorage:{getItem:k=>saved.get(k)||null,setItem:(k,v)=>saved.set(k,String(v))},fetch:async path=>({ok:true,json:async()=>JSON.parse(fs.readFileSync(path,'utf8'))}),alert:m=>{throw Error(m)},confirm:()=>true,setTimeout,clearTimeout,Date,location:{reload(){}}};vm.createContext(context);
-for(const f of ['team-engine.js','app.js','event-model.js','team-search.js','teams.js','catalog-model.js','catalogue.js','battlefield-model.js','battlefield.js'])vm.runInContext(fs.readFileSync(f,'utf8').split('boot().catch(')[0],context);
+for(const f of ['team-engine.js','app.js','event-model.js','team-search.js','teams.js','catalog-model.js','catalogue.js','battlefield-model.js','battlefield.js','teams-ui.js'])vm.runInContext(fs.readFileSync(f,'utf8').split('boot().catch(')[0],context);
 const run=s=>vm.runInContext(s,context);
 (async()=>{
  await run('boot()');await run('teamBossReady');await window.DokkanBattlefield.ready;
  const inventory=run('JSON.stringify(inventory)'),edits=run('JSON.stringify(DB.cards)'),classic=run('JSON.stringify(selectedTeam)'),lead=run('teamLeader');
  window.DokkanBattlefield.open();assert(document.querySelector('[data-bf-action="generate"]'));assert(document.querySelector('#teams main').textContent.includes('70'));
+ window.DokkanTeamUI.enhance();assert.equal(document.querySelector('#teams .team-heading h2').textContent,'Battlefield');
  const mine=window.DokkanBattlefield.getPool();assert(mine.length>=7);assert(run('window.DokkanBattlefield.getPool().every(teamFinalForm)'));
  const started=performance.now();await window.DokkanBattlefield.calculate('generate');const elapsed=Math.round(performance.now()-started);let state=window.DokkanBattlefield.getState(),s=state.sessions[state.active];assert(s);assert(Object.keys(s.plan).length>0);const planned=Object.values(s.plan).flat();assert.equal(new Set(planned).size,planned.length);assert(planned.every(i=>mine.some(c=>String(c.candidateId||c.id)===i)));console.log('Real confirmed Box generation: '+elapsed+' ms; '+Object.keys(s.plan).length+' teams, '+planned.length+' unique cards.');
  const b=Object.keys(s.plan)[0];const select=document.querySelector('#bfBoss');for(const option of select.querySelectorAll('option')){if(option.value===b)option.setAttribute('selected','');else option.removeAttribute('selected');}select.dispatchEvent(new window.Event('change',{bubbles:true}));

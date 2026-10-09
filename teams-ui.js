@@ -2,7 +2,7 @@
 (function(){'use strict';
 const states=new Map();
 function fold(panel,key,label,open=false){if(!panel||panel.querySelector(':scope > [data-team-fold]'))return;const d=document.createElement('details');d.className='team-ui-fold';d.dataset.teamFold=key;d.open=states.has(key)?states.get(key):open;const summary=document.createElement('summary');summary.textContent=label;d.append(summary);while(panel.firstChild)d.append(panel.firstChild);panel.append(d);d.addEventListener('toggle',()=>{if(d.isConnected)states.set(key,d.open)});return d;}
-function enhance(){const host=document.querySelector('#teams main');if(!host||host.dataset.teamMode==='battlefield'||host.dataset.teamUi==='ready')return;host.dataset.teamUi='ready';const objective=host.querySelector('#teamObjective'),leader=host.querySelector('#teamLeaderPanel'),cards=teamCards();
+function enhance(){const host=document.querySelector('#teams main');if(!host||['battlefield','frontier'].includes(host.dataset.teamMode)||host.dataset.teamUi==='ready')return;host.dataset.teamUi='ready';const objective=host.querySelector('#teamObjective'),leader=host.querySelector('#teamLeaderPanel'),cards=teamCards();
  // The renderer replaces children in place; mark the new composition, not the persistent host.
  const title=host.querySelector('.team-heading h2');if(title)title.textContent=cards.length?'Mon équipe · '+cards.length+'/6 cartes':'Préparer mon équipe';
  const source=host.querySelector('.team-heading + .panel');if(source&&objective){source.classList.add('team-source');const p=source.querySelector('p');if(p)p.textContent=teamSettings.pool==='catalog'?'Écarte les cartes que tu ne possèdes pas, puis recompose.':'Seules tes cartes confirmées sont utilisées.';objective.querySelector('summary').after(source);}

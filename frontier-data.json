@@ -1,0 +1,406 @@
+{
+  "schema": "dokkanos-frontier-v1",
+  "verifiedAt": "2026-10-09",
+  "region": "GLOBAL",
+  "chapter": "Édition spéciale Campagne globale 2026",
+  "source": "https://dbz-dokkanbattle.com/announcement/107282",
+  "rulesSource": "https://dbz-dokkanbattle.com/announcement/106872",
+  "eligibilitySource": "https://dbz-dokkanbattle.com/announcement/107308",
+  "guestNames": [
+    "Son Goku — Un Saiyan qui a dépassé ses limites",
+    "Krillin — Lame de la contrainte"
+  ],
+  "nodes": [
+    {
+      "id": "global-1",
+      "label": "1",
+      "phases": [
+        {
+          "enemies": [
+            {
+              "name": "Freezer (2e forme)",
+              "type": "TEC"
+            }
+          ],
+          "effects": [
+            "Réduction des dégâts : 25 %."
+          ],
+          "atkImmune": false,
+          "defImmune": false
+        },
+        {
+          "enemies": [
+            {
+              "name": "Freezer (forme finale)",
+              "type": "END"
+            }
+          ],
+          "effects": [
+            "Réduction : 25 %. ATT et DÉF +30 % par attaque encaissée, jusqu’à +300 %."
+          ],
+          "atkImmune": false,
+          "defImmune": false
+        }
+      ],
+      "heat": [
+        {
+          "level": 2,
+          "effect": "Attaques supplémentaires désactivées."
+        },
+        {
+          "level": 4,
+          "effect": "Effets des attaques spéciales désactivés."
+        }
+      ],
+      "mission": {
+        "kind": "turns",
+        "turns": 6,
+        "label": "Victoire en 6 tours maximum"
+      },
+      "category": "",
+      "source": "https://dokkanstats.com/fr/frontier/battle/990030101",
+      "name": "Case 1 · Freezer (2e forme)"
+    },
+    {
+      "id": "global-2",
+      "label": "2",
+      "phases": [
+        {
+          "enemies": [
+            {
+              "name": "Son Goku Super Saiyan",
+              "type": "AGI"
+            }
+          ],
+          "effects": [
+            "Réduction : 25 %. ATT +150 % lorsque ses PV sont à 50 % ou moins."
+          ],
+          "atkImmune": false,
+          "defImmune": false
+        }
+      ],
+      "heat": [
+        {
+          "level": 2,
+          "effect": "Ki obtenu diminué de 1."
+        },
+        {
+          "level": 5,
+          "effect": "Coups de grâce ennemis : puissants, infaillibles, efficaces contre tous les types."
+        }
+      ],
+      "mission": {
+        "kind": "damage",
+        "damage": 60000000,
+        "label": "60 millions de dégâts en une attaque, puis victoire"
+      },
+      "category": "",
+      "source": "https://dokkanstats.com/fr/frontier/battle/990030102",
+      "name": "Case 2 · Son Goku Super Saiyan"
+    },
+    {
+      "id": "global-3",
+      "label": "3",
+      "phases": [
+        {
+          "enemies": [
+            {
+              "name": "Trunks Super Saiyan (futur)",
+              "type": "END"
+            }
+          ],
+          "effects": [
+            "Réduction : 25 %. ATT +30 % par tour, jusqu’à +150 %."
+          ],
+          "atkImmune": false,
+          "defImmune": false
+        },
+        {
+          "enemies": [
+            {
+              "name": "Son Gohan Super Saiyan (jeune)",
+              "type": "PUI"
+            }
+          ],
+          "effects": [
+            "Réduction : 25 %. ATT +200 % au troisième tour après son apparition."
+          ],
+          "atkImmune": true,
+          "defImmune": false
+        }
+      ],
+      "heat": [
+        {
+          "level": 3,
+          "effect": "Attaques supplémentaires désactivées."
+        },
+        {
+          "level": 4,
+          "effect": "Réduction des dégâts des personnages diminuée de 20 points (minimum 0)."
+        }
+      ],
+      "mission": {
+        "kind": "category",
+        "category": "Cyborg",
+        "count": 3,
+        "label": "Au moins 3 personnages Cyborg"
+      },
+      "category": "",
+      "source": "https://dokkanstats.com/fr/frontier/battle/990030103",
+      "name": "Case 3 · Trunks Super Saiyan (futur)"
+    },
+    {
+      "id": "global-4",
+      "label": "4",
+      "avoidType": "AGI",
+      "phases": [
+        {
+          "enemies": [
+            {
+              "name": "Cell parfait",
+              "type": "TEC"
+            }
+          ],
+          "effects": [
+            "Réduction : 25 %. ATT +50 % par tour, jusqu’à +250 %.",
+            "Cible les personnages AGI : protège-les ou évite ce type."
+          ],
+          "atkImmune": true,
+          "defImmune": true
+        }
+      ],
+      "heat": [
+        {
+          "level": 3,
+          "effect": "Réduction des dégâts des personnages diminuée de 20 points (minimum 0)."
+        },
+        {
+          "level": 5,
+          "effect": "Effets des attaques spéciales désactivés."
+        }
+      ],
+      "mission": {
+        "kind": "category",
+        "category": "Kamehameha",
+        "count": 3,
+        "label": "Au moins 3 personnages Kamehameha"
+      },
+      "category": "",
+      "source": "https://dokkanstats.com/fr/frontier/battle/990030104",
+      "name": "Case 4 · Cell parfait"
+    },
+    {
+      "id": "global-5",
+      "label": "5",
+      "phases": [
+        {
+          "enemies": [
+            {
+              "name": "Son Goku Super Saiyan 3",
+              "type": "INT"
+            }
+          ],
+          "effects": [
+            "Réduction : 30 %. ATT +50 % par tour, jusqu’à +500 %.",
+            "Perte de PV à chaque tour : 30 % des PV max, sans K.O. direct."
+          ],
+          "atkImmune": true,
+          "defImmune": true
+        }
+      ],
+      "heat": [
+        {
+          "level": 3,
+          "effect": "Esquive désactivée."
+        },
+        {
+          "level": 5,
+          "effect": "Attaques supplémentaires désactivées."
+        }
+      ],
+      "mission": {
+        "kind": "turns",
+        "turns": 4,
+        "label": "Victoire en 4 tours maximum"
+      },
+      "category": "",
+      "source": "https://dokkanstats.com/fr/frontier/battle/990030201",
+      "name": "Case 5 · Son Goku Super Saiyan 3"
+    },
+    {
+      "id": "global-6",
+      "label": "6",
+      "phases": [
+        {
+          "enemies": [
+            {
+              "name": "Boo (Kaioshin du Sud absorbé)",
+              "type": "PUI"
+            }
+          ],
+          "effects": [
+            "Réduction : 35 %. À 80 % PV ou moins : ATT +100 %, DÉF -50 %.",
+            "ATT +100 % à 50 % PV ou moins."
+          ],
+          "atkImmune": false,
+          "defImmune": true
+        },
+        {
+          "enemies": [
+            {
+              "name": "Boo (petit)",
+              "type": "INT"
+            }
+          ],
+          "effects": [
+            "Réduction : 35 %. Régénère ses PV.",
+            "ATT +20 % par attaque encaissée (maximum +400 %) ; +50 % au deuxième tour après son apparition.",
+            "Ses attaques empêchent l’esquive."
+          ],
+          "atkImmune": true,
+          "defImmune": true,
+          "disableDodge": true
+        }
+      ],
+      "heat": [
+        {
+          "level": 3,
+          "effect": "Réduction des dégâts des personnages diminuée de 20 points (minimum 0)."
+        },
+        {
+          "level": 5,
+          "effect": "Coups de grâce ennemis : puissants, infaillibles, efficaces contre tous les types."
+        }
+      ],
+      "mission": {
+        "kind": "damage",
+        "damage": 80000000,
+        "label": "80 millions de dégâts en une attaque, puis victoire"
+      },
+      "unlockTip": "Pour ouvrir la case 6-1 : collecter au moins 10 sphères INT dans la case 6 et gagner.",
+      "category": "",
+      "source": "https://dokkanstats.com/fr/frontier/battle/990030202",
+      "name": "Case 6 · Boo (Kaioshin du Sud absorbé)"
+    },
+    {
+      "id": "global-6-1",
+      "label": "6-1",
+      "special": true,
+      "unlockTip": "Gagner la case 6 après avoir collecté au moins 10 sphères INT.",
+      "phases": [
+        {
+          "enemies": [
+            {
+              "name": "Son Goku Super Saiyan",
+              "type": "AGI"
+            }
+          ],
+          "effects": [
+            "Réduction : 35 %. ATT +10 % par attaque encaissée (maximum +200 %), DÉF -5 % par attaque (maximum -50 %)."
+          ],
+          "atkImmune": true,
+          "defImmune": true
+        },
+        {
+          "enemies": [
+            {
+              "name": "Son Gohan Super Saiyan (jeune)",
+              "type": "PUI"
+            }
+          ],
+          "effects": [
+            "Réduction : 35 %. ATT +100 % au deuxième tour après son apparition."
+          ],
+          "atkImmune": true,
+          "defImmune": true
+        },
+        {
+          "enemies": [
+            {
+              "name": "Son Goku Super Saiyan 3",
+              "type": "INT"
+            }
+          ],
+          "effects": [
+            "Réduction initiale exacte non confirmée. Elle diminue de 3 points par tour (maximum 15).",
+            "ATT +150 % à 50 % PV ou moins."
+          ],
+          "atkImmune": true,
+          "defImmune": true
+        }
+      ],
+      "heat": [
+        {
+          "level": 3,
+          "effect": "Garde désactivée."
+        },
+        {
+          "level": 4,
+          "effect": "Réduction des dégâts des personnages diminuée de 20 points (minimum 0)."
+        },
+        {
+          "level": 6,
+          "effect": "Coups de grâce ennemis : puissants, infaillibles, efficaces contre tous les types."
+        }
+      ],
+      "mission": {
+        "kind": "category",
+        "category": "Destructeurs de planètes",
+        "count": 6,
+        "label": "6 personnages Destructeurs de planètes"
+      },
+      "category": "",
+      "source": "https://dokkanstats.com/fr/frontier/battle/990030231",
+      "name": "Case 6-1 · Son Goku Super Saiyan"
+    },
+    {
+      "id": "global-7",
+      "label": "7",
+      "phases": [
+        {
+          "enemies": [
+            {
+              "name": "Freezer (forme finale)",
+              "type": "END"
+            },
+            {
+              "name": "Cell parfait",
+              "type": "TEC"
+            },
+            {
+              "name": "Boo (petit)",
+              "type": "INT"
+            }
+          ],
+          "effects": [
+            "Trois adversaires simultanés, chacun réduit les dégâts de 35 %.",
+            "Freezer augmente ATT et DÉF de ses alliés de 30 %.",
+            "Cell diminue l’ATT du personnage en 2e position de 25 % et change les sphères aléatoirement.",
+            "Boo gagne 50 % d’ATT par tour (maximum +200 %)."
+          ],
+          "atkImmune": true,
+          "defImmune": true
+        }
+      ],
+      "heat": [
+        {
+          "level": 3,
+          "effect": "Attaques supplémentaires désactivées."
+        },
+        {
+          "level": 5,
+          "effect": "Effets des attaques spéciales désactivés."
+        }
+      ],
+      "mission": {
+        "kind": "category",
+        "category": "Kamehameha",
+        "count": 6,
+        "label": "6 personnages Kamehameha"
+      },
+      "category": "",
+      "source": "https://dokkanstats.com/fr/frontier/battle/990030203",
+      "name": "Case 7 · Freezer (forme finale), Cell parfait, Boo (petit)"
+    }
+  ]
+}

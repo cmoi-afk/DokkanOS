@@ -6,6 +6,7 @@ const cards=Array.from({length:80},(_,i)=>({id:String(9000000+i),candidateId:Str
  const s=M.empty(),reserved=cards[79].id;s.reserved['super-boo']=[reserved];s.excluded=[cards[78].id];
  const p=await M.plan(E,cards,edition,s,['A']);assert.equal(Object.keys(p.plan).length,7);const ids=Object.values(p.plan).flat();assert.equal(ids.length,49);assert.equal(new Set(ids).size,49);assert(!ids.includes(cards[78].id));assert(p.plan['super-boo'].includes(reserved));
  for(const b of edition.bosses)assert(M.assess(E,p.plan[b.id].map(i=>cards.find(c=>c.id===i)),b,['A']).valid);
+ const spare=await M.compose(E,cards.filter(c=>!ids.includes(c.id)&&c.id!==cards[78].id),edition.bosses[0],['A']);assert(spare&&spare.cards.length===7);assert(spare.cards.every(i=>!ids.includes(i)));
  s.plan=p.plan;s.locked=['super-boo'];const again=await M.plan(E,cards,edition,s,['A']);assert.deepEqual(again.plan['super-boo'],p.plan['super-boo']);
  const team=p.plan.yamu.map(i=>cards.find(c=>c.id===i)),other=new Set(Object.entries(p.plan).filter(([k])=>k!=='yamu').flatMap(([,a])=>a));
  const replacement=M.replace(E,cards.filter(c=>!other.has(c.id)),team,edition.bosses[0],['A'],2);assert(replacement);assert.equal(replacement.cards.filter((i,n)=>i!==p.plan.yamu[n]).length,1);assert.throws(()=>M.replace(E,cards,team,edition.bosses[0],['A'],-1));

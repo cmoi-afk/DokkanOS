@@ -1,0 +1,2 @@
+importScripts('team-engine.js?v=2800','frontier-model.js?v=2800');
+self.onmessage=async({data:r})=>{const M=self.DokkanFrontierModel,E=self.DokkanTeamEngine;try{const value=r.action==='replace'?await M.replace(E,r.pool,r.cards,r.node,r.known,r.session,r.index):await M.compose(E,r.pool,r.node,r.known,r.session,message=>self.postMessage({progress:message}));self.postMessage({value});}catch(e){self.postMessage({error:e.message});}};

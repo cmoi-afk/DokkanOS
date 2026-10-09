@@ -5,11 +5,12 @@ const cards=Array.from({length:80},(_,i)=>({id:String(9000000+i),candidateId:Str
  assert.equal(edition.slotLimit,70);assert.equal(edition.bosses.length,7);
  const s=M.empty(),reserved=cards[79].id;s.reserved['super-boo']=[reserved];s.excluded=[cards[78].id];
  const p=await M.plan(E,cards,edition,s,['A']);assert.equal(Object.keys(p.plan).length,7);const ids=Object.values(p.plan).flat();assert.equal(ids.length,49);assert.equal(new Set(ids).size,49);assert(!ids.includes(cards[78].id));assert(p.plan['super-boo'].includes(reserved));
- for(const b of edition.bosses)assert(M.assess(E,p.plan[b.id].map(i=>cards.find(c=>c.id===i)),b,['A']).valid);
+ for(const b of edition.bosses){const evaluation=M.assess(E,p.plan[b.id].map(i=>cards.find(c=>c.id===i)),b,['A']);assert(evaluation.valid);assert(Number.isFinite(evaluation.score),'Leader coverage has no Ki field: score must remain finite');}
  const spare=await M.compose(E,cards.filter(c=>!ids.includes(c.id)&&c.id!==cards[78].id),edition.bosses[0],['A']);assert(spare&&spare.cards.length===7);assert(spare.cards.every(i=>!ids.includes(i)));
  s.plan=p.plan;s.locked=['super-boo'];const again=await M.plan(E,cards,edition,s,['A']);assert.deepEqual(again.plan['super-boo'],p.plan['super-boo']);
  const team=p.plan.yamu.map(i=>cards.find(c=>c.id===i)),other=new Set(Object.entries(p.plan).filter(([k])=>k!=='yamu').flatMap(([,a])=>a));
  const replacement=M.replace(E,cards.filter(c=>!other.has(c.id)),team,edition.bosses[0],['A'],2);assert(replacement);assert.equal(replacement.cards.filter((i,n)=>i!==p.plan.yamu[n]).length,1);assert.throws(()=>M.replace(E,cards,team,edition.bosses[0],['A'],-1));
+ assert(Number.isFinite(replacement.score));const weak={...cards[79],id:'9900000',candidateId:'9900000',type:'AGI',passive:'*Effets de base*\n- ATT et DÉF +10 %'},strong={...cards[79],id:'9900001',candidateId:'9900001',type:'TEC',passive:'*Effets de base*\n- Garde activée contre toutes les attaques\n- ATT et DÉF +250 %'};assert.equal(M.replace(E,[weak,strong],team,edition.bosses[0],['A'],2).cards[2],strong.id,'Choose the better score, not merely the first covered candidate');
  const next=M.result(s,edition,'yamu','defeat',25,cards);assert.equal(M.used(next).size,7);assert.equal(M.won(next).size,0);assert.deepEqual(next.plan['super-boo'],s.plan['super-boo']);assert(!next.plan.yamu);assert.equal(next.attempts[0].hp,25);assert.throws(()=>M.result(s,edition,'yamu','defeat',101,cards));
  const following=await M.plan(E,cards,edition,next,['A']);assert(Object.values(following.plan).flat().every(i=>!M.used(next).has(i)));
  const victory=M.result(s,edition,'yamu','victory',null,cards);assert(M.won(victory).has('yamu'));assert.throws(()=>M.result(victory,edition,'yamu','victory',null,cards));

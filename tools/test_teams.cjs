@@ -17,6 +17,9 @@ assert.equal(result.team.length,6);assert.equal(new Set(result.team.map(E.identi
 const locked=pool[8],lockResult=E.build([leader,...pool],leader,{locked:[locked]});assert(lockResult.team.some(x=>x.id===locked.id));
 assert.equal(E.build([leader,a],leader).team.length,2);assert(E.build([leader,a],leader,{locked:[b]}).error);
 const rots=E.rotations(pool.slice(0,6));assert.equal(rots.length,2);assert.equal(new Set(rots.flatMap(r=>[r.a.id,r.b.id])).size,4);
+// Consecutive turns must use distinct floaters, including an identical friend copy.
+for(const size of [4,5,6,7]){const plan=E.rotations(pool.slice(0,size)),shown=plan.flatMap(r=>[r.a,r.b,...(r.third?[r.third]:[])]);assert.equal(new Set(shown.map(c=>c.boxId)).size,shown.length);assert.equal(plan.filter(r=>r.third).length,Math.min(2,size-4));}
+const mirrored=E.rotations(pool.slice(0,6),{...pool[0],boxId:'FRIEND-0',_friend:true});assert.equal(new Set(mirrored.flatMap(r=>[r.a,r.b,r.third]).map(c=>c.boxId)).size,6);
 const events=JSON.parse(fs.readFileSync('events.json'));const ids=new Set();for(const e of events.events){assert(e.id&&e.name&&e.source.startsWith('https://'));for(const m of e.missions){assert(!ids.has(m.id));ids.add(m.id);assert(Array.isArray(m.requirements));}}assert.equal(events.coverage.complete,false);
 console.log('Team engine: leader base/bonus, type/class intersection, missing data, ally passives, dodge restriction, quotas excluding friend, five types, ownership, locks, rotations and event schema: OK');
 const frenchBonus={leader:'Ki +3, PV, ATT et DÉF +170 % pour catégorie "A" ou "C", et PV, ATT et DÉF +30 % en plus si perso aussi catégorie "B"'};

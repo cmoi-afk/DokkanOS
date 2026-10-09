@@ -28,6 +28,7 @@ const second=unit('second',basic+'\n*En attaquant en 2e position*\n- ATT et DÉF
 const tank2=unit('tank2',first.passive),second2=unit('second2',second.passive),filler=unit('filler',basic);
 const team=[first,second,tank2,second2,third,filler],rot=E.rotations(team);assert.equal(rot.length,2);assert(rot.every(r=>[first.id,tank2.id].includes(r.a.id)));assert(rot.every(r=>[second.id,second2.id].includes(r.b.id)));assert(rot.some(r=>r.third.id===third.id));assert.equal(new Set(rot.flatMap(r=>[r.a.id,r.b.id])).size,4);
 // Exact current sourced kits: position bonus nested under rotation-category condition.
+assert.equal(new Set(rot.flatMap(r=>[r.a.id,r.b.id,r.third.id])).size,6);assert(rot.every(r=>r.placements[2].position===3));
 const sourced=id=>({...meta[id],...meta[id].fr,id,boxId:id});const goku=sourced('1034481'),boo=unit('boo',basic);boo.categories=['Saga de Boo'];
 assert(E.placementProfile(goku,1,[goku,boo],{},[goku,boo]).guaranteedProtection);
 assert(!E.placementProfile(goku,2,[goku,boo],{},[goku,boo]).guaranteedProtection);

@@ -1,10 +1,13 @@
 /* A separate session ledger. Never writes inventory or the classic team. */
 (function(){'use strict';
 const M=window.DokkanBattlefieldModel,E=window.DokkanTeamEngine,esc=teamEsc,clone=x=>JSON.parse(JSON.stringify(x)),cid=c=>String(c.candidateId||c.id);
-let state={version:1,active:'global-109',sessions:{}},mode='classic',data=null,error='',status='',busy=false,job=0,worker=null,rejectJob=null,backup=null,bossId='yamu',search='',poolCache=null,lastRenderMs=0;
+let state={version:1,active:'global-109',sessions:{}},mode='classic',data=null,error='',status='',busy=false,job=0,worker=null,rejectJob=null,backup=null,bossId='yamu',search='',poolCache=null,lastRenderMs=0,lastPrepareMs=0;
 try{const raw=storageRead(M.key);if(raw)state=M.validate(JSON.parse(raw));}catch(e){error='Le suivi enregistré est illisible. Il est conservé ; exporte une sauvegarde avant de réinitialiser.';}
-const session=()=>state.sessions[state.active]||M.empty(),edition=()=>data?.editions.find(x=>x.id===state.active),boss=()=>edition()?.bosses.find(b=>b.id===bossId)||edition()?.bosses[0];
+const session=()=>Object.hasOwn(state.sessions,state.active)?state.sessions[state.active]:M.empty(),edition=()=>data?.editions.find(x=>x.id===state.active),boss=()=>edition()?.bosses.find(b=>b.id===bossId)||edition()?.bosses[0];
 const pool=()=>poolCache||(poolCache=[...new Map(teamOwnedCards().filter(isPlayableCard).map(c=>[cid(c),c])).values()]);
+// Only categories actually present on eligible owned cards are needed for coverage.
+// Avoid localizing the entire catalogue synchronously on the first Generate tap.
+const known=()=>[...new Set(pool().flatMap(c=>c.categories||[]))];
 window.addEventListener('dokkanos-state-change',()=>{poolCache=null;});
 function save(s){if(error)throw Error(error);M.validate(s);if(!storageWrite(M.key,JSON.stringify(s)))throw Error('Le suivi n’a pas pu être sauvegardé.');state=s;backup=null;}
 function saveSession(s){const n=clone(state);n.sessions[n.active]=s;save(n);}
@@ -15,7 +18,7 @@ function teamRows(ids,replaceable){const mine=new Map(pool().map(c=>[cid(c),c]))
 function render(){const started=performance.now();poolCache=null;const host=document.querySelector('#teams main');if(!host)return;const ed=edition(),s=session(),b=boss(),mine=pool(),spent=M.used(s),done=M.won(s),assigned=new Set(Object.values(s.plan).flat()),ids=s.plan[b?.id]||[],team=ids.map(i=>mine.find(c=>cid(c)===i));
  host.dataset.teamMode='battlefield';host.innerHTML=modeBar()+'<div class="team-heading"><div><span class="eyebrow">PLANIFICATEUR DE SESSION</span><h2>Battlefield</h2><p class="muted">Ta Box confirmée · derniers éveils uniquement · aucun leader ami.</p></div></div>';
  if(!ed||!b){host.insertAdjacentHTML('beforeend','<p role="status">'+esc(status||'Chargement des données Battlefield…')+'</p>');return;}
- const evaluation=team.length===7&&team.every(Boolean)?M.assess(E,team,b,teamKnown()):null;
+ const evaluation=team.length===7&&team.every(Boolean)?M.assess(E,team,b,known()):null;
  const expired=Date.now()>Date.parse(ed.end);
  host.insertAdjacentHTML('beforeend',`<section class="panel bf-panel"><h3>${esc(ed.name)}</h3><p>${spent.size}/${ed.slotLimit} emplacements utilisés · ${assigned.size} cartes planifiées · ${Math.max(0,ed.slotLimit-spent.size-assigned.size)} emplacements de secours · ${mine.length} cartes éligibles</p><p class="muted">${expired?'Édition terminée : ce plan reste consultable. ':''}Données du ${esc(data.verifiedAt)}. Première édition prise en charge : GLOBAL #${ed.number}. Aucun format ancien ni Frontier n’est appliqué ici.</p><p class="muted">Deux leaders internes couvrent les sept cartes. Les kits sélectionnés dans tes fiches sont utilisés, sans supposer que tu as réalisé un éveil Z. Le calcul est une recherche heuristique, pas une garantie de victoire ni d’optimum absolu.</p><div class="bf-actions"><button data-bf-action="generate" ${busy||error?'disabled':''}>Préparer / recalculer le parcours</button>${busy?'<button data-bf-action="cancel">Annuler</button>':''}<button data-bf-action="reset" ${busy?'disabled':''}>Nouvelle session</button>${state.previous?'<button data-bf-action="restore">Récupérer la session précédente</button>':''}</div><p id="bfStatus" role="status" aria-live="polite">${esc(error||status)}</p></section>
  <section class="panel bf-panel"><label for="bfBoss">Combat à préparer</label><select id="bfBoss">${ed.bosses.map(x=>'<option value="'+x.id+'" '+(b.id===x.id?'selected':'')+'>Niveau '+x.level+' · '+esc(x.name)+' · '+x.type+(done.has(x.id)?' · gagné':'')+'</option>').join('')}</select><h3>${esc(b.name)} · ${b.type}</h3><p>${(b.hp/1000000).toLocaleString('fr-FR')} millions de PV · avantage de type : ${M.advantage[b.type]}</p><ul>${b.effects.map(x=>'<li>'+esc(x)+'</li>').join('')}</ul><p>${b.tips.map(esc).join(' ')}</p><p class="muted">ATT/DÉF et dégâts SP exacts inconnus. Une immunité non recensée n’est pas considérée comme une vulnérabilité confirmée. Vérifie les restrictions dans le jeu.</p>${b.optionalType?'<label><input id="bfMission" type="checkbox" '+(s.missionTypes[b.id]?'checked':'')+' '+(busy?'disabled':'')+'> Mission : sept cartes INT</label>':''}<p><a href="${ed.source}" target="_blank" rel="noopener noreferrer">Source de cette édition</a></p></section>
@@ -35,11 +38,11 @@ async function execute(r,token){
  return new Promise((resolve,reject)=>{rejectJob=reject;try{worker=new Worker('battlefield-worker.js?v=2700');worker.onmessage=e=>{if(token!==job)return;if(e.data.progress){progress(e.data.progress);return;}worker.terminate();worker=null;rejectJob=null;e.data.error?reject(Error(e.data.error)):resolve(e.data.value);};worker.onerror=()=>{worker?.terminate();worker=null;rejectJob=null;reject(Error('Le calcul en arrière-plan a échoué. Réessaie après avoir rechargé l’app.'));};worker.postMessage(r);}catch(e){worker?.terminate();worker=null;rejectJob=null;Promise.resolve().then(fallback).then(resolve,reject);}});
 }
 function freePool(current,excludeCurrent=true){const s=session(),spent=M.used(s),reserved=new Set(Object.entries(s.reserved).filter(([k])=>k!==current).flatMap(([,a])=>a)),assigned=new Set(Object.entries(s.plan).filter(([k])=>excludeCurrent||k!==current).flatMap(([,a])=>a));return pool().filter(c=>!spent.has(cid(c))&&!assigned.has(cid(c))&&!reserved.has(cid(c))&&!s.excluded.includes(cid(c))&&(!s.missionTypes[current]||c.type===s.missionTypes[current]));}
-async function calculate(action,index){if(busy||error)return;const ed=edition(),b=boss();if(!ed||!b)return;const s=session(),token=++job,r={action,known:teamKnown(),boss:b};
+async function calculate(action,index){if(busy||error)return;const preparation=performance.now(),ed=edition(),b=boss();if(!ed||!b)return;const s=session(),token=++job,r={action,known:known(),boss:b};
  if(action==='generate')Object.assign(r,{pool:pool(),edition:ed,session:clone(s)});
  else if(action==='replace')Object.assign(r,{pool:freePool(b.id,false),team:(s.plan[b.id]||[]).map(i=>pool().find(c=>cid(c)===i)),index,reserved:s.reserved[b.id]||[]});
  else{if(M.used(s).size+new Set(Object.values(s.plan).flat()).size+7>ed.slotLimit){status='Pas assez d’emplacements libres pour sept cartes de secours. Libère une équipe future ou recalcule le parcours.';render();return;}r.pool=freePool(b.id);}
- busy=true;status='Recherche en arrière-plan…';render();const started=performance.now();
+ lastPrepareMs=performance.now()-preparation;busy=true;status='Recherche en arrière-plan…';render();const started=performance.now();
  try{const value=await execute(r,token);if(token!==job)return;if(!value)throw Error('Aucune alternative compatible trouvée parmi les cartes libres.');
  if(action==='backup'){backup={boss:b.id,cards:value.cards};status='Équipe de secours proposée.';}
  else{const next=clone(session());if(action==='generate')next.plan=value.plan;else next.plan[b.id]=value.cards;saveSession(next);status=(action==='generate'?(value.warnings.length?value.warnings.join(' '):'Parcours préparé sans réutiliser de carte.'):'Seule la carte choisie a été remplacée.')+' · '+((performance.now()-started)/1000).toFixed(1)+' s';}
@@ -72,5 +75,5 @@ document.addEventListener('click',e=>{const button=e.target.closest('button');if
 });
 const ready=fetch('battlefield-data.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{if(d.schema!=='dokkanos-battlefield-v1'||!Array.isArray(d.editions)||!d.editions.length)throw Error();data=d;if(!edition())state.active=d.editions[0].id;if(mode==='battlefield')render();return d;}).catch(()=>{status='Données Battlefield indisponibles. Recharge l’app avec une connexion.';if(mode==='battlefield')render();return null;});
 window.addEventListener('dokkanos-data-ready',()=>{poolCache=null;if(mode==='battlefield')render();});
-window.DokkanBattlefield={ready,open(){cancel();mode='battlefield';switchView('teams');},calculate,cancel,getState:()=>clone(state),getPool:pool,getTiming:()=>({lastRenderMs})};
+window.DokkanBattlefield={ready,open(){cancel();mode='battlefield';switchView('teams');},calculate,cancel,getState:()=>clone(state),getPool:pool,getTiming:()=>({lastRenderMs,lastPrepareMs})};
 })();

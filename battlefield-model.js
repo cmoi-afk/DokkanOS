@@ -48,6 +48,7 @@ async function compose(E,pool,boss,known,required=[],progress=()=>{},cancel=()=>
    const sub=leaders[b].c,allowed=cards.filter(c=>E.coverage(leader,c,known).covered&&E.coverage(sub,c,known).covered);
    if(allowed.length<7||!allowed.includes(leader)||!allowed.includes(sub)||fixed.some(c=>!allowed.includes(c)))continue;
    const team=[leader,sub,...fixed.filter(c=>id(c)!==id(leader)&&id(c)!==id(sub))];
+   if(team.length>7)continue;
    const ranked=allowed.filter(c=>!team.includes(c)).map(c=>{const p=E.passive(c,allowed,context),x=E.coverage(leader,c,known),y=E.coverage(sub,c,known);return {c,score:p.defense*1.5+p.offense+p.utility+(x.hp+x.atk+x.def+y.hp+y.atk+y.def)/12+(c.type===advantage[boss.type]?32:advantage[c.type]===boss.type?-35:0)+Math.max(0,...team.map(t=>E.links(c,t).length))*4};}).sort((a,b)=>b.score-a.score);
    team.push(...ranked.slice(0,7-team.length).map(x=>x.c));let evaluation=assess(E,team,boss,known);
    if(evaluation.valid&&(!best||evaluation.score>best.score))best={cards:team.map(id),score:evaluation.score};

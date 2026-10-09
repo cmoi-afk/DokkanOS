@@ -1,2 +1,2 @@
-importScripts('team-engine.js?v=2700','battlefield-model.js?v=2700');
+importScripts('team-engine.js?v=2710','battlefield-model.js?v=2710');
 self.onmessage=async e=>{const r=e.data,M=self.DokkanBattlefieldModel,E=self.DokkanTeamEngine;try{const value=r.action==='replace'?M.replace(E,r.pool,r.team,r.boss,r.known,r.index,r.reserved):r.action==='backup'?await M.compose(E,r.pool,r.boss,r.known):await M.plan(E,r.pool,r.edition,r.session,r.known,message=>self.postMessage({progress:message}));self.postMessage({value});}catch(error){self.postMessage({error:error.message});}};

@@ -28,13 +28,14 @@ function assess(E,team,boss,known){
  const [leader,sub]=team,context=bossContext(E,boss),cover=team.map(c=>[E.coverage(leader,c,known),E.coverage(sub,c,known)]);
  if(cover.some(a=>a.some(c=>!c.covered)))return {valid:false,score:-Infinity};
  const profiles=team.map(c=>E.passive(c,team,context));
- let score=cover.reduce((n,a)=>n+a.reduce((v,c)=>v+(c.hp+c.atk+c.def)/12+c.ki*2,0),0);
+ let score=cover.reduce((n,a)=>n+a.reduce((v,c)=>v+(c.hp+c.atk+c.def)/12,0),0);
  score+=profiles.reduce((n,p)=>n+p.defense*1.5+p.offense+p.utility,0);
  score+=team.reduce((n,c,i)=>n+E.bossFit(c,profiles[i],context).score+(c.type===advantage[boss.type]?32:advantage[c.type]===boss.type?-35:0),0);
  const strength=profiles.map(p=>p.defense*1.5+p.offense+p.utility).sort((a,b)=>a-b);score+=(strength[0]||0)*1.4;
  score+=E.synergy(team,null,context).score;
  const anchors=profiles.filter(p=>p.slot1>=32).length;score-=Math.max(0,2-anchors)*45;
  for(let i=0;i<team.length;i++)for(let j=i+1;j<team.length;j++)score+=E.links(team[i],team[j]).length*1.2;
+ if(!Number.isFinite(score))throw Error('Score Battlefield invalide : vérifie les données des cartes.');
  return {valid:true,score,cover,profiles,anchors};
 }
 async function compose(E,pool,boss,known,required=[],progress=()=>{},cancel=()=>false){

@@ -1,0 +1,21 @@
+{
+  "schema": "dokkanos-battlefield-v1",
+  "verifiedAt": "2026-10-09",
+  "editions": [{
+    "id": "global-109", "name": "Saga de Boo · Battlefield 3.0", "number": 109,
+    "region": "GLOBAL", "difficulty": "SUPER 3", "slotLimit": 70,
+    "start": "2026-10-05T05:00:00Z", "end": "2026-10-20T07:59:00Z",
+    "source": "https://www.dbz-dokkanbattle.com/event/rmbattles/new/109",
+    "rulesSource": "https://dokkanstats.com/fr/news/107168",
+    "notes": ["Pas de présélection de 112 cartes en version 3.0 : le plan représente les cartes à déployer au fil de la session.", "Les statistiques ATT/DÉF ennemies ne sont pas fournies par cette source. Aucun calcul exact des dégâts reçus n'est annoncé.", "Les missions de tours et de victoire en un seul combat restent à confirmer dans le jeu. La catégorie de la mission du boss final n'est pas identifiée dans la source : aucun quota n'est inventé."],
+    "bosses": [
+      {"id":"yamu","name":"Yamu et Spopovitch","level":1,"type":"AGI","hp":160000000,"priority":1,"effects":["Réduction des dégâts : 50 %", "Réduction du ki"],"tips":["Prévoir suffisamment de ki et conserver les meilleurs défenseurs pour la fin."]},
+      {"id":"puipui","name":"Puipui","level":1,"type":"END","hp":200000000,"priority":2,"effects":["Réduction des dégâts : 50 %", "ATT croissante avec les tours"],"tips":["Éviter un combat qui s'éternise ; vérifier la mission de tours dans le jeu."]},
+      {"id":"yakon","name":"Yakon","level":2,"type":"PUI","hp":300000000,"priority":3,"stunImmune":true,"effects":["Réduction des dégâts : 50 %", "Immunité à l'étourdissement", "ATT croissante avec les tours"],"tips":["Ne pas compter sur l'étourdissement pour protéger l'équipe."]},
+      {"id":"dabra","name":"Dabra","level":2,"type":"TEC","hp":380000000,"priority":4,"sealImmune":true,"atkDownImmune":true,"defDownImmune":true,"locks":true,"effects":["Réduction des dégâts : 50 %", "Immunité au blocage SP et aux baisses ATT/DÉF", "Verrouillage des positions"],"tips":["Préférer une protection qui ne dépend pas d'une position précise.", "La mission mono-INT peut être activée avant la génération."],"optionalType":"INT"},
+      {"id":"boo","name":"Boo","level":3,"type":"INT","hp":600000000,"priority":5,"stunImmune":true,"sealImmune":true,"defDownImmune":true,"effects":["Réduction des dégâts : 50 %", "Immunité à l'étourdissement, au blocage SP et à la baisse DÉF", "ATT/DÉF croissantes après les attaques reçues"],"tips":["Chercher de vrais dégâts et une défense autonome plutôt que des contrôles immunisés."]},
+      {"id":"evil-boo","name":"Boo (mal incarné)","level":3,"type":"END","hp":500000000,"priority":6,"stunImmune":true,"sealImmune":true,"defDownImmune":true,"effects":["Réduction des dégâts : 50 %", "Immunité à l'étourdissement, au blocage SP et à la baisse DÉF", "Blocage SP infligé aux alliés", "ATT croissante avec les tours"],"tips":["Surveiller le blocage de tes attaques spéciales et éviter de prolonger le combat."]},
+      {"id":"super-boo","name":"Boo (super)","level":3,"type":"TEC","hp":750000000,"priority":7,"stunImmune":true,"sealImmune":true,"atkDownImmune":true,"defDownImmune":true,"effects":["Réduction des dégâts : 50 %", "Immunité à l'étourdissement, au blocage SP et aux baisses ATT/DÉF", "Forte hausse de l'ATT à partir de sa deuxième apparition", "Baisse DÉF possible sur attaque spéciale"],"tips":["Réserver en priorité les meilleurs défenseurs pour ce combat.", "Ne pas confondre conformité de composition et victoire garantie."]}
+    ]
+  }]
+}

@@ -1,0 +1,21 @@
+const assert=require('node:assert/strict'),fs=require('fs'),E=require('../team-engine.js'),M=require('../battlefield-model.js'),C=require('../companion-model.js');
+const edition=JSON.parse(fs.readFileSync('battlefield-data.json')).editions[0];
+const cards=Array.from({length:80},(_,i)=>({id:String(9000000+i),candidateId:String(9000000+i),name:'Carte '+i,rarity:'UR',type:['AGI','TEC','INT','PUI','END'][i%5],categories:['A'],links:['Lien'],leader:i%8<2?'Ki +3, PV, ATT et DÉF +170 % pour tous les types':'',passive:'*Effets de base*\n- Garde activée contre toutes les attaques\n- ATT et DÉF +150 %',superAttack:'Augmente la DÉF',dataStatus:{kit:'verified'}}));
+(async()=>{
+ assert.equal(edition.slotLimit,70);assert.equal(edition.bosses.length,7);
+ const s=M.empty(),reserved=cards[79].id;s.reserved['super-boo']=[reserved];s.excluded=[cards[78].id];
+ const p=await M.plan(E,cards,edition,s,['A']);assert.equal(Object.keys(p.plan).length,7);const ids=Object.values(p.plan).flat();assert.equal(ids.length,49);assert.equal(new Set(ids).size,49);assert(!ids.includes(cards[78].id));assert(p.plan['super-boo'].includes(reserved));
+ for(const b of edition.bosses)assert(M.assess(E,p.plan[b.id].map(i=>cards.find(c=>c.id===i)),b,['A']).valid);
+ const spare=await M.compose(E,cards.filter(c=>!ids.includes(c.id)&&c.id!==cards[78].id),edition.bosses[0],['A']);assert(spare&&spare.cards.length===7);assert(spare.cards.every(i=>!ids.includes(i)));
+ s.plan=p.plan;s.locked=['super-boo'];const again=await M.plan(E,cards,edition,s,['A']);assert.deepEqual(again.plan['super-boo'],p.plan['super-boo']);
+ const team=p.plan.yamu.map(i=>cards.find(c=>c.id===i)),other=new Set(Object.entries(p.plan).filter(([k])=>k!=='yamu').flatMap(([,a])=>a));
+ const replacement=M.replace(E,cards.filter(c=>!other.has(c.id)),team,edition.bosses[0],['A'],2);assert(replacement);assert.equal(replacement.cards.filter((i,n)=>i!==p.plan.yamu[n]).length,1);assert.throws(()=>M.replace(E,cards,team,edition.bosses[0],['A'],-1));
+ const next=M.result(s,edition,'yamu','defeat',25,cards);assert.equal(M.used(next).size,7);assert.equal(M.won(next).size,0);assert.deepEqual(next.plan['super-boo'],s.plan['super-boo']);assert(!next.plan.yamu);assert.equal(next.attempts[0].hp,25);assert.throws(()=>M.result(s,edition,'yamu','defeat',101,cards));
+ const following=await M.plan(E,cards,edition,next,['A']);assert(Object.values(following.plan).flat().every(i=>!M.used(next).has(i)));
+ const victory=M.result(s,edition,'yamu','victory',null,cards);assert(M.won(victory).has('yamu'));assert.throws(()=>M.result(victory,edition,'yamu','victory',null,cards));
+ const short={...edition,slotLimit:7};const one=await M.plan(E,cards,short,M.empty(),['A']);assert.equal(Object.values(one.plan).flat().length,7);assert.equal(one.warnings.length,6);
+ const invalid=M.empty();invalid.attempts=[{boss:'yamu',cards:p.plan.yamu,result:'defeat',hp:null,date:new Date().toISOString()},{boss:'dabra',cards:p.plan.yamu,result:'defeat',hp:null,date:new Date().toISOString()}];assert.throws(()=>M.validateSession(invalid));
+ const state={version:1,active:edition.id,sessions:{[edition.id]:next}},saved=new Map([[M.key,JSON.stringify(state)]]),storage={length:1,key:i=>[...saved.keys()][i],getItem:k=>saved.get(k)};const backup=C.backup(storage);assert(backup.entries[M.key]);assert.deepEqual(C.parseBackup(JSON.stringify(backup)).entries,backup.entries);backup.entries[M.key]='{"version":1,"active":"bad","sessions":{"bad":{}}}';assert.throws(()=>C.parseBackup(JSON.stringify(backup)));
+ let cancelled=false;await assert.rejects(M.plan(E,cards,edition,M.empty(),['A'],()=>{cancelled=true},()=>cancelled),/annulée/);
+ console.log('Battlefield: 7 owned cards, dual leaders, 49 unique cards, reserves/exclusions/locks, one-card replacement, outcomes, budget, cancellation, backup validation: OK');
+})().catch(e=>{console.error(e);process.exitCode=1});

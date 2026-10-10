@@ -69,7 +69,10 @@ function teamBossFitView(e,team){return team.length?`<details><summary>Pourquoi 
 leaderCoverageFor=(leader,card)=>TE.coverage(leader,card,teamKnown());
 function teamLabel(c){return (c.name||'Carte')+' · '+(c.type||'?')+' · '+(c.rarity||'?')+' · ID '+(c.candidateId||c.id||'?');}
 function teamOption(value,label,current){return `<option value="${teamEsc(value)}" ${String(value)===String(current)?'selected':''}>${teamEsc(label)}</option>`;}
-function teamImage(c){return `<img loading="lazy" src="${teamEsc(c.image||localCardImage(c.candidateId||c.id,''))}" alt="${teamEsc(c.name)}" onerror="imageFallback(this,'${teamEsc(c.candidateId||c.id)}','')">`;}
+function teamImage(c){
+ const id=String(c.candidateId||c.id||'').replace(/^CATALOG-/,''),p=window.DokkanProgress?.state?.profiles?.[id],type=['AGI','TEC','INT','PUI','END'].includes(c.type)?c.type:'unknown',rarity=['SSR','UR','LR'].includes(c.rarity)?c.rarity:'?',z={ztur:'ZTUR',zlr:'ZLR',superZtur:'Super ZTUR',superZlr:'Super ZLR'}[p?.awakening],rainbow=p?.potential===100||rainbow100.has(id);
+ return `<span class="visual-card" data-type="${type}" data-rarity="${rarity}"><img loading="lazy" decoding="async" src="${teamEsc(c.image||localCardImage(id,''))}" alt="${teamEsc(c.name)}" onerror="imageFallback(this,'${teamEsc(id)}','')"><span class="visual-card-rarity">${rarity}</span><span class="visual-card-type">${teamEsc(c.type||'?')}</span>${z||rainbow?'<span class="visual-card-flags">'+(z?'<span>'+z+'</span>':'')+(rainbow?'<span class="visual-rainbow">★ 100 %</span>':'')+'</span>':''}</span>`;
+}
 function teamStatus(check){return check.rows.map(x=>`<p class="${x.ok?'ai-ok':'ai-warning'}">${x.unknown?'À vérifier':x.ok?'✓':'⚠'} ${teamEsc(x.r.kind==='category'?x.r.value:x.r.kind==='types'?'Types distincts':x.r.kind==='excludeRarity'?'Sans '+x.r.value:x.r.value||x.r.kind)} ${x.unknown?'':x.count+'/'+x.need}${x.r.includeFriend?' (ami inclus)':' (ami exclu)'}</p>`).join('');}
 function teamSaved(){try{const s=JSON.parse(storageRead('dokkanos-saved-teams-v2')||'[]');return Array.isArray(s)?s.filter(x=>record(x)&&typeof x.id==='string'&&typeof x.name==='string'&&Array.isArray(x.cards)&&x.cards.length<=6&&x.cards.every(id=>typeof id==='string')&&record(x.settings)).map(canonicalCaptureTeam):[]}catch(e){return[]}}
 function saveTeamState(){storageWrite('dokkanos-team',JSON.stringify(selectedTeam));storageWrite('dokkanos-team-leader',teamLeader);teamSaveSettings();}
@@ -123,7 +126,7 @@ function teamProgress(message){
 function executeTeamRequest(request){return new Promise((resolve,reject)=>{const job=teamJob;teamPendingReject=reject;const done=result=>{teamPendingReject=null;resolve(result);},fail=error=>{teamPendingReject=null;reject(error);},progress=message=>{if(job===teamJob)teamProgress(message);};
  const fallback=()=>window.DokkanTeamSearch.run(TE,request,progress,()=>job!==teamJob).then(done,fail);
  if(typeof Worker!=='function'){fallback();return;}
- try{if(!teamWorker){teamWorker=new Worker('team-worker.js?v=21000');teamPoolSignature='';}
+ try{if(!teamWorker){teamWorker=new Worker('team-worker.js?v=21100');teamPoolSignature='';}
  const worker=teamWorker,id=++teamRequestID,signature=JSON.stringify(request.pool);
  worker.onmessage=e=>{if(e.data.id!==id||job!==teamJob)return;if(e.data.progress){progress(e.data.progress);return;}e.data.error?fail(Error(e.data.error)):done(e.data.result)};
  worker.onerror=()=>{worker.terminate();if(teamWorker===worker)teamWorker=null;teamPoolSignature='';fallback()};

@@ -1,7 +1,7 @@
 name: Check readable teams
 on:
   pull_request:
-    paths: [workbench.js, workbench-model.js, workbench.css, tools/test_workbench.cjs, tools/test_workbench_dom.cjs, tools/audit_workbench_browser.cjs, events.js, team-battles.js, team-battle-model.js, progression.js, catalogue.js, team-planner.js, team-planner-model.js, team-planner.css, tools/test_team_planner.cjs, tools/test_team_planner_dom.cjs, tools/audit_team_planner_browser.cjs, frontier.js, frontier-model.js, frontier-worker.js, frontier.css, frontier-data.json, tools/test_frontier.cjs, tools/test_frontier_dom.cjs, tools/audit_frontier_browser.cjs, team-search.js, team-engine.js, team-worker.js, tools/test_team_performance.cjs, tools/audit_team_performance_browser.cjs, teams.js, teams-ui.js, teams-ui.css, experience.js, sa-farm.js, index.html, sw.js, tools/test_team_ui.cjs, tools/audit_team_ui_browser.cjs, battlefield.js, battlefield-model.js, battlefield-worker.js, battlefield.css, battlefield-data.json, companion-model.js, tools/test_battlefield.cjs, tools/test_battlefield_dom.cjs, tools/audit_battlefield_browser.cjs, .github/workflows/check-team-ui.yml]
+    paths: [visual.css, tools/test_visual.cjs, tools/audit_visual_browser.cjs, workbench.js, workbench-model.js, workbench.css, tools/test_workbench.cjs, tools/test_workbench_dom.cjs, tools/audit_workbench_browser.cjs, events.js, team-battles.js, team-battle-model.js, progression.js, catalogue.js, team-planner.js, team-planner-model.js, team-planner.css, tools/test_team_planner.cjs, tools/test_team_planner_dom.cjs, tools/audit_team_planner_browser.cjs, frontier.js, frontier-model.js, frontier-worker.js, frontier.css, frontier-data.json, tools/test_frontier.cjs, tools/test_frontier_dom.cjs, tools/audit_frontier_browser.cjs, team-search.js, team-engine.js, team-worker.js, tools/test_team_performance.cjs, tools/audit_team_performance_browser.cjs, teams.js, teams-ui.js, teams-ui.css, experience.js, sa-farm.js, index.html, sw.js, tools/test_team_ui.cjs, tools/audit_team_ui_browser.cjs, battlefield.js, battlefield-model.js, battlefield-worker.js, battlefield.css, battlefield-data.json, companion-model.js, tools/test_battlefield.cjs, tools/test_battlefield_dom.cjs, tools/audit_battlefield_browser.cjs, .github/workflows/check-team-ui.yml]
 permissions:
   contents: read
 jobs:
@@ -15,6 +15,7 @@ jobs:
       - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom@0.18.12 playwright@1.58.2
       - run: /tmp/dokkan-tests/node_modules/.bin/playwright install --with-deps chromium webkit
       - run: node tools/test_team_planner.cjs
+      - run: node tools/test_visual.cjs
       - run: node tools/test_workbench.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_workbench_dom.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_team_planner_dom.cjs
@@ -30,6 +31,7 @@ jobs:
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_battlefield_dom.cjs
       - run: |
           python -m http.server 8765 >/tmp/team-ui-http.log 2>&1 &
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_visual_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_workbench_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_team_planner_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_frontier_browser.cjs

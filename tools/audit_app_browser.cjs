@@ -32,7 +32,7 @@ for(const width of [360,390,1280]){
  const pick=page.locator('#eventDetail [data-event-pick]').first();if(await pick.count()){
   await pick.check();await page.locator('#eventDetail [data-event-team]').click();await page.locator('#teams.on').waitFor();
   assert((await page.locator('#teamObjective').innerText()).includes('Recueil'));result.eventToTeam=true;
-  await page.locator('#teamLeaderSearch').fill('1034201');await page.locator('#teamLeaderResults [data-team-leader="1034201"]').click();
+  await page.evaluate(()=>{document.querySelector('#teamLeaderPanel > [data-wb-fold]').open=true;document.querySelector('[data-team-fold="leader-search"]').open=true;});await page.locator('#teamLeaderSearch').fill('1034201');await page.locator('#teamLeaderResults [data-team-leader="1034201"]').click();
   const own=page.locator('[data-team-own-leader="1034201"]');if(await own.count())await own.click();
   await page.locator('#autoTeam').click();await page.waitForFunction(()=>document.querySelector('#teamCount')?.textContent==='6/6'&&!document.querySelector('#autoTeam')?.disabled,null,{timeout:60000});result.workerBuildSixCards=true;await page.screenshot({path:'audit-artifacts/team-built-'+width+'.png'});
 

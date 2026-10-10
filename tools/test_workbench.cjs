@@ -7,6 +7,10 @@ const before={m1:{done:false,claimed:false},m3:{done:true,claimed:true}},next=W.
 assert.deepEqual(before.m1,{done:false,claimed:false});assert.deepEqual(next.m1,{done:true,claimed:false});assert.deepEqual(next.m3,before.m3);assert(W.batch(event,'s1',['m1'],next,true).m1.claimed);
 assert.throws(()=>W.batch(event,'s1',['m3'],before));assert.throws(()=>W.batch(event,'s1',[],before));assert.throws(()=>W.batch(undefined,'',['m1']));
 assert.equal(W.advice(['before','ki','before','made-up']).length,2);assert.equal(W.advice(['damage'])[0].goal,'speed');
+const full=Array.from({length:6},()=>({name:'Carte'})),evaluation={cover:full.map(()=>({covered:true})),friendCover:full.map(()=>({covered:true})),profiles:full.map(()=>({slot1:40,complete:true})),check:{deficit:0,unknown:true},synergy:{linkTotal:12},rotations:[]};
+assert.equal(W.diagnostic({},full,{}, {},{},[],{},evaluation).verdict,'Conditions de mission à vérifier');
+assert.equal(W.diagnostic({},full,{},null,{},[],{},evaluation).verdict,'À ajuster avant le combat');
+assert(W.diagnostic({},full,{}, {},{},[],{}, {...evaluation,friendCover:[{covered:false}]}).risks.some(s=>s.includes('leader ami')));
 const team={id:'t',name:'Composition',cards:['a','b'],leader:'a',settings:{event:'event'},objective:{event:'event',stage:'s1',missions:[{id:'m1',title:'A'}]}};
 const rows=B.add([],team,{count:1,result:'victory',validated:['m1','m2','m3'],missions:[{id:'m1',title:'A'},{id:'m2',title:'B'}],causes:['ki','ki']});
 assert.deepEqual(rows[0].validated,['m1','m2']);assert.deepEqual(rows[0].completedMissions,[{id:'m2',title:'B'}]);assert.deepEqual(rows[0].causes,['ki']);assert.equal(B.summary(rows,team).status,'works');assert.deepEqual(team.objective.missions,[{id:'m1',title:'A'}]);

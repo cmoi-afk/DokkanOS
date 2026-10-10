@@ -5,6 +5,7 @@ const render=c=>ctx.teamImage(c),c={id:'123',candidateId:'123',name:'Carte <test
 let html=render(c);assert(html.includes('data-type="INT"'));assert(html.includes('data-rarity="LR"'));assert(html.includes('src="assets/cards/123.webp"'));assert(html.includes('Carte &lt;test&gt;'));assert(!html.includes('100 %'));assert(!html.includes('Super ZLR'));
 profiles['123']={potential:100,awakening:'superZlr'};html=render(c);assert(html.includes('★ 100 %'));assert(html.includes('Super ZLR'));assert(!render({...c,_friend:true}).includes('100 %'));assert(!render({...c,boxId:'FRIEND-123'}).includes('Super ZLR'));
 profiles['123']={potential:79,awakening:'base'};html=render(c);assert(!html.includes('100 %'));assert(!html.includes('Super ZLR'));
+ctx.rainbow100.add('123');assert(!render(c).includes('100 %'));ctx.rainbow100.clear();
 assert(render({...c,type:null,rarity:null}).includes('data-type="unknown"'));assert(render({...c,type:null,rarity:null}).includes('data-rarity="?"'));assert.deepEqual(profiles['123'],{potential:79,awakening:'base'});
 const sw=fs.readFileSync('sw.js','utf8'),index=fs.readFileSync('index.html','utf8');assert(sw.includes('./visual.css'));assert(index.includes('visual.css?v=21100'));assert(index.includes('v2.11.0'));
 console.log('Visual cards: exact un-cropped local image, accessible type/rarity, actual Z awakening and 100% only, escaping, no profile mutation, offline style: OK');

@@ -29,9 +29,12 @@ jobs:
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_frontier_dom.cjs
       - run: node tools/test_battlefield.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_battlefield_dom.cjs
-      - run: |
+      - name: Visual desktop and iPhone audit
+        run: |
           python -m http.server 8765 >/tmp/team-ui-http.log 2>&1 &
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_visual_browser.cjs
+      - name: Combat and offline regression audits
+        run: |
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_workbench_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_team_planner_browser.cjs
           NODE_PATH=/tmp/dokkan-tests/node_modules node tools/audit_frontier_browser.cjs

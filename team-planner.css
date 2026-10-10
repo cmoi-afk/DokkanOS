@@ -1,8 +1,10 @@
-#teamPlanner details{margin:12px 0;border:1px solid var(--line,#343b4e);border-radius:12px;padding:12px}
+#teams main{grid-template-columns:minmax(0,1fr)}
+#teamPlanner{width:100%;min-width:0;box-sizing:border-box}
+#teamPlanner details{margin:12px 0;border:1px solid var(--line,#343b4e);border-radius:12px;padding:12px;min-width:0;max-width:100%;box-sizing:border-box}
 #teamPlanner summary{cursor:pointer;font-weight:700;min-height:32px}
-#teamPlanner .tp-content{min-width:0;overflow-wrap:anywhere}
+#teamPlanner .tp-content{min-width:0;max-width:100%;overflow-wrap:anywhere}
 #teamPlanner select{max-width:100%;width:100%;font-size:16px;appearance:none;background:#141a25;color:#edf2fb}
-#teamPlanner .compare-table{max-width:100%;overflow-x:auto}
+#teamPlanner .compare-table{width:100%;min-width:0;max-width:100%;overflow-x:auto}
 #teamPlanner th,#teamPlanner td{padding:9px;text-align:left}
 #teamPlanner .team-saved-row{gap:12px;flex-wrap:wrap}
 #teamPlanner .team-saved-row span{flex:1;min-width:170px}

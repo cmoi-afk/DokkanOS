@@ -30,7 +30,7 @@ fs.mkdirSync('audit-artifacts',{recursive:true});
  console.log(JSON.stringify({profile:scenario.name,categoryMs,categoryLeaderMembership:true,actualLeaderBonuses:true,bossSummary:true}));
  await p.locator('[data-team-unavailable]').nth(1).click();const recomposeStart=Date.now();await p.locator('#autoTeam').click();await p.waitForFunction(()=>!teamBusy&&selectedTeam.length===6,null,{timeout:120000});const recomposeMs=Date.now()-recomposeStart;assert(await p.evaluate(()=>!teamCards().some(c=>teamSettings.excluded.includes(TE.identity(c)))));
  await p.evaluate(()=>{teamSettings.searchMode='deep';renderTeam();});await p.locator('#autoTeam').click();await p.waitForFunction(()=>teamPreview&&document.querySelector('[data-team-action="keepPreview"]'),null,{timeout:120000});await p.locator('[data-team-action="keepPreview"]').click();assert(await p.evaluate(()=>!teamBusy&&selectedTeam.length===6));assert.equal(await p.evaluate(()=>JSON.stringify(window.inventory||inventory)),inventory);
- await p.locator('#teamName').fill('Fluide');await p.locator('[data-team-action="save"]').click();console.log(JSON.stringify({profile:scenario.name,firstMs,cachedMs,recomposeMs,heartbeat}));
+ await p.locator('[data-ux-scroll="teamSaved"]').click();await p.locator('#teamName').fill('Fluide');await p.locator('[data-team-action="save"]').click();console.log(JSON.stringify({profile:scenario.name,firstMs,cachedMs,recomposeMs,heartbeat}));
  // Playwright #42775: WebKit's offline flag rejects even literal SW responses.
  // Stop this test's own origin instead; require a successful cached navigation.
  const offlineMethod=originServer?'origin-stopped':'browser-offline';

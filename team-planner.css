@@ -16,3 +16,4 @@
 #progressProfile .team-checkbox{flex-direction:row;align-items:center;gap:10px}
 #progressProfile input[type=checkbox]{width:20px;height:20px;min-width:20px;flex:none}
 @media(max-width:650px){#teamPlanner{padding:15px}#teamPlanner details{padding:10px}#teamPlanner th,#teamPlanner td{padding:7px;font-size:13px}}
+@media(max-width:899px){.app-header .header-context{display:flex;flex-direction:column;align-items:flex-end;min-width:0}.app-header .ux-back{font-size:11px;line-height:1.2;max-width:92px;min-width:0}}

@@ -147,7 +147,7 @@ async function autoReplaceTeamCard(target){
   const next=result.team?.map(c=>c.boxId);
   if(!result.check?.ok||next?.length!==6||next[index]===target||next.some((id,i)=>i!==index&&id!==before[i]))throw Error('Remplacement invalide');
   const previous=teamCards(),baseline=TE.evaluate(previous,leader,teamFriend(leader),teamMission(),teamKnown(),teamContext());
-  if(window.DokkanTeamPlannerModel){const replacementCard=result.team[index],after=TE.evaluate(result.team,leader,teamFriend(leader),teamMission(),teamKnown(),teamContext());window.dispatchEvent(new window.CustomEvent('dokkanos-team-replacement',{detail:{oldName:previous[index].name,newName:replacementCard.name,reasons:window.DokkanTeamPlannerModel.replacement(TE,baseline,after,previous[index],replacementCard,teamContext())}}));}
+  if(window.DokkanTeamPlannerModel){const replacementCard=result.team[index],after=TE.evaluate(result.team,leader,teamFriend(leader),teamMission(),teamKnown(),teamContext());window.dispatchEvent(new window.CustomEvent('dokkanos-team-replacement',{detail:{signature:JSON.stringify([next,teamLeader,teamSettings.combat,teamSettings.event,teamSettings.eventStage,teamMission().requirements,teamKitContext().realProfiles]),oldName:previous[index].name,newName:replacementCard.name,reasons:window.DokkanTeamPlannerModel.replacement(TE,baseline,after,previous[index],replacementCard,teamContext())}}));}
   rememberTeam();selectedTeam=next;teamVariants=[];
   teamEvaluationKey=teamEvalKey(teamCards(),leader,teamFriend(leader),teamMission(),teamContext());teamEvaluationValue=result;
   saveTeamState();teamStatusText='Meilleure alternative trouvée · cinq autres cartes conservées · '+(result.elapsedMs/1000).toFixed(1)+' s. Tu peux annuler ce remplacement.';

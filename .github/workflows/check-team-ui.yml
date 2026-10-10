@@ -21,6 +21,7 @@ jobs:
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_team_planner_dom.cjs
       - run: node tools/test_team_performance.cjs
       - run: node tools/test_cross_category_leaders.cjs
+      - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_chosen_leader_dom.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_team_ui.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_sa_farm.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_catalog_teams_dom.cjs

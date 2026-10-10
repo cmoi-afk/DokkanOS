@@ -32,4 +32,24 @@ window.addEventListener('dokkanos-events-loaded',()=>{eventLoadError=!!teamEvent
 
 function eventConfirmMission(id,done){const m=teamEvents.events.flatMap(e=>e.missions||[]).find(m=>m.id===id);if(!m)return;eventProgress[id]={...eventState(m),done,claimed:done?eventState(m).claimed:false};storageWrite('dokkanos-events-progress-v1',JSON.stringify(eventProgress));storageWrite('dokkanos-mission-done-'+id,done?'yes':'no');}
 
+let eventBatchUndo=null;
+function eventPersistBatch(next,ids){
+ const values={'dokkanos-events-progress-v1':JSON.stringify(next)};
+ for(const id of ids)values['dokkanos-mission-done-'+id]=next[id].done?'yes':'no';
+ const before=Object.fromEntries(Object.keys(values).map(k=>[k,storageRead(k)]));
+ try{for(const [k,v]of Object.entries(values))if(!storageWrite(k,v))throw Error('La validation groupée n’a pas pu être sauvegardée.');}
+ catch(error){let reverted=true;for(const [k,v]of Object.entries(before))try{if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v);}catch(e){reverted=false;}throw Error(error.message+(reverted?' Aucun changement conservé.':' Exporte tes données : le stockage est bloqué.'));}
+ eventProgress=next;
+}
+function eventConfirmMissions(eventId,ids,{stage='',claimed=false}={}){
+ const event=teamEvents.events.find(e=>e.id===eventId),state=eventAllProgress(),next=window.DokkanWorkbenchModel.batch(event,stage,ids,state,claimed),unique=[...new Set(ids)];
+ eventPersistBatch(next,unique);eventBatchUndo={event:eventId,before:Object.fromEntries(unique.map(id=>[id,state[id]||{done:false,claimed:false}])),after:Object.fromEntries(unique.map(id=>[id,next[id]]))};return unique.length;
+}
+function eventUndoBatch(){
+ if(!eventBatchUndo)throw Error('Aucune validation groupée à annuler.');
+ const current=eventAllProgress(),undo=eventBatchUndo;
+ if(Object.entries(undo.after).some(([id,v])=>JSON.stringify(current[id])!==JSON.stringify(v)))throw Error('Ces missions ont été modifiées depuis : annulation groupée indisponible.');
+ eventPersistBatch({...current,...undo.before},Object.keys(undo.before));eventBatchUndo=null;
+}
+
 document.addEventListener('toggle',e=>{if(e.target.id==='eventFilterOptions')eventFiltersOpen=e.target.open;},true);

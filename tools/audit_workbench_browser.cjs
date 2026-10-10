@@ -5,7 +5,7 @@ fs.mkdirSync('audit-artifacts',{recursive:true});
  const context=await browser.newContext({...scenario.settings,acceptDownloads:true}),p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));
  await p.goto('http://127.0.0.1:8765');await p.waitForFunction(()=>performance.getEntriesByType('navigation')[0]?.type==='reload'&&navigator.serviceWorker.controller&&document.querySelector('#grid .unit')&&window.DokkanWorkbench,null,{timeout:90000});
  await p.evaluate(async()=>{await ensureEvents();await teamBossReady;teamSettings.pool='owned';teamSettings.useZA=false;chooseTeamLeader(TE.identity(teamOwnedCards().find(c=>c.leader)));switchView('teams');});
- await p.locator('#autoTeam').click();await p.waitForFunction(()=>!teamBusy&&selectedTeam.length===6,null,{timeout:150000});
+ await p.locator('[data-team-action="bestLeader"]').click();await p.waitForFunction(()=>!teamBusy,null,{timeout:150000});assert.equal(await p.evaluate(()=>selectedTeam.length),6,await p.locator('#teamBuildStatus').textContent());
  const box=await p.evaluate(()=>[localStorage.getItem('dokkanos-inventory'),localStorage.getItem('dokkanos-edits')]);
  assert.equal(await p.locator('.wb-rotation').count(),2);assert.equal(await p.locator('.wb-slot').count(),6);
  assert(await p.evaluate(()=>{const r=DokkanWorkbench.diagnostic().evaluation.rotations;return r.length===2&&r[0].third.boxId!==r[1].third.boxId;}));

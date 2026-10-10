@@ -1,4 +1,7 @@
 #teams main{grid-template-columns:minmax(0,1fr)}
+#teams label{min-width:0}
+#teams select{appearance:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-right:30px;background-image:linear-gradient(45deg,transparent 50%,#a6adbd 50%),linear-gradient(135deg,#a6adbd 50%,transparent 50%);background-position:calc(100% - 17px) 50%,calc(100% - 12px) 50%;background-size:5px 5px;background-repeat:no-repeat}
+#teams .ux-team-steps button{overflow-wrap:anywhere}
 #teams details:not([open])>:not(summary){display:none}
 #teams .team-matrix-scroll{width:100%;max-width:100%;min-width:0;contain:inline-size;overflow-x:auto}
 #teamPlanner{width:100%;min-width:0;box-sizing:border-box}

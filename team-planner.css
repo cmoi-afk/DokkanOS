@@ -1,0 +1,12 @@
+#teamPlanner details{margin:12px 0;border:1px solid var(--line,#343b4e);border-radius:12px;padding:12px}
+#teamPlanner summary{cursor:pointer;font-weight:700;min-height:32px}
+#teamPlanner .tp-content{min-width:0;overflow-wrap:anywhere}
+#teamPlanner select{max-width:100%;width:100%;font-size:16px;appearance:none;background:#141a25;color:#edf2fb}
+#teamPlanner .compare-table{max-width:100%;overflow-x:auto}
+#teamPlanner th,#teamPlanner td{padding:9px;text-align:left}
+#teamPlanner .team-saved-row{gap:12px;flex-wrap:wrap}
+#teamPlanner .team-saved-row span{flex:1;min-width:170px}
+#teamPlanner .team-rotation small{display:block;margin:7px 0}
+#teamPlanner .tp-replacement{padding:14px;border:1px solid #405c68;border-radius:12px;margin-top:14px}
+#teamPlanner .tp-replacement li{margin:8px 0}
+@media(max-width:650px){#teamPlanner{padding:15px}#teamPlanner details{padding:10px}#teamPlanner th,#teamPlanner td{padding:7px;font-size:13px}}

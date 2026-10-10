@@ -5,7 +5,7 @@ const labels={ztur:'ZTUR',superZtur:'Super ZTUR',zlr:'ZLR',superZlr:'Super ZLR'}
 const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\bssj\s*(\d?)\b/g,(_,n)=>'super saiyan '+n).replace(/\bkid\s+(?:boo|buu)\b/g,'boo petit').replace(/[()]/g,' ').replace(/\s+/g,' ').trim();
 const allowed=c=>!!c&&['SSR','UR','LR'].includes(c.rarity)&&!c.isSellingOnly&&!c.nonPlayable;
 const variants=c=>(c?.zAwakenings||[]).filter(v=>v&&labels[v.kind]&&v.verified===true&&v.available!==false&&v.kit&&typeof v.kit==='object').map(v=>({...v,label:labels[v.kind]}));
-const selectKit=(c,key='base')=>{const v=variants(c).find(v=>v.kind===key);return v?{...c,...v.kit,fr:undefined,_kitVersion:key,_kitLabel:v.label,_kitSource:v.source}: {...c,_kitVersion:'base',_kitLabel:'Avant éveil Z'};};
+const selectKit=(c,key='base')=>{const v=variants(c).find(v=>v.kind===key);if(!v)return {...c,_kitVersion:'base',_kitLabel:'Avant éveil Z'};const base=c._baseCombatKit||Object.fromEntries([...new Set((c.zAwakenings||[]).flatMap(v=>Object.keys(v.kit||{})))].map(k=>[k,c[k]??null]));return {...c,_baseCombatKit:base,...v.kit,fr:undefined,_kitVersion:key,_kitLabel:v.label,_kitSource:v.source};};
 function filter(cards,state={}){
  const playable=cards.filter(allowed),byId=new Map(playable.map(c=>[String(c.id),c])),terms=norm(state.query).split(' ').filter(Boolean);
  return playable.filter(c=>{

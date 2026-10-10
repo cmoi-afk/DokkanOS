@@ -11,4 +11,8 @@
 #teamPlanner .team-rotation small{display:block;margin:7px 0}
 #teamPlanner .tp-replacement{padding:14px;border:1px solid #405c68;border-radius:12px;margin-top:14px}
 #teamPlanner .tp-replacement li{margin:8px 0}
+#progressProfile textarea{width:100%;min-width:0;max-width:100%;box-sizing:border-box;resize:vertical;background:#111823;color:#f3f5fa;border:1px solid #303745;border-radius:12px;padding:13px}
+#progressProfile input,#progressProfile select,#progressProfile textarea{font-size:16px}
+#progressProfile .team-checkbox{flex-direction:row;align-items:center;gap:10px}
+#progressProfile input[type=checkbox]{width:20px;height:20px;min-width:20px;flex:none}
 @media(max-width:650px){#teamPlanner{padding:15px}#teamPlanner details{padding:10px}#teamPlanner th,#teamPlanner td{padding:7px;font-size:13px}}

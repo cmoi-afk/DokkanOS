@@ -1,4 +1,6 @@
 #teams main{grid-template-columns:minmax(0,1fr)}
+#teams details:not([open])>:not(summary){display:none}
+#teams .team-matrix-scroll{width:100%;max-width:100%;min-width:0;contain:inline-size;overflow-x:auto}
 #teamPlanner{width:100%;min-width:0;box-sizing:border-box}
 #teamPlanner details{margin:12px 0;border:1px solid var(--line,#343b4e);border-radius:12px;padding:12px;min-width:0;max-width:100%;box-sizing:border-box}
 #teamPlanner summary{cursor:pointer;font-weight:700;min-height:32px}

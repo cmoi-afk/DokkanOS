@@ -1,16 +1,18 @@
 /* Seven owned cards, two internal leaders. No friend, no inventory mutations. */
 (function(root){'use strict';
 const key='dokkanos-battlefield-v1',id=c=>String(c.candidateId||c.id),record=x=>x&&typeof x==='object'&&!Array.isArray(x),types=['AGI','TEC','INT','PUI','END'],advantage={AGI:'TEC',TEC:'INT',INT:'END',PUI:'AGI',END:'PUI'};
-const empty=()=>({attempts:[],plan:{},reserved:{},excluded:[],locked:[],missionTypes:{}});
+const empty=()=>({attempts:[],plan:{},reservePlan:{},reserved:{},excluded:[],locked:[],missionTypes:{}});
 function validateSession(s){
  if(!record(s)||!Array.isArray(s.attempts)||s.attempts.length>100||!record(s.plan)||!record(s.reserved)||!record(s.missionTypes)||!Array.isArray(s.excluded)||!Array.isArray(s.locked))throw Error('Session Battlefield invalide.');
  const ids=a=>Array.isArray(a)&&a.length<=10000&&a.every(v=>typeof v==='string'&&/^\d{1,20}$/.test(v))&&new Set(a).size===a.length;
  if(!ids(s.excluded)||s.locked.length>20||new Set(s.locked).size!==s.locked.length||s.locked.some(v=>typeof v!=='string'||v.length>100)||Object.keys(s.plan).length>20||Object.keys(s.reserved).length>20||Object.keys(s.missionTypes).length>20)throw Error('Cartes Battlefield invalides.');
+ if(s.reservePlan!==undefined&&(!record(s.reservePlan)||Object.keys(s.reservePlan).length>20))throw Error('Secours invalides.');
+ for(const a of Object.values(s.reservePlan||{}))if(!ids(a)||a.length!==7)throw Error('Un secours doit contenir sept cartes distinctes.');
  for(const a of Object.values(s.plan))if(!ids(a)||a.length!==7)throw Error('Une équipe Battlefield doit contenir sept cartes distinctes.');
  for(const [b,a] of Object.entries(s.reserved))if(b.length>100||!ids(a)||a.length>7)throw Error('Réservation invalide.');
  for(const t of Object.values(s.missionTypes))if(!types.includes(t))throw Error('Type de mission invalide.');
  const seen=new Set();for(const a of s.attempts){if(!record(a)||typeof a.boss!=='string'||a.boss.length>100||!ids(a.cards)||a.cards.length!==7||!['victory','defeat'].includes(a.result)||typeof a.date!=='string'||!Number.isFinite(Date.parse(a.date))||a.hp!==null&&(!Number.isFinite(a.hp)||a.hp<0||a.hp>100))throw Error('Résultat Battlefield invalide.');for(const c of a.cards){if(seen.has(c))throw Error('Carte déjà utilisée dans cette session.');seen.add(c);}}
- for(const a of Object.values(s.plan))for(const c of a){if(seen.has(c))throw Error('Carte réutilisée ou prévue pour plusieurs combats.');seen.add(c);}
+ for(const a of [...Object.values(s.plan),...Object.values(s.reservePlan||{})])for(const c of a){if(seen.has(c))throw Error('Carte réutilisée ou prévue pour plusieurs combats.');seen.add(c);}
  return s;
 }
 function validate(state){if(!record(state)||state.version!==1||typeof state.active!=='string'||state.active.length>100||!record(state.sessions)||Object.keys(state.sessions).length>8)throw Error('Suivi Battlefield invalide.');Object.values(state.sessions).forEach(validateSession);if(state.previous)validateSession(state.previous);return state;}
@@ -20,7 +22,7 @@ function result(s,edition,bossId,outcome,hp,pool){
  if(!edition.bosses.some(b=>b.id===bossId)||won(s).has(bossId)||!cards||cards.length!==7||cards.some(c=>!mine.has(c)||spent.has(c)))throw Error('Équipe indisponible ou combat déjà terminé. Recompose le plan.');
  if(spent.size+7>edition.slotLimit)throw Error('Budget de la session dépassé.');
  if(!['victory','defeat'].includes(outcome))throw Error('Résultat invalide.');
- const next=JSON.parse(JSON.stringify(s));next.attempts.push({boss:bossId,cards:[...cards],result:outcome,hp:outcome==='victory'?0:hp,date:new Date().toISOString()});delete next.plan[bossId];next.locked=next.locked.filter(b=>b!==bossId);for(const b of Object.keys(next.reserved))next.reserved[b]=next.reserved[b].filter(i=>!cards.includes(i));validateSession(next);return next;
+ const next=JSON.parse(JSON.stringify(s));next.attempts.push({boss:bossId,cards:[...cards],result:outcome,hp:outcome==='victory'?0:hp,date:new Date().toISOString()});delete next.plan[bossId];const reserve=next.reservePlan?.[bossId];if(reserve&&outcome==='defeat'&&reserve.every(i=>mine.has(i)&&!spent.has(i)&&!cards.includes(i))&&spent.size+14<=edition.slotLimit)next.plan[bossId]=reserve;if(next.reservePlan)delete next.reservePlan[bossId];next.locked=next.locked.filter(b=>b!==bossId);for(const b of Object.keys(next.reserved))next.reserved[b]=next.reserved[b].filter(i=>!cards.includes(i));validateSession(next);return next;
 }
 function bossContext(E,b){return E.battleContext({combat:'survival',useZA:false,quick:true,boss:{pressure:true,available:false,locks:!!b.locks,immuneStun:!!b.stunImmune,immuneSeal:!!b.sealImmune,immuneAtk:!!b.atkDownImmune,immuneDef:!!b.defDownImmune,kiDisrupt:b.id==='yamu',seals:b.id==='evil-boo',growth:b.priority>1,bossTypes:[b.type],categoryHazards:[],maxSuperDamage:0,entries:[],bosses:[]}});}
 function assess(E,team,boss,known){
@@ -70,7 +72,15 @@ async function plan(E,pool,edition,session,known,progress=()=>{},cancel=()=>fals
   progress('Recherche pour '+b.name+'…');const found=await compose(E,allowed,b,known,session.reserved[b.id]||[],()=>{},cancel);
   if(found){output[b.id]=found.cards;found.cards.forEach(i=>assigned.add(i));}else warnings.push(b.name+' : sept cartes sous deux leaders compatibles introuvables. Change les réservations ou la mission.');
  }
- return {plan:output,warnings,remaining:pool.filter(c=>!spent.has(id(c))&&!assigned.has(id(c))&&!blocked.has(id(c))).map(id)};
+ const reservePlan={};
+ // Protect a second team for the final bosses, while keeping a free seven-card pool.
+ for(const b of [...pending].sort((a,b)=>b.priority-a.priority).slice(0,2)){
+  if(cancel())throw Error('Recherche annulée.');if(!output[b.id]||spent.size+assigned.size+7>edition.slotLimit)continue;
+  const available=pool.filter(c=>!spent.has(id(c))&&!assigned.has(id(c))&&!blocked.has(id(c))&&!reservationOwner.has(id(c))),allowed=available.filter(c=>!session.missionTypes[b.id]||c.type===session.missionTypes[b.id]);
+  if(available.length<14)continue;
+  progress('Réserve pour '+b.name+'…');const found=await compose(E,allowed,b,known,[],()=>{},cancel);if(found){reservePlan[b.id]=found.cards;found.cards.forEach(i=>assigned.add(i));}
+ }
+ return {plan:output,reservePlan,warnings,remaining:pool.filter(c=>!spent.has(id(c))&&!assigned.has(id(c))&&!blocked.has(id(c))).map(id)};
 }
 function replace(E,pool,team,boss,known,index,reserved=[]){if(team.length!==7||team.some(c=>!c)||!Number.isInteger(index)||index<0||index>6)throw Error('Équipe ou position invalide.');let best=null;const required=new Set(reserved);if(required.has(id(team[index])))throw Error('Cette carte est réservée : retire sa réservation avant de la remplacer.');for(const c of pool){if(team.some(t=>id(t)===id(c)))continue;const proposed=team.map((t,i)=>i===index?c:t),evaluation=assess(E,proposed,boss,known);if(evaluation.valid&&(!best||evaluation.score>best.score))best={cards:proposed.map(id),score:evaluation.score};}return best;}
 const API={key,empty,validate,validateSession,used,won,result,assess,compose,plan,replace,advantage};if(typeof module!=='undefined')module.exports=API;root.DokkanBattlefieldModel=API;

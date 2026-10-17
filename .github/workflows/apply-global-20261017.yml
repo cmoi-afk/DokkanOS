@@ -1,0 +1,50 @@
+name: Apply reviewed GLOBAL update 17 October 2026
+on:
+  push:
+    branches: [main]
+    paths: [docs/global-2026-10-17.reviewed.json.gz, .github/workflows/apply-global-20261017.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: global-reviewed-20261017
+  cancel-in-progress: false
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Apply exact reviewed source snapshot
+        run: python tools/apply_global_update.py docs/global-2026-10-17.reviewed.json.gz
+      - name: Validate catalogue, missions, saved victories, Frontier and offline update
+        run: |
+          node tools/test_global_update.cjs
+          node tools/test_data_download.cjs
+          node tools/test_catalogue_data.cjs
+          node tools/test_events.cjs
+          node tools/test_sw.cjs
+          node tools/test_frontier.cjs
+          node tools/test_linked_missions.cjs
+          node tools/test_joint_missions.cjs
+          node --check teams.js
+          node --check data-download.js
+          git diff --check
+      - name: Validate mobile-facing event and Frontier interactions
+        run: |
+          npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_frontier_dom.cjs
+          NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_linked_missions_dom.cjs
+      - name: Save tested application and reviewed data
+        run: |
+          git config user.name 'DokkanOS data update'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add catalog.json card-meta.json catalogue-report.json events.json events-preview.json boss-profiles.json frontier-data.json game-items.json recent-cards.json data-download.json progress-data.json docs/data-download-2026-10-17-audit.json index.html sw.js teams.js data-download.js mission-migration.js tools/test_global_update.cjs tools/test_data_download.cjs tools/test_frontier.cjs
+          git commit -m 'Release DokkanOS v2.13.0: GLOBAL data through 17 October, Frontier and victory migration'
+          git push origin HEAD:main

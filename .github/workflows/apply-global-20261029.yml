@@ -1,0 +1,42 @@
+name: Release verified GLOBAL 29 October data
+on:
+  push:
+    branches: [main]
+    paths: [docs/global-20261029.delta.zlib.b64, .github/workflows/apply-global-20261029.yml]
+permissions:
+  contents: write
+concurrency:
+  group: global-reviewed-20261029
+  cancel-in-progress: false
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify hashes and apply reviewed data
+        run: python tools/apply_reviewed_delta_20261029.py
+      - name: Validate release
+        run: |
+          node tools/test_global_20261029.cjs
+          node tools/test_catalogue_data.cjs
+          node tools/test_data_download.cjs
+          node tools/test_global_update.cjs
+          node tools/test_events.cjs
+          node tools/test_linked_missions.cjs
+          node tools/test_frontier.cjs
+          node tools/test_companion.cjs
+          node tools/test_tournaments.cjs
+          node tools/test_sw.cjs
+          git diff --cached --check
+      - name: Publish tested application
+        run: |
+          git config user.name 'DokkanOS data update'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Release DokkanOS v2.15.0: verified October 29 GLOBAL cards, EX missions and Frontier'
+          git push origin HEAD:main

@@ -18,5 +18,5 @@ const noProof=M.plan({'dokkanos-events-progress-v1':'{}'},a);assert.equal(noProo
 const map=new Map(Object.entries(entries));let fail=true;const storage={getItem:k=>map.get(k)??null,setItem(k,v){if(fail&&k==='dokkanos-team-battles-v1'){fail=false;throw Error('quota');}map.set(k,v);},removeItem:k=>map.delete(k)};
 assert.throws(()=>M.apply(storage,a));for(const [k,v]of Object.entries(entries))assert.equal(map.get(k),v);M.apply(storage,a);assert.equal(map.get('dokkanos-mission-done-'+target),'yes');assert.deepEqual(M.apply(storage,a),[]);
 const source=fs.readFileSync('data-download.js','utf8'),ctx={window:{},document:{addEventListener(){}},fetch:()=>new Promise(()=>{}),Date};vm.runInNewContext(source,ctx);assert(source.includes('data.awakenings'));
-assert(fs.readFileSync('index.html','utf8').includes('mission-migration.js?v=21400'));assert(fs.readFileSync('sw.js','utf8').includes('./mission-migration.js'));
+assert(fs.readFileSync('index.html','utf8').includes('mission-migration.js?v=21500'));assert(fs.readFileSync('sw.js','utf8').includes('./mission-migration.js'));
 console.log('GLOBAL 17 October: new LR and Super Z-LR, 20 phases, 8 missions, linked daily mission, six Frontier nodes, migration integrity/idempotency/rollback: OK');

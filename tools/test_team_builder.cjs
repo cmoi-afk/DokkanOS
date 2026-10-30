@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),E=require('../team-engine');
 const cards=JSON.parse(fs.readFileSync('recent-cards.json')).cards,[goku,kid,south]=cards;
-for(const c of cards){assert(/^\d{7}$/.test(c.id));assert(c.image.includes('card_'+c.resourceId+'_thumb'));assert(c.source.url.endsWith(c.id));assert.equal(c.categoriesComplete,false);assert.equal(c.links.length,7);assert(c.teamRules.interactions.length);}
+for(const c of cards){assert(/^\d{7}$/.test(c.id));if(c.image.startsWith('assets/cards/')){assert(fs.existsSync(c.image));assert.equal(require('node:path').parse(c.image).name,c.resourceId);}else assert(c.image.includes('card_'+c.resourceId+'_thumb'));assert(c.source.url.endsWith(c.id));assert(c.links.length>0&&c.links.length<=7);if(c.source.level==='kit-summary'){assert.equal(c.categoriesComplete,false);assert(c.teamRules.interactions.length);}else{assert.equal(c.source.exactId,c.id);assert.equal(c.categoriesComplete,true);}}
 assert.equal(E.coverage(goku,{categories:['Dernier recours']}).atk,220);
 assert.equal(E.coverage(kid,{categories:['Majin Power','Demonic Power']}).hp,250);
 assert.equal(E.coverage(kid,{categories:['Saga de Boo']}).atk,170);

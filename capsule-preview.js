@@ -1,16 +1,7 @@
-/* Opt-in interface preview. Uses existing actions and never writes collection data. */
+/* Default Capsule Corp interface. Uses existing actions and never writes collection data. */
 (function () {
   'use strict';
-  if (new URLSearchParams(window.location.search).get('interface') !== 'capsule') return;
   document.documentElement.dataset.interface = 'capsule';
-  const css = document.createElement('link');
-  css.rel = 'stylesheet'; css.href = 'capsule-preview.css?v=1'; document.head.append(css);
-  const banner = document.createElement('div');
-  banner.className = 'capsule-preview-note';
-  const label = document.createElement('span'); label.textContent = 'Aperçu · Capsule Corp';
-  const exit = document.createElement('a'); exit.textContent = 'Quitter l’aperçu';
-  const original = new URL(window.location.href); original.searchParams.delete('interface'); exit.href = original.href;
-  banner.append(label, exit); document.querySelector('.app-header').append(banner);
   const homeLabel = document.querySelector('.nav-primary [data-v="home"] > span');
   if (homeLabel) homeLabel.textContent = 'Accueil';
   const dialog = document.createElement('dialog'); dialog.className = 'capsule-filter-sheet';

@@ -32,3 +32,4 @@ html[data-theme=light] .app-nav button[data-v],html[data-theme=light] #moreNav,h
 html[data-theme=light] .app-nav button.on{color:#064f7b!important;background:#cce8f5!important}
 html[data-theme=light] :is(.ux-back,.ux-team-cta,.verify-v2-confirm,.card-version-buttons button,.potential-stepper button,.potential-100){background:#e2edf7!important;color:var(--text)!important;border-color:var(--line)!important}
 html[data-theme=light] .catalog-summary>span b,html[data-theme=light] .event-kpis>span b{color:#086399}
+html[data-theme=light] button.primary{background:#086399!important;color:#fff!important;border-color:#086399!important;box-shadow:none!important}

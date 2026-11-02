@@ -1,0 +1,31 @@
+name: Collect exact French event banners
+on:
+  push:
+    branches: [main]
+    paths: [tools/collect_event_images.py, .github/workflows/collect-event-images.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: event-images-collector
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: pip install beautifulsoup4 pillow
+      - run: python tools/collect_event_images.py
+      - name: Save local banners and verified mapping
+        run: |
+          git config user.name 'DokkanOS event assets'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add assets/events event-images.json docs/event-images-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Import verified local French event banners'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

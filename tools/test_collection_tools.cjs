@@ -1,0 +1,7 @@
+const assert=require('node:assert/strict'),vm=require('vm'),fs=require('fs'),M=require('../collection-tools-model'),C=require('../catalog-model');
+const cards=[{id:'1',name:'A',rarity:'UR',awakensTo:'2'},{id:'2',name:'B',rarity:'LR'},{id:'3',name:'C',rarity:'UR'}],g=C.awakeningGraph(cards),initial={'3':'missing'};
+assert.deepEqual(M.batch(cards,['2'],initial,g),{'2':'owned','3':'missing'});assert.deepEqual(initial,{'3':'missing'});assert.throws(()=>M.batch(cards,['1','2'],initial,g));assert.throws(()=>M.batch(cards,['404'],initial,g));assert.equal(M.conflicts(cards,new Set(['1','2']),[],{},g).length,1);
+assert.throws(()=>M.validate({presets:[],history:[{kind:'inventory',at:'now',changes:[{id:'2',before:{bad:true},after:'owned'}]}]}));
+const K=require('../companion-model');assert(K.allowed(M.key));assert(K.allowed('dokkanos-mobile-comfort-v1'));
+let fetches=0;const window={},ctx={window,fetch:async()=>{fetches++;return {ok:true,json:async()=>({boss:true})}}};vm.runInNewContext(fs.readFileSync('resource-loader.js','utf8'),ctx);assert.equal(fetches,0);
+(async()=>{const [a,b]=await Promise.all([window.DokkanResources.json('boss-profiles.json'),window.DokkanResources.json('boss-profiles.json')]);assert.equal(fetches,1);assert.strictEqual(a,b);console.log('Collection tools: atomic batch, independent ownership, conflicts, validated history, portable state and one lazy parsed resource: OK');})().catch(e=>{console.error(e);process.exitCode=1});

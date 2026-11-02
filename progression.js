@@ -2,7 +2,8 @@
 (function(){'use strict';
 const M=window.DokkanProgressModel,T=window.DokkanTeamEngine,esc=teamEsc;
 let state=storedJSON('dokkanos-progression-v1',{profiles:{},combat:{},history:[],goals:[],dataHistory:[]});try{M.validate(state)}catch(e){state={profiles:{},combat:{},history:[],goals:[],dataHistory:[]};}for(const k of ['profiles','combat'])state[k]||={};for(const k of ['history','goals','dataHistory'])state[k]||=[];
-let bossData=null;fetch('boss-profiles.json').then(r=>r.ok?r.json():null).then(d=>{bossData=d;if(document.body.dataset.view==='copilot')draw();}).catch(()=>{});
+let bossData=null,bossLoading;function ensureProgressBoss(){if(!bossLoading)bossLoading=(window.DokkanResources?window.DokkanResources.json('boss-profiles.json'):fetch('boss-profiles.json').then(r=>r.ok?r.json():null)).then(d=>{bossData=d;if(document.body.dataset.view==='copilot')draw();}).catch(()=>{});}
+window.addEventListener('dokkanos-view-change',()=>{if(document.body.dataset.view==='copilot')ensureProgressBoss();});
 let data=null,combatCard='',cardId='',duo=['',''],duoResult=null,busy=false,bossEvent='',bossStage='',historyA='',historyB='',error='';
 const save=()=>storageWrite('dokkanos-progression-v1',JSON.stringify(state)),all=()=>window.DokkanCopilot.all(),id=T.identity;
 const cards=()=>all().team.length?all().team:ownedTeamCards();

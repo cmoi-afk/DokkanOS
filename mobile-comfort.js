@@ -19,7 +19,7 @@
  function updateRecent(){recent.replaceChildren(...prefs.recent.map(value=>{const o=make('option');o.value=value;return o;}));}
  updateRecent();dialog.querySelector('[data-clear-recent]').addEventListener('click',()=>{prefs.recent=[];persist();updateRecent();window.DokkanExperience?.notify('Recherches récentes effacées.');});
  let nameSource,nameCache=[];function suggestions(value){const source=typeof CATALOG!=='undefined'?CATALOG.cards:undefined;if(source!==nameSource){nameSource=source;nameCache=(source||[]).map(c=>typeof frCardName==='function'?frCardName(c.fr?.name||c.name||''):c.name||'');}const names=nameCache;const q=value.trim().toLocaleLowerCase('fr');const options=[...new Set([...prefs.recent,...(q.length>1?names.filter(n=>n.toLocaleLowerCase('fr').includes(q)).slice(0,6):[])])].slice(0,12);recent.replaceChildren(...options.map(value=>{const o=make('option');o.value=value;return o;}));}
- const searchIds=new Set(['uxBoxSearch','missingQuery','inventorySearch','globalSearchInput']);
+ const searchIds=new Set(['mcSearch','uxBoxSearch','missingQuery','inventorySearch','globalSearchInput']);
  let recentTimer;
  document.addEventListener('input',e=>{if(!searchIds.has(e.target.id))return;const value=e.target.value.trim().slice(0,100);suggestions(value);clearTimeout(recentTimer);if(value.length>1)recentTimer=setTimeout(()=>{prefs.recent=[value,...prefs.recent.filter(x=>x!==value)].slice(0,6);persist();updateRecent();},900);});
  function pinEvent(id){if(prefs.pins.includes(id))prefs.pins=prefs.pins.filter(x=>x!==id);else if(prefs.pins.length<3)prefs.pins.push(id);else{window.DokkanExperience?.notify('Trois combats sont déjà épinglés. Retire une épingle pour en choisir un autre.');return;}persist();enhance();}

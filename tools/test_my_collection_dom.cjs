@@ -1,0 +1,20 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),{parseHTML}=require('linkedom');
+const {document,window}=parseHTML(fs.readFileSync('index.html','utf8'));const saved=new Map();window.HTMLElement.prototype.scrollIntoView=function(){};const context={console,window,document,navigator:{onLine:true},localStorage:{getItem:k=>saved.get(k)||null,setItem:(k,v)=>saved.set(k,String(v))},fetch:async path=>({ok:true,json:async()=>JSON.parse(fs.readFileSync(path,'utf8'))}),alert:m=>{console.log('ALERT',m)},setTimeout,clearTimeout,Date,location:{reload(){}}};vm.createContext(context);
+vm.runInContext(fs.readFileSync('team-engine.js','utf8'),context);vm.runInContext(fs.readFileSync('app.js','utf8').split('boot().catch(')[0],context);vm.runInContext(fs.readFileSync('event-model.js','utf8'),context);vm.runInContext(fs.readFileSync('team-search.js','utf8'),context);vm.runInContext(fs.readFileSync('teams.js','utf8'),context);vm.runInContext(fs.readFileSync('events.js','utf8'),context);vm.runInContext(fs.readFileSync('catalog-model.js','utf8'),context);vm.runInContext(fs.readFileSync('catalogue.js','utf8'),context);
+context.requestAnimationFrame=fn=>setTimeout(fn,0);context.queueMicrotask=queueMicrotask;context.Event=window.Event;context.MutationObserver=class{observe(){}};window.scrollTo=()=>{};window.scrollY=0;vm.runInContext(fs.readFileSync('team-battle-model.js','utf8'),context);vm.runInContext(fs.readFileSync('team-battles.js','utf8'),context);
+(async()=>{
+await vm.runInContext('boot()',context);
+vm.runInContext("inventory={'1034191':'owned'};DB.cards=[]",context);
+const before=vm.runInContext('JSON.stringify(inventory)',context);
+const proto=window.HTMLSelectElement.prototype,desc=Object.getOwnPropertyDescriptor(proto,'value');Object.defineProperty(proto,'value',{get:desc.get,set(v){for(const o of this.options)o.selected=o.value===String(v)},configurable:true});
+vm.runInContext(fs.readFileSync('experience.js','utf8'),context);
+for(const f of ['my-collection-model.js','my-collection.js'])vm.runInContext(fs.readFileSync(f,'utf8'),context);
+vm.runInContext('switchView("box");window.DokkanMyCollection.render()',context);
+assert(document.querySelector('.mc-legacy').hidden);assert.equal(document.querySelectorAll('.mc-grid .mc-card').length,1);assert(document.querySelector('[data-mc-card="1034191"]'));assert(!document.querySelector('.mc-grid [data-mc-card="1034201"]'));assert.equal(vm.runInContext('JSON.stringify(inventory)',context),before);
+document.querySelector('[data-mc-favorite="1034191"]').click();vm.runInContext('window.DokkanMyCollection.render()',context);assert(vm.runInContext("favorites.has('MANUAL-1034191')",context));assert(!document.getElementById('sheet').classList.contains('on'));
+document.querySelector('[data-mc-tab="favorites"]').click();vm.runInContext('window.DokkanMyCollection.render()',context);assert.equal(document.querySelectorAll('.mc-grid .mc-card').length,1);
+document.querySelector('[data-mc-tab="prepare"]').click();vm.runInContext('window.DokkanMyCollection.render()',context);assert(document.querySelector('.mc-preparation').textContent.includes('À renseigner'));assert(document.querySelector('.mc-preparation [data-mc-card="1034201"]'));
+let selected;window.DokkanCopilot={open:(tool,id)=>selected={tool,id}};document.querySelector('[data-mc-profile="1034191"]').click();assert.deepEqual(selected,{tool:'profiles',id:'1034191'});
+vm.runInContext("inventory['1034201']='owned';window.DokkanMyCollection.render()",context);assert(!window.DokkanMyCollection.rows.some(r=>r.id==='1034191'));assert(window.DokkanMyCollection.rows.some(r=>r.id==='1034201'));
+console.log('My collection DOM: three tabs, hidden legacy capture list, exact ownership, favorites without opening sheets, real profile deep link and awakening supersession: OK');
+})().catch(e=>{console.error(e);process.exitCode=1});

@@ -3,7 +3,7 @@
 'use strict';
 const more=document.getElementById('moreNav'),drawer=document.getElementById('moreViews'),backdrop=document.getElementById('navBackdrop');
 const mobile=window.matchMedia('(max-width: 899px)');
-const labels={home:'Aujourd’hui',tools:'Mes outils',copilot:'Copilote',box:'Ma Box',teams:'Équipes',events:'Événements',catalog:'Catalogue',duplicates:'Potentiel',inventory:'Inventaire',analysis:'Analyse',verify:'À vérifier'};
+const labels={home:'Aujourd’hui',tools:'Mes outils',copilot:'Copilote',box:'Ma collection',teams:'Équipes',events:'Événements',catalog:'Catalogue',duplicates:'Potentiel',inventory:'Inventaire',analysis:'Analyse',verify:'À vérifier'};
 function setMenu(open,restoreFocus=false){
  open=!!open&&mobile.matches;
  more.classList.toggle('on',open||['catalog','duplicates','inventory','analysis','verify','tools','copilot'].includes(document.body.dataset.view));

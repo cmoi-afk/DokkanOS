@@ -1,9 +1,9 @@
 {
   "coverage": {
     "total": 1467,
-    "withImage": 952,
-    "downloadedFiles": 828,
-    "bytes": 18730764
+    "withImage": 954,
+    "downloadedFiles": 830,
+    "bytes": 18872358
   },
   "observedPages": [
     "/event/challenge",
@@ -25,16 +25,6 @@
       "event": "board-missions-3044",
       "url": "https://www.dbz-dokkanbattle.com/img/missions/",
       "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "event": "quest-770",
-      "url": "https://www.dbz-dokkanbattle.com/img/events/quest_top_banner_770.png",
-      "error": "Not a recognisable event banner: (852, 610)"
-    },
-    {
-      "event": "quest-787",
-      "url": "https://www.dbz-dokkanbattle.com/img/events/quest_top_banner_787.png",
-      "error": "Not a recognisable event banner: (852, 610)"
     }
   ]
 }

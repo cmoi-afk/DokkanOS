@@ -1,5 +1,5 @@
 """Local French event banners matched by observed source links, never by similar names."""
-import concurrent.futures,hashlib,io,json,re,time,urllib.request
+import concurrent.futures,hashlib,io,json,re,time,urllib.request,os
 from pathlib import Path
 from urllib.parse import urljoin,urlparse
 from datetime import datetime,timezone
@@ -41,8 +41,11 @@ for e in priority:
 urls={x['url'] for x in observed.values()}
 def download(url):
  try:
+  name=hashlib.sha256(url.encode()).hexdigest()[:20]+'.webp';p=OUT/name
+  if p.exists() and os.environ.get('EVENT_IMAGES_REFRESH')!='1':
+   im=Image.open(p);return url,{'src':'assets/events/'+name,'sourceUrl':url,'width':im.width,'height':im.height,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'locale':'fr'}
   raw=fetch(url);im=Image.open(io.BytesIO(raw));w,h=im.size
-  if w<180 or h<45 or w/h<1.4:raise ValueError('Not a recognisable event banner: '+str(im.size))
+  if w<180 or h<45 or w/h<1.2:raise ValueError('Not a recognisable event banner: '+str(im.size))
   im=im.convert('RGBA');im.thumbnail((960,400));name=hashlib.sha256(url.encode()).hexdigest()[:20]+'.webp';p=OUT/name;im.save(p,'WEBP',quality=87,method=6)
   return url,{'src':'assets/events/'+name,'sourceUrl':url,'width':im.width,'height':im.height,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'locale':'fr'}
  except Exception as e:return url,{'error':str(e)}

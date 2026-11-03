@@ -135,7 +135,7 @@ function editor(root,team,e,friend){
   ${floaters.length?`<p><b>Flotteurs</b> · ${floaters.map(c=>esc(teamRotationName(c))).join(', ')}</p>`:''}`:'<p>Complète ton équipe pour obtenir les duos.</p>'}
   ${constraints.map(r=>`<p class="locker-condition">${r.ok&&!r.unknown?'✓':'À vérifier'} · ${esc(eventRequirementText(r.r))}</p>`).join('')}
   ${mission.manualCheck?'<p>Vérifie les actions demandées par la mission en jeu.</p>':''}
-  <div class="locker-actions"><button data-pilot="combat">Ouvrir le mode combat</button><button data-wb-result ${team.length!==6||teamBusy?'disabled':''}>Noter ce combat</button></div>`;
+  <div class="locker-actions"><button data-pilot="combat">Jouer</button><button data-fight-result ${team.length!==6||teamBusy?'disabled':''}>Noter ce combat</button></div>`;
   composition.after(plan);
   const detail=document.createElement('details');
   detail.className='locker-advanced panel';

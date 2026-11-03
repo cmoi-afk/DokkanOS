@@ -11,3 +11,8 @@ assert.throws(()=>B.parseBackup(JSON.stringify({format:'DokkanOS',version:1,crea
 const data=JSON.parse(fs.readFileSync('progress-data.json')),events=JSON.parse(fs.readFileSync('events.json'));assert(Object.keys(data.medals).length>400);for(const card of Object.values(data.medals))for(const variant of Object.values(card))for(const rows of Object.values(variant))for(const key of data.matches[rows]){const row=data.levels[key];const e=events.events.find(e=>e.id===row.event),s=e.stages.find(s=>s.id===row.stage);assert(s.rewards.some(r=>r.identified&&r.name===row.rewardName&&r.amount===row.amount));}
 const sql=fs.readFileSync('backend/supabase.sql','utf8');assert(sql.includes('enable row level security'));assert(sql.includes('revision=expected_revision'));assert(sql.includes('security invoker'));assert(sql.includes('auth.uid()) = user_id'));
 console.log('Progression: real preparation, unknown values, manual thresholds, history, strict backup, sourced medal links and sync isolation: OK');
+
+const festival={...state,combat:{team:'festival',turn:24,phase:48,counts:{},sp:{slot0:{normal:26,ultimate:16},slot6:{normal:22,ultimate:17}}}};
+assert.deepStrictEqual(M.validate(JSON.parse(JSON.stringify(festival))),festival);
+assert.throws(()=>M.validate({...festival,combat:{...festival.combat,phase:0}}),/Phase/);
+assert.throws(()=>M.validate({...festival,combat:{...festival.combat,sp:{slot6:{normal:-1,ultimate:17}}}}),/SP/);

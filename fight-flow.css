@@ -1,0 +1,33 @@
+.fight-event-next,.fight-card-overview,.fight-tracker {
+  margin: 14px 0; padding: 14px; border: 1px solid var(--line);
+  border-radius: 16px; background: var(--card2);
+}
+.fight-event-next h4,.fight-card-overview h3 { margin: 6px 0 10px; }
+.fight-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.fight-actions button,.fight-event-details summary,.fight-home-stats summary { min-height: 44px; }
+.fight-event-details,.fight-home-stats { margin: 12px 0; }
+.fight-event-details > summary,.fight-home-stats > summary { padding: 12px 0; cursor: pointer; font-weight: 700; }
+.fight-card-overview details { margin-bottom: 8px; }
+.fight-card-overview .fight-actions button { flex: 1 1 160px; }
+.fight-tracker > .fight-actions b { min-width: 64px; text-align: center; }
+.fight-sp-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 8px; margin-top: 12px; }
+.fight-sp-grid article { min-width: 0; padding: 9px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); }
+.fight-sp-grid .visual-card { width: 58px; }
+.fight-sp-grid article > b { display: block; font-size: 12px; overflow-wrap: anywhere; margin: 5px 0; }
+.fight-sp-grid article > div { display: flex; gap: 6px; align-items: center; }
+.fight-sp-grid button { min-height: 44px; font-size: 12px; padding: 5px 8px; }
+.fight-sp-grid article > div button { flex: 1; }
+.fight-sp-grid article > div span { min-width: 2ch; text-align: right; font-variant-numeric: tabular-nums; }
+.fight-sp-grid details { margin-top: 4px; font-size: 12px; color: var(--muted); }
+.fight-result { width: min(100% - 24px,560px); max-height: 85dvh; overflow: auto; color: var(--text); background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
+.fight-result::backdrop { background: rgb(0 0 0 / .55); }
+.fight-result h2 { margin: 0 0 10px; }
+.fight-result fieldset { max-height: 30dvh; overflow: auto; border: 1px solid var(--line); border-radius: 12px; margin: 12px 0; }
+.fight-result textarea,.fight-result select { display: block; width: 100%; font-size: 16px; }
+.fight-result .fight-error { color: var(--danger,#ff9f9f); }
+#copilot main:has(.progress-combat.compact) > .section-title { display: none; }
+@media(max-width: 899px) {
+ .fight-sp-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ .fight-tracker { padding: 10px; }
+ .fight-result { width: 100%; max-width: none; margin: auto auto 0; padding-bottom: max(18px,env(safe-area-inset-bottom)); border-radius: 18px 18px 0 0; }
+}

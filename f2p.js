@@ -136,7 +136,7 @@ function render(){
  root.innerHTML=`<h2>Cartes F2P et farming SP</h2><p>Choisis une carte pour voir où l’obtenir et à qui la donner.</p>
  ${targetFilter?`<p><b>Cible · ${esc(card(targetFilter)?.name||targetFilter)}</b> <button data-f2p-clear-target>Voir toutes les cartes F2P</button></p>`:''}
  <div class="f2p-tabs" role="group" aria-label="Lieu d’obtention">${[['event','Événements'],['exchange','Baba Shop']].map(([v,label])=>`<button data-f2p-kind="${v}" aria-pressed="${kind===v}">${label}</button>`).join('')}</div>
- <p class="muted">${kind==='event'?'Cartes obtenues dans les événements. Les cartes achetées sont dans Baba Shop.':'Cartes à échanger chez Baba : la monnaie et le coût recensés sont indiqués. Certains échanges sont limités ou temporaires ; vérifie leur disponibilité en jeu.'}</p>
+ <p class="muted">${kind==='event'?'Cartes obtenues dans les événements. Les cartes achetées sont dans Baba Shop.':'Échanges sans achat en argent réel : la monnaie et le coût recensés sont indiqués. Les monnaies payantes ou non vérifiées sont exclues. Certains échanges sont limités ou temporaires ; vérifie leur disponibilité en jeu.'}</p>
  <div class="f2p-filters"><label>Rechercher<input id="f2pSearch" type="search" placeholder="Carte, événement, ID…" value="${esc(query)}"></label>
  <label>Type<select id="f2pType">${['','AGI','TEC','INT','PUI','END'].map(t=>teamOption(t,t||'Tous',type)).join('')}</select></label>
  ${kind==='event'?`<label class="team-checkbox"><input id="f2pOpen" type="checkbox"${checked(openOnly)}> Événements en jeu</label>`:''}</div>

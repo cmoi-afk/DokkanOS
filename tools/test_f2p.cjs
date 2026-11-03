@@ -27,3 +27,10 @@ assert.equal(M.inAcquisition({acquisition:'event',locations:[event]},'exchange')
 assert.equal(M.acquisitionLabel(shop,'exchange'),'Baba Shop · Gemme incroyable (verte) · 300');
 assert.equal(M.inAcquisition({acquisition:'event'},'event'),true);
 console.log('F2P: event/shop isolation, mixed sources and currency labels OK');
+
+assert.equal(M.freeExchange({name:'Super Pierre Dragon sélection 6'}),false);
+assert.equal(M.freeExchange({name:"Coupon d'échange"}),false);
+assert.equal(M.freeExchange({name:'Pierre Dragon sélection 11'}),true);
+assert.equal(M.freeExchange({name:'Gemme incroyable (verte)',requiresPurchase:true}),false);
+assert.equal(M.inAcquisition({acquisition:'exchange'},'exchange'),false);
+assert.deepEqual(M.acquisitionLocations({locations:[{acquisition:'exchange',name:'Super Pierre Dragon sélection 6'},shop]},'exchange'),[shop]);

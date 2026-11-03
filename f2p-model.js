@@ -28,14 +28,22 @@ function index(data,catalogue=[]){
  }
  return {cards,targetsByName,methodsByCard};
 }
+// Only positively identified no-payment exchange routes belong in the F2P browser.
+// Selection 11: https://www.dbz-dokkanbattle.com/announcement/107165
+// Super selection stones are paid and must never match the ordinary selection stone.
+function freeExchange(location){
+ if(location.requiresPurchase===true)return false;
+ return /^(Souvenir de combat|Gemme incroyable \(verte\)|Majilite|Chocolats extra fins|Peluche Penenko \(grande\)|Pierre de richesse|Pierre Dragon sélection 11)$/.test(location.name||'')||
+  /^Pièce (Festival Dokkan|Célébrations?) \(/.test(location.name||'');
+}
 function acquisitionLocations(row,kind){
- return (row.locations||[]).filter(l=>(l.acquisition||row.acquisition)===kind);
+ return (row.locations||[]).filter(l=>(l.acquisition||row.acquisition)===kind&&(kind!=='exchange'||freeExchange(l)));
 }
 function inAcquisition(row,kind){
- return acquisitionLocations(row,kind).length>0||(!(row.locations||[]).length&&row.acquisition===kind);
+ return acquisitionLocations(row,kind).length>0||(kind==='event'&&!(row.locations||[]).length&&row.acquisition===kind);
 }
 function acquisitionLabel(location,kind){
- const name=location.name||'Lieu à préciser';
+ const name=(location.name||'Lieu à préciser')+(location.name==='Pierre Dragon sélection 11'?' (gratuite : 30 Laits, mission quotidienne de l’école Tortue)':'');
  return kind==='exchange'?'Baba Shop · '+name+(location.price?' · '+location.price:' · Coût à vérifier'):name;
 }
 function rate(target,entry){
@@ -50,7 +58,7 @@ function copies(current,goal,chance){
  const gap=goal-current;
  return {count:Math.ceil(gap*100/chance),guaranteed:chance===100};
 }
-const api={index,rate,copies,acquisitionLocations,inAcquisition,acquisitionLabel};
+const api={freeExchange,index,rate,copies,acquisitionLocations,inAcquisition,acquisitionLabel};
 if(typeof module!=='undefined')module.exports=api;
 root.DokkanF2PModel=api;
 })(typeof window==='undefined'?globalThis:window);

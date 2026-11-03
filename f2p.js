@@ -1,5 +1,3 @@
-<stdin>:3: SyntaxWarning: invalid escape sequence '\$'
-<stdin>:3: SyntaxWarning: invalid escape sequence '\$'
 /* Browse acquisition paths and turn a known training rate into a copy budget. */
 (function(){
 'use strict';

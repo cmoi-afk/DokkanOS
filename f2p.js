@@ -2,7 +2,7 @@
 (function(){
 'use strict';
 const M=window.DokkanF2PModel,esc=teamEsc;
-let bank,data,load,query='',type='',kind='',openOnly=false,limit=30,selected='',target='',methodIndex=0,targetFilter='';
+let bank,data,load,query='',type='',kind='',openOnly=false,limit=30,selected='',target='',methodIndex=0,targetFilter='',targetLimit=12;
 let current=1,goal=10,manualRate='',ownedOnly=false,graph,graphSource,cacheSource,cacheMeta;
 const resolved=new Map();
 const host=()=>document.querySelector('#f2pCatalogue');
@@ -97,8 +97,13 @@ function detail(id){
  ${forms.length?`<details><summary>Formes éveillées</summary><div class="f2p-actions">${forms.map(c=>`<button data-f2p-card="${esc(c.id)}">${esc(c.rarity)} · ${esc(c.name)}</button>`).join('')}</div></details>`:''}
  <h4>Quelles cartes peut-elle entraîner ?</h4>
  <label class="team-checkbox"><input type="checkbox" id="f2pOwned"${checked(ownedOnly)}> Seulement mes cartes confirmées</label>
- ${ids.length?`<label>Carte cible<select id="f2pTarget">${ids.map(t=>{const c=card(t);return teamOption(t,c?[c.name,c.rarity,c.type,c.title,t].filter(Boolean).join(' · '):[bank.cards.get(t)?.name,t].filter(Boolean).join(' · '),target);}).join('')}</select></label>
- <div class="f2p-actions">${card(target)?`<button data-f2p-card="${esc(target)}">Voir la carte cible</button>`:`<a href="https://www.dbz-dokkanbattle.com/card/${esc(target)}" target="_blank" rel="noopener">Fiche source de la cible</a>`}</div>
+ ${ids.length?`<div class="f2p-grid" role="group" aria-label="Cartes compatibles">${(target&&!ids.slice(0,targetLimit).includes(target)?[target,...ids.slice(0,targetLimit)]:ids.slice(0,targetLimit)).map(t=>{
+  const c=card(t),label=c?.name||bank.cards.get(t)?.name||t;
+  return `<button class="f2p-card" data-f2p-target="${esc(t)}" aria-pressed="${t===target}">${c?teamImage(c):''}<b>${esc(label)}</b><small>${esc([c?.rarity,c?.type,c?.title,t].filter(Boolean).join(' · '))}</small></button>`;
+ }).join('')}</div>
+ ${ids.length>targetLimit?'<button data-f2p-more-targets>Afficher plus de cartes compatibles</button>':''}
+ <h4 id="f2pTraining" tabindex="-1">Entraîner ${esc(card(target)?.name||bank.cards.get(target)?.name||target)} · ${esc(card(target)?.type||'')} ${esc(card(target)?.rarity||'')}</h4>
+<div class="f2p-actions">${card(target)?`<button data-f2p-card="${esc(target)}">Voir la carte cible</button>`:`<a href="https://www.dbz-dokkanbattle.com/card/${esc(target)}" target="_blank" rel="noopener">Fiche source de la cible</a>`}</div>
  ${methods.length?`<label>Forme donnée en entraînement<select id="f2pMethod">${methods.map((e,i)=>teamOption(i,[e.method.rarity,e.method.type,e.method.name,e.method.donor,e.method.donor!==id?'éveil requis':''].filter(Boolean).join(' · '),methodIndex)).join('')}</select></label>`:''}
  <p>${documented===null?'Taux à vérifier pour cette forme cible.':'Taux indiqué pour cette paire : '+documented+' %.'}</p>
  <div class="f2p-calculator"><label>SP actuelle<input id="f2pCurrent" type="number" min="1" max="${max}" value="${current}"></label>
@@ -158,12 +163,14 @@ document.addEventListener('change',e=>{
   limit=30;list();
  }
  if(id==='f2pOwned'){ownedOnly=e.target.checked;drawDetail();}
- if(id==='f2pTarget'){target=e.target.value;methodIndex=0;resetGoal(target);drawDetail();}
+ 
  if(id==='f2pMethod'){methodIndex=Number(e.target.value);manualRate='';drawDetail();}
 });
 document.addEventListener('click',e=>{
  const d=e.target.closest?.('button')?.dataset;if(!d)return;
- if(d.f2pSelect){selected=d.f2pSelect;target=targetFilter;methodIndex=0;resetGoal(target);ownedOnly=false;drawDetail();list();document.getElementById('f2pDetails')?.scrollIntoView({block:'start'});ensureEvents();}
+ if(d.f2pTarget){target=d.f2pTarget;methodIndex=0;resetGoal(target);drawDetail();document.getElementById('f2pTraining')?.focus();}
+ if(d.f2pMoreTargets!==undefined){targetLimit+=12;drawDetail();}
+ if(d.f2pSelect){targetLimit=12;selected=d.f2pSelect;target=targetFilter;methodIndex=0;resetGoal(target);ownedOnly=false;drawDetail();list();document.getElementById('f2pDetails')?.scrollIntoView({block:'start'});ensureEvents();}
  if(d.f2pClearTarget!==undefined){targetFilter='';selected='';render();}
  if(d.f2pClose!==undefined){selected='';drawDetail();list();}
  if(d.f2pMore!==undefined){limit+=30;list();}

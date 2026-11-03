@@ -21,3 +21,7 @@
  .f2p-filters { grid-template-columns: repeat(2,minmax(0,1fr)); }
  .f2p-filters label:first-child { grid-column: 1/-1; }
 }
+
+.f2p-tabs { display: flex; gap: 8px; margin: 16px 0 8px; }
+.f2p-tabs button { flex: 1; min-height: 48px; }
+.f2p-tabs button[aria-pressed=true] { color: var(--accent); border-color: var(--accent); background: var(--card2); font-weight: 700; }

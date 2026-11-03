@@ -28,6 +28,16 @@ function index(data,catalogue=[]){
  }
  return {cards,targetsByName,methodsByCard};
 }
+function acquisitionLocations(row,kind){
+ return (row.locations||[]).filter(l=>(l.acquisition||row.acquisition)===kind);
+}
+function inAcquisition(row,kind){
+ return acquisitionLocations(row,kind).length>0||(!(row.locations||[]).length&&row.acquisition===kind);
+}
+function acquisitionLabel(location,kind){
+ const name=location.name||'Lieu à préciser';
+ return kind==='exchange'?'Baba Shop · '+name+(location.price?' · '+location.price:' · Coût à vérifier'):name;
+}
 function rate(target,entry){
  if(String(target)===String(entry.method.donor))return 100;
  return String(target)===entry.reference&&Number.isFinite(entry.method.sourceRate)&&entry.method.sourceRate>0&&entry.method.sourceRate<=100
@@ -40,7 +50,7 @@ function copies(current,goal,chance){
  const gap=goal-current;
  return {count:Math.ceil(gap*100/chance),guaranteed:chance===100};
 }
-const api={index,rate,copies};
+const api={index,rate,copies,acquisitionLocations,inAcquisition,acquisitionLabel};
 if(typeof module!=='undefined')module.exports=api;
 root.DokkanF2PModel=api;
 })(typeof window==='undefined'?globalThis:window);

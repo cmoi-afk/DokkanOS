@@ -2,7 +2,7 @@
 (function(){
 'use strict';
 const M=window.DokkanF2PModel,esc=teamEsc;
-let bank,data,load,query='',type='',kind='',openOnly=false,limit=30,selected='',target='',methodIndex=0,targetFilter='',targetLimit=12;
+let bank,data,load,query='',type='',kind='event',openOnly=false,limit=30,selected='',target='',methodIndex=0,targetFilter='',targetLimit=12;
 let current=1,goal=10,manualRate='',ownedOnly=false,graph,graphSource,cacheSource,cacheMeta;
 const resolved=new Map();
 const host=()=>document.querySelector('#f2pCatalogue');
@@ -31,12 +31,12 @@ function eventStatus(location){
  return ({active:'En jeu',permanent:'Permanent',closed:'Fermé',upcoming:'À venir',unknown:'Disponibilité à vérifier'})[status];
 }
 function locations(row){
- return (row.locations||[]).map(l=>{
-  const label=l.name||'Consulter la source';
+ return M.acquisitionLocations(row,kind).map(l=>{
+  const label=M.acquisitionLabel(l,kind);
   const event=l.event?'<button data-sa-event="'+esc(l.event)+'">Ouvrir l’événement</button>':'';
   const source=/^https:\/\/(?:www\.)?dbz-dokkanbattle\.com\//.test(l.source||'')
    ?'<a href="'+esc(l.source)+'" target="_blank" rel="noopener">'+(event?'Source':'Voir la source')+'</a>':'';
-  return '<li><b>'+esc(label)+'</b>'+ (l.price?' · '+esc(l.price):'')+
+  return '<li><b>'+esc(label)+'</b>'+
    (l.event?' <small>'+eventStatus(l)+'</small>':'')+'<div class="f2p-actions">'+event+source+'</div></li>';
  }).join('');
 }
@@ -116,29 +116,30 @@ function matching(){
  return [...bank.cards.values()].filter(r=>{
   const c=card(r.id);
   const supportsTarget=!targetFilter||r.id===targetFilter||compatible(r.id).some(e=>e.method.donor===targetFilter||(bank.targetsByName.get(e.name)||[]).includes(targetFilter));
-  return supportsTarget&&(!type||(c?.type||r.type)===type)&&(!kind||r.acquisition===kind||r.locations?.some(l=>l.acquisition===kind))&&
-   (!openOnly||r.locations?.some(l=>['En jeu','Permanent'].includes(eventStatus(l))))&&
-   (!q||searchable([r.name,c?.title,r.id,...(r.locations||[]).map(l=>l.name)].join(' ')).includes(q));
+  return supportsTarget&&(!type||(c?.type||r.type)===type)&&M.inAcquisition(r,kind)&&
+   (kind!=='event'||!openOnly||M.acquisitionLocations(r,kind).some(l=>['En jeu','Permanent'].includes(eventStatus(l))))&&
+   (!q||searchable([r.name,c?.title,r.id,...M.acquisitionLocations(r,kind).map(l=>M.acquisitionLabel(l,kind))].join(' ')).includes(q));
  }).sort((a,b)=>a.name.localeCompare(b.name,'fr')||a.id.localeCompare(b.id));
 }
 function list(){
  const root=host()?.querySelector('#f2pList');if(!root||!bank)return;
  const rows=matching();
- root.innerHTML=`<p class="muted">${rows.length} carte(s) · ${bank.cards.size} sources d’obtention recensées</p>
+ root.innerHTML=`<p class="muted">${rows.length} carte(s) · ${kind==='event'?'Événements':'Baba Shop'}</p>
  <div class="f2p-grid">${rows.slice(0,limit).map(r=>{
   const c=card(r.id);
-  return `<button class="f2p-card" data-f2p-select="${esc(r.id)}" aria-pressed="${r.id===selected}">${c?teamImage(c):''}<b>${esc(r.name)}</b><small>${esc([c?.rarity||r.rarity,c?.type||r.type,r.locations?.[0]?.name].filter(Boolean).join(' · '))}</small></button>`;
+  return `<button class="f2p-card" data-f2p-select="${esc(r.id)}" aria-pressed="${r.id===selected}">${c?teamImage(c):''}<b>${esc(r.name)}</b><small>${esc([c?.rarity||r.rarity,c?.type||r.type,...M.acquisitionLocations(r,kind).map(l=>M.acquisitionLabel(l,kind))].filter(Boolean).join(' · '))}</small></button>`;
  }).join('')}</div>${rows.length>limit?'<button data-f2p-more>Afficher la suite</button>':''}`;
 }
 function render(){
  const root=host();if(!root)return;
  if(!bank){root.innerHTML=load?'<p>Chargement des cartes F2P…</p>':'<p>Chargement…</p>';if(!load)ensure();else if(data===null)root.innerHTML='<p>Les données F2P sont indisponibles. Rouvre l’app avec une connexion.</p>';return;}
- root.innerHTML=`<h2>Cartes F2P et farming SP</h2><p>Choisis une carte gratuite pour voir où l’obtenir et à qui la donner.</p>
+ root.innerHTML=`<h2>Cartes F2P et farming SP</h2><p>Choisis une carte pour voir où l’obtenir et à qui la donner.</p>
  ${targetFilter?`<p><b>Cible · ${esc(card(targetFilter)?.name||targetFilter)}</b> <button data-f2p-clear-target>Voir toutes les cartes F2P</button></p>`:''}
+ <div class="f2p-tabs" role="group" aria-label="Lieu d’obtention">${[['event','Événements'],['exchange','Baba Shop']].map(([v,label])=>`<button data-f2p-kind="${v}" aria-pressed="${kind===v}">${label}</button>`).join('')}</div>
+ <p class="muted">${kind==='event'?'Cartes obtenues dans les événements. Les cartes achetées sont dans Baba Shop.':'Cartes à échanger chez Baba : la monnaie et le coût recensés sont indiqués. Certains échanges sont limités ou temporaires ; vérifie leur disponibilité en jeu.'}</p>
  <div class="f2p-filters"><label>Rechercher<input id="f2pSearch" type="search" placeholder="Carte, événement, ID…" value="${esc(query)}"></label>
  <label>Type<select id="f2pType">${['','AGI','TEC','INT','PUI','END'].map(t=>teamOption(t,t||'Tous',type)).join('')}</select></label>
- <label>Obtention<select id="f2pKind">${[['','Toutes'],['event','Événement'],['exchange','Échange']].map(([v,l])=>teamOption(v,l,kind)).join('')}</select></label>
- <label class="team-checkbox"><input id="f2pOpen" type="checkbox"${checked(openOnly)}> Événements en jeu</label></div>
+ ${kind==='event'?`<label class="team-checkbox"><input id="f2pOpen" type="checkbox"${checked(openOnly)}> Événements en jeu</label>`:''}</div>
  <div id="f2pDetails">${selected?detail(selected):''}</div><div id="f2pList"></div>
  <p class="muted">Version Global · collecte du ${esc(eventDate(data.acquisitionVerifiedAt||data.verifiedAt,'day'))}. Les formes éveillées apparaissent dans la fiche de la carte d’origine. <a href="https://www.dbz-dokkanbattle.com/card-drops" target="_blank" rel="noopener">Source des cartes gratuites</a></p>`;
  list();budget();
@@ -156,9 +157,8 @@ document.addEventListener('input',e=>{
 });
 document.addEventListener('change',e=>{
  const id=e.target.id;
- if(id==='f2pType'||id==='f2pKind'||id==='f2pOpen'){
+ if(id==='f2pType'||id==='f2pOpen'){
   if(id==='f2pType')type=e.target.value;
-  if(id==='f2pKind')kind=e.target.value;
   if(id==='f2pOpen'){openOnly=e.target.checked;if(openOnly)ensureEvents();}
   limit=30;list();
  }
@@ -168,6 +168,7 @@ document.addEventListener('change',e=>{
 });
 document.addEventListener('click',e=>{
  const d=e.target.closest?.('button')?.dataset;if(!d)return;
+ if(d.f2pKind){kind=d.f2pKind;selected='';limit=30;render();}
  if(d.f2pTarget){target=d.f2pTarget;methodIndex=0;resetGoal(target);drawDetail();document.getElementById('f2pTraining')?.focus();}
  if(d.f2pMoreTargets!==undefined){targetLimit+=12;drawDetail();}
  if(d.f2pSelect){targetLimit=12;selected=d.f2pSelect;target=targetFilter;methodIndex=0;resetGoal(target);ownedOnly=false;drawDetail();list();document.getElementById('f2pDetails')?.scrollIntoView({block:'start'});ensureEvents();}
@@ -177,5 +178,5 @@ document.addEventListener('click',e=>{
  if(d.f2pCard)openCard('CATALOG-'+d.f2pCard);
 });
 window.addEventListener('dokkanos-events-loaded',()=>{if(host()){list();drawDetail();}});
-window.DokkanF2P={render,focusTarget(id){targetFilter=String(id||'');selected='';target='';query='';type='';kind='';openOnly=false;limit=30;},html(){queueMicrotask(renderIfOpen);return '<div id="f2pCatalogue"><p>Chargement des cartes F2P…</p></div>';}};
+window.DokkanF2P={render,focusTarget(id){targetFilter=String(id||'');selected='';target='';query='';type='';kind='event';openOnly=false;limit=30;},html(){queueMicrotask(renderIfOpen);return '<div id="f2pCatalogue"><p>Chargement des cartes F2P…</p></div>';}};
 })();

@@ -7,3 +7,17 @@ assert.equal(M.filter([e,{...e,id:'hidden',hidden:true}],{query:'boo',status:'av
 const cards=Array.from({length:6},(_,i)=>({id:String(i),categories:['Saga de Boo',...(i<3?['Dernier atout']:[])]}));assert(E.constraints(cards,merged).ok);assert(!E.constraints(cards.slice(0,5),merged).ok);
 const data=JSON.parse(fs.readFileSync('events.json'));for(const event of data.events){assert(Array.isArray(event.missions));for(const stage of event.stages||[]){assert(stage.id);assert(Array.isArray(stage.requirements));for(const r of stage.rewards||[])assert(r.amount>0);}}
 console.log('Event status, multi-mission constraints, stage dodge rule, unclaimed rewards, explicit progress, search and schema: OK');
+
+const calendar=require('../event-calendar.js');
+const campaign=calendar.apply([{id:'quest-1524',permanent:true,missions:[],stages:[]}],'2026-10-30');
+const burst=campaign.find(e=>e.id==='burst-quest-1524');
+const open=Date.parse(burst.start),close=Date.parse(burst.end);
+assert.equal(M.status(burst,open-1),'upcoming');
+assert.equal(M.status(burst,open),'active');
+assert.equal(M.status(burst,close-1),'active');
+assert.equal(M.status(burst,close),'closed');
+assert.equal(M.status(campaign.find(e=>e.id==='quest-1524'),close),'permanent');
+assert.equal(M.missionAvailable({end:burst.end},close),false);
+assert.equal(M.status({...burst,status:'upcoming'},open),'active');
+assert.equal(M.filter([burst],{status:'available'},{},close).length,0);
+assert.equal(M.filter([burst],{status:'closed'},{},close).length,1);

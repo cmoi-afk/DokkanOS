@@ -1,3 +1,5 @@
+<stdin>:3: SyntaxWarning: invalid escape sequence '\$'
+<stdin>:3: SyntaxWarning: invalid escape sequence '\$'
 /* Browse acquisition paths and turn a known training rate into a copy budget. */
 (function(){
 'use strict';
@@ -81,6 +83,7 @@ function budget(){
  const max=currentMax(card(target));
  const valid=Number.isInteger(current)&&Number.isInteger(goal)&&current>=1&&goal>=current&&goal<=max;
  const estimate=valid?M.copies(current,goal,chance):null;
+ if(estimate?.count===0){root.textContent='Aucun exemplaire nécessaire : le niveau visé est déjà atteint.';return;}
  root.innerHTML=estimate?`<b>${estimate.count} exemplaire${estimate.count===1?'':'s'} ${estimate.guaranteed?'':'en moyenne'}</b><span> · ${chance} % par copie SP 1</span>`:
   valid?'<span>Saisis le taux affiché en jeu pour estimer les copies.</span>':'<span>Choisis deux niveaux de SP valides pour cette forme.</span>';
 }

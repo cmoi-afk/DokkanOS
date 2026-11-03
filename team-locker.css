@@ -1,0 +1,44 @@
+.locker-heading { margin: 16px 0; }
+.locker-heading h1 { margin: 0 0 6px; font-size: clamp(28px,5vw,38px); }
+.locker-heading p,.locker-editor-title p { margin: 0; color: var(--muted); }
+.locker-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; margin: 16px 0; }
+.locker-card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; min-width: 0; }
+.locker-card .event-art { margin: 0; border: 0; border-radius: 0; }
+.locker-card-body { padding: 16px; }
+.locker-card h2 { margin: 5px 0 12px; font-size: 21px; }
+.locker-portraits,.locker-roster { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 6px; margin: 12px 0; }
+.locker-portraits .visual-card,.locker-roster .visual-card { width: 100%; }
+.locker-empty-slot { display: grid; place-items: center; min-width: 0; aspect-ratio: 1; border: 1px dashed var(--line); border-radius: 10px; color: var(--muted); }
+.locker-actions,.locker-choices { display: flex; flex-wrap: wrap; gap: 8px; }
+.locker-actions button,.locker-choices button,.locker-plan button { min-height: 44px; }
+.locker-card .locker-actions button { flex: 1; }
+.locker-choices { display: grid; max-width: 580px; }
+.locker-choices button { text-align: left; padding: 16px; }
+.locker-choices span { display: block; margin-top: 4px; font-size: 12px; }
+#teams main[data-locker-page] > .bf-modes { margin-top: 12px; }
+#teams main[data-locker-page="editor"][data-team-mode="classic"] > .bf-modes { display: none; }
+.locker-editor-title { width: 100%; }
+.locker-editor-title .event-art { margin: 12px 0 0; max-width: 580px; }
+.locker-editor-title h2 { margin: 8px 0; }
+.locker-advanced > summary { min-height: 44px; padding: 10px 0; cursor: pointer; font-weight: 700; }
+.locker-advanced .panel { margin: 10px 0; }
+.locker-plan { scroll-margin-top: 85px; }
+.locker-plan p { margin: 9px 0; }
+.locker-condition { color: var(--muted); font-size: 13px; }
+.locker-unit { min-width: 0; }
+.locker-unit summary { cursor: pointer; list-style: none; text-align: center; }
+.locker-unit summary::-webkit-details-marker { display: none; }
+.locker-unit small { display: block; font-size: 10px; color: var(--muted); }
+.locker-unit > div { display: grid; gap: 5px; }
+.locker-unit button { min-height: 44px; padding: 4px; font-size: 12px; }
+.locker-unit[open] { grid-column: span 2; }
+.locker-unit[open] .visual-card { max-width: 95px; }
+[data-locker-page="editor"] #teamComposition .team-toolbar label { flex: 1 1 170px; }
+@media(max-width: 899px) {
+ .locker-grid { grid-template-columns: minmax(0,1fr); }
+ .locker-card-body { padding: 13px; }
+ .locker-roster { grid-template-columns: repeat(3,minmax(0,1fr)); }
+ .locker-unit[open] { grid-column: auto; }
+ .locker-roster .visual-card { max-width: 102px; }
+}
+.locker-last { color: var(--muted); font-size: 13px; margin: 8px 0 12px; }

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Collect named F2P SP methods, keeping source rates separate from other forms."""
-import concurrent.futures,gzip,hashlib,html,json,re,time,urllib.request,os
+import concurrent.futures,gzip,hashlib,html,json,re,time,urllib.request,os,sys
 from pathlib import Path
 from datetime import datetime,timezone
 from bs4 import BeautifulSoup
@@ -42,21 +42,26 @@ def free_page(page):
  for wrap in BeautifulSoup(d['html'],'html.parser').select('.f2p-card-wrap'):
   a=wrap.select_one('.f2p-card-link');unit=wrap.select_one('.item-container')
   if not a or not unit:continue
-  cid=a['href'].split('/')[-1];row={'id':cid,'name':norm(a.get('data-name') or a.get('title','')),'acquisition':wrap.get('data-acquisition'),'source':BASE+'/card-drops','locations':[]}
+  cid=a['href'].split('/')[-1];row={'id':cid,'name':norm(a.get('data-name') or a.get('title','')),'acquisition':wrap.get('data-acquisition'),'rarity':{'0':'N','1':'R','2':'SR','3':'SSR','4':'UR','5':'LR'}.get(unit.get('data-rarity'),'Inconnue'),'type':{'0':'AGI','1':'TEC','2':'INT','3':'PUI','4':'END'}.get(str(int(unit.get('data-element') or 0)%10)),'source':BASE+'/card-drops','locations':[]}
   for q in wrap.select('.f2p-card-source a[href]'):
    path=q['href'];row['locations'].append({'name':q.get('title') or norm(q.get_text()),'source':BASE+path,'event':path.strip('/').replace('/','-') if re.fullmatch(r'/(quest|zbattle)/\d+',path) else None,'sourceStatus':wrap.get('data-event-status','unknown')})
   for ex in wrap.select('.f2p-exchange-row'):
    n=ex.select_one('.f2p-exchange-label');price=ex.select_one('.f2p-exchange-price');row['locations'].append({'name':norm(n.get('title') or n.get_text()) if n else 'Trésor','price':norm(price.get_text()) if price else None,'source':BASE+'/baba-shop','acquisition':'exchange'})
   out.append(row)
  return d,out
-def main():
- first,rows=free_page(1);free={r['id']:r for r in rows};errors={}
+def collect_inventory():
+ first,rows=free_page(1);free={r['id']:r for r in rows}
  with concurrent.futures.ThreadPoolExecutor(max_workers=10) as pool:
   for d,rs in pool.map(free_page,range(2,first['pages']+1)):
    for r in rs:
     if r['id'] in free:free[r['id']]['locations']+=r['locations']
     else:free[r['id']]=r
  print('F2P acquisition index:',len(free),'cards;',first['pages'],'pages',flush=True)
+ if len(free)<400 or any(not r['id'].isdigit() or not r['name'] for r in free.values()):raise ValueError('Collecte F2P incomplète')
+ return free
+
+def main():
+ free=collect_inventory();errors={}
  groups={}
  for c in CAT:
   m=META.get(str(c['id']),c);groups.setdefault(norm(m.get('name') or m.get('fr',{}).get('name') or c.get('fr',{}).get('name') or c['name']),[]).append(str(c['id']))
@@ -99,9 +104,18 @@ def main():
    method['origins']=origins
    if paths.get(cid):method['awakeningSource']=BASE+'/card/'+cid
    method['acquisition']='event' if any(o['acquisition']=='event' for o in origins) else 'exchange' if origins else 'f2p-source'
- D={'version':1,'region':'GLOBAL','verifiedAt':NOW,'source':BASE+'/card-drops','cards':{str(c['id']):norm(META.get(str(c['id']),{}).get('name') or c.get('fr',{}).get('name') or c['name']) for c in CAT},'characters':bank,'coverage':{'cards':len(CAT),'characters':len(groups),'reviewed':len(groups)-len(errors),'unknown':len(errors),'f2pAcquisitionCards':len(free)}}
+ D={'version':1,'region':'GLOBAL','verifiedAt':NOW,'source':BASE+'/card-drops','cards':{str(c['id']):norm(META.get(str(c['id']),{}).get('name') or c.get('fr',{}).get('name') or c['name']) for c in CAT},'characters':bank,'acquisition':free,'acquisitionVerifiedAt':NOW,'coverage':{'cards':len(CAT),'characters':len(groups),'reviewed':len(groups)-len(errors),'unknown':len(errors),'f2pAcquisitionCards':len(free)}}
  (ROOT/'sa-farm.json').write_text(json.dumps(D,ensure_ascii=False,separators=(',',':'))+'\n')
  (ROOT/'docs/sa-farm-audit.json').write_text(json.dumps({'verifiedAt':NOW,'coverage':D['coverage'],'errors':errors,'donorPathErrors':path_errors,'unresolvedDonorOrigins':len({m['donor'] for r in bank.values() for m in r['methods'] if not m['origins']}),'availableCharacters':sum(r['status']=='available' for r in bank.values()),'noneListedCharacters':sum(r['status']=='none-listed' for r in bank.values())},ensure_ascii=False,indent=2)+'\n')
  assert len(D['cards'])==len(CAT);print('SP farming coverage',D['coverage'],flush=True)
 
-if __name__=='__main__':main()
+def refresh_inventory():
+ path=ROOT/'sa-farm.json'
+ data=json.loads(path.read_text())
+ data['acquisition']=collect_inventory()
+ data['acquisitionVerifiedAt']=NOW
+ path.write_text(json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n')
+
+if __name__=='__main__':
+ if '--inventory-only' in sys.argv:refresh_inventory()
+ else:main()

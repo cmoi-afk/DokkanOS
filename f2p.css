@@ -1,0 +1,23 @@
+#f2pCatalogue { scroll-margin-top: 86px; }
+.f2p-filters,.f2p-calculator { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; margin: 12px 0; align-items: end; }
+#f2pCatalogue label { min-width: 0; }
+#f2pCatalogue input:not([type=checkbox]),#f2pCatalogue select { width: 100%; font-size: 16px; min-height: 44px; }
+.f2p-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 10px; margin: 14px 0; }
+.f2p-grid .f2p-card { display: grid; place-items: center; align-content: start; gap: 6px; min-width: 0; padding: 10px; text-align: center; background: var(--card2); }
+.f2p-card b,.f2p-card small { overflow-wrap: anywhere; }
+.f2p-card small { color: var(--muted); font-size: 11px; }
+.f2p-card .visual-card { width: min(104px,100%); }
+.f2p-card[aria-pressed=true] { border-color: var(--accent); }
+#f2pDetails { scroll-margin-top: 86px; }
+.f2p-detail { padding: 14px; border: 1px solid var(--line); border-radius: 16px; background: var(--card2); }
+.f2p-detail h3 { margin-top: 0; }
+.f2p-detail ul { padding-left: 20px; }
+.f2p-detail li { margin: 10px 0; }
+.f2p-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 7px 0; }
+.f2p-actions button { min-height: 44px; }
+#f2pBudget { padding: 12px; background: var(--card); border-radius: 10px; }
+@media(max-width: 899px) {
+ .f2p-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ .f2p-filters { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ .f2p-filters label:first-child { grid-column: 1/-1; }
+}

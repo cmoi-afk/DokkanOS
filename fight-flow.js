@@ -64,7 +64,7 @@ function cardOverview(){
  block.innerHTML=`<h3>Préparer cette carte</h3>
  ${teams.length?`<details><summary>Dans ${teams.length} équipe(s)</summary><div class="fight-actions">${teams.map(t=>`<button data-c-load-team="${esc(t.id)}">${esc(t.name)}</button>`).join('')}</div></details>`:''}
  <div class="fight-actions">${next.map(c=>`<button data-fight-card="${esc(c.id)}">Éveil suivant · ${esc(c.rarity)} ${esc(c.name)}</button>`).join('')}
- <button data-pilot="farmSources" data-pilot-card="${esc(id)}">Où farmer les médailles</button></div>`;
+ <button data-pilot="farmSources" data-pilot-card="${esc(id)}">Où farmer les médailles</button><button data-c-tool="f2p" data-f2p-target-shortcut="${esc(id)}">Cartes F2P pour la SP</button></div>`;
  sheet.querySelector('.hero')?.after(block);
 }
 let resultDialog;
@@ -126,7 +126,7 @@ document.addEventListener('click',async e=>{
   b.textContent=eventSettings.pinnedObjective?'Retirer de l’accueil':'Épingler sur l’accueil';
  }
  if(d.fightCard)openCard('CATALOG-'+d.fightCard);
- if(d.cLoadTeam&&b.closest('#sheet'))closeSheet();
+ if((d.cLoadTeam||d.cTool==='f2p')&&b.closest('#sheet'))closeSheet();
  if(d.fightResult!==undefined)openResult();
  if(d.fightCancel!==undefined)resultDialog?.close();
  if(d.fightPlayCurrent!==undefined){window.DokkanCopilot.open('combat');return;}

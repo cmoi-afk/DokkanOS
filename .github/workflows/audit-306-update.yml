@@ -25,7 +25,20 @@ jobs:
           NODE_PATH: /tmp/dokkan-update/node_modules
         run: |
           ln -s "$PWD/previous" /tmp/dokkan-live
-          python -m http.server 8738 --directory /tmp/dokkan-live --bind 127.0.0.1 >/tmp/dokkan-update-http.log 2>&1 &
+          python - >/tmp/dokkan-update-http.log 2>&1 <<'PY' &
+          from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+          class Handler(SimpleHTTPRequestHandler):
+              def __init__(self,*args,**kwargs):
+                  super().__init__(*args,directory='/tmp/dokkan-live',**kwargs)
+              def send_head(self):
+                  if 'If-Modified-Since' in self.headers:
+                      del self.headers['If-Modified-Since']
+                  return super().send_head()
+              def end_headers(self):
+                  self.send_header('Cache-Control','no-cache')
+                  super().end_headers()
+          ThreadingHTTPServer(('127.0.0.1',8738),Handler).serve_forever()
+          PY
           node <<'JS'
           const assert=require('node:assert/strict');
           const fs=require('node:fs');

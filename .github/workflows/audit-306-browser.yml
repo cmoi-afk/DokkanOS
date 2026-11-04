@@ -1,0 +1,71 @@
+name: Audit navigateur DokkanOS 3.0.6
+on:
+  push:
+    branches: [audit/v3.0.6]
+    paths: [.github/workflows/audit-306-browser.yml]
+permissions:
+  contents: read
+jobs:
+  mobile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --prefix /tmp/dokkan-audit --no-save --ignore-scripts playwright@1.58.2
+      - run: /tmp/dokkan-audit/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Audit 390 px, Chromium et WebKit
+        env:
+          NODE_PATH: /tmp/dokkan-audit/node_modules
+        run: |
+          python -m http.server 8733 --bind 127.0.0.1 >/tmp/dokkan-audit-http.log 2>&1 &
+          node tools/audit_v3_browser.cjs
+          node <<'JS'
+          const fs=require('fs');
+          const s=fs.readFileSync('tools/audit_v3_browser.cjs','utf8')
+            .replace('{chromium}=','{webkit:chromium}=')
+            .replace(" assert.equal(await page.locator('[data-mc-group=\"sp\"]').getAttribute('aria-pressed'),'true');"," await page.locator('[data-mc-group=\"sp\"][aria-pressed=\"true\"]').waitFor();");
+          fs.writeFileSync('/tmp/dokkan-306-webkit.cjs',s);
+          JS
+          DOKKAN_TEST_URL=http://127.0.0.1:8733/ node /tmp/dokkan-306-webkit.cjs
+      - name: Événements, sélection et conservation locale
+        if: always()
+        env:
+          NODE_PATH: /tmp/dokkan-audit/node_modules
+        run: |
+          python -m http.server 8734 --bind 127.0.0.1 >/tmp/dokkan-audit-bf-http.log 2>&1 &
+          node <<'JS'
+          const assert=require('node:assert/strict');
+          const {chromium}=require('playwright');
+          (async()=>{
+            const browser=await chromium.launch();
+            try{
+              const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true});
+              const errors=[];page.on('pageerror',error=>errors.push(error.message));
+              await page.goto('http://127.0.0.1:8734/');
+              await page.waitForFunction(()=>CATALOG.cards.length>100);
+              await page.evaluate(async()=>{await ensureEvents();eventSettings.selected='event-rmbattle-110';eventSettings.stage='';eventSettings.missions=[];switchView('events');});
+              assert.equal(await page.locator('#eventDetail .event-mission').count(),8);
+              assert.equal(await page.locator('#wbBatchForm').count(),0);
+              await page.locator('[data-ux-event-tab="missions"]').click();
+              assert(await page.locator('[data-wb-select-missions]').isVisible());
+              const details=page.locator('#eventDetail .fight-event-details');
+              assert.notEqual(await details.getAttribute('open'),null);
+              await page.locator('[data-wb-select-missions]').click();
+              await page.locator('#wbBatchForm [name=confirmed]').check();
+              await page.locator('#wbBatchForm button.primary').click();
+              await page.waitForFunction(()=>Object.entries(eventAllProgress()).filter(([id,s])=>id.startsWith('rmb-m-110')&&s.done).length===8);
+              assert(await page.evaluate(()=>Object.entries(eventAllProgress()).filter(([id,s])=>id.startsWith('rmb-m-110')&&s.claimed).length===0));
+              await page.reload();
+              await page.waitForFunction(()=>Object.entries(eventAllProgress()).filter(([id,s])=>id.startsWith('rmb-m-110')&&s.done).length===8);
+              await page.evaluate(()=>DokkanBattlefield.open());
+              await page.locator('[data-bf-missions="event-rmbattle-110"]').click();
+              assert(await page.locator('[data-ux-event-tab="missions"][aria-pressed="true"]').isVisible());
+              assert(await page.locator('#eventDetail .fight-event-details[open]').isVisible());
+              assert.deepEqual(errors,[]);
+              console.log('106e : les 8 missions se sélectionnent et se valident en groupe');
+            }finally{await browser.close()}
+          })().catch(error=>{console.error(error);process.exitCode=1});
+          JS

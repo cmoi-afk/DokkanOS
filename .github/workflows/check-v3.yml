@@ -19,7 +19,7 @@ jobs:
         env:
           NODE_PATH: /tmp/dokkan-v3-deps/node_modules
         run: |
-          for test in cross_category_leaders search_finalists chosen_leader_dom team_category team_builder joint_missions linked_missions events f2p my_collection progression companion sw; do
+          for test in cross_category_leaders search_finalists chosen_leader_dom team_category team_builder joint_missions linked_missions events sa_farm f2p my_collection progression companion sw; do
             node "tools/test_${test}.cjs"
           done
       - run: /tmp/dokkan-v3-deps/node_modules/.bin/playwright install --with-deps chromium

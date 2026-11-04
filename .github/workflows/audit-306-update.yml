@@ -66,6 +66,20 @@ jobs:
               await context.setOffline(false);
               assert.equal(await page.evaluate(async()=>(await (await fetch('release.json',{cache:'no-store'})).json()).version),'3.0.6');
               console.log('3.0.4 → 3.0.6, stockage local, ouverture hors ligne et retour en ligne : OK');
+              await page.goto('https://cmoi-afk.github.io/DokkanOS/');
+              await page.waitForFunction(()=>CATALOG.cards.length>100);
+              await page.evaluate(async()=>{await ensureEvents();DokkanBattlefield.open();});
+              await page.locator('[data-bf-missions="event-rmbattle-110"]').click();
+              assert(await page.locator('#eventDetail .fight-event-details[open]').isVisible());
+              assert.equal(await page.locator('#eventDetail .event-mission').count(),8);
+              await page.locator('[data-wb-select-missions]').click();
+              await page.locator('#wbBatchForm [name=confirmed]').check();
+              await page.locator('#wbBatchForm button.primary').click();
+              await page.waitForFunction(()=>Object.entries(eventAllProgress()).filter(([id,state])=>id.startsWith('rmb-m-110')&&state.done).length===8);
+              assert.equal(await page.evaluate(()=>Object.entries(eventAllProgress()).filter(([id,state])=>id.startsWith('rmb-m-110')&&state.claimed).length),0);
+              await page.reload();
+              await page.waitForFunction(()=>Object.entries(eventAllProgress()).filter(([id,state])=>id.startsWith('rmb-m-110')&&state.done).length===8);
+              console.log('Version publique, planificateur, huit missions, validation et persistance : OK');
             }finally{await browser.close();}
           })().catch(e=>{console.error(e);process.exitCode=1});
           JS

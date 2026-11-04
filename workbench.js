@@ -52,8 +52,31 @@ function sheet(){
  const progress=root.querySelector('[data-card-tab="progress"][aria-selected="true"]');if(progress){const content=root.querySelector('#cardSheetContent');if(content){content.prepend(node('<p class="muted">Les valeurs réelles et le rôle sont regroupés dans la fiche ci-dessus. Une valeur inconnue n’est pas supposée maximale.</p>'));const button=content.querySelector('[data-pilot="profiles"]');if(button)button.dataset.pilotCard=id;}}
 }
 function missionBatch(){
- const grid=document.querySelector('#eventDetail .event-missions'),batch=document.getElementById('wbMissionBatch');if(!grid)return;if(batch){if(batch.parentElement!==grid.parentElement)grid.before(batch);return;}const event=teamEvents.events.find(e=>e.id===eventSettings.selected),allowed=M.stageMissions(event,eventSettings.stage),ids=eventSettings.missions.filter(id=>allowed.some(m=>m.id===id));
- grid.before(node('<section id="wbMissionBatch" class="wb-mission-batch"><h4>Valider plusieurs missions ensemble</h4><p>Sélectionne les missions avec les cases de leur titre, puis confirme celles réellement réussies en jeu. La sélection sert aussi à préparer une équipe.</p><div class="wb-actions"><button data-wb-select-missions>Choisir toutes les missions restantes de ce niveau</button><button data-wb-clear-missions>Vider la sélection</button></div><p><b>'+ids.length+' mission(s) sélectionnée(s)</b> · la sélection est conservée entre les pages.</p><form id="wbBatchForm"><label class="team-checkbox"><input type="checkbox" name="confirmed" required> Le jeu a bien validé toutes les missions sélectionnées</label><label class="team-checkbox"><input type="checkbox" name="claimed"> Leurs récompenses ont aussi été récupérées</label><button class="primary" '+(!ids.length?'disabled':'')+'>Valider ces '+ids.length+' missions</button><p id="wbBatchStatus" role="status"></p></form>'+(eventBatchUndo?.event===event?.id?'<button data-wb-undo-missions>Annuler la dernière validation groupée</button>':'')+'</section>'));
+ const grid=document.querySelector('#eventDetail .event-missions');
+ if(!grid)return;
+ const event=teamEvents.events.find(e=>e.id===eventSettings.selected);
+ const allowed=M.stageMissions(event,eventSettings.stage);
+ const batch=document.getElementById('wbMissionBatch');
+ if(!allowed.length){batch?.remove();return;}
+ if(batch){if(batch.parentElement!==grid.parentElement)grid.before(batch);return;}
+ const ids=eventSettings.missions.filter(id=>allowed.some(m=>m.id===id));
+ const state=eventAllProgress();
+ const hasRemaining=allowed.some(m=>!state[m.id]?.done);
+ const form=ids.length?`<form id="wbBatchForm">
+  <label class="team-checkbox"><input type="checkbox" name="confirmed" required> Le jeu a bien validé toutes les missions sélectionnées</label>
+  <label class="team-checkbox"><input type="checkbox" name="claimed"> Leurs récompenses ont aussi été récupérées</label>
+  <button class="primary">Valider ces ${ids.length} missions</button><p id="wbBatchStatus" role="status"></p>
+ </form>`:'<p>Coche au moins une mission pour afficher la confirmation.</p>';
+ grid.before(node(`<section id="wbMissionBatch" class="wb-mission-batch">
+  <h4>Valider plusieurs missions ensemble</h4>
+  <p>Sélectionne les missions avec les cases de leur titre, puis confirme celles réellement réussies en jeu.</p>
+  <div class="wb-actions">
+   <button data-wb-select-missions ${hasRemaining?'':'disabled'}>Choisir toutes les missions restantes de ce niveau</button>
+   <button data-wb-clear-missions ${ids.length?'':'disabled'}>Vider la sélection</button>
+  </div>
+  <p><b>${ids.length} mission(s) sélectionnée(s)</b> · la sélection est conservée entre les pages.</p>
+  ${form}${eventBatchUndo?.event===event?.id?'<button data-wb-undo-missions>Annuler la dernière validation groupée</button>':''}
+ </section>`));
 }
 function tools(){const content=document.querySelector('#toolContent');if(!content||!document.getElementById('backupFile')||content.querySelector('#wbBackupHistory'))return;content.append(node('<section id="wbBackupHistory">'+historyView()+'</section>'));}
 function enhance(){const view=document.body.dataset.view;if(view==='teams')teams();if(view==='home')home();if(view==='events')missionBatch();if(view==='tools')tools();sheet();}

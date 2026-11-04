@@ -5,7 +5,7 @@
     'zbattle-215':{end:'2026-11-20T08:59:00+01:00',name:'Aventures pour réaliser de nombreux vœux · Bulma (enfant)',kind:'Battle Z suprême',path:'/zbattle/215'},
     'quest-1208':{end:'2026-11-13T08:59:00+01:00'},
     'quest-1723':{permanent:true},
-    'event-rmbattle-110':{end:'2026-11-27T08:59:00+01:00',name:'106e VIRTUAL DOKKAN · Bataille royale',kind:'Bataille Royale',path:'/event/rmbattle/110'},
+    'event-rmbattle-110':{end:'2026-11-27T08:59:00+01:00',name:'106e VIRTUAL DOKKAN · Bataille royale',kind:'Bataille Royale',path:'/announcement/107373'},
     'sd-character-49':{end:'2026-11-16T08:59:00+01:00',name:'49e Paper Battle',kind:'Pettan Battle',path:'/sd-character/49'},
     'burst-quest-1524':{start:'2026-11-05T06:00:00+01:00',end:'2026-11-19T08:59:00+01:00',name:'Mode Burst · C’est parti ! La justice dans toute sa splendeur',kind:'Burst Mode',path:'/quest/1524',artId:'quest-1524'}
   };

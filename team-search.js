@@ -20,15 +20,15 @@ async function run(E,request,progress=()=>{},cancelled=()=>false){
  const deep=options.context.searchMode==='deep';
  const leaders=compare?E.leaderCandidates(pool,options).map(x=>x.c):[leader];
  let best;
- for(let i=0;i<Math.min(leaders.length,deep?8:3);i++){
+ for(let i=0;i<leaders.length;i++){
   await pause();if(cancelled())throw Error('Recherche annulée');const c=leaders[i];
   const base={...options,friend:options.context.friend==='mirror'?{...c,boxId:'FRIEND-'+c.boxId}:options.friend};
-  progress({label:'Recherche rapide · leader '+(i+1)+'/'+Math.min(leaders.length,deep?8:3)});
+  progress({label:'Recherche rapide · leader '+(i+1)+'/'+leaders.length});
   let quick={...E.build(pool,c,{...base,context:{...base.context,searchMode:'fast'},seed:!compare?seed:[]}),leader:c};
   // A seed is only an acceleration hint; never let it prevent mission completion.
   if(!valid(quick)&&seed.length&&!compare)quick={...E.build(pool,c,{...base,context:{...base.context,searchMode:'fast'}}),leader:c};
   best=better(best,quick);if(valid(best))progress({label:deep?'Équipe valide trouvée · optimisation en cours…':'Équipe rapide prête.',result:best});
-  if(deep){await pause();if(cancelled())throw Error('Recherche annulée');progress({label:'Recherche approfondie · leader '+(i+1)+'/'+Math.min(leaders.length,8)});const full={...E.build(pool,c,{...base,context:{...base.context,searchMode:'deep'}}),leader:c};best=better(best,full);if(valid(best))progress({label:'Comparaison des variantes · '+(i+1)+'/'+Math.min(leaders.length,8),result:best});}
+  if(deep&&i<8){await pause();if(cancelled())throw Error('Recherche annulée');progress({label:'Recherche approfondie · leader '+(i+1)+'/'+Math.min(leaders.length,8)});const full={...E.build(pool,c,{...base,context:{...base.context,searchMode:'deep'}}),leader:c};best=better(best,full);if(valid(best))progress({label:'Comparaison des variantes · '+(i+1)+'/'+Math.min(leaders.length,8),result:best});}
   else if(valid(best)&&!compare)break;
  }
  const result={...(best||{error:'Aucun leader compatible avec les cartes conservées.'}),elapsedMs:Date.now()-start,searchMode:deep?'deep':'fast'};

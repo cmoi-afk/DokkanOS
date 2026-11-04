@@ -40,7 +40,14 @@ document.addEventListener('click',e=>{const b=e.target.closest?.('button');if(!b
  if(d.uxGenerate!==undefined)document.getElementById('autoTeam')?.click();if(d.uxScroll){const target=document.getElementById(d.uxScroll);if(target?.tagName==='DETAILS')target.open=true;target?.scrollIntoView({behavior:'smooth',block:'start'});}
  if(d.uxCurrentEvent!==undefined){eventSettings.selected=teamSettings.event;eventSettings.stage=teamSettings.eventStage;eventSettings.missions=[...teamSettings.eventMissions];eventSave();switchView('events');document.getElementById('eventDetail')?.scrollIntoView({block:'start'});}
  if(d.uxSavedFilter){prefs.savedFilter=d.uxSavedFilter;save();document.querySelectorAll('[data-ux-saved-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));filterSaved();}
- if(d.uxEventTab){prefs.eventTab=d.uxEventTab;save();applyEventTab(d.uxEventTab);}
+ if(d.uxEventTab){prefs.eventTab=d.uxEventTab;save();applyEventTab(d.uxEventTab);
+  if(d.uxEventTab!=='all'){
+   const root=b.closest('#eventDetail');
+   const details=root?.querySelector('.fight-event-details');
+   if(details)details.open=true;
+   root?.querySelector('[data-ux-event-panel="'+d.uxEventTab+'"]')?.scrollIntoView?.({block:'nearest'});
+  }
+ }
  if(d.uxPotentialFilter){uxPotentialFilter=d.uxPotentialFilter;uxPotentialLimit=80;renderDuplicates();document.querySelectorAll('[data-ux-potential-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));}
  if(b.id==='uxInventoryMore'){uxInventoryLimit+=80;renderInventory();}if(b.id==='uxManualMore'){uxManualLimit+=80;renderManualOwned();}if(b.id==='uxPotentialMore'){uxPotentialLimit+=80;renderDuplicates();}
  if(d.uxNextVerify!==undefined){const next=verifyPending()[0];if(next)verifySelectPosition(String(next.boxId));}

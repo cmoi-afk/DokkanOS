@@ -39,6 +39,25 @@
       const notes=(event.notes||[]).filter(note=>!note.startsWith('Aucune mission extraite'));
       byId.set(id,{...event,...patch,name,notes,detailsLoaded:true});
     }
+    const pettan=byId.get('sd-character-49');
+    if(pettan&&!pettan.missions?.length){
+      const note='L’annonce confirme des récompenses selon le nombre d’ennemis battus. Les objectifs et quantités restent à confirmer dans le jeu.';
+      byId.set(pettan.id,{...pettan,calendarSource:'https://www.dbz-dokkanbattle.com/announcement/107374',notes:[...new Set([...(pettan.notes||[]),note])]});
+    }
+    const rewardNames={
+      '/img/points/baba.png':'Points d’échange de Baba',
+      '/img/item/support_memory/film_icon/support_memory_film_z.png':'Pellicule de mémoire de soutien'
+    };
+    for(const id of ['quest-725','quest-374','quest-351']){
+      const event=byId.get(id);
+      if(!event)continue;
+      const missions=event.missions.map(mission=>({...mission,rewards:(mission.rewards||[]).map(reward=>{
+        if(reward.identified||!reward.image)return reward;
+        const name=Object.entries(rewardNames).find(([path])=>reward.image.endsWith(path))?.[1];
+        return name?{...reward,name,identified:true}:reward;
+      })}));
+      byId.set(id,{...event,missions});
+    }
     return [...byId.values()];
   }
   const api={apply};

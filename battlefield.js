@@ -1,6 +1,7 @@
 /* A separate session ledger. Never writes inventory or the classic team. */
 (function(){'use strict';
 const M=window.DokkanBattlefieldModel,E=window.DokkanTeamEngine,esc=teamEsc,clone=x=>JSON.parse(JSON.stringify(x)),cid=c=>String(c.candidateId||c.id);
+let archiveOpen=false;
 let state={version:1,active:'global-109',sessions:{}},mode='classic',data=null,error='',status='',busy=false,job=0,worker=null,rejectJob=null,backup=null,bossId='yamu',search='',poolCache=null,lastRenderMs=0,lastPrepareMs=0;
 try{const raw=storageRead(M.key);if(raw)state=M.validate(JSON.parse(raw));}catch(e){error='Le suivi enregistré est illisible. Il est conservé ; exporte une sauvegarde avant de réinitialiser.';}
 const session=()=>Object.hasOwn(state.sessions,state.active)?state.sessions[state.active]:M.empty(),edition=()=>data?.editions.find(x=>x.id===state.active),boss=()=>edition()?.bosses.find(b=>b.id===bossId)||edition()?.bosses[0];
@@ -15,8 +16,19 @@ function cancel(){job++;worker?.terminate();worker=null;const reject=rejectJob;r
 function modeBar(){return '<div class="bf-modes" role="group" aria-label="Mode de composition"><button data-bf-mode="classic" aria-pressed="'+(mode==='classic')+'">Équipe classique</button><button data-bf-mode="battlefield" aria-pressed="'+(mode==='battlefield')+'">Battlefield</button><button data-bf-mode="frontier" aria-pressed="'+(mode==='frontier')+'">Frontier</button></div>';}
 function leaderDetails(e){if(!e?.cover)return '';const range=(field,n)=>{const values=e.cover.map(a=>a[n][field]),lo=Math.min(...values),hi=Math.max(...values);return lo===hi?lo:lo+' à '+hi;};return '<p class="muted">Bonus réels selon les sept cartes : '+[0,1].map(n=>(n?'Sous-leader':'Leader')+' PV +'+range('hp',n)+' % · ATT +'+range('atk',n)+' % · DÉF +'+range('def',n)+' %').join(' / ')+'.</p>'+(e.profiles?.some(p=>!p.complete)?'<p class="muted">Certains kits sont incomplets : vérifie les passifs et conditions dans les fiches avant de jouer.</p>':'');}
 function teamRows(ids,replaceable){const mine=new Map(pool().map(c=>[cid(c),c]));return '<div class="bf-cards">'+ids.map((i,n)=>{const c=mine.get(i);return '<article class="bf-card">'+(c?teamImage(c):'')+'<div><small>'+(['Leader','Sous-leader'][n]||'Partenaire')+' · '+esc(c?.type||'?')+'</small><b>'+esc(c?.name||'Carte indisponible')+'</b><span>'+esc(c?.title||i)+'</span>'+(replaceable?'<button data-bf-replace="'+n+'" '+(busy?'disabled':'')+'>Remplacer automatiquement</button>':'')+'</div></article>';}).join('')+'</div>';}
+function currentEvent(){
+ return teamEvents.events.filter(event=>event.kind==='Bataille Royale'&&!event.hidden&&window.DokkanEventModel.status(event)==='active')
+  .sort((a,b)=>Date.parse(b.start)-Date.parse(a.start))[0];
+}
 function render(){const started=performance.now();poolCache=null;const host=document.querySelector('#teams main');if(!host)return;const ed=edition(),s=session(),b=boss(),mine=pool(),spent=M.used(s),done=M.won(s),assigned=new Set([...Object.values(s.plan),...Object.values(s.reservePlan||{})].flat()),ids=s.plan[b?.id]||[],team=ids.map(i=>mine.find(c=>cid(c)===i));
  host.dataset.teamMode='battlefield';host.innerHTML=modeBar()+'<div class="team-heading"><div><span class="eyebrow">PLANIFICATEUR DE SESSION</span><h2>Battlefield</h2><p class="muted">Ta Box confirmée · derniers éveils uniquement · aucun leader ami.</p></div></div>';
+ const current=currentEvent();
+ if(current&&!archiveOpen){
+  const end=new Date(current.end).toLocaleString('fr-FR',{timeZone:'Europe/Paris',dateStyle:'long',timeStyle:'short'});
+  host.insertAdjacentHTML('beforeend',`<section class="panel bf-panel"><h3>${esc(current.name)}</h3><p>Jusqu’au ${esc(end)} (heure de Paris) · ${current.missions.length} missions recensées</p><p>Le détail des adversaires de cette édition reste à vérifier. Tu peux suivre les missions dans Événements.</p><div class="bf-actions"><button class="primary" data-bf-missions="${esc(current.id)}">Voir les missions</button>${ed?'<button data-bf-archive>Ouvrir le plan archivé · '+esc(ed.name)+'</button>':''}</div></section>`);
+  return;
+ }
+ if(current)host.insertAdjacentHTML('beforeend','<button data-bf-current>Revenir à la Bataille royale en cours</button>');
  if(!ed||!b){host.insertAdjacentHTML('beforeend','<p role="status">'+esc(status||'Chargement des données Battlefield…')+'</p>');return;}
  const evaluation=team.length===7&&team.every(Boolean)?M.assess(E,team,b,known()):null;
  const expired=Date.now()>Date.parse(ed.end);
@@ -51,7 +63,18 @@ async function calculate(action,index){if(busy||error)return;const preparation=p
 document.addEventListener('input',e=>{if(e.target.id==='bfSearch'){search=e.target.value;renderSearch();}});
 document.addEventListener('change',e=>{if(e.target.id==='bfBoss'){cancel();backup=null;bossId=e.target.value;render();}if(e.target.id==='bfMission'){cancel();try{const s=clone(session()),b=boss();if(e.target.checked)s.missionTypes[b.id]=b.optionalType;else delete s.missionTypes[b.id];delete s.plan[b.id];if(s.reservePlan)delete s.reservePlan[b.id];s.locked=s.locked.filter(k=>k!==b.id);saveSession(s);status='Mission modifiée : recalcule le parcours.';}catch(x){status=x.message;}render();}});
 document.addEventListener('click',e=>{const button=e.target.closest('button');if(!button)return;const d=button.dataset;
- if(d.bfMode){cancel();window.DokkanFrontier?.cancel();mode=d.bfMode;renderTeam();return;}
+ if(d.bfMode){cancel();window.DokkanFrontier?.cancel();mode=d.bfMode;archiveOpen=false;renderTeam();return;}
+ if(d.bfArchive!==undefined||d.bfCurrent!==undefined){cancel();archiveOpen=d.bfArchive!==undefined;render();return;}
+ if(d.bfMissions){
+  switchView('events');
+  document.querySelector('[data-event-open="'+d.bfMissions+'"]')?.click();
+  if(eventSettings.selected!==d.bfMissions){
+   eventSettings.selected=d.bfMissions;eventSettings.stage='';eventSettings.missions=[];eventSettings.missionPage=0;
+   eventSave();renderEvents();
+  }
+  document.querySelector('#eventDetail [data-ux-event-tab="missions"]')?.click();
+  return;
+ }
  if(d.bfReplace!==undefined){calculate('replace',Number(d.bfReplace));return;}
  if(!d.bfAction&&!d.bfReserve&&!d.bfRelease&&!d.bfExclude&&!d.bfFree)return;
  if(d.bfAction==='cancel'){cancel();status='Recherche annulée ; le plan précédent est conservé.';render();return;}
@@ -75,5 +98,6 @@ document.addEventListener('click',e=>{const button=e.target.closest('button');if
 });
 const ready=fetch('battlefield-data.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{if(d.schema!=='dokkanos-battlefield-v1'||!Array.isArray(d.editions)||!d.editions.length)throw Error();data=d;if(!edition())state.active=d.editions[0].id;if(mode==='battlefield')render();return d;}).catch(()=>{status='Données Battlefield indisponibles. Recharge l’app avec une connexion.';if(mode==='battlefield')render();return null;});
 window.addEventListener('dokkanos-data-ready',()=>{poolCache=null;if(mode==='battlefield')render();});
-window.DokkanBattlefield={getSummary:()=>({name:edition()?.name||'Battlefield'}),ready,modeBar,classicMode(){if(mode!=='classic'){cancel();window.DokkanFrontier?.cancel();mode='classic';}},openFrontier(){cancel();window.DokkanFrontier?.cancel();mode='frontier';switchView('teams');},open(){cancel();window.DokkanFrontier?.cancel();mode='battlefield';switchView('teams');},calculate,cancel,getState:()=>clone(state),getPool:pool,getTiming:()=>({lastRenderMs,lastPrepareMs})};
+window.addEventListener('dokkanos-events-loaded',()=>{if(mode==='battlefield')render();});
+window.DokkanBattlefield={getSummary:()=>({name:currentEvent()?.name||edition()?.name||'Battlefield'}),ready,modeBar,classicMode(){if(mode!=='classic'){cancel();window.DokkanFrontier?.cancel();mode='classic';}},openFrontier(){cancel();window.DokkanFrontier?.cancel();mode='frontier';switchView('teams');},open(){cancel();window.DokkanFrontier?.cancel();mode='battlefield';archiveOpen=false;switchView('teams');},calculate,cancel,getState:()=>clone(state),getPool:pool,getTiming:()=>({lastRenderMs,lastPrepareMs})};
 })();

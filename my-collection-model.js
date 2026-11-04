@@ -22,6 +22,12 @@ function build(cards,owned,profiles={},favoriteIds=new Set(),usedIds=new Set(),r
   return {card:c,id,tasks,used,todo,unknown,favorite:favoriteIds.has(id),recent:recent[id]||0,priority:(used?100:0)+(todo?20:0)+(unknown?1:0)};
  });
 }
-function filter(rows,p={}){const q=norm(p.query),rank={LR:3,UR:2,SSR:1};return rows.filter(r=>(p.tab!=='favorites'||r.favorite)&&(p.tab!=='prepare'||r.tasks.length>0)&&(p.tab!=='prepare'||p.status!=='todo'||r.todo)&&(p.tab!=='prepare'||p.status!=='unknown'||r.unknown)&&(!p.type||r.card.type===p.type)&&(!p.rarity||r.card.rarity===p.rarity)&&(!q||norm([r.id,r.card.name,...(r.card.categories||[]),...(r.card.links||[])].join(' ')).includes(q))).sort((a,b)=>p.sort==='recent'?b.recent-a.recent||a.card.name.localeCompare(b.card.name,'fr'):p.sort==='rarity'?(rank[b.card.rarity]||0)-(rank[a.card.rarity]||0)||a.card.name.localeCompare(b.card.name,'fr'):p.sort==='priority'?b.priority-a.priority||a.card.name.localeCompare(b.card.name,'fr'):a.card.name.localeCompare(b.card.name,'fr'));}
+function preparationGroup(row,group){
+ if(!group)return true;
+ if(group==='ready')return !row.tasks.length;
+ const prefixes={awakening:/^Éveil|disponible · réalisation/,sp:/ATT SP/,potential:/^Potentiel/};
+ return row.tasks.some(task=>prefixes[group]?.test(task.label));
+}
+function filter(rows,p={}){const q=norm(p.query),rank={LR:3,UR:2,SSR:1};return rows.filter(r=>preparationGroup(r,p.group)&&(p.tab!=='favorites'||r.favorite)&&(p.tab!=='prepare'||p.group==='ready'||r.tasks.length>0)&&(p.tab!=='prepare'||p.status!=='todo'||r.todo)&&(p.tab!=='prepare'||p.status!=='unknown'||r.unknown)&&(!p.type||r.card.type===p.type)&&(!p.rarity||r.card.rarity===p.rarity)&&(!q||norm([r.id,r.card.name,...(r.card.categories||[]),...(r.card.links||[])].join(' ')).includes(q))).sort((a,b)=>p.sort==='recent'?b.recent-a.recent||a.card.name.localeCompare(b.card.name,'fr'):p.sort==='rarity'?(rank[b.card.rarity]||0)-(rank[a.card.rarity]||0)||a.card.name.localeCompare(b.card.name,'fr'):p.sort==='priority'?b.priority-a.priority||a.card.name.localeCompare(b.card.name,'fr'):a.card.name.localeCompare(b.card.name,'fr'));}
 const API={key,validate,recentDates,build,filter};if(typeof module!=='undefined')module.exports=API;root.DokkanMyCollectionModel=API;
 })(typeof window==='undefined'?globalThis:window);

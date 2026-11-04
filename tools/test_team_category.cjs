@@ -8,7 +8,7 @@ const options={known,context:{leadCategory:'DAIMA'},friend:leader};
 const result=E.build(pool,leader,options);assert.equal(result.team.length,6);assert(result.team.every(c=>E.inCategory(c,'DAIMA')));assert(result.alternatives.every(t=>t.every(c=>E.inCategory(c,'DAIMA'))));
 const partial=E.build([leader,...daima.slice(0,2),...family],leader,options);assert.equal(partial.team.length,3);assert(partial.team.every(c=>E.inCategory(c,'DAIMA')));
 assert(E.build(pool,leader,{...options,locked:[family[0]]}).error.includes('carte gardée'));
-assert(E.build(pool,leader,{...options,context:{leadCategory:'Saga de Boo'}}).error.includes('pas dirigée'));
+assert(E.build(pool,leader,{...options,context:{leadCategory:'Saga de Boo'}}).error.includes('n’appartient pas à la catégorie choisie'));
 assert(E.build(pool,leader,{known}).team.some(c=>E.inCategory(c,'Famille de Vegeta')&&!E.inCategory(c,'DAIMA')));
 const bonus={teamRules:{leader:[{kind:'base',known:true,categories:['DAIMA'],hp:170,atk:170,def:170},{kind:'bonus',known:true,categories:['Famille de Vegeta'],hp:30,atk:30,def:30}]}};assert.deepEqual(E.leaderCategories(bonus),['DAIMA']);
 console.log('Real Vegeta SSJ3 DAIMA leader: strict category, strong outside partners excluded, incomplete Box, locks, invalid category, automatic mode and bonus exclusions: OK');

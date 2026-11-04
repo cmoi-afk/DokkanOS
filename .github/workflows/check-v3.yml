@@ -1,0 +1,31 @@
+name: Vérification DokkanOS 3.0
+on:
+  push:
+    branches: [v3-foundation]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --prefix /tmp/dokkan-v3-deps --no-save --ignore-scripts linkedom@0.18.12 playwright@1.58.2
+      - name: Régressions fonctionnelles
+        env:
+          NODE_PATH: /tmp/dokkan-v3-deps/node_modules
+        run: |
+          for test in cross_category_leaders search_finalists chosen_leader_dom team_category team_builder joint_missions linked_missions events f2p my_collection progression companion sw; do
+            node "tools/test_${test}.cjs"
+          done
+      - run: /tmp/dokkan-v3-deps/node_modules/.bin/playwright install --with-deps chromium
+      - name: Parcours mobile et hors connexion
+        env:
+          NODE_PATH: /tmp/dokkan-v3-deps/node_modules
+        run: |
+          python -m http.server 8733 --bind 127.0.0.1 >/tmp/dokkan-v3-http.log 2>&1 &
+          node tools/audit_v3_browser.cjs

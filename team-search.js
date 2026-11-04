@@ -4,7 +4,16 @@ const results=new Map();
 const pools=new WeakMap();let poolSequence=0;
 const pause=()=>new Promise(resolve=>setTimeout(resolve,0));
 function valid(r){return !r.error&&r.team?.length===6&&!r.check?.deficit;}
-function better(a,b){if(!a)return b;if(valid(a)!==valid(b))return valid(b)?b:a;return b.score>a.score?b:a;}
+function compareTeams(a,b){
+ if(valid(a)!==valid(b))return valid(a)?-1:1;
+ if(!!a.error!==!!b.error)return a.error?1:-1;
+ const deficit=(a.check?.deficit??Infinity)-(b.check?.deficit??Infinity);
+ if(deficit)return deficit;
+ const unknown=Number(!!a.check?.unknown)-Number(!!b.check?.unknown);
+ if(unknown)return unknown;
+ return (b.score??-Infinity)-(a.score??-Infinity)||0;
+}
+function better(a,b){return !a||compareTeams(a,b)>0?b:a;}
 async function run(E,request,progress=()=>{},cancelled=()=>false){
  const {pool,leader,options,compare,seed=[]}=request,start=Date.now();
  if(request.action==='replace'){
@@ -28,12 +37,16 @@ async function run(E,request,progress=()=>{},cancelled=()=>false){
   // A seed is only an acceleration hint; never let it prevent mission completion.
   if(!valid(quick)&&seed.length&&!compare)quick={...E.build(pool,c,{...base,context:{...base.context,searchMode:'fast'}}),leader:c};
   best=better(best,quick);if(valid(best))progress({label:deep?'Équipe valide trouvée · optimisation en cours…':'Équipe rapide prête.',result:best});
-  previews.push(quick);
+  if(deep){
+   previews.push(quick);
+   previews.sort(compareTeams);
+   if(previews.length>8)previews.pop();
+  }
   if(valid(best)&&!compare)break;
  }
  if(deep){
   // Refine the strongest actual compositions, not the first leader profiles.
-  const finalists=previews.sort((a,b)=>better(a,b)===b?1:-1).slice(0,8);
+  const finalists=previews;
   for(let i=0;i<finalists.length;i++){
    await pause();if(cancelled())throw Error('Recherche annulée');
    const c=finalists[i].leader;

@@ -93,7 +93,7 @@ function editor(root,team,e,friend){
  const best=toolbar?.querySelector('[data-team-action="bestLeader"]');
  if(best){best.textContent=team.length?'Proposer un autre leader':'Proposer une équipe';if(!teamLeader)best.classList.add('primary');}
  const auto=toolbar?.querySelector('#autoTeam');
- if(auto){auto.textContent=teamBusy?'Recherche en cours…':'Composer avec ce leader';if(!teamLeader&&!teamBusy)auto.hidden=true;}
+ if(auto){auto.textContent=teamBusy?'Recherche en cours…':teamSettings.leaderMode==='auto'?'Composer automatiquement':'Composer avec ce leader';if(!teamLeader&&!teamBusy&&teamSettings.leaderMode!=='auto')auto.hidden=true;}
  if(!team.length&&!teamBusy)toolbar?.insertAdjacentHTML('beforeend','<button data-locker="leader">Choisir mon leader</button>');
  const slots=composition.querySelector('#teamSlots');
  if(team.length&&slots){
@@ -102,7 +102,7 @@ function editor(root,team,e,friend){
   compact.innerHTML=team.map((card,i)=>`<details class="locker-unit"><summary aria-label="Actions pour ${esc(card.name)}">${teamImage(card)}<small>${i===0&&teamLeader?'Leader':i+1}</small></summary><div>
   <button data-team-open="${esc(card.boxId)}">Fiche</button>
   <button data-team-lock="${esc(card.boxId)}">${teamSettings.locked.includes(card.boxId)?'Déverrouiller':'Verrouiller'}</button>
-  ${card.boxId!==teamLeader?`<button data-team-manual-replace="${esc(card.boxId)}">Remplacer</button>`:''}
+  ${card.boxId===teamLeader?'<button data-locker="leader">Changer de leader</button>':`<button data-team-manual-replace="${esc(card.boxId)}">Remplacer</button>`}
   </div></details>`).join('')+Array.from({length:6-team.length},()=>'<button class="locker-empty-slot" data-locker="partner" aria-label="Ajouter une carte">+</button>').join('');
   slots.before(compact);
   settings.append(slots);
@@ -130,10 +130,20 @@ function editor(root,team,e,friend){
   const plan=document.createElement('section');
   plan.id='lockerPlan';plan.className='panel locker-plan';
   const constraints=e.check?.rows||[];
-  plan.innerHTML=`<h3>Plan de jeu</h3>${e.rotations.length?`
+  const uncovered=e.cover.filter(x=>!x.covered).length;
+  const offFriend=e.friendCover.filter(x=>!x.covered).length;
+  const preparation=team.map(card=>({card,steps:window.DokkanProgress?.preparation(card)||[]})).filter(row=>row.steps.length);
+  const verdict=team.length!==6||uncovered||offFriend||e.check?.deficit?'Composition à corriger':
+   e.check?.unknown||mission.manualCheck?'Conditions à vérifier en jeu':
+   preparation.length?'Composition conforme · préparation à vérifier':'Composition conforme';
+  plan.innerHTML=`<h3>Plan de jeu</h3><p><b>${verdict}</b></p>
+  ${preparation.length?`<details><summary>Préparation des cartes (${preparation.length})</summary>${preparation.map(({card,steps})=>`<p><b>${esc(card.name)}</b> · ${esc(steps.join(' · '))}</p>`).join('')}</details>`:''}
+  <p class="${team.length===6&&!uncovered&&!offFriend?'ai-ok':'ai-warning'}">${team.length}/6 cartes · ${team.length-uncovered}/${team.length} sous ton leader${friend?' · '+(team.length-offFriend)+'/'+team.length+' sous l’ami':''}</p>
+  ${friend?`<button data-locker="friend">Changer le leader ami · ${esc(friend.name)}</button>`:'<button data-locker="friend">Choisir le leader ami</button>'}
+  ${e.rotations.length?`
   ${e.rotations.map((r,i)=>`<p><b>Duo ${i+1}</b> · ${esc(teamRotationName(r.a))} + ${esc(teamRotationName(r.b))}</p>`).join('')}
   ${floaters.length?`<p><b>Flotteurs</b> · ${floaters.map(c=>esc(teamRotationName(c))).join(', ')}</p>`:''}`:'<p>Complète ton équipe pour obtenir les duos.</p>'}
-  ${constraints.map(r=>`<p class="locker-condition">${r.ok&&!r.unknown?'✓':'À vérifier'} · ${esc(eventRequirementText(r.r))}</p>`).join('')}
+  ${constraints.map(r=>`<p class="locker-condition">${r.ok&&!r.unknown?'✓':'À vérifier'} · ${esc(eventRequirementText(r.r))}${!r.unknown&&Number.isFinite(r.count)&&Number.isFinite(r.need)?' · '+r.count+'/'+r.need:''}</p>`).join('')}
   ${mission.manualCheck?'<p>Vérifie les actions demandées par la mission en jeu.</p>':''}
   <div class="locker-actions"><button data-pilot="combat">Jouer</button><button data-fight-result ${team.length!==6||teamBusy?'disabled':''}>Noter ce combat</button></div>`;
   composition.after(plan);
@@ -163,6 +173,11 @@ document.addEventListener('click',e=>{
   const advanced=host()?.querySelector('.locker-advanced');if(advanced)advanced.open=true;
   const search=host()?.querySelector('[data-team-fold="leader-search"]');if(search)search.open=true;renderTeamLeaders();
   host()?.querySelector('#teamLeaderSearch')?.focus();return;
+ }
+ if(action==='friend'){
+  const advanced=host()?.querySelector('.locker-advanced');if(advanced)advanced.open=true;
+  const picker=host()?.querySelector('#teamFriendPicker');if(picker){picker.open=true;renderTeamFriends();}
+  picker?.querySelector('input')?.focus();return;
  }
  if(action==='partner'){window.DokkanTeamUI?.openPartners();return;}
  if(action==='event'){

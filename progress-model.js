@@ -7,13 +7,31 @@ function counters(x={}){return {attacks:num(x.attacks,0,999)||0,hits:num(x.hits,
 function thresholds(text,count,turn=1){text=String(text||'');const results=[];const re=/(?:après|effectué|subi|esquivé|effectue|subit|esquive)[^\n.!]{0,45}?(\d+)\s*(?:attaque(?:s)?|esquive(?:s)?)/gi;for(const m of text.matchAll(re)){const kind=/esquiv/i.test(m[0])?'dodges':/subi/i.test(m[0])?'hits':'attacks',need=+m[1];results.push({kind,need,current:count[kind]||0,reached:(count[kind]||0)>=need,text:m[0]});}for(const m of text.matchAll(/(?:à partir du|dès le)\s*(\d+)(?:e|ème|er)?\s*tour/gi))results.push({kind:'turn',need:+m[1],current:turn,reached:turn>=+m[1],text:m[0]});return results.slice(0,12);}
 function signature(s){return JSON.stringify({cards:s.cards.map(c=>[c.id,c.kit,c.projected]),leader:s.leader,friend:s.friend,settings:Object.fromEntries(['event','mission','eventMissions','eventStage','category','count','types','combat','useZA','disableDodge','friend','bossTarget','pool'].map(k=>[k,s.settings?.[k]]))});}
 function changes(a,b){const ai=new Set(a.cards.map(c=>c.id)),bi=new Set(b.cards.map(c=>c.id));return {added:b.cards.filter(c=>!ai.has(c.id)),removed:a.cards.filter(c=>!bi.has(c.id)),kits:b.cards.filter(c=>a.cards.some(x=>x.id===c.id&&(x.kit!==c.kit||x.projected!==c.projected))),leader:a.leader!==b.leader,objective:a.objective!==b.objective||JSON.stringify(a.missions)!==JSON.stringify(b.missions)};}
-function validate(x){
- if(!record(x)||!record(x.profiles||{})||!record(x.combat||{})||!Array.isArray(x.history||[])||(x.history||[]).length>100||!Array.isArray(x.goals||[])||(x.goals||[]).length>100||!Array.isArray(x.dataHistory||[])||(x.dataHistory||[]).length>30)throw Error('Suivi personnel invalide');
- for(const [id,p]of Object.entries(x.profiles||{}))if(!/^\d+$/.test(id)||!record(p)||JSON.stringify(profile(p))!==JSON.stringify(p))throw Error('Profil de carte invalide');
- const c=x.combat||{};if(c.team!==undefined&&typeof c.team!=='string'||c.turn!==undefined&&num(c.turn,1,99)!==c.turn||c.counts!==undefined&&!record(c.counts))throw Error('Compteurs invalides');
+function validateSnapshot(s){
+ if(!record(s)||!record(s.settings)||!Array.isArray(s.cards)||s.cards.length>6||
+    s.cards.some(c=>!record(c)||!/^\d+$/.test(c.id))||typeof s.leader!=='string')throw Error('Composition de tentative invalide');
+}
+function validateCombat(c){
+ if(!record(c))throw Error('Tentative invalide');
+ if(c.team!==undefined&&typeof c.team!=='string'||c.turn!==undefined&&num(c.turn,1,99)!==c.turn||c.counts!==undefined&&!record(c.counts))throw Error('Compteurs invalides');
  if(c.phase!==undefined&&num(c.phase,1,999)!==c.phase)throw Error('Phase invalide');
  if(c.sp!==undefined&&(!record(c.sp)||Object.entries(c.sp).some(([key,v])=>!/^slot[0-6]$/.test(key)||!record(v)||num(v.normal,0,999)!==v.normal||num(v.ultimate,0,999)!==v.ultimate)))throw Error('Compteurs SP invalides');
  for(const [id,v]of Object.entries(c.counts||{}))if(!/^\d+$/.test(id)||!record(v)||JSON.stringify(counters(v))!==JSON.stringify(v))throw Error('Compteurs invalides');
+ if(c.notes!==undefined&&(!Array.isArray(c.notes)||c.notes.length>120||c.notes.some(n=>!record(n)||!['Objet','Actif','Transformation','Note'].includes(n.kind)||typeof n.label!=='string'||!n.label.trim()||n.label.length>180||num(n.phase,1,999)!==n.phase||num(n.turn,1,99)!==n.turn)))throw Error('Notes de tentative invalides');
+}
+function validate(x){
+ if(!record(x)||!record(x.profiles||{})||!record(x.combat||{})||!Array.isArray(x.history||[])||(x.history||[]).length>100||!Array.isArray(x.goals||[])||(x.goals||[]).length>100||!Array.isArray(x.dataHistory||[])||(x.dataHistory||[]).length>30)throw Error('Suivi personnel invalide');
+ for(const [id,p]of Object.entries(x.profiles||{}))if(!/^\d+$/.test(id)||!record(p)||JSON.stringify(profile(p))!==JSON.stringify(p))throw Error('Profil de carte invalide');
+ validateCombat(x.combat||{});
+ if(x.combatSnapshot!==undefined)validateSnapshot(x.combatSnapshot);
+ if(x.combatArchive!==undefined){
+  if(!Array.isArray(x.combatArchive)||x.combatArchive.length>12)throw Error('Archives de combat invalides');
+  for(const row of x.combatArchive){
+   if(!record(row)||!Number.isFinite(Date.parse(row.date)))throw Error('Archive de combat invalide');
+   validateCombat(row.combat);
+   if(row.snapshot!==undefined)validateSnapshot(row.snapshot);
+  }
+ }
  for(const h of x.history||[])if(!record(h)||typeof h.id!=='string'||!Number.isFinite(Date.parse(h.date))||typeof h.signature!=='string'||!record(h.snapshot)||!record(h.snapshot.settings)||!Array.isArray(h.snapshot.cards)||h.snapshot.cards.length>6||h.snapshot.cards.some(c=>!record(c)||!/^\d+$/.test(c.id)||typeof c.name!=='string'||!['base','ztur','zlr','superZtur','superZlr'].includes(c.kit))||!Array.isArray(h.snapshot.missions)||h.snapshot.missions.some(m=>typeof m!=='string'))throw Error('Historique invalide');
  for(const g of x.goals||[])if(!record(g)||typeof g.id!=='string'||typeof g.title!=='string'||g.title.length>120||!Array.isArray(g.steps)||g.steps.length>30||g.steps.some(s=>!record(s)||typeof s.label!=='string'||s.label.length>300||typeof s.done!=='boolean'))throw Error('Objectif invalide');
  for(const h of x.dataHistory||[])if(!record(h)||typeof h.signature!=='string'||typeof h.date!=='string'||['added','changed','removed','events','missions','incomplete'].some(k=>!Number.isInteger(h[k])||h[k]<0))throw Error('Historique de collecte invalide');

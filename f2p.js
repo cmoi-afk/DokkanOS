@@ -6,6 +6,7 @@ let bank,data,load,query='',type='',kind='event',openOnly=false,limit=30,selecte
 let showLimited=false;
 let current=1,goal=10,manualRate='',ownedOnly=false,graph,graphSource,cacheSource,cacheMeta;
 const resolved=new Map();
+const visibleLocations=row=>M.acquisitionLocations(row,kind).filter(l=>kind!=='exchange'||showLimited||['ordinary','active'].includes(M.exchangeStatus(l)));
 const host=()=>document.querySelector('#f2pCatalogue');
 const searchable=x=>String(x||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const checked=x=>x?' checked':'';
@@ -32,7 +33,7 @@ function eventStatus(location){
  return ({active:'En jeu',permanent:'Permanent',closed:'Fermé',upcoming:'À venir',unknown:'Disponibilité à vérifier'})[status];
 }
 function locations(row){
- return M.acquisitionLocations(row,kind).map(l=>{
+ return visibleLocations(row).map(l=>{
   const label=M.acquisitionLabel(l,kind);
   const event=l.event?'<button data-sa-event="'+esc(l.event)+'">Ouvrir l’événement</button>':'';
   const source=/^https:\/\/(?:www\.)?dbz-dokkanbattle\.com\//.test(l.source||'')
@@ -119,7 +120,7 @@ function matching(){
   const supportsTarget=!targetFilter||r.id===targetFilter||compatible(r.id).some(e=>e.method.donor===targetFilter||(bank.targetsByName.get(e.name)||[]).includes(targetFilter));
   return (kind!=='exchange'||showLimited||M.acquisitionLocations(r,kind).some(l=>['ordinary','active'].includes(M.exchangeStatus(l))))&&supportsTarget&&(!type||(c?.type||r.type)===type)&&M.inAcquisition(r,kind)&&
    (kind!=='event'||!openOnly||M.acquisitionLocations(r,kind).some(l=>['En jeu','Permanent'].includes(eventStatus(l))))&&
-   (!q||searchable([r.name,c?.title,r.id,...M.acquisitionLocations(r,kind).map(l=>M.acquisitionLabel(l,kind))].join(' ')).includes(q));
+   (!q||searchable([r.name,c?.title,r.id,...visibleLocations(r).map(l=>M.acquisitionLabel(l,kind))].join(' ')).includes(q));
  }).sort((a,b)=>a.name.localeCompare(b.name,'fr')||a.id.localeCompare(b.id));
 }
 function list(){
@@ -128,7 +129,7 @@ function list(){
  root.innerHTML=`<p class="muted">${rows.length} carte(s) · ${kind==='event'?'Événements':'Baba Shop'}</p>
  <div class="f2p-grid">${rows.slice(0,limit).map(r=>{
   const c=card(r.id);
-  return `<button class="f2p-card" data-f2p-select="${esc(r.id)}" aria-pressed="${r.id===selected}">${c?teamImage(c):''}<b>${esc(r.name)}</b><small>${esc([c?.rarity||r.rarity,c?.type||r.type,...M.acquisitionLocations(r,kind).map(l=>M.acquisitionLabel(l,kind))].filter(Boolean).join(' · '))}</small></button>`;
+  return `<button class="f2p-card" data-f2p-select="${esc(r.id)}" aria-pressed="${r.id===selected}">${c?teamImage(c):''}<b>${esc(r.name)}</b><small>${esc([c?.rarity||r.rarity,c?.type||r.type,...visibleLocations(r).map(l=>M.acquisitionLabel(l,kind))].filter(Boolean).join(' · '))}</small></button>`;
  }).join('')}</div>${rows.length>limit?'<button data-f2p-more>Afficher la suite</button>':''}`;
 }
 function render(){

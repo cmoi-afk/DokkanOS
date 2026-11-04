@@ -33,3 +33,27 @@ html[data-theme=light] .app-nav button.on{color:#064f7b!important;background:#cc
 html[data-theme=light] :is(.ux-back,.ux-team-cta,.verify-v2-confirm,.card-version-buttons button,.potential-stepper button,.potential-100){background:#e2edf7!important;color:var(--text)!important;border-color:var(--line)!important}
 html[data-theme=light] .catalog-summary>span b,html[data-theme=light] .event-kpis>span b{color:#086399}
 html[data-theme=light] button.primary{background:#086399!important;color:#fff!important;border-color:#086399!important;box-shadow:none!important}
+
+.session-home { margin-bottom: 14px; }
+.session-home h1 { margin: 6px 0 12px; }
+.session-actions { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; }
+.session-actions button { min-width: 0; min-height: 64px; text-align: start; }
+.session-actions small { display: block; color: var(--muted); margin-top: 4px; overflow-wrap: anywhere; }
+#teamFriendPicker { margin-top: 12px; }
+#teamFriendPicker button,#teamFriendPicker input { min-height: 44px; }
+.combat-archive { margin: 12px 0; }
+.combat-archive button { min-height: 44px; }
+.farm-queue article { overflow-wrap: anywhere; }
+@media(max-width: 640px) {
+ .session-actions { grid-template-columns: 1fr; }
+ .session-actions button { min-height: 56px; }
+}
+@media(prefers-reduced-motion: reduce) {
+ html { scroll-behavior: auto; }
+ .session-actions button,.team-leader-choice { transition: none; }
+}
+
+.event-quick-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.event-quick-filters button, #mcGroups button { min-height: 44px; }
+.event-quick-filters button[aria-pressed=true],#mcGroups button[aria-pressed=true] { border-color: var(--accent); color: var(--accent); }
+#mcGroups[hidden] { display: none; }

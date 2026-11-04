@@ -32,8 +32,9 @@ vm.runInContext(fs.readFileSync('team-engine.js','utf8'),context);vm.runInContex
  run("chooseTeamLeader('1034151');finishRegression({leader:resolveCard('CATALOG-1034201'),team:[resolveCard('CATALOG-1034201')]})");await pending;
  assert.equal(run('TE.identity(resolveCard(teamLeader))'),'1034151');
  assert.equal(run('teamSettings.leaderMode'),'manual');
- // Direct Box selection takes the same preservation path.
- const select=document.querySelector('#leaderSelect');for(const o of select.querySelectorAll('option'))o.selected=o.textContent.includes('1034201');select.dispatchEvent(new window.Event('change',{bubbles:true}));
+ // Selecting a leader from the portrait gallery keeps manual mode.
+ run("teamSettings.leaderScope='owned';teamSettings.leaderSearch='1034201';renderTeamLeaders()");
+ document.querySelector('#teamLeaderResults [data-team-leader="1034201"]').click();
  assert.equal(run('TE.identity(resolveCard(teamLeader))'),'1034201');assert.equal(run('teamSettings.leaderMode'),'manual');
  console.log('Chosen leader retained across regeneration, persisted settings, incompatible joint missions, explicit comparison and stale jobs: OK');
 })().catch(e=>{console.error(e);process.exitCode=1});

@@ -29,7 +29,7 @@ jobs:
             .replace(" assert.equal(await page.locator('[data-mc-group=\"sp\"]').getAttribute('aria-pressed'),'true');"," await page.locator('[data-mc-group=\"sp\"][aria-pressed=\"true\"]').waitFor();");
           fs.writeFileSync('/tmp/dokkan-305-webkit.cjs',s);
           JS
-          node /tmp/dokkan-305-webkit.cjs
+          DOKKAN_TEST_URL=http://127.0.0.1:8733/ node /tmp/dokkan-305-webkit.cjs
       - name: Événements, sélection et conservation locale
         if: always()
         env:
@@ -49,9 +49,16 @@ jobs:
               await page.evaluate(async()=>{await ensureEvents();eventSettings.selected='event-rmbattle-110';eventSettings.stage='';eventSettings.missions=[];switchView('events');});
               assert.equal(await page.locator('#eventDetail .event-mission').count(),8);
               assert.equal(await page.locator('#wbBatchForm').count(),0);
+              await page.locator('[data-ux-event-tab="missions"]').click();
+              console.log('Missions after tapping tab, before expanding:',await page.locator('[data-wb-select-missions]').isVisible());
+              const details=page.locator('#eventDetail .fight-event-details');
+              if(await details.count()&&await details.getAttribute('open')===null)await details.locator('summary').first().click();
               await page.locator('[data-wb-select-missions]').click();
               await page.locator('#wbBatchForm [name=confirmed]').check();
               await page.locator('#wbBatchForm button.primary').click();
+              await page.waitForFunction(()=>Object.entries(eventAllProgress()).filter(([id,s])=>id.startsWith('rmb-m-110')&&s.done).length===8);
+              assert(await page.evaluate(()=>Object.entries(eventAllProgress()).filter(([id,s])=>id.startsWith('rmb-m-110')&&s.claimed).length===0));
+              await page.reload();
               await page.waitForFunction(()=>Object.entries(eventAllProgress()).filter(([id,s])=>id.startsWith('rmb-m-110')&&s.done).length===8);
               assert.deepEqual(errors,[]);
               console.log('106e : les 8 missions se sélectionnent et se valident en groupe');

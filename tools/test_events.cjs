@@ -21,3 +21,18 @@ assert.equal(M.missionAvailable({end:burst.end},close),false);
 assert.equal(M.status({...burst,status:'upcoming'},open),'active');
 assert.equal(M.filter([burst],{status:'available'},{},close).length,0);
 assert.equal(M.filter([burst],{status:'closed'},{},close).length,1);
+
+// The French Battlefield fallback must preserve existing mission identities and rewards.
+{
+ const strict=require('node:assert/strict'),calendar=require('../event-calendar.js');
+ const snapshot=require('../events.json');
+ const full=calendar.apply(snapshot.events,snapshot.verifiedAt);
+ const event=full.find(e=>e.id==='event-rmbattle-110');
+ strict.equal(event.missions.length,8);
+ const rewards=event.missions.flatMap(m=>m.rewards);
+ strict.equal(rewards.filter(r=>r.kind==='stones').reduce((total,r)=>total+r.amount,0),10);
+ strict.equal(rewards.filter(r=>r.itemType==='TreasureItem'&&r.itemId==='2000').reduce((total,r)=>total+r.amount,0),50000);
+ const ids=full.flatMap(e=>e.missions.map(m=>m.id));
+ strict.equal(ids.length,new Set(ids).size);
+ strict.deepEqual(calendar.apply(full,snapshot.verifiedAt),full);
+}

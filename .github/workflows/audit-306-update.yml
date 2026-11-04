@@ -1,0 +1,58 @@
+name: Mise à jour DokkanOS 3.0.4 vers 3.0.6
+on:
+  push:
+    branches: [audit/v3.0.6]
+    paths: [.github/workflows/audit-306-update.yml]
+permissions:
+  contents: read
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: 626d74d22dcdeeb1ff508ffd2bf848b19a30ea2c
+          path: previous
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --prefix /tmp/dokkan-update --no-save --ignore-scripts playwright@1.58.2
+      - run: /tmp/dokkan-update/node_modules/.bin/playwright install chromium
+      - name: PWA existante, mise à jour et mode avion
+        env:
+          NODE_PATH: /tmp/dokkan-update/node_modules
+        run: |
+          ln -s "$PWD/previous" /tmp/dokkan-live
+          python -m http.server 8738 --directory /tmp/dokkan-live --bind 127.0.0.1 >/tmp/dokkan-update-http.log 2>&1 &
+          node <<'JS'
+          const assert=require('node:assert/strict');
+          const fs=require('node:fs');
+          const {chromium}=require('playwright');
+          (async()=>{
+            const browser=await chromium.launch();
+            try{
+              const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+              const page=await context.newPage();
+              await page.goto('http://127.0.0.1:8738/');
+              await page.waitForFunction(()=>!!navigator.serviceWorker.controller,{timeout:60000});
+              assert.equal(await page.evaluate(async()=>(await (await fetch('release.json',{cache:'no-store'})).json()).version),'3.0.4');
+              await page.evaluate(()=>localStorage.setItem('dokkanos-audit-upgrade','avant-3.0.6'));
+              fs.symlinkSync(process.cwd(),'/tmp/dokkan-next');
+              fs.renameSync('/tmp/dokkan-next','/tmp/dokkan-live');
+              await page.evaluate(()=>document.querySelector('[data-c-tool=freshness]').click());
+              await page.locator('[data-release-check]').click();
+              await page.waitForFunction(async()=>!!(await navigator.serviceWorker.getRegistration())?.waiting,{timeout:60000});
+              await page.locator('[data-release-apply]').click();
+              await page.waitForFunction(()=>document.querySelector('script[src="release.js?v=30006"]'));
+              await context.setOffline(true);
+              await page.reload({waitUntil:'domcontentloaded'});
+              await page.locator('.session-home h1').waitFor();
+              assert.equal(await page.evaluate(()=>localStorage.getItem('dokkanos-audit-upgrade')),'avant-3.0.6');
+              await context.setOffline(false);
+              assert.equal(await page.evaluate(async()=>(await (await fetch('release.json',{cache:'no-store'})).json()).version),'3.0.6');
+              console.log('3.0.4 → 3.0.6, stockage local, ouverture hors ligne et retour en ligne : OK');
+            }finally{await browser.close();}
+          })().catch(e=>{console.error(e);process.exitCode=1});
+          JS

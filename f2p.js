@@ -3,6 +3,7 @@
 'use strict';
 const M=window.DokkanF2PModel,esc=teamEsc;
 let bank,data,load,query='',type='',kind='event',openOnly=false,limit=30,selected='',target='',methodIndex=0,targetFilter='',targetLimit=12;
+let showLimited=false;
 let current=1,goal=10,manualRate='',ownedOnly=false,graph,graphSource,cacheSource,cacheMeta;
 const resolved=new Map();
 const host=()=>document.querySelector('#f2pCatalogue');
@@ -116,7 +117,7 @@ function matching(){
  return [...bank.cards.values()].filter(r=>{
   const c=card(r.id);
   const supportsTarget=!targetFilter||r.id===targetFilter||compatible(r.id).some(e=>e.method.donor===targetFilter||(bank.targetsByName.get(e.name)||[]).includes(targetFilter));
-  return supportsTarget&&(!type||(c?.type||r.type)===type)&&M.inAcquisition(r,kind)&&
+  return (kind!=='exchange'||showLimited||M.acquisitionLocations(r,kind).some(l=>['ordinary','active'].includes(M.exchangeStatus(l))))&&supportsTarget&&(!type||(c?.type||r.type)===type)&&M.inAcquisition(r,kind)&&
    (kind!=='event'||!openOnly||M.acquisitionLocations(r,kind).some(l=>['En jeu','Permanent'].includes(eventStatus(l))))&&
    (!q||searchable([r.name,c?.title,r.id,...M.acquisitionLocations(r,kind).map(l=>M.acquisitionLabel(l,kind))].join(' ')).includes(q));
  }).sort((a,b)=>a.name.localeCompare(b.name,'fr')||a.id.localeCompare(b.id));
@@ -140,7 +141,7 @@ function render(){
  <div class="f2p-filters"><label>Rechercher<input id="f2pSearch" type="search" placeholder="Carte, événement, ID…" value="${esc(query)}"></label>
  <label>Type<select id="f2pType">${['','AGI','TEC','INT','PUI','END'].map(t=>teamOption(t,t||'Tous',type)).join('')}</select></label>
  ${kind==='event'?`<label class="team-checkbox"><input id="f2pOpen" type="checkbox"${checked(openOnly)}> Événements en jeu</label>`:''}</div>
- <div id="f2pDetails">${selected?detail(selected):''}</div><div id="f2pList"></div>
+ ${kind==='exchange'?`<label class="team-checkbox"><input id="f2pLimited" type="checkbox"${checked(showLimited)}> Afficher aussi les échanges terminés ou non confirmés</label><p class="muted">Les pièces de célébration sont masquées sans période d’échange confirmée. Leur présence dans les données ne garantit pas leur disponibilité.</p>`:''}<div id="f2pDetails">${selected?detail(selected):''}</div><div id="f2pList"></div>
  <p class="muted">Version Global · collecte du ${esc(eventDate(data.acquisitionVerifiedAt||data.verifiedAt,'day'))}. Les formes éveillées apparaissent dans la fiche de la carte d’origine. <a href="https://www.dbz-dokkanbattle.com/card-drops" target="_blank" rel="noopener">Source des cartes gratuites</a></p>`;
  list();budget();
 }
@@ -157,6 +158,7 @@ document.addEventListener('input',e=>{
 });
 document.addEventListener('change',e=>{
  const id=e.target.id;
+ if(id==='f2pLimited'){showLimited=e.target.checked;selected='';limit=30;render();}
  if(id==='f2pType'||id==='f2pOpen'){
   if(id==='f2pType')type=e.target.value;
   if(id==='f2pOpen'){openOnly=e.target.checked;if(openOnly)ensureEvents();}

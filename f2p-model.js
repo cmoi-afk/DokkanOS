@@ -36,6 +36,12 @@ function freeExchange(location){
  return /^(Souvenir de combat|Gemme incroyable \(verte\)|Majilite|Chocolats extra fins|Peluche Penenko \(grande\)|Pierre de richesse|Pierre Dragon sélection 11)$/.test(location.name||'')||
   /^Pièce (Festival Dokkan|Célébrations?) \(/.test(location.name||'');
 }
+function exchangeStatus(l,now=Date.now()){
+ if(!/^Pièce (Festival Dokkan|Célébrations?) \(/.test(l.name||''))return 'ordinary';
+ const start=Date.parse(l.exchangeStartsAt),end=Date.parse(l.exchangeEndsAt);
+ if(!Number.isFinite(start)||!Number.isFinite(end)||end<=start)return 'unknown';
+ return now<start?'upcoming':now>=end?'closed':'active';
+}
 function acquisitionLocations(row,kind){
  return (row.locations||[]).filter(l=>(l.acquisition||row.acquisition)===kind&&(kind!=='exchange'||freeExchange(l)));
 }
@@ -43,8 +49,9 @@ function inAcquisition(row,kind){
  return acquisitionLocations(row,kind).length>0||(kind==='event'&&!(row.locations||[]).length&&row.acquisition===kind);
 }
 function acquisitionLabel(location,kind){
+ const status=exchangeStatus(location),suffix=({unknown:' · Disponibilité à vérifier',closed:' · Échange terminé',upcoming:' · À venir',active:' · Échange en cours'})[status]||'';
  const name=(location.name||'Lieu à préciser')+(location.name==='Pierre Dragon sélection 11'?' (gratuite : 30 Laits, mission quotidienne de l’école Tortue)':'');
- return kind==='exchange'?'Baba Shop · '+name+(location.price?' · '+location.price:' · Coût à vérifier'):name;
+ return kind==='exchange'?'Baba Shop · '+name+(location.price?' · '+location.price:' · Coût à vérifier')+suffix:name;
 }
 function rate(target,entry){
  if(String(target)===String(entry.method.donor))return 100;
@@ -58,7 +65,7 @@ function copies(current,goal,chance){
  const gap=goal-current;
  return {count:Math.ceil(gap*100/chance),guaranteed:chance===100};
 }
-const api={freeExchange,index,rate,copies,acquisitionLocations,inAcquisition,acquisitionLabel};
+const api={exchangeStatus,freeExchange,index,rate,copies,acquisitionLocations,inAcquisition,acquisitionLabel};
 if(typeof module!=='undefined')module.exports=api;
 root.DokkanF2PModel=api;
 })(typeof window==='undefined'?globalThis:window);

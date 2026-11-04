@@ -1,14 +1,14 @@
 /* Applying an update is explicit while DokkanOS is open. */
 (function(){
 'use strict';
-const version='3.0.2';
+const version='3.0.3';
 let registration, latest='', message='', checking=false, applying=false;
 
 function render(){
  const panel=document.getElementById('releaseStatus');
  if(!panel)return;
  const available=!!registration?.waiting||!!latest&&latest!==version;
- panel.innerHTML='<section class="plan-card"><h3>Version '+version+'</h3><p>Nouvelle icône pour l’écran d’accueil de l’iPhone.</p>'
+ panel.innerHTML='<section class="plan-card"><h3>Version '+version+'</h3><p>Données Global du 2 novembre : Bulma et Super coordination.</p>'
   +(available?'<p>Une mise à jour est disponible'+(latest&&latest!==version?' · '+teamEsc(latest):'')+'.</p>':'')
   +'<div class="companion-actions"><button data-release-check '+(checking||applying?'disabled':'')+'>Vérifier la version</button>'
   +(available?'<button class="primary" data-release-apply '+(applying?'disabled':'')+'>Appliquer et recharger</button>':'')+'</div><p role="status">'+teamEsc(message)+'</p></section>';

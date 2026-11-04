@@ -348,10 +348,10 @@ function frList(a){return (a||[]).map(frTerm)}
 
 async function boot(){
   const readJSON=async(path,fallback)=>{try{const r=await fetch(path);return r.ok?await r.json():fallback}catch(e){return fallback}};
-  const [collection,meta,catalog,overlap,recent]=await Promise.all([
+  const [collection,meta,catalog,overlap,recent,download]=await Promise.all([
     readJSON('collection.json',null),readJSON('card-meta.json',{cards:{}}),
     readJSON('catalog.json',{cards:[]}),readJSON('overlap-conflicts.json',{conflicts:[]}),
-    readJSON('recent-cards.json',null)
+    readJSON('recent-cards.json',null),readJSON('data-download.json',null)
   ]);
   DB=collection;
   if(!DB||!Array.isArray(DB.cards))DB=await readJSON('data.json',null);
@@ -360,6 +360,14 @@ async function boot(){
   CATALOG=record(catalog)&&Array.isArray(catalog.cards)?catalog:{cards:[]};
   OVERLAP=record(overlap)&&Array.isArray(overlap.conflicts)?overlap:{conflicts:[]};
   mergeRecentCards(recent);
+  for(const awakening of download?.releasedAwakenings||[]){
+    const card=META.cards[awakening.cardId];
+    if(!card||!awakening.verified||!awakening.available||!(Date.parse(awakening.releaseAt)<=Date.now())||!awakening.kit?.passive)continue;
+    if(card.zAwakenings?.some(variant=>variant.kind===awakening.kind&&variant.verified&&variant.available!==false))continue;
+    card.zAwakenings=[...(card.zAwakenings||[]).filter(variant=>variant.kind!==awakening.kind),awakening];
+    card.eza=true;
+    card.ezaAvailable=true;
+  }
   CATALOG.cards=CATALOG.cards.filter(c=>c.rarity!=='SR');
   indexCaptureAliases();applyMetadata();restoreEdits();initAdvancedFilters();
   render();stats();

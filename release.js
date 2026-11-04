@@ -1,14 +1,14 @@
 /* Applying an update is explicit while DokkanOS is open. */
 (function(){
 'use strict';
-const version='3.0.0';
+const version='3.0.1';
 let registration, latest='', message='', checking=false, applying=false;
 
 function render(){
  const panel=document.getElementById('releaseStatus');
  if(!panel)return;
  const available=!!registration?.waiting||!!latest&&latest!==version;
- panel.innerHTML='<section class="plan-card"><h3>Version '+version+'</h3><p>Ma session Dokkan, galeries de leaders, carnet de farming et reprise de combat.</p>'
+ panel.innerHTML='<section class="plan-card"><h3>Version '+version+'</h3><p>Nouveau logo sur l’accueil Ma session Dokkan.</p>'
   +(available?'<p>Une mise à jour est disponible'+(latest&&latest!==version?' · '+teamEsc(latest):'')+'.</p>':'')
   +'<div class="companion-actions"><button data-release-check '+(checking||applying?'disabled':'')+'>Vérifier la version</button>'
   +(available?'<button class="primary" data-release-apply '+(applying?'disabled':'')+'>Appliquer et recharger</button>':'')+'</div><p role="status">'+teamEsc(message)+'</p></section>';

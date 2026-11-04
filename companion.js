@@ -60,7 +60,15 @@ function renderHome(){const host=document.querySelector('#home main');if(!host)r
  const inProgress=combat?.team&&combat.team===window.DokkanProgressModel?.signature(snapshot());
  const missionAction=next?`data-c-event="${esc(next.e.id)}" data-c-mission="${esc(next.m.id)}"`:'data-open-view="events"';
  const combatAction=inProgress?'data-fight-play-current':'data-pilot="combat"';
- const session=`<section class="session-home panel"><span class="eyebrow">DOKKANOS 3.0</span><h1>Ma session Dokkan</h1>
+ const session=`<section class="session-home panel"><header class="session-brand">
+ <svg class="session-brand-mark" viewBox="0 0 64 64" width="64" height="64" aria-hidden="true" focusable="false">
+  <path fill="#172842" d="M15 2h34l13 13v34L49 62H15L2 49V15z"/>
+  <path fill="none" stroke="#ef963d" stroke-width="2" d="M15 2h34l13 13v34L49 62H15L2 49V15z"/>
+  <path fill="#ffd07c" d="M19 14h13c11 0 18 7 18 18s-7 18-18 18H14zm6 9-3 18h10c6 0 9-4 9-9s-3-9-9-9z" fill-rule="evenodd"/>
+  <path fill="#fff1cc" d="m34 26 1.7 3.8 4.1.5-3 2.7.8 4-3.6-2.1-3.6 2.1.8-4-3-2.7 4.1-.5z"/>
+ </svg>
+ <div><span class="session-brand-name">Dokkan<span>OS</span></span><h1>Ma session Dokkan</h1></div>
+ </header>
  <div class="session-actions">
  <button ${missionAction}><b>Réussir une mission</b><small>${next?esc(next.e.name)+' · quotas à valider':'Choisir un événement'}</small></button>
  <button data-c-tool="plan"><b>Améliorer ma box</b><small>Éveils, SP et potentiel</small></button>

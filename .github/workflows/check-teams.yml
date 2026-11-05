@@ -29,8 +29,10 @@ jobs:
       - run: node tools/test_catalogue.cjs
       - run: node tools/test_catalogue_data.cjs
       - run: node tools/test_v071.cjs
+      - run: node tools/test_burst.cjs
       - run: node tools/test_sw.cjs
       - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom@0.18.12
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_event_dom.cjs && NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_linked_missions_dom.cjs
+      - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_burst_dom.cjs
       - run: NODE_PATH=/tmp/dokkan-tests/node_modules node tools/test_app_dom.cjs
       - run: python -c "import json; from tools.import_events import validate; print(validate(json.load(open('events.json'))))"

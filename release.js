@@ -1,7 +1,7 @@
 /* Applying an update is explicit while DokkanOS is open. */
 (function(){
 'use strict';
-const version='3.0.6';
+const version='3.0.7';
 let registration, latest='', message='', checking=false, applying=false;
 
 function render(){
@@ -10,7 +10,7 @@ function render(){
  const published=!!latest&&latest!==version;
  const preparing=!!registration?.installing;
  const available=!!registration?.waiting||published&&!preparing;
- panel.innerHTML='<section class="plan-card"><h3>Version '+version+'</h3><p>Accès direct aux missions et vérification des données de la Bataille royale.</p>'
+ panel.innerHTML='<section class="plan-card"><h3>Version '+version+'</h3><p>Nouveau Mode Burst : 16 missions de score et récompenses.</p>'
   +(preparing?'<p>Préparation du cache hors ligne…</p>':'')
   +(available?'<p>Une mise à jour est disponible'+(latest&&latest!==version?' · '+teamEsc(latest):'')+'.</p>':'')
   +'<div class="companion-actions"><button data-release-check '+(checking||applying?'disabled':'')+'>Vérifier la version</button>'

@@ -19,7 +19,7 @@ function tool(tab){prefs.tool=tab;savePrefs();switchView('tools');}
 function homeResume(open,saved,state){
  const pinnedId=eventSettings.pinnedObjective?.event;
  if(teamEvents.preview&&!teamEvents.coverage?.error&&(pinnedId||eventSettings.lastOpened)&&!teamEvents.events.some(e=>e.id===(pinnedId||eventSettings.lastOpened)))ensureEvents();
- const byId=new Map(open.map(e=>[e.id,e]));
+ const byId=new Map(open.filter(e=>teamEvents.preview||!e.missions.length||e.missions.some(m=>E.missionAvailable(m)&&!state[m.id]?.done)).map(e=>[e.id,e]));
  const journalEntry=[...journal].sort((a,b)=>Date.parse(b.date)-Date.parse(a.date))
   .find(entry=>byId.has(entry.event||entry.settings.event));
  const lastTeam=[...saved].reverse().find(team=>byId.has(team.settings.event));

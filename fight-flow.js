@@ -14,6 +14,7 @@ function nextMission(event,state,stage=''){
 function eventTop(event,state){
  if(!active(event))return '';
  const mission=nextMission(event,state,eventSettings.stage);
+ if(event.missions.length&&!mission)return '';
  const saved=[...teamSaved()].reverse().filter(s=>s.settings.event===event.id);
  const team=saved.find(s=>{
   if(eventSettings.stage&&String(s.settings.eventStage)!==eventSettings.stage)return false;

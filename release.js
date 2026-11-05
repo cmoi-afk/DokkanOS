@@ -1,7 +1,7 @@
 /* Applying an update is explicit while DokkanOS is open. */
 (function(){
 'use strict';
-const version='3.0.8';
+const version='3.0.9';
 let registration, latest='', message='', checking=false, applying=false;
 
 function render(){
@@ -10,7 +10,7 @@ function render(){
  const published=!!latest&&latest!==version;
  const preparing=!!registration?.installing;
  const available=!!registration?.waiting||published&&!preparing;
- panel.innerHTML='<section class="plan-card"><h3>Version '+version+'</h3><p>Mode Burst : préparation conjointe des réglages à 8 000 points et de l’équipe.</p>'
+ panel.innerHTML='<section class="plan-card"><h3>Version '+version+'</h3><p>Les objectifs terminés quittent Mon prochain combat.</p>'
   +(preparing?'<p>Préparation du cache hors ligne…</p>':'')
   +(available?'<p>Une mise à jour est disponible'+(latest&&latest!==version?' · '+teamEsc(latest):'')+'.</p>':'')
   +'<div class="companion-actions"><button data-release-check '+(checking||applying?'disabled':'')+'>Vérifier la version</button>'

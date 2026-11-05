@@ -29,6 +29,7 @@ jobs:
       - run: node tools/test_catalogue.cjs
       - run: node tools/test_catalogue_data.cjs
       - run: node tools/test_v071.cjs
+      - run: node tools/test_fight_completed.cjs
       - run: node tools/test_burst.cjs
       - run: node tools/test_sw.cjs
       - run: npm install --prefix /tmp/dokkan-tests --no-save --ignore-scripts linkedom@0.18.12

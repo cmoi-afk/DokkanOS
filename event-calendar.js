@@ -60,6 +60,11 @@
       })}));
       byId.set(id,{...event,missions});
     }
+    const cyborgs=byId.get('quest-1781');
+    if(cyborgs){
+      const now=Date.now();
+      byId.set(cyborgs.id,{...cyborgs,stages:(cyborgs.stages||[]).filter(stage=>!stage.start||Date.parse(stage.start)<=now)});
+    }
     return [...byId.values()];
   }
   const api={apply};

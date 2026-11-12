@@ -1,0 +1,24 @@
+name: Verify GLOBAL update of 12 November
+on:
+  push:
+    branches: [review/data-20261112]
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Verify prepared data against the previous release
+        run: |
+          git bundle verify review-data.bundle
+          git fetch ./review-data.bundle refs/heads/data/global-20261112
+          test "$(git rev-parse FETCH_HEAD)" = 4735f2916f429fe53d73d68b91e372f405d6702d
+          git checkout --detach 4735f2916f429fe53d73d68b91e372f405d6702d
+          node tools/test_catalogue_data.cjs
+          node tools/test_data_download.cjs
+          node tools/test_events.cjs
+          node tools/test_sw.cjs
+          git push origin HEAD:refs/heads/data/global-20261112
